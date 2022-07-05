@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Hibachi Version="4" SceneName="mg_buildcontraption">
+  <Asset_Packs>
+    <Asset_Pack>mg_buildcontraption</Asset_Pack>
+    <Asset_Pack>mg_shared</Asset_Pack>
+    <Asset_Pack>menu</Asset_Pack>
+  </Asset_Packs>
+  <Entitys>
+    <Entity Name="background" ClassType="Sprite">
+      <CImageSpriteData strTexture="background.png" strAssetPack="mg_buildcontraption" rPivotX="0" rPivotY="0" fInstantiate="true">
+        <Collision />
+      </CImageSpriteData>
+      <CTransformData X="0" Y="0" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="movie_tutorial_mouse" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="tutorial_mouse" strAssetPack="mg_shared" strStartingAnim="tut_mouse_idle" fLoopStartAnim="false" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="0" Y="0" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="movie_tutorial_touch" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="tutorial_touch" strAssetPack="mg_shared" strStartingAnim="tut_finger_tap" fLoopStartAnim="false" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="0" Y="0" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="btn_debug_skip" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="buttons" strAssetPack="menu" strStartingAnim="btn_debug_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="875" Y="40" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_container_page_attachments" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="hud" strAssetPack="mg_buildcontraption" strStartingAnim="hud_tab_attachments_unselected" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="0" Y="0" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_container_page_wheels" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="hud" strAssetPack="mg_buildcontraption" strStartingAnim="hud_tab_wheels_unselected" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="0" Y="-0" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_container_page_critical" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="hud" strAssetPack="mg_buildcontraption" strStartingAnim="hud_tab_crucial_selected" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="0" Y="0" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="char_rusty" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="char_rusty" strAssetPack="mg_buildcontraption" strStartingAnim="char_rusty_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="324" Y="501" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_item_magnet_bg" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_magnet_locked" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="100" Y="189" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_item_funnel_bg" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_funnel_locked" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="100" Y="329" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_item_solarpanel_bg" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_solarpanel_locked" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="100" Y="469" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_item_megaphone_bg" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_megaphone_locked" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="100" Y="189" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_item_replicator_bg" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_replicator_locked" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="100" Y="329" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_item_wheelbrush_bg" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_wheelbrush_locked" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="100" Y="189" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_item_wheeltread_bg" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_wheeltread_locked" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="100" Y="329" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_item_wheelhotrod_bg" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_wheelhotrod_locked" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="100" Y="469" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_item_brooms_bg" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_brooms_locked" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="100" Y="469" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_item_magnet" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_magnet_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="100" Y="189" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_item_funnel" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_funnel_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="100" Y="329" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_item_solarpanel" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_solarpanel_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="100" Y="469" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_item_megaphone" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_megaphone_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="100" Y="189" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_item_replicator" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_replicator_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="100" Y="329" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_item_wheelbrush" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_wheelbrush_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="100" Y="189" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_item_wheeltread" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_wheeltread_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="100" Y="329" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_item_wheelhotrod" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_wheelhotrod_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="100" Y="469" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_item_brooms" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_brooms_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="100" Y="469" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="contraption_base" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="gp_contraption_base_3" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="595" Y="460" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="contraption_item_magnet" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_magnet_placed" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="595" Y="460" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="contraption_item_funnel" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_funnel_placed" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="595" Y="460" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="contraption_item_solarpanel" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_solarpanel_placed" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="595" Y="460" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="contraption_item_megaphone" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_megaphone_placed" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="595" Y="460" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="contraption_item_replicator" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_replicator_placed" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="595" Y="460" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="contraption_item_wheelbrush" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_wheelbrush_placed" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="595" Y="460" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="contraption_item_wheeltread" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_wheeltread_placed" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="595" Y="460" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="contraption_item_wheelhotrod" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_wheelhotrod_placed" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="595" Y="460" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="contraption_item_brooms" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="btn_item_brooms_placed" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="595" Y="460" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="btn_confirm" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="buttons" strAssetPack="menu" strStartingAnim="btn_confirm_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="886" Y="499" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="fx_place" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_buildcontraption" strStartingAnim="fx_place" fLoopStartAnim="false" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="-500" Y="-500" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_attachments_tab" ClassType="Transform">
+      <CTransformData X="216" Y="301" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_wheels_tab" ClassType="Transform">
+      <CTransformData X="216" Y="445" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+  </Entitys>
+</Hibachi>

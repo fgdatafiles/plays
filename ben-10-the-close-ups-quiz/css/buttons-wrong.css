@@ -1,0 +1,53 @@
+
+
+.image-button.wrong.disabled .inner-image-answer{
+    color:white;
+    background-image: url('../img/image_quiz_assets/image_question_bgd_wrong.png');
+}
+
+.image-button.good.disabled .inner-image-answer{
+    color:white;
+    background-image: url('../img/image_quiz_assets/image_question_bgd_good.png');
+}
+
+.button.answer{
+    width: 368px;
+    height:50px;
+    background-size: 100%;
+}
+.button.answer{
+    background-image: url('../img/btt.png');
+}
+.no-touch .button.answer:hover,.button.disabled{
+    color:white;
+    background-image: url('../img/btt_on.png');
+}
+.button.answer.good.disabled{
+
+    background-image: url('../img/btt_good.png');
+}
+.button.answer.wrong.disabled{
+
+    background-image: url('../img/btt_wrong.png');
+}
+
+
+
+#summary-results{
+    font-family: 'Fred Fredburger W04 Bold';
+    color:black;
+    position: absolute;
+    text-align: center;
+    width:100%;
+}
+
+@media screen and (max-width: 580px) {
+
+    .button.answer{
+        width: 315px;
+        height: 43px;
+    }
+    .quiz .button{
+        margin: 3px auto;
+    }
+}

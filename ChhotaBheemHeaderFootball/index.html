@@ -1,0 +1,96 @@
+
+<html>
+    <head>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+        <title>Chotta bheem and Header Football Competition</title>
+
+        <style>
+            canvas{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+            body{
+                padding: 0px;
+                margin: 0px;
+                top: 0px;
+                left: 0px;
+                background-color: black;
+            }
+            #rotate{
+                position: relative;
+                display: none;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+		<script type="text/javascript" src="scripts/jquery.js" ></script>
+		<!-- INCLUDE THESE FILES AFTER INCLUDING JQUERY FILE---->
+
+    </head>
+    <body onload='window.head.initPreloader()'>
+        <div id='gameContainer' name='game'>
+            <canvas id='game' width='960' height='640'>
+                Sorry! Your browser doesn't support the canvas element. Please upgrade your browser, or use a different browser.
+            </canvas>
+        </div>
+
+ <img id='rotate' src='Assets/Images/rotation_logo_portrait.png'>
+        
+        <audio id='crowd' preload='auto'>
+            <source src='Assets/Sounds/crowd_loop.mp3' type='audio/mp3'>
+            <source src='Assets/Sounds/crowd_loop.ogg' type='audio/ogg'>
+        </audio>
+        <audio id='music' preload='auto' autoplay='autoplay'>
+            <source src='Assets/Sounds/main_music.mp3' type='audio/mp3'>
+            <source src='Assets/Sounds/main_music.ogg' type='audio/ogg'>
+        </audio>
+
+        <script type="text/javascript">
+            window.head = {};
+            window.head.FPS = 30;
+            window.head.paused = false;
+            window.head.scaleX = 1;
+            window.head.scaleY = 1;
+            window.head.font = 'Arial';
+            window.head.screen = '';
+        </script>
+
+        <script type="text/javascript">
+            WebFontConfig = {
+                custom: { families: ['Megalopolis'],
+                    urls: [ 'font.css' ]
+                },
+                fontactive: function (fontFamily){
+                    window.head.font = fontFamily;
+                }
+            };
+            (function() {
+            var wf = document.createElement('script');
+            wf.src = 'scripts/WebFontLoader.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+            })(); 
+        </script>        
+        <script type="text/javascript" src='scripts/shims.js'></script>
+        <script type="text/javascript" src='scripts/text.js'></script>
+        <script type="text/javascript" src='scripts/translation.js'></script>
+        <script type="text/javascript" src='scripts/cssScale.js'></script>
+        <script type="text/javascript" src='scripts/player.js'></script>
+        <script type="text/javascript" src='scripts/ball.js'></script>
+        <script type="text/javascript" src='scripts/game.js'></script>
+        <script type="text/javascript" src='scripts/uiScreens.js'></script>
+        <script type="text/javascript" src='scripts/spritesheet.js'></script>
+        <script type="text/javascript" src='scripts/inbounds.js'></script>
+        <script type="text/javascript" src='scripts/buttons.js'></script>
+        <script type="text/javascript" src='scripts/loops.js'></script>
+        <script type="text/javascript" src='scripts/loader.js'></script>
+        
+    </body>
+</html>

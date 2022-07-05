@@ -1,0 +1,15 @@
+ig.module('game.entities.menu.bolt').requires('cm.entity').defines(function()
+{entMenuBolt=ig.Entity.extend({offset:{x:0.5,y:0.5},timeoutId:0,index:0,row:0,side:0,init:function(x,y,settings)
+{this.parent(x,y,settings);this.startPos={x:this.pos.x,y:this.pos.y};if(this.name=='bolt_wrapper')
+{for(var i=0,r=0;i<16;i++)
+{this['bolt_'+i]=ig.game.spawnEntity(entMenuBolt,this.pos.x+(i%2?-45:45),this.pos.y+(r*30),{name:'bolt_'+i,index:i,row:r,side:i%2});if(i%2==1)
+r++;}}
+else
+{this.size.x=13,this.size.y=33;var ta=ig.game.getTextureAtlas('menu_sprites'),f1='bolt_white.png',f2='bolt_red.png';for(var i=0,frameRows=[];i<8;i++)
+frameRows.push(i==this.row?f2:f1);this.addTextureAtlasAnim(ta,'idle',1,[f1],true,true);this.addTextureAtlasAnim(ta,'flash',0.4,[f1,f2],false,true);this.addTextureAtlasAnim(ta,'quick_flash',0.15,[f1,f2],false,true);this.addTextureAtlasAnim(ta,'row',0.51,frameRows,false,true);this.addTextureAtlasAnim(ta,'quick_row',0.1,frameRows,false,true);this.addTextureAtlasAnim(ta,'once_row',0.1,frameRows,true,true);this.addTextureAtlasAnim(ta,'side',0.4,this.side?[f1,f2]:[f2,f1],false,true);this.addTextureAtlasAnim(ta,'quick_side',0.1,this.side?[f1,f2]:[f2,f1],false,true);}},update:function()
+{this.parent();this.pos.x=this.startPos.x;this.pos.y=this.startPos.y+ig.game.screen.y;},doAnim:function(name)
+{clearTimeout(this.timeoutId);for(var i=0,b;b=this['bolt_'+i++];)
+b.currentAnim=b.anims[name].rewind();if(name=='once_row')
+return;this.timeoutId=setTimeout(function()
+{for(var i=0,b;b=this['bolt_'+i++];)
+b.currentAnim=b.anims.idle;}.bind(this),name.indexOf('quick')>-1?2000:4000);}})})

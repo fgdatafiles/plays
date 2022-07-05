@@ -1,0 +1,5 @@
+ig.Strings={en:{YourBestScore:'YOUR BEST SCORE:',InstructionsOne:'Drag plunger downward & release\nto shoot Crash into the room.',InstructionsTwo:'Use the [bold]arrow[bold] keys or \ntap the [bold]left[bold] or [bold]right[bold] of your \ntouchscreen to use the flippers.',InstructionsThree:'Use the [bold]X[bold] & [bold]C[bold] keys or \nshake your phone or tablet to jar \nthe ball loose if it gets stuck.',Combo:'x COMBO!',formatScore:false,},ie:{YourBestScore:'YOUR BEST SCORE:',InstructionsOne:'Drag plunger downward & release\nto shoot Crash into the room.',InstructionsTwo:'Use the [bold]arrow[bold] keys or \ntap the [bold]left[bold] or [bold]right[bold] of your \ntouchscreen to use the flippers.',InstructionsThree:'Use the [bold]X[bold] & [bold]C[bold] keys or \nshake your phone or tablet to jar \nthe ball loose if it gets stuck.',Combo:'x COMBO!',formatScore:false},get:function(name)
+{var localized=this[ig.Config.localized];if(!localized)
+{if(console&&console.log)
+console.log('There is no Localized property by that name!');return '';}
+return localized[name]||''}}

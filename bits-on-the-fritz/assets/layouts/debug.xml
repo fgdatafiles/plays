@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Hibachi Version="4" SceneName="debug">
+  <Asset_Packs>
+    <Asset_Pack>debug</Asset_Pack>
+    <Asset_Pack>menu</Asset_Pack>
+  </Asset_Packs>
+  <Entitys>
+    <Entity Name="screen_bg" ClassType="Sprite">
+      <CImageSpriteData strTexture="bg_debugscreen.png" strAssetPack="debug" rPivotX="0" rPivotY="0" fInstantiate="true">
+        <Collision />
+      </CImageSpriteData>
+      <CTransformData X="0" Y="0" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="movie_back" ClassType="MovieSprite">
+      <CTransformData X="103.259956" Y="486.38" Rot="0" ScaleX="1" ScaleY="1" />
+      <CMovieSpriteData strAssetDirectory="buttons" strAssetPack="menu" strStartingAnim="btn_next_idle" fLoopStartAnim="false" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <Entities />
+    </Entity>
+    <Entity Name="txt_showFPS" ClassType="Text">
+      <CTextData strAssetPack="mg_shared" strFont="debug_font.fnt" strText="SHOW FPS" strFontFace="HandelGothic" strFontSize="32" strFontImageName="debug_font.png" rPivotX="0" rPivotY="0" fInstantiate="true" />
+      <CTransformData X="256" Y="139" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="txt_skiptutorials" ClassType="Text">
+      <CTextData strAssetPack="mg_shared" strFont="debug_font.fnt" strText="SKIP TUTORIALS" strFontFace="HandelGothic" strFontSize="32" strFontImageName="debug_font.png" rPivotX="0" rPivotY="0" fInstantiate="true" />
+      <CTransformData X="296" Y="234" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="txt_skipcutscenes" ClassType="Text">
+      <CTextData strAssetPack="mg_shared" strFont="debug_font.fnt" strText="SKIP CUTSCENES" strFontFace="HandelGothic" strFontSize="32" strFontImageName="debug_font.png" rPivotX="0" rPivotY="0" fInstantiate="true" />
+      <CTransformData X="299" Y="326" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="txt_play_music" ClassType="Text">
+      <CTextData strAssetPack="mg_shared" strFont="debug_font.fnt" strText="PLAY MUSIC" strFontFace="HandelGothic" strFontSize="32" strFontImageName="debug_font.png" rPivotX="0" rPivotY="0" fInstantiate="true" />
+      <CTransformData X="766" Y="138" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="txt_debug_mode" ClassType="Text">
+      <CTextData strAssetPack="mg_shared" strFont="debug_font.fnt" strText="DEBUG MODE" strFontFace="HandelGothic" strFontSize="32" strFontImageName="debug_font.png" rPivotX="0" rPivotY="0" fInstantiate="true" />
+      <CTransformData X="774" Y="233" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="btn_show_fps" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="buttons" strAssetPack="menu" strStartingAnim="btn_debug_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="100" Y="140" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="btn_skip_tutorials" ClassType="MovieSprite">
+      <CTransformData X="100" Y="233" Rot="0" ScaleX="1" ScaleY="1" />
+      <CMovieSpriteData strAssetDirectory="buttons" strAssetPack="menu" strStartingAnim="btn_debug_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <Entities />
+    </Entity>
+    <Entity Name="btn_skip_cutscenes" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="buttons" strAssetPack="menu" strStartingAnim="btn_debug_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="100" Y="327" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="btn_play_music" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="buttons" strAssetPack="menu" strStartingAnim="btn_debug_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="600" Y="140" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="btn_debug_mode" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="buttons" strAssetPack="menu" strStartingAnim="btn_debug_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="600" Y="235" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+  </Entitys>
+</Hibachi>

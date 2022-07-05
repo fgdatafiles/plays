@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta http-equiv="cleartype" content="on">
+
+    <script>
+
+        window.game_config =
+        {
+            "default_language"  : "en_GB",
+            "base_assets_url"   : "./",
+            "base_locale_url"   : "./locale/",
+            "base_script_url"   : "./",
+
+            "promote_games"     :
+            {
+                "show"      : false,
+                "options"   :
+                [
+                    { "thumb" : "gamethumb_cannonbolt.png",         "url" : "http://ben10.cartoonnetwork.co.uk/static/frontend/games/cannonbolt_smash/index.html?language=en_GB" },
+                    { "thumb" : "gamethumb_cannonbolt_erase.png",   "url" : "http://ben10.cartoonnetwork.co.uk/static/frontend/games/cannonbolt_erase/index.html?language=en_GB" },
+                    { "thumb" : "gamethumb_diamondhead.png",        "url" : "http://ben10.cartoonnetwork.co.uk/static/frontend/games/diamondhead_shoot/index.html?language=en_GB" },
+                    { "thumb" : "gamethumb_diamondhead_erase.png",  "url" : "http://ben10.cartoonnetwork.co.uk/static/frontend/games/diamondhead_erase/index.html?language=en_GB" },
+                    { "thumb" : "gamethumb_fourarms.png",           "url" : "http://ben10.cartoonnetwork.co.uk/static/frontend/games/fourarms_smash/index.html?language=en_GB" },
+                    { "thumb" : "gamethumb_fourarms_erase.png",     "url" : "http://ben10.cartoonnetwork.co.uk/static/frontend/games/fourarms_erase/index.html?language=en_GB" },
+                    { "thumb" : "gamethumb_greymatter.png",         "url" : "http://ben10.cartoonnetwork.co.uk/static/frontend/games/greymatter_leap/index.html?language=en_GB" },
+                    { "thumb" : "gamethumb_greymatter_erase.png",   "url" : "http://ben10.cartoonnetwork.co.uk/static/frontend/games/greymatter_erase/index.html?language=en_GB" },
+                    { "thumb" : "gamethumb_heatblast.png",          "url" : "http://ben10.cartoonnetwork.co.uk/static/frontend/games/heatblast_fight/index.html?language=en_GB" },
+                    { "thumb" : "gamethumb_heatblast_erase.png",    "url" : "http://ben10.cartoonnetwork.co.uk/static/frontend/games/heatblast_erase/index.html?language=en_GB" },
+                    { "thumb" : "gamethumb_overflow.png",           "url" : "http://ben10.cartoonnetwork.co.uk/static/frontend/games/overflow_shockwave/index.html?language=en_GB" },
+                    { "thumb" : "gamethumb_overflow_erase.png",     "url" : "http://ben10.cartoonnetwork.co.uk/static/frontend/games/overflow_erase/index.html?language=en_GB" },
+                    { "thumb" : "gamethumb_stinkfly.png",           "url" : "http://ben10.cartoonnetwork.co.uk/static/frontend/games/stinkfly_avoid/index.html?language=en_GB" },
+                    { "thumb" : "gamethumb_stinkfly_erase.png",     "url" : "http://ben10.cartoonnetwork.co.uk/static/frontend/games/stinkfly_erase/index.html?language=en_GB" },
+                    { "thumb" : "gamethumb_upgrade.png",            "url" : "http://ben10.cartoonnetwork.co.uk/static/frontend/games/upgrade_match/index.html?language=en_GB" },
+                    { "thumb" : "gamethumb_upgrade_erase.png",      "url" : "http://ben10.cartoonnetwork.co.uk/static/frontend/games/upgrade_erase/index.html?language=en_GB" },
+                    { "thumb" : "gamethumb_wildvine.png",           "url" : "http://ben10.cartoonnetwork.co.uk/static/frontend/games/wildvine_shoot/index.html?language=en_GB" },
+                    { "thumb" : "gamethumb_wildvine_erase.png",     "url" : "http://ben10.cartoonnetwork.co.uk/static/frontend/games/wildvine_erase/index.html?language=en_GB" },
+                    { "thumb" : "gamethumb_xlr8.png",               "url" : "http://ben10.cartoonnetwork.co.uk/static/frontend/games/xlr8_avoid/index.html?language=en_GB" },
+                    { "thumb" : "gamethumb_xlr8_erase.png",         "url" : "http://ben10.cartoonnetwork.co.uk/static/frontend/games/xlr8_erase/index.html?language=en_GB" }
+                ]
+            }
+        }
+
+    </script>
+
+    <style>
+        html,
+        body {
+            margin      : 0;
+            padding     : 0;
+            width       : 100%;
+            height      : 100%;
+            overflow    : hidden;
+            background  : #505050;
+        }
+
+        .rotate
+        {
+            width                   : 100%;
+            height                  : 100%;
+            position                : absolute;
+            z-index                 : 2;
+            background-position     : center;
+            background-size         : cover;
+            display                 : none;
+        }
+
+        .rotate.active{display : block}
+
+        .rotate .icon
+        {
+            background-position     : center;
+            background-size         : contain;
+            width                   : 100%;
+            height                  : 100%;
+            max-width               : 400px;
+            background-repeat       : no-repeat;
+            margin                  : auto;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="game_container" style="width:100%; height:100%; position:absolute"></div>
+    <div id="rotate" class="rotate"><div class="icon"></div></div>
+</body>
+
+    <script>
+        var script = document.createElement('script');
+        script.src = window.game_config.base_script_url+"dist/phaser.min.js";
+        document.body.appendChild(script);
+
+        window.onload = function()
+        {
+            script = document.createElement('script');
+            script.src = window.game_config.base_script_url+"dist/bundle.js";
+            document.body.appendChild(script);
+        }
+    </script>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", user-scalable="no", content="width=device-width, initial-scale=1"/>
+        <title>Tom and Jerry: Chasing Jerry</title>
+        <div>
+			<!--<script src="https://markknol.github.io/console-log-viewer/console-log-viewer.js"></script>-->
+			<!--<script src="js/keymaster.js"></script>-->
+			<!-- <script src="js/ehdi.pixi.min.js"></script> -->
+            <!-- <script src="js/dragonbones-pixi.js"></script> -->
+			
+			<!-- uncomment if for build -->
+			<script src="js/chasingjerry.min.js"></script>
+			<!---->
+		
+			<!-- comment out if for build
+            <script src="js/ehdi.js"></script>
+            <script src="js/game/loader.js"></script>
+            <script src="js/game/scene/gamescene.js"></script>
+            <script src="js/game/scene/modeselectscene.js"></script>
+            <script src="js/game/scene/levelselectscene.js"></script>
+            <script src="js/game/components/tilemanager.js"></script>
+            <script src="js/game/components/spinner.js"></script>
+            <script src="js/game/components/tile.js"></script>
+            <script src="js/game/components/objectmanager.js"></script>
+            <script src="js/game/components/fallingobject.js"></script>
+            <script src="js/game/components/animatedobject.js"></script>
+            <script src="js/game/components/loopingobject.js"></script>
+            <script src="js/game/components/tapoff.js"></script>
+            <script src="js/game/components/pass.js"></script>
+            <script src="js/game/components/cat.js"></script>
+            <script src="js/game/components/map.js"></script>
+            <script src="js/game/components/jerry.js"></script>
+            <script src="js/game/components/pausemanager.js"></script>
+            <script src="js/game/components/scratchoffsmoke.js"></script>
+            <script src="js/game/components/introoverlay.js"></script>
+            <script src="js/game/components/qte.js"></script>
+            <script src="js/game/components/winner.js"></script>
+            <script src="js/display/textureshapes.js"></script>
+            <script src="js/game/popup/confirmpopup.js"></script>
+            <script src="js/game/popup/readypopup.js"></script>
+            <script src="js/util/assetdirectories.js"></script>
+            <script src="js/util/keyboard.js"></script>
+            <script src="js/util/debugutils.js"></script>
+            <script src="js/util/localizationxmlreader.js"></script>
+            <script src="js/game/scene/titlescene.js"></script>
+            <script src="js/game/popup/pausepopup.js"></script>
+            <script src="js/game/popup/rotatepopup.js"></script>
+            <script src="js/game/popup/unlocknotif.js"></script>
+            <script src="js/game/popup/leveltransition.js"></script>
+            <script src="js/game/scene/postgamescene.js"></script>
+            <script src="js/game/scene/outrocomicscene.js"></script>
+            <script src="js/game/scene/introcomicscene.js"></script>
+			<!---->
+        </div>
+    </head>
+    <body>
+        <canvas id="game-canvas" width="" height="100%"></canvas>
+
+        <script>
+            //This will hold all global variables for the game as property
+
+            EHDI.init = function init() {
+                EHDI.GAME = Object.create(null);
+                EHDI.GAME.id = "chasingJerry_1015"
+                EHDI.GAME.sceneManager = EHDI.SceneManager(960, 540, false, true);
+                var docking = EHDI.ScaleManager.DOCKING.AUTO;
+                if(EHDI.BrowserInfo.isMobileDevice)
+                    docking = EHDI.ScaleManager.DOCKING.FULLSCREEN;
+                EHDI.GAME.scaleManager = EHDI.ScaleManager(EHDI.GAME.sceneManager.getRenderer(), EHDI.GAME.sceneManager.getStage(), docking, EHDI.GAME.sceneManager.defaultWidth, EHDI.GAME.sceneManager.defaultHeight);
+                EHDI.GAME.scaleManager.addAutomaticScaling();
+                EHDI.GAME.updateManager = EHDI.UpdateManager(EHDI.GAME.sceneManager.getRenderer(), EHDI.GAME.sceneManager.getStage());
+                EHDI.GAME.storageManager = EHDI.StorageManager();
+                
+                var cache = EHDI.GAME.storageManager.getLocalInfo(EHDI.GAME.id) || {isMuted : false, isFirstTimePlay : true, currentUnlock : 0};
+                cache.currentUnlock = 3;
+                EHDI.GAME.unlockNotif = new EHDI.popup.UnlockNotif();
+                
+                EHDI.GAME.sceneManager.addNotification(EHDI.GAME.unlockNotif);
+                EHDI.GAME.storageManager.setLocalInfo(EHDI.GAME.id, cache);
+                
+                
+                EHDI.GAME.soundManager = EHDI.SoundManager();
+                EHDI.GAME.soundManager.setMute(cache.isMuted);
+                EHDI.LoadManager.queueStrings(EHDI.gameStringsToPreLoad);
+                EHDI.LoadManager.queueAssets(EHDI.assetsToPreLoad);
+                EHDI.LoadManager.start(EHDI.loadScene);
+                // EHDI.GAME.preloader = EHDI.load(EHDI.assetsToPreLoad, EHDI.loadConfigFile, EHDI.loadScene);
+                
+                window.scrollTo(0,0);
+            }
+            window.onload = EHDI.init;
+            
+        </script>
+    </body>
+</html>

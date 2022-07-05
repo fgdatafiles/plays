@@ -1,0 +1,82 @@
+{
+"skeleton": { "hash": "wd+zqdYG5Hj00E9SPExatlYHkEU", "spine": "3.2.01", "width": 1020, "height": 827.45, "images": "./../../assets/popit/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "bg", "parent": "root" },
+	{ "name": "bg_sky", "parent": "bg", "y": -154.15 },
+	{ "name": "bg_wall", "parent": "bg" },
+	{ "name": "roboPlankton", "parent": "root", "x": 256.43, "y": 34.57, "scaleX": 0.899, "scaleY": 0.899 },
+	{ "name": "roboPlankton_body", "parent": "roboPlankton", "x": -2.43, "y": 64.01 },
+	{ "name": "roboPlankton_hand", "parent": "roboPlankton", "x": 106.62, "y": -105.62 },
+	{ "name": "roboPlankton_vacuum", "parent": "roboPlankton", "x": -221.72, "y": 4.04 }
+],
+"slots": [
+	{ "name": "minigames_popit_bg", "bone": "bg_sky", "attachment": "minigames_popit_bg" },
+	{ "name": "minigames_popit_roboplank_f1", "bone": "roboPlankton_body", "attachment": "minigames_popit_roboplank_f3" },
+	{ "name": "wall", "bone": "bg_wall", "attachment": "minigames_popit_wall" },
+	{ "name": "minigames_popit_roboplank_hand_f1", "bone": "roboPlankton_hand", "attachment": "minigames_popit_roboplank_hand_f1" },
+	{
+		"name": "minigames_popit_roboplank_vacuum_f1",
+		"bone": "roboPlankton_vacuum",
+		"attachment": "minigames_popit_roboplank_vacuum_f1"
+	}
+],
+"skins": {
+	"default": {
+		"minigames_popit_bg": {
+			"minigames_popit_bg": { "width": 1020, "height": 717 }
+		},
+		"minigames_popit_roboplank_f1": {
+			"minigames_popit_roboplank_f1": { "width": 437, "height": 367 },
+			"minigames_popit_roboplank_f2": { "width": 437, "height": 367 },
+			"minigames_popit_roboplank_f3": { "width": 437, "height": 367 }
+		},
+		"minigames_popit_roboplank_hand_f1": {
+			"minigames_popit_roboplank_hand_f1": { "width": 208, "height": 188 },
+			"minigames_popit_roboplank_hand_f2": { "width": 208, "height": 188 },
+			"minigames_popit_roboplank_hand_f3": { "width": 208, "height": 188 }
+		},
+		"minigames_popit_roboplank_vacuum_f1": {
+			"minigames_popit_roboplank_vacuum_f1": { "width": 879, "height": 491 },
+			"minigames_popit_roboplank_vacuum_f2": { "width": 879, "height": 491 },
+			"minigames_popit_roboplank_vacuum_f3": { "width": 879, "height": 491 }
+		},
+		"wall": {
+			"minigames_popit_wall": { "y": -224.99, "width": 1020, "height": 687 }
+		}
+	}
+},
+"animations": {
+	"idle": {
+		"slots": {
+			"minigames_popit_roboplank_f1": {
+				"attachment": [
+					{ "time": 0, "name": "minigames_popit_roboplank_f1" },
+					{ "time": 0.1, "name": "minigames_popit_roboplank_f2" },
+					{ "time": 0.2, "name": "minigames_popit_roboplank_f3" },
+					{ "time": 0.2666, "name": "minigames_popit_roboplank_f3" }
+				]
+			},
+			"minigames_popit_roboplank_hand_f1": {
+				"attachment": [
+					{ "time": 0, "name": "minigames_popit_roboplank_hand_f1" },
+					{ "time": 0.1, "name": "minigames_popit_roboplank_hand_f2" },
+					{ "time": 0.2, "name": "minigames_popit_roboplank_hand_f3" },
+					{ "time": 0.2666, "name": "minigames_popit_roboplank_hand_f3" }
+				]
+			},
+			"minigames_popit_roboplank_vacuum_f1": {
+				"attachment": [
+					{ "time": 0, "name": "minigames_popit_roboplank_vacuum_f1" },
+					{ "time": 0.1, "name": "minigames_popit_roboplank_vacuum_f2" },
+					{ "time": 0.2, "name": "minigames_popit_roboplank_vacuum_f3" },
+					{ "time": 0.2666, "name": "minigames_popit_roboplank_vacuum_f3" }
+				]
+			}
+		},
+		"drawOrder": [
+			{ "time": 0 }
+		]
+	}
+}
+}

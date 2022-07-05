@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Hibachi Version="4" SceneName="mg_cleanup">
+  <Asset_Packs>
+    <Asset_Pack>mg_cleanup</Asset_Pack>
+    <Asset_Pack>mg_shared</Asset_Pack>
+    <Asset_Pack>menu</Asset_Pack>
+  </Asset_Packs>
+  <Entitys>
+    <Entity Name="background" ClassType="Sprite">
+      <CImageSpriteData strTexture="background.png" strAssetPack="mg_cleanup" rPivotX="0" rPivotY="0" fInstantiate="true">
+        <Collision />
+      </CImageSpriteData>
+      <CTransformData X="0" Y="0" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="background_bin" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_cleanup" strStartingAnim="gp_recyclebin" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="120" Y="232" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="background_incoming" ClassType="Sprite">
+      <CImageSpriteData strTexture="background.png" strAssetPack="mg_cleanup" rPivotX="0" rPivotY="0" fInstantiate="true">
+        <Collision />
+      </CImageSpriteData>
+      <CTransformData X="960" Y="0" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="background_bin_incoming" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_cleanup" strStartingAnim="gp_recyclebin" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="1080" Y="232" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="movie_tutorial_mouse" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="tutorial_mouse" strAssetPack="mg_shared" strStartingAnim="tut_mouse_idle" fLoopStartAnim="false" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="0" Y="0" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="movie_tutorial_touch" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="tutorial_touch" strAssetPack="mg_shared" strStartingAnim="tut_finger_tap" fLoopStartAnim="false" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="0" Y="0" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="btn_debug_skip" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="buttons" strAssetPack="menu" strStartingAnim="btn_debug_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="90" Y="45" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_tablet" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="hud" strAssetPack="mg_cleanup" strStartingAnim="hud_tablet" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="480" Y="560" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_ui_score_container" ClassType="Sprite">
+      <CImageSpriteData strTexture="hud_container.png" strAssetPack="mg_cleanup" rPivotX="1" rPivotY="0" fInstantiate="true">
+        <Collision />
+      </CImageSpriteData>
+      <CTransformData X="960" Y="0" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_ui_score_text" ClassType="Text">
+      <CTextData strAssetPack="mg_shared" strFont="font_1_white.fnt" strText="0" strFontFace="Outage" strFontSize="58" strFontImageName="font_1_white.png" rPivotX="0" rPivotY="0" fInstantiate="true" />
+      <CTransformData X="899" Y="42" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_ui_crush" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="hud" strAssetPack="mg_cleanup" strStartingAnim="btn_bitcrush_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="713" Y="486" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_ui_whirly" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="hud" strAssetPack="mg_cleanup" strStartingAnim="btn_bitwhirly_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="559" Y="486" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_ui_ray" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="hud" strAssetPack="mg_cleanup" strStartingAnim="btn_bitray_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="405" Y="486" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_ui_jack" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="hud" strAssetPack="mg_cleanup" strStartingAnim="btn_bitjack_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="251" Y="486" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_trashcan" ClassType="Transform">
+      <CTransformData X="804" Y="261" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_parkbench" ClassType="Transform">
+      <CTransformData X="605" Y="233" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_sodacan" ClassType="Transform">
+      <CTransformData X="352" Y="239" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_streetlight" ClassType="Transform">
+      <CTransformData X="461" Y="277" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_banana" ClassType="Transform">
+      <CTransformData X="626" Y="298" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_manhole" ClassType="Transform">
+      <CTransformData X="329" Y="330" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="char_ruby" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="ruby" strAssetPack="mg_cleanup" strStartingAnim="char_ruby_talk" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="759" Y="560" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_ruby_offscreen" ClassType="Transform">
+      <CTransformData X="1719" Y="560" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_ruby_onscreen" ClassType="Transform">
+      <CTransformData X="759" Y="560" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+  </Entitys>
+</Hibachi>

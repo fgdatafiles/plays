@@ -1,0 +1,87 @@
+#startBtt2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    z-index: 99999;
+}
+
+.control-container{
+    position: absolute;
+    width:100%;
+    top:0;
+    margin: auto;
+    z-index:99999991;
+    max-width: 1024px;
+
+}
+#homeBtt{
+    display:none;
+    width:56px;
+    height: 56px;
+    background-image: url('../img/home_btt.png');
+    background-size: 100% 100%;
+    position: absolute;
+    left:20px;
+    top:20px;
+    cursor: pointer;
+    z-index: 9999;
+}
+#soundBtt{
+    display:none;
+    width:56px;
+    height: 56px;
+    background-image: url('../img/sound_on.png');
+    background-size: 100% 100%;
+    position: absolute;
+
+    right:20px;
+    top:20px;
+    cursor: pointer;
+    z-index: 9999;
+}
+/*
+.no-touch #soundBtt:hover{
+    background-image: url('../img/sound_off.png');
+}
+
+.no-touch #soundBtt.active:hover{
+
+    background-image: url('../img/sound_on.png');
+}
+
+*/
+#soundBtt.active{
+
+    background-image: url('../img/sound_off.png');
+}
+@media screen and (max-width: 768px) {
+    #soundBtt{
+        right:20px;
+        top:20px;
+        width:45px;
+        height:45px;
+    }
+    #homeBtt{
+        left:20px;
+
+        top:20px;
+        width:45px;
+        height:45px;
+    }
+}
+@media screen and (max-width: 580px) {
+    #soundBtt{
+        right:5px;
+        top:5px;
+        width:35px;
+        height:35px;
+    }
+    #homeBtt{
+        left:5px;
+        top:5px;
+        width:35px;
+        height:35px;
+    }
+
+}

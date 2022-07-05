@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Hibachi Version="4" SceneName="mg_drivekart">
+  <Asset_Packs>
+    <Asset_Pack>mg_drivekart</Asset_Pack>
+    <Asset_Pack>mg_shared</Asset_Pack>
+    <Asset_Pack>menu</Asset_Pack>
+  </Asset_Packs>
+  <Entitys>
+    <Entity Name="background" ClassType="Sprite">
+      <CImageSpriteData strTexture="background.png" strAssetPack="mg_drivekart" rPivotX="0" rPivotY="0" fInstantiate="true">
+        <Collision />
+      </CImageSpriteData>
+      <CTransformData X="0" Y="0" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="movie_tutorial_mouse" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="tutorial_mouse" strAssetPack="mg_shared" strStartingAnim="tut_mouse_idle" fLoopStartAnim="false" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="0" Y="0" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="movie_tutorial_touch" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="tutorial_touch" strAssetPack="mg_shared" strStartingAnim="tut_finger_tap" fLoopStartAnim="false" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="0" Y="0" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="btn_debug_skip" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="buttons" strAssetPack="menu" strStartingAnim="btn_debug_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="90" Y="150" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="env_road" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="environment" strAssetPack="mg_drivekart" strStartingAnim="gp_road_moving" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="480" Y="156" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="env_buildings_left" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="environment" strAssetPack="mg_drivekart" strStartingAnim="gp_buildings_l_moving" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="480" Y="156" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="env_buildings_right" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="environment" strAssetPack="mg_drivekart" strStartingAnim="gp_buildings_r_moving" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="480" Y="156" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="movie_kart" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="driver" strAssetPack="mg_drivekart" strStartingAnim="char_rusty_mid_drive" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="480" Y="428" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_VehicleLeftBound" ClassType="Transform">
+      <CTransformData X="180" Y="428" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_LaneLeftBound" ClassType="Transform">
+      <CTransformData X="300" Y="428" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_LaneLeftMidBound" ClassType="Transform">
+      <CTransformData X="420" Y="428" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_LaneRightMidBound" ClassType="Transform">
+      <CTransformData X="540" Y="428" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_LaneRightBound" ClassType="Transform">
+      <CTransformData X="660" Y="428" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_VehicleRightBound" ClassType="Transform">
+      <CTransformData X="780" Y="428" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_container" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="hud" strAssetPack="mg_drivekart" strStartingAnim="hud_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="960" Y="0" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_brooms" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="hud" strAssetPack="mg_drivekart" strStartingAnim="hud_main_brooms_empty" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="960" Y="0" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_replicator" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="hud" strAssetPack="mg_drivekart" strStartingAnim="hud_main_replicator_empty" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="960" Y="0" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_megaphone" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="hud" strAssetPack="mg_drivekart" strStartingAnim="hud_main_megaphone_empty" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="960" Y="0" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_counter" ClassType="Text">
+      <CTextData strAssetPack="mg_shared" strFont="font_1_white.fnt" strText="0" strFontFace="Outage" strFontSize="58" strFontImageName="font_1_white.png" rPivotX="0" rPivotY="0" fInstantiate="true" />
+      <CTransformData X="839" Y="133" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="hud_bolt" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="hud" strAssetPack="mg_drivekart" strStartingAnim="hud_collect_bolt" fLoopStartAnim="false" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="960" Y="0" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_road_TL" ClassType="Transform">
+      <CTransformData X="470" Y="164" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_road_TR" ClassType="Transform">
+      <CTransformData X="490" Y="164" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_road_TM" ClassType="Transform">
+      <CTransformData X="480" Y="164" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_road_BL" ClassType="Transform">
+      <CTransformData X="-480" Y="735" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_road_BR" ClassType="Transform">
+      <CTransformData X="1440" Y="735" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_road_BM" ClassType="Transform">
+      <CTransformData X="480" Y="735" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_scale_is_one" ClassType="Transform">
+      <CTransformData X="480" Y="330" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_scale_is_zero" ClassType="Transform">
+      <CTransformData X="480" Y="158" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_lane_left_start" ClassType="Transform">
+      <CTransformData X="475" Y="164" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_lane_mid_start" ClassType="Transform">
+      <CTransformData X="480" Y="164" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_lane_right_start" ClassType="Transform">
+      <CTransformData X="485" Y="164" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_lane_left_end" ClassType="Transform">
+      <CTransformData X="0" Y="735" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_lane_mid_end" ClassType="Transform">
+      <CTransformData X="480" Y="735" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_lane_right_end" ClassType="Transform">
+      <CTransformData X="960" Y="735" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="fx_mud" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="objects" strAssetPack="mg_drivekart" strStartingAnim="fx_mud_screen" fLoopStartAnim="false" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="480" Y="321" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="results_bg" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="results" strAssetPack="mg_drivekart" strStartingAnim="results_container" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="480" Y="162" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="results_broom" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="results" strAssetPack="mg_drivekart" strStartingAnim="results_item_brooms" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="480" Y="162" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="results_replicator" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="results" strAssetPack="mg_drivekart" strStartingAnim="results_item_replicator" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="480" Y="162" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="results_megaphone" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="results" strAssetPack="mg_drivekart" strStartingAnim="results_item_megaphone" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="480" Y="162" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="results_magnet" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="results" strAssetPack="mg_drivekart" strStartingAnim="results_item_magnet" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="480" Y="162" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="results_funnel" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="results" strAssetPack="mg_drivekart" strStartingAnim="results_item_funnel" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="480" Y="162" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="results_solarpanel" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="results" strAssetPack="mg_drivekart" strStartingAnim="results_item_solarpanel" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="480" Y="162" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="results_wheelbrush" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="results" strAssetPack="mg_drivekart" strStartingAnim="results_item_wheelbrush" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="480" Y="162" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="results_wheeltread" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="results" strAssetPack="mg_drivekart" strStartingAnim="results_item_wheeltread" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="480" Y="162" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="results_wheelhotrod" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="results" strAssetPack="mg_drivekart" strStartingAnim="results_item_wheelhotrod" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="480" Y="162" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="results_counter" ClassType="Text">
+      <CTextData strAssetPack="mg_shared" strFont="font_1_white.fnt" strText="00" strFontFace="Outage" strFontSize="58" strFontImageName="font_1_white.png" rPivotX="0" rPivotY="0" fInstantiate="true" />
+      <CTransformData X="440" Y="111" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="results_bg_bolts_hl" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="results" strAssetPack="mg_drivekart" strStartingAnim="results_highlight_bolts" fLoopStartAnim="false" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="480" Y="162" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="results_bg_parts_hl" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="results" strAssetPack="mg_drivekart" strStartingAnim="results_highlight_collectibles" fLoopStartAnim="false" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="480" Y="162" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_countercollect" ClassType="Transform">
+      <CTransformData X="913" Y="151" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_partcollect" ClassType="Transform">
+      <CTransformData X="829" Y="75" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="pos_extrapartcollect" ClassType="Transform">
+      <CTransformData X="664" Y="75" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+  </Entitys>
+</Hibachi>

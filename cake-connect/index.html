@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html >
+<head>
+	<!-- Disable zoom -->	
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<meta charset="utf-8">
+	<meta http-equiv="pragma" content="no-cache"/>
+	
+	<title>Cake connect - HTML5 game</title>
+
+        <script src="./platform.js"></script>
+	<!-- 3rd parties-->
+	<script src="./js/3rd/pixi.js"></script>
+	<script src="./js/3rd/Box2dWeb-2.1.a.3.min.js"></script>
+	<script src="./js/3rd/soundjs.js"></script>
+	<script src="./js/3rd/json2.js"></script> <!-- // json packer https://github.com/douglascrockford/JSON-js  -->
+         
+        <!--combine_js_from-->
+	<!-- auxiliary function-->
+	<script src="./js/common.js"></script>
+	<script src="./js/common_linked_list.js"></script>
+	<script src="./js/common_shiver_effect.js"></script>
+	<script src="./js/common_fade_effect.js"></script>
+	<script src="./js/common_loader.js"></script>
+	<script src="./js/common_soundmanager.js"></script>
+
+	<!-- game stages -->
+	<script src="./js/loading_stage.js"></script>
+	<script src="./js/game_stage.js"></script>
+	<script src="./js/levels_stage.js"></script>
+	<script src="./js/main_menu_stage.js"></script>
+
+	<!-- game, game levels -->
+	<script src="./js/game_levels.js"></script>
+	<script src="./js/game_level.js"></script>
+	<script src="./js/game.js"></script>
+	<script src="./js/game_state_monitor.js"></script>
+	<script src="./js/game_info.js"></script>
+	<script src="./js/game_backgrouds.js"></script>
+	<script src="./js/game_object.js"></script>
+
+	<!-- game level objects -->
+	<script src="./js/level_object_emotion.js"></script>
+	<script src="./js/level_object_dynamic.js"></script>
+	<script src="./js/level_object_star.js"></script>
+	<script src="./js/level_object_static.js"></script>
+	<script src="./js/level_object_tip.js"></script>
+
+	<!-- gui elements -->
+	<script src="./js/gui_check_button.js"></script>
+	<script src="./js/gui_energy_progressbar.js"></script>
+	<script src="./js/gui_game_paused_menu.js"></script>
+	<script src="./js/gui_game_fail.js"></script>
+	<script src="./js/gui_game_complete.js"></script>
+	<script src="./js/gui_level_object_flying_particle.js"></script>
+	<script src="./js/gui_thumbnail_manager.js"></script>
+	<script src="./js/gui_stage_fade_effect.js"></script>
+	<script src="./js/gui_game_timer.js"></script>
+	<script src="./js/gui_game_score.js"></script>
+	<script src="./js/gui_levels_icons.js"></script>
+	<script src="./js/gui_main_menu_clear_gamedata.js"></script>
+	<script src="./js/gui_about_menu.js"></script>
+        <!--combine_js_to-->
+
+
+	<style>
+		html{
+			height: 100%;
+		    }
+			
+		body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			background-position: center bottom;
+			background-repeat: no-repeat;
+			background-attachment:fixed;
+			background-color: #7fcbe2;
+		}
+		
+		canvas {
+			margin:0 auto;
+		
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			outline: none;
+			-webkit-tap-highlight-color: rgba(255, 255, 255, 0); /* mobile webkit */
+		}
+		
+		/* container for wrong orientation */
+		.div_wrong_orientation {
+                    display:none;
+                    width:100%;
+                    height:100%;
+                    text-align: center;
+		}
+		
+		img {
+			border: 0px;
+		}
+
+	</style>
+	
+	<script>
+	var renderer = null;
+	var stage;
+	function SetupScreenSizeFor(elemId)
+	{
+            // setup HTML layers
+            document.getElementById(elemId).style.width = Screen.OptionalScrW+'px';
+            document.getElementById(elemId).style.heigh = Screen.OptionalScrH+'px';
+	}
+	
+	function ShowGame()
+	{	
+            document.getElementById("div_wrong_orientation").style.display = "none";
+            document.getElementById("maincanvas").style.display = "block";
+	}
+	
+	function ShowWrongOrientation()
+	{	
+            document.getElementById("div_wrong_orientation").style.display = "block";
+            document.getElementById("maincanvas").style.display = "none";
+	}
+	
+	function doOnOrientationChange()
+	{	
+            switch(window.orientation) 
+            {  
+                // Landscape
+                case -90:
+                case 90:
+                    if(Screen.VirtualScrIsPortrait == false)
+                        ShowGame();
+                    else
+                        ShowWrongOrientation();
+
+                    break; 
+                default:
+                    // Portrait
+                    if(Screen.VirtualScrIsPortrait)
+                        ShowGame();
+                    else
+                        ShowWrongOrientation();
+                    break; 
+            }
+	}
+	
+	// some settings for mobile (ipad/iphone/android) device
+	function SetupForMobile()
+	{
+            // for android, ipad, iphone
+            if(DEVICE.isMobile())
+            {
+                if(document.documentElement.scrollHeight < window.outerHeight/window.devicePixelRatio)
+                        document.documentElement.style.height=(window.outerHeight/window.devicePixelRatio)+'px';
+                setTimeout(window.scrollTo(1,1), 50);
+        
+                // orientation change listner
+                window.addEventListener('orientationchange', doOnOrientationChange);
+                doOnOrientationChange();
+            }
+	}
+ 
+	function Start()
+	{	
+
+            // other game stuff
+            ShowGame();
+
+            SetupForMobile();
+
+            // create and setup render,  we use only canvas render
+            renderer = new PIXI.CanvasRenderer(Screen.VirtualScrW, Screen.VirtualScrH, document.getElementById("maincanvas"));
+            renderer.clearBeforeRender = false;
+
+            renderer.view.style.width = Screen.OptionalScrW + 'px';
+            renderer.view.style.height = Screen.OptionalScrH + 'px';
+
+            GAME.Init();
+            // setup main function		
+            requestAnimFrame(main);	
+
+
+		
+	}
+	
+    // main loop
+    function main()
+    {   
+        GAME.Update();
+        renderer.render(GAME.currentStage.stage);	
+        requestAnimFrame(main);
+    }
+                
+	// add onResize window event
+    window.onresize = function(event)
+    {
+        if(renderer == null)
+                return;
+                                
+        // Real(device) screen
+        Screen.DeviceScrW = window.innerWidth;	// width of device window
+        Screen.DeviceScrH = window.innerHeight;	// height of device window
+        Screen.Init();
+        
+        renderer.view.style.width = Screen.OptionalScrW + 'px';
+        renderer.view.style.height = Screen.OptionalScrH + 'px';
+        /*renderer.resize(Screen.OptionalScrW, Screen.OptionalScrH, document.getElementById("maincanvas"));	*/
+    }
+	
+</script>
+</head>
+<body onload="Start();">
+
+    <!-- main render canvas-->
+    <canvas id="maincanvas" >Sorry, your brouser does not support html5 canvas</canvas>	
+
+    <!-- div with wrong orientation banner -->
+    <div id="div_wrong_orientation" class="div_wrong_orientation">  
+            <img src="./html/wrongOrientation.png">
+    </div>
+
+</body>
+</html>

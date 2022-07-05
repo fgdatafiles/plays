@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Hibachi Version="4" SceneName="cutscene_drivecontraption">
+  <Asset_Packs>
+    <Asset_Pack>cutscene_drivecontraption</Asset_Pack>
+    <Asset_Pack>menu</Asset_Pack>
+  </Asset_Packs>
+  <Entitys>
+    <Entity Name="background" ClassType="Sprite">
+      <CTransformData X="0" Y="0" Rot="0" ScaleX="1" ScaleY="1" />
+      <CImageSpriteData strTexture="background.png" strAssetPack="cutscene_drivecontraption" rPivotX="0" rPivotY="0" fInstantiate="true">
+        <Collision />
+      </CImageSpriteData>
+      <Entities />
+    </Entity>
+    <Entity Name="movie_1" ClassType="MovieSprite">
+      <CTransformData X="0" Y="0" Rot="0" ScaleX="1" ScaleY="1" />
+      <CMovieSpriteData strAssetDirectory="animation" strAssetPack="cutscene_drivecontraption" strStartingAnim="cutscene_drivecontraption" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <Entities />
+    </Entity>
+    <Entity Name="button_skip" ClassType="MovieSprite">
+      <CTransformData X="858" Y="487" Rot="0" ScaleX="1" ScaleY="1" />
+      <CMovieSpriteData strAssetDirectory="buttons" strAssetPack="menu" strStartingAnim="btn_skip_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <Entities />
+    </Entity>
+  </Entitys>
+</Hibachi>

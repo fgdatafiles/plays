@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Chhota Bheem Sports Car</title>
+		<meta charset="utf-8"/>
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,minimal-ui" />
+		
+		<script src="libs/pixi.min.js"></script>
+		<script src="libs/howler.js"></script>
+		<script src="js/ScenesManager.js"></script>
+		<script src="js/Scene.js"></script>
+		<script src="js/Obstacles.js"></script>
+		<script src="js/Collectibles.js"></script>
+		<script src="js/MenuScene.js"></script>
+		<script src="js/Instruction.js"></script>
+		<script src="js/StoryScene.js"></script>
+		<script src="js/GameScene.js"></script>
+		
+		<!-- INCLUDE THESE FILES AFTER INCLUDING JQUERY FILE---->
+
+		
+		<style>
+			body {
+				overflow:hidden;
+				padding:0px;
+				margin:0px;
+				background-color:#000;
+			}
+			canvas {				
+				padding-left: 0;
+				padding-right: 0;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+	<script>
+		//get reference of ScenesManager;
+		var scenesManager = ScenesManager;
+
+		//note the scale parameter is set to true
+		scenesManager.create(640, 480, true);
+
+		//create a the game scene
+		var menu = scenesManager.createScene('menu', MenuScene);
+		var instruction = scenesManager.createScene('instruction', Instruction);
+		var story = scenesManager.createScene('story', StoryScene);
+		var game = scenesManager.createScene('game', GameScene);
+		scenesManager.goToScene('menu');
+
+	</script>
+</body>
+</html>

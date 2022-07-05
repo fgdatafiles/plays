@@ -1,0 +1,293 @@
+<config>
+
+	<!-- CHUNKS -->
+	<!-- Define bundles of folders and other chunks to load -->
+
+	<chunks>
+		<!-- EX
+    	<chunk id="chunk">
+			<pack>load_part_1</pack> - loads a folder in assets named "load_part_1"
+			<pack>load_part_2</pack> - loads a folder in assets named "load_part_2"
+			<chunk>other_chunk</chunk> - loads another chunk named "other_chunk" which will have its own list of folders in assets
+		</chunk>
+    	-->
+
+		<chunk id="preload">
+			<pack>preload</pack>
+		</chunk>
+
+		<chunk id="initial_sd">
+			<pack>initial_sd</pack>
+			<!-- Create this folder and uncomment if you need sd initial assets. -- <pack>initial_sd</pack> -->
+		</chunk>
+
+		<chunk id="initial_hd">
+			<pack>initial_hd</pack>
+			<!-- Create this folder and uncomment if you need hd initial assets. -- <pack>initial_hd</pack> -->
+		</chunk>
+
+		<chunk id="initial_audio_optional">
+			<chunk>initial_audio_required</chunk>
+			<pack>initial_audio_hd</pack>
+			<!-- Create this folder and uncomment if you need optional initial audio. -- <pack>initial_audio_optional</pack> -->
+		</chunk>
+
+		<chunk id="initial_audio_required">
+			<pack>initial_audio_required</pack>
+		</chunk>
+
+		<chunk id="gameplay_sd">
+			<pack>gameplay_universal</pack>
+			<pack>gameplay_universal_sd</pack>
+			<!-- Create this folder and uncomment if you need sd gameplay assets. -- <pack>gameplay_sd</pack> -->
+		</chunk>
+
+		<chunk id="gameplay_hd">
+			<pack>gameplay_universal</pack>
+			<pack>gameplay_universal_hd</pack>
+			<!-- Create this folder and uncomment if you need hd gameplay assets. -- <pack>gameplay_hd</pack> -->
+		</chunk>
+
+		<chunk id="gameplay_audio_optional">
+			<pack>gameplay_audio_hd</pack>
+			<!-- Create this folder and uncomment if you need optional gameplay audio. -- <pack>gameplay_audio_optional</pack> -->
+		</chunk>
+
+		<chunk id="gameplay_audio_required"></chunk>
+
+		<chunk id="gameshakers">
+			<pack>board_gameshakers</pack>
+			<pack>board_gameshakers_audio</pack>
+		</chunk>
+
+		<chunk id="gameshakers_sd">
+			<chunk>gameshakers</chunk>
+			<pack>board_gameshakers_sd</pack>
+			<pack>board_sd</pack>
+		</chunk>
+
+		<chunk id="gameshakers_hd">
+			<chunk>gameshakers</chunk>
+			<pack>board_gameshakers_hd</pack>
+		</chunk>
+
+		<chunk id="henry_danger">
+			<pack>board_henry_danger</pack>
+			<pack>board_henry_danger_audio</pack>
+		</chunk>
+
+		<chunk id="henry_danger_sd">
+			<chunk>henry_danger</chunk>
+			<pack>board_henry_danger_sd</pack>
+			<pack>board_sd</pack>
+		</chunk>
+
+		<chunk id="henry_danger_hd">
+			<chunk>henry_danger</chunk>
+			<pack>board_henry_danger_hd</pack>
+		</chunk>
+
+		<chunk id="loud_house">
+			<pack>board_loud_house</pack>
+			<pack>board_loud_house_audio</pack>
+		</chunk>
+
+		<chunk id="loud_house_sd">
+			<chunk>loud_house</chunk>
+			<pack>board_loud_house_sd</pack>
+			<pack>board_sd</pack>
+		</chunk>
+
+		<chunk id="loud_house_hd">
+			<chunk>loud_house</chunk>
+			<pack>board_loud_house_hd</pack>
+		</chunk>
+
+		<chunk id="spongebob">
+			<pack>board_spongebob</pack>
+			<pack>board_spongebob_audio</pack>
+		</chunk>
+
+		<chunk id="spongebob_sd">
+			<chunk>spongebob</chunk>
+			<pack>board_spongebob_sd</pack>
+			<pack>board_sd</pack>
+		</chunk>
+
+		<chunk id="spongebob_hd">
+			<chunk>spongebob</chunk>
+			<pack>board_spongebob_hd</pack>
+		</chunk>
+
+		<chunk id="tmnt">
+			<pack>board_tmnt</pack>
+			<pack>board_tmnt_audio</pack>
+		</chunk>
+
+		<chunk id="tmnt_sd">
+			<chunk>tmnt</chunk>
+			<pack>board_sd</pack>
+			<pack>board_tmnt_sd</pack>
+		</chunk>
+
+		<chunk id="tmnt_hd">
+			<chunk>tmnt</chunk>
+			<pack>board_tmnt_hd</pack>
+		</chunk>
+
+		<chunk id="thundermans">
+			<pack>board_thundermans</pack>
+			<pack>board_thundermans_audio</pack>
+		</chunk>
+
+		<chunk id="thundermans_sd">
+			<chunk>thundermans</chunk>
+			<pack>board_thundermans_sd</pack>
+		</chunk>
+
+		<chunk id="thundermans_hd">
+			<chunk>thundermans</chunk>
+			<pack>board_thundermans_hd</pack>
+		</chunk>
+
+		<chunk id="minigame_catchit_sd">
+			<pack>minigame_catchit_sd</pack>
+			<pack>minigame_sd</pack>
+		</chunk>
+
+		<chunk id="minigame_catchit_hd">
+			<pack>minigame_catchit_hd</pack>
+		</chunk>
+
+		<chunk id="minigame_knockdown_sd">
+			<pack>minigame_knockdown_sd</pack>
+			<pack>minigame_sd</pack>
+		</chunk>
+
+		<chunk id="minigame_knockdown_hd">
+			<pack>minigame_knockdown_hd</pack>
+		</chunk>
+
+		<chunk id="minigame_match3_sd">
+			<pack>minigame_match3</pack>
+			<pack>minigame_match3_sd</pack>
+			<pack>minigame_sd</pack>
+		</chunk>
+
+		<chunk id="minigame_match3_hd">
+			<pack>minigame_match3</pack>
+			<pack>minigame_match3_hd</pack>
+		</chunk>
+
+		<chunk id="minigame_popit_sd">
+			<pack>minigame_popit</pack>
+			<pack>minigame_sd</pack>
+			<pack>character_cockpits_sd</pack>
+		</chunk>
+
+		<chunk id="minigame_popit_hd">
+			<pack>minigame_popit</pack>
+			<pack>minigame_popit_hd</pack>
+			<pack>character_cockpits_hd</pack>
+		</chunk>
+
+		<chunk id="minigame_rapid_tap_dash_sd">
+			<pack>minigame_rapid_tap_dash_sd</pack>
+			<pack>minigame_sd</pack>
+		</chunk>
+
+		<chunk id="minigame_rapid_tap_dash_hd">
+			<pack>minigame_rapid_tap_dash_hd</pack>
+		</chunk>
+
+		<chunk id="minigame_runner_sd">
+			<pack>minigame_runner_sd</pack>
+			<pack>minigame_sd</pack>
+		</chunk>
+
+		<chunk id="minigame_runner_hd">
+			<pack>minigame_runner_hd</pack>
+		</chunk>
+
+		<chunk id="minigame_trampoline_sd">
+			<pack>minigame_trampoline_sd</pack>
+			<pack>minigame_sd</pack>
+		</chunk>
+
+		<chunk id="minigame_trampoline_hd">
+			<pack>minigame_trampoline_hd</pack>
+		</chunk>
+
+		<chunk id="minigame_whackamole_sd">
+			<pack>minigame_whackamole_sd</pack>
+			<pack>minigame_sd</pack>
+		</chunk>
+
+		<chunk id="minigame_whackamole_hd">
+			<pack>minigame_whackamole_hd</pack>
+		</chunk>
+
+		<chunk id="minigame_helicopter_sd">
+			<pack>minigame_helicopter_sd</pack>
+			<pack>character_gliders_sd</pack>
+		</chunk>
+
+		<chunk id="minigame_helicopter_hd">
+			<pack>minigame_helicopter_hd</pack>
+			<pack>character_gliders_hd</pack>
+		</chunk>
+
+		<chunk id="minigame_platform_runner_sd">
+			<pack>minigame_platform_runner</pack>
+		</chunk>
+
+		<chunk id="minigame_platform_runner_hd">
+			<pack>minigame_platform_runner</pack>
+		</chunk>
+
+		<chunk id="minigame_bumperballs_sd">
+			<pack>minigame_bumperballs_sd</pack>
+		</chunk>
+
+		<chunk id="minigame_bumperballs_hd">
+			<pack>minigame_bumperballs_hd</pack>
+		</chunk>
+
+		<chunk id="minigame_bouncedown_sd">
+			<pack>minigame_bouncedown_sd</pack>
+		</chunk>
+
+		<chunk id="minigame_bouncedown_hd">
+			<pack>minigame_bouncedown_hd</pack>
+		</chunk>
+
+		<chunk id="minigame_runner_thundermans_sd">
+			<pack>minigame_runner_thundermans_sd</pack>
+		</chunk>
+
+		<chunk id="minigame_runner_thundermans_hd">
+			<pack>minigame_runner_thundermans_hd</pack>
+		</chunk>
+
+		<chunk id="minigame_popit_tmnt_sd">
+			<pack>minigame_popit_tmnt_sd</pack>
+			<pack>character_cockpits_sd</pack>
+		</chunk>
+
+		<chunk id="minigame_popit_tmnt_hd">
+			<pack>minigame_popit_tmnt_hd</pack>
+			<pack>character_cockpits_hd</pack>
+		</chunk>
+
+		<chunk id="minigame_catchit_spongebob_sd">
+			<pack>minigame_catchit_spongebob_sd</pack>
+		</chunk>
+
+		<chunk id="minigame_catchit_spongebob_hd">
+			<pack>minigame_catchit_spongebob_hd</pack>
+		</chunk>
+
+		<!-- END OF CHUNKS -->
+	</chunks>
+
+</config>

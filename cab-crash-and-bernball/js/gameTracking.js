@@ -1,0 +1,2 @@
+var gamenametitle='crb_spl_arc_crashandbernball';document.title='Crash & Bernball';var gn=gamenametitle.split('_');var ctoAssetTypeCode='gam';var ctoGameEvent='load';var ctoGameBuCode='xd';var ctoGameSeriesCode=gn[0];var ctoGameOwnerName='dol';var ctoGameTypeCode=gn[1];var ctoGameGenreCode=gn[2];var ctoGameName=gn[3];var ctoAssetId='4e9e420eb9fa0088dd3ad5df';function gameStart()
+{GameStartup.init();}

@@ -1,0 +1,1 @@
+ig.Config={localized:'en',ballCount:5,points:{base:100,combo:100,comboGroup:5000,destruction:25000,dishwasher:2000,crayondrawer:2000,kitchensink:10000,tv:1000,teleport:1000,speaker:1000,heart:5000,picture:1000},leftFlipper:37,rightFlipper:39,plungerShoot:40,shakeLeft:88,shakeRight:67};

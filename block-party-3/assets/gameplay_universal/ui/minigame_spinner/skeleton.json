@@ -1,0 +1,3965 @@
+{
+"skeleton": { "hash": "C8BstyzeTZJ4hyA2vG82mCuzpUM", "spine": "3.2.01", "width": 284.47, "height": 2200.92, "images": "./assets/" },
+"bones": [
+	{ "name": "root", "x": -23.69, "y": 13.85 },
+	{ "name": "all", "parent": "root" },
+	{ "name": "spinner", "parent": "all", "x": -197.66, "y": 28.82 },
+	{ "name": "minigames", "parent": "spinner", "x": -10.24, "y": -22.46 },
+	{ "name": "minigame_1", "parent": "minigames", "x": 0.58, "y": -178.48 },
+	{ "name": "minigame_2", "parent": "minigames", "x": 1.12, "y": -32.3 },
+	{ "name": "minigame_3", "parent": "minigames", "x": 0.6, "y": 123.78 },
+	{ "name": "minigame_4", "parent": "minigames", "x": 0.24, "y": 260.21 },
+	{ "name": "minigame_5", "parent": "minigames", "x": 0.6, "y": 406.78 },
+	{ "name": "minigame_6", "parent": "minigames", "x": 0.6, "y": 553.78 },
+	{ "name": "minigame_7", "parent": "minigames", "x": 0.6, "y": 700.5 },
+	{ "name": "minigame_8", "parent": "minigames", "x": 0.9, "y": 847.62 },
+	{ "name": "minigame_9", "parent": "minigames", "x": 0.9, "y": 995.26 },
+	{ "name": "minigame_10", "parent": "minigames", "x": 0.9, "y": 1142.32 },
+	{ "name": "minigame_11", "parent": "minigames", "x": 0.9, "y": 1289.42 },
+	{ "name": "minigame_12", "parent": "minigames", "x": 0.9, "y": 1435.88 },
+	{ "name": "minigame_13", "parent": "minigames", "x": 0.9, "y": 1582.51 },
+	{ "name": "minigame_14", "parent": "minigames", "x": 0.9, "y": 1730.21 },
+	{ "name": "spinner_arrow", "parent": "all", "x": -377.71, "y": 7.15 },
+	{ "name": "spinner_selected", "parent": "spinner", "x": -10.2, "y": -17.27 },
+	{ "name": "spinner_flash", "parent": "spinner_selected", "x": 0.41, "y": -0.08 },
+	{ "name": "spinner_overlay", "parent": "spinner", "x": -8.06, "y": -33.01 },
+	{ "name": "spinner_overlay_coverup", "parent": "spinner_overlay", "x": 229.41, "y": -9.66 }
+],
+"slots": [
+	{ "name": "minigame_spinner_bg", "bone": "spinner", "attachment": "minigame_spinner_bg" },
+	{ "name": "spinner_blurLoop_1", "bone": "minigames", "attachment": "spinner_blurLoop_5" },
+	{ "name": "minigame_1", "bone": "minigame_1", "attachment": "minigame_1" },
+	{ "name": "minigame_2", "bone": "minigame_2", "attachment": "minigame_2" },
+	{ "name": "minigame_3", "bone": "minigame_3", "attachment": "minigame_3" },
+	{ "name": "minigame_4", "bone": "minigame_4", "attachment": "minigame_4" },
+	{ "name": "minigame_5", "bone": "minigame_5", "attachment": "minigame_5" },
+	{ "name": "minigame_6", "bone": "minigame_6", "attachment": "minigame_6" },
+	{ "name": "minigame_7", "bone": "minigame_7", "attachment": "minigame_7" },
+	{ "name": "minigame_8", "bone": "minigame_8", "attachment": "minigame_8" },
+	{ "name": "minigame_9", "bone": "minigame_9", "attachment": "minigame_9" },
+	{ "name": "minigame_10", "bone": "minigame_10", "attachment": "minigame_10" },
+	{ "name": "minigame_11", "bone": "minigame_11", "attachment": "minigame_11" },
+	{ "name": "minigame_12", "bone": "minigame_12", "attachment": "minigame_12" },
+	{ "name": "minigame_13", "bone": "minigame_13", "attachment": "minigame_13" },
+	{ "name": "minigame_14", "bone": "minigame_14", "attachment": "minigame_14" },
+	{ "name": "spinner_overlay_coverup", "bone": "spinner_overlay_coverup", "attachment": "minigame_spinner_overlay_coverup" },
+	{ "name": "minigame_spinner_overlay", "bone": "spinner_overlay", "attachment": "minigame_spinner_overlay" },
+	{ "name": "minigame_selected_overlay", "bone": "spinner_selected", "attachment": "minigame_selected_overlay" },
+	{ "name": "minigame_selected_flash", "bone": "spinner_flash" },
+	{ "name": "spinner_arrow", "bone": "spinner_arrow", "attachment": "spinner_arrow" }
+],
+"skins": {
+	"default": {
+		"minigame_1": {
+			"minigame_1": { "width": 175, "height": 147 }
+		},
+		"minigame_10": {
+			"minigame_10": { "x": -0.03, "y": -1.14, "width": 175, "height": 147 }
+		},
+		"minigame_11": {
+			"minigame_11": { "x": -0.06, "y": -1.46, "width": 175, "height": 147 }
+		},
+		"minigame_12": {
+			"minigame_12": { "x": -0.1, "y": -1.86, "width": 175, "height": 147 }
+		},
+		"minigame_13": {
+			"minigame_13": { "y": -1.93, "width": 175, "height": 147 }
+		},
+		"minigame_14": {
+			"minigame_14": { "x": 0.06, "y": -2.47, "width": 175, "height": 147 }
+		},
+		"minigame_2": {
+			"minigame_2": { "width": 175, "height": 147 }
+		},
+		"minigame_3": {
+			"minigame_3": { "y": -10, "width": 175, "height": 147 }
+		},
+		"minigame_4": {
+			"minigame_4": { "x": 1, "width": 175, "height": 147 }
+		},
+		"minigame_5": {
+			"minigame_5": { "width": 175, "height": 147 }
+		},
+		"minigame_6": {
+			"minigame_6": { "width": 175, "height": 147 }
+		},
+		"minigame_7": {
+			"minigame_7": { "width": 175, "height": 147 }
+		},
+		"minigame_8": {
+			"minigame_8": { "width": 175, "height": 147 }
+		},
+		"minigame_9": {
+			"minigame_9": { "x": -0.11, "y": -0.75, "width": 175, "height": 147 }
+		},
+		"minigame_selected_flash": {
+			"minigame_selected_flash": { "x": 0.14, "y": -0.44, "width": 277, "height": 249 }
+		},
+		"minigame_selected_overlay": {
+			"minigame_selected_overlay": { "x": -0.38, "y": 1.13, "width": 207, "height": 179 }
+		},
+		"minigame_spinner_bg": {
+			"minigame_spinner_bg": { "x": -10.56, "y": -33.88, "width": 221, "height": 521 }
+		},
+		"minigame_spinner_overlay": {
+			"minigame_spinner_overlay": { "x": -2.47, "y": 1.94, "width": 221, "height": 544 }
+		},
+		"spinner_arrow": {
+			"spinner_arrow": { "x": 59.53, "y": 4.63, "width": 128, "height": 65 }
+		},
+		"spinner_blurLoop_1": {
+			"spinner_blurLoop_1": { "y": 0.28, "width": 175, "height": 487 },
+			"spinner_blurLoop_2": { "y": 0.28, "width": 175, "height": 487 },
+			"spinner_blurLoop_3": { "y": 0.28, "width": 175, "height": 487 },
+			"spinner_blurLoop_4": { "y": 0.28, "width": 175, "height": 487 },
+			"spinner_blurLoop_5": { "y": 0.28, "width": 175, "height": 487 }
+		},
+		"spinner_overlay_coverup": {
+			"minigame_spinner_overlay_coverup": { "x": -232.6, "y": 17.02, "width": 221, "height": 793 }
+		}
+	}
+},
+"animations": {
+	"select_mingame_bouncedown": {
+		"slots": {
+			"minigame_5": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1.8333, "name": "minigame_5" }
+				]
+			},
+			"minigame_9": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_9" }
+				]
+			},
+			"minigame_10": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_11": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_12": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_13": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_14": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_selected_flash": {
+				"color": [
+					{ "time": 1.0666, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.1333, "color": "ffffffff" },
+					{ "time": 1.2, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 1, "name": "minigame_selected_flash" }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -721.43,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -1225.33 },
+					{ "time": 1.0666, "x": 0, "y": -1117.32, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -1117.32 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -721.43,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -1225.33 },
+					{ "time": 1.0666, "x": 0, "y": -1117.32, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -1117.32 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -721.43,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -1225.33 },
+					{ "time": 1.0666, "x": 0, "y": -1117.32, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -1117.32 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -721.43,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -1225.33 },
+					{ "time": 1.0666, "x": 0, "y": -1117.32, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -1117.32 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 434.36,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -69.53 },
+					{ "time": 1.0666, "x": 0, "y": 38.47, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": 38.47 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 434.38,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -69.54 },
+					{ "time": 1.0666, "x": 0, "y": 38.47, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": 38.47 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 434.36,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -69.53 },
+					{ "time": 1.0666, "x": 0, "y": 38.47, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": 38.47 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 434.36,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -69.53 },
+					{ "time": 1.0666, "x": 0, "y": 38.47, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": 38.47 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.0666, "angle": -10 },
+					{ "time": 0.1333, "angle": 10 },
+					{ "time": 0.2, "angle": -4 },
+					{ "time": 0.2666, "angle": 0, "curve": "stepped" },
+					{ "time": 0.4, "angle": 0 },
+					{ "time": 0.4666, "angle": 3 },
+					{ "time": 0.6, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1, "curve": "stepped" },
+					{ "time": 1, "x": 0.99, "y": 1 },
+					{ "time": 1.0666, "x": 1.078, "y": 1.1 },
+					{ "time": 1.1666, "x": 0.99, "y": 1 }
+				]
+			},
+			"minigame_9": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -593.17,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -1097.1 },
+					{ "time": 1.0666, "x": 0, "y": -989.08, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -989.08 }
+				]
+			}
+		}
+	},
+	"select_mingame_bouncedown_idle": {
+		"slots": {
+			"minigame_5": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_5" }
+				]
+			},
+			"minigame_9": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_9" }
+				]
+			},
+			"minigame_10": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_11": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_12": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_13": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_14": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -1117.32 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -1117.32 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -1117.32 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -1117.32 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 38.47 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 38.47 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 38.47 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 38.47 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1 }
+				]
+			},
+			"minigame_9": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -989.08 }
+				]
+			}
+		}
+	},
+	"select_mingame_bumperballs": {
+		"slots": {
+			"minigame_9": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_10": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_11": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_12": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_13": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_13" }
+				]
+			},
+			"minigame_14": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_selected_flash": {
+				"color": [
+					{ "time": 1.1333, "color": "ffffffff" },
+					{ "time": 1.2666, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 1, "name": "minigame_selected_flash" }
+				]
+			},
+			"minigame_selected_overlay": {
+				"attachment": [
+					{ "time": 1.0666, "name": "minigame_selected_overlay" }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -721.43,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.5666, "x": 0, "y": -952.56 },
+					{ "time": 1.0666, "x": 0, "y": -981.56, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -981.56 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -721.43,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.5666, "x": 0, "y": -952.56 },
+					{ "time": 1.0666, "x": 0, "y": -981.56, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -981.56 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -721.43,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.5666, "x": 0, "y": -952.56 },
+					{ "time": 1.0666, "x": 0, "y": -981.56, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -981.56 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -721.43,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.5666, "x": 0, "y": -952.56 },
+					{ "time": 1.0666, "x": 0, "y": -981.56, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -981.56 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 434.36,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.5666, "x": 0, "y": 203.23 },
+					{ "time": 1.0666, "x": 0, "y": 174.22 },
+					{ "time": 1.8333, "x": 0, "y": 174.23 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 434.36,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.5666, "x": 0, "y": 203.23 },
+					{ "time": 1.0666, "x": 0, "y": 174.23, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": 174.23 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 434.36,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.5666, "x": 0, "y": 203.23 },
+					{ "time": 1.0666, "x": 0, "y": 174.23, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": 174.23 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 434.36,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.5666, "x": 0, "y": 203.23 },
+					{ "time": 1.0666, "x": 0, "y": 174.23, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": 174.23 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.0666, "angle": -10 },
+					{ "time": 0.1333, "angle": 10 },
+					{ "time": 0.2, "angle": -4 },
+					{ "time": 0.2666, "angle": 0, "curve": "stepped" },
+					{ "time": 0.4, "angle": 0 },
+					{ "time": 0.4666, "angle": 3 },
+					{ "time": 0.6, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1, "curve": "stepped" },
+					{ "time": 1, "x": 0.99, "y": 1 },
+					{ "time": 1.0666, "x": 1.078, "y": 1.1 },
+					{ "time": 1.1666, "x": 0.99, "y": 1 }
+				]
+			},
+			"minigame_9": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -152.46 }
+				]
+			},
+			"minigame_10": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -152.46 }
+				]
+			},
+			"minigame_11": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -152.46 }
+				]
+			},
+			"minigame_12": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -152.46 }
+				]
+			},
+			"minigame_13": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -1325.63,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.5666, "x": 0, "y": -1546.77 },
+					{ "time": 1.0666, "x": 0, "y": -1576.08, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -1576.08 }
+				]
+			},
+			"minigame_14": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -152.46 }
+				]
+			}
+		}
+	},
+	"select_mingame_bumperballs_idle": {
+		"slots": {
+			"minigame_9": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_10": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_11": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_12": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_13": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_13" }
+				]
+			},
+			"minigame_14": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -981.56 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -981.56 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -981.56 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -981.56 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 174.23 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 174.23 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 174.23 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 174.23 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1 }
+				]
+			},
+			"minigame_9": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -152.46 }
+				]
+			},
+			"minigame_10": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -152.46 }
+				]
+			},
+			"minigame_11": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -152.46 }
+				]
+			},
+			"minigame_12": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -152.46 }
+				]
+			},
+			"minigame_13": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -1576.08 }
+				]
+			},
+			"minigame_14": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -152.46 }
+				]
+			}
+		}
+	},
+	"select_mingame_catchit": {
+		"slots": {
+			"minigame_9": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_10": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_11": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_12": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_13": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_14": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_selected_flash": {
+				"color": [
+					{ "time": 1.1333, "color": "ffffffff" },
+					{ "time": 1.2666, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 1, "name": "minigame_selected_flash" }
+				]
+			},
+			"minigame_selected_overlay": {
+				"attachment": [
+					{ "time": 1.0666, "name": "minigame_selected_overlay" }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -721.43,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.5666, "x": 0, "y": -952.56 },
+					{ "time": 1.0666, "x": 0, "y": -981.56, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -981.56 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -721.43,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.5666, "x": 0, "y": -952.56 },
+					{ "time": 1.0666, "x": 0, "y": -981.56, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -981.56 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -721.43,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.5666, "x": 0, "y": -952.56 },
+					{ "time": 1.0666, "x": 0, "y": -981.56, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -981.56 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -721.43,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.5666, "x": 0, "y": -952.56 },
+					{ "time": 1.0666, "x": 0, "y": -981.56, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -981.56 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 434.36,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.5666, "x": 0, "y": 203.23 },
+					{ "time": 1.0666, "x": 0, "y": 174.23, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": 174.23 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 434.36,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.5666, "x": 0, "y": 203.23 },
+					{ "time": 1.0666, "x": 0, "y": 174.23, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": 174.23 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 434.36,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.5666, "x": 0, "y": 203.23 },
+					{ "time": 1.0666, "x": 0, "y": 174.23, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": 174.23 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 434.36,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.5666, "x": 0, "y": 203.23 },
+					{ "time": 1.0666, "x": 0, "y": 174.23, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": 174.23 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.0666, "angle": -10 },
+					{ "time": 0.1333, "angle": 10 },
+					{ "time": 0.2, "angle": -4 },
+					{ "time": 0.2666, "angle": 0, "curve": "stepped" },
+					{ "time": 0.4, "angle": 0 },
+					{ "time": 0.4666, "angle": 3 },
+					{ "time": 0.6, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1, "curve": "stepped" },
+					{ "time": 1, "x": 0.99, "y": 1 },
+					{ "time": 1.0666, "x": 1.078, "y": 1.1 },
+					{ "time": 1.1666, "x": 0.99, "y": 1 }
+				]
+			},
+			"minigame_9": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -152.46 }
+				]
+			},
+			"minigame_10": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -152.46 }
+				]
+			},
+			"minigame_11": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -152.46 }
+				]
+			},
+			"minigame_12": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -152.46 }
+				]
+			},
+			"minigame_13": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -152.46 }
+				]
+			},
+			"minigame_14": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -152.46 }
+				]
+			}
+		}
+	},
+	"select_mingame_catchit_idle": {
+		"slots": {
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -981.56 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -981.56 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -981.56 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -981.56 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 174.23 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 174.23 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 174.23 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 174.23 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1 }
+				]
+			}
+		}
+	},
+	"select_mingame_helicopter": {
+		"slots": {
+			"minigame_5": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_5" },
+					{ "time": 1.0666, "name": "minigame_5" },
+					{ "time": 1.8333, "name": "minigame_5" }
+				]
+			},
+			"minigame_9": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_10": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_11": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_12": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_13": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_14": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_14" }
+				]
+			},
+			"minigame_selected_flash": {
+				"color": [
+					{ "time": 1.0666, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.1333, "color": "ffffffff" },
+					{ "time": 1.2, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 1, "name": "minigame_selected_flash" }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -131.73,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -698.39, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -698.39 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -131.73,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -698.39, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -698.39 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -131.73,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -698.38, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -698.38 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -132.49,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -699.15, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -699.15 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 1040.61,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": 473.95, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": 473.95 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -132.09,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -698.75, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -698.75 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -132.09,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -698.75, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -698.75 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -132.09,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -698.75, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -698.75 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.0666, "angle": -10 },
+					{ "time": 0.1333, "angle": 10 },
+					{ "time": 0.2, "angle": -4 },
+					{ "time": 0.2666, "angle": 0, "curve": "stepped" },
+					{ "time": 0.4, "angle": 0 },
+					{ "time": 0.4666, "angle": 3 },
+					{ "time": 0.6, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1, "curve": "stepped" },
+					{ "time": 1, "x": 0.99, "y": 1 },
+					{ "time": 1.0666, "x": 1.078, "y": 1.1 },
+					{ "time": 1.1666, "x": 0.99, "y": 1 }
+				]
+			},
+			"minigame_9": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -423.7 }
+				]
+			},
+			"minigame_10": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -423.7 }
+				]
+			},
+			"minigame_11": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -423.7 }
+				]
+			},
+			"minigame_12": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -423.7 }
+				]
+			},
+			"minigame_13": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -423.7 }
+				]
+			},
+			"minigame_14": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -1156.67,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -1726.09, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -1726.09 }
+				]
+			}
+		}
+	},
+	"select_mingame_helicopter_idle": {
+		"slots": {
+			"minigame_5": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_5" }
+				]
+			},
+			"minigame_9": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_10": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_11": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_12": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_13": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_14": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_14" }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -698.39 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -698.39 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -698.38 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -699.15 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 473.95 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -698.75 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -698.75 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -698.75 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1 }
+				]
+			},
+			"minigame_9": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -423.7 }
+				]
+			},
+			"minigame_10": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -423.7 }
+				]
+			},
+			"minigame_11": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -423.7 }
+				]
+			},
+			"minigame_12": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -423.7 }
+				]
+			},
+			"minigame_13": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -423.7 }
+				]
+			},
+			"minigame_14": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -1726.09 }
+				]
+			}
+		}
+	},
+	"select_mingame_knockdown": {
+		"slots": {
+			"minigame_5": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1.8333, "name": "minigame_5" }
+				]
+			},
+			"minigame_9": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_10": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_11": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_12": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_13": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_14": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_selected_flash": {
+				"color": [
+					{ "time": 1.0666, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.1333, "color": "ffffffff" },
+					{ "time": 1.2, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 1, "name": "minigame_selected_flash" }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -721.43,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -1225.33 },
+					{ "time": 1.0666, "x": 0, "y": -1117.32, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -1117.32 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -721.43,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -1225.33 },
+					{ "time": 1.0666, "x": 0, "y": -1117.32, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -1117.32 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -721.43,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -1225.33 },
+					{ "time": 1.0666, "x": 0, "y": -1117.32, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -1117.32 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -721.43,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -1225.33 },
+					{ "time": 1.0666, "x": 0, "y": -1117.32, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -1117.32 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 434.36,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -69.53 },
+					{ "time": 1.0666, "x": 0, "y": 38.47, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": 38.47 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 434.38,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -69.54 },
+					{ "time": 1.0666, "x": 0, "y": 38.47, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": 38.47 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 434.36,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -69.53 },
+					{ "time": 1.0666, "x": 0, "y": 38.47, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": 38.47 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 434.36,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -69.53 },
+					{ "time": 1.0666, "x": 0, "y": 38.47, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": 38.47 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.0666, "angle": -10 },
+					{ "time": 0.1333, "angle": 10 },
+					{ "time": 0.2, "angle": -4 },
+					{ "time": 0.2666, "angle": 0, "curve": "stepped" },
+					{ "time": 0.4, "angle": 0 },
+					{ "time": 0.4666, "angle": 3 },
+					{ "time": 0.6, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1, "curve": "stepped" },
+					{ "time": 1, "x": 0.99, "y": 1 },
+					{ "time": 1.0666, "x": 1.078, "y": 1.1 },
+					{ "time": 1.1666, "x": 0.99, "y": 1 }
+				]
+			},
+			"minigame_9": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -593.17,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -1097.1 },
+					{ "time": 1.0666, "x": 0, "y": -989.08, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -989.08 }
+				]
+			}
+		}
+	},
+	"select_mingame_knockdown_idle": {
+		"slots": {
+			"minigame_5": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_5" }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -1117.32 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -1117.32 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -1117.32 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -1117.32 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 38.47 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 38.47 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 38.47 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 38.47 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1 }
+				]
+			}
+		}
+	},
+	"select_mingame_match3": {
+		"slots": {
+			"minigame_5": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_5" },
+					{ "time": 1.0666, "name": "minigame_5" },
+					{ "time": 1.8333, "name": "minigame_5" }
+				]
+			},
+			"minigame_selected_flash": {
+				"color": [
+					{ "time": 1.0666, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.1333, "color": "ffffffff" },
+					{ "time": 1.2, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 1, "name": "minigame_selected_flash" }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -131.73,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -698.39, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -698.39 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -131.73,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -698.39, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -698.39 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -131.73,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -698.38, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -698.38 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -132.49,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -699.15, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -699.15 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 1040.61,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": 473.95, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": 473.95 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -132.09,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -698.75, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -698.75 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -132.09,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -698.75, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -698.75 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -132.09,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -698.75, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -698.75 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.0666, "angle": -10 },
+					{ "time": 0.1333, "angle": 10 },
+					{ "time": 0.2, "angle": -4 },
+					{ "time": 0.2666, "angle": 0, "curve": "stepped" },
+					{ "time": 0.4, "angle": 0 },
+					{ "time": 0.4666, "angle": 3 },
+					{ "time": 0.6, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1, "curve": "stepped" },
+					{ "time": 1, "x": 0.99, "y": 1 },
+					{ "time": 1.0666, "x": 1.078, "y": 1.1 },
+					{ "time": 1.1666, "x": 0.99, "y": 1 }
+				]
+			}
+		}
+	},
+	"select_mingame_match_idle": {
+		"slots": {
+			"minigame_5": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_5" }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -698.39 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -698.39 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -698.38 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -699.15 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 473.95 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -698.75 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -698.75 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -698.75 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1 }
+				]
+			}
+		}
+	},
+	"select_mingame_metro": {
+		"slots": {
+			"minigame_5": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1.8333, "name": "minigame_5" }
+				]
+			},
+			"minigame_10": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_10" }
+				]
+			},
+			"minigame_selected_flash": {
+				"color": [
+					{ "time": 1.0666, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.1333, "color": "ffffffff" },
+					{ "time": 1.2, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 1, "name": "minigame_selected_flash" }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -721.43,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -1225.33 },
+					{ "time": 1.0666, "x": 0, "y": -1269.55, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -1269.55 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -721.43,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -1225.33 },
+					{ "time": 1.0666, "x": 0, "y": -1269.55, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -1269.55 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -721.43,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -1225.33 },
+					{ "time": 1.0666, "x": 0, "y": -1269.55, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -1269.55 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -721.43,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -1225.33 },
+					{ "time": 1.0666, "x": 0, "y": -1269.55, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -1269.55 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 434.36,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -69.53 },
+					{ "time": 1.0666, "x": 0, "y": -113.75, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -113.75 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 434.36,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -69.53 },
+					{ "time": 1.0666, "x": 0, "y": -113.75, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -113.75 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 434.4,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -69.53 },
+					{ "time": 1.0666, "x": 0, "y": -113.75, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -113.75 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 434.36,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -69.53 },
+					{ "time": 1.0666, "x": 0, "y": -113.75, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -113.75 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.0666, "angle": -10 },
+					{ "time": 0.1333, "angle": 10 },
+					{ "time": 0.2, "angle": -4 },
+					{ "time": 0.2666, "angle": 0, "curve": "stepped" },
+					{ "time": 0.4, "angle": 0 },
+					{ "time": 0.4666, "angle": 3 },
+					{ "time": 0.6, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1, "curve": "stepped" },
+					{ "time": 1, "x": 0.99, "y": 1 },
+					{ "time": 1.0666, "x": 1.078, "y": 1.1 },
+					{ "time": 1.1666, "x": 0.99, "y": 1 }
+				]
+			},
+			"minigame_10": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -584.14,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -1088.08 },
+					{ "time": 1.0666, "x": 0, "y": -1132.29, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -1132.29 }
+				]
+			}
+		}
+	},
+	"select_mingame_metro_idle": {
+		"slots": {
+			"minigame_5": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_10": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_10" }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -721.43 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -721.43 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -721.43 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -721.43 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 434.36 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 434.36 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 434.4 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 434.36 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1 }
+				]
+			},
+			"minigame_10": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -1132.29 }
+				]
+			}
+		}
+	},
+	"select_mingame_pizzablast": {
+		"slots": {
+			"minigame_5": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_5" },
+					{ "time": 1.8333, "name": "minigame_5" }
+				]
+			},
+			"minigame_11": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_11" }
+				]
+			},
+			"minigame_selected_flash": {
+				"color": [
+					{ "time": 1.0666, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.1333, "color": "ffffffff" },
+					{ "time": 1.2, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 1, "name": "minigame_selected_flash" }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -131.7,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.9333,
+						"x": 0,
+						"y": -485.76,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -403.27, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -403.27 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -131.73,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.9333,
+						"x": 0,
+						"y": -485.76,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -403.26, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -403.26 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -131.73,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.9333,
+						"x": 0,
+						"y": -485.76,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -403.26, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -403.26 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -1287.89,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.9333,
+						"x": 0,
+						"y": -1642.27,
+						"curve": [ 0, 0.85, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -1559.69, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -1559.69 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -132.09,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.9333,
+						"x": 0,
+						"y": -486.47,
+						"curve": [ 0, 0.85, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -403.89, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -403.89 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -132.09,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.9333,
+						"x": 0,
+						"y": -486.47,
+						"curve": [ 0, 0.85, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -403.89, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -403.89 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -132.09,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.9333,
+						"x": 0,
+						"y": -486.47,
+						"curve": [ 0, 0.85, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -403.89, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -403.89 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -132.09,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.9333,
+						"x": 0,
+						"y": -486.47,
+						"curve": [ 0, 0.85, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -403.89, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -403.89 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.0666, "angle": -10 },
+					{ "time": 0.1333, "angle": 10 },
+					{ "time": 0.2, "angle": -4 },
+					{ "time": 0.2666, "angle": 0, "curve": "stepped" },
+					{ "time": 0.4, "angle": 0 },
+					{ "time": 0.4666, "angle": 3 },
+					{ "time": 0.6, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1, "curve": "stepped" },
+					{ "time": 1, "x": 0.99, "y": 1 },
+					{ "time": 1.0666, "x": 1.078, "y": 1.1 },
+					{ "time": 1.1666, "x": 0.99, "y": 1 }
+				]
+			},
+			"minigame_11": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -1013.34,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -1367.41 },
+					{ "time": 1.0666, "x": 0, "y": -1284.91, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -1284.91 }
+				]
+			}
+		}
+	},
+	"select_mingame_pizzablast_idle": {
+		"slots": {
+			"minigame_5": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_5" }
+				]
+			},
+			"minigame_11": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_11" }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -131.7 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -131.73 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -131.73 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -1287.89 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -132.09 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -132.09 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -132.09 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -132.09 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1 }
+				]
+			},
+			"minigame_11": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -1284.91 }
+				]
+			}
+		}
+	},
+	"select_mingame_popit": {
+		"slots": {
+			"minigame_5": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_5" },
+					{ "time": 1.8333, "name": "minigame_5" }
+				]
+			},
+			"minigame_selected_flash": {
+				"color": [
+					{ "time": 1.0666, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.1333, "color": "ffffffff" },
+					{ "time": 1.2, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 1, "name": "minigame_selected_flash" }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -131.73,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.3, "x": 0, "y": -485.76 },
+					{ "time": 1.0666, "x": 0, "y": -553.92, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -553.92 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -131.73,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.3, "x": 0, "y": -485.76 },
+					{ "time": 1.0666, "x": 0, "y": -553.92, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -553.92 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -131.73,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.3, "x": 0, "y": -485.76 },
+					{ "time": 1.0666, "x": 0, "y": -553.92, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -553.92 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -1287.89,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.3, "x": 0, "y": -1642.27 },
+					{ "time": 1.0666, "x": 0, "y": -1710.35, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -1710.35 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -132.09,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.3, "x": 0, "y": -486.47 },
+					{ "time": 1.0666, "x": 0, "y": -554.55, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -554.55 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -132.09,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.3, "x": 0, "y": -486.47 },
+					{ "time": 1.0666, "x": 0, "y": -554.55, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -554.55 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -132.09,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.3, "x": 0, "y": -486.47 },
+					{ "time": 1.0666, "x": 0, "y": -554.55, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -554.55 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -132.09,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.3, "x": 0, "y": -486.47 },
+					{ "time": 1.0666, "x": 0, "y": -554.55, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -554.55 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.0666, "angle": -10 },
+					{ "time": 0.1333, "angle": 10 },
+					{ "time": 0.2, "angle": -4 },
+					{ "time": 0.2666, "angle": 0, "curve": "stepped" },
+					{ "time": 0.4, "angle": 0 },
+					{ "time": 0.4666, "angle": 3 },
+					{ "time": 0.6, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1, "curve": "stepped" },
+					{ "time": 1, "x": 0.99, "y": 1 },
+					{ "time": 1.0666, "x": 1.078, "y": 1.1 },
+					{ "time": 1.1666, "x": 0.99, "y": 1 }
+				]
+			}
+		}
+	},
+	"select_mingame_popit_idle": {
+		"slots": {
+			"minigame_5": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_5" }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -553.92 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -553.92 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -553.92 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -1710.35 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -554.55 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -554.55 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -554.55 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -554.55 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1 }
+				]
+			}
+		}
+	},
+	"select_mingame_runner": {
+		"slots": {
+			"minigame_5": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_5" },
+					{ "time": 1.8333, "name": "minigame_5" }
+				]
+			},
+			"minigame_selected_flash": {
+				"color": [
+					{ "time": 1.0666, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.1333, "color": "ffffffff" },
+					{ "time": 1.2, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 1, "name": "minigame_selected_flash" }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 138.26,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.9333,
+						"x": 0,
+						"y": -195.76,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -254.38, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -254.38 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 138.26,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.9333,
+						"x": 0,
+						"y": -195.76,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -254.38, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -254.38 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 138.26,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.9333,
+						"x": 0,
+						"y": -195.76,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -254.38, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -254.38 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -1017.89,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -1352.19 },
+					{ "time": 1.0666, "x": 0, "y": -1387.9, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -1387.9 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 137.9,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -196.39 },
+					{ "time": 1.0666, "x": 0, "y": -232.1, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -232.1 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 137.9,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -196.39 },
+					{ "time": 1.0666, "x": 0, "y": -232.1, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -232.1 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 137.9,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -196.39 },
+					{ "time": 1.0666, "x": 0, "y": -232.1, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -232.1 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 137.9,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -196.39 },
+					{ "time": 1.0666, "x": 0, "y": -252.1, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -252.1 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.0666, "angle": -10 },
+					{ "time": 0.1333, "angle": 10 },
+					{ "time": 0.2, "angle": -4 },
+					{ "time": 0.2666, "angle": 0, "curve": "stepped" },
+					{ "time": 0.4, "angle": 0 },
+					{ "time": 0.4666, "angle": 3 },
+					{ "time": 0.6, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1, "curve": "stepped" },
+					{ "time": 1, "x": 0.99, "y": 1 },
+					{ "time": 1.0666, "x": 1.078, "y": 1.1 },
+					{ "time": 1.1666, "x": 0.99, "y": 1 }
+				]
+			}
+		}
+	},
+	"select_mingame_runner_idle": {
+		"slots": {
+			"minigame_5": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_5" }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -254.38 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -254.38 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -254.38 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -1387.9 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -232.1 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -232.1 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -232.1 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -252.1 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1 }
+				]
+			}
+		}
+	},
+	"select_mingame_snailsavior": {
+		"slots": {
+			"minigame_5": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_5" },
+					{ "time": 1.8333, "name": "minigame_5" }
+				]
+			},
+			"minigame_12": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_12" }
+				]
+			},
+			"minigame_selected_flash": {
+				"color": [
+					{ "time": 1.0666, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.1333, "color": "ffffffff" },
+					{ "time": 1.2, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 1, "name": "minigame_selected_flash" }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 138.26,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.9333,
+						"x": 0,
+						"y": -195.76,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -254.38, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -254.38 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 138.26,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.9333,
+						"x": 0,
+						"y": -195.76,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -254.38, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -254.38 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 138.26,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.9333,
+						"x": 0,
+						"y": -195.76,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -254.38, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -254.38 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -1017.89,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -1352.19 },
+					{ "time": 1.0666, "x": 0, "y": -1387.9, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -1387.9 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 137.9,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -196.39 },
+					{ "time": 1.0666, "x": 0, "y": -232.1, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -232.1 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 137.9,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -196.39 },
+					{ "time": 1.0666, "x": 0, "y": -232.1, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -232.1 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 137.9,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -196.39 },
+					{ "time": 1.0666, "x": 0, "y": -232.1, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -232.1 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 137.86,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -196.39 },
+					{ "time": 1.0666, "x": 0, "y": -252.1, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -252.1 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.0666, "angle": -10 },
+					{ "time": 0.1333, "angle": 10 },
+					{ "time": 0.2, "angle": -4 },
+					{ "time": 0.2666, "angle": 0, "curve": "stepped" },
+					{ "time": 0.4, "angle": 0 },
+					{ "time": 0.4666, "angle": 3 },
+					{ "time": 0.6, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1, "curve": "stepped" },
+					{ "time": 1, "x": 0.99, "y": 1 },
+					{ "time": 1.0666, "x": 1.078, "y": 1.1 },
+					{ "time": 1.1666, "x": 0.99, "y": 1 }
+				]
+			},
+			"minigame_12": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -1037.8,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.9333,
+						"x": 0,
+						"y": -1372.06,
+						"curve": [ 0, 0.17, 0, 0.7 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -1427.77, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -1427.77 }
+				]
+			}
+		}
+	},
+	"select_mingame_snailsavior_idle": {
+		"slots": {
+			"minigame_5": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_5" }
+				]
+			},
+			"minigame_12": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_12" }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -254.38 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -254.38 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -254.38 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -1387.9 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -232.1 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -232.1 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -232.1 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -252.1 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1 }
+				]
+			},
+			"minigame_12": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -1427.77 }
+				]
+			}
+		}
+	},
+	"select_mingame_tapit": {
+		"slots": {
+			"minigame_5": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1.8333, "name": "minigame_5" }
+				]
+			},
+			"minigame_selected_flash": {
+				"color": [
+					{ "time": 1.0666, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.1333, "color": "ffffffff" },
+					{ "time": 1.2, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 1, "name": "minigame_selected_flash" }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -721.43,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -1225.33 },
+					{ "time": 1.0666, "x": 0, "y": -1269.55, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -1269.55 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -721.43,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -1225.33 },
+					{ "time": 1.0666, "x": 0, "y": -1269.55, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -1269.55 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -721.43,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -1225.33 },
+					{ "time": 1.0666, "x": 0, "y": -1269.55, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -1269.55 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -721.43,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -1225.33 },
+					{ "time": 1.0666, "x": 0, "y": -1269.55, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -1269.55 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 434.36,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -69.53 },
+					{ "time": 1.0666, "x": 0, "y": -113.75, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -113.75 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 434.36,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -69.53 },
+					{ "time": 1.0666, "x": 0, "y": -113.75, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -113.75 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 434.36,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -69.53 },
+					{ "time": 1.0666, "x": 0, "y": -113.75, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -113.75 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 434.36,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 0.9333, "x": 0, "y": -69.53 },
+					{ "time": 1.0666, "x": 0, "y": -113.75, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -113.75 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.0666, "angle": -10 },
+					{ "time": 0.1333, "angle": 10 },
+					{ "time": 0.2, "angle": -4 },
+					{ "time": 0.2666, "angle": 0, "curve": "stepped" },
+					{ "time": 0.4, "angle": 0 },
+					{ "time": 0.4666, "angle": 3 },
+					{ "time": 0.6, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1, "curve": "stepped" },
+					{ "time": 1, "x": 0.99, "y": 1 },
+					{ "time": 1.0666, "x": 1.078, "y": 1.1 },
+					{ "time": 1.1666, "x": 0.99, "y": 1 }
+				]
+			}
+		}
+	},
+	"select_mingame_tapit_idle": {
+		"slots": {
+			"minigame_5": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_5" }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -1269.55 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -1269.55 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -1269.55 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -1269.55 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -113.75 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -113.75 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -113.75 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -113.75 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1 }
+				]
+			}
+		}
+	},
+	"select_mingame_tramp": {
+		"slots": {
+			"minigame_5": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_5" },
+					{ "time": 1.8333, "name": "minigame_5" }
+				]
+			},
+			"minigame_selected_flash": {
+				"color": [
+					{ "time": 1.0666, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.1333, "color": "ffffffff" },
+					{ "time": 1.2, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 1, "name": "minigame_selected_flash" }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -131.73,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.9333,
+						"x": 0,
+						"y": -485.76,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -403.26, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -403.26 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -131.73,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.9333,
+						"x": 0,
+						"y": -485.76,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -403.26, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -403.26 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -131.73,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.9333,
+						"x": 0,
+						"y": -485.76,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -403.26, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -403.26 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -1287.89,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.9333,
+						"x": 0,
+						"y": -1642.27,
+						"curve": [ 0, 0.85, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -1559.69, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -1559.69 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -132.09,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.9333,
+						"x": 0,
+						"y": -486.47,
+						"curve": [ 0, 0.85, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -403.89, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -403.89 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -132.09,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.9333,
+						"x": 0,
+						"y": -486.47,
+						"curve": [ 0, 0.85, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -403.89, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -403.89 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -132.09,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.9333,
+						"x": 0,
+						"y": -486.47,
+						"curve": [ 0, 0.85, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -403.89, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -403.89 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -132.09,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.9333,
+						"x": 0,
+						"y": -486.47,
+						"curve": [ 0, 0.85, 0.318, 0.94 ]
+					},
+					{ "time": 1.0666, "x": 0, "y": -403.89, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -403.89 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.0666, "angle": -10 },
+					{ "time": 0.1333, "angle": 10 },
+					{ "time": 0.2, "angle": -4 },
+					{ "time": 0.2666, "angle": 0, "curve": "stepped" },
+					{ "time": 0.4, "angle": 0 },
+					{ "time": 0.4666, "angle": 3 },
+					{ "time": 0.6, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1, "curve": "stepped" },
+					{ "time": 1, "x": 0.99, "y": 1 },
+					{ "time": 1.0666, "x": 1.078, "y": 1.1 },
+					{ "time": 1.1666, "x": 0.99, "y": 1 }
+				]
+			}
+		}
+	},
+	"select_mingame_tramp_idle": {
+		"slots": {
+			"minigame_5": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_5" }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -403.26 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -403.26 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -403.26 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -1559.69 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -403.89 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -403.89 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -403.89 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -403.89 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1 }
+				]
+			}
+		}
+	},
+	"select_mingame_whack": {
+		"slots": {
+			"minigame_5": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_5" },
+					{ "time": 0.8333, "name": "minigame_5" },
+					{ "time": 1.8333, "name": "minigame_5" }
+				]
+			},
+			"minigame_selected_flash": {
+				"color": [
+					{ "time": 1.0666, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.1333, "color": "ffffffff" },
+					{ "time": 1.2, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 1, "name": "minigame_selected_flash" }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -131.73,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.8333,
+						"x": 0,
+						"y": -709.89,
+						"curve": [ 0, 0.35, 0.331, 0.68 ]
+					},
+					{ "time": 0.9666, "x": 0, "y": -844.15, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -844.15 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -131.73,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.8333,
+						"x": 0,
+						"y": -709.89,
+						"curve": [ 0, 0.35, 0.331, 0.68 ]
+					},
+					{ "time": 0.9666, "x": 0, "y": -844.15, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -844.15 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -131.73,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.8333,
+						"x": 0,
+						"y": -709.89,
+						"curve": [ 0, 0.35, 0.331, 0.68 ]
+					},
+					{ "time": 0.9666, "x": 0, "y": -844.15, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -844.15 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -132.49,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.8333,
+						"x": 0,
+						"y": -710.66,
+						"curve": [ 0, 0.35, 0.331, 0.68 ]
+					},
+					{ "time": 0.9666, "x": 0, "y": -844.92, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -844.92 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 1040.61,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.8333,
+						"x": 0,
+						"y": 462.44,
+						"curve": [ 0, 0.35, 0.331, 0.68 ]
+					},
+					{ "time": 0.9666, "x": 0, "y": 328.18, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": 328.18 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -132.09,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.8333,
+						"x": 0,
+						"y": -710.26,
+						"curve": [ 0, 0.35, 0.331, 0.68 ]
+					},
+					{ "time": 0.9666, "x": 0, "y": -844.52, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -844.52 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -132.09,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.8333,
+						"x": 0,
+						"y": -710.26,
+						"curve": [ 0, 0.35, 0.331, 0.68 ]
+					},
+					{ "time": 0.9666, "x": 0, "y": -844.52, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -844.52 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -132.09,
+						"curve": [ 0, 0.57, 0.318, 0.94 ]
+					},
+					{
+						"time": 0.8333,
+						"x": 0,
+						"y": -710.26,
+						"curve": [ 0, 0.35, 0.331, 0.68 ]
+					},
+					{ "time": 0.9666, "x": 0, "y": -844.52, "curve": "stepped" },
+					{ "time": 1.8333, "x": 0, "y": -844.52 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.0666, "angle": -10 },
+					{ "time": 0.1333, "angle": 10 },
+					{ "time": 0.2, "angle": -4 },
+					{ "time": 0.2666, "angle": 0, "curve": "stepped" },
+					{ "time": 0.4, "angle": 0 },
+					{ "time": 0.4666, "angle": 3 },
+					{ "time": 0.6, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1, "curve": "stepped" },
+					{ "time": 1, "x": 0.99, "y": 1 },
+					{ "time": 1.0666, "x": 1.078, "y": 1.1 },
+					{ "time": 1.1666, "x": 0.99, "y": 1 }
+				]
+			}
+		}
+	},
+	"select_mingame_whack_idle": {
+		"slots": {
+			"minigame_5": {
+				"attachment": [
+					{ "time": 0, "name": "minigame_5" }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"minigame_5": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -844.15 }
+				]
+			},
+			"minigame_6": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -844.15 }
+				]
+			},
+			"minigame_7": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -844.15 }
+				]
+			},
+			"minigame_8": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -844.92 }
+				]
+			},
+			"minigame_1": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 328.18 }
+				]
+			},
+			"minigame_2": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -844.52 }
+				]
+			},
+			"minigame_3": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -844.52 }
+				]
+			},
+			"minigame_4": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -844.52 }
+				]
+			},
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 }
+				]
+			},
+			"spinner_selected": {
+				"scale": [
+					{ "time": 0, "x": 0.99, "y": 1 }
+				]
+			}
+		}
+	},
+	"spin_loop": {
+		"slots": {
+			"minigame_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_2": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_3": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_4": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_5": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_6": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_7": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_8": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": "spinner_blurLoop_1" },
+					{ "time": 0.0666, "name": "spinner_blurLoop_2" },
+					{ "time": 0.1333, "name": "spinner_blurLoop_3" },
+					{ "time": 0.2, "name": "spinner_blurLoop_4" },
+					{ "time": 0.2666, "name": "spinner_blurLoop_5" },
+					{ "time": 0.3333, "name": "spinner_blurLoop_1" }
+				]
+			}
+		},
+		"bones": {
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.1, "angle": -4.69 },
+					{ "time": 0.2, "angle": 0.53 },
+					{ "time": 0.3, "angle": -3.47 }
+				]
+			}
+		}
+	},
+	"spin_loop_intro": {
+		"slots": {
+			"minigame_1": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_2": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_3": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_4": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_5": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_6": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_7": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"minigame_8": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			},
+			"spinner_blurLoop_1": {
+				"attachment": [
+					{ "time": 0, "name": "spinner_blurLoop_1" },
+					{ "time": 0.0666, "name": "spinner_blurLoop_2" },
+					{ "time": 0.1333, "name": "spinner_blurLoop_3" },
+					{ "time": 0.2, "name": "spinner_blurLoop_4" },
+					{ "time": 0.2666, "name": "spinner_blurLoop_5" },
+					{ "time": 0.3333, "name": "spinner_blurLoop_1" },
+					{ "time": 0.4, "name": "spinner_blurLoop_2" },
+					{ "time": 0.4666, "name": "spinner_blurLoop_3" },
+					{ "time": 0.5333, "name": "spinner_blurLoop_4" },
+					{ "time": 0.6, "name": "spinner_blurLoop_5" },
+					{ "time": 0.6333, "name": "spinner_blurLoop_1" },
+					{ "time": 0.6666, "name": "spinner_blurLoop_1" }
+				]
+			}
+		},
+		"bones": {
+			"spinner_arrow": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.1, "angle": -4.69 },
+					{ "time": 0.2, "angle": 0.53 },
+					{ "time": 0.3, "angle": -3.47 },
+					{ "time": 0.3333, "angle": 0 },
+					{ "time": 0.4333, "angle": -4.69 },
+					{ "time": 0.5333, "angle": 0.53 },
+					{ "time": 0.6333, "angle": -3.47 }
+				]
+			},
+			"spinner_overlay_coverup": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 0.2333, "x": 0, "y": -10.75 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 0.7,
+						"curve": [ 0.538, 0, 1, 0.49 ]
+					},
+					{ "time": 0.2333, "x": 1, "y": 1.05 },
+					{ "time": 0.3333, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 0.5333, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}

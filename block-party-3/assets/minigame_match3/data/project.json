@@ -1,0 +1,2233 @@
+{
+    "settings": {
+        "loader_fill_color": "#FEB446",
+        "loader_frame_color": "#FF9400",
+        "loader_bg_color": "",
+        "animation_transition_in": "slide",
+        "animation_transition_out": "slide",
+        "default_text": {
+            "color": "#595959",
+            "bgColor": "#000000",
+            "bgAlpha": 0,
+            "bgPadding": 0
+        },
+        "default_text_header": {
+            "color": "#595959",
+            "bgColor": "#000000",
+            "bgAlpha": 0,
+            "bgPadding": 0
+        },
+        "default_text_copy": {
+            "color": "#595959",
+            "bgColor": "#000000",
+            "bgAlpha": 0,
+            "bgPadding": 0
+        },
+        "share": {
+            "bgColor": "#55d8f6",
+            "textColor": "#333333"
+        },
+        "hints": {
+            "show": "true",
+            "delay": "6"
+        },
+        "levels_per_row": 3,
+        "rows_per_page": 3,
+        "points_per_gem": 10,
+        "promos": {
+            "enabled": false,
+            "src": "http:\/\/staging.workinmanbuilders.com\/tools\/promos\/1135CEBE693C6CA0035D523EFAAEC853F\/promos.json"
+        },
+        "text": [
+            {
+                "id": "loading",
+                "color": ""
+            },
+            {
+                "id": "promoscreen_header",
+                "color": ""
+            },
+            {
+                "id": "play_click",
+                "color": ""
+            },
+            {
+                "id": "play_tap",
+                "color": ""
+            },
+            {
+                "id": "replay_click",
+                "color": ""
+            },
+            {
+                "id": "replay_tap",
+                "color": ""
+            },
+            {
+                "id": "score_label",
+                "color": "#ffffff",
+                "textAlign": "center"
+            },
+            {
+                "id": "score_value",
+                "color": "#ffffff",
+                "textAlign": "center"
+            },
+            {
+                "id": "instruction_clear",
+                "color": "#ffffff",
+                "textAlign": "center",
+                "bgImage": {
+                    "enabled": false
+                }
+            },
+            {
+                "id": "instruction_score",
+                "color": "#ffffff",
+                "textAlign": "center",
+                "bgImage": {
+                    "enabled": false
+                }
+            },
+            {
+                "id": "target_label",
+                "color": "#ffffff",
+                "textAlign": "center"
+            },
+            {
+                "id": "target_value",
+                "color": "#ffffff",
+                "textAlign": "center"
+            },
+            {
+                "id": "target_clear",
+                "color": "#ffffff",
+                "textAlign": "center"
+            },
+            {
+                "id": "moves_label",
+                "color": "#ffffff",
+                "textAlign": "center"
+            },
+            {
+                "id": "moves_value",
+                "color": "#ffffff",
+                "textAlign": "center"
+            },
+            {
+                "id": "timer_label",
+                "color": "#ffffff",
+                "textAlign": "center"
+            },
+            {
+                "id": "timer_value",
+                "color": "#ffffff",
+                "textAlign": "center"
+            },
+            {
+                "id": "result_header",
+                "color": ""
+            },
+            {
+                "id": "result_copy",
+                "color": ""
+            },
+            {
+                "id": "share_header",
+                "color": "#ffffff"
+            },
+            {
+                "id": "share_copy",
+                "color": "#ffffff"
+            },
+            {
+                "id": "continue_btn",
+                "color": "#ffa200"
+            },
+            {
+                "id": "share_btn",
+                "color": "#ffa200"
+            },
+            {
+                "id": "replay_btn",
+                "color": "#ffffff"
+            },
+            {
+                "id": "copy_btn",
+                "color": "#ffa200"
+            },
+            {
+                "id": "next_btn",
+                "color": "#ffffff"
+            },
+            {
+                "id": "play_btn",
+                "color": "#ffa200"
+            },
+            {
+                "id": "hint_btn",
+                "color": "#ffa200"
+            },
+            {
+                "id": "advertisement",
+                "color": "#000000",
+                "bgColor": "#ffffff",
+                "bgAlpha": 1
+            },
+            {
+                "id": "promo_title",
+                "color": "#000000"
+            },
+            {
+                "id": "score_up",
+                "color": "#ffffff"
+            },
+            {
+                "id": "level_select",
+                "color": "#999999",
+                "textAlign": "center"
+            },
+            {
+                "id": "world_name",
+                "color": "#999999",
+                "textAlign": "center"
+            },
+            {
+                "id": "end_score_label",
+                "color": "#ffffff",
+                "textAlign": "center"
+            },
+            {
+                "id": "end_score_value",
+                "color": "#ffffff",
+                "textAlign": "center"
+            },
+            {
+                "id": "end_success_header",
+                "color": "#ffffff",
+                "textAlign": "center"
+            },
+            {
+                "id": "end_fail_header",
+                "color": "#ffffff",
+                "textAlign": "center"
+            },
+            {
+                "id": "end_fail_time",
+                "color": "#ffffff",
+                "textAlign": "center"
+            },
+            {
+                "id": "end_fail_moves",
+                "color": "#ffffff",
+                "textAlign": "center"
+            }
+        ],
+        "ad_bar_enabled": false
+    },
+    "matchSpecials": [
+        {
+            "id": "none",
+            "name": "None"
+        },
+        {
+            "id": "line_wipe",
+            "name": "Line Wipe"
+        },
+        {
+            "id": "color_wipe",
+            "name": "Color Wipe"
+        },
+        {
+            "id": "area_wipe",
+            "name": "Area Wipe"
+        }
+    ],
+    "matchConfigs": {
+        "match3": {
+            "type": "match3",
+            "name": "Match 3",
+            "effect": "none"
+        },
+        "match4": {
+            "type": "match4",
+            "name": "Match 4",
+            "effect": "line_wipe"
+        },
+        "match5": {
+            "type": "match5",
+            "name": "Match 5",
+            "effect": "area_wipe"
+        },
+        "matchT": {
+            "type": "matchL",
+            "name": "Match L",
+            "effect": "color_wipe"
+        },
+        "matchL": {
+            "type": "matchT",
+            "name": "Match T",
+            "effect": "color_wipe"
+        }
+    },
+    "preload": {
+        "images": {
+            "path": "images\/",
+            "array": [
+                {
+                    "id": "splash",
+                    "name": "splash",
+                    "type": "jpg",
+                    "align": "center",
+                    "resize": "fill_to"
+                },
+                {
+                    "id": "splash_logo",
+                    "name": "ui_logo",
+                    "type": "png",
+                    "x": 0,
+                    "y": -50,
+                    "align": "center",
+                    "location": "splash"
+                },
+                {
+                    "id": "button_play",
+                    "enabled": false
+                },
+                {
+                    "id": "button_sound_on",
+                    "name": "ui_soundon",
+                    "type": "png",
+                    "align": "top_left",
+                    "resize": "fit"
+                },
+                {
+                    "id": "button_sound_off",
+                    "name": "ui_soundoff",
+                    "type": "png"
+                },
+                {
+                    "id": "loader_bg",
+                    "name": "ui_loader_bg",
+                    "type": "png"
+                },
+                {
+                    "id": "loader_frame",
+                    "name": "ui_loader_top",
+                    "type": "png"
+                }
+            ]
+        },
+        "audio": {
+            "path": "audio\/",
+            "array": [
+                {
+                    "id": "music_splash",
+                    "name": "music_splash",
+                    "type": "mp3",
+                    "enabled": false
+                }
+            ]
+        }
+    },
+    "initial": {
+        "images": {
+            "path": "images\/",
+            "array": [
+                {
+                    "id": "button_level_unlocked",
+                    "name": "test_button_level_unlocked",
+                    "type": "png"
+                },
+                {
+                    "id": "button_level_locked",
+                    "name": "test_button_level_locked",
+                    "type": "png"
+                },
+                {
+                    "id": "button_world_prev",
+                    "name": "test_button_world_prev",
+                    "type": "png"
+                },
+                {
+                    "id": "button_world_next",
+                    "name": "test_button_world_next",
+                    "type": "png"
+                },
+                {
+                    "id": "star",
+                    "name": "test_star",
+                    "type": "png"
+                },
+                {
+                    "id": "star_earned",
+                    "name": "test_star_earned",
+                    "type": "png"
+                },
+                {
+                    "id": "level_select_bg",
+                    "name": "test_level_select_bg",
+                    "type": "png",
+                    "enabled": true
+                }
+            ]
+        },
+        "audio": {
+            "path": "audio\/",
+            "array": [
+                {
+                    "id": "sfx_button_click",
+                    "name": "sfx_button_click",
+                    "type": "mp3"
+                },
+                {
+                    "id": "sfx_button_over",
+                    "name": "sfx_button_over",
+                    "type": "mp3",
+                    "enabled": false
+                },
+                {
+                    "id": "sfx_screen_transition",
+                    "name": "sfx_screen_transition",
+                    "type": "mp3",
+                    "enabled": false
+                },
+                {
+                    "id": "sfx_select_level",
+                    "name": "sfx_select_level",
+                    "type": "mp3",
+                    "enabled": false
+                }
+            ]
+        }
+    },
+    "gameplay": {
+        "images": {
+            "path": "images\/",
+            "array": [
+                {
+                    "id": "gameplay_bg",
+                    "name": "bg_gameplay",
+                    "type": "png",
+                    "align": "center",
+                    "resize": "fill_to"
+                },
+                {
+                    "id": "button_replay",
+                    "name": "test_button_replay",
+                    "type": "png"
+                },
+                {
+                    "id": "button_next",
+                    "name": "test_button_next",
+                    "type": "png"
+                },
+                {
+                    "id": "button_share",
+                    "name": "btn_share",
+                    "type": "png"
+                },
+                {
+                    "id": "button_close",
+                    "name": "btn_close",
+                    "type": "png"
+                },
+                {
+                    "id": "button_copy",
+                    "name": "btn_copy",
+                    "type": "png"
+                },
+                {
+                    "id": "share_bg",
+                    "name": "ui_share_bg",
+                    "type": "png"
+                },
+                {
+                    "id": "star_end",
+                    "name": "test_star_end",
+                    "type": "png"
+                },
+                {
+                    "id": "star_end_earned",
+                    "name": "test_star_end_earned",
+                    "type": "png"
+                },
+                {
+                    "id": "gem_1",
+                    "name": "test_gem_1",
+                    "type": "png"
+                },
+                {
+                    "id": "gem_2",
+                    "name": "test_gem_2",
+                    "type": "png"
+                },
+                {
+                    "id": "gem_3",
+                    "name": "test_gem_3",
+                    "type": "png"
+                },
+                {
+                    "id": "gem_4",
+                    "name": "test_gem_4",
+                    "type": "png"
+                },
+                {
+                    "id": "gem_5",
+                    "name": "test_gem_5",
+                    "type": "png"
+                },
+                {
+                    "id": "gem_6",
+                    "name": "test_gem_6",
+                    "type": "png"
+                },
+                {
+                    "id": "grid",
+                    "name": "test_grid",
+                    "type": "png"
+                },
+                {
+                    "id": "block_inactive",
+                    "name": "test_block_inactive",
+                    "type": "png"
+                },
+                {
+                    "id": "block_locked",
+                    "name": "test_block_locked",
+                    "type": "png"
+                },
+                {
+                    "id": "block_concrete",
+                    "name": "test_block_concrete",
+                    "type": "png"
+                },
+                {
+                    "id": "block_glass",
+                    "name": "test_block_glass",
+                    "type": "png"
+                },
+                {
+                    "id": "particle_lock",
+                    "name": "test_particle_lock",
+                    "type": "png"
+                },
+                {
+                    "id": "particle_lock_chain",
+                    "name": "test_particle_lock_chain",
+                    "type": "png"
+                },
+                {
+                    "id": "particle_concrete",
+                    "name": "test_particle_concrete",
+                    "type": "png",
+                    "enabled": true
+                },
+                {
+                    "id": "particle_glass",
+                    "name": "test_particle_glass",
+                    "type": "png"
+                },
+                {
+                    "id": "gem_quest_item",
+                    "name": "test_gem_quest_item",
+                    "type": "png"
+                },
+                {
+                    "id": "electricity_01",
+                    "name": "test_electricity_01",
+                    "type": "png"
+                },
+                {
+                    "id": "grid_tile",
+                    "name": "test_grid_tile",
+                    "type": "png"
+                },
+                {
+                    "id": "sparkle_large_white",
+                    "name": "test_sparkle_large_white",
+                    "type": "png"
+                },
+                {
+                    "id": "special_effect_zapper",
+                    "name": "test_special_effect_zapper",
+                    "type": "png"
+                },
+                {
+                    "id": "special_effect_popper",
+                    "name": "test_special_effect_popper",
+                    "type": "png"
+                },
+                {
+                    "id": "special_effect_horizontal",
+                    "name": "test_special_effect_horizontal",
+                    "type": "png"
+                },
+                {
+                    "id": "special_effect_vertical",
+                    "name": "test_special_effect_vertical",
+                    "type": "png"
+                },
+                {
+                    "id": "inactive",
+                    "name": "inactive",
+                    "type": "png"
+                },
+                {
+                    "id": "move_arrow",
+                    "name": "test_move_arrow",
+                    "type": "png"
+                },
+                {
+                    "id": "bounce_effect",
+                    "name": "test_bounce_effect",
+                    "type": "png"
+                },
+                {
+                    "id": "screen_flash",
+                    "name": "test_screen_flash",
+                    "type": "png"
+                },
+                {
+                    "id": "gem_effect",
+                    "name": "test_gem_effect",
+                    "type": "png"
+                },
+                {
+                    "id": "score_label",
+                    "name": "test_score_label",
+                    "type": "png"
+                },
+                {
+                    "id": "score_number",
+                    "name": "test_score_number",
+                    "type": "png"
+                },
+                {
+                    "id": "editor_save",
+                    "name": "editor_save",
+                    "type": "png"
+                },
+                {
+                    "id": "editor_directions",
+                    "name": "editor_directions",
+                    "type": "png"
+                },
+                {
+                    "id": "notification",
+                    "name": "test_notification",
+                    "type": "png"
+                },
+                {
+                    "id": "end_bg",
+                    "name": "test_end_bg",
+                    "type": "png"
+                }
+            ]
+        },
+        "audio": {
+            "path": "audio\/",
+            "array": [
+                {
+                    "id": "music_gameplay",
+                    "name": "music_gameplay",
+                    "type": "mp3",
+                    "enabled": false
+                },
+                {
+                    "id": "sfx_break_glass",
+                    "name": "sfx_break_glass",
+                    "type": "mp3",
+                    "enabled": false
+                },
+                {
+                    "id": "sfx_break_block",
+                    "name": "sfx_break_block",
+                    "type": "mp3",
+                    "enabled": false
+                },
+                {
+                    "id": "sfx_break_lock",
+                    "name": "sfx_break_lock",
+                    "type": "mp3",
+                    "enabled": false
+                },
+                {
+                    "id": "sfx_drop_item",
+                    "name": "sfx_drop_item",
+                    "type": "mp3",
+                    "enabled": false
+                },
+                {
+                    "id": "sfx_special_gem",
+                    "name": "sfx_special_gem",
+                    "type": "mp3",
+                    "enabled": false
+                },
+                {
+                    "id": "sfx_special_gem_explodes",
+                    "name": "sfx_special_gem_explodes",
+                    "type": "mp3",
+                    "enabled": false
+                },
+                {
+                    "id": "sfx_match",
+                    "type": "mp3",
+                    "enabled": false
+                },
+                {
+                    "id": "sfx_win",
+                    "name": "sfx_win",
+                    "type": "mp3",
+                    "enabled": false
+                },
+                {
+                    "id": "sfx_lose",
+                    "name": "sfx_lose",
+                    "type": "mp3",
+                    "enabled": false
+                },
+                {
+                    "id": "sfx_star_earned",
+                    "name": "sfx_star_earned",
+                    "type": "mp3",
+                    "enabled": false
+                },
+                {
+                    "id": "sfx_gem_move",
+                    "name": "sfx_gem_move",
+                    "type": "mp3",
+                    "enabled": false
+                }
+            ]
+        }
+    },
+    "worlds": {
+        "level_template": {
+            "id": 0,
+            "template": "true",
+            "colors": "0",
+            "grid_size": 9,
+            "win": {
+                "type": "score",
+                "value": "0"
+            },
+            "lose": {
+                "type": "time",
+                "value": "0"
+            },
+            "allstar": "0"
+        },
+        "array": [
+            {
+                "id": "world1",
+                "level_last_id": 10,
+                "levels": {
+                    "array": [
+                        {
+                            "id": 9,
+                            "template": "false",
+                            "colors": "4",
+                            "grid_size": 9,
+                            "win": {
+                                "type": "score",
+                                "value": "2325"
+                            },
+                            "lose": {
+                                "type": "time",
+                                "value": "30"
+                            },
+                            "allstar": "3600",
+                            "gems": {
+                                "array": [
+                                    {
+                                        "x": 0,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 0,
+                                        "y": 1,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 0,
+                                        "y": 2,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 0,
+                                        "y": 3,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 0,
+                                        "y": 4,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 0,
+                                        "y": 5,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 0,
+                                        "y": 6,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 0,
+                                        "y": 7,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 0,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 1,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 1,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 2,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 2,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 3,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 3,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 5,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 5,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 6,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 6,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 7,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 7,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 1,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 2,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 3,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 4,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 5,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 6,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 7,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 8,
+                                        "s": 1
+                                    }
+                                ]
+                            },
+                            "glass": {
+                                "array": []
+                            },
+                            "header": {
+                                "id": ""
+                            },
+                            "difficulty": "30",
+                            "edited": true
+                        }
+                    ],
+                    "premade": [
+                        {
+                            "id": 1,
+                            "template": "false",
+                            "colors": "6",
+                            "grid_size": 9,
+                            "win": {
+                                "type": "score",
+                                "value": "500"
+                            },
+                            "lose": {
+                                "type": "time",
+                                "value": "45"
+                            },
+                            "allstar": "1000",
+                            "gems": {
+                                "array": [
+                                    {
+                                        "x": 0,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 0,
+                                        "y": 7,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 0,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 0,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 1,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 2,
+                                        "y": 3,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 2,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 2,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 3,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 5,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 6,
+                                        "y": 3,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 6,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 6,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 7,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 7,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 1,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 2,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 3,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 4,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 5,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 6,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 7,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 9,
+                                        "s": 1
+                                    }
+                                ]
+                            },
+                            "glass": {
+                                "array": []
+                            },
+                            "header": {
+                                "id": "Starting Out"
+                            }
+                        },
+                        {
+                            "id": 0,
+                            "template": "false",
+                            "colors": "6",
+                            "grid_size": 9,
+                            "win": {
+                                "type": "clear",
+                                "value": "100"
+                            },
+                            "lose": {
+                                "type": "moves",
+                                "value": "20"
+                            },
+                            "allstar": "1000",
+                            "gems": {
+                                "array": [
+                                    {
+                                        "x": 0,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 0,
+                                        "y": 1,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 0,
+                                        "y": 2,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 0,
+                                        "y": 6,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 0,
+                                        "y": 7,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 0,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 0,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 1,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 1,
+                                        "y": 4,
+                                        "s": 4
+                                    },
+                                    {
+                                        "x": 1,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 1,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 2,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 2,
+                                        "y": 2,
+                                        "s": 2
+                                    },
+                                    {
+                                        "x": 2,
+                                        "y": 3,
+                                        "s": 2
+                                    },
+                                    {
+                                        "x": 2,
+                                        "y": 5,
+                                        "s": 3
+                                    },
+                                    {
+                                        "x": 2,
+                                        "y": 6,
+                                        "s": 3
+                                    },
+                                    {
+                                        "x": 2,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 2,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 3,
+                                        "y": 2,
+                                        "s": 2
+                                    },
+                                    {
+                                        "x": 3,
+                                        "y": 3,
+                                        "s": 2
+                                    },
+                                    {
+                                        "x": 3,
+                                        "y": 5,
+                                        "s": 3
+                                    },
+                                    {
+                                        "x": 3,
+                                        "y": 6,
+                                        "s": 3
+                                    },
+                                    {
+                                        "x": 3,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 1,
+                                        "s": 4
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 4,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 7,
+                                        "s": 4
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 5,
+                                        "y": 2,
+                                        "s": 2
+                                    },
+                                    {
+                                        "x": 5,
+                                        "y": 3,
+                                        "s": 2
+                                    },
+                                    {
+                                        "x": 5,
+                                        "y": 5,
+                                        "s": 3
+                                    },
+                                    {
+                                        "x": 5,
+                                        "y": 6,
+                                        "s": 3
+                                    },
+                                    {
+                                        "x": 5,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 6,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 6,
+                                        "y": 2,
+                                        "s": 2
+                                    },
+                                    {
+                                        "x": 6,
+                                        "y": 3,
+                                        "s": 2
+                                    },
+                                    {
+                                        "x": 6,
+                                        "y": 5,
+                                        "s": 3
+                                    },
+                                    {
+                                        "x": 6,
+                                        "y": 6,
+                                        "s": 3
+                                    },
+                                    {
+                                        "x": 6,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 6,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 7,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 7,
+                                        "y": 4,
+                                        "s": 4
+                                    },
+                                    {
+                                        "x": 7,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 7,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 1,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 2,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 6,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 7,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 1,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 2,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 3,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 4,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 5,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 6,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 7,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 9,
+                                        "s": 1
+                                    }
+                                ]
+                            },
+                            "glass": {
+                                "array": [
+                                    {
+                                        "x": 4,
+                                        "y": 2
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 3
+                                    },
+                                    {
+                                        "x": 3,
+                                        "y": 4
+                                    },
+                                    {
+                                        "x": 2,
+                                        "y": 4
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 5
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 6
+                                    },
+                                    {
+                                        "x": 5,
+                                        "y": 4
+                                    },
+                                    {
+                                        "x": 6,
+                                        "y": 4
+                                    }
+                                ]
+                            },
+                            "header": {
+                                "id": "Show Your Moves"
+                            }
+                        },
+                        {
+                            "id": 2,
+                            "template": "false",
+                            "colors": "6",
+                            "grid_size": 9,
+                            "win": {
+                                "type": "clear",
+                                "value": "100"
+                            },
+                            "lose": {
+                                "type": "moves",
+                                "value": "20"
+                            },
+                            "allstar": "1000",
+                            "gems": {
+                                "array": [
+                                    {
+                                        "x": 0,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 0,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 0,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 1,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 2,
+                                        "y": 2,
+                                        "s": 3
+                                    },
+                                    {
+                                        "x": 2,
+                                        "y": 6,
+                                        "s": 3
+                                    },
+                                    {
+                                        "x": 2,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 3,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 4,
+                                        "s": 3
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 5,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 6,
+                                        "y": 2,
+                                        "s": 3
+                                    },
+                                    {
+                                        "x": 6,
+                                        "y": 6,
+                                        "s": 3
+                                    },
+                                    {
+                                        "x": 6,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 7,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 1,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 2,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 3,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 4,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 5,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 6,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 7,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 9,
+                                        "s": 1
+                                    }
+                                ]
+                            },
+                            "glass": {
+                                "array": []
+                            },
+                            "header": {
+                                "id": "Blocks"
+                            }
+                        },
+                        {
+                            "id": 3,
+                            "template": "false",
+                            "colors": "6",
+                            "grid_size": 9,
+                            "win": {
+                                "type": "clear",
+                                "value": "100"
+                            },
+                            "lose": {
+                                "type": "moves",
+                                "value": "25"
+                            },
+                            "allstar": "1500",
+                            "gems": {
+                                "array": [
+                                    {
+                                        "x": 0,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 0,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 0,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 1,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 2,
+                                        "y": 3,
+                                        "s": 2
+                                    },
+                                    {
+                                        "x": 2,
+                                        "y": 5,
+                                        "s": 2
+                                    },
+                                    {
+                                        "x": 2,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 3,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 2,
+                                        "s": 2
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 4,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 6,
+                                        "s": 2
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 5,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 6,
+                                        "y": 3,
+                                        "s": 2
+                                    },
+                                    {
+                                        "x": 6,
+                                        "y": 5,
+                                        "s": 2
+                                    },
+                                    {
+                                        "x": 6,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 7,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 1,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 2,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 3,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 4,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 5,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 6,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 7,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 9,
+                                        "s": 1
+                                    }
+                                ]
+                            },
+                            "glass": {
+                                "array": []
+                            },
+                            "header": {
+                                "id": "Locks"
+                            }
+                        },
+                        {
+                            "id": 4,
+                            "template": "false",
+                            "colors": "6",
+                            "grid_size": 9,
+                            "win": {
+                                "type": "clear",
+                                "value": "1000"
+                            },
+                            "lose": {
+                                "type": "moves",
+                                "value": "20"
+                            },
+                            "allstar": "2000",
+                            "gems": {
+                                "array": [
+                                    {
+                                        "x": 0,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 1,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 2,
+                                        "y": 2,
+                                        "s": 2
+                                    },
+                                    {
+                                        "x": 2,
+                                        "y": 6,
+                                        "s": 2
+                                    },
+                                    {
+                                        "x": 2,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 3,
+                                        "y": 4,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 3,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 3,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 4,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 5,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 5,
+                                        "y": 4,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 5,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 6,
+                                        "y": 2,
+                                        "s": 2
+                                    },
+                                    {
+                                        "x": 6,
+                                        "y": 6,
+                                        "s": 2
+                                    },
+                                    {
+                                        "x": 6,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 7,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 1,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 2,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 3,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 4,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 5,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 6,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 7,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 9,
+                                        "s": 1
+                                    }
+                                ]
+                            },
+                            "glass": {
+                                "array": []
+                            },
+                            "header": {
+                                "id": "Four Locks"
+                            }
+                        },
+                        {
+                            "id": 5,
+                            "template": "false",
+                            "colors": "3",
+                            "grid_size": 9,
+                            "win": {
+                                "type": "clear",
+                                "value": "100"
+                            },
+                            "lose": {
+                                "type": "moves",
+                                "value": "20"
+                            },
+                            "allstar": "2000",
+                            "gems": {
+                                "array": [
+                                    {
+                                        "x": 0,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 1,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 2,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 3,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 5,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 6,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 7,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 9,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 1,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 2,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 3,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 4,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 5,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 6,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 7,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 9,
+                                        "y": 9,
+                                        "s": 1
+                                    }
+                                ]
+                            },
+                            "glass": {
+                                "array": [
+                                    {
+                                        "x": 1,
+                                        "y": 4
+                                    },
+                                    {
+                                        "x": 2,
+                                        "y": 4
+                                    },
+                                    {
+                                        "x": 3,
+                                        "y": 4
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 4
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 3
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 2
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 1
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 5
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 6
+                                    },
+                                    {
+                                        "x": 4,
+                                        "y": 7
+                                    },
+                                    {
+                                        "x": 5,
+                                        "y": 4
+                                    },
+                                    {
+                                        "x": 6,
+                                        "y": 4
+                                    },
+                                    {
+                                        "x": 7,
+                                        "y": 4
+                                    }
+                                ]
+                            },
+                            "header": {
+                                "id": "Glass +"
+                            }
+                        },
+                        {
+                            "id": 6,
+                            "template": "false",
+                            "colors": "5",
+                            "grid_size": 9,
+                            "win": {
+                                "type": "score",
+                                "value": "100"
+                            },
+                            "lose": {
+                                "type": "time",
+                                "value": "60"
+                            },
+                            "allstar": "4000",
+                            "gems": {
+                                "array": []
+                            },
+                            "glass": {
+                                "array": []
+                            },
+                            "header": {
+                                "id": "Fill 1"
+                            }
+                        },
+                        {
+                            "id": 7,
+                            "template": "false",
+                            "colors": "5",
+                            "grid_size": 9,
+                            "win": {
+                                "type": "score",
+                                "value": "100"
+                            },
+                            "lose": {
+                                "type": "time",
+                                "value": "60"
+                            },
+                            "allstar": "3000",
+                            "gems": {
+                                "array": []
+                            },
+                            "glass": {
+                                "array": []
+                            },
+                            "header": {
+                                "id": "Fill 2"
+                            }
+                        },
+                        {
+                            "id": 8,
+                            "template": "false",
+                            "colors": "5",
+                            "grid_size": 9,
+                            "win": {
+                                "type": "score",
+                                "value": "100"
+                            },
+                            "lose": {
+                                "type": "time",
+                                "value": "60"
+                            },
+                            "allstar": "1000",
+                            "gems": {
+                                "array": [
+                                    {
+                                        "x": 0,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 0,
+                                        "y": 8,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 0,
+                                        "s": 1
+                                    },
+                                    {
+                                        "x": 8,
+                                        "y": 8,
+                                        "s": 1
+                                    }
+                                ]
+                            },
+                            "glass": {
+                                "array": []
+                            },
+                            "header": {
+                                "id": "Fill 3"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "games": [
+        {
+            "levels": null
+        }
+    ],
+    "meta": {
+        "built_at": "25 July 2016, 13:38"
+    }
+}

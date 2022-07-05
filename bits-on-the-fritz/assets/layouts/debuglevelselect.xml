@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Hibachi Version="4" SceneName="debuglevelselect">
+  <Asset_Packs>
+    <Asset_Pack>debuglevelselect</Asset_Pack>
+    <Asset_Pack>menu</Asset_Pack>
+  </Asset_Packs>
+  <Entitys>
+    <Entity Name="background" ClassType="Sprite">
+      <CImageSpriteData strTexture="background.png" strAssetPack="debuglevelselect" rPivotX="0" rPivotY="0" fInstantiate="true">
+        <Collision />
+      </CImageSpriteData>
+      <CTransformData X="0" Y="0" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="movie_kartgame" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="buttons" strAssetPack="menu" strStartingAnim="btn_blank_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="150" Y="345" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="movie_buildinggame" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="buttons" strAssetPack="menu" strStartingAnim="btn_blank_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="350" Y="345" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="movie_contraptiongame" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="buttons" strAssetPack="menu" strStartingAnim="btn_blank_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="550" Y="345" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="movie_cleanupgame" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="buttons" strAssetPack="menu" strStartingAnim="btn_blank_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="750" Y="345" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="text_kart" ClassType="Text">
+      <CTextData strAssetPack="mg_shared" strFont="debug_font.fnt" strText="KART" strFontFace="HandelGothic" strFontSize="32" strFontImageName="debug_font_0.png" rPivotX="0" rPivotY="0" fInstantiate="true" />
+      <CTransformData X="150" Y="345" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="text_building" ClassType="Text">
+      <CTextData strAssetPack="mg_shared" strFont="debug_font.fnt" strText="BUILDING" strFontFace="HandelGothic" strFontSize="32" strFontImageName="debug_font.png" rPivotX="0" rPivotY="0" fInstantiate="true" />
+      <CTransformData X="350" Y="345" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="text_contraption" ClassType="Text">
+      <CTextData strAssetPack="mg_shared" strFont="debug_font.fnt" strText="CONTRAP" strFontFace="HandelGothic" strFontSize="32" strFontImageName="debug_font.png" rPivotX="0" rPivotY="0" fInstantiate="true" />
+      <CTransformData X="550" Y="345" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="text_cleanup" ClassType="Text">
+      <CTextData strAssetPack="mg_shared" strFont="debug_font.fnt" strText="CLEANUP" strFontFace="HandelGothic" strFontSize="32" strFontImageName="debug_font.png" rPivotX="0" rPivotY="0" fInstantiate="true" />
+      <CTransformData X="750" Y="345" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+  </Entitys>
+</Hibachi>

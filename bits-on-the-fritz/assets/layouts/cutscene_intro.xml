@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Hibachi Version="4" SceneName="cutscene_intro">
+  <Asset_Packs>
+    <Asset_Pack>cutscene_intro</Asset_Pack>
+    <Asset_Pack>mg_shared</Asset_Pack>
+    <Asset_Pack>menu</Asset_Pack>
+  </Asset_Packs>
+  <Entitys>
+    <Entity Name="sprite_intro_bg" ClassType="Sprite">
+      <CTransformData X="0" Y="0" Rot="0" ScaleX="1" ScaleY="1" />
+      <CImageSpriteData strTexture="intro_bg.png" strAssetPack="cutscene_intro" rPivotX="0" rPivotY="0" fInstantiate="true">
+        <Collision />
+      </CImageSpriteData>
+      <Entities />
+    </Entity>
+    <Entity Name="btn_rusty" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="choose_driver" strAssetPack="cutscene_intro" strStartingAnim="btn_rusty_press" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="360" Y="560" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="btn_ruby" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="choose_driver" strAssetPack="cutscene_intro" strStartingAnim="btn_ruby_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="600" Y="560" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="movie_intro" ClassType="MovieSprite">
+      <CTransformData X="0" Y="0" Rot="0" ScaleX="1" ScaleY="1" />
+      <CMovieSpriteData strAssetDirectory="animation" strAssetPack="cutscene_intro" strStartingAnim="cutscene_intro" fLoopStartAnim="false" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <Entities />
+    </Entity>
+    <Entity Name="movie_tutorial_mouse" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="tutorial_mouse" strAssetPack="mg_shared" strStartingAnim="tut_mouse_idle" fLoopStartAnim="false" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="0" Y="0" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="movie_tutorial_touch" ClassType="MovieSprite">
+      <CMovieSpriteData strAssetDirectory="tutorial_touch" strAssetPack="mg_shared" strStartingAnim="tut_finger_tap" fLoopStartAnim="false" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <CTransformData X="0" Y="0" Rot="0" ScaleX="1" ScaleY="1" />
+      <Entities />
+    </Entity>
+    <Entity Name="button_skip" ClassType="MovieSprite">
+      <CTransformData X="865" Y="496" Rot="0" ScaleX="1" ScaleY="1" />
+      <CMovieSpriteData strAssetDirectory="buttons" strAssetPack="menu" strStartingAnim="btn_skip_idle" fLoopStartAnim="true" fInstantiate="true">
+        <Collision />
+      </CMovieSpriteData>
+      <Entities />
+    </Entity>
+  </Entitys>
+</Hibachi>
