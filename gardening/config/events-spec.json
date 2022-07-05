@@ -1,0 +1,1193 @@
+{
+    "gameId": "c15fb8c5-46dd-403d-bebb-21018c30806b",
+    "version": "1.0",
+    "events": {
+        "4080": {
+            "info": "This event occurs when the player hovers the mouse over an interactive object. It contains information about the object under the mouse, and the duration of the hover. This event can be used to diagnose things like planning (are they hovering the mouse over tiles for long periods before they use those tiles), and determine which objects the player thinks are important.",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "how long the mouse cursor dwells over the object when the player dwells for longer than 1sec",
+                    "type": "int",
+                    "name": "dwell_time"
+                },
+                {
+                    "info": "the object or piece of art the mouse was hovering over",
+                    "type": "string",
+                    "name": "object"
+                },
+                {
+                    "info": "number of the current round when the event takes place or 0 if no round",
+                    "type": "int",
+                    "name": "round"
+                },
+                {
+                    "info": "the current status of the garden plots, hazards, and defenses when the event occurs\r{\"plot1\":{\"vegetable_size\": int, \"moisture\": int, \"rabbit\": bool, \"insect\": bool}, \"hedgerow1\": {\"clover\": bool, \"ladybugs\": bool, \"rabbit_progress\": number, \"insect_progress\": number}, ...}",
+                    "type": "object",
+                    "name": "garden_status"
+                }
+            ],
+            "id": "8f09da8a-53dd-4ea9-a526-44aaf42e03d2"
+        },
+        "5010": {
+            "info": "This event occurs when a hazard is removed from the garden. It contains information about the type of hazard, the hazard's location in the garden, and the duration the hazard was present in the garden.",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "the area of the garden the hazard is located\rsomething like \"plot1\", \"plot2\", or \"hedgerow1\"",
+                    "type": "string",
+                    "name": "location"
+                },
+                {
+                    "info": "number of the current round when the event takes place or 0 if no round",
+                    "type": "int",
+                    "name": "round"
+                },
+                {
+                    "info": "the type of hazard that is being removed",
+                    "type": "string",
+                    "name": "hazard_type"
+                },
+                {
+                    "info": "the time the hazard was present in the garden in milliseconds",
+                    "type": "int",
+                    "name": "duration"
+                },
+                {
+                    "info": "the current status of the garden plots, hazards, and defenses when the event occurs\r{\"plot1\":{\"vegetable_size\": int, \"moisture\": int, \"rabbit\": bool, \"insect\": bool}, \"hedgerow1\": {\"clover\": bool, \"ladybugs\": bool, \"rabbit_progress\": number, \"insect_progress\": number}, ...}",
+                    "type": "object",
+                    "name": "garden_status"
+                }
+            ],
+            "id": "152f3368-3961-44e7-9480-52d762b6927b"
+        },
+        "5030": {
+            "info": "This event occurs when the pause menu is closed.",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "the current status of the garden plots, hazards, and defenses when the event occurs\r{\"plot1\":{\"vegetable_size\": int, \"moisture\": int, \"rabbit\": bool, \"insect\": bool}, \"hedgerow1\": {\"clover\": bool, \"ladybugs\": bool, \"rabbit_progress\": number, \"insect_progress\": number}, ...}",
+                    "type": "object",
+                    "name": "garden_status"
+                },
+                {
+                    "info": "number of the current round when the event takes place or 0 if no round",
+                    "type": "int",
+                    "name": "round"
+                },
+                {
+                    "info": "the duration spent paused in milliseconds.",
+                    "type": "int",
+                    "name": "pause_duration"
+                }
+            ],
+            "id": "95a97adb-a337-422e-8fa0-7f81593e301f"
+        },
+        "4070": {
+            "info": "This event occurs when the player clicks on something that isnt covered elsewhere. It can be useful in determining if there are attractive distractions (things the player think should do something, but dont) in the game, or diagnosing players who are having mechanical difficulties (near misses).",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "the game screen coordinates of the click\rdictionary:\r{x: int, y: int, stage_width: int, stage_height: int}",
+                    "type": "object",
+                    "name": "coordinates"
+                },
+                {
+                    "info": "the object or piece of art that was clicked",
+                    "type": "string",
+                    "name": "object"
+                },
+                {
+                    "info": "number of the current round when the event takes place or 0 if no round",
+                    "type": "int",
+                    "name": "round"
+                },
+                {
+                    "info": "the current status of the garden plots, hazards, and defenses when the event occurs\r{\"plot1\":{\"vegetable_size\": int, \"moisture\": int, \"rabbit\": bool, \"insect\": bool}, \"hedgerow1\": {\"clover\": bool, \"ladybugs\": bool, \"rabbit_progress\": number, \"insect_progress\": number}, ...}",
+                    "type": "object",
+                    "name": "garden_status"
+                }
+            ],
+            "id": "0bd6609b-894b-45e9-b619-c32aa852e7df"
+        },
+        "4022": {
+            "info": "This event occurs when the player clicks one of the tools to select it. It contains information about the tool selected and the location of the click.",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "the game screen coordinates of the click\rdictionary:\r{x: int, y: int, stage_width: int, stage_height: int}",
+                    "type": "object",
+                    "name": "coordinates"
+                },
+                {
+                    "info": "number of the current round when the event takes place or 0 if no round",
+                    "type": "int",
+                    "name": "round"
+                },
+                {
+                    "info": "name of the tool selected",
+                    "type": "string",
+                    "name": "tool"
+                },
+                {
+                    "info": "name of the previously selected tool",
+                    "type": "string",
+                    "name": "previous_tool"
+                },
+                {
+                    "info": "the current status of the garden plots, hazards, and defenses when the event occurs\r{\"plot1\":{\"vegetable_size\": int, \"moisture\": int, \"rabbit\": bool, \"insect\": bool}, \"hedgerow1\": {\"clover\": bool, \"ladybugs\": bool, \"rabbit_progress\": number, \"insect_progress\": number}, ...}",
+                    "type": "object",
+                    "name": "garden_status"
+                }
+            ],
+            "id": "a1e3e82e-6b61-4e61-bcb8-39e5e416b489"
+        },
+        "4020": {
+            "info": "This event occurs when the player clicks one of the presented information sources. It contains information about the object selected, the correctness of the action, and the coordinates of the click.",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "the game screen coordinates of the click\rdictionary:\r{x: int, y: int, stage_width: int, stage_height: int}",
+                    "type": "object",
+                    "name": "coordinates"
+                },
+                {
+                    "info": "number of the current round when the event takes place or 0 if no round",
+                    "type": "int",
+                    "name": "round"
+                },
+                {
+                    "info": "name of the object selected",
+                    "type": "string",
+                    "name": "object"
+                },
+                {
+                    "info": "was this the correct object to select?",
+                    "type": "boolean",
+                    "name": "correct"
+                }
+            ],
+            "id": "26d77c56-0e56-40ad-976c-dfc8faef6460"
+        },
+        "4021": {
+            "info": "This event occurs when the player uses one of the tools on the garden. It contains information about the tool used, the target area of the farm, and the coordinates of the click.",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "the game screen coordinates of the click\rdictionary:\r{x: int, y: int, stage_width: int, stage_height: int}",
+                    "type": "object",
+                    "name": "coordinates"
+                },
+                {
+                    "info": "number of the current round when the event takes place or 0 if no round",
+                    "type": "int",
+                    "name": "round"
+                },
+                {
+                    "info": "name of the tool used",
+                    "type": "string",
+                    "name": "tool"
+                },
+                {
+                    "info": "the area of the garden the tool is being applied to\rsomething like \"plot1\", \"plot2\", or \"hedgerow1\"",
+                    "type": "string",
+                    "name": "location"
+                },
+                {
+                    "info": "the current status of the garden plots, hazards, and defenses after the event occurs\r{\"plot1\":{\"vegetable_size\": int, \"moisture\": int, \"rabbit\": bool, \"insect\": bool}, \"hedgerow1\": {\"clover\": bool, \"ladybugs\": bool, \"rabbit_progress\": number, \"insect_progress\": number}, ...}",
+                    "type": "object",
+                    "name": "garden_status"
+                },
+                {
+                    "info": "did using this tool have an effect on the garden or was there no effect (for example due to clover already planted or ladybugs alread present)?",
+                    "type": "boolean",
+                    "name": "effective"
+                }
+            ],
+            "id": "0c4ce595-af42-4163-a920-91c64a857969"
+        },
+        "3110": {
+            "info": "The end of system-initiated instruction event occurs when the game finishes delivering instructions to the player. It contains information that describes the content of the instruction including duration. These events are used to determine the effectiveness of the instructions and the amount of time they consume. We can answer questions like, how much time elapsed while the game was presenting instruction?",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "the type of media that has just played:\r'audio' || 'animation' || 'other",
+                    "type": "string",
+                    "name": "media_type"
+                },
+                {
+                    "info": "the duration of the media playback in milliseconds",
+                    "type": "int",
+                    "name": "duration"
+                },
+                {
+                    "info": "the text or description of the instruction",
+                    "type": "string",
+                    "name": "description"
+                },
+                {
+                    "info": "a unique identifier for this piece of instruction",
+                    "type": "string",
+                    "name": "identifier"
+                },
+                {
+                    "info": "number of the current round when the event takes place or 0 if no round",
+                    "type": "int",
+                    "name": "round"
+                },
+                {
+                    "info": "did the feedback finish playing or was it interrupted?",
+                    "type": "boolean",
+                    "name": "finished"
+                }
+            ],
+            "id": "204001e1-d3a3-43c1-896f-8b9d861be1b0"
+        },
+        "3120": {
+            "info": "The end of system-initiated feedback (Incorrect) event occurs when the game finishes delivering feedback to the player in response to an incorrect round attempt (pressing the go button with the incorrect answer). It contains information that describes the content of the instruction. These events are used to determine the effectiveness of the feedback. We can answer questions like, how much time elapsed while the game was presenting feedback?",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "the type of media that has just played:\r'audio' || 'animation' || 'other",
+                    "type": "string",
+                    "name": "media_type"
+                },
+                {
+                    "info": "the duration of the media playback in milliseconds",
+                    "type": "int",
+                    "name": "duration"
+                },
+                {
+                    "info": "the text or description of the instruction",
+                    "type": "string",
+                    "name": "description"
+                },
+                {
+                    "info": "a unique identifier for this piece of instruction",
+                    "type": "string",
+                    "name": "identifier"
+                },
+                {
+                    "info": "number of the current round when the event takes place or 0 if no round",
+                    "type": "int",
+                    "name": "round"
+                },
+                {
+                    "info": "did the feedback finish playing or was it interrupted?",
+                    "type": "boolean",
+                    "name": "finished"
+                }
+            ],
+            "id": "05ee34a7-959c-4313-b90d-4d4dca08607c"
+        },
+        "3121": {
+            "info": "The end of system-initiated feedback (Correct) event occurs when the game finishes delivering feedback to the player in response to a correct round attempt (pressing the go button with the correct answer). It contains information that describes the duration and content of the instruction, and will likely occur in conjunction with a beat round event. These events are used to determine the effectiveness of the feedback. We can answer questions like, how much time elapsed while the game was presenting feedback?",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "the type of media that has just played:\r'audio' || 'animation' || 'other",
+                    "type": "string",
+                    "name": "media_type"
+                },
+                {
+                    "info": "the estimated duration of the media playback in milliseconds (if it ran uninterrupted)",
+                    "type": "int",
+                    "name": "total_duration"
+                },
+                {
+                    "info": "the text or description of the instruction",
+                    "type": "string",
+                    "name": "description"
+                },
+                {
+                    "info": "a unique identifier for this piece of instruction",
+                    "type": "string",
+                    "name": "identifier"
+                },
+                {
+                    "info": "number of the current round when the event takes place or 0 if no round",
+                    "type": "int",
+                    "name": "round"
+                },
+                {
+                    "info": "did the feedback finish playing or was it interrupted?",
+                    "type": "boolean",
+                    "name": "finished"
+                }
+            ],
+            "id": "d43bac8e-4c09-4209-a83b-5677499d32b6"
+        },
+        "3021": {
+            "info": "The system-initiated feedback (Correct) event occurs when the game starts delivering feedback to the player in response to a correct round attempt (pressing the go button with the correct answer). It contains information that describes the content of the instruction, and will likely occur in conjunction with a beat round event. These events are used to determine the effectiveness of the feedback. We can answer questions like, did players who received feedback X do better than those who did not?",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "the type of media that has just played:\r'audio' || 'animation' || 'other",
+                    "type": "string",
+                    "name": "media_type"
+                },
+                {
+                    "info": "the estimated duration of the media playback in milliseconds (if it ran uninterrupted)",
+                    "type": "int",
+                    "name": "total_duration"
+                },
+                {
+                    "info": "the text or description of the instruction",
+                    "type": "string",
+                    "name": "description"
+                },
+                {
+                    "info": "a unique identifier for this piece of instruction",
+                    "type": "string",
+                    "name": "identifier"
+                },
+                {
+                    "info": "number of the current round when the event takes place or 0 if no round",
+                    "type": "int",
+                    "name": "round"
+                }
+            ],
+            "id": "7d92e3e4-b2bf-40d9-903f-8ce73627a5d7"
+        },
+        "3020": {
+            "info": "The system-initiated feedback (Incorrect) event occurs when the game starts delivering feedback to the player in response to an incorrect round attempt (pressing the go button with the incorrect answer). It contains information that describes the content of the instruction. These events are used to determine the effectiveness of the feedback. We can answer questions like, did players who received feedback X do better than those who did not?",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "the type of media that has just played:\r'audio' || 'animation' || 'other",
+                    "type": "string",
+                    "name": "media_type"
+                },
+                {
+                    "info": "the estimated duration of the media playback in milliseconds (if it ran uninterrupted)",
+                    "type": "int",
+                    "name": "total_duration"
+                },
+                {
+                    "info": "the text or description of the instruction",
+                    "type": "string",
+                    "name": "description"
+                },
+                {
+                    "info": "a unique identifier for this piece of instruction",
+                    "type": "string",
+                    "name": "identifier"
+                },
+                {
+                    "info": "number of the current round when the event takes place or 0 if no round",
+                    "type": "int",
+                    "name": "round"
+                }
+            ],
+            "id": "540daf77-f5c8-4ff2-bba1-f00334b95cee"
+        },
+        "2037": {
+            "info": "The beat gardening segment event is triggered when the player finishes a gardening segment after finishing growing the crops. This event provides information about when the player is engaging in different sections of gameplay.",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "number of the current round when that just completed",
+                    "type": "int",
+                    "name": "round"
+                },
+                {
+                    "info": "number of times a crop was harmed during the round",
+                    "type": "int",
+                    "name": "misses"
+                },
+                {
+                    "info": "the duration of the segment in milliseconds. Time between start segment and beat segment.",
+                    "type": "int",
+                    "name": "duration"
+                },
+                {
+                    "info": "the total duration spent paused during the segment in milliseconds.",
+                    "type": "int",
+                    "name": "pause_duration"
+                },
+                {
+                    "info": "the type of vegetable grown in this round",
+                    "type": "string",
+                    "name": "vegetable"
+                },
+                {
+                    "info": "the weight of the vegetable at the end of the segment",
+                    "type": "int",
+                    "name": "weight"
+                },
+                {
+                    "info": "the current status of the garden plots, hazards, and defenses when the event occurs\r{\"plot1\":{\"vegetable_size\": int, \"moisture\": int, \"rabbit\": bool, \"insect\": bool}, \"hedgerow1\": {\"clover\": bool, \"ladybugs\": bool, \"rabbit_progress\": number, \"insect_progress\": number}, ...}",
+                    "type": "object",
+                    "name": "garden_status"
+                }
+            ],
+            "id": "bbad5111-da68-40f7-869e-dfb246439aef"
+        },
+        "2035": {
+            "info": "The beat information segment event is triggered when the player finishes the information selecting segment by selecting the correct source. This event provides information about when the player is engaging in different sections of gameplay.",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "number of the current round when that just completed",
+                    "type": "int",
+                    "name": "round"
+                },
+                {
+                    "info": "number of times an incorrect information source was selected",
+                    "type": "int",
+                    "name": "misses"
+                },
+                {
+                    "info": "the duration of the segment in milliseconds. Time between start segment and beat segment.",
+                    "type": "int",
+                    "name": "duration"
+                },
+                {
+                    "info": "the total duration spent paused during the segment in milliseconds.",
+                    "type": "int",
+                    "name": "pause_duration"
+                },
+                {
+                    "info": "the type of vegetable grown in this round",
+                    "type": "string",
+                    "name": "vegetable"
+                }
+            ],
+            "id": "3b1bab29-05e5-4a9a-9df0-334c0dbffaf8"
+        },
+        "2031": {
+            "info": "The exit round event is triggered when the player exits a round by navigating out of the round via the pause menu. This event is used for calculating time spent in a round (for speed and accuracy), attempts at solving a round, and the number of rounds the player has completed (completion).",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "number of the current round when that just completed",
+                    "type": "int",
+                    "name": "round"
+                },
+                {
+                    "info": "number of times a crop was harmed during the round",
+                    "type": "int",
+                    "name": "misses"
+                },
+                {
+                    "info": "the duration of the round in milliseconds. Time between start round and beat round.",
+                    "type": "int",
+                    "name": "duration"
+                },
+                {
+                    "info": "the total duration spent paused during the round in milliseconds.",
+                    "type": "int",
+                    "name": "pause_duration"
+                },
+                {
+                    "info": "the type of vegetable grown in this round",
+                    "type": "string",
+                    "name": "vegetable"
+                },
+                {
+                    "info": "the current status of the garden plots, hazards, and defenses when the event occurs\r{\"plot1\":{\"vegetable_size\": int, \"moisture\": int, \"rabbit\": bool, \"insect\": bool}, \"hedgerow1\": {\"clover\": bool, \"ladybugs\": bool, \"rabbit_progress\": number, \"insect_progress\": number}, ...}",
+                    "type": "object",
+                    "name": "garden_status"
+                }
+            ],
+            "id": "55faeed1-11d1-4b48-a274-d22e47e787fa"
+        },
+        "2030": {
+            "info": "The beat round event is triggered when the player finishes a round by growing the vegetable. This event is used for calculating time spent in a round (for speed and accuracy), attempts at solving a round, and the number of rounds the player has completed (completion).",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "number of the current round when that just completed",
+                    "type": "int",
+                    "name": "round"
+                },
+                {
+                    "info": "number of times a crop was harmed during the round and the number of times an incorrect information source was selected",
+                    "type": "int",
+                    "name": "misses"
+                },
+                {
+                    "info": "the duration of the round in milliseconds. Time between start round and beat round.",
+                    "type": "int",
+                    "name": "duration"
+                },
+                {
+                    "info": "the total duration spent paused during the round in milliseconds.",
+                    "type": "int",
+                    "name": "pause_duration"
+                },
+                {
+                    "info": "the type of vegetable grown in this round",
+                    "type": "string",
+                    "name": "vegetable"
+                },
+                {
+                    "info": "the weight of the vegetable at the end of the round",
+                    "type": "int",
+                    "name": "weight"
+                },
+                {
+                    "info": "the current status of the garden plots, hazards, and defenses when the event occurs\r{\"plot1\":{\"vegetable_size\": int, \"moisture\": int, \"rabbit\": bool, \"insect\": bool}, \"hedgerow1\": {\"clover\": bool, \"ladybugs\": bool, \"rabbit_progress\": number, \"insect_progress\": number}, ...}",
+                    "type": "object",
+                    "name": "garden_status"
+                }
+            ],
+            "id": "f10be4d5-a826-4a08-8a85-0819ec4ea7ab"
+        },
+        "2010": {
+            "info": "The end game event occurs when the player exits the game. This is used to compute things like time spent in game.",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "the duration of the round in milliseconds. Time between start round and beat round.",
+                    "type": "int",
+                    "name": "session_duration"
+                },
+                {
+                    "info": "home', 'navigation', 'exit' - if the user left the game via clicking the home button, navigating to a new page, or closing the application/browser",
+                    "type": "string",
+                    "name": "exit_type"
+                },
+                {
+                    "info": "number of the current round when the event takes place or 0 if no round",
+                    "type": "int",
+                    "name": "round"
+                }
+            ],
+            "id": "710a90eb-6340-47c8-bd70-6221419ff770"
+        },
+        "5000": {
+            "info": "This event occurs when a hazard to the garden appears (including dry soil). It contains information about the state of the garden, the type of hazard, and the location of the hazard.",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "the area of the garden the hazard is appearing\rsomething like \"plot1\", \"plot2\", or \"hedgerow1\"",
+                    "type": "string",
+                    "name": "location"
+                },
+                {
+                    "info": "number of the current round when the event takes place or 0 if no round",
+                    "type": "int",
+                    "name": "round"
+                },
+                {
+                    "info": "the type of hazard that appeared",
+                    "type": "string",
+                    "name": "hazard_type"
+                }
+            ],
+            "id": "6efd3a0c-2ee4-4683-8190-971c12aaa804"
+        },
+        "5005": {
+            "info": "This event occurs when a hazard negatively affects a plant's growth. It contains information about the location of the plant and the hazard that harmed the plant.",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "the area of the garden the plant is being harmed\rsomething like \"plot1\", \"plot2\", or \"hedgerow1\"",
+                    "type": "string",
+                    "name": "location"
+                },
+                {
+                    "info": "number of the current round when the event takes place or 0 if no round",
+                    "type": "int",
+                    "name": "round"
+                },
+                {
+                    "info": "the type of hazard that is harming the plant",
+                    "type": "string",
+                    "name": "hazard_type"
+                },
+                {
+                    "info": "the current status of the garden plots, hazards, and defenses when the event occurs\r{\"plot1\":{\"vegetable_size\": int, \"moisture\": int, \"rabbit\": bool, \"insect\": bool}, \"hedgerow1\": {\"clover\": bool, \"ladybugs\": bool, \"rabbit_progress\": number, \"insect_progress\": number}, ...}",
+                    "type": "object",
+                    "name": "garden_status"
+                }
+            ],
+            "id": "6fef8aeb-6aff-4c7b-941d-c164795af1b5"
+        },
+        "5020": {
+            "info": "This event occurs when the pause menu is opened.",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "the current status of the garden plots, hazards, and defenses when the event occurs\r{\"plot1\":{\"vegetable_size\": int, \"moisture\": int, \"rabbit\": bool, \"insect\": bool}, \"hedgerow1\": {\"clover\": bool, \"ladybugs\": bool, \"rabbit_progress\": number, \"insect_progress\": number}, ...}",
+                    "type": "object",
+                    "name": "garden_status"
+                },
+                {
+                    "info": "number of the current round when the event takes place or 0 if no round",
+                    "type": "int",
+                    "name": "round"
+                }
+            ],
+            "id": "7294077e-939b-4f35-b32f-8388572e6c76"
+        },
+        "4013": {
+            "info": "This event occurs when the player clicks the \"Keep Playing\" button to resume the game.",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "the game screen coordinates of the click\rdictionary:\r{x: int, y: int, stage_width: int, stage_height: int}",
+                    "type": "object",
+                    "name": "coordinates"
+                },
+                {
+                    "info": "number of the current round when the event takes place or 0 if no round",
+                    "type": "int",
+                    "name": "round"
+                },
+                {
+                    "info": "the current status of the garden plots, hazards, and defenses when the event occurs\r{\"plot1\":{\"vegetable_size\": int, \"moisture\": int, \"rabbit\": bool, \"insect\": bool}, \"hedgerow1\": {\"clover\": bool, \"ladybugs\": bool, \"rabbit_progress\": number, \"insect_progress\": number}, ...}",
+                    "type": "object",
+                    "name": "garden_status"
+                },
+                {
+                    "info": "the total duration spent paused during the round in milliseconds.",
+                    "type": "int",
+                    "name": "pause_duration"
+                }
+            ],
+            "id": "e23c3f67-b5b5-444e-bce5-b9ce5ddc910c"
+        },
+        "4012": {
+            "info": "This event occurs when the player clicks the pause button to bring up the pause menu.",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "the game screen coordinates of the click\rdictionary:\r{x: int, y: int, stage_width: int, stage_height: int}",
+                    "type": "object",
+                    "name": "coordinates"
+                },
+                {
+                    "info": "number of the current round when the event takes place or 0 if no round",
+                    "type": "int",
+                    "name": "round"
+                },
+                {
+                    "info": "the current status of the garden plots, hazards, and defenses when the event occurs\r{\"plot1\":{\"vegetable_size\": int, \"moisture\": int, \"rabbit\": bool, \"insect\": bool}, \"hedgerow1\": {\"clover\": bool, \"ladybugs\": bool, \"rabbit_progress\": number, \"insect_progress\": number}, ...}",
+                    "type": "object",
+                    "name": "garden_status"
+                }
+            ],
+            "id": "88f58f0c-99d7-400b-b534-ada5d7e7f0ca"
+        },
+        "3010": {
+            "info": "The system-initiated instruction event occurs when the game delivers instructions to the player. It contains information that describes the content of the instruction. This event differs from events 3020 and 3021 as it captures instructions that are not given in response to player action. These events are used to determine the effectiveness of the instructions. We can answer questions like, did players who received instruction X do better than those who did not?",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "the type of media that has just played:\r'audio' || 'animation' || 'other",
+                    "type": "string",
+                    "name": "media_type"
+                },
+                {
+                    "info": "the estimated duration of the media playback in milliseconds (if it ran uninterrupted)",
+                    "type": "int",
+                    "name": "total_duration"
+                },
+                {
+                    "info": "the text or description of the instruction",
+                    "type": "string",
+                    "name": "description"
+                },
+                {
+                    "info": "a unique identifier for this piece of instruction",
+                    "type": "string",
+                    "name": "identifier"
+                },
+                {
+                    "info": "number of the current round when the event takes place or 0 if no round",
+                    "type": "int",
+                    "name": "round"
+                }
+            ],
+            "id": "d84edcb1-9ba1-45b4-a5db-0efbee586ba6"
+        },
+        "4010": {
+            "info": "This event occurs when the player clicks past the starting landing page.",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "the game screen coordinates of the click\rdictionary:\r{x: int, y: int, stage_width: int, stage_height: int}",
+                    "type": "object",
+                    "name": "coordinates"
+                },
+                {
+                    "info": "number of the current round when the event takes place or 0 if no round",
+                    "type": "int",
+                    "name": "round"
+                }
+            ],
+            "id": "907f554f-b31f-496f-b6f3-a07d76dac7e0"
+        },
+        "4016": {
+            "info": "This event occurs when the player clicks next to advance a screen. It contains information about the screens being transitioned from and to.",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "the game screen coordinates of the click\rdictionary:\r{x: int, y: int, stage_width: int, stage_height: int}",
+                    "type": "object",
+                    "name": "coordinates"
+                },
+                {
+                    "info": "number of the current round when the event takes place or 0 if no round",
+                    "type": "int",
+                    "name": "round"
+                },
+                {
+                    "info": "name of the screen being transitioned away from",
+                    "type": "string",
+                    "name": "previous_screen"
+                },
+                {
+                    "info": "name of the screen being transitioned to",
+                    "type": "string",
+                    "name": "next_screen"
+                }
+            ],
+            "id": "10e88fdd-c292-47ac-aee5-bb90a11f3616"
+        },
+        "4015": {
+            "info": "This event occurs when the player clicks the \"Select New Vegetable\" button to return to the level-select screen.",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "the game screen coordinates of the click\rdictionary:\r{x: int, y: int, stage_width: int, stage_height: int}",
+                    "type": "object",
+                    "name": "coordinates"
+                },
+                {
+                    "info": "number of the current round when the event takes place or 0 if no round",
+                    "type": "int",
+                    "name": "round"
+                },
+                {
+                    "info": "the current status of the garden plots, hazards, and defenses when the event occurs\r{\"plot1\":{\"vegetable_size\": int, \"moisture\": int, \"rabbit\": bool, \"insect\": bool}, \"hedgerow1\": {\"clover\": bool, \"ladybugs\": bool, \"rabbit_progress\": number, \"insect_progress\": number}, ...}",
+                    "type": "object",
+                    "name": "garden_status"
+                },
+                {
+                    "info": "the total duration spent paused during the round in milliseconds.",
+                    "type": "int",
+                    "name": "pause_duration"
+                }
+            ],
+            "id": "b8f1c80f-e882-4997-b959-fe939e834968"
+        },
+        "4014": {
+            "info": "This event occurs when the player clicks the \"Start Over\" button to reset the level.",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "the game screen coordinates of the click\rdictionary:\r{x: int, y: int, stage_width: int, stage_height: int}",
+                    "type": "object",
+                    "name": "coordinates"
+                },
+                {
+                    "info": "number of the current round when the event takes place or 0 if no round",
+                    "type": "int",
+                    "name": "round"
+                },
+                {
+                    "info": "the current status of the garden plots, hazards, and defenses when the event occurs\r{\"plot1\":{\"vegetable_size\": int, \"moisture\": int, \"rabbit\": bool, \"insect\": bool}, \"hedgerow1\": {\"clover\": bool, \"ladybugs\": bool, \"rabbit_progress\": number, \"insect_progress\": number}, ...}",
+                    "type": "object",
+                    "name": "garden_status"
+                },
+                {
+                    "info": "the total duration spent paused during the round in milliseconds.",
+                    "type": "int",
+                    "name": "pause_duration"
+                }
+            ],
+            "id": "683d263f-9157-414c-92f1-1ee2b7d734a3"
+        },
+        "2025": {
+            "info": "The start information segment event is triggered at the start the segment of gameplay where the player is required to select an information source. This event provides information about when the player is engaging in different sections of gameplay.",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "number of the round that just started",
+                    "type": "int",
+                    "name": "round"
+                },
+                {
+                    "info": "the type of vegetable grown in this round",
+                    "type": "string",
+                    "name": "vegetable"
+                },
+                {
+                    "info": "name of the correct object to choose",
+                    "type": "string",
+                    "name": "target_object"
+                },
+                {
+                    "info": "list of the objects the player can choose from",
+                    "type": "array->string",
+                    "name": "choices"
+                }
+            ],
+            "id": "bb628aaf-b985-40bb-b06f-70a17ab62737"
+        },
+        "2000": {
+            "info": "The start game event is triggered at the very beginning of the game (after the game finishes loading). This is used to compute things like time spent in game.",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "version identifier for the current build of the game",
+                    "type": "string",
+                    "name": "version"
+                },
+                {
+                    "info": "number of the current round when the event takes place or 0 if no round",
+                    "type": "int",
+                    "name": "round"
+                }
+            ],
+            "id": "78ceef52-44bb-4675-9aab-24942e043e27"
+        },
+        "2027": {
+            "info": "The start gardening segment event is triggered at the start of the section of gameplay where the player must tend to the garden. This event provides information about when the player is engaging in different sections of gameplay.",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "number of the round that just started",
+                    "type": "int",
+                    "name": "round"
+                },
+                {
+                    "info": "the type of vegetable grown in this round",
+                    "type": "string",
+                    "name": "vegetable"
+                }
+            ],
+            "id": "3a3c6d8d-2ea3-421a-94aa-f50f264845b2"
+        },
+        "2020": {
+            "info": "The start round event is triggered at the start of a round after the player selects the level to play. This event provides information about the game characteristics of the round (i.e. resources, objectives, setup). It is used in calculating things like time spent in a round (for speed and accuracy), attempts at solving a round, and the number of rounds the player has visited (exposures).",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "number of the round that just started",
+                    "type": "int",
+                    "name": "round"
+                },
+                {
+                    "info": "the type of vegetable grown in this round",
+                    "type": "string",
+                    "name": "vegetable"
+                }
+            ],
+            "id": "aba6fbc6-c454-41c1-8fae-e1719459396f"
+        },
+        "4011": {
+            "info": "This event occurs when the player clicks one of the levels/vegetables to play. It contains information about the selected vegetable and the location of the click.",
+            "args": [
+                {
+                    "info": "millisecond count since start of game",
+                    "type": "int",
+                    "name": "game_time"
+                },
+                {
+                    "info": "session event counter",
+                    "type": "int",
+                    "name": "event_count"
+                },
+                {
+                    "info": "the game screen coordinates of the click\rdictionary:\r{x: int, y: int, stage_width: int, stage_height: int}",
+                    "type": "object",
+                    "name": "coordinates"
+                },
+                {
+                    "info": "the name of the vegetable associated with the level",
+                    "type": "string",
+                    "name": "vegetable"
+                },
+                {
+                    "info": "number of the current round when the event takes place or 0 if no round",
+                    "type": "int",
+                    "name": "round"
+                }
+            ],
+            "id": "b9042f67-c5a4-4413-9758-c08a98a44d0a"
+        }
+    }
+}

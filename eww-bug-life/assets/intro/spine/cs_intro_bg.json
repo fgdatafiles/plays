@@ -1,0 +1,44 @@
+{
+"skeleton": {
+	"hash": "jJdWpZFFk7O4TSLvgYfuJcgcxhY",
+	"spine": "3.8.97",
+	"x": -841,
+	"y": -372.27,
+	"width": 1682,
+	"height": 745.53,
+	"images": "./BG/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "rotation": -0.15 },
+	{ "name": "size", "parent": "root" }
+],
+"slots": [
+	{ "name": "bg_pond", "bone": "size", "attachment": "bg_meadow" }
+],
+"animations": {
+	"animation": {
+		"bones": {
+			"size": {
+				"translate": [
+					{ "x": -13.38, "y": 86.72, "curve": "stepped", "time": 0.0 },
+					{ "time": 10.6667, "x": -13.38, "y": 86.72 },
+					{ "time": 12.7667, "x": 126.15, "y": 348.32 }
+				],
+				"scale": [
+					{ "x": 1.3, "y": 1.3, "curve": "stepped", "time": 0.0 },
+					{ "time": 10.6667, "x": 1.3, "y": 1.3 },
+					{ "time": 12.7667, "x": 1.986, "y": 1.986 }
+				]
+			}
+		}
+	}
+},
+"skins": {
+	"default": {
+		"bg_pond": {
+			"bg_meadow": { "y": 0.5, "width": 1680, "height": 741 }
+		}
+	}
+}
+}

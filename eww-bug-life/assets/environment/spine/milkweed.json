@@ -1,0 +1,50 @@
+{
+"skeleton": {
+	"hash": "2BPGx6PW+6xzamifdBes/RiZHtk",
+	"spine": "3.8.97",
+	"x": -254.55,
+	"y": -6.33,
+	"width": 493.17,
+	"height": 1781.86,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "size", "parent": "root" },
+	{ "name": "assets/milkweed", "parent": "size", "length": 722.34, "rotation": 90.89, "x": -5.39, "y": 22.08 },
+	{ "name": "ROOT_0", "parent": "size" },
+	{ "name": "NODE_0_1", "parent": "ROOT_0", "x": -20.25, "y": 438.75 },
+	{ "name": "NODE_0_2", "parent": "NODE_0_1", "x": 2.25, "y": 261 },
+	{ "name": "NODE_0_3", "parent": "NODE_0_2", "x": -6.75, "y": 175.5 },
+	{ "name": "NODE_0_4", "parent": "NODE_0_3", "x": 2.37, "y": 178.6 },
+	{ "name": "NODE_0_5", "parent": "NODE_0_4", "x": -7.98, "y": 192.22 },
+	{ "name": "NODE_0_1a", "parent": "NODE_0_1", "x": -169.64, "y": 106.15 },
+	{ "name": "NODE_0_2a", "parent": "NODE_0_2", "x": 131.52, "y": 70.12 },
+	{ "name": "NODE_0_3a", "parent": "NODE_0_3", "x": -127.99, "y": 92.77 },
+	{ "name": "NODE_0_4a", "parent": "NODE_0_4", "x": 127.35, "y": 96.01 },
+	{ "name": "FLOWER_0", "parent": "size", "x": -119.71, "y": 1636.75 },
+	{ "name": "FLOWER_1", "parent": "size", "x": -18.58, "y": 1692.48 },
+	{ "name": "FLOWER_2", "parent": "size", "x": 107.33, "y": 1614.05 },
+	{ "name": "FLOWER_3", "parent": "size", "x": 63.98, "y": 1420.03 },
+	{ "name": "WEB_1", "parent": "assets/milkweed", "length": 294.35, "x": 717.6, "y": 5.98 },
+	{ "name": "SPIDER_1", "parent": "WEB_1", "length": 150, "rotation": -37.73, "x": -66.59, "y": 51.21 }
+],
+"slots": [
+	{ "name": "assets/milkweed", "bone": "assets/milkweed", "attachment": "assets/milkweed" },
+	{ "name": "WEB_1", "bone": "WEB_1", "attachment": "assets/milkweed_web" }
+],
+"animations": {
+	"idle": {}
+},
+"skins": {
+	"default": {
+		"WEB_1": {
+			"assets/milkweed_web": { "x": 21.27, "y": -12.2, "rotation": -91.95, "width": 419, "height": 912 }
+		},
+		"assets/milkweed": {
+			"assets/milkweed": { "x": 862.45, "y": -10.86, "rotation": -91.9, "width": 462, "height": 1774 }
+		}
+	}
+}
+}

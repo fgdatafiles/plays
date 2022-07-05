@@ -1,0 +1,34 @@
+{
+"skeleton": {
+	"hash": "pWejm3ANIf0aOau/bwzU6gE6oAQ",
+	"spine": "3.8.97",
+	"x": 1.54,
+	"y": -70,
+	"width": 1326,
+	"height": 2984,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "size", "parent": "root" },
+	{ "name": "tree", "parent": "size", "scaleX": 2, "scaleY": 2 },
+	{ "name": "bone", "parent": "size", "length": 150, "rotation": 90 },
+	{ "name": "WEB_1", "parent": "bone", "x": 1570.11, "y": -783.85 },
+	{ "name": "SPIDER_1", "parent": "WEB_1", "length": 200, "rotation": -122.3, "x": 48.53, "y": 75.67 }
+],
+"slots": [
+	{ "name": "assets/tree", "bone": "tree" },
+	{ "name": "WEB_1", "bone": "WEB_1", "attachment": "assets/web_tree" }
+],
+"animations": {
+	"idle": {}
+},
+"skins": {
+	"default": {
+		"WEB_1": {
+			"assets/web_tree": { "x": -14.68, "y": 24.25, "rotation": -90, "width": 485, "height": 814 }
+		}
+	}
+}
+}

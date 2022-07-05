@@ -1,0 +1,44 @@
+{
+"skeleton": {
+	"hash": "bTB6f6CGlCCr6y402NtwuOOMfWg",
+	"spine": "3.8.97",
+	"x": -37.08,
+	"y": 471.24,
+	"width": 74.16,
+	"height": 95.13,
+	"images": "./BG/",
+	"audio": "./audio/"
+},
+"bones": [
+	{ "name": "root", "rotation": -0.1 }
+],
+"slots": [
+	{ "name": "tuft_1", "bone": "root", "attachment": "tuft_1" }
+],
+"events": {
+	"intro_01": { "audio": "intro_01.wav" },
+	"intro_02": { "audio": "intro_02.wav" }
+},
+"animations": {
+	"animation": {
+		"bones": {
+			"root": {
+				"translate": [
+					{ "time": 11.6667 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 2.1667, "name": "intro_01" },
+			{ "time": 7, "name": "intro_02" }
+		]
+	}
+},
+"skins": {
+	"default": {
+		"tuft_1": {
+			"tuft_1": { "x": -0.89, "y": 518.81, "width": 74, "height": 95 }
+		}
+	}
+}
+}

@@ -1,0 +1,71 @@
+{
+  "audioSprites": [
+    "sfx_general"
+  ],
+  "audio":        [
+    "music_title"
+  ],
+  "spineIntroData":        {
+    "id":          "intro",
+    "description": "game intro",
+    "skeletonAnims":   {
+      "cs_intro_audio":  "animation",
+      "cs_intro_bg":  "animation",
+      "cs_intro_olive":  "animation",
+      "ovly_plants":  "animation",
+      "bumble_bee":  "move_air",
+      "monarch_butterfly":  "move_air",
+      "grasshopper":  "jump_wip",
+      "robin":  "hunt"
+  },
+    "skeletons":   [
+      "cs_intro_audio",
+      "cs_intro_bg",
+      "cs_intro_olive",
+      "ovly_plants",
+      "bumble_bee",
+      "monarch_butterfly",
+      "grasshopper",
+      "robin"
+    ],
+    "audio_skeleton_id": "cs_intro_audio",
+    "icon_skeleton_id":  ""
+  },
+  
+  "lifecycles": {
+    "ladybug":               { "priority": 8, "from": "ladybug_larvae" },
+    "mantis":                { "priority": 7, "from": "mantis_nymph" },
+    "monarch_butterfly":     { "priority": 6, "from": "monarch_caterpillar" },
+    "swallowtail_butterfly": { "priority": 5, "from": "swallowtail_caterpillar" },
+    "tiger_beetle":          { "priority": 4, "from": "tiger_beetle_larvae" }
+  },
+  "myCreatures" : {
+    "ant"                     : { "scale": "2",   "dir": -1, "pos": { "x": 0.5 , "y": 0.5  } },
+    "aphid"                   : { "scale": "3",   "dir":  1, "pos": { "x": 0.5 , "y": 0.5  } },
+    "bumble_bee"              : { "scale": "2",   "dir": -1, "pos": { "x": 0.5 , "y": 0.5  } },
+    "centipede"               : { "scale": "1.5", "dir": -1, "pos": { "x": 0.5 , "y": 0.5  } },
+    "grasshopper"             : { "scale": "2",   "dir":  1, "pos": { "x": 0.5 , "y": 0.55 } },
+    "honey_bee"               : { "scale": "2",   "dir": -1, "pos": { "x": 0.5 , "y": 0.5  } },
+    "hummingbird"             : { "scale": "1",   "dir":  1, "pos": { "x": 0.4 , "y": 0.35 } },
+    "ladybug"                 : { "scale": "3",   "dir": -1, "pos": { "x": 0.5 , "y": 0.5  } },
+    "ladybug_larvae"          : { "scale": "3",   "dir": -1, "pos": { "x": 0.5 , "y": 0.5  } },
+    "mantis"                  : { "scale": "1",   "dir":  1, "pos": { "x": 0.5 , "y": 0.55 } },
+    "mantis_nymph"            : { "scale": "1",   "dir": -1, "pos": { "x": 0.5 , "y": 0.5  } },
+    "monarch_butterfly"       : { "scale": "1",   "dir": -1, "pos": { "x": 0.5 , "y": 0.5  } },
+    "monarch_caterpillar"     : { "scale": "2",   "dir":  1, "pos": { "x": 0.5 , "y": 0.5  } },
+    "robin"                   : { "scale": "0.7", "dir": -1, "pos": { "x": 0.5 , "y": 0.65 } },
+    "rolypoly"                : { "scale": "3",   "dir": -1, "pos": { "x": 0.5 , "y": 0.5  } },
+    "shrike"                  : { "scale": "0.7", "dir":  1, "pos": { "x": 0.5 , "y": 0.65 } },
+    "skink"                   : { "scale": "1",   "dir":  1, "pos": { "x": 0.5 , "y": 0.5  } },
+    "snail"                   : { "scale": "2",   "dir": -1, "pos": { "x": 0.5 , "y": 0.5  } },
+    "snake"                   : { "scale": "1",   "dir":  1, "pos": { "x": 0.5 , "y": 0.5  } },
+    "spider"                  : { "scale": "1",   "dir":  1, "pos": { "x": 0.5 , "y": 0.5  } },
+    "swallowtail_butterfly"   : { "scale": "1",   "dir":  1, "pos": { "x": 0.5 , "y": 0.5  } },
+    "swallowtail_caterpillar" : { "scale": "2",   "dir":  1, "pos": { "x": 0.5 , "y": 0.5  } },
+    "tiger_beetle"            : { "scale": "2",   "dir":  1, "pos": { "x": 0.5 , "y": 0.5  } },
+    "tiger_beetle_larvae"     : { "scale": "2",   "dir":  1, "pos": { "x": 0.5 , "y": 0.5  } },
+    "treehopper"              : { "scale": "3",   "dir": -1, "pos": { "x": 0.5 , "y": 0.5  } },
+    "wasp"                    : { "scale": "2",   "dir":  1, "pos": { "x": 0.5 , "y": 0.5  } },
+    "worm"                    : { "scale": "1",   "dir":  1, "pos": { "x": 0.5 , "y": 0.5  } }
+  }
+}

@@ -1,0 +1,326 @@
+var points_queue = {};
+points_queue.points_10 = [];
+points_queue.points_20 = [];
+points_queue.points_50 = [];
+points_queue.points_100 = [];
+points_queue.points_200 = [];
+points_queue.points_250 = [];
+points_queue.points_300 = [];
+points_queue.points_500 = [];
+points_queue.points_750 = [];
+points_queue.points_1000 = [];
+points_queue.points_2000 = [];
+points_queue.points_3000 = [];
+points_queue.points_4000 = [];
+points_queue.points_5000 = [];
+points_queue.points_6000 = [];
+points_queue.points_7000 = [];
+points_queue.points_8000 = [];
+points_queue.points_9000 = [];
+points_queue.points_10000 = [];
+points_queue.points_20000 = [];
+points_queue.points_freeball = [];
+
+var PointObject = function(pos, amt, scale){
+
+	var me = this;
+
+	var scale = scale || 1.0;
+	var point;
+	var point_name = "points_" + amt;
+
+	if(points_queue[point_name].length > 0){
+		point = points_queue[point_name].pop();
+		point.visible = true;
+		point.material.opacity = 1;
+	}else{
+		var geometry = new THREE.PlaneGeometry(4 * scale, 2 * scale, 1);
+		var material = new THREE.MeshBasicMaterial({depthTest:false, map: oASSETS["points_" + amt], transparent:true, side: THREE.FrontSide } );
+		point = new THREE.Mesh(geometry, material);
+	}
+
+
+	var vector = new THREE.Vector3(pos.x, pos.y + 2, pos.z);
+	vector.project(GAME.camera);
+
+	//point.renderOrder = 0;
+	point.position.set(pos.x, pos.y + 2, pos.z);
+	point.lookAt(GAME.camera.position);
+
+	r2 = new THREE.Quaternion();
+	r2.setFromEuler(new THREE.Euler(__utils.radFromDeg(-90), 0, 0));
+	point.quaternion.slerp(r2, 0.5);
+
+	point.scale.set(2,2,2);
+	GAME.scene.add(point);
+
+	TweenLite.to(point.position, 1, {z: pos.z - 10});
+	TweenLite.to(point.scale, 1, {x: 3, y:3, z:3, ease: Elastic.easeOut});
+	TweenLite.to(point.material, 0.2, {opacity: 0, delay:0.8});
+
+	this.doDestroy = function(){
+		point.visible = false;
+		points_queue[point_name].push(point);
+		GAME.scene.remove(point);
+	}
+
+	doSetTimeout(me.doDestroy, 600);
+
+}
+
+
+
+
+function GameGUI(){
+
+	var me = this;
+	var z_depth = .000001;
+	var score_digits = [];
+	var ball_digits = [];
+
+	var mat = null;
+
+	this.doGenerateSprite = function(data){
+
+
+		var map = oASSETS[data.src.texture].clone();
+		map.repeat = new THREE.Vector2(data.src.w / map.image.width, data.src.h / map.image.height);
+		map.offset = new THREE.Vector2(data.src.x / map.image.width, data.src.y / map.image.height);	
+
+		if(platform.isMobile){
+			map.minFilter = THREE.NearestMipMapNearestFilter;
+		}
+
+		map.needsUpdate = true;
+
+		var mat = new THREE.SpriteMaterial({map: map, fog:false, transparent:true});
+		var sprite = new THREE.Sprite(mat);
+		sprite.sheet_w = map.image.width;
+		sprite.sheet_h = map.image.height;
+		sprite.my_data = data;
+		sprite.center = new THREE.Vector2(data.center.x, data.center.y);
+		sprite.position.set(data.pos.x, data.pos.y, z_depth);
+		var scale = data.size.w;
+		sprite.scale.set(data.size.w, data.size.h, 1);
+		sprite.renderDepth = 1;
+		z_depth += .000001;
+		return sprite;	
+	}
+
+
+
+	this.doResize = function(){
+
+		//calculate for hud coordinate system
+		var renderer_size = new THREE.Vector2();
+		GAME.renderer.getSize(renderer_size);
+
+		var renderer_ratio = renderer_size.width / renderer_size.height;
+ 		var vFOV = GAME.camera.fov * Math.PI / 180;
+		var visible_height = 2 * Math.tan( vFOV / 2 ) * 1;
+		var visible_width = visible_height * renderer_ratio;
+		var width_pixel_ratio = visible_width / renderer_size.width;
+		var height_pixel_ratio = visible_height / renderer_size.height;
+
+		//score holder
+ 		holder_score.scale.set(width_pixel_ratio * oSTAGE.scale, width_pixel_ratio * oSTAGE.scale, 1);
+ 		holder_score.position.set(0, (visible_height * 0.5), -1);
+
+ 		holder_balls.scale.set(width_pixel_ratio * oSTAGE.scale, width_pixel_ratio * oSTAGE.scale, 1);
+ 		holder_balls.position.set((visible_width * 0.25), (visible_height * 0.5), -1);
+
+ 		//fader
+		holder_fader.scale.set(width_pixel_ratio * oSTAGE.scale, width_pixel_ratio * oSTAGE.scale, 1);
+ 		holder_fader.position.set(0,0, -1);
+
+		me.doUpdate();
+	}
+
+
+
+
+	this.doUpdateBalls = function(){
+		var i;
+		var a = String(GAME.balls_remaining).split("");
+		var digit = 0;
+		var spacing = 38;
+		var width = ((a.length) * 33.6);
+		var myx = 186 + (-width * 0.5);
+
+
+		for(i=0;i<a.length; i++){
+			var ball_digit = ball_digits[digit];
+			ball_digit.material.map.offset.x = parseInt(a[i]) * 0.0996;
+			ball_digit.visible=true;
+			ball_digit.position.x = myx + (i*spacing);
+			digit++;        
+		}
+
+		for(i = Math.max(2,digit+1); i <= ball_digits.length; i++){
+			var ball_digit = ball_digits[i-1];
+			ball_digit.visible=false;
+		}
+	}
+
+
+
+
+	this.doUpdateScore = function(){
+
+		GAME.score = Math.min(999999, GAME.score);
+
+		var i;
+		var a = String(GAME.score).split("");
+		var digit = 0;
+		var spacing = 38;
+		var width = ((a.length) * 33.6);
+		var myx = -64 + (-width * 0.5);
+
+		for(i=0;i<a.length; i++){
+			var score_digit = score_digits[digit];
+			score_digit.material.map.offset.x = parseInt(a[i]) * 0.0996;
+			score_digit.visible=true;
+			score_digit.position.x = myx + (i*spacing);
+			digit++;        
+		}
+
+		for(i = Math.max(2,digit+1); i <= score_digits.length; i++){
+			var score_digit = score_digits[i-1];
+			score_digit.visible=false;
+		}
+	}
+
+	this.doFadeOut = function(delay){
+		fader_black.visible = true;
+		fader_black.material.opacity = 0;
+		createjs.Tween.get(fader_black.material,  {override:true}).wait(delay || 0).to({opacity:1}, 500);
+	}
+
+	this.doFadeIn = function(){
+		createjs.Tween.get(fader_black.material,  {override:true}).to({opacity:0}, 500).call(function(){
+			fader_black.material.opacity = 0;
+			fader_black.visible = false;
+		});
+	}
+
+
+
+
+
+	//-------------------------
+	// score
+	//-------------------------
+	
+	score_digits =[];
+	var holder_score = new THREE.Group();
+	GAME.camera.add(holder_score);
+
+	
+	var panel = me.doGenerateSprite({pos:{x:-256, y:0}, size:{w:512, h:64}, src:{texture: "ScoreTopper", x:0, y:0, w:1024, h:128}, center: {x : 0, y: 1}});
+	holder_score.add(panel);
+
+	for(var i=0; i<6; i++){
+		var digit = me.doGenerateSprite({pos:{x:0 + (i*36), y:-4}, size:{w:40, h:50}, src:{texture: "score_digits", x:(102 * i), y:0, w:102, h:128}, center: {x : 0, y: 1}});
+		holder_score.add(digit);
+		score_digits.push(digit);
+	}
+
+	ball_digits=[];
+	var holder_balls = new THREE.Group();
+	GAME.camera.add(holder_balls);
+	for(var i=0; i<2; i++){
+		var digit = me.doGenerateSprite({pos:{x:0 + (i*36), y:-4}, size:{w:40, h:50}, src:{texture: "score_digits", x:(102 * i), y:0, w:102, h:128}, center: {x : 0, y: 1}});
+		holder_score.add(digit);
+		ball_digits.push(digit);
+	}
+
+
+	//-------------------------
+	// faders
+	//-------------------------
+
+	//faders
+	var holder_fader = new THREE.Group();
+	GAME.camera.add(holder_fader);
+
+	//black fader
+	var fader_black = me.doGenerateSprite({pos:{x:0, y:0}, size:{w:oSTAGE.game_width, h:oSTAGE.game_height}, src:{texture: "black_fader", x:0, y:0, w:64, h:64}, center: {x : .5, y: .5}});
+	fader_black.material.transparent = true;
+	fader_black.visible = true;
+	
+	//white fader
+	var fader_white = me.doGenerateSprite({pos:{x:0, y:0}, size:{w:oSTAGE.game_width, h:oSTAGE.game_height}, src:{texture: "white_fader", x:0, y:0, w:64, h:64}, center: {x : .5, y: .5}});
+	fader_white.material.transparent = true;
+	fader_white.visible = false;
+
+	holder_fader.add(fader_black, fader_white);
+
+
+	
+
+	//me.doUpdateScore();
+	var br_mouse = new THREE.Vector2();
+	var bl_mouse = new THREE.Vector2();
+	var using_pointer = false;
+	var dist = 0;
+
+
+		
+
+
+	this.doUpdate = function(){
+
+		if(!GAME || GAME.is_paused){return;}
+
+		var adj_scale = 1;
+
+		if(!platform.isTouchDevice || __input.mouse_is_down){
+
+			var touches;
+			if(platform.isTouchDevice){
+				touches = __input.doGetTouches();
+			}else{
+				touches = [{
+		            id: 0,
+					mouse_is_down: __input.mouse_is_down,
+		            click_pending: __input.click_pending,
+		           	my_x: __input.mouse_x,
+					my_y: __input.mouse_y,
+		           	start_x: __input.start_x,
+					start_y: __input.start_y
+		        }];
+			}
+
+
+			//register touches
+			for(var i=0; i<touches.length; i++){
+				var touch = touches[i];
+				/*
+				//shred
+				bl_mouse.x = (touch.start_x) * (adj_scale);
+				bl_mouse.y = (oSTAGE.game_height - touch.start_y) * (adj_scale);
+				dist = __utils.doGetDistance(bl_mouse.x, bl_mouse.y, 74, 100);
+				if(dist <= 150){
+					shred_over = true;
+					shred_down = touch.mouse_is_down;
+				}
+				*/
+			}
+
+
+			
+
+		}
+
+
+
+	}
+
+	GAME.actives.push(this);
+
+
+
+}
+
+
+

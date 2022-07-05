@@ -1,0 +1,411 @@
+{
+	"achievements": [{
+			"id": "targets_row",
+			"description": "Hit $VAL$ targets in a row",
+			"icon": "icon_achievement_target",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "targets",
+				"compareValue": 10,
+                "progress": 0,
+                "useRecord": true
+			},
+            "currentLevel": 0,
+            "levels": [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+		},
+		{
+			"id": "targets_timed",
+			"description": "Hit $VAL$ targets in 10 seconds",
+			"icon": "icon_achievement_target",
+            "type": "TIMED",
+			"data": {
+                "compareName": "targets",
+				"compareValue": 10,
+				"time": 10,
+                "progress": 0
+			},
+            "currentLevel": 0,
+            "levels": [10, 20, 30, 40, 50]
+		},
+		{
+			"id": "targets_total",
+			"description": "Hit $VAL$ targets in total",
+			"icon": "icon_achievement_target",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "targetsTotal",
+				"compareValue": 100,
+                "progress": 0
+			},
+            "currentLevel": 0,
+            "levels": [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+		},
+		{
+			"id": "total_score",
+			"description": "Get a total score of $VAL$ at the end of the game",
+			"icon": "icon_achievement_target",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "score",
+				"compareValue": 10000,
+                "progress": 0
+			},
+            "currentLevel": 0,
+            "levels": [10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000]
+		},
+		{
+			"id": "60_accuracy",
+			"description": "Obtain more than 60% accuracy in a game",
+			"icon": "icon_achievement_target",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "accuracy",
+				"compareValue": 60,
+                "progress": 0
+			}
+		},
+		{
+			"id": "all_corridor_targets",
+			"description": "Hit all the targets in the corridor in one game",
+			"icon": "icon_achievement_target",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "corridorTargets",
+				"compareValue": 27,
+                "progress": 0
+			}
+		},
+		{
+			"id": "targets_total_bcg",
+			"description": "Hit $VAL$ targets in total from Big City Greens",
+			"icon": "target_bcg_sign",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "targetsTotalIP",
+				"compareValue": 100,
+				"ip": "bigcitygreens",
+                "progress": 0
+			},
+            "currentLevel": 0,
+            "levels": [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+		},
+		{
+			"id": "targets_bcg_chicken",
+			"description": "Hit $VAL$ chickens from Big City Greens",
+			"icon": "target_bcg_chicken",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "targetsNamed",
+				"compareValue": 10,
+				"target": "TargetBCGChicken",
+				"ip": "bigcitygreens",
+                "progress": 0
+            },
+            "currentLevel": 0,
+            "levels": [10, 20, 30, 40, 50]
+        },
+		{
+			"id": "targets_total_descendants",
+			"description": "Hit $VAL$ targets in total from Descendants 3",
+			"icon": "target_d3_icon_evie",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "targetsTotalIP",
+				"compareValue": 100,
+				"ip": "descendants",
+                "progress": 0
+			},
+            "currentLevel": 0,
+            "levels": [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+		},
+		{
+			"id": "targets_descendants_knight",
+			"description": "Hit $VAL$ knights from Descendants 3",
+			"icon": "target_d3_knight",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "targetsNamed",
+				"compareValue": 10,
+				"target": "TargetD3Special",
+				"ip": "descendants",
+                "progress": 0
+            },
+            "currentLevel": 0,
+            "levels": [10, 20, 30, 40, 50]
+        },
+		{
+			"id": "targets_total_jrwi",
+			"description": "Hit $VAL$ targets in total from Just Roll With It",
+			"icon": "target_jrwi_mask",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "targetsTotalIP",
+				"compareValue": 100,
+				"ip": "justrollwithit",
+                "progress": 0
+			},
+            "currentLevel": 0,
+            "levels": [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+		},
+		{
+			"id": "targets_jrwi_lizard",
+			"description": "Hit $VAL$ lizards from Just Roll With It",
+			"icon": "target_jrwi_lizard",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "targetsNamed",
+				"compareValue": 10,
+				"target": "TargetJRWILizard",
+				"ip": "justrollwithit",
+                "progress": 0
+            },
+            "currentLevel": 0,
+            "levels": [10, 20, 30, 40, 50]
+        },
+		{
+			"id": "targets_total_vampirina",
+			"description": "Hit $VAL$ targets in total from Vampirina",
+			"icon": "target_vampirina_penelope",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "targetsTotalIP",
+				"compareValue": 100,
+				"ip": "vampirina",
+                "progress": 0
+			},
+            "currentLevel": 0,
+            "levels": [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+		},
+		{
+			"id": "targets_vampirina_pizza",
+			"description": "Hit $VAL$ pizzas from Vampirina",
+			"icon": "target_vampirina_pizza",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "targetsNamed",
+				"compareValue": 10,
+				"target": "TargetVampirinaPizza",
+				"ip": "vampirina",
+                "progress": 0
+            },
+            "currentLevel": 0,
+            "levels": [10, 20, 30, 40, 50]
+        },
+		{
+			"id": "targets_total_mmua",
+			"description": "Hit $VAL$ targets in total from Mickey Mouse Mixed-Up Adventures",
+			"icon": "target_mickey_balloon_1",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "targetsTotalIP",
+				"compareValue": 100,
+				"ip": "mmua",
+                "progress": 0
+			},
+            "currentLevel": 0,
+            "levels": [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+		},
+		{
+			"id": "targets_mmua_neon",
+			"description": "Hit $VAL$ neon signs from Mickey Mouse Mixed-Up Adventures",
+			"icon": "target_mickey_neon",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "targetsNamed",
+				"compareValue": 10,
+				"target": "TargetMMUANeon",
+				"ip": "mmua",
+                "progress": 0
+            },
+            "currentLevel": 0,
+            "levels": [10, 20, 30, 40, 50]
+        },
+		{
+			"id": "targets_total_gabby",
+			"description": "Hit $VAL$ targets in total from Gabby Duran and The Unsittables",
+			"icon": "target_gabby_symbol_1",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "targetsTotalIP",
+				"compareValue": 100,
+				"ip": "gabby",
+                "progress": 0
+			},
+            "currentLevel": 0,
+            "levels": [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+		},
+		{
+			"id": "targets_gabby_aliens",
+			"description": "Hit $VAL$ aliens from Gabby Duran and The Unsittables",
+			"icon": "target_gabby_alien",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "targetsNamed",
+				"compareValue": 10,
+				"target": "TargetGabby_Alien",
+				"ip": "gabby",
+                "progress": 0
+            },
+            "currentLevel": 0,
+            "levels": [10, 20, 30, 40, 50]
+        },
+		{
+			"id": "targets_total_muppets",
+			"description": "Hit $VAL$ targets in total from Muppet Babies",
+			"icon": "target_muppet_item_2",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "targetsTotalIP",
+				"compareValue": 100,
+				"ip": "muppets",
+                "progress": 0
+			},
+            "currentLevel": 0,
+            "levels": [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+		},
+		{
+			"id": "targets_muppets_drums",
+			"description": "Hit $VAL$ drum kits from Muppet Babies",
+			"icon": "target_muppet_drums",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "targetsNamed",
+				"compareValue": 10,
+				"target": "TargetMuppets_Drums",
+				"ip": "muppets",
+                "progress": 0
+            },
+            "currentLevel": 0,
+            "levels": [10, 20, 30, 40, 50]
+        },
+		{
+			"id": "targets_total_tots",
+			"description": "Hit $VAL$ targets in total from T.O.T.S.",
+			"icon": "target_tots_sun",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "targetsTotalIP",
+				"compareValue": 100,
+				"ip": "tots",
+                "progress": 0
+			},
+            "currentLevel": 0,
+            "levels": [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+		},
+		{
+			"id": "targets_tots_flypad",
+			"description": "Hit $VAL$ Fly Pads from T.O.T.S.",
+			"icon": "target_tots_flypad",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "targetsNamed",
+				"compareValue": 10,
+				"target": "TargetTots_Flypad",
+				"ip": "tots",
+                "progress": 0
+            },
+            "currentLevel": 0,
+            "levels": [10, 20, 30, 40, 50]
+        },
+		{
+			"id": "targets_total_zombies",
+			"description": "Hit $VAL$ targets in total from ZOMBIES 2",
+			"icon": "target_zombies_letter_c",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "targetsTotalIP",
+				"compareValue": 100,
+				"ip": "zombies",
+                "progress": 0
+			},
+            "currentLevel": 0,
+            "levels": [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+		},
+		{
+			"id": "targets_zombies_shrimp",
+			"description": "Hit $VAL$ shrimp from ZOMBIES 2",
+			"icon": "target_zombies_shrimp",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "targetsNamed",
+				"compareValue": 10,
+				"target": "TargetZombies_Shrimp",
+				"ip": "zombies",
+                "progress": 0
+            },
+            "currentLevel": 0,
+            "levels": [10, 20, 30, 40, 50]
+        },
+		{
+			"id": "targets_total_mira",
+			"description": "Hit $VAL$ targets in total from Mira Royal Detective",
+			"icon": "target_mira_crest",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "targetsTotalIP",
+				"compareValue": 100,
+				"ip": "mira",
+                "progress": 0
+			},
+            "currentLevel": 0,
+            "levels": [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+		},
+		{
+			"id": "targets_mira_glasses",
+			"description": "Hit $VAL$ glasses from Mira Royal Detective",
+			"icon": "target_mira_glasses",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "targetsNamed",
+				"compareValue": 10,
+				"target": "TargetMira_Glasses",
+				"ip": "mira",
+                "progress": 0
+            },
+            "currentLevel": 0,
+            "levels": [10, 20, 30, 40, 50]
+        },
+		{
+			"id": "targets_total_udm",
+			"description": "Hit $VAL$ targets in total from Upside Down Magic",
+			"icon": "target_udm_sign",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "targetsTotalIP",
+				"compareValue": 100,
+				"ip": "udm",
+                "progress": 0
+			},
+            "currentLevel": 0,
+            "levels": [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+		},
+		{
+			"id": "targets_udm_topiary",
+			"description": "Hit $VAL$ UDM signs from Upside Down Magic",
+			"icon": "target_udm_sign",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "targetsNamed",
+				"compareValue": 10,
+				"target": "TargetUDM_Sign",
+				"ip": "udm",
+                "progress": 0
+            },
+            "currentLevel": 0,
+            "levels": [10, 20, 30, 40, 50]
+        }
+	],
+    "temp": [
+		{
+			"id": "leaderboard_1st",
+			"description": "Finish first place in a game!",
+			"icon": "icon_achievement_target",
+            "type": "COMPARISON",
+			"data": {
+                "compareName": "leaderboard",
+				"compareValue": 1,
+                "progress": 0
+			}
+		}
+    ]
+}

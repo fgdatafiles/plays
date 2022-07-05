@@ -1,0 +1,143 @@
+
+function PauseMenu (target){
+
+	var me = this;
+
+	//mute
+	__snds.forceMute();
+
+	//create or reuse stage
+	var canvas = document.getElementById(target);
+	var stage = canvas.my_stage || new createjs.Stage(canvas);
+
+	stage.enableMouseOver(0);
+	stage.tickChildren = false;
+	stage.tickEnabled = false;
+	stage.needUpdate = false;
+	stage.snapToPixelsEnabled = true;
+	stage.actives = [];
+ 	stage.activeTweens = [];
+	stage.enableDOMEvents(false);
+	stage.forget = false;
+
+	if(platform.isMobile){
+    	createjs.Touch.enable(stage);
+    	stage.enableDOMEvents(false);
+  	}else{
+    	stage.enableDOMEvents(true);
+    	stage.enableMouseOver(20);
+  	}
+
+	canvas.my_stage = stage;
+
+	//clear
+	stage.removeAllChildren();
+
+	//add scene
+	var frame = stage.addChild(new lib.popup_pause);
+	frame.my_scale = null;
+	
+	//buttons
+	frame.b_exit.helper = new __utils.ButtonHelper(stage, frame.b_exit, "norm", "over");
+	frame.b_exit.helper.setSounds({mousedown:"snd_click", rollover:"snd_rollover"});
+	__utils.doText(	frame.b_exit.txt, oLANG.pause_exit, {verticalAlign: "middle"});
+	frame.b_exit.addEventListener("click", function(e){
+		me.doDestroy();
+		__snds.unforceMute();
+		GAME.doQuit();
+	});	
+
+	frame.b_resume.helper = new __utils.ButtonHelper(stage, frame.b_resume, "norm", "over");
+	frame.b_resume.helper.setSounds({mousedown:"snd_click", rollover:"snd_rollover"});
+	__utils.doText(	frame.b_resume.txt, oLANG.pause_resume, {verticalAlign: "middle"});
+	frame.b_resume.addEventListener("click", function(e){
+		__snds.unforceMute();
+		me.doDestroy();
+		GAME.doResume();
+	});	
+
+	//buttons
+	frame.b_help.helper = new __utils.ButtonHelper(stage, frame.b_help, "norm", "over");
+	frame.b_help.helper.setSounds({mousedown:"snd_click", rollover:"snd_rollover"});
+	__utils.doText(	frame.b_help.txt, oLANG.pause_help, {verticalAlign: "middle"});
+	frame.b_help.addEventListener("click", function(e){
+		__snds.unforceMute();
+		me.doDestroy();
+		SCENE.doDestroy();
+		SCENE = new InstructionsScreen(true);
+	});	
+
+
+
+	//show
+	stage.needUpdate = true;
+
+
+
+
+
+	//---------------------------
+	// resize update
+	//---------------------------
+
+	this.doResizeUpdate = function(){
+
+		//update canvas
+		canvas.style.left = "0px";
+		canvas.style.top = "0px";
+		canvas.style.width = oSTAGE.wrapper_width + "px";
+		canvas.style.height = oSTAGE.wrapper_height + "px";
+		canvas.width  = oSTAGE.wrapper_width * oSTAGE.pixel_ratio;
+		canvas.height = oSTAGE.wrapper_height * oSTAGE.pixel_ratio;
+
+		//update frame
+		frame.x = (oSTAGE.game_width * 0.5) | 0;
+		frame.y = (oSTAGE.game_height * 0.5) | 0;
+		frame.my_scale = oSTAGE.scale;
+
+		//update stage
+		stage.scale = oSTAGE.scale * oSTAGE.pixel_ratio;
+		stage.needUpdate = true;
+	}
+	
+
+	//---------------------------
+	// manage
+	//---------------------------
+
+	this.doDestroy = function(){
+
+		if(!oUSER.is_mute){
+			createjs.Sound.muted = false;
+		}
+
+		resize_updater.forget = true;
+
+		stage.forget = true;
+		stage.enableMouseOver(0);
+		stage.removeAllChildren();
+		stage.needUpdate = true;
+
+		canvas.style.backgroundColor = "rgba(0,0,0,0)";
+		canvas.style.display= "none";
+	}
+
+
+	//---------------------------
+	// start
+	//---------------------------
+
+	me.doResizeUpdate();
+	var resize_updater = {doResizeUpdate : me.doResizeUpdate};
+	update_queue.push(resize_updater);
+
+	active_stages.push(stage);
+
+	canvas.style.display= "block";
+	canvas.style.backgroundColor = "rgba(0,0,0,0.4)";
+
+
+}
+
+
+

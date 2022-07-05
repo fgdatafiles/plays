@@ -1,0 +1,251 @@
+{
+  "pathsByPondLevel": {
+    "bottom": [
+      {
+        "id":  "1.1",
+        "options": [
+          ["ground"],
+          ["plants", "flowers"],
+          ["worm", "ant"]
+        ],
+        "additional_options": {
+          "after_step": 3,
+          "options": [
+            {"required": ["ant"], "option": ["snail", "centipede"]},
+            {"required": ["worm"], "option": ["rolypoly", "tiger_beetle_larvae"]}
+          ]
+        }
+      }
+    ],
+    "middle1": [
+      {
+        "id":  "2.1",
+        "required": ["worm", "plants"],
+        "nextPath": ["3.1"],
+        "options": [
+          ["aphid", "snake"],
+          ["ladybug_larvae", "spider"],
+          ["reject_1", "reject_2"]
+        ]
+      },
+      {
+        "id":  "2.2",
+        "required": ["ant", "plants"],
+        "nextPath": ["3.1"],
+        "options": [
+          ["ladybug_larvae", "aphid"],
+          ["snake", "spider"],
+          ["reject_1", "reject_2"]
+        ]
+      },
+      {
+        "id":  "2.3",
+        "required": ["plants"],
+        "nextPath": ["3.1", "3.2"],
+        "options": [
+          ["spider", "treehopper"],
+          ["mantis_nymph", "snake"],
+          ["reject_1", "reject_2"]
+        ]
+      },
+      {
+        "id":  "2.4",
+        "required": ["worm", "flowers"],
+        "nextPath": ["3.2"],
+        "options": [
+          ["treehopper", "grasshopper"],
+          ["ladybug_larvae", "mantis_nymph"],
+          ["reject_1", "reject_2"]
+        ]
+      },
+      {
+        "id":  "2.5",
+        "required": ["ant", "flowers"],
+        "nextPath": ["3.2"],
+        "options": [
+          ["ladybug_larvae", "treehopper"],
+          ["grasshopper", "mantis_nymph"],
+          ["reject_1", "reject_2"]
+        ]
+      },
+      {
+        "id":  "2.6",
+        "required": ["flowers"],
+        "nextPath": ["3.1", "3.2"],
+        "options": [
+          ["spider", "treehopper"],
+          ["mantis_nymph", "snake"],
+          ["reject_1", "reject_2"]
+        ]
+      }
+    ],
+    "middle2": [
+      {
+        "id":  "3.1",
+        "nextPath": ["4.1"],
+        "options": [
+          ["honey_bee", "skink"],
+          ["monarch_caterpillar", "wasp"],
+          ["reject_1", "reject_2"]
+        ]
+      },
+      {
+        "id":  "3.2",
+        "nextPath": ["4.2"],
+        "options": [
+          ["monarch_caterpillar", "swallowtail_caterpillar"],
+          ["honey_bee", "wasp"],
+          ["reject_1", "reject_2"]
+        ]
+      }
+    ],
+    "surface": [
+      {
+        "id":  "4.1",
+        "options": [
+          ["bumble_bee", "wasp"],
+          ["robin", "shrike"]
+        ]
+      },
+      {
+        "id":  "4.2",
+        "options": [
+          ["bumble_bee", "hummingbird"],
+          ["robin", "shrike"]
+        ]
+      }
+    ]
+  },
+
+
+  "choicesByID": {
+    "ground" : {
+      "id": "ground", "key": "ground",
+      "options": ["ground", "ground_1", "ground_2", "ground_3"]
+    },
+
+    "plants": {
+      "id": "plants","key": "plants",
+      "options": ["agropyron", "agropyron", "sweetgrass", "carex_laxiculmis"]
+    },
+    "flowers": {
+      "id": "flowers", "key": "flowers",
+      "options": ["milkweed", "milkweed", "lobelia", "coneflower"]
+    },
+
+    "ant" : {
+      "id": "ant", "key": "ant",
+      "options": ["ant", "ant", "ant", "ant", "ant"]
+    },
+
+    "aphid" : {
+      "id": "aphid", "key": "aphid",
+      "options": ["aphid", "aphid", "aphid", "aphid", "aphid"]
+    },
+
+    "bumble_bee" : {
+      "id": "bumble_bee", "key": "bumble_bee",
+      "options": ["bumble_bee", "bumble_bee"]
+    },
+
+    "centipede" : {
+      "id": "centipede", "key": "centipede",
+      "options": ["centipede", "centipede"]
+    },
+
+    "grasshopper" : {
+      "id": "grasshopper", "key": "grasshopper",
+      "options": ["grasshopper", "grasshopper"]
+    },
+
+    "honey_bee" : {
+      "id": "honey_bee", "key": "honey_bee",
+      "options": ["honey_bee", "honey_bee", "honey_bee"]
+    },
+
+    "hummingbird" : {
+      "id": "hummingbird", "key": "hummingbird",
+      "options": ["hummingbird"]
+    },
+
+    "ladybug_larvae" : {
+      "id": "ladybug_larvae", "key": "ladybug_larvae",
+      "options": ["ladybug_larvae", "ladybug_larvae", "ladybug_larvae"],
+      "unlock" : [{"name": "ladybug", "id" : "ladybug", "targetLayer": "surface"}]
+    },
+
+    "mantis_nymph" : {
+      "id": "mantis_nymph", "key": "mantis_nymph",
+      "options": ["mantis_nymph", "mantis_nymph"],
+      "unlock" : [{"name": "mantis", "id" : "mantis", "targetLayer": "middle2"}]
+    },
+
+    "monarch_caterpillar" : {
+      "id": "monarch_caterpillar", "key": "monarch_caterpillar",
+      "options": ["monarch_caterpillar", "monarch_caterpillar"],
+      "unlock" : [{"name": "monarch_butterfly", "id" : "monarch_butterfly", "targetLayer": "surface"}]
+    },
+
+    "robin" : {
+      "id": "robin", "key": "robin",
+      "options": ["robin"]
+    },
+
+    "rolypoly" : {
+      "id": "rolypoly", "key": "rolypoly",
+      "options": ["rolypoly", "rolypoly", "rolypoly", "rolypoly"]
+    },
+
+    "shrike" : {
+      "id": "shrike", "key": "shrike",
+      "options": ["shrike"]
+    },
+
+    "skink" : {
+      "id": "skink", "key": "skink",
+      "options": ["skink", "skink"]
+    },
+
+    "snail" : {
+      "id": "snail", "key": "snail",
+      "options": ["snail", "snail"]
+    },
+
+    "snake" : {
+      "id": "snake", "key": "snake",
+      "options": ["snake"]
+    },
+
+    "spider" : {
+      "id": "spider", "key": "spider",
+      "options": ["spider", "spider"]
+    },
+
+    "swallowtail_caterpillar" : {
+      "id": "swallowtail_caterpillar", "key": "swallowtail_caterpillar",
+      "options": ["swallowtail_caterpillar", "swallowtail_caterpillar"],
+      "unlock" : [{"name": "swallowtail_butterfly", "id" : "swallowtail_butterfly", "targetLayer": "surface"}]
+    },
+
+    "tiger_beetle_larvae" : {
+      "id": "tiger_beetle_larvae", "key": "tiger_beetle_larvae",
+      "options": ["tiger_beetle_larvae", "tiger_beetle_larvae"],
+      "unlock" : [{"name": "tiger_beetle", "id" : "tiger_beetle", "targetLayer": "middle2"}]
+    },
+
+    "treehopper" : {
+      "id": "treehopper", "key": "treehopper",
+      "options": ["treehopper", "treehopper", "treehopper", "treehopper"]
+    },
+
+    "wasp" : {
+      "id": "wasp", "key": "wasp",
+      "options": ["wasp", "wasp"]
+    },
+
+    "worm" : {
+      "id": "worm", "key": "worm",
+      "options": ["worm", "worm"]
+    }
+  }
+}

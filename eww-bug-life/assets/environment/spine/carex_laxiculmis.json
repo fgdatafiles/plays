@@ -1,0 +1,48 @@
+{
+"skeleton": {
+	"hash": "3LcbmtVSbmGZj0oo5DbPOBTU8g0",
+	"spine": "3.8.97",
+	"x": -334.31,
+	"y": -48.59,
+	"width": 646,
+	"height": 912,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "size", "parent": "root" },
+	{ "name": "assets/carex_laxiculmis", "parent": "size", "length": 388.76, "rotation": 89.34, "x": -5.19, "y": 30.07 },
+	{ "name": "WEB_1", "parent": "assets/carex_laxiculmis", "length": 159.6, "x": 373.63, "y": -5.52 },
+	{ "name": "ROOT_0", "parent": "size", "x": -27.01 },
+	{ "name": "ROOT_1", "parent": "size", "x": 3.86 },
+	{ "name": "ROOT_2", "parent": "size", "x": 32.15 },
+	{ "name": "NODE_0_1", "parent": "ROOT_0", "x": -30.86, "y": 225.05 },
+	{ "name": "NODE_0_2", "parent": "NODE_0_1", "x": -126.03, "y": 298.35 },
+	{ "name": "NODE_0_3a", "parent": "NODE_0_2", "x": -100.31, "y": -138.89 },
+	{ "name": "NODE_0_3b", "parent": "NODE_0_2", "x": -34.72, "y": 142.75 },
+	{ "name": "NODE_1_1", "parent": "ROOT_1", "x": 15.43, "y": 300.92 },
+	{ "name": "NODE_1_2", "parent": "NODE_1_1", "x": 28.29, "y": 291.92 },
+	{ "name": "NODE_1_3", "parent": "NODE_1_2", "x": 57.87, "y": 160.75 },
+	{ "name": "NODE_2_1", "parent": "ROOT_2", "x": 50.15, "y": 218.62 },
+	{ "name": "NODE_2_2", "parent": "NODE_2_1", "x": 119.6, "y": 189.04 },
+	{ "name": "SPIDER_1", "parent": "WEB_1", "length": 100, "rotation": -150.14, "x": 74.88, "y": 42.91 }
+],
+"slots": [
+	{ "name": "assets/carex_laxiculmis", "bone": "assets/carex_laxiculmis", "attachment": "assets/carex_laxiculmis" },
+	{ "name": "WEB_1", "bone": "WEB_1", "attachment": "assets/carex_web" }
+],
+"animations": {
+	"idle": {}
+},
+"skins": {
+	"default": {
+		"WEB_1": {
+			"assets/carex_web": { "x": -17.74, "y": 2.42, "scaleY": 0.8731, "rotation": -91.1, "width": 499, "height": 600 }
+		},
+		"assets/carex_laxiculmis": {
+			"assets/carex_laxiculmis": { "x": 377.25, "y": 10.47, "rotation": -89.34, "width": 646, "height": 912 }
+		}
+	}
+}
+}

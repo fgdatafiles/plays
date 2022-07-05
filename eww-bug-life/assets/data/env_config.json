@@ -1,0 +1,404 @@
+{
+  "groundY":  2620,
+  "viewport": { "w": 1280, "h": 720 },
+  "bounds":   { "x": 0, "y": 0, "w": 6720, "h": 2880 },
+  "sky":      { "width": 6720, "height": 720,  "keys": ["sky", "sky", "sky", "sky", "sky"] },
+  "moundPercentX": 0.7,
+  "pondLayers": {
+    "startLayer": "bottom",
+    "layers": [
+      { "id": "surface", "scale": 0.8, "cameraDragDropScale": 0.6, "spawnWidthPercent": 0.9 },
+      { "id": "middle2", "scale": 0.9, "cameraDragDropScale": 0.7, "spawnWidthPercent": 0.8 },
+      { "id": "middle1", "scale": 1.0, "cameraDragDropScale": 0.7, "spawnWidthPercent": 0.8 },
+      { "id": "bottom",  "scale": 1.1, "cameraDragDropScale": 0.8, "spawnWidthPercent": 0.9 }
+     ]
+    },
+  "onboarding": {
+    "startLayer": "surface",
+    "layers": [
+      { "id": "surface", "creatures": ["honey_bee", "robin", "wasp", "monarch_butterfly", "swallowtail_butterfly"] },
+      { "id": "middle2", "creatures": ["spider", "monarch_caterpillar", "ladybug"] },
+      { "id": "middle1", "creatures": ["treehopper", "mantis_nymph", "ladybug_larvae", "mantis"] },
+      { "id": "bottom",  "creatures": ["ground", "ants", "lobelia"] }
+    ]
+  },
+
+  "populationsByID": {
+    "geology" : 7,
+    "plant" : {
+      "plants": 7,
+      "flowers": 7
+    }
+  },
+
+  "rockTypes": ["ground_1", "ground_2", "ground_3"],
+
+  "plantTypes": {
+    "plants": ["agropyron", "agropyron", "sweetgrass", "sweetgrass", "sweetgrass", "carex_laxiculmis", "carex_laxiculmis"],
+    "plants_extra": ["tunnel", "tree", "milkweed", "lobelia", "coneflower", "generic_purple", "generic_pink"],
+    "flowers": ["milkweed", "milkweed", "lobelia", "lobelia", "lobelia", "coneflower", "coneflower"],
+    "flowers_extra": ["tunnel", "tree", "agropyron", "agropyron", "sweetgrass", "sweetgrass", "carex_laxiculmis", "carex_laxiculmis", "generic_pink", "generic_pink", "generic_purple", "generic_purple", "generic_purple"]
+  },
+
+  "elementsByID": {
+    "ground"                  : { "type": "geology",  "myCreature": 0, "atlas": "geology", "factId": "ground",   "depth": [960, 960], "shape": "0 160 138 118 321 102 480 102 675 86 816 66 961 102 1072 102 1240 160 1490 160"},
+    "ground_1"                : { "type": "geology",  "myCreature": 0, "atlas": "geology", "factId": "ground_2", "depth": [900, 950], "shape": "0 80 40 80 84 32 156 9 256 24 296 29 324 55 391 80 421 80"},
+    "ground_2"                : { "type": "geology",  "myCreature": 0, "atlas": "geology", "factId": "ground_2", "depth": [900, 950], "shape": "0 98 18 98 55 81 95 61 125 19 176 6 231 28 271 64 330 88 339 90 362 98"},
+    "ground_3"                : { "type": "geology",  "myCreature": 0, "atlas": "geology", "factId": "ground_2", "depth": [900, 950], "shape": "0 58 13 58 41 40 122 11 143 23 175 30 204 38 218 28 250 28 270 44 300 58"},
+
+    "tunnel"                  : { "type": "plant",    "myCreature": 0, "depth": [4000, 4000]},
+
+    "tree"                    : { "type": "plant",    "myCreature": 0, "plantType": "plants",  "factId": "plants",  "offsetY" : 0, "vertical": 0, "depth": [3900, 3900]},
+    "agropyron"               : { "type": "plant",    "myCreature": 0, "plantType": "plants",  "factId": "plants",  "offsetY" : 0, "vertical": 0, "depth": [1001, 3000]},
+    "sweetgrass"              : { "type": "plant",    "myCreature": 0, "plantType": "plants",  "factId": "plants",  "offsetY" : 0, "vertical": 0, "depth": [1001, 3000]},
+    "carex_laxiculmis"        : { "type": "plant",    "myCreature": 0, "plantType": "plants",  "factId": "plants",  "offsetY" : 0, "vertical": 0, "depth": [1001, 3000]},
+    "milkweed"                : { "type": "plant",    "myCreature": 0, "plantType": "flowers", "factId": "flowers", "offsetY" : 0, "vertical": 0, "depth": [1001, 3000]},
+    "lobelia"                 : { "type": "plant",    "myCreature": 0, "plantType": "flowers", "factId": "flowers", "offsetY" : 0, "vertical": 0, "depth": [1001, 3000]},
+    "coneflower"              : { "type": "plant",    "myCreature": 0, "plantType": "flowers", "factId": "flowers", "offsetY" : 0, "vertical": 0, "depth": [1001, 3000]},
+    "generic_pink"            : { "type": "plant",    "myCreature": 0, "plantType": "flowers", "factId": "flowers", "offsetY" : 0, "vertical": 0, "depth": [1001, 3000]},
+    "generic_purple"          : { "type": "plant",    "myCreature": 0, "plantType": "flowers", "factId": "flowers", "offsetY" : 0, "vertical": 0, "depth": [1001, 3000]},
+
+    "ant"                     : { "type": "creature", "myCreature": 1, "depth": [200, 900],   "population": 10, "flying": 0, "layers": ["bottom", "middle1"] },
+    "aphid"                   : { "type": "creature", "myCreature": 1, "depth": [200, 900],   "population": 20, "flying": 0, "layers": ["bottom", "middle1"] },
+    "bumble_bee"              : { "type": "creature", "myCreature": 1, "depth": [200, 2000],  "population": 2 , "flying": 1, "layers": ["middle1", "middle2", "surface"] },
+    "centipede"               : { "type": "creature", "myCreature": 1, "depth": [1, 50],      "population": 3 , "flying": 0, "layers": ["bottom", "middle1"] },
+    "grasshopper"             : { "type": "creature", "myCreature": 1, "depth": [200, 2000],  "population": 3 , "flying": 0, "layers": ["bottom", "middle1"] },
+    "honey_bee"               : { "type": "creature", "myCreature": 1, "depth": [200, 2000],  "population": 5 , "flying": 1, "layers": ["middle2", "surface"] },
+    "hummingbird"             : { "type": "creature", "myCreature": 1, "depth": [200, 2000],  "population": 1 , "flying": 0, "layers": ["middle2", "surface"] },
+    "ladybug"                 : { "type": "creature", "myCreature": 1, "depth": [200, 2000],  "population": 5 , "flying": 1, "layers": ["bottom", "middle1", "middle2", "surface"] },
+    "ladybug_larvae"          : { "type": "creature", "myCreature": 1, "depth": [200, 900],   "population": 6 , "flying": 0, "layers": ["bottom", "middle1"] },
+    "mantis"                  : { "type": "creature", "myCreature": 1, "depth": [200, 2000],  "population": 4 , "flying": 0, "layers": ["middle1", "middle2", "surface"] },
+    "mantis_nymph"            : { "type": "creature", "myCreature": 1, "depth": [200, 2000],  "population": 3 , "flying": 0, "layers": ["middle1", "middle2"] },
+    "monarch_butterfly"       : { "type": "creature", "myCreature": 1, "depth": [200, 2000],  "population": 3 , "flying": 1, "layers": ["middle1", "middle2", "surface"] },
+    "monarch_caterpillar"     : { "type": "creature", "myCreature": 1, "depth": [200, 900],   "population": 4 , "flying": 0, "layers": ["bottom", "middle1"] },
+    "robin"                   : { "type": "creature", "myCreature": 1, "depth": [200, 2000],  "population": 1 , "flying": 1, "layers": ["middle2", "surface"], "slot": {"x": 950, "y": 610} },
+    "rolypoly"                : { "type": "creature", "myCreature": 1, "depth": [200, 900],   "population": 8 , "flying": 0, "layers": ["bottom", "middle1"] },
+    "shrike"                  : { "type": "creature", "myCreature": 1, "depth": [200, 2000],  "population": 1 , "flying": 1, "layers": ["middle2", "surface"], "slot": {"x": 6460, "y": 600} },
+    "skink"                   : { "type": "creature", "myCreature": 1, "depth": [3800, 3800], "population": 2 , "flying": 0, "layers": ["bottom", "middle1", "middle2"] },
+    "snail"                   : { "type": "creature", "myCreature": 1, "depth": [200, 900],   "population": 5 , "flying": 0, "layers": ["bottom", "middle1"] },
+    "snake"                   : { "type": "creature", "myCreature": 1, "depth": [51, 60],     "population": 1 , "flying": 0, "layers": ["bottom"], "slot": {"x": 6120, "y": 2100} },
+    "spider"                  : { "type": "creature", "myCreature": 1, "depth": [200, 2000],  "population": 2 , "flying": 0, "layers": ["bottom", "middle1", "middle2"] },
+    "swallowtail_butterfly"   : { "type": "creature", "myCreature": 1, "depth": [200, 2000],  "population": 2 , "flying": 1, "layers": ["middle1", "middle2", "surface"] },
+    "swallowtail_caterpillar" : { "type": "creature", "myCreature": 1, "depth": [200, 900],   "population": 4 , "flying": 0, "layers": ["bottom", "middle1", "middle2"] },
+    "tiger_beetle"            : { "type": "creature", "myCreature": 1, "depth": [200, 2000],  "population": 4 , "flying": 0, "layers": ["bottom"] },
+    "tiger_beetle_larvae"     : { "type": "creature", "myCreature": 1, "depth": [961, 990],      "population": 3 , "flying": 0, "layers": ["bottom"] },
+    "treehopper"              : { "type": "creature", "myCreature": 1, "depth": [200, 2000],  "population": 10, "flying": 1, "layers": ["middle1", "middle2", "surface"] },
+    "wasp"                    : { "type": "creature", "myCreature": 1, "depth": [200, 2000],  "population": 3 , "flying": 1, "layers": ["middle2", "surface"] },
+    "worm"                    : { "type": "creature", "myCreature": 1, "depth": [1, 50],      "population": 4 , "flying": 0, "layers": ["bottom"] }
+  },
+
+  "animationsByID": {
+    "tunnel"                  : { "idle": "idle", "available": [ ] },
+    "tree"                    : { "idle": "idle", "available": [ ] },
+    "agropyron"               : { "idle": "idle", "available": [ ] },
+    "sweetgrass"              : { "idle": "idle", "available": [ ] },
+    "carex_laxiculmis"        : { "idle": "idle", "available": [ ] },
+    "milkweed"                : { "idle": "idle", "available": [ ] },
+    "lobelia"                 : { "idle": "idle", "available": [ ] },
+    "coneflower"              : { "idle": "idle", "available": [ ] },
+    "generic_pink"            : { "idle": "idle", "available": [ ] },
+    "generic_purple"          : { "idle": "idle", "available": [ ] },
+
+    "ant"                     : { "idle": "move",     "available": [ "evade", "feed", "move" ] },
+    "aphid"                   : { "idle": "move",     "available": [ "evade", "feed", "move" ] },
+    "bumble_bee"              : { "idle": "move_air", "available": [ "feed",  "hunt", "move_air", "move_ground" ] },
+    "centipede"               : { "idle": "move",     "available": [ "evade", "feed", "hunt", "move" ] },
+    "grasshopper"             : { "idle": "move",     "available": [ "evade", "feed", "jump_wip", "move" ] },
+    "honey_bee"               : { "idle": "move_air", "available": [ "feed",  "hunt", "move_air", "move_ground" ] },
+    "hummingbird"             : { "idle": "move",     "available": [ "feed",  "move" ] },
+    "ladybug"                 : { "idle": "move",     "available": [ "evade", "feed", "hunt", "move" ] },
+    "ladybug_larvae"          : { "idle": "move",     "available": [ "evade", "feed", "move" ] },
+    "mantis"                  : { "idle": "move",     "available": [ "evade", "feed", "hunt", "move" ] },
+    "mantis_nymph"            : { "idle": "move",     "available": [ "evade", "feed", "hunt", "move" ] },
+    "monarch_butterfly"       : { "idle": "move_air", "available": [ "evade", "feed", "move_air", "move_ground" ] },
+    "monarch_caterpillar"     : { "idle": "move",     "available": [ "evade", "feed", "move" ] },
+    "robin"                   : { "idle": "wait",     "available": [ "hunt",  "land", "wait" ] },
+    "rolypoly"                : { "idle": "move",     "available": [ "evade_in", "evade_out", "feed", "move" ] },
+    "shrike"                  : { "idle": "wait",     "available": [ "hunt",  "land", "wait" ] },
+    "skink"                   : { "idle": "move",     "available": [ "evade", "feed", "move" ] },
+    "snail"                   : { "idle": "move",     "available": [ "feed",  "move" ] },
+    "snake"                   : { "idle": "wait",     "available": [ "feed",  "hunt", "wait"] },
+    "spider"                  : { "idle": "wait",     "available": [ "evade", "feed", "hunt", "wait"] },
+    "swallowtail_butterfly"   : { "idle": "move_air", "available": [ "evade", "feed", "move_air", "move_ground" ] },
+    "swallowtail_caterpillar" : { "idle": "move",     "available": [ "evade", "feed", "move" ] },
+    "tiger_beetle"            : { "idle": "move",     "available": [ "evade", "feed", "hunt", "move" ] },
+    "tiger_beetle_larvae"     : { "idle": "wait",     "available": [ "feed",  "hunt", "wait" ] },
+    "treehopper"              : { "idle": "move",     "available": [ "evade", "feed", "fly", "move" ] },
+    "wasp"                    : { "idle": "move_air", "available": [ "feed",  "hunt", "move_air", "move_ground" ] },
+    "worm"                    : { "idle": "side",     "available": [ "feed", "side", "top" ] }
+  },
+
+  "aiDataByID": {
+    "tunnel"                    : { "weight": 1, "food": [], "nodes": [
+                                    {
+                                      "ROOT_0":     ["GROUND", "NODE_0_1"],
+                                      "NODE_0_1":   ["ROOT_0", "NODE_0_2", "NODE_0_1_1"],
+                                      "NODE_0_1_1": ["NODE_0_1", "NODE_0_1_2"],
+                                      "NODE_0_1_2": ["NODE_0_1_1"],
+                                      "NODE_0_2":   ["NODE_0_1", "NODE_0_3", "NODE_0_2_1"],
+                                      "NODE_0_2_1": ["NODE_0_2"],
+                                      "NODE_0_3":   ["NODE_0_2", "NODE_0_4"],
+                                      "NODE_0_4":   ["NODE_0_3", "NODE_0_5"],
+                                      "NODE_0_4_1": ["NODE_0_4", "NODE_0_4_2"],
+                                      "NODE_0_4_2": ["NODE_0_4_1"],
+                                      "NODE_0_5":   ["NODE_0_4", "NODE_0_6"],
+                                      "NODE_0_6":   ["NODE_0_5"]
+                                    }
+                                  ] },
+    "tree"                    : { "weight": 1, "food": [], "webs": ["WEB_1"] },
+    "agropyron"               : { "weight": 1, "food": [], "webs": [], "nodes": [
+                                    {
+                                      "ROOT_0":     ["GROUND", "NODE_0_1"],
+                                      "NODE_0_1":   ["ROOT_0", "NODE_0_2"],
+                                      "NODE_0_2":   ["NODE_0_1"]
+                                    },
+                                    {
+                                      "ROOT_1":     ["GROUND", "NODE_1_1"],
+                                      "NODE_1_1":   ["ROOT_1", "NODE_1_2a", "NODE_1_2b"],
+                                      "NODE_1_2a":  ["NODE_1_1"],
+                                      "NODE_1_2b":  ["NODE_1_1", "NODE_1_3b"],
+                                      "NODE_1_3b":  ["NODE_1_2b"]
+                                    },
+                                    {
+                                      "ROOT_2":     ["GROUND", "NODE_2_1"],
+                                      "NODE_2_1":   ["ROOT_2", "NODE_2_2a", "NODE_2_2b"],
+                                      "NODE_2_2a":  ["NODE_2_1", "NODE_2_3a"],
+                                      "NODE_2_2b":  ["NODE_2_1", "NODE_2_3b", "NODE_2_3c"],
+                                      "NODE_2_3a":  ["NODE_2_2a"],
+                                      "NODE_2_3b":  ["NODE_2_2b"],
+                                      "NODE_2_3c":  ["NODE_2_2b", "NODE_2_4c"],
+                                      "NODE_2_4c":  ["NODE_2_3c"]
+                                    }
+                                  ] },
+    "carex_laxiculmis"        : { "weight": 1, "food": [], "webs": ["WEB_1"], "nodes": [
+                                    {
+                                      "ROOT_0":     ["GROUND", "NODE_0_1"],
+                                      "NODE_0_1":   ["ROOT_0", "NODE_0_2"],
+                                      "NODE_0_2":   ["NODE_0_1", "NODE_0_3a", "NODE_0_3b"],
+                                      "NODE_0_3a":  ["NODE_0_2"],
+                                      "NODE_0_3b":  ["NODE_0_2"]
+                                    },
+                                    {
+                                      "ROOT_1":     ["GROUND", "NODE_1_1"],
+                                      "NODE_1_1":   ["ROOT_1", "NODE_1_2"],
+                                      "NODE_1_2":   ["NODE_1_1", "NODE_1_3"],
+                                      "NODE_1_3":   ["NODE_1_2"]
+                                    },
+                                    {
+                                      "ROOT_2":     ["GROUND", "NODE_2_1"],
+                                      "NODE_2_1":   ["ROOT_2", "NODE_2_2"],
+                                      "NODE_2_2":   ["NODE_2_1"]
+                                    }
+                                  ] },
+    "sweetgrass"              : { "weight": 1, "food": [], "webs": ["WEB_1"], "nodes": [
+                                    {
+                                      "ROOT_0":     ["GROUND", "NODE_0_1"],
+                                      "NODE_0_1":   ["ROOT_0", "NODE_0_2"],
+                                      "NODE_0_2":   ["NODE_0_1", "NODE_0_3"],
+                                      "NODE_0_3":   ["NODE_0_2"]
+                                    },
+                                    {
+                                      "ROOT_1":     ["GROUND", "NODE_1_1"],
+                                      "NODE_1_1":   ["ROOT_1", "NODE_1_2"],
+                                      "NODE_1_2":   ["NODE_1_1", "NODE_1_3"],
+                                      "NODE_1_3":   ["NODE_1_2", "NODE_1_4"],
+                                      "NODE_1_4":   ["NODE_1_3", "NODE_1_5"],
+                                      "NODE_1_5":   ["NODE_1_4"]
+                                    },
+                                    {
+                                      "ROOT_2":     ["GROUND", "NODE_2_1"],
+                                      "NODE_2_1":   ["ROOT_2", "NODE_2_2"],
+                                      "NODE_2_2":   ["NODE_2_1", "NODE_2_3"],
+                                      "NODE_2_3":   ["NODE_2_2", "NODE_2_4"],
+                                      "NODE_2_4":   ["NODE_2_3", "NODE_2_5"],
+                                      "NODE_2_5":   ["NODE_2_4"]
+                                    },
+                                    {
+                                      "ROOT_3":     ["GROUND", "NODE_3_1"],
+                                      "NODE_3_1":   ["ROOT_3", "NODE_3_2"],
+                                      "NODE_3_2":   ["NODE_3_1", "NODE_3_3"],
+                                      "NODE_3_3":   ["NODE_3_2", "NODE_3_4"],
+                                      "NODE_3_4":   ["NODE_3_3", "NODE_3_5"],
+                                      "NODE_3_5":   ["NODE_3_4"]
+                                    }
+                                  ] },
+    "milkweed"                : { "weight": 1, "food": [], "webs": ["WEB_1"], "flowers": ["FLOWER_0", "FLOWER_1", "FLOWER_2"],
+                                  "nodes": [
+                                  {
+                                    "ROOT_0":       ["GROUND", "NODE_0_1"],
+                                    "NODE_0_1":     ["ROOT_0", "NODE_0_2", "NODE_0_1a"],
+                                    "NODE_0_1a":    ["NODE_0_1"],
+                                    "NODE_0_2":     ["NODE_0_1", "NODE_0_3", "NODE_0_2a"],
+                                    "NODE_0_2a":    ["NODE_0_2"],
+                                    "NODE_0_3":     ["NODE_0_2", "NODE_0_4", "NODE_0_3a"],
+                                    "NODE_0_3a":    ["NODE_0_3"],
+                                    "NODE_0_4":     ["NODE_0_3", "NODE_0_5", "NODE_0_4a"],
+                                    "NODE_0_4a":    ["NODE_0_4"],
+                                    "NODE_0_5":     ["NODE_0_4"]
+                                  }
+                                ] },
+    "lobelia"                 : { "weight": 1, "food": [], "flowers": ["FLOWER_0", "FLOWER_1", "FLOWER_2", "FLOWER_3", "FLOWER_4", "FLOWER_5", "FLOWER_6"],
+                                  "nodes": [
+                                  {
+                                    "ROOT_0":       ["GROUND", "NODE_0_1"],
+                                    "NODE_0_1":     ["ROOT_0", "NODE_0_2"],
+                                    "NODE_0_2":     ["NODE_0_1"]
+                                  },
+                                  {
+                                    "ROOT_1":       ["GROUND", "NODE_1_1"],
+                                    "NODE_1_1":     ["ROOT_1", "NODE_1_2"],
+                                    "NODE_1_2":     ["NODE_1_1"]
+                                  },
+                                  {
+                                    "ROOT_2":       ["GROUND", "NODE_2_1"],
+                                    "NODE_2_1":     ["ROOT_2", "NODE_2_2"],
+                                    "NODE_2_2":     ["NODE_2_1"]
+                                  },
+                                  {
+                                    "ROOT_3":       ["GROUND", "NODE_3_1"],
+                                    "NODE_3_1":     ["ROOT_3", "NODE_3_2"],
+                                    "NODE_3_2":     ["NODE_3_1"]
+                                  }
+                                ] },
+    "coneflower"              : { "weight": 1, "food": [], "flowers": ["FLOWER_0", "FLOWER_1"],
+                                    "nodes": [
+                                    {
+                                      "ROOT_0":     ["GROUND", "NODE_0_1"],
+                                      "NODE_0_1":   ["ROOT_0", "NODE_0_2"],
+                                      "NODE_0_2":   ["NODE_0_1", "NODE_0_3", "NODE_0_2a", "NODE_0_2b"],
+                                      "NODE_0_2a":  ["NODE_0_2"],
+                                      "NODE_0_2b":  ["NODE_0_2"],
+                                      "NODE_0_3":   ["NODE_0_2", "NODE_0_4", "NODE_0_3a"],
+                                      "NODE_0_3a":  ["NODE_0_3"],
+                                      "NODE_0_4":   ["NODE_0_3", "NODE_0_4a", "NODE_0_4b"],
+                                      "NODE_0_4a":  ["NODE_0_4"],
+                                      "NODE_0_4b":  ["NODE_0_4"]
+                                    }
+                                  ] },
+    "generic_pink"            : { "weight": 1, "food": [], "webs": ["WEB_1"], "flowers": ["FLOWER_0", "FLOWER_1", "FLOWER_2"],
+                                    "nodes": [
+                                    {
+                                      "ROOT_0":     ["GROUND", "NODE_0_1"],
+                                      "NODE_0_1":   ["ROOT_0", "NODE_0_2", "NODE_0_1_1", "NODE_0_1_2"],
+                                      "NODE_0_1_1": ["NODE_0_1"],
+                                      "NODE_0_1_2": ["NODE_0_1"],
+                                      "NODE_0_2":   ["NODE_0_1", "NODE_0_3", "NODE_0_2_1"],
+                                      "NODE_0_2_1": ["NODE_0_2"],
+                                      "NODE_0_3":   ["NODE_0_2", "NODE_0_4", "NODE_0_3_1"],
+                                      "NODE_0_3_1": ["NODE_0_3"],
+                                      "NODE_0_4":   ["NODE_0_3", "NODE_0_5", "NODE_0_4_1"],
+                                      "NODE_0_4_1": ["NODE_0_4"],
+                                      "NODE_0_5":   ["NODE_0_4", "NODE_0_6", "NODE_0_5_1"],
+                                      "NODE_0_5_1": ["NODE_0_5", "NODE_0_5_2"],
+                                      "NODE_0_5_2": ["NODE_0_5_1"],
+                                      "NODE_0_6":   ["NODE_0_5"]
+                                    }
+                                  ] },
+    "generic_purple"          : { "weight": 1, "food": [], "webs": ["WEB_1"], "flowers": ["FLOWER_0", "FLOWER_1"],
+                                    "nodes": [
+                                    {
+                                      "ROOT_0":     ["GROUND", "NODE_0_1"],
+                                      "NODE_0_1":   ["ROOT_0", "NODE_0_2", "NODE_0_1_1"],
+                                      "NODE_0_1_1": ["NODE_0_1", "NODE_0_1_2"],
+                                      "NODE_0_1_2": ["NODE_0_1_1"],
+                                      "NODE_0_2":   ["NODE_0_1", "NODE_0_3", "NODE_0_2_1"],
+                                      "NODE_0_2_1": ["NODE_0_2", "NODE_0_2_2"],
+                                      "NODE_0_2_2": ["NODE_0_2_1"],
+                                      "NODE_0_3":   ["NODE_0_2", "NODE_0_4", "NODE_0_3_1"],
+                                      "NODE_0_3_1": ["NODE_0_3"],
+                                      "NODE_0_4":   ["NODE_0_3", "NODE_0_5", "NODE_0_4_1"],
+                                      "NODE_0_4_1": ["NODE_0_4", "NODE_0_4_2"],
+                                      "NODE_0_4_2": ["NODE_0_4_1"],
+                                      "NODE_0_5":   ["NODE_0_4", "NODE_0_6", "NODE_0_5_1"],
+                                      "NODE_0_5_1": ["NODE_0_5", "NODE_0_5_2"],
+                                      "NODE_0_5_2": ["NODE_0_5_1"],
+                                      "NODE_0_6":   ["NODE_0_5", "NODE_0_7", "NODE_0_6_1"],
+                                      "NODE_0_6_1": ["NODE_0_6", "NODE_0_6_2"],
+                                      "NODE_0_6_2": ["NODE_0_6_1"],
+                                      "NODE_0_7":   ["NODE_0_6"]
+                                    }
+                                  ] },
+
+    "ant"                     : { "weight": 1, "fov": 90, "viewRange": 400, "proximityRange": 250, "eatRange": 20,
+                                  "speedIdle": 30, "speedHunt": 1.5, "speedEvade": 1.5,
+                                  "food": ["fungus", "agropyron", "carex_laxiculmis", "sweetgrass", "milkweed", "lobelia", "coneflower", "generic_pink", "generic_purple"] },
+    "aphid"                   : { "weight": 0.5, "fov": 90, "viewRange": 400, "proximityRange": 250, "eatRange": 20,
+                                  "speedIdle": 10, "speedHunt": 1.5, "speedEvade": 1.5,
+                                  "food": ["agropyron", "carex_laxiculmis", "sweetgrass", "milkweed", "lobelia", "coneflower", "generic_pink", "generic_purple"] },
+    "bumble_bee"              : { "weight": 2, "fov": 90, "viewRange": 500, "proximityRange": 250, "eatRange": 40,
+                                  "speedIdle": 200, "speedHunt": 1.5, "speedEvade": 1.5,
+                                  "food": ["milkweed", "lobelia", "coneflower"] },
+    "centipede"               : { "weight": 5, "fov": 90, "viewRange": 500, "proximityRange": 250, "eatRange": 40,
+                                  "speedIdle": 20, "speedHunt": 1.5, "speedEvade": 1.5,
+                                  "food": ["worm", "swallowtail_caterpillar", "monarch_caterpillar", "rolypoly", "ant", "tiger_beetle", "tiger_beetle_larvae", "ladybug", "ladybug_larvae"] },
+    "grasshopper"             : { "weight": 5, "fov": 90, "viewRange": 500, "proximityRange": 250, "eatRange": 40,
+                                  "speedIdle": 40, "speedHunt": 1.5, "speedEvade": 6, "speedFly": 5,
+                                  "food": ["agropyron", "carex_laxiculmis", "sweetgrass", "milkweed", "lobelia", "coneflower", "generic_pink", "generic_purple"] },
+    "honey_bee"               : { "weight": 1.5, "fov": 90, "viewRange": 500, "proximityRange": 250, "eatRange": 40,
+                                  "speedIdle": 220, "speedHunt": 1.5, "speedEvade": 1.5,
+                                  "food": ["milkweed", "lobelia", "coneflower", "generic_pink", "generic_purple"] },
+    "hummingbird"             : { "weight": 8, "fov": 90, "viewRange": 2500, "proximityRange": 250, "eatRange": 40,
+                                  "speedIdle": 240, "speedHunt": 1.5, "speedEvade": 1.5,
+                                  "food": ["milkweed", "coneflower"] },
+    "ladybug"                 : { "weight": 1, "fov": 90, "viewRange": 500, "proximityRange": 250, "eatRange": 40,
+                                  "speedIdle": 40, "speedHunt": 1.5, "speedEvade": 6, "speedFly": 5,
+                                  "food": ["aphid", "treehopper"] },
+    "ladybug_larvae"          : { "weight": 1, "fov": 90, "viewRange": 500, "proximityRange": 250, "eatRange": 40,
+                                  "speedIdle": 20, "speedHunt": 1.5, "speedEvade": 1.5,
+                                  "food": ["aphid", "treehopper"] },
+    "mantis"                  : { "weight": 8, "fov": 90, "viewRange": 500, "proximityRange": 250, "eatRange": 40,
+                                  "speedIdle": 33, "speedHunt": 1.5, "speedEvade": 6, "speedFly": 5,
+                                  "food": ["tiger_beetle", "tiger_beetle_larvae", "ant", "swallowtail_caterpillar", "monarch_caterpillar", "rolypoly", "ladybug", "ladybug_larvae"] },
+    "mantis_nymph"            : { "weight": 6, "fov": 90, "viewRange": 500, "proximityRange": 250, "eatRange": 40,
+                                  "speedIdle": 32, "speedHunt": 1.5, "speedEvade": 1.5,
+                                  "food": ["aphid", "treehopper", "tiger_beetle", "tiger_beetle_larvae", "ant", "swallowtail_caterpillar", "monarch_caterpillar"] },
+    "monarch_butterfly"       : { "weight": 5, "fov": 90, "viewRange": 500, "proximityRange": 250, "eatRange": 40,
+                                  "speedIdle": 200, "speedHunt": 1.5, "speedEvade": 1.5,
+                                  "food": ["milkweed", "lobelia", "coneflower", "generic_pink", "generic_purple"] },
+    "monarch_caterpillar"     : { "weight": 5, "fov": 90, "viewRange": 500, "proximityRange": 250, "eatRange": 40,
+                                  "speedIdle": 4, "speedHunt": 1, "speedEvade": 1,
+                                  "food": ["milkweed"] },
+    "robin"                   : { "weight": 25, "fov": 90, "viewRange": 1000, "proximityRange": 250, "eatRange": 40,
+                                  "speedIdle": 300, "speedHunt": 1, "speedEvade": 1,
+                                  "food": ["snail", "swallowtail_caterpillar", "monarch_caterpillar", "rolypoly", "ant", "tiger_beetle", "tiger_beetle_larvae", "mantis", "mantis_nymph", "ladybug", "ladybug_larvae", "spider", "skink"] },
+    "rolypoly"                : { "weight": 1, "fov": 90, "viewRange": 400, "proximityRange": 250, "eatRange": 20,
+                                  "speedIdle": 20, "speedHunt": 1, "speedEvade": 1.5,
+                                  "food": ["fungus"] },
+    "shrike"                  : { "weight": 25, "fov": 90, "viewRange": 500, "proximityRange": 250, "eatRange": 40,
+                                  "speedIdle": 300, "speedHunt": 1.5, "speedEvade": 0,
+                                  "food": ["swallowtail_butterfly", "monarch_butterfly", "bumble_bee", "wasp", "honey_bee", "skink", "spider", "mantis", "mantis_nymph", "centipede", "ladybug_larvae", "ladybug", "tiger_beetle"] },
+    "skink"                   : { "weight": 15, "fov": 90, "viewRange": 600, "proximityRange": 250, "eatRange": 40,
+                                  "speedIdle": 50, "speedHunt": 1.5, "speedEvade": 1.5,
+                                  "food": ["swallowtail_caterpillar", "monarch_caterpillar", "rolypoly", "ant", "tiger_beetle", "tiger_beetle_larvae", "mantis_nymph", "mantis", "ladybug", "ladybug_larvae", "spider"] },
+    "snail"                   : { "weight": 3.5, "fov": 90, "viewRange": 400, "proximityRange": 250, "eatRange": 40,
+                                  "speedIdle": 3, "speedHunt": 1, "speedEvade": 1,
+                                  "food": ["fungus", "agropyron", "carex_laxiculmis", "sweetgrass", "milkweed", "lobelia", "coneflower", "generic_pink", "generic_purple"] },
+    "snake"                   : { "weight": 40, "fov": 90, "viewRange": 500, "proximityRange": 250, "eatRange": 40,
+                                  "speedIdle": 0, "speedHunt": 0, "speedEvade": 0,
+                                  "food": ["snail", "swallowtail_caterpillar", "monarch_caterpillar", "rolypoly", "ant", "tiger_beetle", "tiger_beetle_larvae", "mantis", "mantis_nymph", "ladybug_larvae", "ladybug", "spider"] },
+    "spider"                  : { "weight": 10, "fov": 90, "viewRange": 500, "proximityRange": 250, "eatRange": 40,
+                                  "speedIdle": 20, "speedHunt": 1.5, "speedEvade": 0,
+                                  "food": ["swallowtail_caterpillar", "monarch_caterpillar", "rolypoly", "ant", "tiger_beetle_larvae", "tiger_beetle", "ladybug", "ladybug_larvae", "mantis_nymph", "honey_bee", "monarch_butterfly", "swallowtail_butterfly"] },
+    "swallowtail_butterfly"   : { "weight": 5, "fov": 90, "viewRange": 500, "proximityRange": 250, "eatRange": 40,
+                                  "speedIdle": 200, "speedHunt": 1.5, "speedEvade": 1.5,
+                                  "food": [] },
+    "swallowtail_caterpillar" : { "weight": 5, "fov": 90, "viewRange": 500, "proximityRange": 250, "eatRange": 40,
+                                  "speedIdle": 4, "speedHunt": 1, "speedEvade": 1,
+                                  "food": ["agropyron", "carex_laxiculmis", "sweetgrass", "milkweed", "lobelia", "coneflower", "generic_pink", "generic_purple"] },
+    "tiger_beetle"            : { "weight": 1.5, "fov": 90, "viewRange": 500, "proximityRange": 250, "eatRange": 40,
+                                  "speedIdle": 40, "speedHunt": 1.5, "speedEvade": 6, "speedFly": 5,
+                                  "food": ["aphid", "treehopper", "ant", "rolypoly", "ladybug", "ladybug_larvae", "snail", "swallowtail_caterpillar", "monarch_caterpillar"] },
+    "tiger_beetle_larvae"     : { "weight": 1.5, "fov": 90, "viewRange": 500, "proximityRange": 250, "eatRange": 40,
+                                  "speedIdle": 0, "speedHunt": 0, "speedEvade": 0,
+                                  "food": ["aphid", "treehopper", "ant", "rolypoly", "ladybug", "ladybug_larvae", "snail", "swallowtail_caterpillar", "monarch_caterpillar"] },
+    "treehopper"              : { "weight": 1, "fov": 90, "viewRange": 500, "proximityRange": 250, "eatRange": 40,
+                                  "speedIdle": 30, "speedHunt": 5, "speedEvade": 6,  "speedFly": 5,
+                                  "food": ["agropyron", "carex_laxiculmis", "sweetgrass", "milkweed", "lobelia", "coneflower", "generic_pink", "generic_purple"] },
+    "wasp"                    : { "weight": 1.5, "fov": 90, "viewRange": 500, "proximityRange": 250, "eatRange": 40,
+                                  "speedIdle": 240, "speedHunt": 1.5, "speedEvade": 1.5,
+                                  "food": ["milkweed", "lobelia", "coneflower", "generic_pink", "generic_purple", "swallowtail_caterpillar", "monarch_caterpillar"] },
+    "worm"                    : { "weight": 6, "fov": 90, "viewRange": 500, "proximityRange": 250, "eatRange": 40,
+                                  "speedIdle": 10, "speedHunt": 1, "speedEvade": 1,
+                                  "food": ["fungus"] }
+  }
+}

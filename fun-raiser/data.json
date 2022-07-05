@@ -1,0 +1,742 @@
+{
+  "debug": {
+    "showFps": false,
+    "fpsMeasurePeriod": 0,
+    "forceSegmentStart": false,
+    "disableSound": false,
+    "drawClickMargins": false,
+    "drawButtonBoxes": false,
+    "drawInventoryBox": false,
+    "drawBearBoxes": false,
+    "drawItemBoxes": false,
+    "playForever": false,
+    "drawButtonHitAreas": false,
+    "drawChloeHomes": false,
+    "timeScale": 1,
+    "resetHighScore": false,
+    "freeNavigation": false,
+    "alwaysResize": false,
+    "showTutorialHandCircle": false,
+    "skipTutorials": false
+  },
+  "_comment1": "----- general system data ------------------------------------",
+  "language": "en",
+  "jsonData": {
+    "sampleJsonData": "assets/jsonData/placeholder.json",
+    "gameTextData": "assets/jsonData/copy.json",
+    "ui": "assets/jsonData/wbb-ui.json",
+    "uiPlaceholder": "assets/jsonData/wbb-ui-placeholder.json",
+    "pandaFaceHands": "assets/jsonData/wbb-panda-face-hands.json",
+    "pandaBody": "assets/jsonData/wbb-panda-body.json",
+    "grizzBody": "assets/jsonData/wbb-grizz-body.json",
+    "grizzFaceHandsLegs": "assets/jsonData/wbb-grizz-face-hands-legs.json",
+    "iceBody": "assets/jsonData/wbb-ice-body.json",
+    "iceOthers": "assets/jsonData/wbb-ice-others.json",
+    "chloe": "assets/jsonData/wbb-chloe.json",
+    "items": "assets/jsonData/wbb-items.json",
+    "title": "assets/jsonData/wbb-title.json"
+  },
+  "audio": {
+    "titleLoop": "assets/audio/EMEA_FR_TitleMusic.mp3",
+    "storySting": "assets/audio/EMEA_FR_OpenerMusic.mp3",
+    "gameLoop": "assets/audio/EMEA_FR_MainMusic.mp3",
+    "resultSting": "assets/audio/EMEA_FR_ScoreSting.mp3",
+
+    "grizzFood": "assets/audio/EMEA_FR_GrizzNom.mp3",
+    "grizzFun": "assets/audio/EMEA_FR_GrizzFun.mp3",
+    "iceFood": "assets/audio/EMEA_FR_IceNom.mp3",
+    "iceFun": "assets/audio/EMEA_FR_IceFun.mp3",
+    "iceShowUp": "assets/audio/EMEA_FR_IceShowUp.mp3",
+    "pandaFood": "assets/audio/EMEA_FR_PandaNom.mp3",
+    "pandaFun": "assets/audio/EMEA_FR_PandaFun.mp3",
+    "pandaShowUp": "assets/audio/EMEA_FR_PandaShowUp.mp3",
+
+    "anyShowUp": "assets/audio/EMEA_FR_OKItem.mp3",
+    "move": "assets/audio/EMEA_FR_ScreenWoosh.mp3",
+    "click": "assets/audio/EMEA_FR_Click.mp3",
+    "pickup": "assets/audio/EMEA_FR_Pickup.mp3",
+    "drop": "assets/audio/EMEA_FR_Drop.mp3",
+    "goodItem": "assets/audio/EMEA_FR_RequestedItem.mp3",
+    "badItem": "assets/audio/EMEA_FR_WrongItem.mp3",
+    "alert": "assets/audio/EMEA_FR_BearAlert.mp3",
+    "newRecord": "assets/audio/EMEA_FR_NewRecord.mp3",
+    "pauseOn": "assets/audio/EMEA_FR_PauseOn.mp3",
+    "pauseOff": "assets/audio/EMEA_FR_PauseOff.mp3"
+  },
+  "images": [
+    "assets/images/EMEA_CNLoader_Container.png",
+    "assets/images/EMEA_CNLoader_Fill.png",
+    "assets/images/EMEA_FR_Bkg_CLO.jpg",
+    "assets/images/EMEA_FR_Bkg_CLO_Desk-fs8.png",
+    "assets/images/EMEA_FR_Bkg_Divider_GRtoCLO.jpg",
+    "assets/images/EMEA_FR_Bkg_Divider_GRtoIC.jpg",
+    "assets/images/EMEA_FR_Bkg_Divider_ICtoCLO.jpg",
+    "assets/images/EMEA_Fr_Bkg_Divider_PANtoCLO.jpg",
+    "assets/images/EMEA_Fr_Bkg_Divider_PANtoGR.jpg",
+    "assets/images/EMEA_FR_Bkg_GR.jpg",
+    "assets/images/EMEA_FR_Bkg_GR_Table-fs8.png",
+    "assets/images/EMEA_FR_Bkg_IC.jpg",
+    "assets/images/EMEA_FR_Bkg_IC_Counter-fs8.png",
+    "assets/images/EMEA_FR_Bkg_PAN.jpg",
+    "assets/images/EMEA_FR_Bkg_PAN_Desk-fs8.png",
+    "assets/images/EMEA_FR_Bkg_PAN_Laptop-fs8.png",
+    "assets/images/EMEA_FR_Bkg_Score.jpg",
+    "assets/images/RotateFullScreen.jpg",
+    "assets/images/EMEA_FR_StoryOpener_Panel_01.jpg",
+    "assets/images/EMEA_FR_StoryOpener_Panel_02-fs8.png",
+    "assets/images/EMEA_FR_StoryOpener_Panel_03-fs8.png",
+    "assets/images/logo.jpg",
+    "assets/images/EMEA_Loader_Logo.png",
+    "assets/images/rotateOutBack.png",
+    "assets/images/wbb-chloe-fs8.png",
+    "assets/images/wbb-grizz-body-fs8.png",
+    "assets/images/wbb-grizz-face-hands-legs-fs8.png",
+    "assets/images/wbb-ice-body-fs8.png",
+    "assets/images/wbb-ice-others-fs8.png",
+    "assets/images/wbb-items-fs8.png",
+    "assets/images/wbb-panda-body-fs8.png",
+    "assets/images/wbb-panda-face-hands-fs8.png",
+    "assets/images/wbb-title-fs8.png",
+    "assets/images/wbb-ui-fs8.png",
+    "assets/images/wbb-ui-placeholder-fs8.png"
+  ],
+  "desktopViewPort": {
+    "width": 940,
+    "height": 529
+  },
+  "fps": 60,
+  "_comment2": "----- gameplay values ----------------------------------------",
+  "startPointsPerSecond": 2.5,
+  "startPointsPerItem": 100,
+  "chloeItemsMax": 5,
+  "playerItemsMax": 3,
+  "funItemDecayPerLevel": 0.3,
+  "uiSheetKey": "ui",
+  "noRequestDrainCap": 1,
+  "itemValue": 0.4,
+  "newBearRequestTime": 0.5,
+  "items": {
+    "burrito": {
+      "frame": "EMEA_FR_Prop_Burrito",
+      "isFood": true,
+      "width": 209,
+      "height": 111
+    },
+    "cd": {
+      "frame": "EMEA_FR_Prop_CD",
+      "isFood": false,
+      "width": 167,
+      "height": 180,
+      "bear": "ice",
+      "shadowY": 28
+    },
+    "calzone": {
+      "frame": "EMEA_FR_Prop_Calzone",
+      "isFood": true,
+      "width": 265,
+      "height": 116
+    },
+    "phone": {
+      "frame": "EMEA_FR_Prop_Cell",
+      "isFood": false,
+      "width": 207,
+      "height": 184,
+      "bear": "panda",
+      "shadowY": 18
+    },
+    "cheesePoofs": {
+      "frame": "EMEA_FR_Prop_Cheese",
+      "isFood": true,
+      "width": 192,
+      "height": 205,
+      "shadowY": 30
+    },
+    "controller": {
+      "frame": "EMEA_FR_Prop_Game",
+      "isFood": false,
+      "width": 217,
+      "height": 186,
+      "bear": "grizz"
+    },
+    "gummies": {
+      "frame": "EMEA_FR_Prop_Gummie",
+      "isFood": true,
+      "width": 229,
+      "height": 136,
+      "shadowY": -12
+    },
+    "laptop": {
+      "frame": "EMEA_FR_Prop_Laptop",
+      "isFood": false,
+      "bear": "panda",
+      "width": 400,
+      "height": 259,
+      "shadowY": 37
+    },
+    "manga": {
+      "frame": "EMEA_FR_Prop_Manga",
+      "isFood": false,
+      "width": 181,
+      "height": 245,
+      "bear": "panda",
+      "shadowY": 44
+    },
+    "paddle": {
+      "frame": "EMEA_FR_Prop_Paddle",
+      "isFood": false,
+      "width": 285,
+      "height": 158,
+      "bear": "grizz"
+    },
+    "textbook": {
+      "frame": "EMEA_FR_Prop_Relativity",
+      "isFood": false,
+      "width": 206,
+      "height": 283,
+      "bear": "ice",
+      "shadowY": 55
+    },
+    "remote": {
+      "frame": "EMEA_FR_Prop_Remote",
+      "isFood": false,
+      "width": 213,
+      "height": 131,
+      "bear": "grizz",
+      "shadowY": -13
+    },
+    "salmon": {
+      "frame": "EMEA_FR_Prop_Salmon",
+      "isFood": true,
+      "width": 202,
+      "height": 138
+    },
+    "frypan": {
+      "frame": "EMEA_FR_Prop_Spoon",
+      "isFood": false,
+      "width": 192,
+      "height": 192,
+      "bear": "ice"
+    },
+    "taco": {
+      "frame": "EMEA_FR_Prop_Taco",
+      "isFood": true,
+      "width": 163,
+      "height": 155
+    }
+  },
+  "difficulty": {
+    "hungerTickRate": {
+      "defaultValue": 0,
+      "firstStage": 1,
+      "startValue": 0.015,
+      "multiplier": 1.1,
+      "interval": 2,
+      "minValue": 0
+    },
+    "funTickRate": {
+      "defaultValue": 0,
+      "firstStage": 1,
+      "startValue": 0.015,
+      "multiplier": 1.1,
+      "interval": 2,
+      "minValue": 0
+    },
+    "funItemDuration": {
+      "defaultValue": 8
+    },
+    "funItemMultiplier": {
+      "firstStage": 0,
+      "startValue": 6,
+      "multiplier": 0.75,
+      "interval": 6,
+      "minValue": 1
+    },
+    "bear1Enabled": {
+      "defaultValue": true
+    },
+    "bear1FoodEnabled": {
+      "defaultValue": true
+    },
+    "bear1FunEnabled": {
+      "defaultValue": false,
+      "firstStage": 2,
+      "startValue": true
+    },
+    "bear0Enabled": {
+      "defaultValue": false,
+      "firstStage": 4,
+      "startValue": true
+    },
+    "bear0FoodEnabled": {
+      "defaultValue": false,
+      "firstStage": 4,
+      "startValue": true
+    },
+    "bear0FunEnabled": {
+      "defaultValue": false,
+      "firstStage": 5,
+      "startValue": true
+    },
+    "bear2Enabled": {
+      "defaultValue": false,
+      "firstStage": 7,
+      "startValue": true
+    },
+    "bear2FoodEnabled": {
+      "defaultValue": false,
+      "firstStage": 7,
+      "startValue": true
+    },
+    "bear2FunEnabled": {
+      "defaultValue": false,
+      "firstStage": 8,
+      "startValue": true
+    },
+
+    "requestEnabled": {
+      "defaultValue": true
+    },
+    "requestTimeMin": {
+      "defaultValue": 4
+    },
+    "requestTimeMax": {
+      "defaultValue": 6
+    },
+    "requestRewardMultiplier": {
+      "defaultValue": 1
+    },
+    "requestMismatchMultiplier": {
+      "startValue": -0.5,
+      "firstStage": 2,
+      "multiplier": 1.05,
+      "interval": 1
+    }
+  },
+  "secsPerDifficultyStage": 15,
+  "_comment3": "----- UX values ----------------------------------------------",
+  "fadeTime": 500,
+  "fadeHangTime": 10,
+  "storyLayers": [
+    {
+      "x": 0,
+      "y": 0,
+      "src": "assets/images/EMEA_FR_StoryOpener_Panel_01.jpg",
+      "text": "story1",
+      "textBox": {
+        "x": 85,
+        "y": 83,
+        "width": 370,
+        "height": 269
+      }
+    },
+    {
+      "x": 495,
+      "y": 0,
+      "src": "assets/images/EMEA_FR_StoryOpener_Panel_02-fs8.png",
+      "text": "story2",
+      "textBox": {
+        "x": 776,
+        "y": 74,
+        "width": 390,
+        "height": 210
+      }
+    },
+    {
+      "x": 1109,
+      "y": 0,
+      "src": "assets/images/EMEA_FR_StoryOpener_Panel_03-fs8.png",
+      "text": "story3",
+      "textBox": {
+        "x": 1528,
+        "y": 111,
+        "width": 277,
+        "height": 218
+      }
+    }
+  ],
+  "storyPageTime": 3.5,
+  "characterAnimations": [
+    {
+      "name": "Panda",
+      "color": "#515151",
+      "usesPlaceholder": false,
+      "placeholderSprite": "EMEA_FR_PAN_Placeholder",
+      "x": -595,
+      "y": -396,
+      "scale": 1.3333333333333333,
+      "layers": [
+        {
+          "name": "Body",
+          "sheet": "pandaBody"
+        },
+        {
+          "name": "Face",
+          "sheet": "pandaFaceHands"
+        },
+        {
+          "name": "RightArm",
+          "sheet": "pandaFaceHands"
+        },
+        {
+          "name": "LeftArm",
+          "sheet": "pandaFaceHands"
+        }
+      ],
+      "specialItems": {
+        "manga": "Manga",
+        "phone": "Cell",
+        "laptop": "Laptop"
+      }
+    },
+    {
+      "name": "Grizz",
+      "color": "#a06e4d",
+      "usesPlaceholder": false,
+      "placeholderSprite": "EMEA_FR_GR_Placeholder",
+      "x": -400,
+      "y": -300,
+      "scale": 1.052631578947368,
+      "layers": [
+        {
+          "name": "LeftArmBack",
+          "sheet": "grizzFaceHandsLegs"
+        },
+        {
+          "name": "Body",
+          "sheet": "grizzBody"
+        },
+        {
+          "name": "Legs",
+          "sheet": "grizzFaceHandsLegs"
+        },
+        {
+          "name": "Face",
+          "sheet": "grizzFaceHandsLegs"
+        },
+        {
+          "name": "LeftArmFront",
+          "sheet": "grizzFaceHandsLegs"
+        },
+        {
+          "name": "RightArm",
+          "sheet": "grizzFaceHandsLegs"
+        }
+      ],
+      "specialItems": {
+        "remote": "TV",
+        "paddle": "Paddle",
+        "controller": "Game"
+      }
+    },
+    {
+      "name": "Ice",
+      "color": "#f8f4eb",
+      "usesPlaceholder": false,
+      "placeholderSprite": "EMEA_FR_IC_Placeholder",
+      "x": -605,
+      "y": -620,
+      "scale": 2,
+      "layers": [
+        {
+          "name": "RArmBack",
+          "sheet": "iceOthers"
+        },
+        {
+          "name": "Body",
+          "sheet": "iceBody"
+        },
+        {
+          "name": "Face",
+          "sheet": "iceOthers"
+        },
+        {
+          "name": "Spoon",
+          "sheet": "iceOthers"
+        },
+        {
+          "name": "LArm",
+          "sheet": "iceOthers"
+        },
+
+        {
+          "name": "RArm",
+          "sheet": "iceOthers"
+        },
+        {
+          "name": "Pot",
+          "sheet": "iceOthers",
+          "z": 200
+        },
+        {
+          "name": "LArmFront",
+          "sheet": "iceOthers",
+          "z": 210
+        },
+        {
+          "name": "Lid",
+          "sheet": "iceOthers",
+          "z": 220
+        },
+        {
+          "name": "PotTopHalf",
+          "sheet": "iceOthers",
+          "z": 230
+        },
+        {
+          "name": "RHand",
+          "sheet": "iceOthers",
+          "z": 240
+        },
+        {
+          "name": "Steam",
+          "sheet": "iceOthers",
+          "z": 250
+        }
+      ],
+      "specialItems": {
+        "cd": "Meditate",
+        "frypan": "Cooking",
+        "textbook": "Reading"
+      }
+    }
+  ],
+  "characterCalloutBubbles": [
+    {
+      "x": 285,
+      "y": -180
+    },
+    {
+      "x": 200,
+      "y": -150
+    },
+    {
+      "x": 250,
+      "y": -200
+    }
+  ],
+  "titleBgSrc": "assets/images/logo.jpg",
+  "titlePlayButton": {
+    "x": 410,
+    "y": 210,
+    "width": 460,
+    "height": 341
+  },
+  "titleMusicToggle": {
+    "x": -250,
+    "y": 150,
+    "width": 77,
+    "height": 77
+  },
+  "titleSoundToggle": {
+    "x": -150,
+    "y": 150,
+    "width": 77,
+    "height": 77
+  },
+  "titleWbbLogo": {
+    "x": 64,
+    "y": 64
+  },
+  "roomWidth": 1920,
+  "roomHeight": 1080,
+  "roomTransitionGap": {
+    "x": 1396,
+    "y": 1539
+  },
+  "roomTransitionTimeMs": 500,
+  "rooms": [
+    {
+      "name": "panda",
+      "bgs": [
+        {
+          "src": "assets/images/EMEA_FR_Bkg_PAN.jpg"
+        }
+      ],
+      "fgs": [
+        {
+          "src": "assets/images/EMEA_FR_Bkg_PAN_Desk-fs8.png",
+          "x": 0,
+          "y": 577,
+          "z": 15
+        },
+        {
+          "src": "assets/images/EMEA_FR_Bkg_PAN_Laptop-fs8.png",
+          "x": 148,
+          "y": 495
+        }
+      ],
+      "rightDivider": "assets/images/EMEA_Fr_Bkg_Divider_PANtoGR.jpg",
+      "downDivider": "assets/images/EMEA_Fr_Bkg_Divider_PANtoCLO.jpg"
+    },
+    {
+      "name": "grizz",
+      "bgs": [
+        {
+          "src": "assets/images/EMEA_FR_Bkg_GR.jpg"
+        }
+      ],
+      "fgs": [
+        {
+          "src": "assets/images/EMEA_FR_Bkg_GR_Table-fs8.png",
+          "x": 340,
+          "y": 839
+        }
+      ],
+      "rightDivider": "assets/images/EMEA_FR_Bkg_Divider_GRtoIC.jpg",
+      "downDivider": "assets/images/EMEA_FR_Bkg_Divider_GRtoCLO.jpg"
+    },
+    {
+      "name": "ice",
+      "bgs": [
+        {
+          "src": "assets/images/EMEA_FR_Bkg_IC.jpg"
+        }
+      ],
+      "fgs": [
+        {
+          "src": "assets/images/EMEA_FR_Bkg_IC_Counter-fs8.png",
+          "x": 0,
+          "y": 669
+        }
+      ],
+      "downDivider": "assets/images/EMEA_FR_Bkg_Divider_ICtoCLO.jpg"
+    },
+    {
+      "name": "chloe",
+      "bgs": [
+        {
+          "src": "assets/images/EMEA_FR_Bkg_CLO.jpg"
+        }
+      ],
+      "fgs": [
+        {
+          "src": "assets/images/EMEA_FR_Bkg_CLO_Desk-fs8.png",
+          "x": 0,
+          "y": 381
+        }
+      ]
+    }
+  ],
+  "roomScale": 1.428571428571429,
+  "downDividerScale": 1.50390625,
+  "sideDividerScale": 1.428571428571429,
+  "alertTweenTime": 500,
+  "_alertEnableThreshold": 1,
+  "alertEnableThreshold": 0.45,
+  "swipeDistance": 300,
+  "swipeSpeed": 2000,
+  "clickMarginWidth": 300,
+  "clickMarginHeight": 300,
+  "clickDistance": 100,
+  "inventory": {
+    "width": 144,
+    "height": 567,
+    "x": 260,
+    "y": -284,
+    "_y": -100,
+    "rotation": 0
+  },
+  "inventoryItemHomes": [
+    {
+      "x": 260,
+      "y": -161
+    },
+    {
+      "x": 260,
+      "y": -5
+    },
+    {
+      "x": 260,
+      "y": 150
+    }
+  ],
+  "scoreDisplay": {
+    "x": -400,
+    "offScreenY": 0,
+    "onScreenY": -350,
+    "tweenDurationMS": 500
+  },
+  "chloeItemHomes": [
+    {
+      "x": 464,
+      "y": 694
+    },
+    {
+      "x": 1424,
+      "y": 506
+    },
+    {
+      "x": 756,
+      "y": 756
+    },
+    {
+      "x": 1304,
+      "y": 636
+    },
+    {
+      "x": 1062,
+      "y": 730
+    }
+  ],
+  "pauseButton": {
+    "x": -150,
+    "y": 150,
+    "spriteX": 30
+  },
+  "foodProgressBar": {
+    "x": 100,
+    "y": 32
+  },
+  "funProgressBar": {
+    "x": 100,
+    "y": 128
+  },
+  "pauseHeader": {
+    "x": -275,
+    "y": -487,
+    "width": 680,
+    "height": 139
+  },
+  "pauseResumeButton": {
+    "x": -316,
+    "y": -16,
+    "width": 623,
+    "height": 230
+  },
+  "pauseResumeText": {
+    "__TODO": "fixme",
+    "x": -108,
+    "y": 46,
+    "width": 415,
+    "height": 85
+  },
+  "pauseRestartButton": {
+    "x": -207,
+    "y": 217,
+    "width": 223,
+    "height": 87
+  },
+  "pauseExitButton": {
+    "x": 79,
+    "y": 217,
+    "_y": 317,
+    "width": 134,
+    "height": 87
+  },
+  "pauseMusicButton": {
+    "x": -206,
+    "y": -262,
+    "width": 190,
+    "height": 190
+  },
+  "pauseSoundButton": {
+    "x": 21,
+    "y": -262,
+    "width": 190,
+    "height": 190
+  },
+  "resultBgSrc": "assets/images/EMEA_FR_Bkg_Score.jpg",
+  "navSideMargin": 100,
+  "navTopMargin": 205,
+  "navBottomMargin": 205
+}
