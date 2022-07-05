@@ -1,0 +1,430 @@
+{
+    "gameName": "Potty Plan",
+    "initialScene": "title",
+    "initialCharacter": "elmo",
+    "initialPotty": { "color": "white", "seat": 0 },
+    "initialAccidentProgress": 0,
+    "pottyDanceCount": 4,
+    "urgentPottyDance": 2,
+    "appParameters": {
+        "pbs": { "key": "packageName", "value": "org.pbskids.gamesapp" },
+        "sesame": { "key": "packageName", "value": "sesameApp" }
+    },
+    "version": { "major": 1, "minor": 0, "build": 6 },
+    "localeCodes": { "en_US": "English", "es_US": "Spanish" },
+    "pottyColors": { "white": "0xffffff", "green": "0x79C65D", "blue": "0x04A6E1", "purple": "0x9966CC", "pink": "0xFF99CC" },
+    "pottySeats": ["customWhite", "customDot", "customShiny", "customRainbow", "customFish", "customSpace", "customSafari", "customSport"],
+    "cursor": {
+        "idle": "starDefault",
+        "rollOver": "starOver"
+    },
+    "elmo": {
+        "flumpLibrary": { "key": "elmoLibrary", "root": "assets/characters/elmo/flump/" },
+        "flumpManifest": { "key": "elmoLibrary", "pngs": ["assets/characters/elmo/flump/atlas0.png"], "library": "assets/characters/elmo/flump/library.json" }
+    },
+    "abby": {
+        "flumpLibrary": { "key": "abbyLibrary", "root": "assets/characters/abby/flump/" },
+        "flumpManifest": { "key": "abbyLibrary", "pngs": ["assets/characters/abby/flump/atlas0.png"], "library": "assets/characters/abby/flump/library.json" }
+    },
+    "pottyFlump": {
+        "flumpLibrary": { "key": "pottyLibrary", "root": "assets/potty/flump/" },
+        "flumpManifest": { "key": "pottyLibrary", "pngs": ["assets/potty/flump/atlas0.png"], "library": "assets/potty/flump/library.json" }
+    },
+    "accidentIncrements": [0, 0.25, 0.5, 0.75, 1],
+    "accident": [
+        { "elmo": ["PP_5.0_64", "PP_5.0_65"], "abby": ["PP_5.0_63", "PP_5.0_66"] },
+        { "elmo": ["PP_5.0_64", "PP_5.0_67"], "abby": ["PP_5.0_63", "PP_5.0_67"] },
+        { "elmo": ["PP_5.0_64", "PP_5.0_68"], "abby": ["PP_5.0_63", "PP_5.0_68"] },
+        { "elmo": ["PP_5.0_64", "PP_5.0_69"], "abby": ["PP_5.0_63", "PP_5.0_69"] }
+    ],
+    "debugFlags": {
+        "gameArea": false,
+        "hitAreas": false,
+        "physics": false,
+        "version": false,
+        "audioPlayer": false,
+        "playVO": true,
+        "analytics": false
+    },
+    "contentUrls": {
+        "elmo": {
+            "chart": "./assets/dlc/PP_chartElmo.pdf",
+            "song1": "./assets/dlc/PP_planElmo.pdf",
+            "song2": "./assets/dlc/PP_wipeElmo.pdf",
+            "song3": "./assets/dlc/PP_flushElmo.pdf",
+            "song4": "./assets/dlc/PP_ABCElmo.pdf",
+            "song5": "./assets/dlc/PP_dryElmo.pdf"
+        },
+        "abby": {
+            "chart": "./assets/dlc/PP_chartAbby.pdf",
+            "song1": "./assets/dlc/PP_planAbby.pdf",
+            "song2": "./assets/dlc/PP_wipeAbby.pdf",
+            "song3": "./assets/dlc/PP_flushAbby.pdf",
+            "song4": "./assets/dlc/PP_ABCAbby.pdf",
+            "song5": "./assets/dlc/PP_dryAbby.pdf"
+        }
+    },
+    "tips": {
+        "tip1": { 
+            "header": "TIP #1", 
+            "body": "Being ready to use the potty can be an exciting, yet challenging, time in your family's life. There is no set age to begin toilet training, but children are usually ready between 18 and 36 months." 
+        },
+        "tip2": { 
+            "header": "TIP #2", 
+            "body": "Before you start potty training, encourage your child to pick out his own potty seat or chair. At home, introduce your child to his potty, making sure he feels comfortable with it." 
+        },
+        "tip3": { 
+            "header": "TIP #3", 
+            "body": "Have your child sit on the potty a few times with her pants on to assure her she will not fall in. Talk to her about the fact that you and other family members use the potty too." 
+        },
+        "tip4": { 
+            "header": "TIP #4", 
+            "body": "Help your child listen to his body to recognize the feeling he gets before he has to go to the bathroom. Whenever he gets the feeling, he should stop what he is doing and say, \"Gotta go!\"" 
+        },
+        "tip5": { 
+            "header": "TIP #5", 
+            "body": "Sometimes it can take a few minutes for your child to go once she is sitting on the potty. Place books near the potty that you can read together. You can also sing fun songs while you wait." 
+        },
+        "tip6": {
+            "header": "TIP #6", 
+            "body": "Remember, accidents will happen, and that's okay. Praise your child for even the small accomplishments, such as recognizing the feeling that he has to go." 
+        },
+        "tip7": { 
+            "header": "TIP #7", 
+            "body": "When she's done, remind her to wipe with toilet paper (not too much!), flush, and wash her hands with soap and water for as long as it takes to sing the ABC song (15-20 seconds)." 
+        },
+        "tip8": { 
+            "header": "TIP #8", 
+            "body": "Help your child keep track of his own progress. Hang up a potty chart in the bathroom. Each time your child completes a potty step, encourage him to add a sticker to the chart." 
+        },
+        "tip9": { 
+            "header": "TIP #9", 
+            "body": "Never scold or punish your child while she is learning to use her potty. The most important thing is for your child to feel proud of herself and keep trying." 
+        },
+        "tip10": { 
+            "header": "TIP #10", 
+            "body": "Don’t push things too fast. If your child seems to be getting frustrated, take a break. Try again in a few weeks or months." 
+        }
+    },
+    "songs": {
+        "song1": { 
+            "header": "Potty Plan Song", 
+            "body": "Learning how to use the potty?\nWe know you can!\nJust make sure to follow the potty plan!\nFirst you have to listen when your body says, Go!\nGet to the potty, don't move slow!\n\nWait on the potty and go with the flow.\nWhen you're done, wipe your bottom.\nNow you're a potty pro!\nFlush the potty and the water goes down.\nWash your hands, move the soap all round!\nRinse and dry, and you're just about through.\nThat's the potty plan for Abby, Elmo, and you!",
+            "audioKey": "PP_3.0_24"
+        },
+        "song2": { 
+            "header": "Wipe Song", 
+            "body": "Wipe, wipe wipe, that's what we do.\nWipe your bottom with toilet tissue!",
+            "audioKey": "PP_6.1_87a"
+        },
+        "song3": { 
+            "header": "Flush Song", 
+            "body": "Flush, flush, flush that's what we do!\nFlush the potty when you are through!",
+            "audioKey": "PP_6.2_95a"
+        },
+        "song4": { 
+            "header": "ABC Wash Song", 
+            "body": "A-B-C-D-E-F-G-H-I-J-K-L-M\nN-O-P-Q-R-S-T-U-V-W-X-Y-Z.\nNow my hands are nice and clean. Wash every time you go potty.",
+            "audioKey": "PP_6.3_105"
+        },
+        "song5": { 
+            "header": "Dry Song", 
+            "body": "Dry, dry, dry that's what we do!\nDry your hands when you are through!",
+            "audioKey": "PP_6.3_106a"
+        }
+    },
+    "transition": {
+        "position": { "x": 660, "y": 390 },
+        "flump": {
+            "library": "mainLibrary",
+            "animations": {
+                "outIdle": "transitionInIdle",
+                "out": "transitionIn",
+                "inIdle": "transitionOutIdle",
+                "in": "transitionOut"
+            }
+        }
+    },
+    "buttonMap": {
+        "btnModalClose": {
+            "hitArea": { "x": -52.575, "y": -55.075, "width": 105.15, "height": 110.15 },
+            "flump": {
+                "library": "mainLibrary",
+                "animations": { "up": "closeIdle", "down": "closeActive" }
+            },
+            "rollOver": {
+                "flump": { "library": "mainLibrary", "animations": { "idle": "smButtonTimeout" } }
+            },
+            "timeout": {
+                "flump": { "library": "mainLibrary", "animations": { "idle": "smButtonTimeout" } }
+            },
+            "audioKeys": { "click": "button" }
+        },
+        "btnStart": {
+            "anchor": "centerRight",
+            "offset": { "x": 0, "y": 150 },
+            "hitArea": { "x": -64.45, "y": -66.95, "width": 128.9, "height": 133.9 },
+            "flump": {
+                "library": "mainLibrary",
+                "animations": { "up": "playIdle", "down": "playActive" }
+            },
+            "rollOver": {
+                "flump": { "library": "mainLibrary", "animations": { "idle": "lgButtonTimeout" } }
+            },
+            "timeout": {
+                "flump": { "library": "mainLibrary", "animations": { "idle": "lgButtonTimeout" } }
+            },
+            "audioKeys": { "click": "sparkleFanfare" }
+        },
+        "btnSkip": {
+            "anchor": "centerRight",
+            "offset": { "x": 0, "y": 150 },
+            "hitArea": { "x": -64.45, "y": -66.95, "width": 128.9, "height": 133.9 },
+            "flump": {
+                "library": "mainLibrary",
+                "animations": { "up": "skipIdle", "down": "skipActive" }
+            },
+            "rollOver": {
+                "flump": { "library": "mainLibrary", "animations": { "idle": "lgButtonTimeout" } }
+            },
+            "timeout": {
+                "flump": { "library": "mainLibrary", "animations": { "idle": "lgButtonTimeout" } }
+            },
+            "audioKeys": { "click": "button" }
+        },
+        "btnNext": {
+            "anchor": "centerRight",
+            "offset": { "x": 0, "y": 150 },
+            "hitArea": { "x": -64.45, "y": -66.95, "width": 128.9, "height": 133.9 },
+            "flump": {
+                "library": "mainLibrary",
+                "animations": { "up": "nextIdle", "down": "nextActive" }
+            },
+            "rollOver": {
+                "flump": { "library": "mainLibrary", "animations": { "idle": "lgButtonTimeout" } }
+            },
+            "timeout": {
+                "flump": { "library": "mainLibrary", "animations": { "idle": "lgButtonTimeout" } }
+            }
+        },
+        "btnBack": {
+            "hitArea": { "x": -52.575, "y": -55.075, "width": 105.15, "height": 110.15 },
+            "flump": {
+                "library": "mainLibrary",
+                "animations": { "up": "backIdle", "down": "backActive" }
+            },
+            "rollOver": {
+                "flump": { "library": "mainLibrary", "animations": { "idle": "smButtonTimeout" } }
+            },
+            "timeout": {
+                "flump": { "library": "mainLibrary", "animations": { "idle": "smButtonTimeout" } }
+            },
+            "audioKeys": { "click": "button" }
+        }
+    },
+    "audioMap": {
+        "music": {
+            "channelVolume": 1,
+            "single": false,
+            "tracks": {
+                "ALPHABET_Instr": { "volume": 1, "priority": 0, "max": 1 },
+                "PP_3.0_24": { "volume": 1, "priority": 0, "max": 1 },
+                "Potty_Time_BGM": { "volume": 0.2, "priority": 0, "max": 1, "loop": true },
+                "Navigation_BGM": { "volume": 0.4, "priority": 0, "max": 1, "loop": true },
+                "Playtime_BGM_Urgent": { "volume": 0.4, "priority": 0, "max": 1, "loop": true }
+            }
+        },
+        "sfx": {
+            "channelVolume": 1,
+            "single": false,
+            "tracks": {
+                "button": { "volume": 0.5, "priority": 0 },
+                "sparkleFanfare": { "volume": 0.5, "priority": 0 },
+                "Ball": { "volume": 0.5, "priority": 0 },
+                "Blocks": { "volume": 0.5, "priority": 0 },
+                "Books": { "volume": 0.5, "priority": 0 },
+                "Chart": { "volume": 0.5, "priority": 0 },
+                "Door": { "volume": 0.5, "priority": 0 },
+                "Globe": { "volume": 0.5, "priority": 0 },
+                "Plant": { "volume": 0.5, "priority": 0 },
+                "Radio": { "volume": 0.5, "priority": 0 },
+                "Snacks": { "volume": 0.5, "priority": 0 },
+                "Train": { "volume": 0.5, "priority": 0 },
+                "ES_Correct": { "volume": 0.75, "priority": 0 },
+                "ES_Incorrect": { "volume": 0.75, "priority": 0 },
+                "Collision": { "volume": 0.25, "priority": 0 },
+                "Transition": { "volume": 0.25, "priority": 0, "max": 1 },
+                "Potty_Change": { "volume": 0.25, "priority": 0 },
+                "Seat_Change": { "volume": 0.25, "priority": 0 },
+                "Grownups": { "volume": 0.75, "priority": 0 },
+                "TP_Rip": { "volume": 0.75, "priority": 0 },
+                "TP_Select": { "volume": 0.75, "priority": 0 },
+                "Flush": { "volume": 1, "priority": 0 },
+                "Faucet": { "volume": 0.1, "priority": 0, "max": 1, "loop": true },
+                "Faucet_Squeak": { "volume": 0.75, "priority": 0 },
+                "Towel": { "volume": 0.75, "priority": 0 },
+                "Soap_Bubbles": { "volume": 0.4, "priority": 0, "max": 1 },
+                "fanfare": { "volume": 0.75, "priority": 0 },
+                "DRY_LOOP": { "volume": 0.5, "priority": 0, "max": 1, "loop": true }
+            }
+        },
+        "vo": {
+            "channelVolume": 1,
+            "single": true,
+            "duck": [
+                { "channel": "music", "volume": 0.15, "fadeOut": 0.25, "fadeIn": 0.25 },
+                { "channel": "sfx", "volume": 0.5, "fadeOut": 0.25, "fadeIn": 0.25 }
+            ],
+            "tracks": {
+                "PP_1.0_1": { "volume": 1, "priority": 0 },
+                "PP_1.0_2": { "volume": 1, "priority": 0 },
+                "PP_1.1_3": { "volume": 1, "priority": 0 },
+                "PP_1.1_4": { "volume": 1, "priority": 1 },
+                "PP_1.1_5": { "volume": 1, "priority": 2 },
+                "PP_1.1_6": { "volume": 1, "priority": 3 },
+                "PP_2.0_7": { "volume": 1, "priority": 10 },
+                "PP_2.0_8": { "volume": 1, "priority": 11 },
+                "PP_2.0_9": { "volume": 1, "priority": 12 },
+                "PP_2.0_11": { "volume": 1, "priority": 0 },
+                "PP_2.0_13": { "volume": 1, "priority": 10 },
+                "PP_2.0_13a": { "volume": 1, "priority": 11 },
+                "PP_2.0_14": { "volume": 1, "priority": 0 },
+                "PP_2.0_15": { "volume": 1, "priority": 11 },
+                "PP_2.0_16": { "volume": 1, "priority": 11 },
+                "PP_2.0_17": { "volume": 1, "priority": 0 },
+                "PP_2.0_18": { "volume": 1, "priority": 0 },
+                "PP_3.0_19": { "volume": 1, "priority": 10 },
+                "PP_3.0_20": { "volume": 1, "priority": 11 },
+                "PP_3.0_20a": { "volume": 1, "priority": 12 },
+                "PP_3.0_20b": { "volume": 1, "priority": 13 },
+                "PP_3.0_21": { "volume": 1, "priority": 10 },
+                "PP_3.0_22": { "volume": 1, "priority": 10 },
+                "PP_3.0_23": { "volume": 1, "priority": 10 },
+                "PP_3.0_25": { "volume": 1, "priority": 0 },
+                "PP_3.0_26": { "volume": 1, "priority": 0 },
+                "PP_3.0_27": { "volume": 1, "priority": 0 },
+                "PP_3.0_28": { "volume": 1, "priority": 0 },
+                "PP_3.0_29": { "volume": 1, "priority": 0 },
+                "PP_3.0_30": { "volume": 1, "priority": 0 },
+                "PP_3.0_31": { "volume": 1, "priority": 0 },
+                "PP_3.0_32": { "volume": 1, "priority": 0 },
+                "PP_3.0_33": { "volume": 1, "priority": 0 },
+                "PP_3.0_34": { "volume": 1, "priority": 0 },
+                "PP_3.0_35": { "volume": 1, "priority": 0 },
+                "PP_3.0_36": { "volume": 1, "priority": 0 },
+                "PP_3.0_36a": { "volume": 1, "priority": 0 },
+                "PP_3.0_36b": { "volume": 1, "priority": 0 },
+                "PP_3.0_37": { "volume": 1, "priority": 20 },
+                "PP_3.0_38": { "volume": 1, "priority": 20 },
+                "PP_3.0_40": { "volume": 1, "priority": 21 },
+                "PP_3.0_41": { "volume": 1, "priority": 21 },
+                "PP_3.0_43": { "volume": 1, "priority": 22 },
+                "PP_3.0_44": { "volume": 1, "priority": 22 },
+                "PP_3.0_44a": { "volume": 1, "priority": 23 },
+                "PP_3.0_44b": { "volume": 1, "priority": 23 },
+                "PP_3.0_45": { "volume": 1, "priority": 0 },
+                "PP_4.0_51": { "volume": 1, "priority": 10 },
+                "PP_4.0_52": { "volume": 1, "priority": 10 },
+                "PP_4.0_53": { "volume": 1, "priority": 10 },
+                "PP_4.0_54": { "volume": 1, "priority": 10 },
+                "PP_4.0_55": { "volume": 1, "priority": 0 },
+                "PP_4.0_56": { "volume": 1, "priority": 0 },
+                "PP_4.0_59": { "volume": 1, "priority": 0 },
+                "PP_4.0_60": { "volume": 1, "priority": 0 },
+                "PP_4.0_61": { "volume": 1, "priority": 0 },
+                "PP_4.0_62": { "volume": 1, "priority": 0 },
+                "PP_5.0_63": { "volume": 1, "priority": 100 },
+                "PP_5.0_64": { "volume": 1, "priority": 101 },
+                "PP_5.0_65": { "volume": 1, "priority": 102 },
+                "PP_5.0_66": { "volume": 1, "priority": 103 },
+                "PP_5.0_67": { "volume": 1, "priority": 104 },
+                "PP_5.0_68": { "volume": 1, "priority": 105 },
+                "PP_5.0_69": { "volume": 1, "priority": 106 },
+                "PP_6.0_70": { "volume": 1, "priority": 10 },
+                "PP_6.0_70a": { "volume": 1, "priority": 10 },
+                "PP_6.0_70b": { "volume": 1, "priority": 11 },
+                "PP_6.0_70c": { "volume": 1, "priority": 1 },
+                "PP_6.0_71": { "volume": 1, "priority": 10 },
+                "PP_6.0_71a": { "volume": 1, "priority": 10 },
+                "PP_6.0_71b": { "volume": 1, "priority": 1 },
+                "PP_6.0_73": { "volume": 1, "priority": 2 },
+                "PP_6.0_74": { "volume": 1, "priority": 2 },
+                "PP_6.0_75": { "volume": 1, "priority": 2 },
+                "PP_6.0_76": { "volume": 1, "priority": 2 },
+                "PP_6.0_77": { "volume": 1, "priority": 2 },
+                "PP_6.0_78": { "volume": 1, "priority": 2 },
+                "PP_6.0_79": { "volume": 1, "priority": 0 },
+                "PP_6.0_80": { "volume": 1, "priority": 0 },
+                "PP_6.0_81": { "volume": 1, "priority": 0 },
+                "PP_6.0_82": { "volume": 1, "priority": 20 },
+                "PP_6.0_83": { "volume": 1, "priority": 20 },
+                "PP_6.0_84": { "volume": 1, "priority": 21 },
+                "PP_6.0_113": { "volume": 1, "priority": 0 },
+                "PP_6.0_114": { "volume": 1, "priority": 0 },
+                "PP_6.0_115": { "volume": 1, "priority": 0 },
+                "PP_6.0_116": { "volume": 1, "priority": 0 },
+                "PP_6.0_117": { "volume": 1, "priority": 0 },
+                "PP_6.0_118": { "volume": 1, "priority": 0 },
+                "PP_6.0_119": { "volume": 1, "priority": 0 },
+                "PP_6.0_120": { "volume": 1, "priority": 0 },
+                "PP_6.1_87": { "volume": 1, "priority": 10 },
+                "PP_6.1_87a": { "volume": 1, "priority": 11 },
+                "PP_6.1_88": { "volume": 1, "priority": 11 },
+                "PP_6.1_89": { "volume": 1, "priority": 0 },
+                "PP_6.1_90": { "volume": 1, "priority": 0 },
+                "PP_6.1_90a": { "volume": 1, "priority": 0 },
+                "PP_6.1_90b": { "volume": 1, "priority": 0 },
+                "PP_6.1_92a": { "volume": 1, "priority": 33 },
+                "PP_6.1_92b": { "volume": 1, "priority": 33 },
+                "PP_6.2_95": { "volume": 1, "priority": 0 },
+                "PP_6.2_95a": { "volume": 1, "priority": 0 },
+                "PP_6.2_95b": { "volume": 1, "priority": 20 },
+                "PP_6.2_97": { "volume": 1, "priority": 0 },
+                "PP_6.3_99": { "volume": 1, "priority": 0 },
+                "PP_6.3_103": { "volume": 1, "priority": 0 },
+                "PP_6.3_104": { "volume": 1, "priority": 0 },
+                "PP_6.3_105": { "volume": 1, "priority": 0 },
+                "PP_6.3_106": { "volume": 1, "priority": 0 },
+                "PP_6.3_106a": { "volume": 1, "priority": 0 },
+                "PP_6.3_109": { "volume": 1, "priority": 0 },
+                "PP_6.3_110": { "volume": 1, "priority": 0 },
+                "PP_6.3_111": { "volume": 1, "priority": 0 },
+                "PP_6.3_112": { "volume": 1, "priority": 0 },
+                "PP_7.0_121": { "volume": 1, "priority": 0 },
+                "PP_7.0_122": { "volume": 1, "priority": 0 },
+                "PP_7.0_123": { "volume": 1, "priority": 0 },
+                "PP_7.0_124": { "volume": 1, "priority": 0 },
+                "PP_7.0_125": { "volume": 1, "priority": 0 },
+                "PP_7.0_126": { "volume": 1, "priority": 0 },
+                "PP_7.0_127": { "volume": 1, "priority": 0 },
+                "PP_7.0_128": { "volume": 1, "priority": 0 },
+                "PP_7.0_129": { "volume": 1, "priority": 0 },
+                "PP_7.0_130": { "volume": 1, "priority": 30 },
+                "PP_7.0_131": { "volume": 1, "priority": 31 },
+                "PP_7.0_132": { "volume": 1, "priority": 32},
+                "PP_7.0_133": { "volume": 1, "priority": 0 },
+                "PP_7.0_134": { "volume": 1, "priority": 1 },
+                "PP_7.0_135": { "volume": 1, "priority": 2 },
+                "PP_7.0_136": { "volume": 1, "priority": 3 },
+                "PP_7.0_137": { "volume": 1, "priority": 1 },
+                "PP_7.0_138": { "volume": 1, "priority": 1 },
+                "PP_7.0_139": { "volume": 1, "priority": 1 },
+                "PP_7.0_140": { "volume": 1, "priority": 1 },
+                "PP_7.0_141": { "volume": 1, "priority": 1 },
+                "PP_7.0_142": { "volume": 1, "priority": 1 },
+                "PP_7.0_143": { "volume": 1, "priority": 1 },
+                "PP_7.0_144": { "volume": 1, "priority": 1 },
+                "PP_7.0_145": { "volume": 1, "priority": 1 },
+                "PP_7.0_146": { "volume": 1, "priority": 1 },
+                "PP_7.0_147": { "volume": 1, "priority": 1 },
+                "PP_7.0_148": { "volume": 1, "priority": 1 },
+                "PP_7.0_149": { "volume": 1, "priority": 1 },
+                "PP_7.0_150": { "volume": 1, "priority": 1 },
+                "PP_7.0_151": { "volume": 1, "priority": 1 },
+                "PP_7.0_152": { "volume": 1, "priority": 1 },
+                "PP_7.0_153": { "volume": 1, "priority": 1 },
+                "PP_7.0_154": { "volume": 1, "priority": 1 }
+            }
+        }
+    }
+}

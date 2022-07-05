@@ -1,0 +1,338 @@
+{
+"skeleton": {
+	"hash": "C26HhXnqgKKPbwCUTp90HmEQQY8",
+	"spine": "3.8.97",
+	"x": 221.78,
+	"y": -9.03,
+	"width": 196,
+	"height": 141,
+	"images": "./assets/",
+	"audio": "E:/Projects/Open/Jollywise_Elinor_Camp/repo_EWWCAMPOUT/design/objects/pond"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "size", "parent": "root", "y": 50 },
+	{ "name": "frog_sitting", "parent": "size", "x": 315.81, "y": 54.78 },
+	{ "name": "frontleg_back", "parent": "frog_sitting", "x": -1.17, "y": -6.39 },
+	{ "name": "backlegs", "parent": "frog_sitting", "rotation": 31.87, "x": 12.25, "y": 2.87 },
+	{ "name": "frog_jump", "parent": "size", "x": 315.81, "y": 54.78 },
+	{ "name": "frontlegs2", "parent": "frog_jump", "x": -1.17, "y": -6.15 },
+	{ "name": "backlegs2", "parent": "frog_jump", "rotation": 31.87, "x": 12.25, "y": 2.87 }
+],
+"slots": [
+	{ "name": "BackLegs", "bone": "backlegs", "attachment": "BackLegs" },
+	{ "name": "rock_frog", "bone": "size", "attachment": "rock_frog" },
+	{ "name": "BackLegs2", "bone": "backlegs2" },
+	{ "name": "FrontLegs", "bone": "frontleg_back", "attachment": "FrontLegs" },
+	{ "name": "FrontLegs2", "bone": "frontlegs2", "attachment": "FrontLegs_2" },
+	{ "name": "Body", "bone": "frog_sitting", "attachment": "Body" },
+	{ "name": "Body2", "bone": "frog_jump", "attachment": "Body" },
+	{ "name": "FrontLegs3", "bone": "frontleg_back", "attachment": "FrontLegs" },
+	{ "name": "FrontLegs4", "bone": "frontlegs2", "attachment": "FrontLegs_2" },
+	{ "name": "Eyes", "bone": "frog_sitting", "attachment": "Eyes" },
+	{ "name": "Eyes2", "bone": "frog_jump" }
+],
+"animations": {
+	"idle": {
+		"slots": {
+			"Body2": {
+				"attachment": [
+					{ "name": null, "time": 0.0 }
+				]
+			},
+			"FrontLegs2": {
+				"attachment": [
+					{ "name": null, "time": 0.0 }
+				]
+			},
+			"FrontLegs4": {
+				"attachment": [
+					{ "name": null, "time": 0.0 }
+				]
+			}
+		},
+		"bones": {
+			"frog_jump": {
+				"scale": [
+					{ "x": -1, "time": 0.0, "y": 1.0 }
+				]
+			}
+		}
+	},
+	"jump_in": {
+		"slots": {
+			"BackLegs": {
+				"attachment": [
+					{ "name": null, "time": 0.0 },
+					{ "time": 0.3, "name": "BackLegs" }
+				]
+			},
+			"BackLegs2": {
+				"attachment": [
+					{ "name": "backlegs_2", "time": 0.0 },
+					{ "time": 0.3, "name": null }
+				]
+			},
+			"Body": {
+				"attachment": [
+					{ "name": null, "time": 0.0 },
+					{ "time": 0.3, "name": "Body" }
+				]
+			},
+			"Body2": {
+				"attachment": [
+					{ "time": 0.3, "name": null }
+				]
+			},
+			"Eyes": {
+				"attachment": [
+					{ "name": null, "time": 0.0 },
+					{ "time": 0.3, "name": "Eyes" }
+				]
+			},
+			"Eyes2": {
+				"attachment": [
+					{ "name": "Eyes", "time": 0.0 },
+					{ "time": 0.3, "name": null }
+				]
+			},
+			"FrontLegs": {
+				"attachment": [
+					{ "name": null, "time": 0.0 },
+					{ "time": 0.3, "name": "FrontLegs" }
+				]
+			},
+			"FrontLegs2": {
+				"attachment": [
+					{ "time": 0.3, "name": null }
+				]
+			},
+			"FrontLegs3": {
+				"attachment": [
+					{ "name": null, "time": 0.0 },
+					{ "time": 0.3, "name": "FrontLegs" }
+				]
+			},
+			"FrontLegs4": {
+				"attachment": [
+					{ "time": 0.3, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"frog_jump": {
+				"rotate": [
+					{ "time": 0.0, "angle": 0.0 },
+					{ "time": 0.3, "angle": 25.47 }
+				],
+				"translate": [
+					{ "x": 131.44, "y": -2.98, "time": 0.0 },
+					{ "time": 0.2, "x": 59.77, "y": 31.79 },
+					{ "time": 0.3, "x": 9.72, "y": 11.23 }
+				]
+			},
+			"backlegs2": {
+				"rotate": [
+					{ "time": 0.0, "angle": 0.0 },
+					{ "time": 0.3, "angle": 22.12 }
+				]
+			}
+		}
+	},
+	"jump_out": {
+		"slots": {
+			"BackLegs": {
+				"attachment": [
+					{ "time": 0.1667, "name": null }
+				]
+			},
+			"BackLegs2": {
+				"attachment": [
+					{ "time": 0.1667, "name": "backlegs_2" }
+				]
+			},
+			"Body": {
+				"attachment": [
+					{ "time": 0.1667, "name": null }
+				]
+			},
+			"Body2": {
+				"attachment": [
+					{ "name": null, "time": 0.0 },
+					{ "time": 0.1667, "name": "Body" }
+				]
+			},
+			"Eyes": {
+				"attachment": [
+					{ "time": 0.1667, "name": null }
+				]
+			},
+			"Eyes2": {
+				"attachment": [
+					{ "time": 0.1667, "name": "Eyes" }
+				]
+			},
+			"FrontLegs": {
+				"attachment": [
+					{ "time": 0.1667, "name": null }
+				]
+			},
+			"FrontLegs2": {
+				"attachment": [
+					{ "name": null, "time": 0.0 },
+					{ "time": 0.1667, "name": "FrontLegs_2" }
+				]
+			},
+			"FrontLegs3": {
+				"attachment": [
+					{ "time": 0.1667, "name": null }
+				]
+			},
+			"FrontLegs4": {
+				"attachment": [
+					{ "name": null, "time": 0.0 },
+					{ "time": 0.1667, "name": "FrontLegs_2" }
+				]
+			}
+		},
+		"bones": {
+			"frog_jump": {
+				"translate": [
+					{ "x": 34.32, "y": 18.15, "curve": "stepped", "time": 0.0 },
+					{ "time": 0.1667, "x": 34.32, "y": 18.15 },
+					{ "time": 0.4, "x": 87.81, "y": 101.11 },
+					{ "time": 0.6667, "x": 131.44, "y": -2.98 }
+				],
+				"scale": [
+					{ "x": -1, "time": 0.0, "y": 1.0 }
+				]
+			}
+		}
+	},
+	"press": {
+		"slots": {
+			"BackLegs": {
+				"attachment": [
+					{ "time": 0.1667, "name": null }
+				]
+			},
+			"BackLegs2": {
+				"attachment": [
+					{ "time": 0.1667, "name": "backlegs_2" }
+				]
+			},
+			"Body": {
+				"attachment": [
+					{ "time": 0.1667, "name": null }
+				]
+			},
+			"Body2": {
+				"attachment": [
+					{ "name": null, "time": 0.0 },
+					{ "time": 0.1667, "name": "Body_noise" },
+					{ "time": 0.5333, "name": "Body" }
+				]
+			},
+			"Eyes": {
+				"attachment": [
+					{ "time": 0.1667, "name": null }
+				]
+			},
+			"Eyes2": {
+				"attachment": [
+					{ "time": 0.1667, "name": "Eyes" }
+				]
+			},
+			"FrontLegs": {
+				"attachment": [
+					{ "time": 0.1667, "name": null }
+				]
+			},
+			"FrontLegs2": {
+				"attachment": [
+					{ "name": null, "time": 0.0 },
+					{ "time": 0.1667, "name": "FrontLegs_2" }
+				]
+			},
+			"FrontLegs3": {
+				"attachment": [
+					{ "time": 0.1667, "name": null }
+				]
+			},
+			"FrontLegs4": {
+				"attachment": [
+					{ "name": null, "time": 0.0 },
+					{ "time": 0.1667, "name": "FrontLegs_2" }
+				]
+			}
+		},
+		"bones": {
+			"frog_jump": {
+				"translate": [
+					{ "x": 4.51, "y": 18.15, "curve": "stepped", "time": 0.0 },
+					{
+						"time": 0.1667,
+						"x": 4.51,
+						"y": 18.15,
+						"curve": [ 0.10300000011920929, 0.30000001192092896, 0.6129999756813049, 0.9800000190734863 ]
+					},
+					{
+						"time": 0.4,
+						"x": 4.51,
+						"y": 83.58,
+						"curve": [ 0.5920000076293945, 0.07000000029802322, 1.0, 0.8700000047683716 ]
+					},
+					{ "time": 0.6, "x": 4.51, "y": 18.15 }
+				]
+			}
+		},
+		"drawOrder": [
+			{
+				"offsets": [
+					{ "slot": "rock_frog", "offset": 2, "time": 0.0 },
+					{ "slot": "FrontLegs", "offset": 1, "time": 0.0 }
+				],
+				"time": 0.0
+			}
+		]
+	}
+},
+"skins": {
+	"default": {
+		"BackLegs": {
+			"BackLegs": { "x": -6.76, "y": -6.62, "rotation": -25.04, "width": 52, "height": 25 }
+		},
+		"BackLegs2": {
+			"backlegs_2": { "x": -4.83, "y": -21.12, "width": 36, "height": 55 }
+		},
+		"Body": {
+			"Body": { "x": -0.51, "y": 7.96, "width": 58, "height": 38 }
+		},
+		"Body2": {
+			"Body": { "x": -0.03, "y": 8.19, "width": 58, "height": 38 },
+			"Body_noise": { "x": -0.82, "y": 7.65, "width": 58, "height": 38 }
+		},
+		"Eyes": {
+			"Eyes": { "x": -10.04, "y": 20.3, "width": 19, "height": 6 }
+		},
+		"Eyes2": {
+			"Eyes": { "x": -10.04, "y": 20.3, "width": 19, "height": 6 }
+		},
+		"FrontLegs": {
+			"FrontLegs": { "x": -13.49, "y": -4.75, "width": 15, "height": 23 }
+		},
+		"FrontLegs2": {
+			"FrontLegs_2": { "x": -12.16, "y": -6.46, "scaleX": 0.7859, "scaleY": 0.8014, "rotation": 6.52, "width": 20, "height": 32 }
+		},
+		"FrontLegs3": {
+			"FrontLegs": { "x": 10.07, "y": -4.75, "scaleX": -1, "width": 15, "height": 23 }
+		},
+		"FrontLegs4": {
+			"FrontLegs_2": { "x": 7.22, "y": -6.46, "scaleX": -0.8241, "scaleY": 0.7924, "rotation": 6.52, "width": 20, "height": 32 }
+		},
+		"rock_frog": {
+			"rock_frog": { "x": 319.78, "y": -5.31, "scaleY": 0.888, "width": 196, "height": 121 }
+		}
+	}
+}
+}

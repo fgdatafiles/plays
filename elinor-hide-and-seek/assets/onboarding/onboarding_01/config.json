@@ -1,0 +1,136 @@
+{
+  "displayOnce": false,
+  "tracking": "Seek 1",
+  "events" : [
+    {
+      "c": "------------------------------------------------------------------",
+      "action": {
+        "type": "lock_controls"
+      }
+    },
+
+    {
+      "c": "------------------------------------------------------------------",
+      "action": {
+        "type": "lock_hud"
+      }
+    },
+
+    {
+      "c": "------------------------------------------------------------------",
+      "action": {
+        "type": "seeker_goto",
+        "from": -100,
+        "to": 950
+      },
+      "end_condition": {
+        "stopper": true,
+        "type": "seeker_on_position"
+      }
+    },
+
+    {
+      "c": "------------------------------------------------------------------",
+      "action": {
+        "type": "seeker_play_anim",
+        "name": "quizzical"
+      },
+      "duration" : 1
+    },
+
+    {
+      "c": "------------------------------------------------------------------",
+      "action": {
+        "type": "seeker_play_anim",
+        "name": "idle"
+      },
+      "duration" : 0.5
+    },
+
+    {
+      "c": "------------------------------------------------------------------",
+      "action": {
+        "type": "unlock_controls",
+        "onlyCharacters": true
+      }
+    },
+
+    {
+      "c": "------------------------------------------------------------------",
+      "action": {
+        "type": "play_vo",
+        "textId": "ob_01_elinor_001",
+        "withAnim": true
+      },
+      "end_condition": {
+        "stopper": false,
+        "type" : "user_found_any_character",
+        "next_event_id": "end"
+      }
+    },
+
+    {
+      "c": "------------------------------------------------------------------",
+      "action": {
+        "type": "ui_pulse_character_icon",
+        "character": "olive",
+        "repeat": 5
+      }
+    },
+
+    {
+      "c": "------------------------------------------------------------------",
+      "action": {
+        "type": "ui_pulse_character_icon",
+        "character": "ari",
+        "repeat": 5
+      },
+      "duration" : 0.5
+    },
+
+    {
+      "c": "------------------------------------------------------------------",
+      "action": {
+        "type": "play_vo",
+        "textId": "ob_01_elinor_002",
+        "withAnim": true
+      },
+      "end_condition": {
+        "stopper": false,
+        "type" : "user_found_any_character",
+        "next_event_id": "end"
+      }
+    },
+
+    {
+      "c": "------------------------------------------------------------------",
+      "action": {
+        "type": "play_vo",
+        "textId": "ob_01_elinor_003",
+        "alts": ["", "a", "b"],
+        "withAnim": true
+      },
+      "delay" : 5,
+      "end_condition": {
+        "stopper": false,
+        "type" : "user_found_any_character",
+        "next_event_id": "end"
+      }
+    },
+
+    {
+      "c": "------------------------------------------------------------------",
+      "id": "end",
+      "action": {
+        "type": "stop_last_vo"
+      }
+    },
+
+    {
+      "c": "------------------------------------------------------------------",
+      "action": {
+        "type": "unlock_hud"
+      }
+    }
+  ]
+}

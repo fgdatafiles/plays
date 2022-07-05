@@ -1,0 +1,45 @@
+{
+"skeleton": {
+	"hash": "OgGsaRnbs27xOPOtN2B1LGR0E/k",
+	"spine": "3.8.97",
+	"x": -14,
+	"y": 572.79,
+	"width": 29,
+	"height": 50,
+	"images": "./_assets/",
+	"audio": "../../voiceover_update/cutscenes/cutscene_03a/audio/cutscene_03a/"
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "audio", "bone": "root", "attachment": "assets_ari/HandL" }
+],
+"events": {
+	"cs_03a_elinor_001": { "audio": "cs_03a_elinor_001.wav" },
+	"cs_03a_koa_001": { "audio": "cs_03a_koa_001.wav" }
+},
+"animations": {
+	"animation": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 0.0, "angle": 0.0 },
+					{ "time": 5.6667, "angle": 1 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.1667, "name": "cs_03a_koa_001", "volume": 0.52 },
+			{ "time": 3.2333, "name": "cs_03a_elinor_001", "volume": 0.62 }
+		]
+	}
+},
+"skins": {
+	"default": {
+		"audio": {
+			"assets_ari/HandL": { "x": 0.5, "y": 597.79, "width": 29, "height": 50 }
+		}
+	}
+}
+}

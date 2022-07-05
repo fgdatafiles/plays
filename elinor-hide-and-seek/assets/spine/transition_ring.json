@@ -1,0 +1,142 @@
+{
+"skeleton": {
+	"hash": "boUorCpr2dQ0V5yuhcjCzFhx5Kw",
+	"spine": "3.8.86",
+	"x": -4178.61,
+	"y": -4176,
+	"width": 8347.73,
+	"height": 8347.73,
+	"images": "./_assets/assets_transition_ring/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "ring" },
+	{
+		"name": "transition_ring",
+		"parent": "ring",
+		"length": 70.83,
+		"rotation": -178.25,
+		"x": -11.63,
+		"y": -2.22,
+		"scaleX": 4.4291,
+		"scaleY": 4.4291
+	},
+	{ "name": "transition_ring2", "parent": "transition_ring", "length": 61.17, "rotation": -91.08, "x": -0.52, "y": -0.7 },
+	{ "name": "transition_ring3", "parent": "transition_ring2", "length": 53.75, "rotation": -91.46, "x": -0.97, "y": -0.24 },
+	{
+		"name": "smooth",
+		"parent": "ring",
+		"length": 552.78,
+		"rotation": -89.99,
+		"x": -4.75,
+		"y": -2.14,
+		"scaleX": 14.7466,
+		"scaleY": 14.7466
+	},
+	{ "name": "white", "parent": "ring", "x": 268.47, "y": 144.44, "scaleX": 1.1416 }
+],
+"slots": [
+	{ "name": "transition_ring", "bone": "transition_ring", "attachment": "transition_ring" },
+	{ "name": "transition_ring2", "bone": "transition_ring2", "attachment": "transition_ring" },
+	{ "name": "transition_ring3", "bone": "transition_ring3", "attachment": "transition_ring" },
+	{ "name": "smoothring", "bone": "smooth", "attachment": "smoothring" },
+	{ "name": "white_sq", "bone": "white", "attachment": "white_sq" }
+],
+"animations": {
+	"fade_in": {
+		"slots": {
+			"white_sq": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped", "time": 0.0 },
+					{ "time": 0.9, "color": "ffffff00" },
+					{ "time": 1, "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"transition_ring": {
+				"scale": [
+					{ "time": 0.0, "x": 1.0, "y": 1.0 },
+					{ "time": 1, "x": 0.444, "y": 0.444 }
+				]
+			},
+			"transition_ring3": {
+				"scale": [
+					{ "x": 1.148, "y": 1.148, "time": 0.0 },
+					{ "time": 1, "x": 0.572, "y": 0.572 }
+				]
+			},
+			"transition_ring2": {
+				"scale": [
+					{ "time": 0.0, "x": 1.0, "y": 1.0 },
+					{ "time": 0.5667, "x": 0.576, "y": 0.576 }
+				]
+			},
+			"smooth": {
+				"scale": [
+					{ "time": 0.0, "x": 1.0, "y": 1.0 },
+					{ "time": 0.9, "x": 0.094, "y": 0.094 },
+					{ "time": 1, "x": 0.079, "y": 0.079 }
+				]
+			}
+		}
+	},
+	"fade_out": {
+		"slots": {
+			"white_sq": {
+				"color": [
+					{ "color": "ffffffff", "time": 0.0 },
+					{ "time": 0.0667, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"transition_ring": {
+				"scale": [
+					{ "x": 0.444, "y": 0.444, "time": 0.0 },
+					{ "time": 1, "x": 1.0, "y": 1.0 }
+				]
+			},
+			"transition_ring3": {
+				"scale": [
+					{ "x": 0.572, "y": 0.572, "time": 0.0 },
+					{ "time": 1, "x": 1.148, "y": 1.148 }
+				]
+			},
+			"transition_ring2": {
+				"scale": [
+					{ "x": 0.576, "y": 0.576, "curve": "stepped", "time": 0.0 },
+					{ "time": 0.5, "x": 0.576, "y": 0.576 },
+					{ "time": 1, "x": 1.0, "y": 1.0 }
+				]
+			},
+			"smooth": {
+				"scale": [
+					{ "x": 0.079, "y": 0.079, "time": 0.0 },
+					{ "time": 0.0667, "x": 0.094, "y": 0.094 },
+					{ "time": 1, "x": 1.0, "y": 1.0 }
+				]
+			}
+		}
+	}
+},
+"skins": {
+	"default": {
+		"smoothring": {
+			"smoothring": { "width": 566, "height": 566 }
+		},
+		"transition_ring": {
+			"transition_ring": { "x": 3.6, "y": -0.58, "scaleX": 0.7562, "scaleY": 0.7562, "rotation": 88.13, "width": 1328, "height": 1152 }
+		},
+		"transition_ring2": {
+			"transition_ring": { "x": -2.93, "y": 8.13, "rotation": 90.03, "width": 1328, "height": 1152 }
+		},
+		"transition_ring3": {
+			"transition_ring": { "scaleX": 1.2397, "scaleY": 1.2397, "width": 1328, "height": 1152 }
+		},
+		"white_sq": {
+			"white_sq": { "x": -278.65, "y": -143.92, "scaleX": 6.4859, "scaleY": 3.3897, "width": 244, "height": 226 }
+		}
+	}
+}
+}

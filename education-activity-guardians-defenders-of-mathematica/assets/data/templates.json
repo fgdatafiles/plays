@@ -1,0 +1,1785 @@
+{
+  "templates": {
+    "arithmetic": {
+      "addition": [
+        {
+          "text": "To [VERB_TWO] the [SPECIFIC_LOCATION], you must find the missing number \n[VALUE0] + [VALUE1] = ?",
+          "part": 2,
+          "values": 3,
+          "useWords" : false
+        },
+        {
+          "text": "[NAME0] pays [VALUE0] [CURRENCY] for [ITEM]. [NAME1] pays [VALUE1] [CURRENCY] for their [ITEM]. How much do they pay altogether?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "[NAME] has [VALUE2] [ITEM]. [VALUE1] [ITEM] were a reward from [NAME2]. How many [ITEM] did [NAME] start with?",
+          "part": 0,
+          "values": 3
+        },
+        {
+          "text": "[NAME] has [VALUE2] [ITEM]. [VALUE0] [ITEM] were a reward from [NAME2]. How many [ITEM] did [NAME] start with?",
+          "part": 1,
+          "values": 3
+        },
+        {
+          "text": "[NAME] found [VALUE0] [ITEM] in a dungeon. [NAME2] gave [NAME] [VALUE1] more [ITEM]. How many [ITEM] does [NAME] have?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "[NAME] found [VALUE0] [ITEM] in a dungeon. [NAME2] gave [NAME] [VALUE1] more [ITEM]. How many [ITEM] does [NAME] have?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "What is [VALUE0] + [VALUE1]?",
+          "part": 2,
+          "values": 3,
+          "useWords" : false
+        },
+        {
+          "text": "What is [VALUE0] plus [VALUE1]?",
+          "part": 2,
+          "values": 3,
+          "useWords" : true
+        },
+        {
+          "text": "What is [VALUE0] more than [VALUE1]?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "What is [VALUE0] + [VALUE1] + [VALUE2]?",
+          "part": 3,
+          "values": 4,
+          "useWords": false
+        },
+        {
+          "text": "What is [VALUE0] plus [VALUE1] plus [VALUE2]?",
+          "part": 3,
+          "values": 4,
+          "useWords": true
+        },
+        {
+          "text": "What is [VALUE0] + [VALUE1] + [VALUE2] + [VALUE3]?",
+          "part": 4,
+          "values": 5,
+          "useWords": false
+        },
+        {
+          "text": "What is [VALUE0] plus [VALUE1] plus [VALUE2] plus [VALUE3]?",
+          "part": 4,
+          "values": 5,
+          "useWords": true
+        }
+      ],
+      "subtraction": [
+        {
+          "text": "To [LOCATION], you must find the missing number \n[VALUE0] - [VALUE1] = ?",
+          "part": 2,
+          "values": 3,
+          "useWords" : false
+        },
+        {
+          "text": "[NAME] gave [NAME2] [VALUE2] [ITEM] as a reward. [NAME] now has [VALUE1] [ITEM]. How many [ITEM] did [NAME] start with?",
+          "part": 0,
+          "values": 3,
+          "positiveResult": true
+        },
+        {
+          "text": "[NAME] had [VALUE0] [ITEM]. [NAME] gave [NAME2] some [ITEM] as a reward leaving him with [VALUE2]. How many [ITEM] did [NAME] give [NAME2]?",
+          "part": 1,
+          "values": 3,
+          "positiveResult": true
+        },
+        {
+          "text": "[NAME] found [VALUE0] [ITEM] in a dungeon. [NAME] dropped [VALUE1] [ITEM] running away from a group of [ENEMY]. How many [ITEM] did [NAME] escape with?",
+          "part": 2,
+          "values": 3,
+          "positiveResult": true
+        },
+        {
+          "text": "You have [VALUE0]ml of [LIQUID] but you spill [VALUE1]ml [SPECIFIC_ACTIVITIES].  How much do you have left?",
+          "part": 2,
+          "values": 3,
+          "useWords" : false
+        },
+        {
+          "text": "What is [VALUE0] - [VALUE1]?",
+          "part": 2,
+          "values": 3,
+          "useWords" : false
+        },
+        {
+          "text": "What is [VALUE0] minus [VALUE1]?",
+          "part": 2,
+          "values": 3,
+          "useWords" : true
+        },
+        {
+          "text": "What is [VALUE1] less than [VALUE0]?",
+          "part": 2,
+          "values": 3
+        }
+      ],
+      "multiplication": [
+        {
+          "text": "What is [VALUE0] × [VALUE1]?",
+          "part": 2,
+          "values": 3,
+          "useWords" : false
+        },
+        {
+          "text": "Can you calculate [VALUE0] × [VALUE1]?",
+          "part": 2,
+          "values": 3,
+          "useWords" : false
+        },
+        {
+          "text": "What is [VALUE0] times [VALUE1]?",
+          "part": 2,
+          "values": 3,
+          "useWords" : true
+        },
+        {
+          "text": "Can you calculate [VALUE0] multiplied by [VALUE1]?",
+          "part": 2,
+          "values": 3,
+          "useWords" : true
+        },
+        {
+          "text": "I have [VALUE0] [ITEM_PAIR] each with [VALUE1] [ITEM_PAIR]. How many [ITEM_PAIR] in total?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "A dragon lays [VALUE0] eggs in [VALUE1] different nests.  How many eggs are there in total?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "If you buy [VALUE0] packs of [VALUE1] arrow heads, how many arrow heads will you have in total?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "I have [VALUE0] pouches, each containing [VALUE1] [ITEM], how many [ITEM] do I have in total?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "To [LOCATION], you must find the missing number \n[VALUE0] × [VALUE1] = ?",
+          "part": 2,
+          "values": 3,
+          "useWords" : false
+        }
+      ],
+      "multiplication_keypad": [
+        {
+          "text": "Fill in the missing values: [VALUE0] × ? = [VALUE2]",
+          "part": 1,
+          "values": 3
+        }
+      ],
+      "multiplication_fraction": [
+        {
+          "text": "What is [VALUE0] × [VALUE1]?",
+          "part": 2,
+          "values": 3,
+          "useWords" : false
+        },
+        {
+          "text": "What is [VALUE0] times [VALUE1]?",
+          "part": 2,
+          "values": 3,
+          "useWords" : true
+        },
+        {
+          "text": "Can you calculate [VALUE0] × [VALUE1]?",
+          "part": 2,
+          "values": 3,
+          "useWords" : false
+        },
+        {
+          "text": "To [LOCATION], you must find the missing number \n[VALUE0] × [VALUE1] = ?",
+          "part": 2,
+          "values": 3,
+          "useWords" : false
+        }
+      ],
+      "division": [
+        {
+          "text": "What is [VALUE0] ÷ [VALUE1]?",
+          "part": 2,
+          "values": 3,
+          "useWords" : false
+        },
+        {
+          "text": "Can you calculate [VALUE0] ÷ [VALUE1]?",
+          "part": 2,
+          "values": 3,
+          "useWords" : false
+        },
+        {
+          "text": "What is [VALUE0] divided [VALUE1]?",
+          "part": 2,
+          "values": 3,
+          "useWords" : true
+        },
+        {
+          "text": "Can you calculate [VALUE0] divided [VALUE1]?",
+          "part": 2,
+          "values": 3,
+          "useWords" : true
+        },
+        {
+          "text": "To [LOCATION], you must find the missing number \n[VALUE0] ÷ [VALUE1] = ?",
+          "part": 2,
+          "values": 3,
+          "useWords" : false
+        },
+        {
+          "text": "A guardian destroyed [VALUE0] death stones. If they destroyed these at an equal rate over [VALUE1] days, how many were destroyed each day?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "The King's tailor cuts [VALUE0]cm of cloth into [VALUE1] equal pieces. How long is each piece?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "The Orc King wants to know what [VALUE0] ÷ [VALUE1] is?",
+          "part": 2,
+          "values": 3,
+          "useWords" : false
+        },
+        {
+          "text": "The Troll King wants to know what [VALUE0] ÷ [VALUE1] is?",
+          "part": 2,
+          "values": 3,
+          "useWords" : false
+        },
+        {
+          "text": "The Troll King wants to know what [VALUE0] divided by [VALUE1] is?",
+          "part": 2,
+          "values": 3,
+          "useWords" : true
+        },
+        {
+          "text": "A dragon lays [VALUE0] eggs in [VALUE1] different nests, making sure there is an equal number of eggs in each nest. How many eggs are in a nest?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "There are [VALUE0] [CHARACTER_CLASS_TWO0]. Split these into [VALUE1] equal groups.",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "A troll has [VALUE1] buckets of slime worms, with the same number of slime worms in each bucket. If they have [VALUE0] worms altogether, how many worms are in each bucket?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "There are [VALUE0] [CHARACTER_CLASS_TWO0] that arrived from [VALUE1] [PLACE0]s in equal groups. How many [CHARACTER_CLASS_TWO0] arrived from each [PLACE0]?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "[VALUE0] [CHARACTER_CLASS_TWO0] live in [VALUE1] [PLACE0]s in equal groups. How many [CHARACTER_CLASS_TWO0] live in each [PLACE0]?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "[VALUE0] amulets are divided equally among the wizard army. They get [VALUE1] amulets each. How many wizards are there?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "You get [VALUE0] coins as a reward for your dragon slaying but must share it with your [VALUE1] companions. How much do you each get?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "Arrowheads are sold in packs of [VALUE1]. An elf needs [VALUE0] arrowheads for battle. How many packs of arrowheads does she need to buy?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "A scout's journey to the Infinite Void was [VALUE0] miles away. It took her [VALUE1] hours and she travelled the same distance per hour. How many miles did she travel per hour?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "Lord Everett is packing cakes into boxes of [VALUE1]. He has [VALUE0] cakes. How many full boxes will he have?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "An orc drinks [VALUE0] litres of pondwater on her holiday. If she is away for [VALUE1] days and drinks the same amount each day, how much does she drink each day?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "[VALUE0] coins were paid by peasants for jousting tournament programmes at the King's birthday celebrations. The programmes were [VALUE1] coins each. How many were purchased altogether?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "Special Offer: [VALUE0] dried tongues for [VALUE1] gold. How much does each one cost?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "An incredible [VALUE0] people are expected at the jousting tournament. Benches can seat [VALUE1] people. How many benches will you need?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "The Orc Army is on the march. They need tents to sleep in. Each tent can hold [VALUE1] orcs. How many needed for [VALUE0] orcs?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "The Palace Cook needs [VALUE0] apples, which are sold in boxes of [VALUE1]. How many boxes must he buy?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "A blacksmith piles her horseshoes into piles of [VALUE1]. She has [VALUE0] horseshoes. How many piles does she have?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "You buy [VALUE0]ml of invisibility potion and drink [VALUE1]ml a day. How many days will it last?",
+          "part": 2,
+          "values": 3,
+          "useWords": false
+        },
+        {
+          "text": "You have [VALUE0] metres of bandage and have to divide it between [VALUE1] warrior orcs. How much bandage will they each get?",
+          "part": 2,
+          "values": 3
+        }
+      ],
+      "division_keypad": [
+        {
+          "text": "A dragon lays [VALUE0] eggs in [VALUE1] different nests, making sure there is an equal number of eggs in each nest. How many eggs are in a nest?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "A troll has [VALUE1] buckets of slime worms, with the same number of slime worms in each bucket. If they have [VALUE0] worms altogether, how many worms are in each bucket?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "There are [VALUE0] [CHARACTER_CLASS_TWO0] that arrived from [VALUE1] [PLACE0]s in equal groups. How many [CHARACTER_CLASS_TWO0] arrived from each [PLACE0]?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "[VALUE0] amulets are divided equally among the wizard army. They get [VALUE1] amulets each. How many wizards are there?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "You get [VALUE0] coins as a reward for your dragon slaying but must share it with your [VALUE1] companions. How much do you each get?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "Arrowheads are sold in packs of [VALUE1]. An elf needs [VALUE0] arrowheads for battle. How many packs of arrowheads does she need to buy?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "A scout's journey to the Infinite Void was [VALUE0] miles away. It took her [VALUE1] hours and she travelled the same distance per hour. How many miles did she travel per hour?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "Lord Everett is packing cakes into boxes of [VALUE1]. He has [VALUE0] cakes. How many full boxes will he have?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "An orc drinks [VALUE0] litres of pondwater on her holiday. If she is away for [VALUE1] days and drinks the same amount each day, how much does she drink each day?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "[VALUE0] coins were paid by peasants for jousting tournament programmes at the King's birthday celebrations. The programmes were [VALUE1] coins each. How many were purchased altogether?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "Special Offer: [VALUE0] dried tongues for [VALUE1] gold. How much does each one cost?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "An incredible [VALUE0] people are expected at the jousting tournament. Benches can seat [VALUE1] people. How many benches will you need?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "The Orc Army is on the march. They need tents to sleep in. Each tent can hold [VALUE1] orcs. How many are needed for [VALUE0] orcs?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "The Palace Cook needs [VALUE0] apples, which are sold in boxes of [VALUE1]. How many boxes must he buy?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "A blacksmith piles her horseshoes into piles of [VALUE1]. She has [VALUE0] horseshoes. How many piles does she have?",
+          "part": 2,
+          "values": 3
+        },
+        {
+          "text": "You buy [VALUE0]ml of invisibility potion and drink [VALUE1]ml a day. How many days will it last?",
+          "part": 2,
+          "values": 3,
+          "useWords": false
+        },
+        {
+          "text": "You have [VALUE0] metres of bandage and have to divide it between [VALUE1] warrior orcs. How much bandage will they each get?",
+          "part": 2,
+          "values": 3
+        }
+      ],
+      "division_fraction": [
+        {
+          "text": "What is [VALUE0] ÷ [VALUE1]?",
+          "part": 2,
+          "values": 3,
+          "useWords" : false
+        },
+        {
+          "text": "What is [VALUE0] divided by [VALUE1]?",
+          "part": 2,
+          "values": 3,
+          "useWords" : true
+        },
+        {
+          "text": "Can you calculate [VALUE0] ÷ [VALUE1]?",
+          "part": 2,
+          "values": 3,
+          "useWords" : false
+        },
+        {
+          "text": "To [LOCATION], you must find the missing number \n[VALUE0] ÷ [VALUE1] = ?",
+          "part": 2,
+          "values": 3,
+          "useWords" : false
+        }
+      ]
+    },
+    "place_value": {
+      "comparison": [
+        {
+          "text": "Which is the highest number?",
+          "lowest": true
+        },
+        {
+          "text": "Which is the lowest number?",
+          "lowest": false
+        },
+        {
+          "text": "Which of these numbers is the smallest?",
+          "lowest": false
+        },
+        {
+          "text": "Which of these numbers is the biggest?",
+          "lowest": true
+        }
+      ],
+      "value": [
+        {
+          "text": "Which one of these numbers is [VALUE0]?"
+        },
+        {
+          "text": "There are [VALUE0] [CHARACTER_ACTIVITIES]. How many is this?"
+        }
+      ],
+      "value_keypad": [
+        {
+          "text": "Write [VALUE0] using digits instead of words."
+        },
+        {
+          "text": "There are [VALUE0] [CHARACTER_CLASS_TWO0] waiting at the border. How many [CHARACTER_CLASS_TWO0] is this expressed as digits instead of words?"
+        },
+        {
+          "text": "There are [VALUE0] [CHARACTER_CLASS_TWO0]. How many is this?"
+        }
+      ],
+      "compose": [
+        {
+          "text": "Select the value of each digit in the place value columns [VALUE0]",
+          "part": 0
+        },
+        {
+          "text": "What is the value of the digit in the ones column? [VALUE0]",
+          "part": 1
+        },
+        {
+          "text": "What is the value of the digit in the tens column? [VALUE0]",
+          "part": 2
+        },
+        {
+          "text": "What is the value of the digit in the hundreds column? [VALUE0]",
+          "part": 3
+        },
+        {
+          "text": "What is the value of the digit in the thousands column? [VALUE0]",
+          "part": 4
+        },
+        {
+          "text": "What is the value of the digit in the tens of thousands column? [VALUE0]",
+          "part": 5
+        },
+        {
+          "text": "What is the value of the digit in the hundreds of thousands column? [VALUE0]",
+          "part": 6
+        }
+      ],
+      "round": [
+        {
+          "text": "Round [VALUE0] to the nearest [VALUE1]"
+        },
+        {
+          "text": "The number of [CHARACTER_ACTIVITIES] is [VALUE0]. Round this to the nearest [VALUE1]"
+        }
+      ]
+    },
+    "sorting": {
+      "integer": [
+        {
+          "text": "Sort these values from lowest to highest.",
+          "ascending": true
+        },
+        {
+          "text": "Can you put these numbers of [CHARACTER_CLASS_TWO] in order from lowest to highest?",
+          "ascending": true
+        },
+        {
+          "text": "Order these from smallest to biggest",
+          "ascending": true
+        },
+        {
+          "text": "Sort these values from highest to lowest.",
+          "ascending": false
+        },
+        {
+          "text": "Can you put these numbers of [CHARACTER_CLASS_TWO] in order from highest to lowest?",
+          "ascending": false
+        },
+        {
+          "text": "Order these from biggest to smallest",
+          "ascending": false
+        }
+      ],
+      "fraction": [
+        {
+          "text": "Can you help put these fractions in order from smallest to largest?",
+          "ascending": true
+        },
+        {
+          "text": "Can you order these fractions smallest to largest?",
+          "ascending": true
+        },
+        {
+          "text": "Can you help put these fractions in order from largest to smallest?",
+          "ascending": false
+        },
+        {
+          "text": "Can you order these fractions largest to smallest?",
+          "ascending": false
+        }
+      ],
+      "decimal": [
+        {
+          "text": "Can you help put these decimals in order from smallest to largest?",
+          "ascending": true
+        },
+        {
+          "text": "Can you order these decimals smallest to largest?",
+          "ascending": true
+        },
+        {
+          "text": "Can you help put these decimals in order from largest to smallest?",
+          "ascending": false
+        },
+        {
+          "text": "Can you order these decimals largest to smallest?",
+          "ascending": false
+        }
+      ],
+      "mixed": [
+        {
+          "text": "Can you help put these in order from largest to smallest?",
+          "ascending": false
+        },
+        {
+          "text": "Can you help put these in order from smallest to largest?",
+          "ascending": true
+        }
+      ]
+    },
+    "visual": {
+      "faces": [
+        {
+          "text": "Can you name this 3D shape?"
+        },
+        {
+          "text": "My [GEM0] has [VALUE0] faces. What is its name?",
+          "value": true
+        },
+        {
+          "text": "Pick the shape with [VALUE0] faces",
+          "value": true
+        }
+      ],
+      "sides": [
+        {
+          "text": "Can you name this 2D shape?"
+        },
+        {
+          "text": "Pick the shape with [VALUE0] sides",
+          "value": true
+        }
+      ],
+      "angles": [
+        {
+          "text": "Select the shield with a right angle on the front."
+        }
+      ],
+      "ratio": [
+        {
+          "text": "Can you write the ratio of [white squares] to [black squares] in this pattern?"
+        }
+      ]
+    },
+    "boolean": {
+      "arithmetic": [
+        {
+          "text": "An even number plus an odd number always gives an odd number answer. True or false?",
+          "correct": true
+        },
+        {
+          "text": "An even number plus an even number always gives an even number answer. True or false?",
+          "correct": true
+        },
+        {
+          "text": "An odd number plus an odd number always gives an odd number answer. True or false?",
+          "correct": false
+        }
+      ]
+    },
+    "algebra": {
+      "single_unknown": [
+        {
+          "text": "What is the value of [VAR0]?",
+          "allow_q_mark" : false
+        },
+        {
+          "text": "Find the value of the [VAR0]",
+          "allow_q_mark" : true
+        },
+        {
+          "text": "To access the [SPECIFIC_LOCATION], you must work out the missing value: [VAR0]",
+          "allow_q_mark" : false
+        }
+      ],
+      "double_unknown": [
+        {
+          "text": "Can you find the value of [VAR0]?",
+          "allow_q_mark" : false
+        },
+        {
+          "text": "Find the value of the [VAR0]",
+          "allow_q_mark" : true
+        },
+        {
+          "text": "To access the [SPECIFIC_LOCATION], you must work out the missing value: [VAR0]",
+          "allow_q_mark" : false
+        }
+      ],
+      "find_rest": [
+        {
+          "text": "There are [VALUE0] [NOUN]. [VALUE1] are [ADJECTIVE0] and the rest are [ADJECTIVE1]. How many [ADJECTIVE1] [PLURAL] are there?"
+        }
+      ]
+    },
+    "sequence": {
+      "multiplication": [
+        {
+          "text": "What is the missing number?"
+        },
+        {
+          "text": "Can you find the missing number in this sequence?"
+        }
+      ],
+      "multiplication_select": [
+        {
+          "text": "Which is the missing number?"
+        }
+      ],
+      "addition": [
+        {
+          "text": "What is the missing number?"
+        },
+        {
+          "text": "Can you find the missing number in this sequence?"
+        },
+        {
+          "text": "This number sequence increases by the same amount. What is the next number?"
+        }
+      ],
+      "addition_select": [
+        {
+          "text": "This number sequence increases by the same amount. Which is the missing number?"
+        }
+      ],
+      "division": [
+        {
+          "text": "What is the missing number?"
+        },
+        {
+          "text": "Can you find the missing number in this sequence?"
+        }
+      ],
+      "division_select": [
+        {
+          "text": "Which is the missing number?"
+        }
+      ],
+      "subtraction": [
+        {
+          "text": "What is the missing number?"
+        },
+        {
+          "text": "Can you find the missing number in this sequence?"
+        },
+        {
+          "text": "This number sequence decreases by the same amount. What is the next number?"
+        }
+      ],
+      "subtraction_select": [
+        {
+          "text": "This number sequence decreases by the same amount. Which is the missing number?"
+        }
+      ],
+      "times_table": [
+        {
+          "text": "What is the missing number?"
+        },
+        {
+          "text": "Can you find the missing number in this sequence?"
+        }
+      ],
+      "times_table_select": [
+        {
+          "text": "Which is the missing number?"
+        }
+      ]
+    },
+    "exponent": {
+      "squared": [
+        {
+          "text": "What is [VALUE0] squared?"
+        }
+      ],
+      "square_root": [
+        {
+          "text": "A number is squared and the answer is [VALUE0]. What was the number?"
+        },
+        {
+          "text": "[  ?  ]² = [VALUE0]"
+        }
+      ],
+      "cubed": [
+        {
+          "text": "What is [VALUE0] cubed?"
+        }
+      ],
+      "cube_root": [
+        {
+          "text": "A number is cubed and the answer is [VALUE0]. What was the number?"
+        },
+        {
+          "text": "[  ?  ]³ = [VALUE0]"
+        }
+      ]
+    },
+    "measurement": {
+      "perimeter": [
+        {
+          "text": "A rectangle is [VALUE0][UNIT0] by [VALUE1][UNIT0]. Calculate the perimeter.",
+          "part": 2,
+          "values": 3
+        }
+      ],
+      "area_triangle": [
+        {
+          "text": "What is the area of this triangle?",
+          "part": 2,
+          "values": 3
+        }
+      ],
+      "area_circle": [
+        {
+          "text": "What is the area of this circle?",
+          "part": 1,
+          "values": 2
+        }
+      ],
+      "area_parallelogram": [
+        {
+          "text": "What is the area of this parallelogram?",
+          "part": 2,
+          "values": 3
+        }
+      ],
+      "diameter": [
+        {
+          "text": "What is the diameter of this circle?",
+          "part": 1,
+          "values": 2
+        }
+      ],
+      "radius": [
+        {
+          "text": "What is the radius of this circle?",
+          "part": 1,
+          "values": 2
+        }
+      ],
+      "conversion_x_in_y": [
+        {
+          "text": "How many [UNIT0] are there in [VALUE0] [UNIT1]?",
+          "reversed": false
+        },
+        {
+          "text": "[VALUE0] [UNIT1] equals how many [UNIT0]?",
+          "reversed": true
+        }
+      ],
+      "conversion_subtraction": [
+        {
+          "text": "You drink [VALUE0] [UNIT0] of your [VALUE1] [UNIT1] [CARRY_ITEM_LIQUID] of [ITEM_MEASUREMENT0]. How much is left?",
+          "part": 3,
+          "type": "liquid"
+        },
+        {
+          "text": "You've travelled [VALUE0][UNIT0]. It's [VALUE1][UNIT1] to [LOCATION0]. How much further do you have to go?",
+          "part": 3,
+          "type": "distance"
+        },
+        {
+          "text": "To [LOCATION0] is [VALUE0][UNIT0] wide. [LOCATION1] is [VALUE1][UNIT1] wide. How much wider is the second location?",
+          "part": 3,
+          "type": "distance"
+        },
+        {
+          "text": "[NAME0] has [VALUE0] [UNIT0] of [ITEM_MEASUREMENT0]. [NAME1] has [VALUE1] [UNIT0]. How much more does [NAME1] have?",
+          "part": 3,
+          "type": ["liquid", "weight"]
+        },
+        {
+          "text": "[NAME0] throws their spear [VALUE0][UNIT0]. [NAME1] throws their [VALUE1][UNIT0]. How much further did [NAME1] throw?",
+          "part": 3,
+          "type": ["distance"]
+        },
+        {
+          "text": "What is the difference between [VALUE0] [UNIT0] and [VALUE1] [UNIT1]?",
+          "part": 3,
+          "type": "any"
+        },
+        {
+          "text": "You had [VALUE0] [UNIT0] of your [ITEM_MEASUREMENT]. The [CHARACTER_CLASS] uses some in battle and now you have [VALUE1] [UNIT1]. How much was used?",
+          "part": 1,
+          "type": "liquid"
+        },
+        {
+          "text": "You were [VALUE0][UNIT0] away to [LOCATION0]. You are now [VALUE1][UNIT1] away. How far have you travelled?",
+          "part": 1,
+          "type": "distance"
+        },
+        {
+          "text": "What is [VALUE0] [UNIT0] - [VALUE1] [UNIT1]?",
+          "part": 1,
+          "type": "any"
+        }
+      ],
+      "conversion_addition": [
+        {
+          "text": "You have [VALUE0] [UNIT0] of a [ITEM_MEASUREMENT]. The [CHARACTER_CLASS] has [VALUE1] [UNIT1] of it. How much do you have combined?",
+          "part": 2
+        },
+        {
+          "text": "[NAME0] wants to know what the total of [VALUE0] [UNIT0] + [VALUE1] [UNIT1] is?",
+          "part": 2
+        },
+        {
+          "text": "What is the total [VALUE0] [UNIT0] + [VALUE1] [UNIT1]?",
+          "part": 2
+        }
+      ],
+      "conversion_percent_of_x": [
+        {
+          "text": "Currently [ITEM] are [VALUE0] [CURRENCY0] per [UNIT0]. You pay [VALUE1] [CURRENCY0]. How much do you buy?"
+        }
+      ],
+      "conversion_multiplication": [
+        {
+          "text": "All [ENEMY0] are [VALUE0][UNIT0] high. If I stack [VALUE1] on top of each other, how tall is the stack?",
+          "type": ["distance"]
+        },
+        {
+          "text": "In training for jousting, [NAME0] travels down a [VALUE0][UNIT0] long field [VALUE1] times. What total distance was covered?",
+          "type": ["distance"]
+        },
+        {
+          "text": "A [DEFENCE0] is [VALUE0][UNIT0] long. How long would it be if you had [VALUE1]?",
+          "type": ["distance"]
+        },
+        {
+          "text": "In training for jousting, [NAME0] travels down a [VALUE0][UNIT0] long field [VALUE1] times. How far did they travel in total?",
+          "type": ["distance"]
+        }
+      ],
+      "conversion_equivalent": [
+        {
+          "text": "Your army is [VALUE0][UNIT0] from [SPECIFIC_LOCATION]. Pick the equivalent values?"
+        },
+        {
+          "text": "Can you match all the equivalent values?"
+        }
+      ],
+      "conversion_sort": [
+        {
+          "text": "Order these [CHARACTER_CLASS_TWO] from shortest to tallest",
+          "ascending": true,
+          "type": "distance"
+        },
+        {
+          "text": "Order these [CHARACTER_CLASS_TWO] from tallest to shortest",
+          "ascending": false,
+          "type": "distance"
+        },
+        {
+          "text": "The [ENEMY0] had a spear throwing competition. Can you put their distances in order from shortest to longest?",
+          "ascending": true,
+          "type": "distance"
+        },
+        {
+          "text": "The [ENEMY0] had a spear throwing competition. Can you put their distances in order from longest to shortest?",
+          "ascending": false,
+          "type": "distance"
+        },
+        {
+          "text": "The [ENEMY0] are in training for a marathon. They ran the following distances. Can you put them in order from shortest to longest?",
+          "ascending": true,
+          "type": "distance"
+        },
+        {
+          "text": "The [ENEMY0] are in training for a marathon. They ran the following distances. Can you put them in order from longest to shortest?",
+          "ascending": false,
+          "type": "distance"
+        },
+        {
+          "text": "Order these values from lowest to highest",
+          "ascending": true,
+          "type": "any"
+        },
+        {
+          "text": "Order these values from highest to lowest",
+          "ascending": false,
+          "type": "any"
+        }
+      ],
+      "time_difference": [
+        {
+          "text": "You start marching at [VALUE0] and reach your destination at [VALUE1]. How long did it take to get there?",
+          "view": "visual_time",
+          "part": 2
+        },
+        {
+          "text": "This clock face shows the time now. The [VERB] on the [GENERIC_LOCATION] is in [VALUE0]. What time will it start?",
+          "part": 1,
+          "view": "visual_time"
+        },
+        {
+          "text": "You started the [VERB] on the [GENERIC_LOCATION] at [VALUE0] and wiped them out at [VALUE1]. How long did it take you?",
+          "part": 2,
+          "view": "visual_time"
+        }
+      ],
+      "time_conversion": [
+        {
+          "text": "The time is [VALUE0]. How would this look on a 12 hour clock?"
+        }
+      ],
+      "liquid_measurement": [
+        {
+          "text": "How much [ITEM_MEASUREMENT0] do I have?"
+        }
+      ]
+    },
+    "ratio": {
+      "simple": [
+        {
+          "text": "You have [VALUE0] [ITEM0] for every [VALUE1] [ITEM1]. If you had [VALUE2] [ITEM1], how many [ITEM0] would you have?"
+        },
+        {
+          "text": "You cast [VALUE0] [SPELL0] for every [VALUE1] [SPELL1]. If you cast [VALUE2] [SPELL1], how many [SPELL0] do you cast?"
+        }
+      ],
+      "simple_triple": [
+        {
+          "text": "The ratio of [CHARACTER_CLASS_TWO0] to [CHARACTER_CLASS_TWO1] to [CHARACTER_CLASS_TWO2] is [RVAL]. There are [VALUE1] [CHARACTER_CLASS_TWO0]. How many [CHARACTER_CLASS_TWO1] are there?"
+        }
+      ],
+      "percent": [
+        {
+          "text": "I have [VALUE0] [GEM0]s. [VALUE1] of them are [COLOUR0], and the rest are [COLOUR1]. What percentage are [COLOUR1]?"
+        }
+      ],
+      "find_ratio": [
+        {
+          "text": "[VALUE0] of these [VALUE2] [VARIANT0] are [VARIANT1] and the rest are [VARIANT2]. What is the ratio of [VARIANT1] to [VARIANT2] in its simplest form?"
+        },
+        {
+          "text": "[VALUE0] of the [VALUE2] [VARIANT0] are [VARIANT1] and the rest are [VARIANT2]. What is the ratio of [VARIANT1] to [VARIANT2]?"
+        },
+        {
+          "text": "You attack [VALUE0] [CHARACTER_CLASS_TWO0] for every [VALUE1] [CHARACTER_CLASS_TWO1]. What ratio represents this?",
+          "plural": true
+        },
+        {
+          "text": "You attack [VALUE0] elf for every [VALUE1] [CHARACTER_CLASS_TWO0]. What ratio represents this?",
+          "plural": false,
+          "plural_indices" : [0]
+        },
+        {
+          "text": "You attack [VALUE0] [CHARACTER_CLASS_TWO0] for every [VALUE1] [CHARACTER_CLASS_PLURAL0]. What ratio represents this?",
+          "plural": false,
+          "plural_indices" : [1]
+        },
+        {
+          "text": "You attack [VALUE0] [CHARACTER_CLASS_PLURAL0] for every [VALUE1] [CHARACTER_CLASS_PLURAL1]. What ratio represents this?",
+          "plural": false,
+          "plural_indices" : [0, 1]
+        }
+      ],
+      "find_value": [
+        {
+          "text": "You and the [FRIENDLY0] agree to split the [ITEM0] in the ratio [RVAL]. There are [VALUE1] [ITEM0] altogether. How many [ITEM0] does the [FRIENDLY0] keep?"
+        },
+        {
+          "text": "I attack [CHARACTER_CLASS_TWO0] and [CHARACTER_CLASS_TWO1] in a ratio [RVAL].  If there are [VALUE1] enemies lying injured, how many [CHARACTER_CLASS_TWO1] did I hurt?"
+        }
+      ],
+      "simplify_ratio": [
+        {
+          "text": "[VALUE0] of these [VALUE2] [VARIANT0] are [VARIANT1] and the rest are [VARIANT2]. That is a ratio of [RVAL3], can you simplify that ratio?"
+        },
+        {
+          "text": "What is the ratio [RVAL3] in its simplest form?"
+        },
+        {
+          "text": "You attack [VALUE0] [CHARACTER_CLASS_TWO0] for every [VALUE1] [CHARACTER_CLASS_TWO1].  Which ratio represents this?"
+        },
+        {
+          "text": "I see [CHARACTER_CLASS_TWO0] and [CHARACTER_CLASS_TWO1] in a ratio [RVAL3].  Which ratio represents this?"
+        },
+        {
+          "text": "[VALUE0] [CHARACTER_CLASS_TWO0] and [VALUE1] [CHARACTER_CLASS_TWO1] were sent to fight the [ENEMY0].  What is the ratio of [CHARACTER_CLASS_TWO0] to [CHARACTER_CLASS_TWO1] in its simplest form?"
+        }
+      ]
+    },
+    "statistics": {
+      "ven": [
+        {
+          "text": "This Venn diagram shows the items held by a band of [ENEMY]. How many of them only had [ITEM_A]?",
+          "part" : 0,
+          "graph_label": 0
+        },
+        {
+          "text": "This Venn diagram shows the items held by a band of [ENEMY]. How many of them only had [ITEM_B]?",
+          "part" : 1,
+          "graph_label": 0
+        },
+        {
+          "text": "This Venn diagram shows the items held by a band of [ENEMY]. How many of them had only [ITEM_A] and [ITEM_B]?",
+          "part" : 2,
+          "graph_label": 0
+        },
+        {
+          "text": "This Venn diagram shows the items held by a band of [ENEMY]. How many of them only had [ITEM_C]?",
+          "part" : 3,
+          "graph_label": 0
+        },
+        {
+          "text": "This Venn diagram shows the items held by a band of [ENEMY]. How many of them had [ITEM_A], [ITEM_B] and [ITEM_C]?",
+          "part" : 4,
+          "graph_label": 0
+        },
+        {
+          "text": "This Venn diagram shows the items held by a band of [ENEMY]. How many of them only had [ITEM_A] and [ITEM_C]?",
+          "part" : 5,
+          "graph_label": 0
+        },
+        {
+          "text": "This Venn diagram shows the items held by a band of [ENEMY]. How many of them only had [ITEM_B] and [ITEM_C]?",
+          "part" : 6,
+          "graph_label": 0
+        }
+      ],
+      "tally": [
+        {
+          "text": "A [FRIENDLY0] made a tally of his friends' favourite snacks. How many prefer [ITEM_A]?",
+          "type": "read_value",
+          "graph_label": 0
+        },
+        {
+          "text": "A [FRIENDLY0] made a tally of his friends' favourite snacks. Which two are equally popular?",
+          "type": "same",
+          "graph_label": 0
+        }
+      ],
+      "bar": [
+        {
+          "text": "[NAME] rewards you with the loot shown in this bar graph. How many [ITEM_A] are there?",
+          "type": "read_value",
+          "graph_label": 0
+        },
+        {
+          "text": "Take a look at this table. How many [ITEM_A] are there?",
+          "type": "read_value",
+          "graph_label": 0
+        },
+        {
+          "text": "[NAME] rewards you with the loot shown in this bar graph. How many more [ITEM_A] are there than [ITEM_B]?",
+          "type": "difference_positive",
+          "graph_label": 0
+        },
+        {
+          "text": "Behold the loot within this dungeon chest! How many more [ITEM_A] are there than [ITEM_B]?",
+          "type": "difference_positive",
+          "graph_label": 0
+        },
+        {
+          "text": "[NAME] rewards you with the loot shown in this bar graph. How many more [ITEM_A] are there than [ITEM_B]?",
+          "type": "difference_positive",
+          "graph_label": 0
+        },
+        {
+          "text": "Behold the loot within this dungeon chest! How many fewer [ITEM_A] are there than [ITEM_B]?",
+          "type": "difference_negative",
+          "graph_label": 0
+        },
+        {
+          "text": "[NAME] rewards you with the loot shown in this bar graph. How many fewer [ITEM_A] are there than [ITEM_B]?",
+          "type": "difference_negative",
+          "graph_label": 0
+        },
+        {
+          "text": "[NAME] rewards you with the loot shown in this bar graph. Which item did you receive the least of?",
+          "type": "lowest",
+          "graph_label": 0
+        },
+        {
+          "text": "[NAME] rewards you with the loot shown in this bar graph. Which item did you receive the most of?",
+          "type": "highest",
+          "graph_label": 0
+        },
+        {
+          "text": "[NAME] rewards you with the loot shown in this tally. Which item did you receive the same amount of?",
+          "type": "same",
+          "graph_label": 0
+        },
+        {
+          "text": "[NAME] rewards you with the loot shown in this bar graph. What is the mean average number of items in this loot drop?",
+          "type": "average",
+          "graph_label": 0
+        },
+        {
+          "text": "[NAME] rewards you with the loot shown in this bar graph. What is the range of items in this loot drop?",
+          "type": "range",
+          "graph_label": 0
+        },
+        {
+          "text": "This bar chart shows the weights of some items. What is the difference between the heaviest and the lightest?",
+          "type": "range",
+          "graph_label": 0
+        },
+        {
+          "text": "[NAME] rewards you with the loot shown in this bar graph. Which item did you have [VALUE] of?",
+          "type": "exact",
+          "graph_label": 0
+        },
+        {
+          "text": "[NAME] rewards you with the loot shown in this bar graph. What is the total you received?",
+          "type": "total",
+          "graph_label": 0
+        },
+        {
+          "text": "This bar graph shows the favourite defence item of orcs. How many orcs prefer a [ITEM_A]?",
+          "type": "read_value",
+          "graph_label": 1
+        },
+        {
+          "text": "This bar graph shows the favourite food of Mathematica's Wizards. How many more wizards prefer [ITEM_A] to [ITEM_B]?",
+          "type": "difference_positive",
+          "graph_label": 2
+        },
+        {
+          "text": "This bar graph shows the favourite defence item of orcs. How many fewer orcs prefer [ITEM_A] than [ITEM_B]?",
+          "type": "difference_negative",
+          "graph_label": 1
+        },
+        {
+          "text": "This bar graph shows the favourite defence item of orcs. Which is the least popular?",
+          "type": "lowest",
+          "graph_label": 1
+        },
+        {
+          "text": "This bar graph shows the results of a survey of wizards asking for their favourite berry to make potions with. Which is the most popular?",
+          "type": "highest",
+          "graph_label": 4
+        },
+        {
+          "text": "This bar graph shows the results of a survey of wizards asking for their favourite berry to make potions with. Which berries are equally popular?",
+          "type": "same",
+          "graph_label": 4
+        },
+        {
+          "text": "This bar graph shows the defence items I collected from the battlefield. Which two defence items were equally popular with the [CHARACTER_CLASS_TWO]?",
+          "type": "same",
+          "graph_label": 1
+        }
+      ],
+      "percent": [
+        {
+          "text": "You survey your army of [VALUE4] [CHARACTER_CLASS_TWO]. [VALUE0] say attack now; [VALUE1] say seek peace; [VALUE2] say do nothing and the rest want to build a bigger army. How many want to build a bigger army?",
+          "part": 3,
+          "values": 5
+        }
+      ],
+      "subtraction": [
+        {
+          "text": "In a survey of defence items, [VALUE0] voted for the [DEFENCE0]; [VALUE1] voted for the [DEFENCE1]; [VALUE2] voted for the [DEFENCE2]; [VALUE3] voted for the [DEFENCE3] and [VALUE4] voted for the [DEFENCE4]. How many more voted for the [DEFENCE0] than the [DEFENCE4]?",
+          "part": 5,
+          "values": 6
+        }
+      ],
+      "simple_mean": [
+        {
+          "text": "What is ([VALUE0] + [VALUE1] + [VALUE2] + [VALUE3] + [VALUE4]) ÷ [VALUE5]?",
+          "part": 6,
+          "values": 7
+        }
+      ],
+      "most_often": [
+        {
+          "text": "Select the numbers that appear most often in this list.",
+          "part": 5,
+          "values": 6
+        }
+      ],
+      "middle": [
+        {
+          "text": "Select the number that appears in the middle of this set of numbers.",
+          "part": 2,
+          "values": 5
+        }
+      ]
+    },
+    "roman_arithmetic": {
+      "addition": [
+        {
+          "text": "Can you solve this ancient calculation?"
+        }
+      ]
+    },
+    "multiples":{
+      "multiplication": [
+        {
+          "text": "Select all the multiples of [VALUE0]",
+          "type": "multiplication",
+          "part": 4,
+          "values": 4
+        }
+      ],
+      "multiplication_double": [
+        {
+          "text": "What is [VALUE0] doubled?",
+          "type": "multiplication",
+          "part": 1,
+          "values": 1
+        }
+      ],
+      "common": [
+        {
+          "text": "Which of these numbers are common multiples of [VALUE0] and [VALUE1]?",
+          "type": "multiplication",
+          "part": 1,
+          "values": 1
+        }
+      ]
+    },
+    "sum":{
+      "multi_equal_to":[
+        {
+          "text": "Find two sums with the same answer!",
+          "part": 0,
+          "values": 1
+        }
+      ],
+      "equal_to": [
+        {
+          "text": "The [VALUE0] [ENEMY0] each need [VALUE1] [ITEM0]. Which one is correct?",
+          "part": 0,
+          "values": 2
+        },
+        {
+          "text": "The [VALUE0] [CHARACTER_CLASS_TWO0] each need [VALUE1] [ITEM0]. Which one is correct?",
+          "part": 0,
+          "values": 2
+        }
+      ],
+      "not_equal_to_invisible": [
+        {
+          "text": "Which is the odd one out?",
+          "part": 0,
+          "values": 1
+        },
+        {
+          "text": "Spot the odd one out!",
+          "part": 0,
+          "values": 1
+        }
+      ],
+      "not_equal_to_visible": [
+        {
+          "text": "Which of the following is not equal to [VALUE0]?",
+          "part": 0,
+          "values": 1
+        }
+      ]
+    },
+    "shapes":{
+      "visual_right_angles":[
+        {"text": "Select the shape(s) that contain right angles."}
+      ],
+      "sides_under_four":[
+        {"text": "Select the shape(s) that contain less than 4 sides."}
+      ],
+      "sides_four":[
+        {"text": "Select the shape(s) that contain more than 4 sides."}
+      ],
+      "perpendicular_lines":[
+        {"text": "Select the shape(s) that contains perpendicular lines."}
+      ],
+      "parallel_lines":[
+        {"text": "Select the shape(s) that contains parallel lines."}
+      ],
+      "visual_isosceles":[
+        {"text": "Select all the isosceles triangles."}
+      ],
+      "odd_one_out":[
+        {"text": "Spot the odd one out."}
+      ],
+      "symmetry":[
+        {"text": "Select the shape(s) with symmetry."}
+      ],
+      "vertices":[
+        {"text": "A [VALUE0] has more vertices than it has faces. True or false?"}
+      ],
+      "symmetry_lines":[
+        {"text": "How many lines of symmetry does this shape have?"}
+      ],
+      "missing_angle":[
+        {"text": "What is the missing angle?", "part": 1, "difficulty": 1},
+        {"text": "What is the missing angle?", "part": 1, "difficulty": 2},
+        {"text": "What is the missing angle?", "part": 2, "difficulty": 1},
+        {"text": "What is the missing angle?", "part": 2, "difficulty": 2},
+        {"text": "A triangle has an angle of [VALUE0][UNIT0] and an angle of [VALUE1][UNIT1]. What is the missing angle?", "part": 2, "difficulty": 3}
+      ],
+      "fixed_triangle":[
+        {"text": "Your flag is shaped like a triangle. It has [VALUE0]. What type(s) of triangle could it be?"}
+      ],
+      "rotated_shape":[
+        {"text": "How many degrees has this shape been rotated clockwise?"}
+      ],
+      "angle_type":[
+        {"text": "What type of angle is this?"}
+      ],
+      "volume": [
+        {"text": "A cube has [VALUE]cm sides. What is its volume?", "part": 1, "values": 2}
+      ],
+      "faces": [
+        {
+          "text": "How many faces does a [VALUE0] have?", "value": true
+        }
+      ]
+    },
+    "fraction_arithmetic": {
+      "simplify": [
+        {
+          "text": "Answer me this, simplifying if required."
+        }
+      ]
+    },
+    "generic": {
+      "default": [
+        {
+          "text": "Answer me this."
+        },
+        {
+          "text": "Puzzle this out:"
+        },
+        {
+          "text": "Solve this or suffer!"
+        },
+        {
+          "text": "Calculate or squirm!"
+        },
+        {
+          "text": "Calculate this:"
+        },
+        {
+          "text": "Now try this..."
+        }
+      ]
+    },
+    "tutorial": {
+      "select": [
+        {
+          "text": "Select the correct answer."
+        }
+      ],
+      "sort": [
+        {
+          "text": "Move the numbers into the correct order, from low to high.",
+          "ascending": true
+        }
+      ],
+      "keypad": [
+        {
+          "text": "Enter the missing number. You can use your keyboard or turn on the on-screen keypad."
+        }
+      ],
+      "incorrect": [
+        {
+          "text": "That's the wrong answer. Try again!"
+        }
+      ]
+    }
+  },
+  "words": {
+    "names": [
+      "Godric",
+      "Edgar",
+      "Payton",
+      "Nixon",
+      "Ryder",
+      "Petrov",
+      "Alva",
+      "Asta",
+      "Finn",
+      "Dagmar",
+      "Eimear",
+      "Eric",
+      "Eydis",
+      "Gunnar",
+      "Gustav",
+      "Igor",
+      "Iona",
+      "Iver",
+      "Kari",
+      "Odin",
+      "Olaf",
+      "Osmond",
+      "Sven",
+      "Thorsen",
+      "Turid",
+      "Basher",
+      "Bruiser",
+      "Malic"
+    ],
+    "items": [
+      "crystals",
+      "seashells",
+      "coins",
+      "troll toes",
+      "haunted eggs",
+      "bat wings",
+      "worms",
+      "dragon teeth",
+      "dragons eggs",
+      "spider legs",
+      "fish",
+      "bones"
+    ],
+    "gems": [
+      "gemstone",
+      "jewel",
+      "healing stone",
+      "crystal",
+      "inferno stone"
+    ],
+    "item_pairs": [
+      ["spell books", "spells"],
+      ["armies", "warriors"],
+      ["pouches", "crystals"],
+      ["purses", "coins"],
+      ["stacks", "potion books"],
+      ["nests","eggs"],
+      ["buckets","worms"]
+    ],
+    "item_measurement": {
+      "liquid": [
+        "plague potion",
+        "spirit potion",
+        "diseased potion",
+        "wizard sweat",
+        "orc slime",
+        "frog juice",
+        "water",
+        "liquid",
+        "evil slime",
+        "healing potion",
+        "invisibility potion",
+        "snake venom",
+        "troll slobber",
+        "dragon pee"
+      ],
+      "weight": ["wax to treat your leather armour", "wax to treat your bat wings"]
+    },
+    "defenceitem": [
+      "shields",
+      "war vests",
+      "helmets",
+      "battle ladders",
+      "catapults",
+      "gauntlets",
+      "traps",
+      "first aid kits",
+      "battle flags",
+      "war chests",
+      "treasure maps"
+    ],
+    "item_variants": [
+      ["defence items", "helmets", "shields"],
+      ["shields", "round", "square"],
+      ["coins", "gold", "silver"],
+      ["pets", "dragons", "bats"],
+      ["fish", "scaly", "smelly"],
+      ["apples", "red", "green"],
+      ["cloaks", "short", "long"]
+    ],
+    "graph_labels" : [
+      ["crystals", "gold coins", "diamonds", "medals", "gems", "silver pieces", "pearls"],
+      ["shield", "war vest", "helmet", "battle ladder", "catapult", "gauntlet", "trap"],
+      ["dragon eggs", "beans", "elf bread", "magic moss", "wild boar", "troll teeth", "giant toes"],
+      ["Forest of Doom", "Swamp of Despair", "Caves of Woe", "Wilderness Plains", "Castle Wynard", "Bridge of Oblivion", "Marshlands of Misery"],
+      ["passion", "goji", "elder", "yew", "acai", "dew", "logan"],
+      ["crystals", "gold coins", "diamonds", "medals", "gems", "silver pieces", "pearls"],
+      ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      ["warriors", "hobgoblins", "fighters", "soldiers", "trolls", "dragons", "elves", "goblins", "wizards", "witches", "rangers", "spirits"]
+    ],
+    "tally_labels" : [
+      ["dragon eggs", "beans", "elf bread", "magic moss", "wild boar", "troll teeth", "giant toes"]
+    ],
+    "friendly": [
+      "ranger",
+      "wizard",
+      "hobgoblin"
+    ],
+    "enemies": [
+      "cursed cats",
+      "vampires",
+      "cursed dogs",
+      "spirit knights",
+      "inferno bats",
+      "battle toads",
+      "blood badgers",
+      "death creatures",
+      "evil rats",
+      "poison spiders",
+      "evil spirits",
+      "marsh creatures",
+      "minotaurs",
+      "danger fish"
+    ],
+    "generic_locations": [
+      "East Kingdom",
+      "West Kingdom",
+      "Kingdom of Calculon",
+      "Mountain Realm",
+      "Forest Realm",
+      "Woodlands Realm",
+      "Kingdom of Subtraction",
+      "Western Realm",
+      "City of Mathlantis",
+      "Troll-lands",
+      "Hills of Mathedonia"
+    ],
+    "specific_locations": [
+      "Well of Despair",
+      "Magic Mountain",
+      "Gates of Darkness",
+      "Gates of Calculon",
+      "Mines of Morro",
+      "Caves of Mathematica",
+      "Bridge of Oblivion",
+      "Underground Lair",
+      "Woodlands Pass",
+      "Enchanted Forest",
+      "Deadly Battlegrounds",
+      "Southern Hills",
+      "Royal Castle"
+    ],
+    "locations": [
+      "cross the Chasm of Doom",
+      "survive the Mountain Pass",
+      "enter the Bridge of Oblivion",
+      "escape the Marshlands of Misery",
+      "conquer the Flat Earth",
+      "pass the Gates of Sorrow"
+    ],
+    "places": [
+      "location",
+      "village",
+      "kingdom",
+      "realm",
+      "town",
+      "place"
+    ],
+    "currency": [
+      "coins",
+      "gold pieces",
+      "silver pieces",
+      "gems",
+      "gold coins",
+      "silver coins",
+      "pennies",
+      "infinity coins",
+      "magic coins"
+    ],
+    "noun_adjective": [
+      {"noun" : "dragon eggs in a nest", "plural": "eggs", "adjective" : ["red", "golden"]},
+      {"noun" : "troll babies in a cave", "plural": "troll babies", "adjective" : ["orange", "purple"]},
+      {"noun" : "crystals in a basket", "plural": "crystals", "adjective" : ["red", "green"]},
+      {"noun" : "slime worms in each bucket", "plural": "slime worms", "adjective" : ["red", "green"]},
+      {"noun" : "hobgoblins", "plural": "hobgoblins", "adjective" : ["red", "green"]},
+      {"noun" : "elves", "plural": "elves", "adjective" : ["red", "green"]},
+      {"noun" : "wizards", "plural": "wizards", "adjective" : ["long bearded", "short bearded"]},
+      {"noun" : "witches", "plural": "witches", "adjective" : ["tall", "short"]}
+
+    ],
+    "character_activities": [
+      "hobgoblins waiting at the border",
+      "soldiers fighting in the battle",
+      "elves walking through the hills",
+      "rangers hunting in the forest",
+      "knights riding through the mountains",
+      "soldiers in the army of darkness"
+    ],
+    "specific_activities": [
+      "running away from the enemy",
+      "wandering in the forest",
+      "going in to battle",
+      "on an adventure",
+      "shopping in the village",
+      "travelling through the mountains",
+      "sailing at sea"
+    ],
+    "character_class": [
+      "warrior",
+      "hobgoblin",
+      "fighter",
+      "soldier",
+      "troll",
+      "dragon",
+      "dragon hunter",
+      "elf",
+      "goblin",
+      "orc",
+      "wizard",
+      "witch",
+      "ranger",
+      "orc hunter",
+      "spirit",
+      "night thief"
+    ],
+    "character_class_2": [
+      "warriors",
+      "hobgoblins",
+      "fighters",
+      "soldiers",
+      "trolls",
+      "dragons",
+      "dragon hunters",
+      "elves",
+      "goblins",
+      "orcs",
+      "wizards",
+      "witches",
+      "rangers",
+      "orc hunters",
+      "spirits"
+    ],
+    "verb": [
+      "attack",
+      "strike",
+      "siege",
+      "charge",
+      "ambush",
+      "raid"
+    ],
+    "verb_2": [
+      "enter",
+      "pass",
+      "survive",
+      "make it to",
+      "make it through",
+      "conquer",
+      "sneak through"
+    ],
+    "colours": [
+      "red",
+      "green",
+      "blue",
+      "orange",
+      "pink",
+      "purple",
+      "gold"
+    ],
+    "carry_items_liquid": [
+      "Flask",
+      "Bottle",
+      "Cup",
+      "Flagon"
+    ],
+    "spell_types": [
+      "plague spells",
+      "ruin spells",
+      "love spells",
+      "evil spells",
+      "moon spells",
+      "sun spells",
+      "vanishing spells",
+      "light spells",
+      "conjuring spells"
+    ]
+  }
+}

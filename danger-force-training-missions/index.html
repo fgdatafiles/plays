@@ -1,0 +1,99 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebApplication">
+<head>
+  <meta charset="utf-8">
+  <title>Art Of Play Games - Demo Build</title>
+
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+
+  <!-- Mobile metadata. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Project Name">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- iOS metadata. -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Project Name">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- Windows metadata. -->
+  <meta name="msapplication-tooltip" content="">
+  <meta name="msapplication-square70x70logo" content="icons/70x70.png">
+  <meta name="msapplication-square150x150logo" content="icons/150x150.png">
+  <meta name="msapplication-wide310x150logo" content="icons/310x150.png">
+  <meta name="msapplication-square310x310logo" content="icons/310x310.png">
+
+  <!-- Icon images. -->
+  <link rel="shortcut icon" sizes="114x114" href="icons/114x114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/114x114.png">
+  <link rel="shortcut icon" sizes="144x144" href="icons/144x144.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/144x144.png">
+  <link rel="shortcut icon" sizes="57x57" href="icons/57x57.png">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="icons/57x57.png">
+  <link rel="shortcut icon" sizes="72x72" href="icons/72x72.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/72x72.png">
+  
+
+  <!-- Search engine metadata. -->
+  <meta property="og:type" itemprop="applicationCategory" content="game">
+  <meta property="og:title" itemprop="name" content="Project Name">
+  <meta property="og:description" itemprop="description" name="description" content="">
+  <meta property="og:image" itemprop="image" content="icons/128x128.png">
+  
+</head>
+<body>
+
+<div id="content">
+  <!-- The game will be embedded here. -->
+  <span id="spinner"></span>
+</div>
+<script src="embedder.js"></script>
+<script>
+  flambe.embed(["targets/html5.js"], "content");
+</script>
+
+<footer class="no-mobile">
+<table width="960" border="0" cellpadding="0" align="center">
+  <tr>
+    <td width="100" style="text-align:center;"><div style="text-align:center;">
+      <p><img src="img/mac.png" alt="Web 960x560" width="81" height="79"></p>
+      <strong><p>WEB 960x560</p></strong></div></td>
+
+    <td width="100" style="text-align:center;"><div style="text-align:center;">
+      <a href="xlarge.html"><p><img src="img/plus.png" alt="Web Web 1440x840" width="81" height="79"></p>
+      <p>WEB 1440</p></a></div></td>
+
+    <td width="100" style="text-align:center;"><div style="text-align:center;">
+      <a href="resize.html"><p><img src="img/resize.png" alt="Resizable/Fullscreen" width="81" height="79"></p>
+      <p>RESIZABLE</p></a></div></td>
+
+    <td width="80" style="text-align:center;"><div style="text-align:center;">
+     <a href="iphone6.html"><p><img src="img/iphone5.png" width="51" height="79"></p>
+      <p>iPHONE6</p></a></div></td>
+
+    <td width="80" style="text-align:center;"><div style="text-align:center;">
+      <a href="iphone5.html"><p><img src="img/iphone5.png" width="51" height="79"></p>
+      <p>iPHONE5</p></a></div></td>
+
+    <td width="80" style="text-align:center;"><div style="text-align:center;">
+      <a href="iphone4.html"><p><img src="img/iphone4.png" width="52" height="79"></p>
+      <p>iPHONE4</p></a></div></td>
+
+    <td width="90" style="padding-right:10px; text-align:right;"><div style="text-align:center;">
+      <a href="ipad.html"><p><img src="img/ipad.png" width="82" height="79"></p>
+      <p>iPAD</p></a></div></td>
+
+    <td width="3"><img src="img/bar.png" width="3" height="95"></td>
+
+    <td width="160" style="text-align:center;"><a href="http://artofplaygames.com"><img src="img/aop-logo.png" width="129" height="97" alt="Art Of Play Games"></a></td>
+  </tr>
+</table>
+<p>FOR INTERNAL TESTNG ONLY!</p>
+</footer>
+
+
+</html>

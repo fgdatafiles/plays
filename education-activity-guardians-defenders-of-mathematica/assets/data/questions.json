@@ -1,0 +1,5154 @@
+{
+  "tutorial": [
+    {
+      "type": "addition",
+      "view": "statement",
+      "input": "select",
+      "template": "tutorial/select",
+      "parts": [2],
+      "values": 3,
+      "options": 2,
+      "range": {"min": 1, "max": 10},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "integer",
+      "view": "sort",
+      "input": "sort",
+      "template": "tutorial/sort",
+      "values": 3,
+      "range": {"min": 1, "max": 10},
+      "rounding": 10,
+      "ascending" : true,
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "statement",
+      "input": "keypad",
+      "template": "tutorial/keypad",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 1, "max": 5},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    }
+  ],
+  "arithmetic": [
+    {
+      "type": "mixed_arithmetic",
+      "view": "statement",
+      "input": "keypad",
+      "parts": 3,
+      "values": 4,
+      "range": {"min": 20, "max": 120},
+      "operands" : ["+", "-"],
+      "difficulty": 1,
+      "enabled": true
+    },
+    {
+      "type": "mixed_arithmetic",
+      "view": "statement",
+      "input": "keypad",
+      "parts": 3,
+      "values": 4,
+      "range": {"min": 90, "max": 220},
+      "operands" : ["+", "-"],
+      "difficulty": 2,
+      "enabled": true
+    },
+    {
+      "type": "mixed_arithmetic",
+      "view": "statement",
+      "input": "keypad",
+      "parts": 4,
+      "values": 5,
+      "range": {"min": 120, "max": 800},
+      "operands" : ["+", "-", "+"],
+      "difficulty": 3,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "statement",
+      "input": "select",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 2, "max": 999},
+      "difficulty": 0,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "statement",
+      "input": "keypad",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 2, "max": 999},
+      "difficulty": 0,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "verbal",
+      "input": "select",
+      "template": "arithmetic/addition",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 2, "max": 999},
+      "difficulty": 0,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "verbal",
+      "input": "keypad",
+      "template": "arithmetic/addition",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 2, "max": 999},
+      "difficulty": 0,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "verbal",
+      "input": "select",
+      "parts": 3,
+      "template": "arithmetic/addition",
+      "values": 4,
+      "range": {"min": 2, "max": 99},
+      "difficulty": 0,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "verbal",
+      "input": "keypad",
+      "parts": 3,
+      "template": "arithmetic/addition",
+      "values": 4,
+      "range": {"min": 2, "max": 99},
+      "difficulty": 0,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "statement",
+      "input": "select",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 1000, "max": 9999},
+      "difficulty": 1,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "statement",
+      "input": "keypad",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 1000, "max": 9999},
+      "difficulty": 1,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "verbal",
+      "input": "select",
+      "template": "arithmetic/addition",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 1000, "max": 9999},
+      "difficulty": 1,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "verbal",
+      "input": "keypad",
+      "template": "arithmetic/addition",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 1000, "max": 9999},
+      "difficulty": 1,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "verbal",
+      "input": "select",
+      "parts": 3,
+      "template": "arithmetic/addition",
+      "values": 4,
+      "range": {"min": 1000, "max": 9999},
+      "difficulty": 1,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "verbal",
+      "input": "keypad",
+      "parts": 3,
+      "template": "arithmetic/addition",
+      "values": 4,
+      "range": {"min": 100, "max": 999},
+      "difficulty": 1,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "statement",
+      "input": "select",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 10000, "max": 99999},
+      "difficulty": 2,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "statement",
+      "input": "keypad",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 10000, "max": 99999},
+      "difficulty": 2,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "verbal",
+      "input": "select",
+      "template": "arithmetic/addition",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 10000, "max": 99999},
+      "difficulty": 2,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "verbal",
+      "input": "keypad",
+      "template": "arithmetic/addition",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 10000, "max": 99999},
+      "difficulty": 2,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "verbal",
+      "input": "select",
+      "parts": 3,
+      "template": "arithmetic/addition",
+      "values": 4,
+      "range": {"min": 1000, "max": 9999},
+      "difficulty": 2,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "verbal",
+      "input": "keypad",
+      "parts": 3,
+      "template": "arithmetic/addition",
+      "values": 4,
+      "range": {"min": 1000, "max": 9999},
+      "difficulty": 2,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "statement",
+      "input": "select",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 2, "max": 999},
+      "difficulty": 0,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "statement",
+      "input": "keypad",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 2, "max": 999},
+      "difficulty": 0,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "verbal",
+      "input": "select",
+      "template": "arithmetic/subtraction",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 2, "max": 999},
+      "difficulty": 0,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "verbal",
+      "input": "keypad",
+      "template": "arithmetic/subtraction",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 2, "max": 999},
+      "difficulty": 0,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "verbal",
+      "input": "keypad",
+      "template": "arithmetic/subtraction",
+      "parts": 3,
+      "values": 4,
+      "range": {"min": 2, "max": 99},
+      "difficulty": 0,
+      "enabled": false
+    },
+    {
+      "type": "subtraction",
+      "view": "statement",
+      "input": "select",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 1000, "max": 9999},
+      "difficulty": 1,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "statement",
+      "input": "keypad",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 1000, "max": 9999},
+      "difficulty": 1,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "verbal",
+      "input": "select",
+      "template": "arithmetic/subtraction",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 1000, "max": 9999},
+      "difficulty": 1,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "verbal",
+      "input": "keypad",
+      "template": "arithmetic/subtraction",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 1000, "max": 9999},
+      "difficulty": 1,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "statement",
+      "input": "select",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 10000, "max": 99999},
+      "difficulty": 2,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "statement",
+      "input": "keypad",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 10000, "max": 99999},
+      "difficulty": 2,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "verbal",
+      "input": "select",
+      "template": "arithmetic/subtraction",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 10000, "max": 99999},
+      "difficulty": 2,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "verbal",
+      "input": "keypad",
+      "template": "arithmetic/subtraction",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 10000, "max": 99999},
+      "difficulty": 2,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "statement",
+      "input": "keypad",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 100000, "max": 999999},
+      "difficulty": 3,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "verbal",
+      "input": "keypad",
+      "template": "arithmetic/addition",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 100000, "max": 999999},
+      "difficulty": 3,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "statement",
+      "input": "keypad",
+      "parts": 3,
+      "values": 4,
+      "range": {"min": 10000, "max": 99999},
+      "difficulty": 3,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "verbal",
+      "input": "keypad",
+      "parts": 3,
+      "template": "arithmetic/addition",
+      "values": 4,
+      "range": {"min": 10000, "max": 99999},
+      "difficulty": 3,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "statement",
+      "input": "keypad",
+      "parts": 4,
+      "values": 5,
+      "range": {"min": 2, "max": 9999},
+      "difficulty": 3,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "verbal",
+      "input": "keypad",
+      "parts": 4,
+      "template": "arithmetic/addition",
+      "values": 5,
+      "range": {"min": 2, "max": 9999},
+      "difficulty": 3,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "statement",
+      "input": "keypad",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 100000, "max": 999999},
+      "difficulty": 3,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "verbal",
+      "input": "keypad",
+      "template": "arithmetic/subtraction",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": {"min": 100000, "max": 999999},
+      "difficulty": 3,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "statement",
+      "input": "select",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": [
+        {"min": 2, "max": 99},
+        {"min": 1, "max": 10},
+        {"min": 1, "max": 10}
+      ],
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "statement",
+      "input": "keypad",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": [
+        {"min": 2, "max": 99},
+        {"min": 1, "max": 10},
+        {"min": 1, "max": 10}
+      ],
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "verbal",
+      "input": "keypad",
+      "template": "arithmetic/multiplication",
+      "parts": [2],
+      "values": 3,
+      "range": [
+        {"min": 2, "max": 99},
+        {"min": 1, "max": 10},
+        {"min": 1, "max": 10}
+      ],
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "statement",
+      "input": "select",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": [
+        {"min": 2, "max": 99},
+        {"min": 1, "max": 10},
+        {"min": 1, "max": 10}
+      ],
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "verbal",
+      "input": "select",
+      "template": "arithmetic/multiplication",
+      "parts": [2],
+      "values": 3,
+      "range": [
+        {"min": 2, "max": 99},
+        {"min": 1, "max": 10},
+        {"min": 1, "max": 10}
+      ],
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "verbal",
+      "input": "select",
+      "template": "arithmetic/multiplication",
+      "parts": [2],
+      "values": 3,
+      "range": [
+        {"min": 2, "max": 99},
+        {"min": 1, "max": 10},
+        {"min": 1, "max": 10}
+      ],
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "statement",
+      "input": "select",
+      "parts": [2],
+      "values": 3,
+      "range": [
+        {"min": 2, "max": 99},
+        {"min": 1, "max": 10},
+        {"min": 1, "max": 10}
+      ],
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "verbal",
+      "input": "keypad",
+      "template": "arithmetic/multiplication_keypad",
+      "parts": [1],
+      "values": 3,
+      "range": [
+        {"min": 2, "max": 99},
+        {"min": 1, "max": 10},
+        {"min": 1, "max": 10}
+      ],
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "statement",
+      "input": "select",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": [
+        {"min": 2, "max": 9},
+        {"min": 101, "max": 999},
+        {"min": 1, "max": 10}
+      ],
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "statement",
+      "input": "keypad",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": [
+        {"min": 2, "max": 9},
+        {"min": 101, "max": 999},
+        {"min": 1, "max": 10}
+      ],
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "verbal",
+      "input": "keypad",
+      "template": "arithmetic/multiplication",
+      "parts": [2],
+      "values": 3,
+      "range": [
+        {"min": 2, "max": 9},
+        {"min": 101, "max": 999},
+        {"min": 1, "max": 10}
+      ],
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "statement",
+      "input": "select",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": [
+        {"min": 2, "max": 9},
+        {"min": 101, "max": 999},
+        {"min": 1, "max": 10}
+      ],
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "verbal",
+      "input": "select",
+      "template": "arithmetic/multiplication",
+      "parts": [2],
+      "values": 3,
+      "range": [
+        {"min": 2, "max": 9},
+        {"min": 101, "max": 999},
+        {"min": 1, "max": 10}
+      ],
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "verbal",
+      "input": "select",
+      "template": "arithmetic/multiplication",
+      "parts": [2],
+      "values": 3,
+      "range": [
+        {"min": 2, "max": 9},
+        {"min": 101, "max": 999},
+        {"min": 1, "max": 10}
+      ],
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "statement",
+      "input": "select",
+      "parts": [3],
+      "values": 4,
+      "range": [
+        {"min": 2, "max": 9},
+        {"min": 101, "max": 999},
+        {"min": 1, "max": 10}
+      ],
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "verbal",
+      "input": "select",
+      "template": "arithmetic/multiplication",
+      "parts": [2],
+      "values": 3,
+      "range": [
+        {"min": 10, "max": 99},
+        {"min": 101, "max": 999},
+        {"min": 1, "max": 10}
+      ],
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "statement",
+      "input": "keypad",
+      "parts": [2],
+      "values": 3,
+      "range": [
+        {"min": 10, "max": 99},
+        {"min": 101, "max": 999},
+        {"min": 1, "max": 10}
+      ],
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "statement",
+      "input": "keypad",
+      "parts": [0, 1, 2],
+      "values": 3,
+      "range": [
+        {"min": 10, "max": 99},
+        {"min": 101, "max": 999},
+        {"min": 1, "max": 10}
+      ],
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "statement",
+      "input": "keypad",
+      "parts": [2],
+      "values": 3,
+      "range": [
+        {"min": 10, "max": 99},
+        {"min": 1001, "max": 9999},
+        {"min": 1, "max": 10}
+      ],
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "statement",
+      "input": "keypad",
+      "parts": [0, 1, 2, 3],
+      "values": 4,
+      "range": [
+        {"min": 10, "max": 99},
+        {"min": 1001, "max": 9999},
+        {"min": 1, "max": 10}
+      ],
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "statement",
+      "input": "keypad",
+      "parts": [2],
+      "values": 3,
+      "range": [
+        {"min": 10, "max": 99},
+        {"min": 1001, "max": 9999},
+        {"min": 1, "max": 10}
+      ],
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "verbal",
+      "input": "select",
+      "template": "arithmetic/multiplication",
+      "parts": [2],
+      "values": 3,
+      "range": [
+        {"min": 10, "max": 99},
+        {"min": 1001, "max": 9999},
+        {"min": 1, "max": 10}
+      ],
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "statement",
+      "input": "keypad",
+      "parts": [2],
+      "values": 3,
+      "range": [
+        {"min": 10, "max": 99},
+        {"min": 1001, "max": 9999},
+        {"min": 1, "max": 10}
+      ],
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "statement_long",
+      "input": "select",
+      "parts": [2],
+      "values": 3,
+      "range": [
+        {"min": 10, "max": 99},
+        {"min": 1001, "max": 9999},
+        {"min": 1, "max": 10}
+      ],
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": false
+    },
+    {
+      "type": "division",
+      "view": "statement",
+      "input": "select",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 2, "max": 10},
+      "div_range": {"min": 2, "max": 11},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division",
+      "view": "verbal",
+      "input": "select",
+      "template": "arithmetic/division",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 2, "max": 10},
+      "div_range": {"min": 2, "max": 11},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division",
+      "view": "statement",
+      "input": "keypad",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 2, "max": 10},
+      "div_range": {"min": 2, "max": 11},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division",
+      "view": "verbal",
+      "input": "keypad",
+      "template": "arithmetic/division_keypad",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 2, "max": 10},
+      "div_range": {"min": 2, "max": 11},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division",
+      "view": "verbal",
+      "input": "keypad",
+      "template": "arithmetic/division_keypad",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 2, "max": 10},
+      "div_range": {"min": 50, "max": 111},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division",
+      "view": "statement",
+      "input": "select",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 2, "max": 10},
+      "div_range": {"min": 50, "max": 111},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division",
+      "view": "statement",
+      "input": "keypad",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 2, "max": 10},
+      "div_range": {"min": 50, "max": 111},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division",
+      "view": "verbal",
+      "input": "keypad",
+      "template": "arithmetic/division_keypad",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 2, "max": 10},
+      "div_range": {"min": 50, "max": 111},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division",
+      "view": "statement",
+      "input": "select",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 2, "max": 10},
+      "div_range": {"min": 50, "max": 111},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division",
+      "view": "statement",
+      "input": "select",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 2, "max": 12},
+      "div_range": {"min": 100, "max": 1111},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division",
+      "view": "verbal",
+      "input": "select",
+      "template": "arithmetic/division",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 2, "max": 12},
+      "div_range": {"min": 100, "max": 1111},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division",
+      "view": "verbal",
+      "input": "keypad",
+      "template": "arithmetic/division_keypad",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 2, "max": 12},
+      "div_range": {"min": 100, "max": 1111},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division",
+      "view": "verbal",
+      "input": "select",
+      "template": "arithmetic/division",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 2, "max": 12},
+      "div_range": {"min": 100, "max": 1111},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division",
+      "view": "verbal",
+      "input": "select",
+      "template": "arithmetic/division",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 2, "max": 12},
+      "div_range": {"min": 100, "max": 1111},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division",
+      "view": "statement",
+      "input": "keypad",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 2, "max": 12},
+      "div_range": {"min": 100, "max": 1111},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division",
+      "view": "statement",
+      "input": "select",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 2, "max": 12},
+      "div_range": {"min": 100, "max": 1111},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division",
+      "view": "statement",
+      "input": "select",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 20, "max": 101},
+      "div_range": {"min": 50, "max": 99},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division",
+      "view": "verbal",
+      "input": "keypad",
+      "template": "arithmetic/division_keypad",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 20, "max": 101},
+      "div_range": {"min": 50, "max": 99},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division",
+      "view": "verbal",
+      "input": "keypad",
+      "template": "arithmetic/division_keypad",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 20, "max": 101},
+      "div_range": {"min": 50, "max": 99},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division",
+      "view": "verbal",
+      "input": "keypad",
+      "template": "arithmetic/division_keypad",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 20, "max": 101},
+      "div_range": {"min": 50, "max": 99},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division_fraction",
+      "view": "verbal",
+      "input": "select",
+      "template": "arithmetic/division_fraction",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 200, "max": 499},
+      "scale": 10,
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division_fraction",
+      "view": "verbal",
+      "input": "select",
+      "template": "arithmetic/division_fraction",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 200, "max": 499},
+      "scale": 100,
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division_fraction",
+      "view": "verbal",
+      "input": "select",
+      "template": "arithmetic/division_fraction",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 200, "max": 499},
+      "scale": 10,
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division_fraction",
+      "view": "verbal",
+      "input": "select",
+      "template": "arithmetic/division_fraction",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 100, "max": 199},
+      "scale": 10,
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division_fraction",
+      "view": "verbal",
+      "input": "select",
+      "template": "arithmetic/division_fraction",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 100, "max": 199},
+      "scale": 100,
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication_fraction",
+      "view": "verbal",
+      "input": "select",
+      "template": "arithmetic/multiplication_fraction",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 0.1, "max": 1.9},
+      "scale": 10,
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication_fraction",
+      "view": "verbal",
+      "input": "select",
+      "template": "arithmetic/multiplication_fraction",
+      "parts": [2],
+      "values": 3,
+      "range": {"min": 0.1, "max": 3.9},
+      "scale": 100,
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    }
+  ],
+  "place_value": [
+    {
+      "id": 1,
+      "type": "compose",
+      "view": "verbal_compose",
+      "input": "select",
+      "parts" : [1, 2],
+      "template": "place_value/compose",
+      "values": 3,
+      "range": {"min": 1, "max": 9},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 1,
+      "type": "compose",
+      "view": "verbal_compose",
+      "input": "keypad",
+      "parts" : [1, 2],
+      "template": "place_value/compose",
+      "values": 3,
+      "range": {"min": 1, "max": 9},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 1,
+      "type": "compose",
+      "view": "verbal_compose",
+      "input": "select_multi",
+      "parts" : [0],
+      "template": "place_value/compose",
+      "values": 3,
+      "range": {"min": 1, "max": 9},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 0,
+      "type": "compose",
+      "view": "verbal_compose",
+      "input": "select",
+      "parts" : [1, 2, 3],
+      "template": "place_value/compose",
+      "values": 4,
+      "range": {"min": 1, "max": 9},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 0,
+      "type": "compose",
+      "view": "verbal_compose",
+      "input": "select_multi",
+      "parts" : [0],
+      "template": "place_value/compose",
+      "values": 4,
+      "range": {"min": 1, "max": 9},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 0,
+      "type": "compose",
+      "view": "verbal_compose",
+      "input": "select",
+      "parts" : [1, 2, 3, 4],
+      "template": "place_value/compose",
+      "values": 5,
+      "range": {"min": 1, "max": 9},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 0,
+      "type": "compose",
+      "view": "verbal_compose",
+      "input": "keypad",
+      "parts" : [1, 2, 3, 4],
+      "template": "place_value/compose",
+      "values": 5,
+      "range": {"min": 1, "max": 9},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 0,
+      "type": "compose",
+      "view": "verbal_compose",
+      "input": "keypad",
+      "parts" : [1, 2, 3, 4, 5, 6],
+      "template": "place_value/compose",
+      "values": 7,
+      "range": {"min": 1, "max": 9},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 2,
+      "type": "comparison",
+      "view": "comparison",
+      "input": "select",
+      "template": "place_value/comparison",
+      "values": 5,
+      "decimal" : false,
+      "range": {"min": 100, "max": 199},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 3,
+      "type": "comparison",
+      "view": "comparison",
+      "input": "select",
+      "template": "place_value/comparison",
+      "values": 5,
+      "decimal" : true,
+      "range": {"min": 10, "max": 99.99},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 3,
+      "type": "comparison_fraction",
+      "view": "comparison",
+      "input": "select",
+      "template": "place_value/comparison",
+      "values": 5,
+      "range": {"min": 1, "max": 8},
+      "range_denominator": {"min": 4, "max": 12},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 3,
+      "type": "comparison_fraction",
+      "view": "comparison",
+      "input": "select",
+      "template": "place_value/comparison",
+      "values": 5,
+      "range": {"min": 1, "max": 12},
+      "range_denominator": {"min": 6, "max": 14},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 3,
+      "type": "comparison_fraction",
+      "view": "comparison",
+      "input": "select",
+      "template": "place_value/comparison",
+      "values": 5,
+      "range": {"min": 1, "max": 16},
+      "range_denominator": {"min": 10, "max": 24},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 3,
+      "type": "comparison_fraction",
+      "view": "comparison",
+      "input": "select",
+      "template": "place_value/comparison",
+      "values": 5,
+      "range": {"min": 6, "max": 24},
+      "range_denominator": {"min": 12, "max": 32},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 3,
+      "type": "comparison",
+      "view": "comparison",
+      "input": "select",
+      "template": "place_value/comparison",
+      "values": 6,
+      "decimal" : true,
+      "dp" : 1,
+      "range": {"min": 0.1, "max": 1.4},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 3,
+      "type": "comparison",
+      "view": "comparison",
+      "input": "select",
+      "template": "place_value/comparison",
+      "values": 6,
+      "decimal" : true,
+      "dp" : 1,
+      "range": {"min": 0.1, "max": 5},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 4,
+      "type": "value",
+      "view": "verbal_value",
+      "input": "select",
+      "template": "place_value/value",
+      "values": 4,
+      "range": {"min": 21, "max": 999},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 7,
+      "type": "value",
+      "view": "verbal_value",
+      "input": "select",
+      "template": "place_value/value",
+      "values": 4,
+      "range": {"min": 1000, "max": 9999},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 7,
+      "type": "value",
+      "view": "verbal_value",
+      "input": "keypad",
+      "template": "place_value/value_keypad",
+      "values": 4,
+      "range": {"min": 1000, "max": 9999},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 7,
+      "type": "value",
+      "view": "verbal_value",
+      "input": "keypad",
+      "template": "place_value/value_keypad",
+      "values": 4,
+      "range": {"min": 10000, "max": 99999},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 7,
+      "type": "value",
+      "view": "verbal_value",
+      "input": "keypad",
+      "template": "place_value/value_keypad",
+      "values": 4,
+      "range": {"min": 100000, "max": 999999},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 9,
+      "type": "round",
+      "view": "verbal_round",
+      "input": "keypad",
+      "template": "place_value/round",
+      "values": 4,
+      "rounding": 10,
+      "range": {"min": 11, "max": 999},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 9,
+      "type": "round",
+      "view": "verbal_round",
+      "input": "keypad",
+      "template": "place_value/round",
+      "values": 4,
+      "rounding": 100,
+      "range": {"min": 50, "max": 999},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 9,
+      "type": "round",
+      "view": "verbal_round",
+      "input": "keypad",
+      "template": "place_value/round",
+      "values": 4,
+      "rounding": 100,
+      "range": {"min": 50, "max": 999},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 9,
+      "type": "round",
+      "view": "verbal_round",
+      "input": "keypad",
+      "template": "place_value/round",
+      "values": 4,
+      "rounding": 1000,
+      "range": {"min": 500, "max": 9999},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 9,
+      "type": "round",
+      "view": "verbal_round",
+      "input": "keypad",
+      "template": "place_value/round",
+      "values": 4,
+      "rounding": 1000,
+      "range": {"min": 1001, "max": 9999},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 9,
+      "type": "round",
+      "view": "verbal_round",
+      "input": "keypad",
+      "template": "place_value/round",
+      "values": 4,
+      "rounding": 10000,
+      "range": {"min": 10001, "max": 99999},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "id": 9,
+      "type": "round",
+      "view": "verbal_round",
+      "input": "keypad",
+      "template": "place_value/round",
+      "values": 4,
+      "rounding": 1000000,
+      "range": {"min": 1000001, "max": 9999999},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    }
+  ],
+  "roman_arithmetic": [
+    {
+      "type": "addition",
+      "view": "statement",
+      "input": "select",
+      "template": "roman_arithmetic/addition",
+      "values": 3,
+      "parts": [2],
+      "range": {"min": 50, "max": 100},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "statement",
+      "input": "select",
+      "template": "roman_arithmetic/addition",
+      "values": 3,
+      "parts": [2],
+      "range": {"min": 100, "max": 499},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    }
+  ],
+  "fraction_arithmetic": [
+    {
+      "type": "addition",
+      "view": "statement",
+      "input": "select",
+      "values": 2,
+      "range": {"min": 1, "max": 6},
+      "range_denominator": {"min": 4, "max": 12},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "statement",
+      "input": "select",
+      "values": 2,
+      "range": {"min": 1, "max": 8},
+      "range_denominator": {"min": 4, "max": 20},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "statement",
+      "input": "select",
+      "values": 2,
+      "range": {"min": 1, "max": 16},
+      "range_denominator": {"min": 8, "max": 32},
+      "template": "fraction_arithmetic/simplify",
+      "simplify" : true,
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "statement",
+      "input": "select",
+      "values": 2,
+      "range": {"min": 1, "max": 6},
+      "range_denominator": {"min": 4, "max": 12},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "statement",
+      "input": "select",
+      "values": 2,
+      "range": {"min": 1, "max": 8},
+      "range_denominator": {"min": 4, "max": 20},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": false
+    },
+    {
+      "type": "subtraction",
+      "view": "statement",
+      "input": "select",
+      "values": 2,
+      "range": {"min": 1, "max": 16},
+      "range_denominator": {"min": 8, "max": 32},
+      "difficulty": 2,
+      "template": "fraction_arithmetic/simplify",
+      "simplify" : true,
+      "xp": 20,
+      "enabled": false
+    },
+    {
+      "type": "multiplication",
+      "view": "statement",
+      "input": "select",
+      "values": 2,
+      "range": {"min": 1, "max": 6},
+      "range_denominator": {"min": 4, "max": 12},
+      "template": "fraction_arithmetic/simplify",
+      "simplify" : true,
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": false
+    },
+    {
+      "type": "division",
+      "view": "statement",
+      "input": "select",
+      "values": 2,
+      "range": {"min": 1, "max": 6},
+      "range_denominator": {"min": 4, "max": 12},
+      "template": "fraction_arithmetic/simplify",
+      "simplify" : true,
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": false
+    }
+  ],
+  "sorting": [
+    {
+      "type": "integer",
+      "view": "sort",
+      "input": "sort",
+      "template": "sorting/integer",
+      "values": 5,
+      "rounding": 100,
+      "range": {"min": 100, "max": 999},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "integer",
+      "view": "sort",
+      "input": "sort",
+      "template": "sorting/integer",
+      "values": 5,
+      "rounding": 1000,
+      "range": {"min": 1000, "max": 9999},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "integer",
+      "view": "sort",
+      "input": "sort",
+      "template": "sorting/integer",
+      "values": 5,
+      "rounding": 10000,
+      "range": {"min": 10000, "max": 999999},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "integer",
+      "view": "sort",
+      "input": "sort",
+      "template": "sorting/integer",
+      "values": 5,
+      "rounding": 1000000,
+      "range": {"min": 1000000, "max": 10000000},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "fraction",
+      "view": "sort",
+      "input": "sort",
+      "template": "sorting/fraction",
+      "values": 5,
+      "range": {"min": 1, "max": 8},
+      "range_denominator" : {"min": 4, "max": 12},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "fraction",
+      "view": "sort",
+      "input": "sort",
+      "template": "sorting/fraction",
+      "values": 5,
+      "range": {"min": 2, "max": 10},
+      "range_denominator" : {"min": 6, "max": 12},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "fraction",
+      "view": "sort",
+      "input": "sort",
+      "template": "sorting/fraction",
+      "values": 5,
+      "range": {"min": 2, "max": 12},
+      "range_denominator" : {"min": 6, "max": 16},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "fraction",
+      "view": "sort",
+      "input": "sort",
+      "template": "sorting/fraction",
+      "values": 5,
+      "range": {"min": 4, "max": 16},
+      "range_denominator" : {"min": 8, "max": 24},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "decimal",
+      "view": "sort",
+      "input": "sort",
+      "template": "sorting/decimal",
+      "values": 5,
+      "range": {"min": 0.1, "max": 2.9},
+      "dp" : 1,
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "decimal",
+      "view": "sort",
+      "input": "sort",
+      "template": "sorting/decimal",
+      "values": 5,
+      "range": {"min": 0.01, "max": 4.99},
+      "dp" : 2,
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "decimal",
+      "view": "sort",
+      "input": "sort",
+      "template": "sorting/decimal",
+      "values": 5,
+      "range": {"min": 0.01, "max": 10.99},
+      "dp" : 2,
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "mixed",
+      "view": "sort",
+      "input": "sort",
+      "template": "sorting/mixed",
+      "values": 5,
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    }
+  ],
+  "visual": [
+    {
+      "type": "faces",
+      "view": "visual_shape",
+      "input": "select",
+      "template": "visual/faces",
+      "values": 3,
+      "range": [
+        {"name": "cone", "value": 2, "image": "shape_3d_cone_0"},
+        {"name": "cube", "value": 6, "image": "shape_3d_cube_0"},
+        {"name": "cuboid", "value": 6, "image": "shape_3d_cuboid_0"},
+        {"name": "cylinder", "value": 3, "image": "shape_3d_cylinder_0"},
+        {"name": "triangular\nprism", "value": 5, "image": "shape_3d_prism_triangular_0"},
+        {"name": "triangular\npyramid", "value": 4, "image": "shape_3d_pyramid_0"}
+      ],
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "sides",
+      "view": "visual_shape",
+      "input": "select",
+      "template": "visual/sides",
+      "values": 3,
+      "range": [
+        {"name": "triangle", "value": 3, "image": "shape_2d_triangle_equilateral_0"},
+        {"name": "rectangle", "value": 4, "image": "shape_2d_rectangle_0"},
+        {"name": "square", "value": 4, "image": "shape_2d_square_0"},
+        {"name": "circle", "value": 1, "image": "shape_2d_circle_0"},
+        {"name": "oval", "value": 1, "image": "shape_2d_oval_0"},
+        {"name": "hexagon", "value": 6, "image": "shape_2d_hexagon_0"},
+        {"name": "pentagon", "value": 5, "image": "shape_2d_pentagon_0"}
+      ],
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "sides",
+      "view": "visual_shape",
+      "input": "select",
+      "template": "visual/sides",
+      "values": 3,
+      "range": [
+        {"name": "heptagon", "value": 7, "image": "shape_2d_heptagon_0"},
+        {"name": "kite", "value": 4, "image": "shape_2d_kite_0"},
+        {"name": "octagon", "value": 8, "image": "shape_2d_octagon_0"},
+        {"name": "rhombus", "value": 4, "image": "shape_2d_rhombus_0"},
+        {"name": "hexagon", "value": 6, "image": "shape_2d_hexagon_0"},
+        {"name": "pentagon", "value": 5, "image": "shape_2d_pentagon_0"}
+      ],
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    }
+  ],
+  "boolean": [
+    {
+      "type": "arithmetic",
+      "view": "verbal_boolean",
+      "input": "select",
+      "template": "boolean/arithmetic",
+      "difficulty": 2,
+      "enabled": true
+    },
+    {
+      "type": "arithmetic",
+      "view": "verbal_boolean",
+      "input": "select",
+      "template": "boolean/arithmetic",
+      "difficulty": 3,
+      "enabled": true
+    },
+    {
+      "type": "arithmetic",
+      "view": "verbal_boolean",
+      "input": "select",
+      "template": "boolean/arithmetic",
+      "difficulty": 4,
+      "enabled": true
+    }
+  ],
+  "algebra": [
+    {
+      "type": "multiplication",
+      "view": "statement_algebra",
+      "input": "select",
+      "template" : "algebra/single_unknown",
+      "values": 0,
+      "range": {"min": 2, "max": 12},
+      "variable_character" : ["x", "y"],
+      "variable_range": {"min": 2, "max": 12},
+      "coefficient_range": {"min": 2, "max": 12},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "statement_algebra",
+      "input": "keypad",
+      "template" : "algebra/single_unknown",
+      "values": 0,
+      "range": {"min": 6, "max": 20},
+      "variable_character" : ["x", "y"],
+      "variable_range": {"min": 4, "max": 10},
+      "coefficient_range": {"min": 6, "max": 20},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "statement_algebra",
+      "input": "select",
+      "template" : "algebra/single_unknown",
+      "values": 1,
+      "range": {"min": 1, "max": 30},
+      "variable_character" : ["?", "b"],
+      "variable_range": {"min": 1, "max": 15},
+      "coefficient_range": {"min": 1, "max": 1},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "statement_algebra",
+      "input": "select",
+      "template" : "algebra/single_unknown",
+      "values": 1,
+      "range": {"min": 1, "max": 30},
+      "variable_character" : ["x", "b"],
+      "variable_range": {"min": 1, "max": 15},
+      "coefficient_range": {"min": 1, "max": 1},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "statement_algebra",
+      "input": "keypad",
+      "template" : "algebra/single_unknown",
+      "values": 2,
+      "range": {"min": 20, "max": 59},
+      "variable_character" : ["x", "y"],
+      "variable_range": {"min": 10, "max": 40},
+      "coefficient_range": {"min": 1, "max": 1},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "statement_algebra",
+      "input": "keypad",
+      "template" : "algebra/single_unknown",
+      "values": 1,
+      "range": {"min": 10, "max": 99},
+      "variable_character" : ["x", "y"],
+      "variable_range": {"min": 10, "max": 40},
+      "coefficient_range": {"min": 1, "max": 1},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "statement_algebra",
+      "input": "keypad",
+      "template" : "algebra/single_unknown",
+      "values": 2,
+      "range": {"min": 20, "max": 99},
+      "variable_character" : ["x", "y"],
+      "variable_range": {"min": 10, "max": 40},
+      "coefficient_range": {"min": 1, "max": 1},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "statement_algebra",
+      "input": "keypad",
+      "template" : "algebra/single_unknown",
+      "values": 1,
+      "range": {"min": 100, "max": 699},
+      "variable_character" : ["x", "y"],
+      "variable_range": {"min": 100, "max": 299},
+      "coefficient_range": {"min": 1, "max": 1},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "statement_algebra",
+      "input": "keypad",
+      "template" : "algebra/single_unknown",
+      "values": 2,
+      "range": {"min": 200, "max": 799},
+      "variable_character" : ["x", "y"],
+      "variable_range": {"min": 100, "max": 199},
+      "coefficient_range": {"min": 1, "max": 1},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "statement_algebra",
+      "input": "select",
+      "template" : "algebra/single_unknown",
+      "values": 1,
+      "range": {"min": 15, "max": 30},
+      "variable_character" : ["?", "b"],
+      "variable_range": {"min": 2, "max": 14},
+      "coefficient_range": {"min": 1, "max": 1},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "statement_algebra",
+      "input": "keypad",
+      "template" : "algebra/single_unknown",
+      "values": 1,
+      "range": {"min": 10, "max": 30},
+      "variable_character" : ["a", "b"],
+      "variable_range": {"min": 2, "max": 9},
+      "coefficient_range": {"min": 1, "max": 1},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "statement_algebra",
+      "input": "keypad",
+      "template" : "algebra/single_unknown",
+      "values": 1,
+      "range": {"min": 10, "max": 30},
+      "variable_character" : ["x", "y"],
+      "variable_range": {"min": 2, "max": 9},
+      "coefficient_range": {"min": 1, "max": 1},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "statement_algebra",
+      "input": "keypad",
+      "template" : "algebra/single_unknown",
+      "values": 1,
+      "range": {"min": 31, "max": 99},
+      "variable_character" : ["x", "y"],
+      "variable_range": {"min": 15, "max": 30},
+      "coefficient_range": {"min": 1, "max": 1},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "statement_algebra",
+      "input": "keypad",
+      "template" : "algebra/single_unknown",
+      "values": 1,
+      "range": {"min": 100, "max": 199},
+      "variable_character" : ["x", "y"],
+      "variable_range": {"min": 10, "max": 99},
+      "coefficient_range": {"min": 1, "max": 1},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "statement_algebra",
+      "input": "keypad",
+      "template" : "algebra/single_unknown",
+      "values": 1,
+      "range": {"min": 21, "max": 50},
+      "variable_character" : ["x", "y"],
+      "variable_range": {"min": 4, "max": 10},
+      "coefficient_range": {"min": 2, "max": 2},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division",
+      "view": "statement_algebra",
+      "input": "keypad",
+      "template" : "algebra/single_unknown",
+      "values": 1,
+      "range": {"min": 2, "max": 12},
+      "variable_character" : ["x", "y"],
+      "variable_range": {"min": 2, "max": 12},
+      "coefficient_range": {"min": 1, "max": 1},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division",
+      "view": "statement_algebra",
+      "input": "keypad",
+      "template" : "algebra/single_unknown",
+      "values": 1,
+      "range": {"min": 21, "max": 99},
+      "variable_character" : ["x", "y"],
+      "variable_range": {"min": 2, "max": 12},
+      "coefficient_range": {"min": 1, "max": 1},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "mixed",
+      "view": "statement_algebra",
+      "input": "keypad",
+      "template" : "algebra/single_unknown",
+      "values": 2,
+      "range": {"min": 21, "max": 50},
+      "variable_character" : ["x", "y"],
+      "variable_range": {"min": 4, "max": 20},
+      "coefficient_range": {"min": 1, "max": 1},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "mixed",
+      "view": "statement_algebra",
+      "input": "keypad",
+      "template" : "algebra/single_unknown",
+      "values": 2,
+      "range": {"min": 50, "max": 99},
+      "variable_character" : ["x", "y"],
+      "variable_range": {"min": 14, "max": 50},
+      "coefficient_range": {"min": 1, "max": 1},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "mixed",
+      "view": "statement_algebra",
+      "input": "keypad",
+      "template" : "algebra/single_unknown",
+      "values": 2,
+      "range": {"min": 100, "max": 999},
+      "variable_character" : ["x", "y"],
+      "variable_range": {"min": 50, "max": 99},
+      "coefficient_range": {"min": 1, "max": 1},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "double_unknown",
+      "view": "statement_algebra_pair",
+      "input": "select",
+      "template" : "algebra/double_unknown",
+      "values": 1,
+      "range": {"min": 12, "max": 24},
+      "variable_character" : ["x", "y"],
+      "variable_range": {"min": 2, "max": 11},
+      "coefficient_range": {"min": 1, "max": 1},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "double_unknown",
+      "view": "statement_algebra_pair",
+      "input": "keypad",
+      "template" : "algebra/double_unknown",
+      "values": 1,
+      "range": {"min": 20, "max": 50},
+      "variable_character" : ["x", "y"],
+      "variable_range": {"min": 10, "max": 20},
+      "coefficient_range": {"min": 1, "max": 1},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "double_unknown",
+      "view": "statement_algebra_pair",
+      "input": "select",
+      "template" : "algebra/double_unknown",
+      "values": 1,
+      "range": {"min": 20, "max": 50},
+      "variable_character" : ["x", "y"],
+      "variable_range": {"min": 10, "max": 20},
+      "coefficient_range": {"min": 2, "max": 2},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "double_unknown",
+      "view": "statement_algebra_pair",
+      "input": "select",
+      "template" : "algebra/double_unknown",
+      "values": 1,
+      "range": {"min": 12, "max": 24},
+      "variable_character" : ["x", "y"],
+      "variable_range": {"min": 2, "max": 11},
+      "coefficient_range": {"min": 1, "max": 1},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "double_unknown",
+      "view": "statement_algebra_pair",
+      "input": "keypad",
+      "template" : "algebra/double_unknown",
+      "values": 1,
+      "range": {"min": 20, "max": 50},
+      "variable_character" : ["x", "y"],
+      "variable_range": {"min": 10, "max": 20},
+      "coefficient_range": {"min": 1, "max": 1},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "double_unknown",
+      "view": "statement_algebra_pair",
+      "input": "select",
+      "template" : "algebra/double_unknown",
+      "values": 1,
+      "range": {"min": 20, "max": 50},
+      "variable_character" : ["x", "y"],
+      "variable_range": {"min": 10, "max": 20},
+      "coefficient_range": {"min": 2, "max": 2},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "find_rest",
+      "view": "verbal_rest",
+      "input": "keypad",
+      "template" : "algebra/find_rest",
+      "values": 5,
+      "range": {"min": 2, "max": 20},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    }
+  ],
+  "sequence": [
+    {
+      "type": "addition",
+      "view": "sequence",
+      "input": "select",
+      "template": "sequence/addition_select",
+      "values": 4,
+      "range": {"min": 1000, "max": 9999},
+      "step:": {"min": 100, "max": 999},
+      "difficulty": 1,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "sequence",
+      "input": "keypad",
+      "template": "sequence/addition",
+      "values": 4,
+      "range": {"min": 1000, "max": 9999},
+      "step": {"min": 100, "max": 999},
+      "difficulty": 1,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "sequence",
+      "input": "select",
+      "template": "sequence/subtraction_select",
+      "values": 4,
+      "range": {"min": 1000, "max": 9999},
+      "step": {"min": 100, "max": 999},
+      "difficulty": 1,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "sequence",
+      "input": "keypad",
+      "template": "sequence/subtraction",
+      "values": 4,
+      "range": {"min": 1000, "max": 9999},
+      "step": {"min": 100, "max": 999},
+      "difficulty": 1,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "sequence",
+      "input": "select",
+      "template": "sequence/addition_select",
+      "values": 4,
+      "range": {"min": 10000, "max": 99999},
+      "step:": {"min": 1000, "max": 9999},
+      "difficulty": 2,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "sequence",
+      "input": "keypad",
+      "template": "sequence/addition",
+      "values": 4,
+      "range": {"min": 10000, "max": 99999},
+      "step": {"min": 100, "max": 999},
+      "difficulty": 2,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "sequence",
+      "input": "select",
+      "template": "sequence/subtraction_select",
+      "values": 4,
+      "range": {"min": 10000, "max": 99999},
+      "step": {"min": 100, "max": 999},
+      "difficulty": 2,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "sequence",
+      "input": "keypad",
+      "template": "sequence/subtraction",
+      "values": 4,
+      "range": {"min": 10000, "max": 99999},
+      "step": {"min": 100, "max": 999},
+      "difficulty": 2,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "sequence",
+      "input": "select",
+      "template": "sequence/addition_select",
+      "values": 4,
+      "range": {"min": 10000, "max": 99999},
+      "step:": {"min": 1000, "max": 9999},
+      "difficulty": 3,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "sequence",
+      "input": "keypad",
+      "template": "sequence/addition",
+      "values": 4,
+      "range": {"min": 10000, "max": 99999},
+      "step": {"min": 100, "max": 999},
+      "difficulty": 3,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "sequence",
+      "input": "select",
+      "template": "sequence/subtraction_select",
+      "values": 4,
+      "range": {"min": 10000, "max": 99999},
+      "step": {"min": 100, "max": 999},
+      "difficulty": 3,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "sequence",
+      "input": "keypad",
+      "template": "sequence/subtraction",
+      "values": 4,
+      "range": {"min": 10000, "max": 99999},
+      "step": {"min": 100, "max": 999},
+      "difficulty": 3,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "sequence",
+      "input": "select",
+      "template": "sequence/multiplication_select",
+      "values": 4,
+      "range": {"min": 2, "max": 2},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": false
+    },
+    {
+      "type": "multiplication",
+      "view": "sequence",
+      "input": "keypad",
+      "template": "sequence/multiplication",
+      "values": 4,
+      "range": {"min": 2, "max": 5},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": false
+    },
+    {
+      "type": "division",
+      "view": "sequence",
+      "input": "select",
+      "template": "sequence/division_select",
+      "values": 4,
+      "range": {"min": 2, "max": 4},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "times_table",
+      "view": "sequence",
+      "input": "select",
+      "template": "sequence/times_table_select",
+      "values": 4,
+      "range": {"min": 3, "max": 12},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "times_table",
+      "view": "sequence",
+      "input": "keypad",
+      "template": "sequence/times_table",
+      "values": 4,
+      "range": {"min": 3, "max": 12},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "times_table",
+      "view": "sequence",
+      "input": "select",
+      "template": "sequence/times_table_select",
+      "values": 4,
+      "range": {"min": 11, "max": 99},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "times_table",
+      "view": "sequence",
+      "input": "keypad",
+      "template": "sequence/times_table",
+      "values": 4,
+      "range": {"min": 11, "max": 99},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "times_table",
+      "view": "sequence",
+      "input": "select",
+      "template": "sequence/times_table_select",
+      "values": 4,
+      "range": {"min": 6, "max": 12},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "times_table",
+      "view": "sequence",
+      "input": "keypad",
+      "template": "sequence/times_table",
+      "values": 4,
+      "range": {"min": 6, "max": 12},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    }
+  ],
+  "measurement": [
+    {
+      "type": "perimeter",
+      "view": "verbal_conversion",
+      "input": "keypad",
+      "template": "measurement/perimeter",
+      "parts": 2,
+      "values": 3,
+      "units": [
+        {"long": "metres", "short": "m", "range": {"min": 2, "max": 25}}
+      ],
+      "range": {"min": 1, "max": 25},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "perimeter",
+      "view": "verbal_conversion",
+      "input": "keypad",
+      "template": "measurement/perimeter",
+      "parts": 2,
+      "values": 3,
+      "units": [
+        {"long": "metres", "short": "m", "range": {"min": 2, "max": 25}}
+      ],
+      "range": {"min": 1, "max": 25},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "perimeter",
+      "view": "verbal_conversion",
+      "input": "keypad",
+      "template": "measurement/perimeter",
+      "parts": 2,
+      "values": 3,
+      "units": [
+        {"long": "metres", "short": "m", "range": {"min": 5, "max": 40}}
+      ],
+      "range": {"min": 5.0, "max": 40.0},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": false
+    },
+    {
+      "type": "perimeter",
+      "view": "verbal_conversion",
+      "input": "keypad",
+      "template": "measurement/perimeter",
+      "parts": 2,
+      "values": 3,
+      "units": [
+        {"long": "metres", "short": "m", "range": {"min": 11, "max": 75}}
+      ],
+      "range": {"min": 11.0, "max": 75.0},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": false
+    },
+    {
+      "type": "area_triangle",
+      "view": "verbal_shape",
+      "input": "select",
+      "template": "measurement/area_triangle",
+      "range": [
+        {
+          "texture": "2d_triangle_math_base",
+          "labels": [
+            {"range": {"min":  1, "max": 3}, "value": "h"},
+            {"range": {"min":  6, "max": 12}, "value": "b"}
+          ],
+          "notations": [
+            {
+              "texture": "2d_triangle_math_heightbase"
+            }
+          ]
+        }
+      ],
+      "units": [
+        {"long": "millimetres", "short": "mm"},
+        {"long": "centimetres", "short": "cm"},
+        {"long": "metres", "short": "m"},
+        {"long": "kilometres", "short": "km"}
+      ],
+      "parts": 2,
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "area_triangle",
+      "view": "verbal_shape",
+      "input": "keypad_right",
+      "template": "measurement/area_triangle",
+      "range": [
+        {
+          "texture": "2d_triangle_math_base",
+          "labels": [
+            {"range": {"min":  1, "max": 3}, "value": "h"},
+            {"range": {"min":  6, "max": 12}, "value": "b"}
+          ],
+          "notations": [
+            {
+              "texture": "2d_triangle_math_heightbase"
+            }
+          ]
+        }
+      ],
+      "units": [
+        {"long": "centimetres", "short": "cm"},
+        {"long": "metres", "short": "m"},
+        {"long": "kilometres", "short": "km"}
+      ],
+      "parts": 2,
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "area_triangle",
+      "view": "verbal_shape",
+      "input": "select",
+      "template": "measurement/area_triangle",
+      "range": [
+        {
+          "texture": "2d_triangle_math_base",
+          "labels": [
+            {"range": {"min":  10, "max": 19}, "value": "h"},
+            {"range": {"min":  12, "max": 34}, "value": "b"}
+          ],
+          "notations": [
+            {
+              "texture": "2d_triangle_math_heightbase"
+            }
+          ]
+        }
+      ],
+      "units": [
+        {"long": "centimetres", "short": "cm"},
+        {"long": "metres", "short": "m"},
+        {"long": "kilometres", "short": "km"}
+      ],
+      "parts": 2,
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "area_triangle",
+      "view": "verbal_shape",
+      "input": "keypad_right",
+      "template": "measurement/area_triangle",
+      "range": [
+        {
+          "texture": "2d_triangle_math_base",
+          "labels": [
+            {"range": {"min":  10, "max": 19}, "value": "h"},
+            {"range": {"min":  12, "max": 34}, "value": "b"}
+          ],
+          "notations": [
+            {
+              "texture": "2d_triangle_math_heightbase"
+            }
+          ]
+        }
+      ],
+      "units": [
+        {"long": "centimetres", "short": "cm"},
+        {"long": "metres", "short": "m"},
+        {"long": "kilometres", "short": "km"}
+      ],
+      "parts": 2,
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "area_parallelogram",
+      "view": "verbal_shape",
+      "input": "select",
+      "template": "measurement/area_parallelogram",
+      "range": [
+        {
+          "texture": "2d_parallel_math_base",
+          "labels": [
+            {"range": {"min":  1, "max": 9}, "value": "h"},
+            {"range": {"min":  12, "max": 34}, "value": "b"}
+          ],
+          "notations": [
+            {
+              "texture": "2d_parallel_math_heightbase"
+            }
+          ]
+        }
+      ],
+      "units": [
+        {"long": "centimetres", "short": "cm"},
+        {"long": "metres", "short": "m"},
+        {"long": "kilometres", "short": "km"}
+      ],
+      "parts": 2,
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "area_circle",
+      "view": "verbal_shape",
+      "input": "select",
+      "template": "measurement/area_circle",
+      "range": [
+        {
+          "texture": "2d_circle_math_base",
+          "labels": [
+            {"range": {"min":  2, "max": 6}, "value": "r"}
+          ],
+          "notations": [
+            {
+              "texture": "2d_circle_math_radius"
+            }
+          ]
+        }
+      ],
+      "units": [
+        {"long": "centimetres", "short": "cm"},
+        {"long": "metres", "short": "m"},
+        {"long": "kilometres", "short": "km"}
+      ],
+      "parts": 1,
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": false
+    },
+    {
+      "type": "area_circle",
+      "view": "verbal_shape",
+      "input": "select",
+      "template": "measurement/area_circle",
+      "range": [
+        {
+          "texture": "2d_circle_math_base",
+          "labels": [
+            {"range": {"min":  2, "max": 24}, "value": "r"}
+          ],
+          "notations": [
+            {
+              "texture": "2d_circle_math_radius"
+            }
+          ]
+        }
+      ],
+      "parts": 1,
+      "units": [
+        {"long": "centimetres", "short": "cm"},
+        {"long": "metres", "short": "m"},
+        {"long": "kilometres", "short": "km"}
+      ],
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": false
+    },
+    {
+      "type": "diameter",
+      "view": "verbal_shape",
+      "input": "select",
+      "template": "measurement/diameter",
+      "range": [
+        {
+          "texture": "2d_circle_math_base",
+          "labels": [
+            {"range": {"min":  2, "max": 6}, "value": "r"}
+          ],
+          "notations": [
+            {
+              "texture": "2d_circle_math_radius"
+            }
+          ]
+        }
+      ],
+      "units": [
+        {"long": "centimetres", "short": "cm"},
+        {"long": "metres", "short": "m"},
+        {"long": "kilometres", "short": "km"}
+      ],
+      "parts": 1,
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "diameter",
+      "view": "verbal_shape",
+      "input": "keypad_right",
+      "template": "measurement/diameter",
+      "range": [
+        {
+          "texture": "2d_circle_math_base",
+          "labels": [
+            {"range": {"min":  2, "max": 6}, "value": "r"}
+          ],
+          "notations": [
+            {
+              "texture": "2d_circle_math_radius"
+            }
+          ]
+        }
+      ],
+      "units": [
+        {"long": "centimetres", "short": "cm"},
+        {"long": "metres", "short": "m"},
+        {"long": "kilometres", "short": "km"}
+      ],
+      "parts": 1,
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "diameter",
+      "view": "verbal_shape",
+      "input": "select",
+      "template": "measurement/diameter",
+      "range": [
+        {
+          "texture": "2d_circle_math_base",
+          "labels": [
+            {"range": {"min":  7.0, "max": 24.0}, "value": "r"}
+          ],
+          "notations": [
+            {
+              "texture": "2d_circle_math_radius"
+            }
+          ]
+        }
+      ],
+      "units": [
+        {"long": "centimetres", "short": "cm"},
+        {"long": "metres", "short": "m"},
+        {"long": "kilometres", "short": "km"}
+      ],
+      "parts": 1,
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "diameter",
+      "view": "verbal_shape",
+      "input": "keypad_right",
+      "template": "measurement/diameter",
+      "range": [
+        {
+          "texture": "2d_circle_math_base",
+          "labels": [
+            {"range": {"min":  7.0, "max": 24.0}, "value": "r"}
+          ],
+          "notations": [
+            {
+              "texture": "2d_circle_math_radius"
+            }
+          ]
+        }
+      ],
+      "units": [
+        {"long": "centimetres", "short": "cm"},
+        {"long": "metres", "short": "m"},
+        {"long": "kilometres", "short": "km"}
+      ],
+      "parts": 1,
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "radius",
+      "view": "verbal_shape",
+      "input": "select",
+      "template": "measurement/radius",
+      "range": [
+        {
+          "texture": "2d_circle_math_base",
+          "labels": [
+            {"range": {"min":  2, "max": 6}, "value": "c"}
+          ],
+          "notations": [
+            {
+              "texture": "2d_circle_math_circumference"
+            }
+          ]
+        }
+      ],
+      "units": [
+        {"long": "centimetres", "short": "cm"},
+        {"long": "metres", "short": "m"},
+        {"long": "kilometres", "short": "km"}
+      ],
+      "parts": 1,
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": false
+    },
+    {
+      "type": "radius",
+      "view": "verbal_shape",
+      "input": "select",
+      "template": "measurement/radius",
+      "range": [
+        {
+          "texture": "2d_circle_math_base",
+          "labels": [
+            {"range": {"min":  7.0, "max": 15.0}, "value": "c"}
+          ],
+          "notations": [
+            {
+              "texture": "2d_circle_math_circumference"
+            }
+          ]
+        }
+      ],
+      "units": [
+        {"long": "centimetres", "short": "cm"},
+        {"long": "metres", "short": "m"},
+        {"long": "kilometres", "short": "km"}
+      ],
+      "parts": 1,
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": false
+    },
+    {
+      "type": "conversion_x_in_y",
+      "view": "verbal_conversion",
+      "input": "keypad",
+      "template": "measurement/conversion_x_in_y",
+      "values": 2,
+      "options": [
+        {
+          "range": {"min": 1, "max": 19},
+          "units": [
+            {"long": "seconds", "short": "seconds"},
+            {"long": "minutes", "short": "minutes"}
+          ],
+          "conversion": 60
+        }
+      ],
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "conversion_x_in_y",
+      "view": "verbal_conversion",
+      "input": "select",
+      "template": "measurement/conversion_x_in_y",
+      "values": 2,
+      "options": [
+        {
+          "range": {"min": 1, "max": 19},
+          "units": [
+            {"long": "seconds", "short": "seconds"},
+            {"long": "minutes", "short": "minutes"}
+          ],
+          "conversion": 60
+        }
+      ],
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "conversion_x_in_y",
+      "view": "verbal_conversion",
+      "input": "select",
+      "template": "measurement/conversion_x_in_y",
+      "values": 2,
+      "options": [
+        {
+          "range": {"min": 1, "max": 10.0},
+          "units": [
+            {"long": "minutes", "short": "minutes"},
+            {"long": "hours", "short": "hours"}
+          ],
+          "conversion": 60
+        },
+        {
+          "range": {"min": 1, "max": 5},
+          "units": [
+            {"long": "hours", "short": "hours"},
+            {"long": "days", "short": "days"}
+          ],
+          "conversion": 24
+        }
+      ],
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "conversion_x_in_y",
+      "view": "verbal_conversion",
+      "input": "keypad",
+      "template": "measurement/conversion_x_in_y",
+      "values": 2,
+      "options": [
+        {
+          "range": {"min": 0.1, "max": 10.0},
+          "units": [
+            {"long": "metres", "short": "m"},
+            {"long": "kilometres", "short": "km"}
+          ],
+          "conversion": 1000
+        },
+        {
+          "range": {"min": 1, "max": 10.0},
+          "units": [
+            {"long": "minutes", "short": "minutes"},
+            {"long": "hours", "short": "hours"}
+          ],
+          "conversion": 60
+        },
+        {
+          "range": {"min": 1, "max": 5},
+          "units": [
+            {"long": "hours", "short": "hours"},
+            {"long": "days", "short": "days"}
+          ],
+          "conversion": 24
+        }
+      ],
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "conversion_x_in_y",
+      "view": "verbal_conversion",
+      "input": "select",
+      "template": "measurement/conversion_x_in_y",
+      "values": 2,
+      "options": [
+        {
+          "range": {"min": 11, "max": 99},
+          "units": [
+            {"long": "minutes", "short": "minutes"},
+            {"long": "hours", "short": "hours"}
+          ],
+          "conversion": 60
+        },
+        {
+          "range": {"min": 6, "max": 31},
+          "units": [
+            {"long": "hours", "short": "hours"},
+            {"long": "days", "short": "days"}
+          ],
+          "conversion": 24
+        }
+      ],
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "conversion_x_in_y",
+      "view": "verbal_conversion",
+      "input": "keypad",
+      "template": "measurement/conversion_x_in_y",
+      "values": 2,
+      "options": [
+        {
+          "range": {"min": 10.0, "max": 99.0},
+          "units": [
+            {"long": "metres", "short": "m"},
+            {"long": "kilometres", "short": "km"}
+          ],
+          "conversion": 1000
+        },
+        {
+          "range": {"min": 11, "max": 99},
+          "units": [
+            {"long": "minutes", "short": "minutes"},
+            {"long": "hours", "short": "hours"}
+          ],
+          "conversion": 60
+        },
+        {
+          "range": {"min": 6, "max": 31},
+          "units": [
+            {"long": "hours", "short": "hours"},
+            {"long": "days", "short": "days"}
+          ],
+          "conversion": 24
+        }
+      ],
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "conversion_x_in_y",
+      "view": "verbal_conversion",
+      "input": "keypad",
+      "template": "measurement/conversion_x_in_y",
+      "values": 2,
+      "options": [
+        {
+          "range": {"min": 39, "max": 79},
+          "units": [
+            {"long": "seconds", "short": "seconds"},
+            {"long": "minutes", "short": "minutes"}
+          ],
+          "conversion": 60
+        }
+      ],
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "conversion_x_in_y",
+      "view": "verbal_conversion",
+      "input": "select",
+      "template": "measurement/conversion_x_in_y",
+      "values": 2,
+      "options": [
+        {
+          "range": {"min": 39, "max": 79},
+          "units": [
+            {"long": "seconds", "short": "seconds"},
+            {"long": "minutes", "short": "minutes"}
+          ],
+          "conversion": 60
+        }
+      ],
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "conversion_subtraction",
+      "view": "verbal_conversion",
+      "input": "select",
+      "template": "measurement/conversion_subtraction",
+      "variations": [
+        {
+          "range": {"min": 0.2, "max": 10.0},
+          "units": [
+            {"long": "millilitres", "short": "ml"},
+            {"long": "litres", "short": "L"}
+          ],
+          "item": "liquid",
+          "unit_type": "liquid",
+          "conversion": 1000
+        }
+      ],
+      "values": 3,
+      "parts": [1, 3],
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "conversion_addition",
+      "view": "verbal_conversion",
+      "input": "select",
+      "template": "measurement/conversion_addition",
+      "variations": [
+        {
+          "range": {"min": 0.2, "max": 10.0},
+          "units": [
+            {"long": "millilitres", "short": "ml"},
+            {"long": "litres", "short": "L"}
+          ],
+          "item": "liquid",
+          "conversion": 1000
+        }
+      ],
+      "values": 3,
+      "parts": 2,
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "conversion_multiplication",
+      "view": "verbal_conversion",
+      "input": "select",
+      "template": "measurement/conversion_multiplication",
+      "variations": [
+        {
+          "range": {"min": 1.1, "max": 10.0},
+          "units": [
+            {"long": "millimetres", "short": "mm", "conversion": 1000},
+            {"long": "centimetres", "short": "cm", "conversion": 100},
+            {"long": "metres", "short": "m"}
+          ],
+          "unit_type": "distance"
+        }
+      ],
+      "range": {"min": 2, "max": 12},
+      "values": 3,
+      "parts": 2,
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "conversion_equivalent",
+      "view": "verbal_equivalent",
+      "input": "select_multi_equivalent",
+      "template": "measurement/conversion_equivalent",
+      "variations": [
+        {
+          "range": {"min": 1.1, "max": 10.0},
+          "units": [
+            {"long": "millimetres", "short": "mm", "conversion": 1000000},
+            {"long": "centimetres", "short": "cm", "conversion": 10000},
+            {"long": "metres", "short": "m", "conversion":  1000},
+            {"long": "kilometres", "short": "km"}
+          ]
+        }
+      ],
+      "range": {"min": 2, "max": 12},
+      "values": 3,
+      "parts": 2,
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": false
+    },
+    {
+      "type": "conversion_percent_of_x",
+      "view": "verbal_conversion",
+      "input": "select",
+      "template": "measurement/conversion_percent_of_x",
+      "variations": [
+        {
+          "range": {"min": 10, "max": 100.0},
+          "units": [
+            {"long": "gram", "short": "g"},
+            {"long": "kilogram", "short": "kg"}
+          ],
+          "item": "weight",
+          "conversion": 1000
+        }
+      ],
+      "values": 3,
+      "parts": 2,
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "conversion_sort",
+      "view": "sort",
+      "input": "sort_conversion",
+      "template": "measurement/conversion_sort",
+      "variations": [
+        {
+          "range": {"min": 1.1, "max": 10.0},
+          "units": [
+            {"long": "millimetres", "short": "mm", "conversion": 1000},
+            {"long": "centimetres", "short": "cm", "conversion": 100},
+            {"long": "metres", "short": "m", "conversion": 1}
+          ],
+          "unit_type": "distance"
+        }
+      ],
+      "values": 5,
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "conversion_sort",
+      "view": "sort",
+      "input": "sort_conversion",
+      "template": "measurement/conversion_sort",
+      "variations": [
+        {
+          "range": {"min": 1.1, "max": 10.0},
+          "units": [
+            {"long": "millimetres", "short": "mm", "conversion": 1000},
+            {"long": "centimetres", "short": "cm", "conversion": 100},
+            {"long": "metres", "short": "m", "conversion": 1}
+          ],
+          "unit_type": "distance"
+        }
+      ],
+      "values": 5,
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "time_difference",
+      "view": "visual_time",
+      "input": "select_time",
+      "template": "measurement/time_difference",
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "time_difference",
+      "view": "visual_time",
+      "input": "select_time",
+      "template": "measurement/time_difference",
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "time_difference",
+      "view": "visual_time",
+      "input": "select_time",
+      "template": "measurement/time_difference",
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "time_difference",
+      "view": "visual_time",
+      "input": "select_time",
+      "template": "measurement/time_difference",
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "time_conversion",
+      "view": "visual_clock_face",
+      "input": "select_clock_face",
+      "template": "measurement/time_conversion",
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "liquid_measurement",
+      "view": "visual_liquid",
+      "input": "select",
+      "template": "measurement/liquid_measurement",
+      "difficulty": 0,
+      "variations": [
+        {
+          "range": {"min": 5, "max": 50},
+          "units": [
+            {"long": "millilitres", "short": "ml"},
+            {"long": "millilitres", "short": "ml"}
+          ],
+          "conversion": 1,
+          "item": "liquid"
+        }
+      ],
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "liquid_measurement",
+      "view": "visual_liquid",
+      "input": "select",
+      "template": "measurement/liquid_measurement",
+      "difficulty": 1,
+      "variations": [
+        {
+          "range": {"min": 1, "max": 59},
+          "units": [
+            {"long": "millilitres", "short": "ml"},
+            {"long": "millilitres", "short": "ml"}
+          ],
+          "conversion": 1,
+          "item": "liquid"
+        }
+      ],
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "liquid_measurement",
+      "view": "visual_liquid",
+      "input": "select",
+      "template": "measurement/liquid_measurement",
+      "difficulty": 2,
+      "variations": [
+        {
+          "range": {"min": 1, "max": 100},
+          "units": [
+            {"long": "millilitres", "short": "ml"},
+            {"long": "millilitres", "short": "ml"}
+          ],
+          "conversion": 1,
+          "item": "liquid"
+        }
+      ],
+      "xp": 20,
+      "enabled": true
+    }
+  ],
+  "exponent": [
+    {
+      "type": "squared",
+      "view": "verbal_exponent",
+      "input": "select",
+      "template": "exponent/squared",
+      "values": [0, 1],
+      "range": {"min": 2, "max": 10},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "squared",
+      "view": "statement",
+      "input": "select",
+      "values": [0, 1],
+      "range": {"min": 2, "max": 10},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "squared",
+      "view": "statement",
+      "input": "select",
+      "values": [0, 1],
+      "range": {"min": 7, "max": 12},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "squared",
+      "view": "verbal_exponent",
+      "input": "select",
+      "template": "exponent/squared",
+      "values": [0, 1],
+      "range": {"min": 7, "max": 12},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "square_root",
+      "view": "verbal_exponent",
+      "input": "select",
+      "template": "exponent/square_root",
+      "values": [0, 1],
+      "range": {"min": 2, "max": 10},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "square_root",
+      "view": "verbal_exponent",
+      "input": "select",
+      "template": "exponent/square_root",
+      "values": [0, 1],
+      "range": {"min": 7, "max": 12},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "cube_root",
+      "view": "verbal_exponent",
+      "input": "select",
+      "template": "exponent/cube_root",
+      "values": [0, 1],
+      "range": {"min": 2, "max": 5},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": false
+    },
+    {
+      "type": "cube_root",
+      "view": "verbal_exponent",
+      "input": "select",
+      "template": "exponent/cube_root",
+      "values": [0, 1],
+      "range": {"min": 2, "max": 7},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": false
+    },
+    {
+      "type": "cubed",
+      "view": "verbal_exponent",
+      "input": "select",
+      "template": "exponent/cubed",
+      "values": [0, 1],
+      "range": {"min": 2, "max": 7},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "cubed",
+      "view": "statement",
+      "input": "select",
+      "values": [0, 1],
+      "range": {"min": 2, "max": 7},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": false
+    }
+  ],
+  "ratio": [
+    {
+      "type": "simple",
+      "view": "verbal_ratio",
+      "input": "select",
+      "template": "ratio/simple",
+      "values": [0, 1],
+      "numerator_range": {"min": 4, "max": 8},
+      "denominator_range": {"min": 2, "max": 4},
+      "range": {"min": 2, "max": 4},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": false
+    },
+    {
+      "type": "simple",
+      "view": "verbal_ratio",
+      "input": "select",
+      "template": "ratio/simple",
+      "values": [0, 1],
+      "numerator_range": {"min": 8, "max": 16},
+      "denominator_range": {"min": 4, "max": 8},
+      "range": {"min": 2, "max": 4},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "simple",
+      "view": "verbal_ratio",
+      "input": "select",
+      "template": "ratio/simple",
+      "values": [0, 1],
+      "numerator_range": {"min": 8, "max": 16},
+      "denominator_range": {"min": 4, "max": 8},
+      "range": {"min": 3, "max": 12},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "simple",
+      "view": "verbal_ratio",
+      "input": "select",
+      "template": "ratio/simple",
+      "values": [0, 1],
+      "numerator_range": {"min": 16, "max": 32},
+      "denominator_range": {"min": 8, "max": 15},
+      "range": {"min": 3, "max": 12},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "simple",
+      "view": "verbal_ratio",
+      "input": "keypad",
+      "template": "ratio/simple",
+      "values": [0, 1],
+      "numerator_range": {"min": 16, "max": 32},
+      "denominator_range": {"min": 8, "max": 15},
+      "range": {"min": 3, "max": 12},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "find_ratio",
+      "view": "verbal_ratio",
+      "input": "select",
+      "template": "ratio/find_ratio",
+      "values": [0, 1],
+      "range": {"min": 2, "max": 10},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "find_ratio",
+      "view": "verbal_ratio",
+      "input": "select",
+      "template": "ratio/find_ratio",
+      "values": [0, 1],
+      "range": {"min": 11, "max": 30},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "simplify_ratio",
+      "view": "verbal_ratio",
+      "input": "select",
+      "template": "ratio/simplify_ratio",
+      "values": [0, 1],
+      "scale": {"min": 2, "max": 4},
+      "range": {"min": 2, "max": 10},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "simplify_ratio",
+      "view": "verbal_ratio",
+      "input": "select",
+      "template": "ratio/simplify_ratio",
+      "values": [0, 1],
+      "scale": {"min": 2, "max": 4},
+      "range": {"min": 4, "max": 18},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "simplify_ratio",
+      "view": "verbal_ratio",
+      "input": "select",
+      "template": "ratio/simplify_ratio",
+      "values": [0, 1],
+      "scale": {"min": 2, "max": 6},
+      "range": {"min": 8, "max": 22},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "find_value",
+      "view": "verbal_ratio",
+      "input": "select",
+      "template": "ratio/find_value",
+      "values": [0, 1],
+      "range": {"min": 2, "max": 4},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "find_value",
+      "view": "verbal_ratio",
+      "input": "keypad",
+      "template": "ratio/find_value",
+      "values": [0, 1],
+      "range": {"min": 4, "max": 8},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "find_value",
+      "view": "verbal_ratio",
+      "input": "select",
+      "template": "ratio/find_value",
+      "values": [0, 1],
+      "range": {"min": 4, "max": 8},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "find_value",
+      "view": "verbal_ratio",
+      "input": "keypad",
+      "template": "ratio/find_value",
+      "values": [0, 1],
+      "range": {"min": 6, "max": 12},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "find_value",
+      "view": "verbal_ratio",
+      "input": "select",
+      "template": "ratio/find_value",
+      "values": [0, 1],
+      "range": {"min": 8, "max": 16},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "module": "ratio",
+      "type": "find_value",
+      "view": "verbal_ratio",
+      "input": "keypad",
+      "template": "ratio/find_value",
+      "values": [0, 1],
+      "range": {"min": 12, "max": 22},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "simple_triple",
+      "view": "verbal_ratio",
+      "input": "select",
+      "template": "ratio/simple",
+      "values": [0, 1],
+      "range": {"min": 2, "max": 10},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "simple_triple",
+      "view": "verbal_ratio",
+      "input": "select",
+      "template": "ratio/simple",
+      "values": [0, 1],
+      "range": {"min": 4, "max": 12},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "percent",
+      "view": "verbal_ratio",
+      "input": "select",
+      "template": "ratio/percent",
+      "values": [0, 1],
+      "range": {"min": 6, "max": 12},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "percent",
+      "view": "verbal_ratio",
+      "input": "select",
+      "template": "ratio/percent",
+      "values": [0, 1],
+      "range": {"min": 12, "max": 24},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "percent",
+      "view": "verbal_ratio",
+      "input": "select",
+      "template": "ratio/percent",
+      "values": [0, 1],
+      "range": {"min": 24, "max": 36},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "percent",
+      "view": "verbal_ratio",
+      "input": "select",
+      "template": "ratio/percent",
+      "values": [0, 1],
+      "range": {"min": 12, "max": 24},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "percent",
+      "view": "verbal_ratio",
+      "input": "select",
+      "template": "ratio/percent",
+      "values": [0, 1],
+      "range": {"min": 24, "max": 60},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "percent",
+      "view": "verbal_ratio",
+      "input": "select",
+      "template": "ratio/percent",
+      "values": [0, 1],
+      "range": {"min": 2, "max": 8},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    }
+  ],
+  "statistics": [
+    {
+      "type": "ven",
+      "view": "graph_ven",
+      "input": "select",
+      "template": "statistics/ven",
+      "values": 2,
+      "range": {"min": 1, "max": 9},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "ven",
+      "view": "graph_ven",
+      "input": "select",
+      "template": "statistics/ven",
+      "values": 3,
+      "range": {"min": 1, "max": 14},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "ven",
+      "view": "graph_ven",
+      "input": "select",
+      "template": "statistics/ven",
+      "values": 3,
+      "range": {"min": 1, "max": 19},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "tally",
+      "view": "graph_tally",
+      "input": "select",
+      "answer_type" : "read_value",
+      "template": "statistics/tally",
+      "values": 5,
+      "range": {"min": 5, "max": 16},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "tally",
+      "view": "graph_tally",
+      "input": "select_multi_graph",
+      "answer_type" : "same",
+      "template": "statistics/tally",
+      "values": 5,
+      "range": {"min": 5, "max": 16},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "bar",
+      "view": "graph_bar",
+      "input": "select",
+      "values": 3,
+      "answer_type" : "read_value",
+      "bar_scale": 20,
+      "template": "statistics/bar",
+      "range": {"min": 1, "max": 10},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "bar",
+      "view": "graph_bar",
+      "input": "select_multi_graph",
+      "values": 4,
+      "answer_type" : "same",
+      "bar_scale": 20,
+      "template": "statistics/bar",
+      "range": {"min": 1, "max": 10},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "bar",
+      "view": "graph_bar",
+      "input": "select",
+      "values": 4,
+      "answer_type" : "difference_positive",
+      "bar_scale": 20,
+      "template": "statistics/bar",
+      "range": {"min": 1, "max": 10},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "bar",
+      "view": "graph_bar",
+      "input": "select",
+      "values": 4,
+      "answer_type" : "difference_negative",
+      "bar_scale": 20,
+      "template": "statistics/bar",
+      "range": {"min": 1, "max": 10},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "bar",
+      "view": "graph_bar",
+      "input": "select",
+      "values": 4,
+      "answer_type" : "lowest",
+      "bar_scale": 20,
+      "template": "statistics/bar",
+      "range": {"min": 1, "max": 10},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "bar",
+      "view": "graph_bar",
+      "input": "select",
+      "values": 4,
+      "answer_type" : "exact",
+      "bar_scale": 20,
+      "template": "statistics/bar",
+      "range": {"min": 1, "max": 10},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "bar",
+      "view": "graph_bar",
+      "input": "select",
+      "values": 4,
+      "answer_type" : "highest",
+      "bar_scale": 20,
+      "template": "statistics/bar",
+      "range": {"min": 1, "max": 10},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "bar",
+      "view": "graph_bar",
+      "input": "select_multi_graph",
+      "values": 4,
+      "answer_type" : "same",
+      "bar_scale": 20,
+      "template": "statistics/bar",
+      "range": {"min": 1, "max": 10},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "bar",
+      "view": "graph_bar",
+      "input": "select_multi_graph",
+      "values": 5,
+      "answer_type" : "same",
+      "bar_scale": 13,
+      "template": "statistics/bar",
+      "range": {"min": 1, "max": 15},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "bar",
+      "view": "graph_bar",
+      "input": "select",
+      "values": 5,
+      "answer_type" : "read_value",
+      "bar_scale": 13,
+      "template": "statistics/bar",
+      "range": {"min": 1, "max": 15},
+      "difficulty":1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "bar",
+      "view": "graph_bar",
+      "input": "select",
+      "values": 6,
+      "answer_type" : "difference_positive",
+      "bar_scale": 13,
+      "template": "statistics/bar",
+      "range": {"min": 1, "max": 15},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "bar",
+      "view": "graph_bar",
+      "input": "select",
+      "values": 5,
+      "answer_type" : "difference_negative",
+      "bar_scale": 13,
+      "template": "statistics/bar",
+      "range": {"min": 1, "max": 15},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "bar",
+      "view": "graph_bar",
+      "input": "select",
+      "values": 6,
+      "answer_type" : "lowest",
+      "bar_scale": 13,
+      "template": "statistics/bar",
+      "range": {"min": 1, "max": 15},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "bar",
+      "view": "graph_bar",
+      "input": "select",
+      "values": 6,
+      "answer_type" : "exact",
+      "bar_scale": 13,
+      "template": "statistics/bar",
+      "range": {"min": 1, "max": 15},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "bar",
+      "view": "graph_bar",
+      "input": "select",
+      "values": 5,
+      "answer_type" : "highest",
+      "bar_scale": 13,
+      "template": "statistics/bar",
+      "range": {"min": 1, "max": 15},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "bar",
+      "view": "graph_bar",
+      "input": "select",
+      "values": 5,
+      "answer_type" : "highest",
+      "bar_scale": 10,
+      "template": "statistics/bar",
+      "range": {"min": 1, "max": 20},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "bar",
+      "view": "graph_bar",
+      "input": "select",
+      "values": 5,
+      "answer_type" : "average",
+      "bar_scale": 20,
+      "template": "statistics/bar",
+      "range": {"min": 1, "max": 10},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "bar",
+      "view": "graph_bar",
+      "input": "select",
+      "values": 5,
+      "answer_type" : "range",
+      "bar_scale": 20,
+      "template": "statistics/bar",
+      "range": {"min": 1, "max": 10},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "bar",
+      "view": "graph_bar",
+      "input": "select",
+      "values": 5,
+      "answer_type" : "exact",
+      "bar_scale": 10,
+      "template": "statistics/bar",
+      "range": {"min": 1, "max": 20},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "bar",
+      "view": "graph_bar",
+      "input": "select",
+      "values": 5,
+      "answer_type" : "total",
+      "bar_scale": 10,
+      "template": "statistics/bar",
+      "range": {"min": 1, "max": 20},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "bar",
+      "view": "graph_bar",
+      "input": "select",
+      "values": 5,
+      "answer_type" : "average",
+      "bar_scale": 7,
+      "template": "statistics/bar",
+      "range": {"min": 1, "max": 30},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "bar",
+      "view": "graph_bar",
+      "input": "select",
+      "values": 5,
+      "answer_type" : "range",
+      "bar_scale": 7,
+      "template": "statistics/bar",
+      "range": {"min": 1, "max": 30},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "bar",
+      "view": "graph_bar",
+      "input": "select",
+      "values": 5,
+      "answer_type" : "exact",
+      "bar_scale": 7,
+      "template": "statistics/bar",
+      "range": {"min": 1, "max": 30},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "bar",
+      "view": "graph_bar",
+      "input": "select",
+      "values": 5,
+      "answer_type" : "total",
+      "bar_scale": 7,
+      "template": "statistics/bar",
+      "range": {"min": 1, "max": 30},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "bar",
+      "view": "graph_bar",
+      "input": "select",
+      "values": 5,
+      "answer_type" : "average",
+      "bar_scale": 7,
+      "template": "statistics/bar",
+      "range": {"min": 1, "max": 30},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "bar",
+      "view": "graph_bar",
+      "input": "select",
+      "values": 7,
+      "answer_type" : "range",
+      "bar_scale": 7,
+      "template": "statistics/bar",
+      "range": {"min": 1, "max": 30},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "percent",
+      "view": "verbal",
+      "input": "select",
+      "values": 5,
+      "template": "statistics/percent",
+      "range": {"min": 100, "max": 100},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "percent",
+      "view": "verbal",
+      "input": "keypad",
+      "values": 5,
+      "template": "statistics/percent",
+      "range": {"min": 100, "max": 100},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "percent",
+      "view": "verbal",
+      "input": "select",
+      "values": 5,
+      "template": "statistics/percent",
+      "range": {"min": 1000, "max": 1000},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "verbal",
+      "input": "select",
+      "values": 5,
+      "template": "statistics/subtraction",
+      "range": {"min": 25, "max": 75},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "simple_mean",
+      "view": "verbal",
+      "input": "keypad",
+      "values": 5,
+      "template": "statistics/simple_mean",
+      "range": {"min": 2, "max": 12},
+      "difficulty": 1,
+      "useWords": false,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "middle",
+      "view": "verbal",
+      "input": "select",
+      "values": 5,
+      "template": "statistics/middle",
+      "range": {"min": 1, "max": 15},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "middle",
+      "view": "verbal",
+      "input": "select",
+      "values": 5,
+      "template": "statistics/middle",
+      "range": {"min": 820, "max": 840},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "most_often",
+      "view": "verbal_stats",
+      "input": "select_multi",
+      "values": 5,
+      "template": "statistics/most_often",
+      "range": {"min": 10, "max": 30},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "most_often",
+      "view": "verbal_stats",
+      "input": "select_multi",
+      "values": 5,
+      "template": "statistics/most_often",
+      "range": {"min": 725, "max": 755},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    }
+  ],
+  "multiples":[
+    {
+      "type": "multiplication",
+      "view": "verbal_multiples",
+      "input": "select_multi",
+      "values": 4,
+      "parts":[0, 1, 2, 3],
+      "template": "multiples/multiplication",
+      "multiplierRange": {"min": 2, "max": 12},
+      "range": {"min": 2, "max": 5},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "verbal_multiples",
+      "input": "select_multi",
+      "values": 4,
+      "parts":[0, 1, 2, 3],
+      "template": "multiples/multiplication",
+      "multiplierRange": {"min": 2, "max": 12},
+      "range": {"min": 2, "max": 7},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "verbal_multiples",
+      "input": "select_multi",
+      "values": 4,
+      "parts":[0, 1, 2, 3],
+      "template": "multiples/multiplication",
+      "multiplierRange": {"min": 6, "max": 12},
+      "range": {"min": 6, "max": 12},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "verbal_multiples",
+      "input": "keypad",
+      "values": 1,
+      "parts":[0],
+      "template": "multiples/multiplication_double",
+      "multiplierRange": {"min": 2, "max": 2},
+      "range": {"min": 20, "max": 100},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    }
+  ],
+  "shapes": [
+    {
+      "type": "visual_right_angles",
+      "view": "visual_equivalent",
+      "input": "select_multi_visual",
+      "template": "shapes/visual_right_angles",
+      "difficulty": 0,
+      "xp": 20,
+      "correct": [
+        {"name": "rectangle", "image": "shape_2d_rectangle_0"},
+        {"name": "square", "image": "shape_2d_square_0"},
+        {"name": "triangle", "image": "shape_2d_triangle_rightangled_1"},
+        {"name": "triangle", "image": "shape_2d_triangle_rightangled_1", "rotation": 90}
+      ],
+      "shapes": [
+        {"name": "triangle", "image": "shape_2d_triangle_equilateral_0"},
+        {"name": "rhombus", "image": "shape_2d_rhombus_0"},
+        {"name": "circle", "image": "shape_2d_circle_0"},
+        {"name": "heptagon", "image": "shape_2d_heptagon_0"},
+        {"name": "hexagon", "image": "shape_2d_hexagon_0"},
+        {"name": "triangle", "image": "shape_2d_isosceles_0"},
+        {"name": "kite", "image": "shape_2d_kite_0"},
+        {"name": "octagon", "image": "shape_2d_octagon_0"},
+        {"name": "oval", "image": "shape_2d_oval_0"},
+        {"name": "pentagon", "image": "shape_2d_pentagon_0"}
+      ],
+      "count": 5,
+      "enabled": true
+    },
+    {
+      "type": "sides_four",
+      "view": "visual_equivalent",
+      "input": "select_multi_visual",
+      "template": "shapes/sides_four",
+      "difficulty": 0,
+      "xp": 20,
+      "correct": [
+        {"name": "heptagon", "image": "shape_2d_heptagon_0"},
+        {"name": "hexagon", "image": "shape_2d_hexagon_0"},
+        {"name": "pentagon", "image": "shape_2d_pentagon_0"},
+        {"name": "octagon", "image": "shape_2d_octagon_0"}
+      ],
+      "shapes": [
+        {"name": "rectangle", "image": "shape_2d_rectangle_0"},
+        {"name": "square", "image": "shape_2d_square_0"},
+        {"name": "triangle", "image": "shape_2d_triangle_equilateral_0"},
+        {"name": "rhombus", "image": "shape_2d_rhombus_0"},
+        {"name": "circle", "image": "shape_2d_circle_0"},
+        {"name": "triangle", "image": "shape_2d_isosceles_0"},
+        {"name": "kite", "image": "shape_2d_kite_0"},
+        {"name": "oval", "image": "shape_2d_oval_0"}
+      ],
+      "count": 5,
+      "enabled": true
+    },
+    {
+      "type": "sides_under_four",
+      "view": "visual_equivalent",
+      "input": "select_multi_visual",
+      "template": "shapes/sides_under_four",
+      "difficulty": 0,
+      "xp": 20,
+      "shapes": [
+        {"name": "heptagon", "image": "shape_2d_heptagon_0"},
+        {"name": "hexagon", "image": "shape_2d_hexagon_0"},
+        {"name": "pentagon", "image": "shape_2d_pentagon_0"},
+        {"name": "octagon", "image": "shape_2d_octagon_0"},
+        {"name": "rectangle", "image": "shape_2d_rectangle_0"},
+        {"name": "square", "image": "shape_2d_square_0"},
+        {"name": "rhombus", "image": "shape_2d_rhombus_0"},
+        {"name": "kite", "image": "shape_2d_kite_0"}
+      ],
+      "correct": [
+        {"name": "triangle", "image": "shape_2d_triangle_equilateral_0"},
+        {"name": "circle", "image": "shape_2d_circle_0"},
+        {"name": "triangle", "image": "shape_2d_isosceles_0"},
+        {"name": "oval", "image": "shape_2d_oval_0"}
+      ],
+      "count": 5,
+      "enabled": true
+    },
+    {
+      "type": "parallel_lines",
+      "view": "visual_equivalent",
+      "input": "select_multi_visual",
+      "template": "shapes/parallel_lines",
+      "difficulty": 0,
+      "xp": 20,
+      "correct": [
+        {"name": "octagon", "image": "shape_2d_octagon_0"},
+        {"name": "rectangle", "image": "shape_2d_rectangle_0"},
+        {"name": "square", "image": "shape_2d_square_0"},
+        {"name": "rhombus", "image": "shape_2d_rhombus_0"},
+        {"name": "hexagon", "image": "shape_2d_hexagon_0"}
+      ],
+      "shapes": [
+        {"name": "triangle", "image": "shape_2d_triangle_equilateral_0"},
+        {"name": "circle", "image": "shape_2d_circle_0"},
+        {"name": "triangle", "image": "shape_2d_isosceles_0"},
+        {"name": "oval", "image": "shape_2d_oval_0"},
+        {"name": "kite", "image": "shape_2d_kite_0"},
+        {"name": "pentagon", "image": "shape_2d_pentagon_0"},
+        {"name": "heptagon", "image": "shape_2d_heptagon_0"}
+      ],
+      "count": 5,
+      "enabled": true
+    },
+    {
+      "type": "perpendicular_lines",
+      "view": "visual_equivalent",
+      "input": "select_multi_visual",
+      "template": "shapes/perpendicular_lines",
+      "difficulty": 0,
+      "xp": 20,
+      "correct": [
+        {"name": "rectangle", "image": "shape_2d_rectangle_0"},
+        {"name": "square", "image": "shape_2d_square_0"},
+        {"name": "triangle", "image": "shape_2d_triangle_rightangled_1"}
+      ],
+      "shapes": [
+        {"name": "triangle", "image": "shape_2d_triangle_equilateral_0"},
+        {"name": "rhombus", "image": "shape_2d_rhombus_0"},
+        {"name": "circle", "image": "shape_2d_circle_0"},
+        {"name": "heptagon", "image": "shape_2d_heptagon_0"},
+        {"name": "hexagon", "image": "shape_2d_hexagon_0"},
+        {"name": "triangle", "image": "shape_2d_isosceles_0"},
+        {"name": "kite", "image": "shape_2d_kite_0"},
+        {"name": "octagon", "image": "shape_2d_octagon_0"},
+        {"name": "oval", "image": "shape_2d_oval_0"},
+        {"name": "pentagon", "image": "shape_2d_pentagon_0"}
+      ],
+      "count": 5,
+      "enabled": true
+    },
+    {
+      "type": "visual_isosceles",
+      "view": "visual_equivalent",
+      "input": "select_multi_visual",
+      "template": "shapes/visual_isosceles",
+      "difficulty": 1,
+      "xp": 20,
+      "correct": [
+        {"name": "triangle", "image": "shape_2d_isosceles_0"},
+        {"name": "triangle", "image": "shape_2d_isosceles_1"},
+        {"name": "triangle", "image": "shape_2d_isosceles_2"},
+        {"name": "triangle", "image": "shape_2d_isosceles_3"}
+      ],
+      "shapes": [
+        {"name": "rhombus", "image": "shape_2d_rhombus_0"},
+        {"name": "kite", "image": "shape_2d_kite_0"},
+        {"name": "triangle", "image": "shape_2d_triangle_equilateral_0"},
+        {"name": "triangle", "image": "shape_2d_scalene_0"},
+        {"name": "triangle", "image": "shape_2d_scalene_0"}
+      ],
+      "count": 5,
+      "enabled": true
+    },
+    {
+      "type": "odd_one_out",
+      "view": "visual_equivalent",
+      "input": "select_visual",
+      "template": "shapes/odd_one_out",
+      "difficulty": 1,
+      "xp": 20,
+      "correct": [
+        {"name": "cone", "image": "shape_3d_cone_0"},
+        {"name": "cube", "image": "shape_3d_cube_0"},
+        {"name": "cuboid", "image": "shape_3d_cuboid_0"},
+        {"name": "cylinder", "image": "shape_3d_cylinder_0"},
+        {"name": "prism", "image": "shape_3d_prism_triangular_0"},
+        {"name": "pyramid", "image": "shape_3d_pyramid_0"},
+        {"name": "sphere", "image": "shape_3d_sphere_0"}
+      ],
+      "shapes": [
+        {"name": "circle", "image": "shape_2d_circle_0"},
+        {"name": "triangle", "image": "shape_2d_isosceles_0"},
+        {"name": "oval", "image": "shape_2d_oval_0"},
+        {"name": "rectangle", "image": "shape_2d_rectangle_0"},
+        {"name": "triangle", "image": "shape_2d_scalene_0"},
+        {"name": "square", "image": "shape_2d_square_0"},
+        {"name": "triangle", "image": "shape_2d_triangle_equilateral_0"},
+        {"name": "triangle", "image": "shape_2d_triangle_rightangled_1"},
+        {"name": "heptagon", "image": "shape_2d_heptagon_0"},
+        {"name": "hexagon", "image": "shape_2d_hexagon_0"},
+        {"name": "kite", "image": "shape_2d_kite_0"},
+        {"name": "octagon", "image": "shape_2d_octagon_0"},
+        {"name": "pentagon", "image": "shape_2d_pentagon_0"},
+        {"name": "rhombus", "image": "shape_2d_rhombus_0"}
+      ],
+      "count": 5,
+      "enabled": true
+    },
+    {
+      "type": "symmetry",
+      "view": "visual_equivalent",
+      "input": "select_multi_visual",
+      "template": "shapes/symmetry",
+      "difficulty": 1,
+      "xp": 20,
+      "correct": [
+        {"name": "square", "image": "shape_2d_square_0"},
+        {"name": "rhombus", "image": "shape_2d_rhombus_0"},
+        {"name": "heptagon", "image": "shape_2d_heptagon_0"},
+        {"name": "hexagon", "image": "shape_2d_hexagon_0"},
+        {"name": "octagon", "image": "shape_2d_octagon_0"},
+        {"name": "pentagon", "image": "shape_2d_pentagon_0"}
+      ],
+      "shapes": [
+        {"name": "triangle", "image": "shape_2d_scalene_0"},
+        {"name": "1", "image": "shape_2d_nonsym_1"},
+        {"name": "2", "image": "shape_2d_nonsym_2"},
+        {"name": "3", "image": "shape_2d_nonsym_3"}
+      ],
+      "count": 1,
+      "enabled": true
+    },
+    {
+      "type": "symmetry_lines",
+      "view": "visual",
+      "input": "select",
+      "template": "shapes/symmetry_lines",
+      "difficulty": 0,
+      "xp": 20,
+      "options": [
+        {"name": "rectangle", "value": 2, "texture": "shape_2d_rectangle_0"},
+        {"name": "square", "value": 4, "texture": "shape_2d_square_0"},
+        {"name": "rhombus", "value": 2, "texture": "shape_2d_rhombus_0"},
+        {"name": "heptagon", "value": 7, "texture": "shape_2d_heptagon_0"},
+        {"name": "hexagon", "value": 6, "texture": "shape_2d_hexagon_0"},
+        {"name": "octagon", "value": 8, "texture": "shape_2d_octagon_0"},
+        {"name": "pentagon", "value": 5, "texture": "shape_2d_pentagon_0"}
+      ],
+      "enabled": true
+    },
+    {
+      "type": "vertices",
+      "view": "verbal_boolean",
+      "input": "select",
+      "template": "shapes/vertices",
+      "difficulty": 2,
+      "xp": 20,
+      "options": [
+        {"name": "cone", "faces": 2, "verts": 1, "image": "shape_3d_cone_0"},
+        {"name": "cube", "faces": 6, "verts": 8, "image": "shape_3d_cube_0"},
+        {"name": "cuboid", "faces": 6, "verts": 8, "image": "shape_3d_cuboid_0"},
+        {"name": "cylinder", "faces": 3, "verts": 0, "image": "shape_3d_cylinder_0"},
+        {"name": "triangular prism", "faces": 5, "verts": 6, "image": "shape_3d_prism_triangular_0"},
+        {"name": "pyramid", "faces": 4, "verts": 4, "image": "shape_3d_pyramid_0"},
+        {"name": "sphere", "faces": 1, "verts": 0, "image": "shape_3d_sphere_0"}
+      ],
+      "enabled": true
+    },
+    {
+      "type": "vertices",
+      "view": "verbal_boolean",
+      "input": "select",
+      "template": "shapes/vertices",
+      "difficulty": 3,
+      "xp": 20,
+      "options": [
+        {"name": "cone", "faces": 2, "verts": 1, "image": "shape_3d_cone_0"},
+        {"name": "cube", "faces": 6, "verts": 8, "image": "shape_3d_cube_0"},
+        {"name": "cuboid", "faces": 6, "verts": 8, "image": "shape_3d_cuboid_0"},
+        {"name": "cylinder", "faces": 3, "verts": 0, "image": "shape_3d_cylinder_0"},
+        {"name": "triangular prism", "faces": 5, "verts": 6, "image": "shape_3d_prism_triangular_0"},
+        {"name": "pyramid", "faces": 4, "verts": 4, "image": "shape_3d_pyramid_0"},
+        {"name": "sphere", "faces": 1, "verts": 0, "image": "shape_3d_sphere_0"}
+      ],
+      "enabled": true
+    },
+    {
+      "type": "missing_angle",
+      "view": "verbal_shape",
+      "input": "select",
+      "template": "shapes/missing_angle",
+      "difficulty": 1,
+      "xp": 20,
+      "variations": [
+        {
+          "texture": "2d_parallel_math_angles_1",
+          "max_angle": 180,
+          "range": {
+            "min": 50,
+            "max": 80
+          },
+          "values": 2,
+          "labels": ["b"]
+        }
+      ],
+      "units": {
+        "short": "°", "long": "°"
+      },
+      "count": 1,
+      "enabled": true
+    },
+    {
+      "type": "missing_angle",
+      "view": "verbal_shape",
+      "input": "keypad_right",
+      "template": "shapes/missing_angle",
+      "difficulty": 1,
+      "xp": 20,
+      "variations": [
+        {
+          "texture": "2d_parallel_math_angles_1",
+          "max_angle": 180,
+          "range": {
+            "min": 50,
+            "max": 80
+          },
+          "values": 2,
+          "labels": ["b"]
+        }
+      ],
+      "units": {
+        "short": "°", "long": "°"
+      },
+      "count": 1,
+      "enabled": true
+    },
+    {
+      "type": "missing_angle",
+      "view": "verbal_shape",
+      "input": "select",
+      "template": "shapes/missing_angle",
+      "difficulty": 2,
+      "xp": 20,
+      "variations": [
+        {
+          "texture": "2d_parallel_math_angles",
+          "max_angle": 180,
+          "range": {
+            "min": 50,
+            "max": 80
+          },
+          "values": 2,
+          "labels": ["a"]
+        },
+        {
+          "texture": "2d_angle_math_0",
+          "max_angle": 180,
+          "values": 3,
+          "range": {
+            "min": 35,
+            "max": 55
+          },
+          "labels": ["a", "b"]
+        }
+      ],
+      "units": {
+        "short": "°", "long": "°"
+      },
+      "count": 1,
+      "enabled": true
+    },
+    {
+      "type": "missing_angle",
+      "view": "verbal_shape",
+      "input": "keypad_right",
+      "template": "shapes/missing_angle",
+      "difficulty": 2,
+      "xp": 20,
+      "variations": [
+        {
+          "texture": "2d_parallel_math_angles",
+          "max_angle": 180,
+          "range": {
+            "min": 50,
+            "max": 80
+          },
+          "values": 2,
+          "labels": ["a"]
+        },
+        {
+          "texture": "2d_angle_math_0",
+          "max_angle": 180,
+          "values": 3,
+          "range": {
+            "min": 35,
+            "max": 55
+          },
+          "labels": ["a", "b"]
+        }
+      ],
+      "units": {
+        "short": "°", "long": "°"
+      },
+      "count": 1,
+      "enabled": true
+    },
+    {
+      "type": "missing_angle",
+      "view": "verbal_angle",
+      "input": "select",
+      "template": "shapes/missing_angle",
+      "difficulty": 3,
+      "xp": 20,
+      "variations": [
+        {
+          "texture": "2d_parallel_math_angles",
+          "max_angle": 180,
+          "range": {
+            "min": 50,
+            "max": 80
+          },
+          "values": 3,
+          "labels": ["a"]
+        }
+      ],
+      "units": {
+        "short": "°", "long": "°"
+      },
+      "count": 1,
+      "enabled": true
+    },
+    {
+      "type": "missing_angle",
+      "view": "verbal_angle",
+      "input": "keypad",
+      "template": "shapes/missing_angle",
+      "difficulty": 3,
+      "xp": 20,
+      "variations": [
+        {
+          "texture": "2d_parallel_math_angles",
+          "max_angle": 180,
+          "range": {
+            "min": 50,
+            "max": 80
+          },
+          "values": 3,
+          "labels": ["a"]
+        }
+      ],
+      "units": {
+        "short": "°", "long": "°"
+      },
+      "count": 1,
+      "enabled": true
+    },
+    {
+      "type": "fixed_triangle",
+      "view": "verbal_equivalent",
+      "input": "select_multi",
+      "template": "shapes/fixed_triangle",
+      "difficulty": 3,
+      "xp": 20,
+      "options": [
+        {
+          "correct": ["Scalene", "Isosceles"], "question": "one 90 degree angle", "part": [0, 1]
+        },
+        {
+          "correct": ["Isosceles"], "question": "two sides of the same length", "part": [0]},
+        {
+          "correct": ["Isosceles"], "question": "two angles of the same size", "part": [0]
+        },
+        {
+          "correct": ["Scalene"], "question": "sides all of different lengths", "part": [0]
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "type": "rotated_shape",
+      "view": "visual_rotated_shape",
+      "input": "select",
+      "template": "shapes/rotated_shape",
+      "difficulty": 3,
+      "xp": 20,
+      "options": [45,90,135,180,225,270,315],
+      "shapes": ["shape_2d_nonsym_1", "shape_2d_nonsym_2", "shape_2d_nonsym_3"],
+      "enabled": true
+    },
+    {
+      "type": "angle_type",
+      "view": "visual",
+      "input": "select",
+      "template": "shapes/angle_type",
+      "difficulty": 2,
+      "xp": 20,
+      "options": [
+        {
+          "texture": "2d_angle_math_4", "type": "Right\nAngle"
+        },
+        {
+          "texture": "2d_angle_math_1", "type": "Acute\nAngle"
+        },
+        {
+          "texture": "2d_angle_math_02", "type": "Obtuse\nAngle"
+        },
+        {
+          "texture": "2d_angle_math_3", "type": "Reflex\nAngle"
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "type": "volume",
+      "view": "verbal_volume",
+      "input": "keypad",
+      "template": "shapes/volume",
+      "difficulty": 3,
+      "xp": 20,
+      "range": {"min": 3, "max": 30},
+      "enabled": true
+    },
+    {
+      "type": "diameter",
+      "view": "verbal_shape",
+      "input": "select",
+      "template": "measurement/diameter",
+      "range": [
+        {
+          "texture": "2d_circle_math_base",
+          "labels": [
+            {"range": {"min":  7.0, "max": 24.0}, "value": "r"}
+          ],
+          "notations": [
+            {
+              "texture": "2d_circle_math_radius"
+            }
+          ]
+        }
+      ],
+      "units": [
+        {"long": "centimetres", "short": "cm"},
+        {"long": "metres", "short": "m"},
+        {"long": "kilometres", "short": "km"}
+      ],
+      "parts": 1,
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "diameter",
+      "view": "verbal_shape",
+      "input": "keypad_right",
+      "template": "measurement/diameter",
+      "range": [
+        {
+          "texture": "2d_circle_math_base",
+          "labels": [
+            {"range": {"min":  7.0, "max": 24.0}, "value": "r"}
+          ],
+          "notations": [
+            {
+              "texture": "2d_circle_math_radius"
+            }
+          ]
+        }
+      ],
+      "units": [
+        {"long": "centimetres", "short": "cm"},
+        {"long": "metres", "short": "m"},
+        {"long": "kilometres", "short": "km"}
+      ],
+      "parts": 1,
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "faces",
+      "view": "visual_shape",
+      "input": "select",
+      "template": "shapes/faces",
+      "values": 3,
+      "range": [
+        {"name": "cone", "value": 2, "image": "shape_3d_cone_0"},
+        {"name": "cube", "value": 6, "image": "shape_3d_cube_0"},
+        {"name": "cuboid", "value": 6, "image": "shape_3d_cuboid_0"},
+        {"name": "cylinder", "value": 3, "image": "shape_3d_cylinder_0"},
+        {"name": "prism", "value": 5, "image": "shape_3d_prism_triangular_0"},
+        {"name": "square based pyramid", "value": 5, "image": "shape_3d_pyramid_0"},
+        {"name": "triangle based pyramid", "value": 4, "image": "shape_3d_pyramid_0"}
+      ],
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    }
+  ],
+  "sum": [
+    {
+      "type": "addition",
+      "view": "verbal_sum",
+      "input": "select_multi_sum",
+      "template": "sum/multi_equal_to",
+      "select_multi_num": 2,
+      "parts": [0],
+      "values": 1,
+      "range": {"min": 1000, "max": 9999},
+      "operands":{"min": 2, "max": 2},
+      "options_range":{"min": 4, "max": 5},
+      "sum_type":"equal_to",
+      "difficulty": 1,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "verbal_sum",
+      "input": "select_multi_sum",
+      "template": "sum/multi_equal_to",
+      "select_multi_num": 2,
+      "parts": [0],
+      "values": 1,
+      "range": {"min": 1000, "max": 9999},
+      "operands":{"min": 2, "max": 2},
+      "options_range":{"min": 4, "max": 5},
+      "sum_type":"equal_to",
+      "difficulty": 1,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "verbal_sum",
+      "input": "select_multi_sum",
+      "template": "sum/multi_equal_to",
+      "select_multi_num": 2,
+      "parts": [0],
+      "values": 1,
+      "range": {"min": 10000, "max": 99999},
+      "operands":{"min": 2, "max": 2},
+      "options_range":{"min": 4, "max": 5},
+      "sum_type":"equal_to",
+      "difficulty": 2,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "verbal_sum",
+      "input": "select_multi_sum",
+      "template": "sum/multi_equal_to",
+      "select_multi_num": 2,
+      "parts": [0],
+      "values": 1,
+      "range": {"min": 10000, "max": 99999},
+      "operands": {"min": 2, "max": 2},
+      "options_range": {"min": 4, "max": 5},
+      "sum_type": "equal_to",
+      "difficulty": 2,
+      "enabled": true
+    },
+    {
+      "type": "addition",
+      "view": "verbal_sum",
+      "input": "select_multi_sum",
+      "template": "sum/multi_equal_to",
+      "select_multi_num": 2,
+      "parts": [0],
+      "values": 1,
+      "range": {"min": 100000, "max": 999999},
+      "operands":{"min": 2, "max": 2},
+      "options_range":{"min": 4, "max": 5},
+      "sum_type":"equal_to",
+      "difficulty": 3,
+      "enabled": true
+    },
+    {
+      "type": "subtraction",
+      "view": "verbal_sum",
+      "input": "select_multi_sum",
+      "template": "sum/multi_equal_to",
+      "select_multi_num": 2,
+      "parts": [0],
+      "values": 1,
+      "range": {"min": 100000, "max": 999999},
+      "operands": {"min": 2, "max": 2},
+      "options_range": {"min": 4, "max": 5},
+      "sum_type": "equal_to",
+      "difficulty": 3,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "verbal_sum",
+      "input": "select_sum",
+      "template": "sum/equal_to",
+      "parts": [0],
+      "values": 2,
+      "range": {"min": 2, "max": 6},
+      "operands":{"min": 2, "max": 3},
+      "options_range":{"min":3, "max":4},
+      "sum_type":"equal_to",
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": false
+    },
+    {
+      "type": "multiplication",
+      "view": "verbal_sum",
+      "input": "select_sum",
+      "template": "sum/not_equal_to_invisible",
+      "parts": [0],
+      "values": 1,
+      "range": {"min": 15, "max": 30},
+      "operands":{"min": 2, "max": 2},
+      "options_range":{"min":3, "max":4},
+      "sum_type":"not_equal_to",
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "verbal_sum",
+      "input": "select_sum",
+      "template": "sum/not_equal_to_visible",
+      "parts": [0],
+      "values": 1,
+      "range": {"min": 20, "max": 60},
+      "operands":{"min": 2, "max": 2},
+      "options_range":{"min":3, "max":4},
+      "sum_type":"not_equal_to",
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division",
+      "view": "verbal_sum",
+      "input": "select_sum",
+      "template": "sum/not_equal_to_invisible",
+      "parts": [0],
+      "values": 1,
+      "range": {"min": 15, "max": 30},
+      "operands":{"min": 2, "max": 2},
+      "options_range":{"min":3, "max":4},
+      "sum_type":"not_equal_to",
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "division",
+      "view": "verbal_sum",
+      "input": "select_sum",
+      "template": "sum/not_equal_to_invisible",
+      "parts": [0],
+      "values": 1,
+      "range": {"min": 15, "max": 30},
+      "operands":{"min": 2, "max": 2},
+      "options_range":{"min":3, "max":4},
+      "sum_type":"not_equal_to",
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    }
+  ],
+  "times_table": [
+    {
+      "type": "multiplication",
+      "view": "statement",
+      "input": "keypad",
+      "parts": [2],
+      "values": 3,
+      "range": {"left": [1, 2, 5, 10], "right": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]},
+      "difficulty": 0,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "statement",
+      "input": "keypad",
+      "range": {"left": [1, 2, 3, 4, 5, 10], "right": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]},
+      "difficulty": 1,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "statement",
+      "input": "keypad",
+      "range": {"left": [1, 2, 3, 4, 5, 6, 7, 8, 10], "right": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]},
+      "difficulty": 2,
+      "xp": 20,
+      "enabled": true
+    },
+    {
+      "type": "multiplication",
+      "view": "statement",
+      "input": "keypad",
+      "range": {"left": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "right": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]},
+      "difficulty": 3,
+      "xp": 20,
+      "enabled": true
+    }
+  ]
+}

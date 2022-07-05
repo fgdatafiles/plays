@@ -1,0 +1,32 @@
+{
+    "flumpLibraries": [
+        { "key": "introLibrary", "root": "assets/intro/flump/" }
+    ],
+    "background": "introBG",
+    "audioKeys": {
+        "music": "Potty_Time_BGM",
+        "intro": ["PP_1.1_3", "PP_1.1_4", "PP_1.1_5", "PP_1.1_6"]
+    },
+    "initialState": {
+        "flump": { "library": "introLibrary", "animations": { "idle": "intro1Idle" } },
+        "audioKey": "PP_1.1_3"
+    },
+    "cutscene": [
+        {
+            "flump": { "library": "introLibrary", "animations": { "idle": "intro1" } },
+            "audioKey": "PP_1.1_3"
+        },
+        {
+            "flump": { "library": "introLibrary", "animations": { "idle": "intro2" } },
+            "audioKey": "PP_1.1_4"
+        },
+        {
+            "flump": { "library": "introLibrary", "animations": { "idle": "intro3" } },
+            "audioKey": "PP_1.1_5"
+        },
+        {
+            "flump": { "library": "introLibrary", "animations": { "idle": "intro4" } },
+            "audioKey": "PP_1.1_6"
+        }
+    ]
+}

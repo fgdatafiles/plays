@@ -1,0 +1,58 @@
+{
+"skeleton": {
+	"hash": "rV5/wtiuwTsxuiiJjdvc2gK0rGY",
+	"spine": "3.8.95",
+	"x": -14.06,
+	"y": 572.75,
+	"width": 29.12,
+	"height": 50.07,
+	"images": "./_assets/",
+	"audio": "../../voiceover_update/cutscenes/cutscene_04/audio/cutscene_04/"
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "audio", "bone": "root", "attachment": "assets_ari/HandL" }
+],
+"events": {
+	"cs_04_ari_001": { "audio": "cs_04_ari_001.wav" },
+	"cs_04_elinor_001": { "audio": "cs_04_elinor_001.wav" },
+	"cs_04_elinor_002": { "audio": "cs_04_elinor_002.wav" },
+	"cs_04_elinor_003": { "audio": "cs_04_elinor_003.wav" },
+	"cs_04_elinor_004": { "audio": "cs_04_elinor_004.wav" },
+	"cs_04_group_001": { "audio": "cs_04_group_001.wav" },
+	"cs_04_lizzie_001": { "audio": "cs_04_lizzie_001.wav" },
+	"cs_04_mary_001": { "audio": "cs_04_mary_001.wav" }
+},
+"animations": {
+	"animation": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 25.8667, "angle": 0.35 },
+					{ "time": 26, "angle": 0.27 },
+					{ "time": 30.6333, "angle": -0.5 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.6333, "name": "cs_04_ari_001", "volume": 0.51 },
+			{ "time": 2.9333, "name": "cs_04_mary_001", "volume": 0.51 },
+			{ "time": 6.5667, "name": "cs_04_lizzie_001", "volume": 0.5 },
+			{ "time": 9.9333, "name": "cs_04_elinor_001", "volume": 0.5 },
+			{ "time": 11.9333, "name": "cs_04_elinor_002", "volume": 0.5 },
+			{ "time": 17.5, "name": "cs_04_elinor_003", "volume": 0.51 },
+			{ "time": 23.4, "name": "cs_04_elinor_004", "volume": 0.51 },
+			{ "time": 29.3, "name": "cs_04_group_001", "volume": 0.55 }
+		]
+	}
+},
+"skins": {
+	"default": {
+		"audio": {
+			"assets_ari/HandL": { "x": 0.5, "y": 597.79, "rotation": -0.14, "width": 29, "height": 50 }
+		}
+	}
+}
+}

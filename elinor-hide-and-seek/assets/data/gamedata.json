@@ -1,0 +1,891 @@
+{
+  "seasons": ["summer", "autumn", "winter"],
+
+  "clothes": [
+    {
+      "id": 0,
+      "wearable": true,
+      "description": "yellow jacket",
+      "skin_name": "raincoat",
+      "image_key": "outfit_01"
+    },
+    {
+      "id": 1,
+      "wearable": true,
+      "description": "polar bear",
+      "skin_name": "polar",
+      "image_key": "outfit_02"
+    },
+    {
+      "id": 2,
+      "wearable": true,
+      "description": "brown owl",
+      "skin_name": "owl",
+      "image_key": "outfit_03"
+    },
+    {
+       "id": 3,
+       "wearable": true,
+       "description": "bee costume",
+       "skin_name": "bee",
+       "image_key": "outfit_04"
+    },
+    {
+       "id": 4,
+       "wearable": false,
+       "character": "elinor",
+       "description": "elinors outfit",
+       "skin_name": "base",
+       "image_key": "outfit_elinor"
+    },
+    {
+       "id": 5,
+       "wearable": false,
+       "character": "olive",
+       "description": "olive outfit",
+       "skin_name": "base",
+       "image_key": "outfit_olive"
+    },
+    {
+       "id": 6,
+       "wearable": false,
+       "character": "ari",
+       "description": "ari outfit",
+       "skin_name": "base",
+       "image_key": "outfit_ari"
+    },
+    {
+       "id": 7,
+       "wearable": false,
+       "character": "koa",
+       "description": "koa outfit",
+       "skin_name": "base",
+       "image_key": "outfit_koa"
+    },
+    {
+       "id": 8,
+       "wearable": false,
+       "character": "twins",
+       "description": "twins outfit",
+       "skin_name": "base",
+       "image_key": "outfit_twins"
+    },
+    {
+       "id": 9,
+       "wearable": false,
+       "character": "tito",
+       "description": "tito outfit",
+       "skin_name": "base",
+       "image_key": "outfit_tito"
+    }
+  ],
+
+
+
+  "location": {
+    "summer" : {
+      "single_player": {
+        "levels": [
+          {
+            "id": 0,
+            "description": "onboarding 1 : seek",
+            "onboarding": "onboarding_01",
+            "mode": "seek",
+            "seeker": "elinor",
+            "start_point": -100,
+            "sceneWidth": 1999,
+            "difficulty": [0, 0],
+            "slots": ["flowers_1", "tree_1", "tree_2", "log_2", "ball"],
+            "characters": [
+              {
+                "id": "olive",
+                "slot": "tree_1"
+              },
+              {
+                "id": "ari",
+                "slot": "ball"
+              }
+            ]
+          },
+          {
+            "id": 1,
+            "description": "seek",
+            "mode": "seek",
+            "start_point": 870,
+            "sceneWidth": 1999,
+            "difficulty": [0, 0],
+            "slots": ["flowers_1", "tree_1", "tree_2", "log_2", "ball"],
+            "characters": [
+              {
+                "id": "olive"
+              },
+              {
+                "id": "ari"
+              },
+              {
+                "id": "elinor"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "description": "onboarding 2 : seek",
+            "onboarding": "onboarding_02",
+            "mode": "seek",
+            "seeker": "elinor",
+            "start_point": 870,
+            "sceneWidth": 2960,
+            "difficulty": [0, 0],
+            "slots": [
+              "flowers_1", "tree_1", "tree_2", "log_2", "ball",
+              "sand_1", "post", "slide", "swing"],
+            "characters": [
+              {
+                "id": "olive",
+                "slot": "swing"
+              },
+              {
+                "id": "ari",
+                "slot": "sand_1"
+              },
+              {
+                "id": "elinor",
+                "slot": "slide"
+              }
+            ]
+          },
+
+          {
+            "id": 3,
+            "description": "cutscene 3a : seek",
+            "cutscene": "cutscene_03a",
+            "mode": "seek",
+            "start_point": 2400,
+            "sceneWidth": 2960,
+            "difficulty": [0, 0, 0],
+            "slots": [
+              "flowers_1", "tree_1", "tree_2", "log_2", "ball",
+              "sand_1", "post", "slide", "swing"],
+            "characters": [
+              {
+                "id": "olive"
+              },
+              {
+                "id": "ari"
+              },
+              {
+                "id": "elinor"
+              },
+              {
+                "id": "koa",
+                "slot": "bush_1"
+              }
+            ]
+          },
+
+
+          {
+            "id": 4,
+            "description": "cutscene 2 : onboarding 3 : hide",
+            "cutscene": "cutscene_02",
+            "onboarding": "onboarding_03",
+            "mode": "hide",
+            "seeker": "ari",
+            "start_point": 870,
+            "sceneWidth": 2960,
+            "difficulty": [0, 0, 0],
+            "slots": [],
+            "characters": [
+              {
+                "id": "elinor"
+              },
+              {
+                "id": "olive"
+              },
+              {
+                "id": "ari"
+              },
+              {
+                "id": "koa"
+              }
+            ]
+          },
+
+          {
+            "id": 5,
+            "description": "seek 1",
+            "onboarding": "onboarding_pan_01",
+            "mode": "seek",
+            "start_point": 900,
+            "sceneWidth": 4240,
+            "difficulty": [2, 1, 0],
+            "slots": [
+              "flowers_1", "tree_1", "tree_2", "log_2", "ball",
+              "sand_1", "post", "slide", "swing",
+              "flowers_2", "log_1", "bushes", "rocks"],
+            "characters": [
+              {
+                "id": "olive"
+              },
+              {
+                "id": "ari"
+              },
+              {
+                "id": "elinor"
+              },
+              {
+                "id": "koa"
+              }
+            ]
+          },
+
+          {
+            "id": 6,
+            "description": "cutscene 3b : hide 1",
+            "cutscene": "cutscene_03b",
+            "mode": "hide",
+            "seeker": "twins",
+            "quick_find": true,
+            "start_point": 870,
+            "sceneWidth": 4240,
+            "difficulty": [0, 0, 0, 0],
+            "slots": [
+              "flowers_1", "tree_1", "tree_2", "log_2", "ball",
+              "sand_1", "post", "slide", "swing",
+              "flowers_2", "log_1", "bushes", "rocks"],
+            "characters": [
+              {
+                "id": "olive"
+              },
+              {
+                "id": "ari"
+              },
+              {
+                "id": "elinor"
+              },
+              {
+                "id": "koa"
+              },
+              {
+                "id": "twins"
+              }
+            ]
+          },
+
+          {
+            "id": 7,
+            "description": "cutscene 4 : hide 2",
+            "onboarding": "onboarding_04",
+            "cutscene": "cutscene_04",
+            "mode": "hide",
+            "seeker": "twins",
+            "dress_up": true,
+            "start_point": 870,
+            "sceneWidth": 4240,
+            "difficulty": [0, 0, 0, 0],
+            "slots": [
+              "flowers_1", "tree_1", "tree_2", "log_2", "ball",
+              "sand_1", "post", "slide", "swing",
+              "flowers_2", "log_1", "bushes", "rocks"],
+            "characters": [
+              {
+                "id": "elinor"
+              },
+              {
+                "id": "olive"
+              },
+              {
+                "id": "ari"
+              },
+              {
+                "id": "koa"
+              },
+              {
+                "id": "twins"
+              }
+            ]
+          },
+
+          {
+            "id": 8,
+            "description": "seek 3",
+            "onboarding": "onboarding_pan_02",
+            "mode": "seek",
+            "start_point": 870,
+            "sceneWidth": 5520,
+            "difficulty": [2, 1, 1, 1],
+            "slots": [
+              "flowers_1", "tree_1", "tree_2", "log_2", "ball",
+              "sand_1", "post", "slide", "swing",
+              "flowers_2", "log_1", "bushes", "rocks",
+              "sand_2", "flowers_3", "tree_3", "bush_2"],
+            "characters": [
+              {
+                "id": "olive"
+              },
+              {
+                "id": "ari"
+              },
+              {
+                "id": "elinor"
+              },
+              {
+                "id": "koa"
+              },
+              {
+                "id": "twins"
+              }
+            ]
+          },
+
+          {
+            "id": 9,
+            "description": "hide 3",
+            "cutscene_end": "cutscene_05",
+            "mode": "hide",
+            "start_point": 870,
+            "sceneWidth": 5520,
+            "difficulty": [0, 0, 0, 0],
+            "slots": [
+              "flowers_1", "tree_1", "tree_2", "log_2", "ball",
+              "sand_1", "post", "slide", "swing",
+              "flowers_2", "log_1", "bushes", "rocks",
+              "sand_2", "flowers_3", "tree_3", "bush_2"],
+            "characters": [
+              {
+                "id": "olive"
+              },
+              {
+                "id": "ari"
+              },
+              {
+                "id": "elinor"
+              },
+              {
+                "id": "koa"
+              },
+              {
+                "id": "twins"
+              }
+            ]
+          }
+        ]
+      },
+
+
+      "two_players": {
+        "levels" : [
+          {
+            "id": 0,
+            "description": "Two player : 1",
+            "dress_up": true,
+            "start_point": 870,
+            "sceneWidth": 5520,
+            "slots": [
+              "flowers_1", "tree_1", "tree_2", "log_2", "ball",
+              "sand_1", "post", "slide", "swing",
+              "flowers_2", "log_1", "bushes", "rocks",
+              "sand_2", "flowers_3", "tree_3", "bush_2"],
+            "characters": [
+              {
+                "id": "olive"
+              },
+              {
+                "id": "ari"
+              },
+              {
+                "id": "elinor"
+              },
+              {
+                "id": "koa"
+              },
+              {
+                "id": "twins"
+              },
+              {
+                "id": "tito"
+              }
+            ]
+          }
+        ]
+      }
+    },
+
+
+
+
+    "autumn": {
+      "single_player": {
+        "levels": [
+          {
+            "id": 0,
+            "description": "seek 1",
+            "cutscene": "cutscene_06",
+            "onboarding": "onboarding_pan_04",
+            "mode": "seek",
+            "start_point": 870,
+            "sceneWidth": 5520,
+            "difficulty": [2, 1, 1, 0],
+            "slots": [
+              "01_rocks", "02_shrubs", "03_porch", "04_bush", "05_doorway",
+              "06_cart", "07_cartwheel", "08_toolbox", "09_wheelbarrow",
+              "10_log", "11_ladder", "12_blue_wheelbarrow", "13_leaf_pile",
+              "14_tree_rake", "15_red_apples", "16_green_rake", "17_up_tree", "18_green_apples"],
+            "characters": [
+              {
+                "id": "olive"
+              },
+              {
+                "id": "ari"
+              },
+              {
+                "id": "elinor"
+              },
+              {
+                "id": "koa"
+              },
+              {
+                "id": "twins"
+              }
+            ]
+          },
+
+          {
+            "id": 1,
+            "description": "hide 1",
+            "mode": "hide",
+            "dress_up": true,
+            "start_point": 870,
+            "sceneWidth": 5520,
+            "difficulty": [0, 0, 0, 0],
+            "slots": [
+              "01_rocks", "02_shrubs", "03_porch", "04_bush", "05_doorway",
+              "06_cart", "07_cartwheel", "08_toolbox", "09_wheelbarrow",
+              "10_log", "11_ladder", "12_blue_wheelbarrow", "13_leaf_pile",
+              "14_tree_rake", "15_red_apples", "16_green_rake", "17_up_tree", "18_green_apples"],
+            "characters": [
+              {
+                "id": "olive"
+              },
+              {
+                "id": "ari"
+              },
+              {
+                "id": "elinor"
+              },
+              {
+                "id": "koa"
+              },
+              {
+                "id": "twins"
+              }
+            ]
+          },
+
+          {
+            "id": 2,
+            "description": "seek 2",
+            "mode": "seek",
+            "start_point": 870,
+            "sceneWidth": 5520,
+            "difficulty": [2, 1, 1, 0],
+            "slots": [
+              "01_rocks", "02_shrubs", "03_porch", "04_bush", "05_doorway",
+              "06_cart", "07_cartwheel", "08_toolbox", "09_wheelbarrow",
+              "10_log", "11_ladder", "12_blue_wheelbarrow", "13_leaf_pile",
+              "14_tree_rake", "15_red_apples", "16_green_rake", "17_up_tree", "18_green_apples"],
+            "characters": [
+              {
+                "id": "olive"
+              },
+              {
+                "id": "ari"
+              },
+              {
+                "id": "elinor"
+              },
+              {
+                "id": "koa"
+              },
+              {
+                "id": "twins"
+              }
+            ]
+          },
+
+          {
+            "id": 3,
+            "description": "hide 2",
+            "mode": "hide",
+            "dress_up": true,
+            "start_point": 870,
+            "sceneWidth": 5520,
+            "difficulty": [0, 0, 0, 0],
+            "slots": [
+              "01_rocks", "02_shrubs", "03_porch", "04_bush", "05_doorway",
+              "06_cart", "07_cartwheel", "08_toolbox", "09_wheelbarrow",
+              "10_log", "11_ladder", "12_blue_wheelbarrow", "13_leaf_pile",
+              "14_tree_rake", "15_red_apples", "16_green_rake", "17_up_tree", "18_green_apples"],
+            "characters": [
+              {
+                "id": "olive"
+              },
+              {
+                "id": "ari"
+              },
+              {
+                "id": "elinor"
+              },
+              {
+                "id": "koa"
+              },
+              {
+                "id": "twins"
+              }
+            ]
+          },
+
+          {
+            "id": 4,
+            "description": "seek 3",
+            "mode": "seek",
+            "start_point": 870,
+            "sceneWidth": 5520,
+            "difficulty": [2, 2, 1, 1],
+            "slots": [
+              "01_rocks", "02_shrubs", "03_porch", "04_bush", "05_doorway",
+              "06_cart", "07_cartwheel", "08_toolbox", "09_wheelbarrow",
+              "10_log", "11_ladder", "12_blue_wheelbarrow", "13_leaf_pile",
+              "14_tree_rake", "15_red_apples", "16_green_rake", "17_up_tree", "18_green_apples"],
+            "characters": [
+              {
+                "id": "olive"
+              },
+              {
+                "id": "ari"
+              },
+              {
+                "id": "elinor"
+              },
+              {
+                "id": "koa"
+              },
+              {
+                "id": "twins"
+              }
+            ]
+          },
+
+          {
+            "id": 5,
+            "description": "hide 3",
+            "cutscene_end": "cutscene_07",
+            "mode": "hide",
+            "dress_up": true,
+            "start_point": 870,
+            "sceneWidth": 5520,
+            "difficulty": [0, 0, 0, 0],
+            "slots": [
+              "01_rocks", "02_shrubs", "03_porch", "04_bush", "05_doorway",
+              "06_cart", "07_cartwheel", "08_toolbox", "09_wheelbarrow",
+              "10_log", "11_ladder", "12_blue_wheelbarrow", "13_leaf_pile",
+              "14_tree_rake", "15_red_apples", "16_green_rake", "17_up_tree", "18_green_apples"],
+            "characters": [
+              {
+                "id": "olive"
+              },
+              {
+                "id": "ari"
+              },
+              {
+                "id": "elinor"
+              },
+              {
+                "id": "koa"
+              },
+              {
+                "id": "twins"
+              }
+            ]
+          }
+        ]
+      },
+
+
+      "two_players": {
+        "levels" : [
+          {
+            "id": 0,
+            "description": "Two player : 2",
+            "dress_up": true,
+            "start_point": 870,
+            "sceneWidth": 5520,
+            "slots": [
+              "01_rocks", "02_shrubs", "03_porch", "04_bush", "05_doorway",
+              "06_cart", "07_cartwheel", "08_toolbox", "09_wheelbarrow",
+              "10_log", "11_ladder", "12_blue_wheelbarrow", "13_leaf_pile",
+              "14_tree_rake", "15_red_apples", "16_green_rake", "17_up_tree", "18_green_apples"],
+            "characters": [
+              {
+                "id": "olive"
+              },
+              {
+                "id": "ari"
+              },
+              {
+                "id": "elinor"
+              },
+              {
+                "id": "koa"
+              },
+              {
+                "id": "twins"
+              },
+              {
+                "id": "tito"
+              }
+            ]
+          }
+        ]
+      }
+    },
+
+
+
+
+    "winter": {
+      "single_player": {
+        "levels": [
+          {
+            "id": 0,
+            "description": "seek 1",
+            "cutscene": "cutscene_08",
+            "onboarding": "onboarding_pan_06",
+            "mode": "seek",
+            "start_point": 870,
+            "sceneWidth": 5520,
+            "difficulty": [2, 1, 1, 0],
+            "slots": [
+              "01_fir_tree", "02_shrubs", "03_fir_tree", "04_bushes", "05_red_sled",
+              "06_well", "07_blue_sled", "08_hedge", "09_snowballs",
+              "10_snowboard_orange", "11_green_bush", "12_shovel", "13_snow_castle",
+              "14_log", "15_snowman", "16_snowboard", "17_tree", "18_snowy_bush"],
+            "characters": [
+              {
+                "id": "olive"
+              },
+              {
+                "id": "ari"
+              },
+              {
+                "id": "elinor"
+              },
+              {
+                "id": "koa"
+              },
+              {
+                "id": "twins"
+              }
+            ]
+          },
+
+          {
+            "id": 1,
+            "description": "hide 1",
+            "mode": "hide",
+            "dress_up": true,
+            "start_point": 870,
+            "sceneWidth": 5520,
+            "difficulty": [0, 0, 0, 0],
+            "slots": [
+              "01_fir_tree", "02_shrubs", "03_fir_tree", "04_bushes", "05_red_sled",
+              "06_well", "07_blue_sled", "08_hedge", "09_snowballs",
+              "10_snowboard_orange", "11_green_bush", "12_shovel", "13_snow_castle",
+              "14_log", "15_snowman", "16_snowboard", "17_tree", "18_snowy_bush"],
+            "characters": [
+              {
+                "id": "olive"
+              },
+              {
+                "id": "ari"
+              },
+              {
+                "id": "elinor"
+              },
+              {
+                "id": "koa"
+              },
+              {
+                "id": "twins"
+              }
+            ]
+          },
+
+          {
+            "id": 2,
+            "description": "seek 2",
+            "mode": "seek",
+            "start_point": 870,
+            "sceneWidth": 5520,
+            "difficulty": [2, 1, 1, 0],
+            "slots": [
+              "01_fir_tree", "02_shrubs", "03_fir_tree", "04_bushes", "05_red_sled",
+              "06_well", "07_blue_sled", "08_hedge", "09_snowballs",
+              "10_snowboard_orange", "11_green_bush", "12_shovel", "13_snow_castle",
+              "14_log", "15_snowman", "16_snowboard", "17_tree", "18_snowy_bush"],
+            "characters": [
+              {
+                "id": "olive"
+              },
+              {
+                "id": "ari"
+              },
+              {
+                "id": "elinor"
+              },
+              {
+                "id": "koa"
+              },
+              {
+                "id": "twins"
+              }
+            ]
+          },
+
+          {
+            "id": 3,
+            "description": "hide 2",
+            "mode": "hide",
+            "dress_up": true,
+            "start_point": 870,
+            "sceneWidth": 5520,
+            "difficulty": [0, 0, 0, 0],
+            "slots": [
+              "01_fir_tree", "02_shrubs", "03_fir_tree", "04_bushes", "05_red_sled",
+              "06_well", "07_blue_sled", "08_hedge", "09_snowballs",
+              "10_snowboard_orange", "11_green_bush", "12_shovel", "13_snow_castle",
+              "14_log", "15_snowman", "16_snowboard", "17_tree", "18_snowy_bush"],
+            "characters": [
+              {
+                "id": "olive"
+              },
+              {
+                "id": "ari"
+              },
+              {
+                "id": "elinor"
+              },
+              {
+                "id": "koa"
+              },
+              {
+                "id": "twins"
+              }
+            ]
+          },
+
+          {
+            "id": 4,
+            "description": "seek 3",
+            "mode": "seek",
+            "start_point": 870,
+            "sceneWidth": 5520,
+            "difficulty": [2, 2, 1, 1],
+            "slots": [
+              "01_fir_tree", "02_shrubs", "03_fir_tree", "04_bushes", "05_red_sled",
+              "06_well", "07_blue_sled", "08_hedge", "09_snowballs",
+              "10_snowboard_orange", "11_green_bush", "12_shovel", "13_snow_castle",
+              "14_log", "15_snowman", "16_snowboard", "17_tree", "18_snowy_bush"],
+            "characters": [
+              {
+                "id": "olive"
+              },
+              {
+                "id": "ari"
+              },
+              {
+                "id": "elinor"
+              },
+              {
+                "id": "koa"
+              },
+              {
+                "id": "twins"
+              }
+            ]
+          },
+
+          {
+            "id": 5,
+            "description": "hide 3",
+            "cutscene_end": "cutscene_09",
+            "mode": "hide",
+            "dress_up": true,
+            "start_point": 870,
+            "sceneWidth": 5520,
+            "difficulty": [0, 0, 0, 0],
+            "slots": [
+              "01_fir_tree", "02_shrubs", "03_fir_tree", "04_bushes", "05_red_sled",
+              "06_well", "07_blue_sled", "08_hedge", "09_snowballs",
+              "10_snowboard_orange", "11_green_bush", "12_shovel", "13_snow_castle",
+              "14_log", "15_snowman", "16_snowboard", "17_tree", "18_snowy_bush"],
+            "characters": [
+              {
+                "id": "olive"
+              },
+              {
+                "id": "ari"
+              },
+              {
+                "id": "elinor"
+              },
+              {
+                "id": "koa"
+              },
+              {
+                "id": "twins"
+              }
+            ]
+          }
+        ]
+      },
+
+      "two_players": {
+        "levels" : [
+          {
+            "id": 0,
+            "description": "Two player : 3",
+            "dress_up": true,
+            "start_point": 870,
+            "sceneWidth": 5520,
+            "slots": [
+              "01_fir_tree", "02_shrubs", "03_fir_tree", "04_bushes", "05_red_sled",
+              "06_well", "07_blue_sled", "08_hedge", "09_snowballs",
+              "10_snowboard_orange", "11_green_bush", "12_shovel", "13_snow_castle",
+              "14_log", "15_snowman", "16_snowboard", "17_tree", "18_snowy_bush"],
+            "characters": [
+              {
+                "id": "olive"
+              },
+              {
+                "id": "ari"
+              },
+              {
+                "id": "elinor"
+              },
+              {
+                "id": "koa"
+              },
+              {
+                "id": "twins"
+              },
+              {
+                "id": "tito"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

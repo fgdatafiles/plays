@@ -1,0 +1,108 @@
+{
+"skeleton": {
+	"hash": "LLceYoBD/ra+OtBdhYHhgxiRjA8",
+	"spine": "3.8.95",
+	"x": -529.44,
+	"y": -504.19,
+	"width": 1033.06,
+	"height": 863.93,
+	"images": "./_assets/assets_countdown/",
+	"audio": "E:/Projects/Open/Jollywise_ElinorWondersWhy_js/repo_EWWHIDE/_design_illustration_audio_source/animation/../audio/ALPHA/seeker_vo/elinor"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "speech_bubble", "parent": "root", "x": 224.06, "y": 178.04 },
+	{ "name": "numbers", "parent": "root", "x": 226.81, "y": 169.91 },
+	{ "name": "roundel", "parent": "root", "x": -252.5, "y": -224.35 }
+],
+"slots": [
+	{ "name": "roundel", "bone": "roundel", "attachment": "roundel" },
+	{ "name": "speech_bubble", "bone": "speech_bubble", "attachment": "speech_bubble" },
+	{ "name": "number_1", "bone": "numbers", "attachment": "number_1" }
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"number_1": {
+				"color": [
+					{ "time": 15.0333, "color": "ffffffff" },
+					{ "time": 15.2333, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": null, "time": 0.0 },
+					{ "time": 9.5, "name": "number_1" },
+					{ "time": 10.4333, "name": "number_2" },
+					{ "time": 11.5, "name": "number_3" },
+					{ "time": 12.7667, "name": "number_4" },
+					{ "time": 14, "name": "number_5" }
+				]
+			},
+			"roundel": {
+				"attachment": [
+					{ "name": null, "time": 0.0 }
+				]
+			},
+			"speech_bubble": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped", "time": 0.0 },
+					{ "time": 9.1333, "color": "ffffff00" },
+					{ "time": 9.4333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 15.1, "color": "ffffffff" },
+					{ "time": 15.4333, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"root": {
+				"translate": [
+					{ "time": 8.0333, "y": -3.47 }
+				]
+			},
+			"roundel": {
+				"rotate": [
+					{ "time": 7.5667, "angle": 0.0 },
+					{ "time": 8.4333, "angle": 1.88 }
+				],
+				"translate": [
+					{ "time": 0.0 },
+					{ "time": 7.5667, "x": -24.62, "y": 140.16 },
+					{ "time": 7.9667, "x": -25.92, "y": 147.57 },
+					{ "time": 16.3333, "x": -25.92, "y": 147.57 }
+				],
+				"scale": [
+					{ "time": 5, "x": 1.0, "y": 1.0 },
+					{ "time": 15.7, "x": 0.337, "y": 0.337 },
+					{ "time": 16.3333, "x": 1.0, "y": 1.0 }
+				]
+			},
+			"numbers": {
+				"translate": [
+					{ "x": -152.26, "y": 33.1, "time": 0.0 }
+				]
+			},
+			"speech_bubble": {
+				"translate": [
+					{ "x": -152.26, "y": 33.1, "time": 0.0 }
+				]
+			}
+		}
+	}
+},
+"skins": {
+	"default": {
+		"number_1": {
+			"number_1": { "x": -3.24, "y": -6.05, "width": 60, "height": 215 },
+			"number_2": { "x": -1.03, "y": -0.06, "width": 117, "height": 197 },
+			"number_3": { "x": -1.03, "y": 0.77, "width": 127, "height": 207 },
+			"number_4": { "x": -0.21, "y": 0.77, "width": 126, "height": 209 },
+			"number_5": { "x": -0.21, "y": -0.06, "width": 131, "height": 204 }
+		},
+		"roundel": {
+			"roundel": { "x": 0.05, "y": 0.17, "width": 554, "height": 560 }
+		},
+		"speech_bubble": {
+			"speech_bubble": { "x": -16.44, "y": -59.29, "width": 592, "height": 482 }
+		}
+	}
+}
+}

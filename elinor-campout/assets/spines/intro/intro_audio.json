@@ -1,0 +1,49 @@
+{
+"skeleton": {
+	"hash": "r7ZMm2Crmld7ZdozJ22SuI1ZD7g",
+	"spine": "3.8.97",
+	"x": -91.14,
+	"y": 1782.53,
+	"width": 83,
+	"height": 5,
+	"images": "../characters/Ari/assets/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "blink", "bone": "root", "attachment": "blink" }
+],
+"events": {
+	"intro_001": { "audio": "audio/intro_001.wav" },
+	"intro_002": { "audio": "audio/intro_002.wav" },
+	"intro_003": { "audio": "audio/intro_003.wav" },
+	"intro_004": { "audio": "audio/intro_004.wav" }
+},
+"animations": {
+	"01_intro": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "angle": 0.09, "time": 0.0 },
+					{ "time": 10, "angle": 0.0 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 1.8667, "name": "intro_001", "volume": 0.51 },
+			{ "time": 4.4, "name": "intro_003", "volume": 0.51 },
+			{ "time": 7.6, "name": "intro_004", "volume": 0.51 }
+		]
+	},
+	"02_loop": {}
+},
+"skins": {
+	"default": {
+		"blink": {
+			"blink": { "x": -49.64, "y": 1785.03, "width": 83, "height": 5 }
+		}
+	}
+}
+}

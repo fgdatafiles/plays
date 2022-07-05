@@ -1,0 +1,40 @@
+{
+    "gameFlow":{
+        "enemyOrder":["harleyquinn", "catwoman", "poisonivy"],
+        "unlocks":[],
+        "rounds":2,
+        "roundTime":60,
+        "starMarks":{"1":0.2, "2":0.5, "3":0.75},
+        "roundPoints":1000
+    },
+    "gamePhysics":{
+        "fighters":{
+            "baseSpeed": 400,
+            "baseRange": [0.5, 0.7],
+            "basePower": 200,
+            "baseInertia": 0.1,
+            "baseHealth": 100,
+            "fireRate": [0.1, 0.24]
+        },
+        "ai":{
+            "fireRate":[0.2, 1]
+        },
+        "projectiles":{
+            "baseSpeed":{"x":4000, "y":-800},
+            "gravity": 1200,
+            "baseDamage": 6.5,
+            "imageScale": 0.3
+        },
+        "powerUp":{
+            "imageScale": 0.5,
+            "limitedTo":[]
+        },
+        "field":{
+            "top": 240,
+            "bottom": 40,
+            "width": 460,
+            "gap": 80,
+            "tableHeight": 40
+        }
+    }
+}

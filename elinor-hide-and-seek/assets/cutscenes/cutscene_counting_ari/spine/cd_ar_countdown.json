@@ -1,0 +1,195 @@
+{
+"skeleton": {
+	"hash": "2tVcvsXBI/sVH7vr/8K98fY0vD8",
+	"spine": "3.8.95",
+	"x": -529.44,
+	"y": -504.19,
+	"width": 1033.06,
+	"height": 863.93,
+	"images": "./_assets/assets_countdown/",
+	"audio": "../../voiceover_update/characters/ari/audio/ari/"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "speech_bubble", "parent": "root", "x": 224.06, "y": 178.04 },
+	{ "name": "numbers", "parent": "root", "x": 226.81, "y": 169.91 },
+	{ "name": "roundel", "parent": "root", "x": -252.5, "y": -224.35 }
+],
+"slots": [
+	{ "name": "roundel", "bone": "roundel", "attachment": "roundel" },
+	{ "name": "speech_bubble", "bone": "speech_bubble", "attachment": "speech_bubble" },
+	{ "name": "number_1", "bone": "numbers", "attachment": "number_1" }
+],
+"events": {
+	"vo_01_ari_001": { "audio": "vo_01_ari_001.wav" },
+	"vo_01_ari_002": { "audio": "vo_01_ari_002.wav" },
+	"vo_01_ari_003": { "audio": "vo_01_ari_003.wav" },
+	"vo_01_ari_004": { "audio": "vo_01_ari_004.wav" },
+	"vo_01_ari_005": { "audio": "vo_01_ari_005.wav" },
+	"vo_01_ari_006": { "audio": "vo_01_ari_006.wav" },
+	"vo_01_ari_007": { "audio": "vo_01_ari_007.wav" }
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"number_1": {
+				"color": [
+					{ "time": 5.3333, "color": "ffffffff" },
+					{ "time": 5.5, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": null, "time": 0.0 },
+					{ "time": 0.3333, "name": "number_1" },
+					{ "time": 1.3333, "name": "number_2" },
+					{ "time": 2.3333, "name": "number_3" },
+					{ "time": 3.3333, "name": "number_4" },
+					{ "time": 4.3333, "name": "number_5" }
+				]
+			},
+			"roundel": {
+				"color": [
+					{ "time": 8.6667, "color": "ffffffff" },
+					{ "time": 8.8, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": null, "time": 0.0 },
+					{ "time": 8, "name": "roundel" }
+				]
+			},
+			"speech_bubble": {
+				"color": [
+					{ "time": 5.3333, "color": "ffffffff" },
+					{ "time": 5.5, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"root": {
+				"translate": [
+					{ "y": -3.47, "time": 0.0 }
+				]
+			},
+			"roundel": {
+				"translate": [
+					{ "time": 8, "x": -25.92, "y": 147.57 },
+					{ "time": 8.6667, "x": -25.92, "y": 147.57 }
+				],
+				"scale": [
+					{ "time": 5, "x": 1.0, "y": 1.0 },
+					{ "time": 6.3333, "x": 0.705, "y": 0.705 },
+					{ "time": 8, "x": 0.337, "y": 0.337 },
+					{ "time": 8.6667, "x": 1.0, "y": 1.0 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.3333, "name": "vo_01_ari_002", "volume": 0.51 },
+			{ "time": 1.3333, "name": "vo_01_ari_003", "volume": 0.5 },
+			{ "time": 2.3333, "name": "vo_01_ari_004", "volume": 0.5 },
+			{ "time": 3.3333, "name": "vo_01_ari_005", "volume": 0.49 },
+			{ "time": 4.3333, "name": "vo_01_ari_006", "volume": 0.5 },
+			{ "time": 5.3333, "name": "vo_01_ari_007", "volume": 0.5 }
+		]
+	},
+	"animation2": {
+		"slots": {
+			"number_1": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped", "time": 0.0 },
+					{ "time": 2.6667, "color": "ffffff00" },
+					{ "time": 2.7667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 9.5, "color": "ffffffff" },
+					{ "time": 9.6, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 2.4333, "name": null },
+					{ "time": 2.6667, "name": "number_1" },
+					{ "time": 4.2, "name": "number_2" },
+					{ "time": 5.5, "name": "number_3" },
+					{ "time": 6.9, "name": "number_4" },
+					{ "time": 8.1, "name": "number_5" }
+				]
+			},
+			"roundel": {
+				"attachment": [
+					{ "name": null, "time": 0.0 }
+				]
+			},
+			"speech_bubble": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped", "time": 0.0 },
+					{ "time": 2.3667, "color": "ffffff00" },
+					{ "time": 2.6, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 9.5, "color": "ffffffff" },
+					{ "time": 9.6, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 2.4333, "angle": 0.0 },
+					{ "time": 2.8, "angle": -0.17 },
+					{ "time": 4.6, "angle": -1.01 },
+					{ "time": 6.4333, "angle": 0.0 }
+				],
+				"translate": [
+					{ "x": -3.39, "time": 0.0 },
+					{ "time": 2.4333, "y": -3.47 }
+				]
+			},
+			"numbers": {
+				"rotate": [
+					{ "time": 2.4333, "angle": 0.0 },
+					{ "time": 4.6, "angle": -1.01 },
+					{ "time": 6.4333, "angle": 0.0 }
+				]
+			},
+			"speech_bubble": {
+				"rotate": [
+					{ "time": 2.4333, "angle": 0.0 },
+					{ "time": 4.6, "angle": -1.01 },
+					{ "time": 6.4333, "angle": 0.0 }
+				],
+				"scale": [
+					{ "time": 10.4667, "x": 1.0, "y": 1.0 }
+				]
+			},
+			"roundel": {
+				"rotate": [
+					{ "time": 0.0, "angle": 0.0 },
+					{ "time": 0.3667, "angle": -0.17 },
+					{ "time": 2.1667, "angle": -1.01 },
+					{ "time": 4, "angle": 0.0 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.1667, "name": "vo_01_ari_001", "volume": 0.6 },
+			{ "time": 2.6667, "name": "vo_01_ari_002", "volume": 0.51 },
+			{ "time": 4.1667, "name": "vo_01_ari_003", "volume": 0.5 },
+			{ "time": 5.6333, "name": "vo_01_ari_004", "volume": 0.5 },
+			{ "time": 6.9, "name": "vo_01_ari_005", "volume": 0.49 },
+			{ "time": 8.0667, "name": "vo_01_ari_006", "volume": 0.5 },
+			{ "time": 9.4667, "name": "vo_01_ari_007", "volume": 0.5 }
+		]
+	}
+},
+"skins": {
+	"default": {
+		"number_1": {
+			"number_1": { "x": -3.24, "y": -6.05, "width": 60, "height": 215 },
+			"number_2": { "x": -1.03, "y": -0.06, "width": 117, "height": 197 },
+			"number_3": { "x": -1.03, "y": 0.77, "width": 127, "height": 207 },
+			"number_4": { "x": -0.21, "y": 0.77, "width": 126, "height": 209 },
+			"number_5": { "x": -0.21, "y": -0.06, "width": 131, "height": 204 }
+		},
+		"roundel": {
+			"roundel": { "x": 0.05, "y": 0.17, "width": 554, "height": 560 }
+		},
+		"speech_bubble": {
+			"speech_bubble": { "x": -16.44, "y": -59.29, "width": 592, "height": 482 }
+		}
+	}
+}
+}

@@ -1,0 +1,615 @@
+{
+"skeleton": { "hash": "pXvbxovdBmw0f2sJaBccZhn2iiQ", "spine": "3.8.11-beta", "x": -136, "y": -17, "width": 267, "height": 454.49 },
+"bones": [
+	{ "name": "RootBone" },
+	{ "name": "StalkTop", "parent": "RootBone", "x": -125.21, "y": 387.77 },
+	{ "name": "Stem", "parent": "RootBone", "length": 176.44, "rotation": 96.34, "x": -5.97, "y": 49.14 },
+	{ "name": "Leaf1", "parent": "Stem", "length": 82.62, "rotation": 30.35, "x": 1.43, "y": 1.15 },
+	{ "name": "Leaf2", "parent": "Stem", "length": 74.23, "rotation": -39.2, "x": -1.29, "y": 0.14 },
+	{ "name": "Leaf3", "parent": "Stem", "length": 103.61, "rotation": -14.27, "x": -2.15, "y": 4.16 },
+	{ "name": "Bell1", "parent": "Stem", "length": 69.77, "rotation": -157.39, "x": 364.94, "y": -79.76 },
+	{ "name": "Bell2", "parent": "Stem", "length": 59.77, "rotation": 172.41, "x": 375.84, "y": -16.93 },
+	{ "name": "Bell3", "parent": "Stem", "length": 63.44, "rotation": -175.72, "x": 337.25, "y": -34.86 },
+	{ "name": "Bell4", "parent": "Stem", "length": 62.74, "rotation": 146.56, "x": 316.02, "y": -2.44 },
+	{ "name": "Bell5", "parent": "Stem", "length": 67.75, "rotation": 169.26, "x": 286.18, "y": -12.19 },
+	{ "name": "Bell6", "parent": "Stem", "length": 67.06, "rotation": 164.74, "x": 241.86, "y": 24.1 },
+	{ "name": "Bell7", "parent": "Stem", "length": 78.47, "rotation": -179.69, "x": 216.75, "y": -25.39 },
+	{ "name": "Bud", "parent": "Stem", "length": 53.4, "rotation": -2.16, "x": 420.31, "y": -16.64 }
+],
+"slots": [
+	{ "name": "DirtSlot", "bone": "RootBone", "attachment": "DirtAtt" },
+	{ "name": "Leaf3", "bone": "Leaf3", "attachment": "Leaf3" },
+	{ "name": "Leaf2", "bone": "Leaf2", "attachment": "Leaf2" },
+	{ "name": "Leaf1", "bone": "Leaf1", "attachment": "Leaf1" },
+	{ "name": "StemClip", "bone": "StalkTop", "attachment": "StemClip" },
+	{ "name": "Bell5", "bone": "Bell5", "attachment": "Bell5" },
+	{ "name": "Stem", "bone": "Stem", "attachment": "Stem" },
+	{ "name": "Bell1", "bone": "Bell1", "attachment": "Bell1" },
+	{ "name": "Bell2", "bone": "Bell2", "attachment": "Bell2" },
+	{ "name": "Bell3", "bone": "Bell3", "attachment": "Bell3" },
+	{ "name": "Bell4", "bone": "Bell4", "attachment": "Bell4" },
+	{ "name": "Bell6", "bone": "Bell6", "attachment": "Bell6" },
+	{ "name": "Bell7", "bone": "Bell7", "attachment": "Bell7" },
+	{ "name": "Bud", "bone": "Bud", "attachment": "Bud" },
+	{ "name": "RootBone", "bone": "Stem", "attachment": "RootBone" }
+],
+"path": [
+	{
+		"name": "BudPath",
+		"order": 0,
+		"bones": [ "Bud" ],
+		"target": "RootBone"
+	}
+],
+"skins": {
+	"default": {
+		"Bell1": {
+			"Bell1": { "x": 37.42, "y": 8, "rotation": 61.05, "width": 70, "height": 90 }
+		},
+		"Bell2": {
+			"Bell2": { "x": 26.55, "y": 0.55, "rotation": 91.25, "width": 57, "height": 79 }
+		},
+		"Bell3": {
+			"Bell3": { "x": 33.28, "y": 2.48, "rotation": 79.38, "width": 60, "height": 80 }
+		},
+		"Bell4": {
+			"Bell4": { "x": 37.29, "y": -7.77, "rotation": 117.1, "width": 62, "height": 74 }
+		},
+		"Bell5": {
+			"Bell5": { "x": 35.35, "y": -5.12, "rotation": 94.4, "width": 61, "height": 84 }
+		},
+		"Bell6": {
+			"Bell6": { "x": 34.14, "y": -4.38, "rotation": 98.92, "width": 68, "height": 85 }
+		},
+		"Bell7": {
+			"Bell7": { "x": 41.17, "y": 0.4, "rotation": 83.35, "width": 73, "height": 95 }
+		},
+		"Bud": {
+			"Bud": { "x": 25.53, "y": 0.76, "rotation": -94.18, "width": 41, "height": 63 }
+		},
+		"DirtSlot": {
+			"DirtAtt": { "x": -2.5, "y": 25, "width": 267, "height": 84 }
+		},
+		"Leaf1": {
+			"Leaf1": { "x": 56.35, "y": 19.42, "rotation": -126.69, "width": 108, "height": 69 }
+		},
+		"Leaf2": {
+			"Leaf2": { "x": 56.26, "y": -20.47, "rotation": -57.14, "width": 97, "height": 74 }
+		},
+		"Leaf3": {
+			"Leaf3": { "x": 65.49, "y": -8.42, "rotation": -82.07, "width": 48, "height": 120 }
+		},
+		"RootBone": {
+			"RootBone": {
+				"type": "path",
+				"lengths": [ 94.44, 288.98, 382.13, 438.33, 827.65 ],
+				"vertexCount": 15,
+				"vertices": [ -29.36, 0.14, -2.6, -0.94, 25.48, -2.07, 49.08, -5.19, 91.76, -2.98, 147.82, -0.08, 231.08, 2.96, 286.15, -2.8, 329.61, -7.35, 357.22, -22.53, 367.92, -41.07, 378.21, -58.9, 370.09, -75.95, 349.77, -87.63, 337.54, -94.67 ]
+			}
+		},
+		"Stem": {
+			"Stem": { "x": 189.24, "y": -27.54, "rotation": -96.34, "width": 83, "height": 384 }
+		},
+		"StemClip": {
+			"StemClip": {
+				"type": "clipping",
+				"end": "Bell7",
+				"vertexCount": 4,
+				"vertices": [ -125.74, 129.15, 122.56, 130.69, 126.88, -359.02, -121.73, -362.72 ]
+			}
+		}
+	}
+},
+"animations": {
+	"IdleAnim": {},
+	"SproutAnim": {
+		"slots": {
+			"Bell1": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.9, "name": "Bell1" }
+				]
+			},
+			"Bell2": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1, "name": "Bell2" }
+				]
+			},
+			"Bell3": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1.0667, "name": "Bell3" }
+				]
+			},
+			"Bell4": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1.1333, "name": "Bell4" }
+				]
+			},
+			"Bell5": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1.2, "name": "Bell5" }
+				]
+			},
+			"Bell6": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1.2667, "name": "Bell6" }
+				]
+			},
+			"Bell7": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 1.3333, "name": "Bell7" }
+				]
+			},
+			"StemClip": {
+				"attachment": [
+					{ "time": 0, "name": "StemClip" }
+				]
+			}
+		},
+		"bones": {
+			"StalkTop": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": -481.42,
+						"curve": [ 0.249, 0, 0.627, 0.51 ]
+					},
+					{
+						"time": 0.7333,
+						"x": 0,
+						"y": -38.15,
+						"curve": [ 0.333, 0.33, 0.667, 0.67 ]
+					},
+					{
+						"time": 0.8667,
+						"x": 69.41,
+						"y": -26.41,
+						"curve": [ 0.333, 0.33, 0.667, 0.67 ]
+					},
+					{ "time": 0.9, "x": 143.93, "y": -26.41, "curve": "stepped" },
+					{ "time": 1.3333, "x": 143.93, "y": -26.41 }
+				]
+			},
+			"Bell1": {
+				"rotate": [
+					{
+						"time": 0.9,
+						"angle": 40.14,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.1,
+						"angle": -6.29,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.2,
+						"angle": 0.99,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.2667, "angle": -2.31 }
+				],
+				"scale": [
+					{
+						"time": 0.9,
+						"x": 0.545,
+						"y": 0.545,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1,
+						"x": 1.188,
+						"y": 1.188,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.1, "x": 1, "y": 1 }
+				]
+			},
+			"Bell2": {
+				"rotate": [
+					{ "time": 0, "angle": 32.91, "curve": "stepped" },
+					{
+						"time": 1,
+						"angle": 32.91,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.2,
+						"angle": -1.16,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.3333,
+						"angle": 4.59,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.4667, "angle": 1.69 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.195, "y": 0.195, "curve": "stepped" },
+					{
+						"time": 1,
+						"x": 0.195,
+						"y": 0.195,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.1,
+						"x": 1.122,
+						"y": 1.122,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.2, "x": 1, "y": 1 }
+				]
+			},
+			"Bell3": {
+				"rotate": [
+					{ "time": 0, "angle": 32.91, "curve": "stepped" },
+					{
+						"time": 1.0667,
+						"angle": 32.91,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.2667,
+						"angle": -1.16,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.4,
+						"angle": 4.59,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.5333, "angle": 1.69 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.195, "y": 0.195, "curve": "stepped" },
+					{
+						"time": 1.0667,
+						"x": 0.195,
+						"y": 0.195,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.1667,
+						"x": 1.122,
+						"y": 1.122,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.2667, "x": 1, "y": 1 }
+				]
+			},
+			"Bell4": {
+				"rotate": [
+					{
+						"time": 1.1333,
+						"angle": 32.91,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.3333,
+						"angle": -1.16,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.4667,
+						"angle": 4.59,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.6, "angle": 1.69 }
+				],
+				"scale": [
+					{
+						"time": 1.1333,
+						"x": 0.195,
+						"y": 0.195,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.2333,
+						"x": 1.122,
+						"y": 1.122,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.3333, "x": 1, "y": 1 }
+				]
+			},
+			"Bell5": {
+				"rotate": [
+					{
+						"time": 1.2,
+						"angle": 32.91,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.4,
+						"angle": -1.16,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.5333,
+						"angle": 4.59,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.6667, "angle": 1.69 }
+				],
+				"scale": [
+					{
+						"time": 1.2,
+						"x": 0.195,
+						"y": 0.195,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.3,
+						"x": 1.122,
+						"y": 1.122,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.4, "x": 1, "y": 1 }
+				]
+			},
+			"Bell6": {
+				"rotate": [
+					{
+						"time": 1.2667,
+						"angle": 32.91,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.4667,
+						"angle": -1.16,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.6,
+						"angle": 4.59,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.7333, "angle": 1.69 }
+				],
+				"scale": [
+					{
+						"time": 1.2667,
+						"x": 0.195,
+						"y": 0.195,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.3667,
+						"x": 1.122,
+						"y": 1.122,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.4667, "x": 1, "y": 1 }
+				]
+			},
+			"Bell7": {
+				"rotate": [
+					{
+						"time": 1.3333,
+						"angle": 32.91,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.5333,
+						"angle": -1.16,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.6667,
+						"angle": 4.59,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.8, "angle": 1.69 }
+				],
+				"scale": [
+					{
+						"time": 1.3333,
+						"x": 0.195,
+						"y": 0.195,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.4333,
+						"x": 1.122,
+						"y": 1.122,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.5333, "x": 1, "y": 1 }
+				]
+			},
+			"Leaf1": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": -60.59,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.3333,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.4,
+						"angle": -6.31,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.5,
+						"angle": -1.71,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.6333, "angle": -4.65 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.3333, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{
+						"time": 0.1667,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.3333, "x": 1, "y": 1 }
+				]
+			},
+			"Leaf2": {
+				"rotate": [
+					{
+						"time": 0.2667,
+						"angle": 73.64,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.4667,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.5333,
+						"angle": 4.02,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.6,
+						"angle": -0.03,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.6667, "angle": 3.2 }
+				],
+				"translate": [
+					{ "time": 0.4667, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{
+						"time": 0.2667,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.4667, "x": 1, "y": 1 }
+				]
+			},
+			"Leaf3": {
+				"rotate": [
+					{
+						"time": 0.3667,
+						"angle": 27.21,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.5333,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.6,
+						"angle": 2.53,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.6667,
+						"angle": 1.07,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.7667, "angle": 2.61 }
+				],
+				"translate": [
+					{ "time": 0.5333, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{
+						"time": 0.3667,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.5333, "x": 1, "y": 1 }
+				]
+			},
+			"Bud": {
+				"scale": [
+					{
+						"time": 0,
+						"x": 0.19,
+						"y": 0.19,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.5, "x": 0.999, "y": 0.999, "curve": "stepped" },
+					{
+						"time": 0.6667,
+						"x": 0.999,
+						"y": 0.999,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.8333, "x": 0.584, "y": 0.584 }
+				]
+			},
+			"Stem": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{
+						"time": 0.1333,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.6667,
+						"angle": 1.61,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.9333,
+						"angle": -0.08,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.0667,
+						"angle": 2.94,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.1667,
+						"angle": 1.72,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.2667, "angle": 2.54 }
+				]
+			}
+		},
+		"paths": {
+			"BudPath": {
+				"position": [
+					{
+						"time": 0.0667,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.8667, "position": 0.9604 }
+				]
+			}
+		},
+		"drawOrder": [
+			{
+				"time": 0.8667,
+				"offsets": [
+					{ "slot": "Bud", "offset": -6 }
+				]
+			}
+		]
+	}
+}
+}

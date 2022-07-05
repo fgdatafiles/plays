@@ -1,0 +1,249 @@
+{
+"skeleton": { "hash": "E5Tv5s2ojoXwSQ8D4K7CMGCwpos", "spine": "3.8.11-beta", "x": -244, "y": -11, "width": 383, "height": 311 },
+"bones": [
+	{ "name": "root" },
+	{ "name": "AntBody", "parent": "root", "length": 47.59, "rotation": -176.58, "x": 33.87, "y": 80.92 },
+	{ "name": "AntFront", "parent": "AntBody", "length": 63.73, "rotation": -35.69, "x": 47.59 },
+	{ "name": "LeafObserve", "parent": "AntFront", "length": 237.86, "rotation": -17.2, "x": 61.78, "y": 0.44 },
+	{ "name": "AntTail", "parent": "AntBody", "length": 79.93, "rotation": 151.38, "x": 0.92, "y": 3.5 },
+	{ "name": "LegsFront", "parent": "root", "length": 68.18, "rotation": -73.07, "x": 9.05, "y": 65.33 },
+	{ "name": "LegsBack", "parent": "root", "length": 54.82, "rotation": -84.81, "x": 2.67, "y": 64.62 }
+],
+"slots": [
+	{ "name": "Shadow", "bone": "root", "attachment": "Shadow" },
+	{ "name": "LegsBack", "bone": "LegsBack", "attachment": "LegsBack" },
+	{ "name": "AntTail", "bone": "AntTail", "attachment": "AntTail" },
+	{ "name": "AntBody", "bone": "AntBody", "attachment": "AntBody" },
+	{ "name": "AntHead", "bone": "AntFront", "attachment": "AntHead" },
+	{ "name": "LegsFront", "bone": "LegsFront", "attachment": "LegsFront" },
+	{ "name": "LeafObserve", "bone": "LeafObserve", "attachment": "LeafObserve" },
+	{ "name": "AntFront", "bone": "AntFront", "attachment": "AntFront" }
+],
+"skins": {
+	"default": {
+		"AntBody": {
+			"AntBody": { "x": 34.32, "y": -18.65, "rotation": 176.58, "width": 207, "height": 129 }
+		},
+		"AntFront": {
+			"AntFront": { "x": 57.64, "y": 3.99, "rotation": -147.72, "width": 71, "height": 93 }
+		},
+		"AntHead": {
+			"AntHead": { "x": 47.87, "y": -3.96, "rotation": -147.72, "width": 130, "height": 148 }
+		},
+		"AntTail": {
+			"AntTail": { "x": 23.28, "y": 8.88, "rotation": 25.2, "width": 100, "height": 93 }
+		},
+		"LeafObserve": {
+			"LeafObserve": { "x": 58.55, "y": 14.94, "rotation": -130.53, "width": 257, "height": 309 }
+		},
+		"LegsBack": {
+			"LegsBack": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 1, 6, 69.18, 80.4, 1, 1, 6, 55.06, -74.96, 1, 1, 1, 101.16, 1.9, 1, 1, 6, -0.53, 86.73, 1 ],
+				"hull": 4
+			}
+		},
+		"LegsFront": {
+			"LegsFront": {
+				"type": "mesh",
+				"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+				"triangles": [ 1, 2, 3, 1, 3, 0 ],
+				"vertices": [ 1, 5, 94.22, 85.21, 1, 1, 5, 47.05, -69.77, 1, 1, 1, 78.26, 4.27, 1, 1, 1, -83.45, 13.92, 1 ],
+				"hull": 4
+			}
+		},
+		"Shadow": {
+			"Shadow": { "x": 9, "y": 6, "width": 260, "height": 34 }
+		}
+	}
+},
+"animations": {
+	"AntSingle": {
+		"slots": {
+			"LeafObserve": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"AntTail": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.9667,
+						"angle": 15.54,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 2,
+						"angle": 0.96,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 2.2667,
+						"angle": 15.43,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 3.4333,
+						"angle": 7.88,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 3.4667,
+						"angle": 0.77,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 3.7333,
+						"angle": 14.68,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 4, "angle": 0 }
+				]
+			},
+			"AntBody": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 2.3333,
+						"angle": -3.42,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 4, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 4, "x": 0, "y": 0 }
+				]
+			},
+			"AntFront": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 13.47,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.6667,
+						"angle": 12.65,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 2.6333,
+						"angle": 11.88,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 4, "angle": 13.47 }
+				]
+			},
+			"LeafObserve": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 4, "angle": 0 }
+				]
+			}
+		}
+	},
+	"AntFood": {
+		"bones": {
+			"AntTail": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.9667,
+						"angle": 15.54,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 2,
+						"angle": 0.96,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 2.2667,
+						"angle": 15.43,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 3.4333,
+						"angle": 7.88,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 3.4667,
+						"angle": 0.77,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 3.7333,
+						"angle": 14.68,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 4, "angle": 0 }
+				]
+			},
+			"AntBody": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 2.3333,
+						"angle": -3.42,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 4, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 4, "x": 0, "y": 0 }
+				]
+			},
+			"AntFront": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 13.47,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.6667,
+						"angle": 12.65,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 2.6333,
+						"angle": 11.88,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 4, "angle": 13.47 }
+				]
+			},
+			"LeafObserve": {
+				"rotate": [
+					{ "time": 0, "angle": 0, "curve": "stepped" },
+					{ "time": 4, "angle": 0 }
+				]
+			}
+		}
+	}
+}
+}

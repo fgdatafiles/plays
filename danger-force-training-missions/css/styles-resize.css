@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+body {
+  text-align: center;
+  margin: 0;
+  background: white;
+  color: #404040;
+  font-family: sans-serif;
+  font-size: 8pt;
+}
+
+html {
+  overflow: hidden;
+  }
+  html, body {
+  height: 100%;
+  }
+
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+#content-resize {
+  height: 100%;
+  width: 100%;
+  margin: inherit;
+  box-shadow: none;
+}
+
+/* A tiny animation to show during the initial load. */
+#spinner {
+  background: url(../spinner.gif);
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 32px; height: 32px;
+  margin-left: -16px; margin-top: -16px;
+}
+
+/* On small devices, fill the entire screen and hide the rest of the page. */
+@media (max-device-width: 8in), (max-device-height: 8in) {
+  html {
+	overflow: hidden;
+  }
+  html, body {
+	height: 100%;
+  }
+  #content {
+	height: 100%;
+	width: 100%;
+	margin: inherit;
+	box-shadow: none;
+  }
+  .no-mobile {
+	display: none;
+  }
+}

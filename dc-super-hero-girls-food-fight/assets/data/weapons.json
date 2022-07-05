@@ -1,0 +1,120 @@
+{
+    "weapons":{
+        "basic":{"ammo":null, "powerUp":false, "projectileAmount":[1], "projectiles":[
+            {"images":["burger", "cupcake1", "cupcake2", "doughnut1", "doughnut2", "tomato", "sandwich"], "weight":[0.3, 0.4], "xSpeed":[0.2, 0.3], "ySpeed":[0.2, 0.3], "damage":[0.4], "bounce":0, "persistent":false, "incapacitate":false, "shockRadius":0, "audio":{"onSplat":["sfx_food_splat_soft_01", "sfx_food_splat_sloppy_01", "sfx_food_splat_wet_06", "sfx_food_splat_dry_04", "sfx_food_splat_dry_03"]}}    
+        ]},
+        "sweets":{"ammo":6, "powerUp":true, "image":"powerup_candybag", "projectileAmount":[5, 8], "projectiles":[
+            {"images":["candy1", "candy2", "candy3", "candy4", "candy5", "candy6", "candy7", "candy8", "candy9"], "weight":[0.4, 0.6], "xSpeed":[0.1, 0.2], "ySpeed":[0.2, 0.3], "damage":[0.2], "bounce":1, "persistent":false, "incapacitate":false, "shockRadius":0, "audio":{"onBounce":"bounce", "onSplat":"dry"}}    
+        ]},
+        "yoghurt":{"ammo":4, "powerUp":true, "image":"powerup_yogurtpack", "projectileAmount":[1], "projectiles":[
+            {"images":["yoghurt"], "weight":[0.7, 0.8], "xSpeed":[0.16, 0.2], "ySpeed":[0.7, 0.8], "damage":[2], "bounce":0, "persistent":false, "incapacitate":false, "shockRadius":200, "particles":{"onSplat":{"json":"particle_splat_yoghurt", "images":["yoghurt_00", "yoghurt_01", "yoghurt_02", "yoghurt_03", "yoghurt_04"]}}, "audio":{"onSplat":"wet"}}    
+        ]},
+        "banana":{"ammo":5, "powerUp":true, "image":"powerup_bunch", "projectileAmount":[1], "projectiles":[
+            {"images":["banana1", "banana4", "banana5"], "weight":[0.7, 0.8], "xSpeed":[0.16, 0.2], "ySpeed":[0.7, 0.8], "damage":[1], "bounce":0, "persistent":{"images":["banana2", "banana3"], "timeLimit":null, "damage":0, "incapacitate":true}, "incapacitate":false, "shockRadius":0, "audio":{"onSplat":["sfx_food_banana_land_01", "sfx_food_banana_land_02", "sfx_food_banana_land_03"]}}    
+        ]},
+        "pizza":{"ammo":3, "powerUp":true, "image":"powerup_pizza", "projectileAmount":[4], "projectiles":[
+            {"images":["pizza"], "weight":[0], "xSpeed":[0.15, 0.25], "ySpeed":[-0.4, 0.4], "damage":[0.9], "bounce":0, "persistent":false, "incapacitate":false, "shockRadius":0, "audio":{"onSplat":"soft"}}    
+        ]},
+        "icecream":{"ammo":3, "powerUp":true, "image":"powerup_ice_cream_tub", "projectileAmount":[3], "projectiles":[
+            {"images":["icecreamvan"], "weight":[1, 1.1], "xSpeed":[0.17], "ySpeed":[0.6, 0.7], "damage":[1.3], "bounce":0, "persistent":false, "incapacitate":false, "shockRadius":100, "particles":{"onSplat":{"json":"particle_splat_yoghurt", "images":["icecream_vanilla_00", "icecream_vanilla_01", "icecream_vanilla_02", "icecream_vanilla_03", "icecream_vanilla_04"]}}, "audio":{"onSplat":"sloppy"}},    
+            {"images":["icecreamstraw"], "weight":[0.9, 1], "xSpeed":[0.19], "ySpeed":[0.8, 0.9], "damage":[1.3], "bounce":0, "persistent":false, "incapacitate":false, "shockRadius":100, "particles":{"onSplat":{"json":"particle_splat_yoghurt", "images":["icecream_strawberry_00", "icecream_strawberry_01", "icecream_strawberry_02", "icecream_strawberry_03", "icecream_strawberry_04"]}}, "audio":{"onSplat":"sloppy"}},    
+            {"images":["icecreamchoc"], "weight":[0.9, 1], "xSpeed":[0.21], "ySpeed":[1, 1.1], "damage":[1.3], "bounce":0, "persistent":false, "incapacitate":false, "shockRadius":100, "particles":{"onSplat":{"json":"particle_splat_yoghurt", "images":["icecream_chocolate_00", "icecream_chocolate_01", "icecream_chocolate_02", "icecream_chocolate_03", "icecream_chocolate_04"]}}, "audio":{"onSplat":"sloppy"}}    
+        ]},
+        "broccoli":{"ammo":3, "powerUp":true, "image":"powerup_bowl_broccoli", "projectileAmount":[5], "projectiles":[
+            {"images":["broccoli"], "weight":[0.9], "xSpeed":[0.21], "ySpeed":[1.1], "damage":[0.2, 0.4], "bounce":0, "persistent":false, "incapacitate":false, "shockRadius":0, "audio":{"onSplat":"soft"}},  
+            {"images":["broccoli"], "weight":[0.95], "xSpeed":[0.20], "ySpeed":[1], "damage":[0.2, 0.4], "bounce":0, "persistent":false, "incapacitate":false, "shockRadius":0, "audio":{"onSplat":"soft"}},  
+            {"images":["broccoli"], "weight":[1], "xSpeed":[0.19], "ySpeed":[0.9], "damage":[0.2, 0.4], "bounce":0, "persistent":false, "incapacitate":false, "shockRadius":0, "audio":{"onSplat":"soft"}},    
+            {"images":["broccoli"], "weight":[1.05], "xSpeed":[0.18], "ySpeed":[0.8], "damage":[0.2, 0.4], "bounce":0, "persistent":false, "incapacitate":false, "shockRadius":0, "audio":{"onSplat":"soft"}},    
+            {"images":["broccoli"], "weight":[1.1], "xSpeed":[0.17], "ySpeed":[0.7], "damage":[0.2, 0.4], "bounce":0, "persistent":false, "incapacitate":false, "shockRadius":0, "audio":{"onSplat":"soft"}}    
+        ]},
+        "chips":{"ammo":10, "powerUp":true, "image":"powerup_fries", "projectileAmount":[3], "projectiles":[
+            {"images":["chip1", "chip2", "chip3", "chip4"], "weight":[0], "xSpeed":[0.35, 0.47], "ySpeed":[0], "setRotation":125, "damage":[0.3], "bounce":0, "persistent":false, "incapacitate":false, "shockRadius":0, "audio":{"onSplat":"dry"}},    
+            {"images":["chip1", "chip2", "chip3", "chip4"], "weight":[0], "xSpeed":[0.35, 0.47], "ySpeed":[0.2], "setRotation":70, "damage":[0.3], "bounce":0, "persistent":false, "incapacitate":false, "shockRadius":0, "audio":{"onSplat":"dry"}},  
+            {"images":["chip1", "chip2", "chip3", "chip4"], "weight":[0], "xSpeed":[0.35, 0.47], "ySpeed":[-0.2], "setRotation":150, "damage":[0.3], "bounce":0, "persistent":false, "incapacitate":false, "shockRadius":0, "audio":{"onSplat":"dry"}}    
+        ]},
+        "cake":{"ammo":6, "powerUp":true, "image":"powerup_cake_strawberry", "projectileAmount":[1], "projectiles":[
+            {"images":["cakeslice"], "weight":[1, 1.1], "xSpeed":[0.13, 0.16], "ySpeed":[0.8, 1.5], "damage":[1.6], "bounce":0, "persistent":false, "incapacitate":false, "shockRadius":150, "particles":{"onSplat":{"json":"particle_splat_yoghurt", "images":[" cream_cake_00", " cream_cake_01", " cream_cake_02", " cream_cake_03", " cream_cake_04"]}}, "audio":{"onSplat":"sloppy"}}    
+        ]},
+        "eggs":{"ammo":6, "powerUp":true, "image":"powerup_eggs6x", "projectileAmount":[1], "projectiles":[
+            {"images":["egg1", "egg2", "egg3"], "weight":[1, 1.2], "xSpeed":[0.1, 0.14], "ySpeed":[1.4, 1.7], "damage":[1.7], "bounce":0, "persistent":false, "incapacitate":false, "shockRadius":200, "particles":{"onSplat":{"json":"particle_splat_yoghurt", "images":["egg_00", "egg_01", "egg_02", "egg_03", "egg_04"]}}, "audio":{"onSplat":"wet"}}    
+        ]},
+        "pancake":{"ammo":6, "powerUp":true, "image":"food_pancakes1", "projectileAmount":[1], "projectiles":[
+            {"images":["pancake1", "pancake2"], "weight":[0], "xSpeed":[0.3, 0.32], "xSpeedMod":-0.14, "setRotation":0, "ySpeed":[-0.1, -0.15], "damage":[1.3], "bounce":0, "persistent":false, "incapacitate":false, "shockRadius":0, "audio":{"onSplat":"soft"}}    
+        ]},
+        "taco":{"ammo":6, "powerUp":true, "image":"powerup_tacoboard", "projectileAmount":[1], "projectiles":[
+            {"images":["taco"], "weight":[0], "xSpeed":[0.55, 0.57], "xSpeedMod":-0.37, "ySpeed":[0.1, 0.15], "damage":[1.3], "bounce":0, "persistent":false, "incapacitate":false, "shockRadius":0, "audio":{"onSplat":"soft"}}    
+        ]},
+        "grapes":{"ammo":6, "powerUp":true, "image":"powerup_grapes_bunch", "projectileAmount":[5, 8], "projectiles":[
+            {"images":["grape1", "grape2", "grape3"], "weight":[0.4, 0.6], "xSpeed":[0.1, 0.2], "ySpeed":[0.4, 0.5], "damage":[0.2], "bounce":1.2, "persistent":false, "incapacitate":false, "shockRadius":0, "audio":{"onBounce":"bounce", "onSplat":"soft"}}    
+        ]},
+        "carrots":{"ammo":10, "powerUp":true, "image":"powerup_carrots1", "projectileAmount":[3], "projectiles":[
+            {"images":["carrot"], "weight":[0], "aimAtFighter":0.17, "setRotation":120, "damage":[0.7], "bounce":0, "persistent":false, "incapacitate":false, "shockRadius":0, "audio":{"onSplat":["sfx_food_carrot_01", "sfx_food_carrot_02", "sfx_food_carrot_03"]}}   
+        ]},
+        "breadroll":{"ammo":3, "powerUp":true, "image":"powerup_basket_with_rolls", "projectileAmount":[1], "projectiles":[
+            {"images":["bread1", "bread2", "bread3", "bread4"], "weight":[0.4, 0.6], "xSpeed":[0.1, 0.2], "ySpeed":[0.4, 0.5], "damage":[1.8], "bounceOffWalls":true, "bounceOffFighters":true, "bounce":1, "persistent":false, "incapacitate":true, "shockRadius":180, "flashTint":"f93602", "particles":{"onSplat":{"json":"particle_flour_bomb", "images":["flour_00", "flour_01", "flour_02"]}}, "shake":0.4, "audio":{"onBounce":"dry", "onSplat":["sfx_food_flour_explode_00"]}}    
+        ]},
+        "chicken":{"ammo":1, "powerUp":true, "image":"powerup_whole_chicken copy", "projectileAmount":[2], "projectiles":[
+            {"images":["chicken"], "weight":[0.4, 0.6], "xSpeed":[0.1, 0.2], "ySpeed":[0.6, 0.7], "damage":[1.5], "bounceOffWalls":true, "bounceOffFighters":false, "bounce":1, "persistent":false, "incapacitate":false, "shockRadius":0, "audio":{"onSplat":"dry"}}    
+        ]},
+        "flour":{"ammo":1, "powerUp":true, "image":"powerup_flour1", "projectileAmount":[1], "projectiles":[
+            {"images":["flour"], "weight":[0.8, 0.9], "xSpeed":[0.15, 0.16], "ySpeed":[1.4, 1.5], "damage":[3], "bounce":0, "persistent":false, "incapacitate":true, "shockRadius":300, "particles":{"onSplat":{"json":"particle_flour_bomb", "images":["flour_00", "flour_01", "flour_02"]}, "inAir":{"json":"particle_flour_trail", "images":["flour_00", "flour_01", "flour_02"]}}, "shake":0.7, "audio":{"onSplat":["sfx_food_flour_explode_00"]}}    
+        ]}
+    },
+    "images":{
+        "banana1":{"throw":"food_banana1", "splat":"food_pizza2", "scale":1.4},
+        "banana2":{"throw":"food_banana2", "splat":"food_pizza2", "scale":1.4},
+        "banana3":{"throw":"food_banana3", "splat":"food_pizza2", "scale":1.4},
+        "banana4":{"throw":"food_banana4", "splat":"food_pizza2", "scale":1.4},
+        "banana5":{"throw":"food_banana5", "splat":"food_pizza2", "scale":1.4},
+        "bread1":{"throw":"food_bread1", "splat":"food_bread_splat_1", "scale":1.4},
+        "bread2":{"throw":"food_bread2", "splat":"food_bread_splat_2", "scale":1.4},
+        "bread3":{"throw":"food_bread3", "splat":"food_bread_splat_3", "scale":1.4},
+        "bread4":{"throw":"food_bread4", "splat":"food_bread_splat_4", "scale":1.4},
+        "broccoli":{"throw":"food_broccoli_florets", "splat":"food_broccoli_splat", "scale":1.4},
+        "burger":{"throw":"food_burger1", "splat":"food_burger2", "scale":1},
+        "cakeslice":{"throw":"food_cake_slice", "splat":"food_cake_splat", "scale":1.2},
+        "candy1":{"throw":"food_candy1", "splat":"food_candy10", "scale":0.9},
+        "candy2":{"throw":"food_candy2", "splat":"food_candy10", "scale":0.9},
+        "candy3":{"throw":"food_candy3", "splat":"food_candy10", "scale":0.9},
+        "candy4":{"throw":"food_candy4", "splat":"food_candy10", "scale":0.9},
+        "candy5":{"throw":"food_candy5", "splat":"food_candy10", "scale":0.9},
+        "candy6":{"throw":"food_candy6", "splat":"food_candy10", "scale":0.9},
+        "candy7":{"throw":"food_candy7", "splat":"food_candy10", "scale":0.9},
+        "candy8":{"throw":"food_candy8", "splat":"food_candy10", "scale":0.9},
+        "candy9":{"throw":"food_candy9", "splat":"food_candy10", "scale":0.9},
+        "carrot":{"throw":"food_carrot", "splat":"food_carrots_splat", "scale":1},
+        "chicken":{"throw":"food_chicken_drunstick copy", "splat":"food_chicken_splat", "scale":1.3},
+        "chip1":{"throw":"food_fries1", "splat":"food_fries_splat", "scale":1.3},
+        "chip2":{"throw":"food_fries2", "splat":"food_fries_splat", "scale":1.3},
+        "chip3":{"throw":"food_fries3", "splat":"food_fries_splat", "scale":1.3},
+        "chip4":{"throw":"food_fries4", "splat":"food_fries_splat", "scale":1.3},
+        "cupcake1":{"throw":"food_cupcake1_1", "splat":"food_cupcake1_2", "scale":1},
+        "cupcake2":{"throw":"food_cupcake2_1", "splat":"food_cupcake2_2", "scale":1},
+        "egg1":{"throw":"food_egg", "splat":"food_eggs_splat", "scale":1},
+        "egg2":{"throw":"food_egg-1", "splat":"food_eggs_splat", "scale":1},
+        "egg3":{"throw":"food_egg3", "splat":"food_eggs_splat", "scale":1},
+        "doughnut1":{"throw":"food_doughnut1_1", "splat":"food_doughnut1_2", "scale":1},
+        "doughnut2":{"throw":"food_doughnut2_1", "splat":"food_doughnut2_2", "scale":1},
+        "grape1":{"throw":"food_grapes1", "splat":"food_grapes_splat", "scale":1},
+        "grape2":{"throw":"food_grapes2", "splat":"food_grapes_splat", "scale":1},
+        "grape3":{"throw":"food_grapes3", "splat":"food_grapes_splat", "scale":1},
+        "flour":{"throw":"food_flour_bomb1", "splat":"food_flour_splat_1", "scale":1.5},
+        "icecreamchoc":{"throw":"food_icecream_scoop1", "splat":"food_choc_icecream_splat", "scale":1},
+        "icecreamstraw":{"throw":"food_icecream_scoop2", "splat":"food_strawberry_icecream_splat", "scale":1},
+        "icecreamvan":{"throw":"food_icecream_scoop3", "splat":"food_vanilla_icecream_splat", "scale":1},
+        "pancake1":{"throw":"food_pancake1", "splat":"food_pancakes2", "scale":1.4},
+        "pancake2":{"throw":"food_pancake2", "splat":"food_pancakes2", "scale":1.4},
+        "pizza":{"throw":"food_pizza1", "splat":"food_pizza2", "scale":1},
+        "sandwich":{"throw":"food_sandwich", "splat":"food_pancakes2", "scale":1},
+        "tomato":{"throw":"food_tomato1", "splat":"food_burger2", "scale":1},
+        "taco":{"throw":"food_taco_single", "splat":"food_taco_splat", "scale":1.3},
+        "yoghurt":{"throw":"food_yogurt1", "splat":"food_yogurt3", "scale":1}
+    },
+    "sounds":{
+        "bounce":["sfx_food_splat_dry_03", "sfx_food_splat_dry_04"],
+        "dry":["sfx_food_splat_dry_00", "sfx_food_splat_dry_01", "sfx_food_splat_dry_02", "sfx_food_splat_dry_03", "sfx_food_splat_dry_04", "sfx_food_splat_dry_05"],
+        "sloppy":["sfx_food_splat_sloppy_00", "sfx_food_splat_sloppy_01", "sfx_food_splat_sloppy_02", "sfx_food_splat_sloppy_03", "sfx_food_splat_sloppy_04", "sfx_food_splat_sloppy_05"],
+        "soft":["sfx_food_splat_soft_00", "sfx_food_splat_soft_01", "sfx_food_splat_soft_02", "sfx_food_splat_soft_03", "sfx_food_splat_soft_04", "sfx_food_splat_soft_05"],
+        "wet":["sfx_food_splat_wet_00", "sfx_food_splat_wet_00", "sfx_food_splat_wet_02", "sfx_food_splat_wet_03", "sfx_food_splat_wet_04", "sfx_food_splat_wet_05", "sfx_food_splat_wet_06"]
+    }
+}

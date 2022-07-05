@@ -1,0 +1,247 @@
+{
+"skeleton": {
+	"hash": "3ZNuFXNxm9fcSQHqr19rhe02vww",
+	"spine": "3.8.97",
+	"x": -467.21,
+	"y": 0.34,
+	"width": 690,
+	"height": 720,
+	"images": "./assets/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "size", "parent": "root" },
+	{ "name": "owl", "parent": "size", "length": 49.73, "rotation": 90.07, "x": -29.53, "y": 312.95 },
+	{ "name": "head", "parent": "owl", "length": 12.59, "rotation": 6.11, "x": 84.08, "y": -0.84 },
+	{ "name": "eyeballs", "parent": "head", "rotation": -93.75, "x": 31.5, "y": 0.08 },
+	{ "name": "blink", "parent": "head", "length": 16.94, "rotation": -96.81, "x": 34.78, "y": 45.54 },
+	{ "name": "overlay", "parent": "owl", "rotation": -89.33, "x": 152.35, "y": 1.92 },
+	{ "name": "beak", "parent": "head", "x": 16.17, "y": 1.86 },
+	{ "name": "wing", "parent": "owl", "length": 24.51, "rotation": 169.17, "x": 91.7, "y": 24.34 },
+	{ "name": "wing2", "parent": "owl", "length": 20.7, "rotation": -179.52, "x": 88.61, "y": -26.16 }
+],
+"slots": [
+	{ "name": "tree_hole", "bone": "root", "attachment": "tree_hole" },
+	{ "name": "wing_back", "bone": "wing", "attachment": "wing_back" },
+	{ "name": "open", "bone": "head", "attachment": "open" },
+	{ "name": "EyeBalls", "bone": "eyeballs", "attachment": "EyeBalls" },
+	{ "name": "closed", "bone": "blink", "attachment": "closed" },
+	{ "name": "owl_body", "bone": "owl", "attachment": "body" },
+	{ "name": "head", "bone": "head", "attachment": "head" },
+	{ "name": "wing_front", "bone": "wing2", "attachment": "wing_front" },
+	{ "name": "beak_open", "bone": "beak", "attachment": "beak_open" },
+	{ "name": "overlay", "bone": "overlay", "attachment": "overlay" },
+	{ "name": "tree_owl", "bone": "size", "attachment": "tree_owl" }
+],
+"animations": {
+	"day": {
+		"bones": {
+			"overlay": {
+				"translate": [
+					{ "x": 1.04, "y": 0.01, "time": 0.0 }
+				]
+			}
+		}
+	},
+	"day2night": {
+		"slots": {
+			"overlay": {
+				"color": [
+					{
+						"time": 0.5,
+						"color": "ffffffff",
+						"curve": [ 0.5709999799728394, 0.17000000178813934, 0.5009999871253967, 1.0 ]
+					},
+					{ "time": 1, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"overlay": {
+				"translate": [
+					{ "x": 1.04, "y": 0.01, "time": 0.0 }
+				]
+			}
+		}
+	},
+	"night": {
+		"slots": {
+			"beak_open": {
+				"attachment": [
+					{ "name": null, "time": 0.0 }
+				]
+			},
+			"closed": {
+				"attachment": [
+					{ "name": null, "time": 0.0 },
+					{ "time": 0.0667, "name": "closed" },
+					{ "time": 0.2333, "name": null },
+					{ "time": 2.5, "name": "closed" },
+					{ "time": 2.6667, "name": null },
+					{ "time": 5.5, "name": "closed" },
+					{ "time": 5.6667, "name": null },
+					{ "time": 8.4667, "name": "closed" },
+					{ "time": 8.6333, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"overlay": {
+				"translate": [
+					{ "x": 1.04, "y": 0.01, "time": 0.0 }
+				]
+			},
+			"eyeballs": {
+				"translate": [
+					{ "time": 2.6 },
+					{ "time": 2.7667, "x": 0.04, "y": -3.17, "curve": "stepped" },
+					{ "time": 4.8667, "x": 0.04, "y": -3.17 },
+					{ "time": 5.1333, "x": -0.03, "y": 2.22, "curve": "stepped" },
+					{ "time": 7.1667, "x": -0.03, "y": 2.22 },
+					{ "time": 7.8, "x": 0.04, "y": -3.17, "curve": "stepped" },
+					{ "time": 9.7, "x": 0.04, "y": -3.17 },
+					{ "time": 9.9333 }
+				]
+			},
+			"owl": {
+				"translate": [
+					{ "time": 10 }
+				]
+			}
+		},
+		"drawOrder": [
+			{
+				"offsets": [
+					{ "slot": "overlay", "offset": -9, "time": 0.0 }
+				],
+				"time": 0.0
+			}
+		]
+	},
+	"tap": {
+		"slots": {
+			"beak_open": {
+				"attachment": [
+					{ "name": null, "time": 0.0 },
+					{ "time": 0.3667, "name": "beak_open" },
+					{ "time": 1.3333, "name": null }
+				]
+			},
+			"closed": {
+				"attachment": [
+					{ "name": null, "time": 0.0 },
+					{ "time": 0.3667, "name": "closed" },
+					{ "time": 1.0333, "name": null }
+				]
+			},
+			"overlay": {
+				"attachment": [
+					{ "name": null, "time": 0.0 }
+				]
+			}
+		},
+		"bones": {
+			"overlay": {
+				"translate": [
+					{ "x": 1.04, "y": 0.01, "time": 0.0 }
+				]
+			},
+			"owl": {
+				"rotate": [
+					{ "time": 0.0, "angle": 0.0 },
+					{ "time": 0.3667, "angle": 2.08, "curve": "stepped" },
+					{ "time": 1.3333, "angle": 2.08 },
+					{ "time": 1.5667, "angle": -1.38 },
+					{ "time": 1.7667, "angle": 3.4 },
+					{ "time": 1.9667, "angle": -4.86 },
+					{ "time": 2.1667, "angle": 0.0 }
+				]
+			},
+			"beak": {
+				"rotate": [
+					{ "angle": -0.07, "time": 0.0 },
+					{ "time": 0.3667, "angle": 0.0 }
+				],
+				"translate": [
+					{ "time": 0.0 },
+					{ "time": 0.3667, "x": -0.01, "y": -0.05, "curve": "stepped" },
+					{ "time": 1.3333, "x": -0.01, "y": -0.05 },
+					{ "time": 1.5667, "x": -0.02, "y": -0.17 }
+				]
+			},
+			"head": {
+				"rotate": [
+					{ "time": 0.0, "angle": 0.0 },
+					{ "time": 0.3667, "angle": -8.97, "curve": "stepped" },
+					{ "time": 1.3333, "angle": -8.97 },
+					{ "time": 1.5667, "angle": 0.0 },
+					{ "time": 1.7667, "angle": -7.71 },
+					{ "time": 1.9667, "angle": 3.63 },
+					{ "time": 2.1667, "angle": 0.0 }
+				]
+			},
+			"wing": {
+				"translate": [
+					{ "time": 0.0 },
+					{ "time": 0.3667, "x": 4.78, "y": 0.2 },
+					{ "time": 1.5667 }
+				]
+			},
+			"wing2": {
+				"translate": [
+					{ "time": 0.0 },
+					{ "time": 0.3667, "x": 2.02, "y": 0.02 },
+					{ "time": 1.5667 }
+				]
+			}
+		},
+		"drawOrder": [
+			{
+				"offsets": [
+					{ "slot": "overlay", "offset": -9, "time": 0.0 }
+				],
+				"time": 0.0
+			}
+		]
+	}
+},
+"skins": {
+	"default": {
+		"EyeBalls": {
+			"EyeBalls": { "x": -0.06, "y": 0.12, "width": 28, "height": 11 }
+		},
+		"beak_open": {
+			"beak_open": { "x": 6.62, "y": -1.38, "rotation": -96.18, "width": 13, "height": 19 }
+		},
+		"closed": {
+			"closed": { "x": 46.19, "y": 2.01, "rotation": 3.07, "width": 37, "height": 14 }
+		},
+		"head": {
+			"head": { "x": 23.2, "y": -7.78, "rotation": -94.24, "width": 79, "height": 67 }
+		},
+		"open": {
+			"open": { "x": 31.23, "y": -0.27, "rotation": -93.75, "width": 37, "height": 14 }
+		},
+		"overlay": {
+			"overlay": { "x": 1.98, "y": -78.85, "width": 93, "height": 197 }
+		},
+		"owl_body": {
+			"body": { "x": 43.28, "y": 0.01, "rotation": -89.33, "width": 71, "height": 99 },
+			"owl_body": { "x": 73.74, "y": -3.12, "rotation": -89.33, "width": 87, "height": 134 }
+		},
+		"tree_hole": {
+			"tree_hole": { "x": -23.4, "y": 421.48, "rotation": -11.22, "width": 93, "height": 197 }
+		},
+		"tree_owl": {
+			"tree_owl": { "x": -122.21, "y": 360.34, "width": 690, "height": 720 }
+		},
+		"wing_back": {
+			"wing_back": { "x": 34.46, "y": -0.13, "rotation": 100.76, "width": 16, "height": 77 }
+		},
+		"wing_front": {
+			"wing_front": { "x": 35.59, "y": -2.91, "rotation": 89.45, "width": 26, "height": 82 }
+		}
+	}
+}
+}

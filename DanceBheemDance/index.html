@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Dance Bheem Dance</title>
+		<meta charset="utf-8"/>
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,minimal-ui" />
+		
+		<script src="libs/pixi.min.js"></script>
+		<script src="libs/proton-1.0.0.min.js"></script>
+		<script src="libs/stats.min.js"></script>
+		<script src="libs/bump.js"></script>
+		<script src="js/ScenesManager.js"></script>
+		<script src="js/Scene.js"></script>
+		<script src="js/GameScene.js"></script>
+		<script src="js/KeyInputs.js"></script>
+		<script src="libs/buzz.js"></script>
+		<script src="libs/howler.js"></script>
+		
+
+		
+		<style>
+			body {
+				overflow:hidden;
+				padding:0px;
+				margin:0px;
+				background-color:#000;
+			}
+			canvas {				
+				padding-left: 0;
+				padding-right: 0;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+			}
+		</style>
+	</head>
+
+	<body>
+	<script>
+		//get reference of ScenesManager;
+		var scenesManager = ScenesManager;
+
+		//note the scale parameter is set to true
+		scenesManager.create(800, 600, true);
+
+		//create a the game scene
+		var game = scenesManager.createScene('game', GameScene);
+//		var menu = scenesManager.createScene('menu', tuto.Ezelia.MenuScene);
+
+		scenesManager.goToScene('game');
+        //b=new Bump(PIXI);
+
+	</script>
+	</body>
+</html>

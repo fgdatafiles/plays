@@ -1,0 +1,112 @@
+{
+"skeleton": {
+	"hash": "spE7DoWj32lmWDRSvx355Q/KpyU",
+	"spine": "3.8.97",
+	"x": -46.5,
+	"y": -39,
+	"width": 99,
+	"height": 64,
+	"images": "./assets/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "x": 1 },
+	{ "name": "scale", "parent": "root", "x": -1 }
+],
+"slots": [
+	{ "name": "book_1", "bone": "scale", "attachment": "book_1" }
+],
+"animations": {
+	"01_closed": {},
+	"02_opening": {
+		"slots": {
+			"book_1": {
+				"attachment": [
+					{ "time": 0.1, "name": "book_1_opening" },
+					{ "time": 0.1333, "name": "book_1_open" }
+				]
+			}
+		},
+		"bones": {
+			"scale": {
+				"rotate": [
+					{ "time": 0.0, "angle": 0.0 },
+					{ "time": 0.1, "angle": -34.76 },
+					{ "time": 0.1333, "angle": -24.21 },
+					{ "time": 0.2333, "angle": 7.04 },
+					{ "time": 0.2667, "angle": 0.0 }
+				],
+				"translate": [
+					{
+						"curve": [ 0.10300000011920929, 0.30000001192092896, 0.6129999756813049, 0.9800000190734863 ],
+						"time": 0.0
+					},
+					{
+						"time": 0.1333,
+						"x": -1,
+						"y": 42,
+						"curve": [ 0.5920000076293945, 0.07000000029802322, 1.0, 0.8700000047683716 ]
+					},
+					{ "time": 0.2333, "y": 20 },
+					{ "time": 0.2667 }
+				]
+			}
+		}
+	},
+	"03_open": {
+		"slots": {
+			"book_1": {
+				"attachment": [
+					{ "name": "book_1_open", "time": 0.0 }
+				]
+			}
+		}
+	},
+	"04_closing": {
+		"slots": {
+			"book_1": {
+				"attachment": [
+					{ "name": "book_1_open", "time": 0.0 },
+					{ "time": 0.1, "name": "book_1_opening" },
+					{ "time": 0.1333, "name": "book_1" }
+				]
+			}
+		},
+		"bones": {
+			"scale": {
+				"rotate": [
+					{ "time": 0.0, "angle": 0.0 },
+					{ "time": 0.1, "angle": 21.04 },
+					{ "time": 0.1333, "angle": 26.09 },
+					{ "time": 0.2333, "angle": -23.28 },
+					{ "time": 0.2667, "angle": 0.0 }
+				],
+				"translate": [
+					{
+						"curve": [ 0.10300000011920929, 0.30000001192092896, 0.6129999756813049, 0.9800000190734863 ],
+						"time": 0.0
+					},
+					{
+						"time": 0.1333,
+						"x": -1,
+						"y": 42,
+						"curve": [ 0.5920000076293945, 0.07000000029802322, 1.0, 0.8700000047683716 ]
+					},
+					{ "time": 0.2333, "y": 24 },
+					{ "time": 0.2667 }
+				]
+			}
+		}
+	}
+},
+"skins": {
+	"default": {
+		"book_1": {
+			"book_1": { "x": 3, "y": -7, "width": 101, "height": 66 },
+			"book_1_closing": { "x": -4, "y": 5, "width": 129, "height": 113 },
+			"book_1_open": { "x": -24, "y": -13, "width": 170, "height": 70 },
+			"book_1_opening": { "x": -10, "y": 15, "width": 151, "height": 116 }
+		}
+	}
+}
+}

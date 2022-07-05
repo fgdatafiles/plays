@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<title>Daisy &amp; Ollie</title>
+		<meta name='description' content="Welcome to the official website of Daisy & Ollie! A pre-school animation airing on Cartoonito encouraging kids to question the world around them! Featuring Jason Manford as the voice of Daddy and Whizzy. Meet the characters, play games and learn more about the show. What, why and how? So many questions let's answer them now!">
+		<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'>
+		<link rel='stylesheet' href='./css/style.css?v=1.2'>
+		<link rel='shortcut icon' href='./img/common/dando-logo.png'>
+	</head>
+	<body id='page-home' data-scene='game-spot-the-difference'>
+
+		<main id='main'>
+			<div class='current-scene canvas'>
+				<div id='container-game-spot-the-difference' class='game canvas'>
+					<div class='game-container'>
+						<div class="game-header">
+							<h1 class="game-name">Spot the Difference</h1>
+						</div>
+						<div class="p-relative">
+							<div class="game-body" id="game-spot-the-difference-container">
+								<div class="game-difference"></div>
+								<div class="game-difference"></div>
+							</div>
+							<span class="game-counter" id="spot-the-difference-counter"></span>
+							<button data-end-game data-href="https://www.forestrygames.com/" class="btn ld">End game</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<template id='modal-game-over'>
+			<div class='modal-content'>
+				<h1>Well done!</h1>
+				<div class='btn-collection'>
+					<button data-replay-spot-the-difference class='btn btn-primary'>Play again</button>
+				</div>
+			</div>
+		</template>
+		<section id='secondary'>
+			<section id='system' class='canvas'>
+				<button class='logo-link dando-logo'>
+					<img alt src='./img/common/dando-logo.png' class='logo'>
+					<!--</a>-->
+				</button>
+			</section>
+			<div id='loading' class='canvas'></div>
+		</section>
+		<script>var SITE_URL = 'https://www.forestrygames.com/';</script>
+		<script src='./js/home.min.js?v=1.2'></script>
+	</body>
+</html>

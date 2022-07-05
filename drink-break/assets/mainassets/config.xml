@@ -1,0 +1,52 @@
+<?xml version="1.4" encoding="UTF-8"?>
+
+	<!-- Note : To control the Nickelodeon anti-piracy check, use assets/preloader/config.ini -->
+	
+    <!-- Ensure YES/NO settings are in ALL CAPS!! -->
+
+<settings>
+
+	<!-- Change to YES to enable click tracking (for Canadian region) -->
+	<tracking>NO</tracking>
+
+	<!-- Change to NO to disable the rotate screen -->
+	<rotateScreen>YES</rotateScreen>
+
+	<!-- Change to the width (in pixels) below which the game will start to scale on smaller devices/containers -->
+	<scaleBelow>960</scaleBelow>
+
+	<!-- The length of a game, in seconds. Default is 240, which is 4 minutes-->
+	<gameSeconds>240</gameSeconds>
+
+	<!-- YES shows the help screen at the start of the first play through -->
+	<preGameHelp>NO</preGameHelp>
+
+<!-- PERFORAMANCE/OPTIMISATION SWITCHES -->
+
+	<!-- Set to NO to disable background spotlights -->
+	<lights>YES</lights>
+
+	<!-- Set to NO to disable background spotlight animations (lights above must be set to YES if this is set to YES!) -->
+    <animLights>YES</animLights>
+
+	<!-- Set to NO to disable background crowd camera flashes -->
+    <cameraFlashes>YES</cameraFlashes>
+
+	<!-- Set to NO to disable background crowd flags -->
+    <flags>YES</flags>
+
+	<!-- Set to NO to disable animations on pickups -->
+    <animPickups>YES</animPickups>
+
+<!-- DEBUG/TESTING SWITCHES -->
+
+	<!-- Change to YES to show FPS in the top left corner of the screen.  Must be set to NO for deployment. -->
+	<showFPS>NO</showFPS>
+
+	<!-- Used for internal AOP testing only.  Must be set to NO for deployment. -->
+	<testMode>YES</testMode>
+
+	<!-- Used for testing only.  Must be set to NO for deployment. -->
+	<showDebugInfo>NO</showDebugInfo>
+
+</settings>

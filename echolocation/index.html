@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <title>
+    Cyberchase Echolocation
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <script type="text/javascript">
+      const oldType = HTMLAudioElement.prototype.canPlayType;
+      HTMLAudioElement.prototype.canPlayType = function(type)
+      {
+          if (type === 'audio/opus')
+              return oldType.call(this, 'audio/ogg; codecs="opus"');
+          if (type === 'audio/caf')
+              return oldType.call(this, 'audio/x-caf; codecs="opus"').replace(/^(no|maybe)$/, '');
+          return oldType.call(this, type);
+      }
+  </script>
+<link href="css/game.style.css" rel="stylesheet"></head>
+
+<body>
+  <div id="frame">
+    <div id="content">
+        <video id="video" mute playsinline></video>
+    </div>
+    <div id="captions"></div>
+  </div>
+<script type="text/javascript" src="js/game.bundle.js"></script></body>
+
+</html>

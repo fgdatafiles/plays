@@ -1,0 +1,247 @@
+{
+"skeleton": { "hash": "TBvcaMkTPvxkQS9Gh3nizf+AbBQ", "spine": "3.8.11-beta", "x": -136, "y": -17, "width": 267, "height": 342.49 },
+"bones": [
+	{ "name": "RootBone" },
+	{ "name": "StalkTop", "parent": "RootBone", "y": -248.87 },
+	{ "name": "stem", "parent": "RootBone", "length": 187.28, "rotation": 87.41, "x": -0.78, "y": 47.96 },
+	{ "name": "petals", "parent": "stem", "length": 103.17, "rotation": 31.25, "x": 169.41, "y": -5.64 },
+	{ "name": "bud", "parent": "stem", "length": 45.31, "rotation": 44.35, "x": 176.7, "y": -6.52 },
+	{ "name": "leaf1", "parent": "RootBone", "length": 71.71, "rotation": 46.36, "x": -0.78, "y": 52.79 },
+	{ "name": "leaf2", "parent": "RootBone", "length": 80.52, "rotation": 130.14, "x": -5.61, "y": 50.38 }
+],
+"slots": [
+	{ "name": "DirtSlot", "bone": "RootBone", "attachment": "DirtAtt" },
+	{ "name": "leaf2", "bone": "leaf2", "attachment": "leaf2" },
+	{ "name": "StemClip", "bone": "StalkTop", "attachment": "StemClip" },
+	{ "name": "stem", "bone": "stem", "attachment": "stem" },
+	{ "name": "leaf1", "bone": "leaf1", "attachment": "leaf1" },
+	{ "name": "bud", "bone": "bud", "attachment": "bud" },
+	{ "name": "petals", "bone": "petals", "attachment": "petals" }
+],
+"skins": {
+	"default": {
+		"DirtSlot": {
+			"DirtAtt": { "x": -2.5, "y": 25, "width": 267, "height": 84 }
+		},
+		"StemClip": {
+			"StemClip": {
+				"type": "clipping",
+				"end": "stem",
+				"vertexCount": 4,
+				"vertices": [ -182.91, 295.99, 196.72, 295.99, 201.04, -108.74, -180.44, -112.44 ]
+			}
+		},
+		"bud": {
+			"bud": { "x": 24.26, "y": -0.03, "rotation": -87.72, "width": 38, "height": 47 }
+		},
+		"leaf1": {
+			"leaf1": { "x": 36.49, "y": 0.38, "rotation": -46.36, "width": 56, "height": 60 }
+		},
+		"leaf2": {
+			"leaf2": { "x": 40.59, "y": -1.38, "rotation": -130.14, "width": 59, "height": 66 }
+		},
+		"petals": {
+			"petals": { "x": 33.52, "y": 0.77, "rotation": -118.66, "width": 152, "height": 159 }
+		},
+		"stem": {
+			"stem": { "x": 97.03, "y": -3.5, "rotation": -87.41, "width": 40, "height": 192 }
+		}
+	}
+},
+"animations": {
+	"IdleAnim": {},
+	"SproutAnim": {
+		"slots": {
+			"StemClip": {
+				"attachment": [
+					{ "time": 0, "name": "StemClip" }
+				]
+			},
+			"petals": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.9667, "name": "petals" }
+				]
+			}
+		},
+		"bones": {
+			"StalkTop": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 3.74,
+						"curve": [ 0.5, 0, 0.849, 0.53 ]
+					},
+					{
+						"time": 1,
+						"x": 0,
+						"y": 221.3,
+						"curve": [ 0.335, 0.34, 0.669, 0.67 ]
+					},
+					{ "time": 1.0333, "x": 0, "y": 404.88, "curve": "stepped" },
+					{ "time": 1.5333, "x": 0, "y": 404.88 }
+				]
+			},
+			"petals": {
+				"rotate": [
+					{ "time": 0, "angle": 30, "curve": "stepped" },
+					{
+						"time": 0.9667,
+						"angle": 30,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.0333, "angle": 0, "curve": "stepped" },
+					{ "time": 1.1667, "angle": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0.343, "y": 0.343, "curve": "stepped" },
+					{
+						"time": 0.9667,
+						"x": 0.343,
+						"y": 0.343,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.0333,
+						"x": 1.319,
+						"y": 1.319,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.1,
+						"x": 0.931,
+						"y": 0.931,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.1667, "x": 1, "y": 1 }
+				]
+			},
+			"bud": {
+				"rotate": [
+					{ "time": 0, "angle": -35.37 },
+					{ "time": 0.3333, "angle": -23.17 },
+					{ "time": 0.5, "angle": -45.88 },
+					{ "time": 0.6667, "angle": -63.95 },
+					{ "time": 0.9667, "angle": 0 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": -175.64,
+						"y": 7.21,
+						"curve": [ 0.345, 0, 0.688, 0.4 ]
+					},
+					{
+						"time": 0.3333,
+						"x": -156.08,
+						"y": 10.79,
+						"curve": [ 0.353, 0.29, 0.688, 0.63 ]
+					},
+					{
+						"time": 0.5,
+						"x": -133.8,
+						"y": 14.22,
+						"curve": [ 0.365, 0.32, 0.701, 0.66 ]
+					},
+					{
+						"time": 0.6667,
+						"x": -96.17,
+						"y": 10.8,
+						"curve": [ 0.385, 0.34, 0.722, 0.68 ]
+					},
+					{
+						"time": 0.8333,
+						"x": -44.82,
+						"y": -9.6,
+						"curve": [ 0.365, 0.34, 0.699, 0.68 ]
+					},
+					{
+						"time": 0.9,
+						"x": -19.46,
+						"y": -10.31,
+						"curve": [ 0.376, 0.35, 0.71, 0.68 ]
+					},
+					{ "time": 0.9667, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{
+						"time": 0.8333,
+						"x": 0.69,
+						"y": 0.69,
+						"curve": [ 0, 0.17, 0.75, 1 ]
+					},
+					{ "time": 0.9667, "x": 1.266, "y": 1.266 }
+				]
+			},
+			"leaf1": {
+				"rotate": [
+					{ "time": 0, "angle": 50.31, "curve": "stepped" },
+					{
+						"time": 0.3333,
+						"angle": 50.31,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.6,
+						"angle": -8.05,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.6667,
+						"angle": 2.1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.7333, "angle": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{
+						"time": 0.3333,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.6,
+						"x": 1.146,
+						"y": 1.146,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.6667,
+						"x": 0.982,
+						"y": 0.982,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.7333, "x": 1, "y": 1 }
+				]
+			},
+			"leaf2": {
+				"rotate": [
+					{ "time": 0, "angle": -39.34, "curve": "stepped" },
+					{ "time": 0.4333, "angle": -39.34 },
+					{ "time": 0.7, "angle": 6 },
+					{ "time": 0.7667, "angle": -4.24 },
+					{ "time": 0.8333, "angle": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.4333, "x": 0, "y": 0 },
+					{ "time": 0.7, "x": 1.107, "y": 1.107 },
+					{ "time": 0.7667, "x": 0.947, "y": 0.947 },
+					{ "time": 0.8333, "x": 1, "y": 1 }
+				]
+			},
+			"stem": {
+				"rotate": [
+					{ "time": 0, "angle": 0 },
+					{ "time": 0.8333, "angle": 3.84 },
+					{ "time": 1, "angle": 0 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,249 @@
+{
+"skeleton": {
+	"hash": "6iiSG6COeKwwmQF+IKTkQixKas4",
+	"spine": "3.8.97",
+	"x": -67,
+	"y": -11.35,
+	"width": 139.1,
+	"height": 77.86,
+	"images": "./assets/",
+	"audio": "E:/Projects/Open/Jollywise_Elinor_Camp/repo_EWWCAMPOUT/design/objects/lizard_rock"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "size", "parent": "root" },
+	{ "name": "rock", "parent": "size", "y": 36.52 },
+	{ "name": "lizard", "parent": "rock", "rotation": -34.98, "x": 28.46, "y": -12.37, "scaleX": -0.1503, "scaleY": 0.1503 },
+	{ "name": "leg3", "parent": "lizard", "length": 37.07, "rotation": -92, "x": 42.33, "y": -20.76 },
+	{ "name": "leg1", "parent": "lizard", "length": 29.05, "rotation": 179.3, "x": 23.78, "y": -17.77 },
+	{ "name": "leg2", "parent": "lizard", "length": 26.12, "rotation": 26.31, "x": -110.65, "y": -19.57 },
+	{ "name": "lleg4", "parent": "lizard", "length": 32.19, "rotation": -124.01, "x": -62.52, "y": -32.62 },
+	{ "name": "tail", "parent": "lizard", "length": 50.44, "rotation": -163.84, "x": -137.2, "y": -2.33 },
+	{ "name": "head", "parent": "lizard", "length": 62.19, "rotation": 62.58, "x": 67.04, "y": 1.23 },
+	{ "name": "blink", "parent": "head", "rotation": 62.58, "x": 130.52, "y": -28.33 }
+],
+"slots": [
+	{ "name": "Lizard_tail", "bone": "tail", "attachment": "Lizard_tail" },
+	{ "name": "Lizard_leg_4", "bone": "lleg4", "attachment": "Lizard_leg_4" },
+	{ "name": "Lizard_leg_3", "bone": "leg3", "attachment": "Lizard_leg_3" },
+	{ "name": "Lizard_body", "bone": "lizard", "attachment": "Lizard_body" },
+	{ "name": "lizhead", "bone": "head", "attachment": "lizhead" },
+	{ "name": "Lizard_leg_1", "bone": "leg1", "attachment": "Lizard_leg_1" },
+	{ "name": "Lizard_leg_2", "bone": "leg2", "attachment": "Lizard_leg_2" },
+	{ "name": "lizhead_blink", "bone": "blink" },
+	{ "name": "rock", "bone": "rock", "attachment": "rock" }
+],
+"animations": {
+	"1_shadow": {},
+	"2_appear": {
+		"bones": {
+			"lizard": {
+				"rotate": [
+					{ "time": 0.0, "angle": 0.0 },
+					{ "time": 0.6, "angle": 32.46 }
+				],
+				"translate": [
+					{ "time": 0.0 },
+					{ "time": 0.5, "x": -13.3, "y": 46.22 },
+					{ "time": 0.6, "x": -15.65, "y": 46.32 }
+				]
+			},
+			"tail": {
+				"rotate": [
+					{ "angle": 34.05, "time": 0.0 },
+					{ "time": 0.4, "angle": 24.21 },
+					{ "time": 0.6667, "angle": 0.35 },
+					{ "time": 0.9, "angle": -20.53 }
+				]
+			},
+			"head": {
+				"rotate": [
+					{ "angle": -39.24, "time": 0.0 },
+					{ "time": 0.6667, "angle": -15.33 },
+					{ "time": 0.9, "angle": -7.72 }
+				]
+			},
+			"leg1": {
+				"rotate": [
+					{ "time": 0.0, "angle": 0.0 },
+					{ "time": 0.4, "angle": 49.6 },
+					{ "time": 0.5, "angle": -43.97 },
+					{ "time": 0.6, "angle": 0.0 }
+				]
+			},
+			"leg2": {
+				"rotate": [
+					{ "time": 0.0, "angle": 0.0 },
+					{ "time": 0.5, "angle": 40.81 },
+					{ "time": 0.6667, "angle": 7.21 }
+				],
+				"translate": [
+					{ "time": 0.0 },
+					{ "time": 0.5, "x": 1.85, "y": 14.25 },
+					{ "time": 0.6667 }
+				]
+			}
+		},
+		"drawOrder": [
+			{
+				"time": 0.5333,
+				"offsets": [
+					{ "slot": "Lizard_leg_1", "offset": 2, "time": 0.0 },
+					{ "slot": "Lizard_leg_2", "offset": 2, "time": 0.0 }
+				]
+			}
+		]
+	},
+	"3_sun": {
+		"slots": {
+			"lizhead_blink": {
+				"attachment": [
+					{ "time": 0.6667, "name": "lizhead_blink" },
+					{ "time": 0.9333, "name": null },
+					{ "time": 2.9667, "name": "lizhead_blink" },
+					{ "time": 3.2333, "name": null },
+					{ "time": 5.1, "name": "lizhead_blink" },
+					{ "time": 5.3667, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"lizard": {
+				"rotate": [
+					{ "angle": 32.46, "time": 0.0 }
+				],
+				"translate": [
+					{ "x": -15.65, "y": 46.32, "time": 0.0 }
+				]
+			},
+			"tail": {
+				"rotate": [
+					{ "angle": -20.53, "time": 0.0 },
+					{ "time": 0.9, "angle": 2.82 },
+					{ "time": 1.6333, "angle": -20.53 },
+					{ "time": 2.5, "angle": 2.82 },
+					{ "time": 3.3333, "angle": -20.53 },
+					{ "time": 4.3667, "angle": 2.82 },
+					{ "time": 5.0333, "angle": -20.53 },
+					{ "time": 6.0667, "angle": 2.82 },
+					{ "time": 6.6667, "angle": -20.53 }
+				]
+			},
+			"head": {
+				"rotate": [
+					{ "angle": -7.72, "time": 0.0 },
+					{ "time": 1.5333, "angle": -14.41 },
+					{ "time": 2.3, "angle": 11.52 },
+					{ "time": 4.0333, "angle": 10.26 },
+					{ "time": 6.6667, "angle": -7.72 }
+				]
+			},
+			"leg2": {
+				"rotate": [
+					{ "angle": 7.21, "time": 0.0 }
+				]
+			}
+		},
+		"drawOrder": [
+			{
+				"offsets": [
+					{ "slot": "Lizard_leg_1", "offset": 2, "time": 0.0 },
+					{ "slot": "Lizard_leg_2", "offset": 2, "time": 0.0 }
+				],
+				"time": 0.0
+			}
+		]
+	},
+	"4_leave": {
+		"bones": {
+			"lizard": {
+				"rotate": [
+					{ "angle": 32.46, "time": 0.0 },
+					{ "time": 0.1667, "angle": 49.41 },
+					{ "time": 0.4, "angle": 90.98 }
+				],
+				"translate": [
+					{ "x": -15.65, "y": 46.32, "time": 0.0 },
+					{ "time": 0.1667, "x": -46.85, "y": 39.62 },
+					{ "time": 0.4, "x": -70.49, "y": 12.02 }
+				]
+			},
+			"tail": {
+				"rotate": [
+					{ "angle": -20.53, "time": 0.0 },
+					{ "time": 0.4, "angle": 55.44 }
+				]
+			},
+			"head": {
+				"rotate": [
+					{ "angle": -7.72, "time": 0.0 },
+					{ "time": 0.4, "angle": -59.24 }
+				]
+			},
+			"leg1": {
+				"rotate": [
+					{ "time": 0.0, "angle": 0.0 },
+					{ "time": 0.0667, "angle": -46.96 },
+					{ "time": 0.4, "angle": 0.0 }
+				],
+				"translate": [
+					{ "time": 0.0 },
+					{ "time": 0.0667, "x": -0.8, "y": 23.64 },
+					{ "time": 0.4 }
+				]
+			},
+			"leg2": {
+				"rotate": [
+					{ "angle": 7.21, "time": 0.0 },
+					{ "time": 0.0667, "angle": 64.56 },
+					{ "time": 0.4, "angle": 0.0 }
+				],
+				"translate": [
+					{ "time": 0.0 },
+					{ "time": 0.0667, "x": -1, "y": 25.08 },
+					{ "time": 0.4 }
+				]
+			}
+		},
+		"drawOrder": [
+			{
+				"time": 0.1,
+				"offsets": [
+					{ "slot": "lizhead_blink", "offset": -2, "time": 0.0 }
+				]
+			}
+		]
+	}
+},
+"skins": {
+	"default": {
+		"Lizard_body": {
+			"Lizard_body": { "x": -19, "y": 3, "width": 244, "height": 118 }
+		},
+		"Lizard_leg_1": {
+			"Lizard_leg_1": { "x": 19.9, "y": 31.48, "rotation": -179.3, "width": 95, "height": 116 }
+		},
+		"Lizard_leg_2": {
+			"Lizard_leg_2": { "x": -12.23, "y": -28.46, "rotation": -26.31, "width": 82, "height": 123 }
+		},
+		"Lizard_leg_3": {
+			"Lizard_leg_3": { "x": 24.26, "y": 28.53, "rotation": 92, "width": 80, "height": 64 }
+		},
+		"Lizard_leg_4": {
+			"Lizard_leg_4": { "x": 22.29, "y": 11.45, "rotation": 124.01, "width": 73, "height": 47 }
+		},
+		"Lizard_tail": {
+			"Lizard_tail": { "x": 83.88, "y": -11.63, "rotation": 163.84, "width": 236, "height": 73 }
+		},
+		"lizhead": {
+			"lizhead": { "x": 76.69, "y": -28.89, "rotation": -62.58, "width": 170, "height": 170 }
+		},
+		"lizhead_blink": {
+			"lizhead_blink": { "x": 18.24, "y": 19.37, "rotation": -133.86, "width": 25, "height": 35 }
+		},
+		"rock": {
+			"rock": { "x": -4, "y": -3, "width": 130, "height": 68 }
+		}
+	}
+}
+}

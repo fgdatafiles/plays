@@ -1,0 +1,156 @@
+{
+"skeleton": { "hash": "tEnxv+lx3ndjVGtVnv3edbFVtQc", "spine": "3.8.11-beta", "x": -53, "y": -7.86, "width": 107.64, "height": 350.96 },
+"bones": [
+	{ "name": "root" },
+	{ "name": "MapleLeafMain", "parent": "root", "length": 57.13, "rotation": -88.81, "x": -5.42, "y": 224.92 },
+	{
+		"name": "MapleLeaf",
+		"parent": "MapleLeafMain",
+		"rotation": 1.49,
+		"x": -0.99,
+		"y": -0.51,
+		"scaleX": 0.783,
+		"scaleY": 0.783
+	}
+],
+"slots": [
+	{ "name": "MapleLeafPile", "bone": "root", "attachment": "GingkoPile" },
+	{ "name": "LeafFall", "bone": "root", "attachment": "LeafFall" },
+	{ "name": "MapleLeaf", "bone": "MapleLeaf", "attachment": "GingkoBig" }
+],
+"path": [
+	{
+		"name": "LeafFall",
+		"order": 0,
+		"bones": [ "MapleLeafMain" ],
+		"target": "LeafFall",
+		"rotateMix": 0
+	}
+],
+"skins": {
+	"default": {
+		"LeafFall": {
+			"LeafFall": {
+				"type": "path",
+				"lengths": [ 52.05, 107.37, 166.7, 224.12, 289.85, 343.78, 413.78, 472.26, 536.47, 594.99, 662, 715.41, 774.05, 834.96, 922.41, 1240.32 ],
+				"vertexCount": 48,
+				"vertices": [ 37.15, 332.73, 37.15, 332.73, 37.15, 332.73, 14.08, 322.14, -12.5, 317.44, -35.06, 313.44, -64.94, 319.5, -63.1, 305.32, -62.05, 297.21, -41.51, 279.3, -16.43, 271.01, 6.81, 263.33, 37.74, 265.09, 38.02, 256.18, 38.58, 238.01, 4.47, 227.4, -15.06, 223.85, -41.42, 219.07, -66.55, 230.57, -66.44, 218.57, -66.34, 207.21, -43.21, 185.75, -11.81, 179.8, 15.81, 174.57, 41.03, 182.73, 44.33, 170.86, 47.02, 161.15, 19.24, 142.08, -6.06, 135.18, -31.68, 128.19, -60.24, 134.17, -61.73, 122.86, -62.85, 114.34, -32.39, 95.33, -4.63, 92.46, 20.33, 89.89, 45.91, 97.9, 46.01, 86.11, 46.16, 67.05, 24.3, 62.49, -0.66, 59.72, -21.27, 57.43, -53.51, 68.33, -60.68, 58.73, -66.63, 50.77, -49.5, 19.43, 6.99, 17.18, 27.41, 16.37 ]
+			}
+		},
+		"MapleLeaf": {
+			"GingkoBig": { "rotation": 87.32, "width": 46, "height": 24 }
+		},
+		"MapleLeafPile": {
+			"GingkoPile": { "x": 0.5, "y": 10.64, "width": 107, "height": 37 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"MapleLeaf": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" },
+					{ "time": 0.6667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 12.6667, "color": "ffffffff" },
+					{ "time": 13.3333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 16.7, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"MapleLeaf": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 0,
+						"curve": [ 0.211, 0, 0.287, 1 ]
+					},
+					{
+						"time": 1.0667,
+						"angle": -67,
+						"curve": [ 0.211, 0, 0.287, 1 ]
+					},
+					{
+						"time": 2.1333,
+						"angle": 8.76,
+						"curve": [ 0.211, 0, 0.287, 1 ]
+					},
+					{
+						"time": 3.3333,
+						"angle": -69.87,
+						"curve": [ 0.211, 0, 0.287, 1 ]
+					},
+					{
+						"time": 4.7,
+						"angle": 12.2,
+						"curve": [ 0.211, 0, 0.287, 1 ]
+					},
+					{
+						"time": 6,
+						"angle": -77.93,
+						"curve": [ 0.211, 0, 0.287, 1 ]
+					},
+					{
+						"time": 7.5667,
+						"angle": 14.35,
+						"curve": [ 0.211, 0, 0.287, 1 ]
+					},
+					{
+						"time": 9.6333,
+						"angle": -71.73,
+						"curve": [ 0.211, 0, 0.287, 1 ]
+					},
+					{ "time": 12.6667, "angle": -14.21 }
+				]
+			}
+		},
+		"paths": {
+			"LeafFall": {
+				"position": [
+					{
+						"time": 0,
+						"curve": [ 0.499, 0, 0.356, 1 ]
+					},
+					{
+						"time": 0.9667,
+						"position": 0.1066,
+						"curve": [ 0.499, 0, 0.356, 1 ]
+					},
+					{
+						"time": 2.0333,
+						"position": 0.2345,
+						"curve": [ 0.499, 0, 0.356, 1 ]
+					},
+					{
+						"time": 3.1,
+						"position": 0.3629,
+						"curve": [ 0.499, 0, 0.356, 1 ]
+					},
+					{
+						"time": 4.3667,
+						"position": 0.5049,
+						"curve": [ 0.499, 0, 0.356, 1 ]
+					},
+					{
+						"time": 5.6333,
+						"position": 0.6367,
+						"curve": [ 0.499, 0, 0.356, 1 ]
+					},
+					{
+						"time": 7.1667,
+						"position": 0.7659,
+						"curve": [ 0.499, 0, 0.356, 1 ]
+					},
+					{
+						"time": 9.2667,
+						"position": 0.8983,
+						"curve": [ 0.499, 0, 0.356, 1 ]
+					},
+					{ "time": 11.9667, "position": 1 }
+				]
+			}
+		}
+	}
+}
+}

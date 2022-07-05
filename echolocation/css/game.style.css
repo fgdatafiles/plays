@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'Asap';
+  src: url(../fonts/Asap-Bold.ttf)  format('truetype');
+}
+@font-face {
+  font-family: 'AsapMedium';
+  src: url(../fonts/Asap-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url(../fonts/Nunito-Bold.woff2) format('woff2'),
+  url(../fonts/Nunito-Bold.woff) format('woff'),
+  url(../fonts/Nunito-Bold.ttf)  format('truetype');
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+canvas, #video {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+#captions {
+    font-family: Asap;
+    position: absolute;
+    width:84%;
+    left:8%;
+    line-height: 1.5;
+    text-align: center;
+    top:0;
+    bottom: auto;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.font-black-on-white {
+    color: black;
+    background: white;
+}
+
+.font-yellow-on-black {
+    color: #ff0;
+    background: black;
+}
+
+.font-white-on-black {
+    color: #fff;
+    background: black;
+}
+
+.font-large {
+    /* 38px * (view height / 1080 (target height)) */
+    font-size: calc(42 * (100vh / 1080));
+}
+.font-medium {
+    font-size: calc(36 * (100vh / 1080));
+}
+.font-small {
+    font-size: calc(28 * (100vh / 1080));
+}
+
+
+/*# sourceMappingURL=game.style.css.map*/

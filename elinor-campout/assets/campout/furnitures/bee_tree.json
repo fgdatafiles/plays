@@ -1,0 +1,341 @@
+{
+"skeleton": {
+	"hash": "5KtU3YZFUTzStLbvGpAVQo0KL1s",
+	"spine": "3.8.97",
+	"x": -602.64,
+	"y": -12.29,
+	"width": 1203.68,
+	"height": 733.03,
+	"images": "./assets/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "size", "parent": "root", "x": 10.62, "y": 94.99 },
+	{ "name": "flower", "parent": "size", "x": -221.75, "y": -91.08 },
+	{ "name": "flower2", "parent": "flower", "length": 41.73, "rotation": 127.91, "x": -7.19, "y": -7.14 },
+	{ "name": "bone", "parent": "flower", "length": 64.48, "rotation": 101.58, "x": 2.79, "y": -8.4 },
+	{ "name": "flower4", "parent": "flower", "length": 64.15, "rotation": 89.33, "x": 6.93, "y": -5.98 },
+	{ "name": "flower5", "parent": "flower", "length": 56.97, "rotation": 64.6, "x": 16.27, "y": -3.01 },
+	{ "name": "flower6", "parent": "flower", "length": 42.6, "rotation": 79.3, "x": 12.07, "y": -1.29 },
+	{ "name": "flower7", "parent": "flower", "length": 62.75, "rotation": 80.68, "x": 12.66, "y": -3.7 },
+	{ "name": "flower3", "parent": "flower", "length": 66.39, "rotation": 111.55, "x": -3.09, "y": -6.95 },
+	{ "name": "flower8", "parent": "flower", "x": -50.43, "y": 150.33 },
+	{ "name": "flower9", "parent": "flower", "x": -85.56, "y": 104.19 },
+	{ "name": "honey", "parent": "size", "x": -39.11, "y": 221.6 },
+	{ "name": "drip1", "parent": "honey", "length": 29.86, "rotation": -91.68, "x": -0.52, "y": 7.49 },
+	{
+		"name": "drip2",
+		"parent": "honey",
+		"length": 29.86,
+		"rotation": -91.68,
+		"x": -3.46,
+		"y": 13.97,
+		"scaleX": 0.9016,
+		"scaleY": 0.9016
+	},
+	{ "name": "drip_2", "parent": "honey", "x": 4.62, "y": 10.52 },
+	{ "name": "bone3", "parent": "root", "x": -28.77, "y": 321.84 },
+	{ "name": "hive", "parent": "size", "x": -41.19, "y": 305.97 }
+],
+"slots": [
+	{ "name": "tree", "bone": "size", "attachment": "tree" },
+	{ "name": "drip_2", "bone": "drip2", "attachment": "drip_1" },
+	{ "name": "drip_1", "bone": "drip1", "attachment": "drip_1" },
+	{ "name": "drip_3", "bone": "drip_2", "attachment": "drip_2" },
+	{ "name": "hive", "bone": "hive", "attachment": "hive" },
+	{ "name": "leaves back", "bone": "flower", "attachment": "leaves back" },
+	{ "name": "flower_9", "bone": "flower3", "attachment": "flower_9" },
+	{ "name": "flower_8", "bone": "flower8", "attachment": "flower_8" },
+	{ "name": "flower_7", "bone": "flower9", "attachment": "flower_7" },
+	{ "name": "flower_6", "bone": "flower4", "attachment": "flower_6" },
+	{ "name": "flower_5", "bone": "flower7", "attachment": "flower_5" },
+	{ "name": "flower_4", "bone": "flower5", "attachment": "flower_4" },
+	{ "name": "flower_3", "bone": "flower6", "attachment": "flower_3" },
+	{ "name": "flower_2", "bone": "bone", "attachment": "flower_2" },
+	{ "name": "flower_1", "bone": "flower2", "attachment": "flower_1" },
+	{ "name": "leaf_front_1", "bone": "flower", "attachment": "leaf_front_1" },
+	{ "name": "leaf_front_2", "bone": "flower", "attachment": "leaf_front_2" }
+],
+"events": {
+	"item_honey": {}
+},
+"animations": {
+	"1_idle": {
+		"slots": {
+			"drip_1": {
+				"attachment": [
+					{ "name": null, "time": 0.0 }
+				]
+			},
+			"drip_2": {
+				"attachment": [
+					{ "name": null, "time": 0.0 }
+				]
+			},
+			"drip_3": {
+				"attachment": [
+					{ "name": null, "time": 0.0 }
+				]
+			}
+		},
+		"bones": {
+			"flower2": {
+				"rotate": [
+					{
+						"time": 9.3,
+						"curve": [ 0.3400000035762787, 0.4399999976158142, 0.6740000247955322, 0.7699999809265137 ],
+						"angle": 0.0
+					},
+					{
+						"time": 9.6333,
+						"angle": 1.74,
+						"curve": [ 0.3409999907016754, 0.6600000262260437, 0.675000011920929, 1.0 ]
+					},
+					{ "time": 9.9667, "angle": 0.0 }
+				]
+			},
+			"flower3": {
+				"rotate": [
+					{
+						"time": 9.3,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"angle": 0.0
+					},
+					{
+						"time": 9.7,
+						"angle": 2.08,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 9.9667, "angle": 0.0 }
+				]
+			},
+			"bone": {
+				"rotate": [
+					{
+						"time": 9.3,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"angle": 0.0
+					},
+					{
+						"time": 9.7333,
+						"angle": 2.41,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 9.9667, "angle": 0.0 }
+				]
+			},
+			"flower4": {
+				"rotate": [
+					{
+						"time": 9.3,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"angle": 0.0
+					},
+					{
+						"time": 9.7,
+						"angle": -1.66,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 9.9667, "angle": 0.0 }
+				]
+			},
+			"flower6": {
+				"rotate": [
+					{
+						"time": 9.3,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"angle": 0.0
+					},
+					{
+						"time": 9.6333,
+						"angle": -2.6,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 9.9667, "angle": 0.0 }
+				]
+			},
+			"flower5": {
+				"rotate": [
+					{
+						"time": 9.3,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"angle": 0.0
+					},
+					{
+						"time": 9.6333,
+						"angle": -3.56,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 9.9667, "angle": 0.0 }
+				]
+			},
+			"flower7": {
+				"rotate": [
+					{
+						"time": 9.3,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"angle": 0.0
+					},
+					{
+						"time": 9.5667,
+						"angle": -4.97,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 9.9667, "angle": 0.0 }
+				]
+			},
+			"flower8": {
+				"translate": [
+					{
+						"time": 9.3,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 9.5667,
+						"x": -3.67,
+						"y": -1.22,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 9.9667 }
+				]
+			},
+			"flower9": {
+				"translate": [
+					{
+						"time": 9.3,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 9.7,
+						"x": -2.45,
+						"y": -2.04,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 9.9667 }
+				]
+			}
+		}
+	},
+	"2_dripping": {
+		"slots": {
+			"drip_1": {
+				"attachment": [
+					{ "time": 2.3333, "name": null }
+				]
+			},
+			"drip_2": {
+				"attachment": [
+					{ "name": null, "time": 0.0 },
+					{ "time": 1.5, "name": "drip_1" },
+					{ "time": 3.8333, "name": null }
+				]
+			},
+			"drip_3": {
+				"attachment": [
+					{ "name": null, "time": 0.0 },
+					{ "time": 1, "name": "drip_2" },
+					{ "time": 1.6667, "name": null },
+					{ "time": 2.4333, "name": "drip_2" },
+					{ "time": 3.0333, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"drip1": {
+				"translate": [
+					{ "x": 0.67, "y": 22.05, "time": 0.0 },
+					{ "time": 2 },
+					{ "time": 2.3333, "x": -9.76, "y": -331.69 },
+					{ "time": 2.3667, "x": -9.73, "y": -330.81 }
+				],
+				"scale": [
+					{ "x": 0.357, "time": 0.0, "y": 1.0 },
+					{ "time": 2, "x": 1.051, "y": 1.0 }
+				]
+			},
+			"drip2": {
+				"translate": [
+					{ "time": 1.5, "x": 0.67, "y": 22.9 },
+					{ "time": 3.3333 },
+					{ "time": 3.8333, "x": -9.73, "y": -330.81 }
+				],
+				"scale": [
+					{ "time": 1.5, "x": 0.357, "y": 1.0 },
+					{ "time": 3.3333, "x": 1.051, "y": 1.0 }
+				]
+			},
+			"drip_2": {
+				"translate": [
+					{ "time": 1.1 },
+					{ "time": 1.6667, "y": -343.39, "curve": "stepped" },
+					{ "time": 2.4, "y": -343.39 },
+					{ "time": 2.4333, "x": -10 },
+					{ "time": 3.0333, "x": -10, "y": -343.39 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 1.1333, "name": "item_honey" },
+			{ "time": 2, "name": "item_honey" },
+			{ "time": 2.4333, "name": "item_honey" },
+			{ "time": 3.3333, "name": "item_honey" }
+		]
+	}
+},
+"skins": {
+	"default": {
+		"drip_1": {
+			"drip_1": { "x": 36.26, "y": 0.32, "rotation": 91.68, "width": 13, "height": 83 }
+		},
+		"drip_2": {
+			"drip_1": { "x": 36.26, "y": 0.32, "rotation": 91.68, "width": 13, "height": 83 }
+		},
+		"drip_3": {
+			"drip_2": { "x": -0.67, "y": 3.36, "width": 8, "height": 28 }
+		},
+		"flower_1": {
+			"flower_1": { "x": 59.14, "y": 3.69, "rotation": -125.54, "width": 95, "height": 92 }
+		},
+		"flower_2": {
+			"flower_2": { "x": 76.24, "y": 0.76, "rotation": -91.85, "width": 64, "height": 153 }
+		},
+		"flower_3": {
+			"flower_3": { "x": 67.49, "y": -17.14, "rotation": -74.06, "width": 79, "height": 118 }
+		},
+		"flower_4": {
+			"flower_4": { "x": 60.81, "y": -12.44, "rotation": -80.19, "width": 52, "height": 110 }
+		},
+		"flower_5": {
+			"flower_5": { "x": 83.98, "y": -15.64, "rotation": -83.66, "width": 57, "height": 163 }
+		},
+		"flower_6": {
+			"flower_6": { "x": 100.45, "y": -15.06, "rotation": -80.71, "width": 66, "height": 198 }
+		},
+		"flower_7": {
+			"flower_7": { "x": 0.47, "y": 1.72, "width": 57, "height": 57 }
+		},
+		"flower_8": {
+			"flower_8": { "x": 2.57, "y": -2.01, "width": 56, "height": 52 }
+		},
+		"flower_9": {
+			"flower_9": { "x": 77.03, "y": 14.08, "rotation": -103.89, "width": 73, "height": 143 }
+		},
+		"hive": {
+			"hive": { "x": -14.7, "y": 8.81, "width": 183, "height": 198 }
+		},
+		"leaf_front_1": {
+			"leaf_front_1": { "x": -28.35, "y": 5.57, "width": 86, "height": 23 }
+		},
+		"leaf_front_2": {
+			"leaf_front_2": { "x": 30.56, "y": 6.36, "width": 62, "height": 24 }
+		},
+		"leaves back": {
+			"leaves back": { "x": -9.69, "y": 23.3, "width": 207, "height": 54 }
+		},
+		"tree": {
+			"tree": { "x": -11.43, "y": 265.19, "rotation": -0.05, "width": 1203, "height": 720 }
+		}
+	}
+}
+}

@@ -1,0 +1,206 @@
+{
+"skeleton": {
+	"hash": "iq8qqVDSdT/6c17mY9IjYtAc50k",
+	"spine": "3.8.97",
+	"x": -52.5,
+	"y": -8.07,
+	"width": 105,
+	"height": 113,
+	"images": "./assets/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "scale", "parent": "root" },
+	{ "name": "elinor", "parent": "scale", "x": 5.91 }
+],
+"slots": [
+	{ "name": "button", "bone": "scale", "attachment": "button" },
+	{ "name": "highligh", "bone": "scale" },
+	{ "name": "mask2", "bone": "scale", "attachment": "mask" },
+	{ "name": "elinor", "bone": "elinor", "attachment": "elinor" }
+],
+"animations": {
+	"down": {
+		"bones": {
+			"scale": {
+				"scale": [
+					{ "x": 0.75, "y": 0.75, "time": 0.0 }
+				]
+			},
+			"elinor": {
+				"translate": [
+					{ "y": -5.33, "time": 0.0 }
+				]
+			}
+		}
+	},
+	"go_down": {
+		"bones": {
+			"scale": {
+				"scale": [
+					{ "time": 0.0, "x": 1.0, "y": 1.0 },
+					{ "time": 0.3333, "x": 0.75, "y": 0.75 }
+				]
+			},
+			"elinor": {
+				"translate": [
+					{
+						"x": -1.83,
+						"y": 48.88,
+						"curve": [ 0.0010000000474974513, 0.4399999976158142, 0.6520000100135803, 1.0 ],
+						"time": 0.0
+					},
+					{ "time": 0.3333, "y": -5.33 }
+				]
+			}
+		}
+	},
+	"go_down2": {
+		"slots": {
+			"elinor": {
+				"attachment": [
+					{ "name": "elinor2", "time": 0.0 }
+				]
+			},
+			"highligh": {
+				"color": [
+					{ "color": "ffffffff", "time": 0.0 },
+					{ "time": 0.3333, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "button_highlight", "time": 0.0 }
+				]
+			}
+		},
+		"bones": {
+			"scale": {
+				"scale": [
+					{ "time": 0.0, "x": 1.0, "y": 1.0 },
+					{ "time": 0.3333, "x": 0.75, "y": 0.75 }
+				]
+			},
+			"elinor": {
+				"translate": [
+					{
+						"x": -1.83,
+						"y": 48.88,
+						"curve": [ 0.0010000000474974513, 0.4399999976158142, 0.6520000100135803, 1.0 ],
+						"time": 0.0
+					},
+					{ "time": 0.3333, "y": -5.33 }
+				]
+			}
+		}
+	},
+	"go_up": {
+		"bones": {
+			"scale": {
+				"scale": [
+					{ "x": 0.75, "y": 0.75, "time": 0.0 },
+					{ "time": 0.3333, "x": 1.0, "y": 1.0 }
+				]
+			},
+			"elinor": {
+				"translate": [
+					{
+						"y": -5.33,
+						"curve": [ 0.08799999952316284, 0.4099999964237213, 0.75, 1.0 ],
+						"time": 0.0
+					},
+					{ "time": 0.3333, "x": -1.83, "y": 48.88 }
+				]
+			}
+		}
+	},
+	"go_up2": {
+		"slots": {
+			"elinor": {
+				"attachment": [
+					{ "name": "elinor2", "time": 0.0 }
+				]
+			},
+			"highligh": {
+				"color": [
+					{ "color": "ffffff00", "time": 0.0 },
+					{ "time": 0.3333, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "button_highlight", "time": 0.0 }
+				]
+			}
+		},
+		"bones": {
+			"scale": {
+				"scale": [
+					{ "x": 0.75, "y": 0.75, "time": 0.0 },
+					{ "time": 0.3333, "x": 1.0, "y": 1.0 }
+				]
+			},
+			"elinor": {
+				"translate": [
+					{
+						"y": -5.33,
+						"curve": [ 0.08799999952316284, 0.4099999964237213, 0.75, 1.0 ],
+						"time": 0.0
+					},
+					{ "time": 0.3333, "x": -1.83, "y": 48.88 }
+				]
+			}
+		}
+	},
+	"up": {
+		"bones": {
+			"elinor": {
+				"translate": [
+					{ "x": -1.83, "y": 48.88, "time": 0.0 }
+				]
+			}
+		}
+	},
+	"up2": {
+		"slots": {
+			"elinor": {
+				"attachment": [
+					{ "name": "elinor2", "time": 0.0 }
+				]
+			},
+			"highligh": {
+				"attachment": [
+					{ "name": "button_highlight", "time": 0.0 }
+				]
+			}
+		},
+		"bones": {
+			"elinor": {
+				"translate": [
+					{ "x": -1.83, "y": 48.88, "time": 0.0 }
+				]
+			}
+		}
+	}
+},
+"skins": {
+	"default": {
+		"button": {
+			"button": { "y": 48.43, "width": 105, "height": 113 }
+		},
+		"elinor": {
+			"elinor": { "x": 0.69, "width": 77, "height": 166 },
+			"elinor2": { "width": 77, "height": 166 }
+		},
+		"highligh": {
+			"button_highlight": { "y": 51.65, "width": 94, "height": 94 }
+		},
+		"mask2": {
+			"mask": {
+				"type": "clipping",
+				"end": "mask2",
+				"vertexCount": 15,
+				"vertices": [ 39.62, 32.45, 31.85, 20.5, 24.76, 14.86, 18.3, 10.88, 10.68, 8.39, 0.84, 7.28, -8.6, 7.73, -16.26, 10.21, -23.1, 13.32, -31.06, 19.77, -40.86, 35.35, -44.31, 51.57, -48.42, 129.41, 47.16, 129.95, 43.57, 47.57 ],
+				"color": "ce3a3aff"
+			}
+		}
+	}
+}
+}

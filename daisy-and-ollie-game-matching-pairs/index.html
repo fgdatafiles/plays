@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<title>Daisy &amp; Ollie</title>
+		<meta name='description' content="Welcome to the official website of Daisy & Ollie! A pre-school animation airing on Cartoonito encouraging kids to question the world around them! Featuring Jason Manford as the voice of Daddy and Whizzy. Meet the characters, play games and learn more about the show. What, why and how? So many questions let's answer them now!">
+		<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'>
+		<link rel='stylesheet' href='./css/style.css?v=1.2'>
+		<link rel='shortcut icon' href='./img/common/dando-logo.png'>
+	</head>
+	<body id='page-home' data-scene='game-matching-pairs'>
+
+		<main id='main'>
+			<div class='current-scene canvas'>
+				<div id='container-game-pairs' class='canvas'>
+					<div class='game-container'>
+						<h1 class='game-name'>Matching Pairs</h1>
+						<!--<p class='game-description'>Turn over the buckets to help us find the matching pairs.<br> There's 9 pairs to find in total, how quickly can you find them all?</p>-->
+					</div>
+					<div class='game-matching-list'>
+						<div id='game-matching-list-container'></div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<template id='modal-game-over'>
+			<div class='modal-content'>
+				<h1>Well done!</h1>
+				<div class='btn-collection'>
+					<button data-replay-matching-pairs class='btn btn-primary'>Play again</button>
+				</div>
+			</div>
+		</template>
+		<section id='secondary'>
+			<section id='system' class='canvas'>
+				<!--<a class='logo-link dando-logo' style="pointer-events: none; right: 10px; top: 5px; width: 145px; height: 145px;" target='_blank' href='https://daisyandollie.com'>-->
+				<button class='logo-link dando-logo' style="pointer-events: none; right: 10px; top: 5px; width: 145px; height: 145px;">
+					<img alt src='./img/common/dando-logo.png' class='logo'>
+				<!--</a>-->
+				</button>
+			</section>
+			<div id='loading' class='canvas'></div>
+		</section>
+		<script>var SITE_URL = 'https://www.forestrygames.com/';</script>
+		<script src='./js/home.min.js?v=1.2'></script>
+	</body>
+</html>

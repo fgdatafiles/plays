@@ -1,0 +1,118 @@
+{
+    "flumpLibraries": [
+        { "key": "pottyLibrary", "root": "assets/potty/flump/" }
+    ],
+    "background": "custBG",
+    "maxPottyButtonClicks": 4,
+    "audioKeys": {
+        "music": "Potty_Time_BGM",
+        "character": {
+            "intro": "PP_2.0_7",
+            "introAbby": "PP_2.0_8",
+            "introElmo": "PP_2.0_9",
+            "timeout": ["PP_2.0_11"],
+            "abby": "PP_7.0_123",
+            "elmo": "PP_7.0_124"
+        },
+        "potty": {
+            "intro": ["PP_2.0_13", "PP_2.0_13a"],
+            "nextBtnIntro": "PP_2.0_18",
+            "returnIntro": "PP_2.0_14",
+            "timeout": ["PP_2.0_17", "PP_2.0_18"],
+            "complete": {
+                "elmo": "PP_2.0_15",
+                "abby": "PP_2.0_16"
+            },
+            "pottyChange": "Potty_Change",
+            "seatChange": "Seat_Change"
+        }
+    },
+    "potty": {
+        "position": { "x": 525.35, "y": 602.45 },
+        "flump": { "library": "pottyLibrary", "textureKey": "basePottySprite" },
+        "water": {
+            "flump": { "library": "pottyLibrary", "animations": { "idle": "waterIdle", "action": "waterActive" } }
+        }
+    },
+    "options": [
+        {
+            "type": "color",
+            "position": { "x": 842, "y": 270 },
+            "hitArea": { "x": -105.75, "y": -108.025, "width": 211.5, "height": 216.05 },
+            "states": [
+                { "value": "white", "flump": { "library": "mainLibrary", "animations": { "idle": "buttonWhitePotty", "press": "buttonWhitePottyActive" } } },
+                { "value": "green", "flump": { "library": "mainLibrary", "animations": { "idle": "buttonGreenPotty", "press": "buttonGreenPottyActive" } } },
+                { "value": "blue", "flump": { "library": "mainLibrary", "animations": { "idle": "buttonBluePotty", "press": "buttonBluePottyActive" } } },
+                { "value": "purple", "flump": { "library": "mainLibrary", "animations": { "idle": "buttonPurplePotty", "press": "buttonPurplePottyActive" } } },
+                { "value": "pink", "flump": { "library": "mainLibrary", "animations": { "idle": "buttonPinkPotty", "press": "buttonPinkPottyActive" } } }
+            ],
+            "rollOver": {
+                "flump": { "library": "mainLibrary", "animations": { "idle": "customButtonTimeout" } }
+            },
+            "timeout": {
+                "flump": { "library": "mainLibrary", "animations": { "idle": "customButtonTimeout" } }
+            },
+            "audioKeys": { "click": "button" }
+        },
+        {
+            "type": "seat",
+            "position": { "x": 842, "y": 517 },
+            "hitArea": { "x": -105.75, "y": -108.025, "width": 211.5, "height": 216.05 },
+            "states": [
+                { "value": 0, "flump": { "library": "mainLibrary", "animations": { "idle": "buttonSeatWhite", "press": "buttonSeatWhiteActive" } } },
+                { "value": 1, "flump": { "library": "mainLibrary", "animations": { "idle": "buttonSeatDots", "press": "buttonSeatDotsActive" } } },
+                { "value": 2, "flump": { "library": "mainLibrary", "animations": { "idle": "buttonSeatShiny", "press": "buttonSeatShinyActive" } } },
+                { "value": 3, "flump": { "library": "mainLibrary", "animations": { "idle": "buttonSeatRainbow", "press": "buttonSeatRainbowActive" } } },
+                { "value": 4, "flump": { "library": "mainLibrary", "animations": { "idle": "buttonSeatFish", "press": "buttonSeatFishActive" } } },
+                { "value": 5, "flump": { "library": "mainLibrary", "animations": { "idle": "buttonSeatSpace", "press": "buttonSeatSpaceActive" } } },
+                { "value": 6, "flump": { "library": "mainLibrary", "animations": { "idle": "buttonSeatSafari", "press": "buttonSeatSafariActive" } } },
+                { "value": 7, "flump": { "library": "mainLibrary", "animations": { "idle": "buttonSeatSports", "press": "buttonSeatSportsActive" } } }
+            ],
+            "rollOver": {
+                "flump": { "library": "mainLibrary", "animations": { "idle": "customButtonTimeout" } }
+            },
+            "timeout": {
+                "flump": { "library": "mainLibrary", "animations": { "idle": "customButtonTimeout" } }
+            },
+            "audioKeys": { "click": "button" }
+        }
+    ],
+    "characters": [
+        {
+            "type": "elmo",
+            "position": { "x": 840, "y": 600 },
+            "hitArea": { "x": -150, "y": -450, "width": 300, "height": 450 },
+            "flump": {
+                "library": "elmoLibrary",
+                "animations": { 
+                    "idle": "selectElmoIdle", 
+                    "action": "selectElmoActive"
+                }
+            },
+            "rollOver": {
+                "flump": { "library": "elmoLibrary", "animations": { "idle": "selectElmoTimeout" } }
+            },
+            "timeout": {
+                "flump": { "library": "elmoLibrary", "animations": { "idle": "selectElmoTimeout" } }
+            }
+        },
+        {
+            "type": "abby",
+            "position": { "x": 480, "y": 600 },
+            "hitArea": { "x": -150, "y": -450, "width": 300, "height": 450 },
+            "flump": {
+                "library": "abbyLibrary",
+                "animations": { 
+                    "idle": "selectAbbyIdle", 
+                    "action": "selectAbbyActive"
+                }
+            },
+            "rollOver": {
+                "flump": { "library": "abbyLibrary", "animations": { "idle": "selectAbbyTimeout" } }
+            },
+            "timeout": {
+                "flump": { "library": "abbyLibrary", "animations": { "idle": "selectAbbyTimeout" } }
+            }
+        }
+    ]
+}
