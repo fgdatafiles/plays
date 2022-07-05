@@ -1,0 +1,59 @@
+body {
+    background: black none;
+}
+#game {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+#canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+ *	 Competition Terms & Conditions popup 
+ */
+
+#toc {
+	position: absolute;
+	margin: 0;
+	width: 600px; 
+	height: 85%;
+	background-color: #ffffff;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#header {
+	height: 40px;
+	background-color: #f5f5f5;
+	border-bottom: 1px solid #dbdbdb;
+}
+
+#closeIcon {
+	font-size: 200%; 
+	margin: 0; 
+	color: #424242;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	cursor: pointer;
+}
+
+#content {
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	height: calc(100% - 40px);
+	overflow-y: scroll;
+	overflow-x: hidden;
+}

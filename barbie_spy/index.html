@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0
+															,minimum-scale=1.0
+															,maximum-scale=1.0
+															,user-scalable=no
+															,minimal-ui">
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />					
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="robots" content="noindex,nofollow" />
+		<meta name="apple-mobile-web-app-capable" content="no" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="apple-mobile-web-app-title" content="APP TITLE">
+		<link rel="apple-touch-icon-precomposed" href="./media/images/system/CHANGE_ME_apple-touch-icon-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="./media/images/system/CHANGE_ME_apple-touch-icon-72x72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="./media/images/system/CHANGE_ME_apple-touch-icon-114x114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="./media/images/system/CHANGE_ME_apple-touch-icon-144x144-precomposed.png">	
+		
+		<script type="text/javascript" src="./js/jquery-1.7.1.min.js"></script>
+		
+		<script type="text/javascript">
+		var utag_data = {
+		google_account : "" // Test/Dev Google Account configuration
+		}
+		</script>
+
+>
+		
+		<title>Barbie: Spy Squad Academy</title>
+		
+		<meta name="description" content="" />					
+	
+		<script>			
+		
+			window.onload = function () {																		
+				gameStart();													
+			}
+			
+		</script>
+		
+	</head>
+	<body>
+		<div id="haxe:trace"></div>	
+		<div id="game-container" data-base-url="" data-width="910" data-height="682"></div>		
+		<script type="text/javascript">		
+			//window.onerror = function() {window.location.href = 'unsupported.html'; };
+			window["isStandalone"] = !!window.navigator.standalone;	
+		</script>
+					
+		<script type="text/javascript">
+		
+		var elm = document.body;
+			
+		var catcher = function(evt) {
+		if(evt.touches.length < 2)
+			evt.preventDefault();
+		};
+		
+		elm.addEventListener('touchstart', catcher, true);
+		document.ontouchmove = function ontouchmove(e)
+		{
+			e = e || window.event;
+			e.preventDefault();
+		}
+		
+		document.oncontextmenu = function oncontextmenu(e) {
+			e = e || window.event;
+			if (e.preventDefault)
+				e.preventDefault();
+			else
+				return false;
+		};					
+		</script>		
+		
+		<!-- Place at bottom of page -->
+		<script type="text/javascript" src="./js/pixi.min.js"></script>
+		<script type="text/javascript" src="./js/gameTracking.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,46 @@
+{
+	"name":"ben",
+	"off":[0, 60],
+	"p_arma":0,
+	"p_disparo": 1,
+	"p_especial": 2,
+	"damage": 6,
+	"damage_s": 6,
+	"defense": 2,
+	"defense_b": 2,
+	"speed": 0.09,
+	"speed_s": 0.40,
+	"speed_ss": 0.40,
+	"parts":[
+		{
+			"name":"cuerpo",
+			"asset":"img/aliens/ben.png",
+			"scount": [5, 3],
+			"isize": [300, 300],
+			"off": [30, 15],
+			"nota": "importante que termine en el cuadro 0",
+			"anims":{
+				"stop": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 0],
+				"still": [0]
+			}
+		},{
+			"asset":"img/aliens/alien overflow - disparo.png",
+			"isize":[50, 80],
+			"scount":[1, 4],
+			"off":[42, 10],
+			"apply_off":true, "visible":false,
+			"anims":{
+				"stop":[0, 1, 2, 3]
+			}
+		},{
+			"asset":"img/aliens/alien fuego - especial.png",
+			"isize":[240, 300],
+			"scount":[4, 5],
+			"off":[30, 30],
+			"apply_off":true, "visible":false,
+			"anims":{
+				"stop":[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+			}
+		}
+	]
+}

@@ -1,0 +1,3 @@
+function tile(){PIXI.Container.call(this);this.init();}
+tile.prototype=new foxmovieclip();tile.prototype.init=function(){this.b=new addObj("tileB",0,0,scG);this.b.setReg0();this.addChild(this.b);this.a=new addObj("tile",0,0,scG);this.a.setReg0();this.a.img.animationSpeed=0.5;this.addChild(this.a);this.b.x=-5*scG;this.b.y=-5*scG;this.a.x=-5*scG;this.a.y=-5*scG;this.d=1+fox.random(30);this.a.img.gotoAndStop(fox.random(4));this.a.img.play();this.a.visible=false;this.b.alpha=0;arClips.push(this);}
+tile.prototype.loop=function(){this.b.alpha=Math.min(1,this.b.alpha+0.05);this.d--;if(!this.d){if(!this.a.visible){this.a.visible=true;this.d=10;}else{if(g.disco>60){this.a.visible=false;this.d=30+fox.random(30);}else{this.die();}}}}

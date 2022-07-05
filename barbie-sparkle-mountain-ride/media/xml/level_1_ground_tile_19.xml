@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="25" height="20" tilewidth="256" tileheight="256" nextobjectid="263">
+ <tileset firstgid="1" name="Objects" tilewidth="219" tileheight="229" tilecount="4" columns="0">
+  <tile id="0">
+   <image width="64" height="128" source="../images/temp/player.png"/>
+  </tile>
+  <tile id="1">
+   <image width="128" height="128" source="../images/temp/dcshg-game-crates-01.png"/>
+  </tile>
+  <tile id="2">
+   <image width="64" height="64" source="../images/temp/collectible.png"/>
+  </tile>
+  <tile id="3">
+   <image width="219" height="229" source="../images/gameplay/cart_game/barbie-dt-rc-bg-obstacles.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="5" name="barbie-dt-1024-tile_1" tilewidth="256" tileheight="256" tilecount="16" columns="4">
+  <image source="images/barbie-dt-1024-tile_1.png" width="1024" height="1024"/>
+ </tileset>
+ <tileset firstgid="21" name="barbie-dt-1024-tile_2" tilewidth="256" tileheight="256" tilecount="16" columns="4">
+  <image source="images/barbie-dt-1024-tile_2.png" width="1024" height="1024"/>
+ </tileset>
+ <tileset firstgid="37" name="Objects" tilewidth="256" tileheight="256" tilecount="2" columns="0">
+  <tile id="0">
+   <image width="64" height="64" source="../images/temp/collectible.png"/>
+  </tile>
+  <tile id="1">
+   <image width="114" height="113" source="../images/gameplay/cart_game/dcshg-collect-coin.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="39" name="barbie-dt-rc-bg-speed-boost" tilewidth="100" tileheight="94" tilecount="1" columns="1">
+  <image source="images/barbie-dt-rc-bg-speed-boost.png" width="100" height="94"/>
+ </tileset>
+ <tileset firstgid="40" name="barbie-dt2-sparkmtn-deco-mid-1" tilewidth="378" tileheight="328" tilecount="1" columns="1">
+  <image source="images/barbie-dt2-sparkmtn-deco-mid-1.png" width="378" height="328"/>
+ </tileset>
+ <tileset firstgid="41" name="barbie-dt2-sparkmtn-deco-fore-3" tilewidth="267" tileheight="310" tilecount="1" columns="1">
+  <image source="images/barbie-dt2-sparkmtn-deco-fore-3.png" width="267" height="310"/>
+ </tileset>
+ <tileset firstgid="42" name="barbie-dt2-sparkmtn-dec0-fore-1" tilewidth="173" tileheight="351" tilecount="1" columns="1">
+  <image source="images/barbie-dt2-sparkmtn-dec0-fore-1.png" width="173" height="351"/>
+ </tileset>
+ <tileset firstgid="43" name="barbie-dt2-sparkmtn-deco-mid-2" tilewidth="229" tileheight="611" tilecount="1" columns="1">
+  <image source="images/barbie-dt2-sparkmtn-deco-mid-2.png" width="229" height="611"/>
+ </tileset>
+ <tileset firstgid="44" name="barbie-dt2-sparkmtn-deco-mid-3" tilewidth="201" tileheight="587" tilecount="1" columns="1">
+  <image source="images/barbie-dt2-sparkmtn-deco-mid-3.png" width="201" height="587"/>
+ </tileset>
+ <tileset firstgid="45" name="barbie-dt2-sparkmtn-deco-mid-4" tilewidth="177" tileheight="359" tilecount="1" columns="1">
+  <image source="images/barbie-dt2-sparkmtn-deco-mid-4.png" width="177" height="359"/>
+ </tileset>
+ <tileset firstgid="46" name="barbie-dt-1024-tile_4" tilewidth="256" tileheight="256" tilecount="16" columns="4">
+  <image source="images/barbie-dt-1024-tile_4.png" width="1024" height="1024"/>
+ </tileset>
+ <tileset firstgid="62" name="barbie-dt-obstacle-fish" tilewidth="207" tileheight="152" tilecount="1" columns="0">
+  <image source="images/barbie-dt-obstacle-fish.png" width="199" height="226"/>
+ </tileset>
+ <tileset firstgid="63" name="barbie-dt-rc-bg-obstacles" tilewidth="162" tileheight="137" tilecount="1" columns="1">
+  <image source="images/barbie-dt-rc-bg-obstacles.png" width="162" height="137"/>
+ </tileset>
+ <objectgroup name="BG">
+  <object id="124" type="Decoration" gid="43" x="4277.51" y="3767.67" width="229" height="611"/>
+  <object id="125" type="Decoration" gid="44" x="2259.89" y="3226.9" width="201" height="587"/>
+  <object id="126" type="Decoration" gid="44" x="3551.51" y="3475.67" width="201" height="587"/>
+  <object id="127" type="Decoration" gid="43" x="1758.13" y="3155.14" width="229" height="611"/>
+  <object id="128" type="Decoration" gid="42" x="2849.51" y="3209.67" width="173" height="351"/>
+  <object id="129" type="Decoration" gid="42" x="3103.46" y="3205.02" width="173" height="351"/>
+  <object id="130" type="Decoration" gid="44" x="1251.65" y="2887.14" width="201" height="587"/>
+  <object id="131" type="Decoration" gid="43" x="870.855" y="2738.65" width="229" height="611"/>
+  <object id="132" type="Decoration" gid="43" x="1864.19" y="3358.17" width="229" height="611"/>
+  <object id="133" type="Decoration" gid="43" x="3657.51" y="3311.67" width="229" height="611"/>
+  <object id="215" type="Decoration" gid="44" x="5374.91" y="3960.6" width="201" height="587"/>
+  <object id="216" type="Decoration" gid="44" x="5522.45" y="3739.29" width="201" height="587"/>
+  <object id="217" type="Decoration" gid="43" x="4016.65" y="3694.5" width="229" height="611"/>
+  <object id="218" type="Decoration" gid="43" x="4459.27" y="3686.3" width="229" height="611"/>
+ </objectgroup>
+ <objectgroup name="BG2"/>
+ <layer name="BG" width="25" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,63,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,63,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="Tiles" width="25" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483659,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,21,0,0,0,0,0,0,0,0,0,0,
+0,0,0,5,6,7,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,12,13,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,17,18,5,5,5,6,5,7,8,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,13,14,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,18,58,0,2147483706,5,6,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,59,0,2147483707,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,60,0,2147483708,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,61,0,2147483709,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="Foreground" width="25" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,3221225482,3221225481,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,2147483658,2147483657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="Collision">
+  <object id="186" type="Collision" x="776" y="2552">
+   <polygon points="-12.1212,3.0303 496,0 760,72 976,216 1168,408 1424,520 1608.85,526.788 1766.42,526.788 2042.18,526.788 2372.48,523.758 2702.79,520.727 2845.21,523.758 3002.79,572.242 3199.76,678.303 3333.09,793.455 3454.3,899.515 3648.24,1005.58 3787.64,1035.88 3881.58,1038.91 4013.98,1040.77 3953.49,1158.95 3699.76,1105.58 3372.48,1023.76 3084.61,817.697 2396.73,714.667 1727.03,717.697 1090.67,696.485 581.576,320.727 84.6061,193.455 -15.3939,193.455"/>
+  </object>
+  <object id="187" type="Collision" x="5884.85" y="3575.76">
+   <polygon points="0,0 -260.606,3.0303 -509.091,6.06061 -693.939,18.1818 -606.061,172.727 -293.939,184.848 0,166.667"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="Objects">
+  <object id="12" type="Entry" x="767.75" y="2563.25" width="66" height="66">
+   <properties>
+    <property name="tags" value="flatGround"/>
+   </properties>
+  </object>
+  <object id="33" type="SpawnNextTrigger" x="2973.21" y="1975.49" width="106.061" height="1102.18"/>
+  <object id="41" type="Exit" x="5886.42" y="3588.76" width="66" height="66">
+   <properties>
+    <property name="tags" value="flatGround"/>
+   </properties>
+  </object>
+  <object id="163" type="PowerStar" x="4958.32" y="3251" width="64" height="64"/>
+  <object id="193" type="Respawn" x="5402.68" y="3423.89" width="80" height="80"/>
+  <object id="194" type="Gem" gid="38" x="936.076" y="2269.41" width="43" height="43"/>
+  <object id="195" type="Gem" gid="38" x="1014.86" y="2269.41" width="43" height="43"/>
+  <object id="196" type="Gem" gid="38" x="1090.62" y="2269.41" width="43" height="43"/>
+  <object id="197" type="Gem" gid="38" x="1163.35" y="2269.41" width="43" height="43"/>
+  <object id="198" type="Gem" gid="38" x="1233.05" y="2269.41" width="43" height="43"/>
+  <object id="204" type="Gem" gid="38" x="2842.13" y="2793.65" width="43" height="43"/>
+  <object id="205" type="Gem" gid="38" x="3139.11" y="2793.65" width="43" height="43"/>
+  <object id="206" type="Gem" gid="38" x="3069.41" y="2793.65" width="43" height="43"/>
+  <object id="207" type="Gem" gid="38" x="2996.68" y="2793.65" width="43" height="43"/>
+  <object id="208" type="Gem" gid="38" x="2920.92" y="2793.65" width="43" height="43"/>
+  <object id="209" type="Gem" gid="38" x="2884.56" y="2748.2" width="43" height="43"/>
+  <object id="210" type="Gem" gid="38" x="3181.53" y="2748.2" width="43" height="43"/>
+  <object id="211" type="Gem" gid="38" x="3111.83" y="2748.2" width="43" height="43"/>
+  <object id="212" type="Gem" gid="38" x="3039.1" y="2748.2" width="43" height="43"/>
+  <object id="213" type="Gem" gid="38" x="2963.34" y="2748.2" width="43" height="43"/>
+  <object id="214" type="Gem" gid="38" x="2802.74" y="2745.17" width="43" height="43"/>
+ </objectgroup>
+ <objectgroup name="Gems">
+  <object id="50" type="Pit" x="753.359" y="3582.58" width="2320" height="839.394"/>
+  <object id="51" type="Pit" x="3062.81" y="3782.93" width="1536" height="839.394"/>
+  <object id="189" type="Pit" x="4664" y="3940.3" width="600" height="839.394"/>
+  <object id="190" type="Pit" x="5228" y="3700.3" width="600" height="839.394"/>
+ </objectgroup>
+ <objectgroup name="Obstacles"/>
+ <objectgroup name="DecorationFG">
+  <object id="96" type="DecorationFG" gid="45" x="972.402" y="2890.3" width="177" height="359"/>
+  <object id="101" type="DecorationFG" gid="43" x="2032.94" y="3754.34" width="229" height="611"/>
+  <object id="107" type="DecorationFG" gid="43" x="1073.95" y="3156.67" width="229" height="611"/>
+  <object id="119" type="DecorationFG" gid="44" x="3710.83" y="3618.37" width="201" height="587"/>
+  <object id="120" type="DecorationFG" gid="44" x="1241.35" y="3248.53" width="201" height="587"/>
+  <object id="165" type="DecorationFG" gid="44" x="1537.85" y="3304.55" width="201" height="587"/>
+  <object id="167" type="DecorationFG" gid="43" x="3986.34" y="3846.8" width="229" height="611"/>
+  <object id="170" type="DecorationFG" gid="43" x="1422.99" y="3270.1" width="229" height="611"/>
+  <object id="171" type="DecorationFG" gid="43" x="1866.05" y="3538.73" width="229" height="611"/>
+  <object id="172" type="DecorationFG" gid="43" x="3572.69" y="3805.39" width="229" height="611"/>
+  <object id="174" type="DecorationFG" gid="44" x="1354.29" y="3159.65" width="201" height="587"/>
+  <object id="176" type="DecorationFG" gid="44" x="1715.17" y="3564.15" width="201" height="587"/>
+  <object id="179" type="DecorationFG" gid="45" x="1735.82" y="3135.33" width="177" height="359"/>
+  <object id="182" type="DecorationFG" gid="45" x="1277.52" y="2886.96" width="177" height="359"/>
+  <object id="183" type="DecorationFG" gid="45" x="2054.64" y="3298.03" width="177" height="359"/>
+  <object id="219" type="DecorationFG" gid="44" x="783.5" y="2974.5" width="201" height="587"/>
+  <object id="220" type="DecorationFG" gid="43" x="2407.44" y="3729.89" width="229" height="611"/>
+  <object id="221" type="DecorationFG" gid="43" x="2909.62" y="3742.5" width="229" height="611"/>
+  <object id="222" type="DecorationFG" gid="43" x="3037.5" y="3686.5" width="229" height="611"/>
+  <object id="225" type="DecorationFG" gid="44" x="2861.92" y="3647.83" width="201" height="587"/>
+  <object id="226" type="DecorationFG" gid="44" x="3206.05" y="3706.74" width="201" height="587"/>
+  <object id="227" type="DecorationFG" gid="44" x="3477.8" y="3718.02" width="201" height="587"/>
+  <object id="228" type="DecorationFG" gid="44" x="4399.5" y="4150.5" width="201" height="587"/>
+  <object id="229" type="DecorationFG" gid="44" x="5579.5" y="4174.5" width="201" height="587"/>
+  <object id="230" type="DecorationFG" gid="44" x="5239.5" y="4202.5" width="201" height="587"/>
+  <object id="231" type="DecorationFG" gid="44" x="4711.5" y="4546.5" width="201" height="587"/>
+  <object id="232" type="DecorationFG" gid="44" x="4627.5" y="4134.5" width="201" height="587"/>
+  <object id="233" type="DecorationFG" gid="44" x="5671.5" y="4050.5" width="201" height="587"/>
+  <object id="234" type="DecorationFG" gid="44" x="4035.5" y="4046.5" width="201" height="587"/>
+  <object id="235" type="DecorationFG" gid="45" x="2293.08" y="3389.95" width="177" height="359"/>
+  <object id="236" type="DecorationFG" gid="45" x="2187.5" y="3232.5" width="177" height="359"/>
+  <object id="237" type="DecorationFG" gid="45" x="2747.5" y="3452.5" width="177" height="359"/>
+  <object id="238" type="DecorationFG" gid="45" x="3867.5" y="3576.5" width="177" height="359"/>
+  <object id="239" type="DecorationFG" gid="45" x="4351.5" y="3888.5" width="177" height="359"/>
+  <object id="240" type="DecorationFG" gid="45" x="5587.5" y="3840.5" width="177" height="359"/>
+  <object id="241" type="DecorationFG" gid="45" x="4223.5" y="3824.5" width="177" height="359"/>
+  <object id="242" type="DecorationFG" gid="45" x="4611.5" y="4316.5" width="177" height="359"/>
+  <object id="243" type="DecorationFG" gid="43" x="4481.5" y="4186.5" width="229" height="611"/>
+  <object id="244" type="DecorationFG" gid="43" x="3339.56" y="3792.68" width="229" height="611"/>
+  <object id="245" type="DecorationFG" gid="43" x="5389.5" y="4162.5" width="229" height="611"/>
+  <object id="246" type="DecorationFG" gid="43" x="4845.5" y="4494.5" width="229" height="611"/>
+  <object id="247" type="DecorationFG" gid="43" x="4977.5" y="4642.5" width="229" height="611"/>
+  <object id="248" type="DecorationFG" gid="44" x="5099.5" y="4494.5" width="201" height="587"/>
+  <object id="249" type="DecorationFG" gid="45" x="5031.5" y="4304.5" width="177" height="359"/>
+  <object id="250" type="DecorationFG" gid="45" x="4855.5" y="4656.5" width="177" height="359"/>
+  <object id="251" type="DecorationFG" gid="44" x="2591.5" y="3698.5" width="201" height="587"/>
+  <object id="252" type="DecorationFG" gid="43" x="2215.8" y="3803.59" width="229" height="611"/>
+  <object id="253" type="DecorationFG" gid="43" x="2712.77" y="3970.26" width="229" height="611"/>
+  <object id="254" type="DecorationFG" gid="43" x="3146.77" y="4000.22" width="229" height="611"/>
+  <object id="255" type="DecorationFG" gid="43" x="3798.41" y="4064.17" width="229" height="611"/>
+  <object id="256" type="DecorationFG" gid="43" x="3664.74" y="4028.63" width="229" height="611"/>
+  <object id="259" type="Obstacle" gid="62" x="2612.5" y="3098" width="207" height="152"/>
+  <object id="260" type="Obstacle" gid="62" x="3368.5" y="3098" width="207" height="152"/>
+ </objectgroup>
+</map>

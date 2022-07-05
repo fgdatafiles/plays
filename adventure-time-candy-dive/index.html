@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no; minimal-ui">
+        <script>
+            var global = this;
+            global.DEVICE = "desktop";
+            document.addEventListener('touchmove', function(e) {e.preventDefault();},false );
+        </script>
+        <link rel="stylesheet" type="text/css" href="css/main.min.css">
+        <title>Candy Dive</title>
+    </head>
+
+    <body class="">
+
+        <div id="tablet_canvas" class="game_container game blue" style="width:100%; height:100%; position: absolute; top:0; left:0; display:none; overflow:hidden">
+            <canvas id="game_canvas" class="canvas" width="640" height="960"></canvas>
+            <div id="ui" class="scorebox">
+                <img class="banner" src="images/score_banner.png"/>
+                <div class="bonus_container">
+                    <div id="bonus_01" class="character character_b1"></div>
+                    <div id="bonus_02" class="character character_b2"></div>
+                    <div id="bonus_03" class="character character_b3"></div>
+                    <div id="bonus_04" class="character character_b4"></div>
+                    <div id="bonus_05" class="character character_b5"></div>
+                </div>
+                <div class="score_display">
+                    <img src="images/score_banner_test.png" width="100%" style="position: absolute; top: 0; left: 0"/>
+                    <div id="score_display" class="copy">00000000</div>
+                </div>
+            </div>
+            <div id="btn_pause" class="btn_pause"><img src="images/btn_pause.png" width="100%"/></div>
+            <!--<div id="tilt" style="position: absolute; top: 10px; width: 100%; font-size: 2em; text-align: center"></div> -->
+        </div>
+        <div id="wrapper" class="wrapper">
+
+
+            <!--
+            ============================================================================================================
+                LANDING SCREEN
+            ============================================================================================================
+            -->
+            <div id="screen_landing" class="welcome screen">
+                <div class="title_box">
+                    <div class="content">
+                        <div class="logo_adv"></div>
+                        <div class="copy_container">
+                            <div class="upper"><span class="heading copy-name-upper"></span></div>
+                            <div class="lower heading"><span class="copy-name-lower"></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="witch" class="witch"><img src="images/home_screen_witch.png" width="100%"/></div>
+                <div class="characters"></div>
+
+                <div class="heading btn_play show_instructions"><div class="copy"><span class="copy-btn-play"></span></div></div>
+            </div>
+            <!--
+           ============================================================================================================
+               INSTRUCTIONS SCREEN
+           ============================================================================================================
+           -->
+
+            <div id="screen_instructions" class="instructions screen">
+                <div class="title_banner">
+                    <div class="content">
+                        <div class="label heading">HOW TO PLAY</div>
+                    </div>
+                </div>
+                <div class="info_box">
+                    <div class="content">
+                        <div class="page">
+                            <div class="header">
+                                <span class="heading copy-instructions-subheadding-upper upper"></span><br/>
+                                <span class="copy-instructions-subheadding-lower lower"></span>
+                            </div>
+                            <div class="image"><img id="instruction_image" width="100%"/></div>
+                            <div class="instruction"><span id="instruction_copy" class="copy-instruction"></span></div>
+                            <!-- <div class="step"><img id="instruction_step" width="100%" src="" /></div> -->
+                            <div class="tip">
+                                <span class="heading copy-instructions-tip-upper upper"></span><br/>
+                                <span class="copy-instructions-tip-lower"></span>
+                            </div>
+                        </div>
+                        <div id="btn_prev" class="btn_prev btn_cycle"><img src="images/btn_instructions_prev.png" width="100%" /></div>
+                        <div id="btn_next" class="btn_next btn_cycle"><img src="images/btn_instructions_next.png" width="100%" /></div>
+                    </div>
+                </div>
+                <div class="heading btn_play play_game"><div class="copy"><span class="copy-btn-play"></span></div></div>
+            </div>
+            <!--
+            ===========================================================================================================
+                GAME SCREEN
+            ============================================================================================================
+            -->
+            <div id="screen_game" class="game screen">
+
+            </div>
+            <!--
+            ===========================================================================================================
+                GAME COMPLETE SCREEN
+            ============================================================================================================
+            -->
+            <div id="screen_complete" class="gameend screen">
+                <div class="score_display">
+                    <div class="content">
+                          <div id="score_game" class="score_section">
+                              <div class="label"><span class="copy-label-score"></span></div>
+                              <div id="end_score" class="score">00000000</div>
+                          </div>
+                           <div id="score_bonuses" class="score_section">
+                              <div class="label"><span class="copy-label-bestscore"></span></div>
+                              <div id="end_bonus" class="score">00000000</div>
+                           </div>
+                    </div>
+                </div>
+                <div class="heading btn_play play_game"><div class="copy"><span class="copy-btn-playagain"></span></div></div>
+            </div>
+            <!--
+            ============================================================================================================
+               LOADING SCREEN
+            ============================================================================================================
+            -->
+            <div id="screen_loading" class="screen loading pink" style="display: block">
+                <div class="logo">
+                    <img src="images/logo_cn.png" width="100%"/>
+                </div>
+                <div id="load_bar" class="loadbar anim">
+                    <div class="left anim">
+                        <!--<img src="images/Loader_Left.png" width="100%">-->
+                    </div>
+                    <div class="right anim">
+                        <!--<img src="images/Loader_Right.png" width="100%">-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="rotatescreen" class="rotatescreen blue">
+            <div class="content">
+                <div class="half">
+                    <div class="message_display">
+                        <div class="message">
+                            <div class="title_box">
+                                <div class="content">
+                                    <div class="logo_adv"></div>
+                                    <div class="copy_container">
+                                        <div class="upper"><span class="heading copy-name-upper"></span></div>
+                                        <div class="lower heading"><span class="copy-name-lower"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="half right">
+                    <div class="message_display banner">
+                        <div class="icon"><img src="images/rotate_graphic.png" width="100%" /></div>
+                        <div class="copy copy-message-rotate heading"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    <div id="debug" style="background: #fff; position: absolute; top: 0; left: 0; width: 100%; text-align: center; font-size: 2em"></div>
+    </body>
+    <script src="js/script.min.js"></script>
+    
+     <!--  <script src="../src/concat/script.concat.js"></script>  -->
+
+  </html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Alvin Parkour Racer</title>
+
+<meta name="robots" content="noindex,nofollow" />
+
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,width=device-width">
+<style>
+                * {
+                        border: 0;
+                        margin: 0;
+                        padding: 0;
+                        outline: 0;
+                }
+
+                canvas {
+                        /*transition: width 0.3s, height 0.3s;*/
+                }
+
+                #container-2d, #container-3d {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+
+                        height: 100vh;
+                        width: 100vw;
+                }
+
+                #container-3d canvas {
+                        background: #000;
+                }
+
+                body {
+                        background: #000;
+                        height: 100vh;
+                        width: 100vw;
+                }
+
+                body.loading {
+                        background: linear-gradient(45deg, #000000, #33b3f2);
+                        background-size: 400% 400%;
+                        -webkit-animation: loadingAnim 7s ease infinite;
+                        -moz-animation: loadingAnim 7s ease infinite;
+                        animation: loadingAnim 7s ease infinite;
+                }
+
+                @-webkit-keyframes loadingAnim {
+                        0%{background-position:0 100%}
+                        50%{background-position:100% 0}
+                        100%{background-position:0 100%}
+                }
+                @-moz-keyframes loadingAnim {
+                        0%{background-position:0 100%}
+                        50%{background-position:100% 0}
+                        100%{background-position:0 100%}
+                }
+                @keyframes loadingAnim {
+                        0%{background-position:0 100%}
+                        50%{background-position:100% 0}
+                        100%{background-position:0 100%}
+                }
+
+                html {
+                        font-display: block;
+                }
+  </style>
+</head>
+<body class="loading">
+<div id="container-3d"></div>
+<div id="container-2d"></div>
+<script type="text/javascript" src="phaser~main_06e6446030728d9bf597.js"></script>
+<script type="text/javascript" src="three~main_a89eb6a9ae8dd0967340.js"></script>
+<script type="text/javascript" src="vendors~main_9cf4e8d2e0a4fb480b12.js"></script>
+<script type="text/javascript" src="main_f7e5c35a4555af3021eb.js"></script>
+</body>
+</html>

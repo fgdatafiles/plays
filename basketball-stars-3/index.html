@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>2DKit JSEmbed</title>
+		
+		<script src="https://markknol.github.io/console-log-viewer/console-log-viewer.js?closed=true?minimized=true"></script>
+		<!-- <script type="text/javascript" src="3rdparty/swfobject.js"></script>
+		<script type="text/javascript" src="3rdparty/web_socket.js"></script> -->
+		<!--lib-->
+		 <!--<script type="text/javascript" src="Photon-Javascript_SDK.js"></script> -->
+		<!--lib-->
+		<!-- <script type="text/javascript" src="Photon-Javascript_SDK.min.js"></script> -->
+
+		<script src="http://code.jquery.com/qunit/qunit-1.19.0.js"></script>
+		<!--<script src="PlayFab/PlayFabAdminApi.js"></script>-->
+		<!--<script src="PlayFab/PlayFabClientApi.js"></script>-->
+		<!--<script src="PlayFab/PlayFabMatchmakerApi.js"></script>-->
+		<!--<script src="PlayFab/PlayFabServerApi.js"></script>-->
+		<!--info (optional)-->
+		<!--<script type="text/javascript" src="cloud-app-info.js"></script>-->
+		<!--<script type="text/javascript" src="app.js"></script>-->
+		
+		<script type="text/javascript">
+			WEB_SOCKET_SWF_LOCATION = "Photon/3rdparty/WebSocketMain.swf";
+			// Set this to dump debug message from Flash to console.log:
+			WEB_SOCKET_DEBUG = false;
+		</script>
+			
+	    <script src="js/jsembed.js"></script>
+		<!--<script src="flambe.js"></script>-->
+
+		<script type="text/javascript">
+		var base = window.location.pathname;
+			base = base.substring(0, base.lastIndexOf("/"));
+
+			var params = {
+				//base: base, // Set a base url of all app content. Defaults "".
+				base: "",
+			 	api: "flambe", // supported custom apis are defined in jsembed. Defaults none.
+			 	//scaletype: "fit", // update window.canvasScale on window resize? Defaults "fit". 
+			 	autoscale: "true", // update window.canvasScale on window resize? Defaults true.
+			 	indexroot: "true", // use index url as path root? If false, uses domain root instead. Defaults false (uses domain root).
+			 	libs: ["flambe.js"] // array of libs to embed before trying to launch app. Defaults []
+			}
+			// Attributes will be set on the embed target for use by the app. "base" will be set as well.
+			var attr = {
+			};
+			jsembed.embed("flambe.js", "embedtarget", "960", "560", params, attr);
+		</script>
+	</head>
+	<body style="padding: 0; margin: 0; background-color: black">
+		<div id="embedtarget"></div>
+	<link rel="preload" href="/privacy.css" as="style" />
+    <script src="/privacy.js"></script></body>
+</html>

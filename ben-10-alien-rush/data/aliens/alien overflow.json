@@ -1,0 +1,68 @@
+{
+	"off":[0, 55],
+	"p_arma": 0,
+	"p_disparo": 2,
+	"p_especial": 3,
+	"collider_size":1,
+	"bullet_c":2,
+	"bullet_s_c":2,
+	"damage":2,
+	"damage_s":3,
+	"defense":1.2,
+	"defense_b":1.2,
+	"speed":0.15,
+	"speed_s":0.25,
+	"speed_ss":0.15,
+	"__notas":"se pueden agregar atributos no específicos para traer desde la clase después o en una parte específica. el atributo name no sirve para nada, es solo para hacerme mas facil la lectura",
+	"charge_frame_count": 16,
+	"parts":[
+		{
+			"name":"arma",
+			"asset":"img/aliens/alien overflow - arma.png",
+			"scount":[6, 5],
+			"isize":[660, 550],
+			"off":[55, 55],
+			"_notes": "dont_loop permite especificar que animaciones no hay que loopear",
+			"dont_loop": ["shoot", "charging", "hit"],
+			"anims":{
+				"stop": [0],
+				"charging": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+				"charged": [13, 14, 15, 16],
+				"shoot": [17, 18, 19, 20, 21, 22, 23, 24],
+				"hit": [25, 26, 27, 27, 27, 27, 27, 28, 29]
+			}
+		},{
+			"__notas":"solo para mostrar que se pueden agregar fps por parte, no por animacion (por ahora) y para mostrar como agregar un comentario",
+			"fps":30,
+			"asset":"img/aliens/alien overflow - cuerpo.png",
+			"scount": [4, 4],
+			"isize": [240, 540],
+			"off": [30, 55],
+			"dont_loop":["still"],
+			"anims":{
+				"stop": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+				"u": [11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
+				"hit": [12, 13, 14, 14, 14, 14, 14, 14, 15],
+				"still": [0]
+			}
+		},{
+			"asset":"img/aliens/alien overflow - disparo.png",
+			"isize":[50, 80],
+			"scount":[1, 4],
+			"off":[42, 10],
+			"apply_off":true, "visible":false,
+			"anims":{
+				"stop":[0, 1, 2, 3]
+			}
+		},{
+			"asset":"img/aliens/alien overflow - especial.png",
+			"isize":[64, 120],
+			"scount":[1, 4],
+			"off":[50, 15],
+			"apply_off":true, "visible":false,
+			"anims":{
+				"stop":[0, 1, 2, 3]
+			}
+		}
+	]
+}

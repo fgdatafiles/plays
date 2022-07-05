@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="25" height="20" tilewidth="256" tileheight="256" nextobjectid="187">
+ <tileset firstgid="1" name="Objects" tilewidth="219" tileheight="229" tilecount="4" columns="0">
+  <tile id="0">
+   <image width="64" height="128" source="../images/temp/player.png"/>
+  </tile>
+  <tile id="1">
+   <image width="128" height="128" source="../images/temp/dcshg-game-crates-01.png"/>
+  </tile>
+  <tile id="2">
+   <image width="64" height="64" source="../images/temp/collectible.png"/>
+  </tile>
+  <tile id="3">
+   <image width="219" height="229" source="../images/gameplay/cart_game/barbie-dt-rc-bg-obstacles.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="5" name="barbie-dt-1024-tile_1" tilewidth="256" tileheight="256" tilecount="16" columns="4">
+  <image source="images/barbie-dt-1024-tile_1.png" width="1024" height="1024"/>
+ </tileset>
+ <tileset firstgid="21" name="barbie-dt-1024-tile_loop-1-1" tilewidth="256" tileheight="256" tilecount="16" columns="4">
+  <image source="images/barbie-dt-1024-tile_loop-1-1.png" width="1024" height="1024"/>
+ </tileset>
+ <tileset firstgid="37" name="barbie-dt-1024-tile_loop-1-2" tilewidth="256" tileheight="256" tilecount="16" columns="4">
+  <image source="images/barbie-dt-1024-tile_loop-1-2.png" width="1024" height="1024"/>
+ </tileset>
+ <tileset firstgid="53" name="barbie-dt-1024-tile_loop-2-1" tilewidth="256" tileheight="256" tilecount="16" columns="4">
+  <image source="images/barbie-dt-1024-tile_loop-2-1.png" width="1024" height="1024"/>
+ </tileset>
+ <tileset firstgid="69" name="barbie-dt-1024-tile_loop-2-2" tilewidth="256" tileheight="256" tilecount="16" columns="4">
+  <image source="images/barbie-dt-1024-tile_loop-2-2.png" width="1024" height="1024"/>
+ </tileset>
+ <tileset firstgid="85" name="Objects" tilewidth="256" tileheight="256" tilecount="2" columns="0">
+  <tile id="0">
+   <image width="64" height="64" source="../images/temp/collectible.png"/>
+  </tile>
+  <tile id="1">
+   <image width="114" height="113" source="../images/gameplay/cart_game/dcshg-collect-coin.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="87" name="barbie-dt-1024-tile-ramps-256-2" tilewidth="256" tileheight="256" tilecount="16" columns="4">
+  <image source="images/barbie-dt-1024-tile-ramps-256-2.png" width="1024" height="1024"/>
+ </tileset>
+ <tileset firstgid="103" name="barbie-dt-obstacle-fish" tilewidth="207" tileheight="152" tilecount="1" columns="0">
+  <image source="images/barbie-dt-obstacle-fish.png" width="199" height="226"/>
+ </tileset>
+ <tileset firstgid="104" name="barbie-dt-rc-bg-speed-boost" tilewidth="100" tileheight="94" tilecount="1" columns="1">
+  <image source="images/barbie-dt-rc-bg-speed-boost.png" width="100" height="94"/>
+ </tileset>
+ <tileset firstgid="105" name="barbie-dt-rc-bg-obstacles" tilewidth="162" tileheight="137" tilecount="1" columns="1">
+  <image source="images/barbie-dt-rc-bg-obstacles.png" width="162" height="137"/>
+ </tileset>
+ <tileset firstgid="106" name="barbie-dt2-sparkmtn-deco-mid-8" tilewidth="336" tileheight="330" tilecount="1" columns="1">
+  <image source="images/barbie-dt2-sparkmtn-deco-mid-8.png" width="336" height="330"/>
+ </tileset>
+ <tileset firstgid="107" name="barbie-dt2-sparkmtn-deco-mid-7" tilewidth="151" tileheight="201" tilecount="1" columns="1">
+  <image source="images/barbie-dt2-sparkmtn-deco-mid-7.png" width="151" height="201"/>
+ </tileset>
+ <tileset firstgid="108" name="barbie-dt2-sparkmtn-deco-mid-6" tilewidth="247" tileheight="375" tilecount="1" columns="1">
+  <image source="images/barbie-dt2-sparkmtn-deco-mid-6.png" width="247" height="375"/>
+ </tileset>
+ <tileset firstgid="109" name="barbie-dt2-sparkmtn-deco-mid-2" tilewidth="229" tileheight="611" tilecount="1" columns="1">
+  <image source="images/barbie-dt2-sparkmtn-deco-mid-2.png" width="229" height="611"/>
+ </tileset>
+ <tileset firstgid="110" name="barbie-dt2-sparkmtn-deco-detail-1" tilewidth="167" tileheight="250" tilecount="1" columns="1">
+  <image source="images/barbie-dt2-sparkmtn-deco-detail-1.png" width="167" height="250"/>
+ </tileset>
+ <tileset firstgid="111" name="barbie-dt2-sparkmtn-deco-mid-4" tilewidth="177" tileheight="359" tilecount="1" columns="1">
+  <image source="images/barbie-dt2-sparkmtn-deco-mid-4.png" width="177" height="359"/>
+ </tileset>
+ <tileset firstgid="112" name="barbie-dt2-sparkmtn-deco-mid-3" tilewidth="201" tileheight="587" tilecount="1" columns="1">
+  <image source="images/barbie-dt2-sparkmtn-deco-mid-3.png" width="201" height="587"/>
+ </tileset>
+ <objectgroup name="BG">
+  <object id="140" type="Decoration" gid="106" x="1800" y="2597" width="336" height="330"/>
+  <object id="141" type="Decoration" gid="107" x="2775.2" y="1528.87" width="151" height="201" rotation="-107.703"/>
+  <object id="142" type="Decoration" gid="107" x="1460.55" y="1330.38" width="151" height="201" rotation="-211.417"/>
+  <object id="144" type="Decoration" gid="107" x="1405.49" y="2102.23" width="151" height="201" rotation="-644.591"/>
+  <object id="145" type="Decoration" gid="107" x="2230.54" y="1020" width="151" height="201" rotation="-159.394"/>
+  <object id="146" type="Decoration" gid="107" x="2542.45" y="2333.18" width="151" height="201" rotation="-35.9809"/>
+  <object id="147" type="Decoration" gid="108" x="3001" y="3123" width="247" height="375"/>
+  <object id="149" type="Decoration" gid="109" x="3414" y="3281" width="229" height="611"/>
+ </objectgroup>
+ <objectgroup name="BG2">
+  <object id="151" type="Decoration" gid="110" x="3465" y="2965" width="167" height="250"/>
+  <object id="152" type="Decoration" gid="111" x="956" y="2615" width="177" height="359"/>
+  <object id="153" type="Decoration" gid="111" x="4032.39" y="3148.72" width="177" height="359" rotation="25.0204"/>
+ </objectgroup>
+ <layer name="Sign" width="25" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,105,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="Loop" width="25" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,45,46,39,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,47,48,49,50,43,44,37,38,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,51,52,0,0,0,0,41,42,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,53,54,0,0,0,0,31,32,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,57,58,0,0,0,0,35,36,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,29,30,28,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,27,33,34,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,21,22,23,24,25,26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,68,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,90,0,0,0,0,90,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,94,0,0,0,0,94,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,98,0,0,0,0,98,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,102,0,0,0,0,102,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="Tiles" width="25" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="Road" width="25" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,9,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,9,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,2147483654,2147483653,5,6,2147483654,2147483653,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="FrontRoad" width="25" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,61,62,55,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,66,59,60,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,90,0,0,63,64,65,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,94,0,0,0,0,56,69,70,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,98,0,0,0,0,0,73,74,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,102,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="Collision">
+  <object id="61" type="PreLoopCollision" x="768" y="2560">
+   <polygon points="0,0 1154,28.97 1200.28,62 0,256"/>
+  </object>
+  <object id="63" type="Pit" x="768" y="3328" width="1792" height="839.394"/>
+  <object id="67" type="Pit" x="2560" y="3436" width="1792" height="839.394"/>
+  <object id="70" type="PreLoopCollision" x="1918" y="2590">
+   <polygon points="2,-4 46,34 184,22 274,4 368,-26 492,-74 672,-192 808,-338 950,-566 1008,-830 966,-1082 868,-1280 700,-1470 572,-1564 378,-1658 224,-1690 35.2727,-1689.09 86.4886,-1600.43 187.396,-1599.79 267.333,-1584.67 360,-1558 446,-1512 552,-1450 640,-1376 722,-1279 789,-1180 844,-1068 868,-985 884,-881 887,-806 874,-709 846,-611 809,-521 752,-420 683,-323 594,-230 493,-149 396,-90 283,-45 179,-17 75,-7"/>
+  </object>
+  <object id="72" type="PostLoopCollision" x="2044" y="984">
+   <polygon points="59.3333,5.04167 61.6364,-85.8182 -112,-84 -278,-58 -414,-4 -756,152 -1056,504 -1060,852 -1014,1136 -860,1278 -406,1598 -112,1790 274,2020 424,2090 542,2136 652,2160 750,2172 808,2172 810,2086 702,2078 616,2054 492,1994 430,1964 298,1890 174,1804 24,1710 -106,1630 -252,1520 -396,1412 -512,1300 -620,1172 -682,1070 -734,956 -766,838 -780,738 -764,622 -726,506 -660,380 -568,274 -464,180 -326,94 -224,52 -118,24 -39,6.1875"/>
+  </object>
+  <object id="75" type="Collision" x="2852" y="3070" width="1499.5" height="86"/>
+ </objectgroup>
+ <objectgroup name="PostLoopCollision">
+  <object id="37" type="LoopCollisionSwap" x="2030" y="564.12" width="52" height="754.545"/>
+ </objectgroup>
+ <objectgroup name="Gems"/>
+ <objectgroup name="Objects">
+  <object id="33" type="Entry" x="768.061" y="2563.09" width="66" height="66">
+   <properties>
+    <property name="tags" value="flatGround"/>
+   </properties>
+  </object>
+  <object id="34" type="Exit" x="4351.68" y="3077.25" width="66" height="66">
+   <properties>
+    <property name="tags" value="flatGround"/>
+   </properties>
+  </object>
+  <object id="35" type="SpawnNextTrigger" x="2048" y="2048" width="106.061" height="818.182"/>
+  <object id="79" type="Gem" gid="86" x="2122.5" y="2354.5" width="43" height="43"/>
+  <object id="81" type="Gem" gid="86" x="1866.5" y="2418.5" width="43" height="43"/>
+  <object id="82" type="Gem" gid="86" x="1930.5" y="2482.5" width="43" height="43"/>
+  <object id="83" type="Gem" gid="86" x="2122.5" y="2482.5" width="43" height="43"/>
+  <object id="84" type="Gem" gid="86" x="2186.5" y="2354.5" width="43" height="43"/>
+  <object id="85" type="Gem" gid="86" x="1930.5" y="2418.5" width="43" height="43"/>
+  <object id="88" type="Gem" gid="86" x="2058.5" y="2482.5" width="43" height="43"/>
+  <object id="89" type="Gem" gid="86" x="1930.5" y="2546.5" width="43" height="43"/>
+  <object id="92" type="Gem" gid="86" x="2186.5" y="2418.5" width="43" height="43"/>
+  <object id="94" type="Gem" gid="86" x="1866.5" y="2482.5" width="43" height="43"/>
+  <object id="95" type="Gem" gid="86" x="1802.5" y="2418.5" width="43" height="43"/>
+  <object id="96" type="Gem" gid="86" x="2058.5" y="2418.5" width="43" height="43"/>
+  <object id="97" type="Gem" gid="86" x="1994.5" y="2418.5" width="43" height="43"/>
+  <object id="98" type="Gem" gid="86" x="1994.5" y="2482.5" width="43" height="43"/>
+  <object id="100" type="Gem" gid="86" x="1994.5" y="2546.5" width="43" height="43"/>
+  <object id="101" type="Gem" gid="86" x="2122.5" y="2418.5" width="43" height="43"/>
+  <object id="102" type="Gem" gid="86" x="1866.5" y="2354.5" width="43" height="43"/>
+  <object id="103" type="Gem" gid="86" x="1802.5" y="2354.5" width="43" height="43"/>
+  <object id="104" type="Gem" gid="86" x="2058.5" y="2546.5" width="43" height="43"/>
+  <object id="105" type="Gem" gid="86" x="3956.5" y="2754.5" width="43" height="43"/>
+  <object id="106" type="Gem" gid="86" x="4084.5" y="2626.5" width="43" height="43"/>
+  <object id="107" type="Gem" gid="86" x="3892.5" y="2754.5" width="43" height="43"/>
+  <object id="108" type="Gem" gid="86" x="4020.5" y="2882.5" width="43" height="43"/>
+  <object id="109" type="Gem" gid="86" x="3764.5" y="2754.5" width="43" height="43"/>
+  <object id="110" type="Gem" gid="86" x="3956.5" y="2626.5" width="43" height="43"/>
+  <object id="111" type="Gem" gid="86" x="4020.5" y="2690.5" width="43" height="43"/>
+  <object id="112" type="Gem" gid="86" x="3956.5" y="2818.5" width="43" height="43"/>
+  <object id="113" type="Gem" gid="86" x="3764.5" y="2946.5" width="43" height="43"/>
+  <object id="115" type="Gem" gid="86" x="3828.5" y="2690.5" width="43" height="43"/>
+  <object id="116" type="Gem" gid="86" x="3764.5" y="2625.17" width="43" height="43"/>
+  <object id="117" type="Gem" gid="86" x="4084.5" y="2818.5" width="43" height="43"/>
+  <object id="118" type="Gem" gid="86" x="3892.5" y="2626.5" width="43" height="43"/>
+  <object id="120" type="Gem" gid="86" x="3764.5" y="2818.5" width="43" height="43"/>
+  <object id="121" type="Gem" gid="86" x="3892.5" y="2818.5" width="43" height="43"/>
+  <object id="122" type="Gem" gid="86" x="4084.5" y="2946.5" width="43" height="43"/>
+  <object id="123" type="Gem" gid="86" x="3828.5" y="2882.5" width="43" height="43"/>
+  <object id="124" type="Gem" gid="86" x="4084.5" y="2754.5" width="43" height="43"/>
+  <object id="125" type="SpeedBoost" x="2309.33" y="2351.33" width="42.6667" height="44"/>
+  <object id="131" type="SpeedBoost" x="2755.58" y="1620.18" width="42.6667" height="44"/>
+  <object id="135" gid="104" x="2278.21" y="2418.79" width="100" height="94"/>
+  <object id="136" gid="104" x="2729" y="1684" width="100" height="94"/>
+  <object id="186" type="PowerStar" x="3908" y="2852" width="64" height="64"/>
+ </objectgroup>
+ <objectgroup name="DecorationFG">
+  <object id="155" type="DecorationFG" gid="111" x="1348.12" y="2872.23" width="177" height="359"/>
+  <object id="156" type="DecorationFG" gid="111" x="1663.5" y="2928.5" width="177" height="359"/>
+  <object id="157" type="DecorationFG" gid="111" x="2059.5" y="3116.5" width="177" height="359"/>
+  <object id="158" type="DecorationFG" gid="111" x="3003.5" y="3440.5" width="177" height="359"/>
+  <object id="159" type="DecorationFG" gid="111" x="3118.29" y="3394.81" width="177" height="359"/>
+  <object id="160" type="DecorationFG" gid="111" x="3178.87" y="3592.71" width="177" height="359"/>
+  <object id="161" type="DecorationFG" gid="111" x="3776.61" y="3459.43" width="177" height="359"/>
+  <object id="162" type="DecorationFG" gid="111" x="4215.06" y="3422.08" width="177" height="359"/>
+  <object id="163" type="DecorationFG" gid="109" x="3169.02" y="3587.88" width="229" height="611"/>
+  <object id="164" type="DecorationFG" gid="109" x="3827.34" y="3709.04" width="229" height="611"/>
+  <object id="165" type="DecorationFG" gid="109" x="3948.5" y="3660.57" width="229" height="611"/>
+  <object id="166" type="DecorationFG" gid="109" x="3439.62" y="3672.69" width="229" height="611"/>
+  <object id="167" type="DecorationFG" gid="109" x="2030.09" y="3115.34" width="229" height="611"/>
+  <object id="168" type="DecorationFG" gid="109" x="874.999" y="3107.26" width="229" height="611"/>
+  <object id="169" type="DecorationFG" gid="109" x="1129.44" y="3236.5" width="229" height="611"/>
+  <object id="170" type="DecorationFG" gid="109" x="1448.5" y="3095.15" width="229" height="611"/>
+  <object id="171" type="DecorationFG" gid="112" x="1034.39" y="3078.87" width="201" height="587"/>
+  <object id="172" type="DecorationFG" gid="112" x="1874.46" y="3292.93" width="201" height="587"/>
+  <object id="173" type="DecorationFG" gid="112" x="1729.06" y="3183.88" width="201" height="587"/>
+  <object id="174" type="DecorationFG" gid="112" x="2254.1" y="3470.64" width="201" height="587"/>
+  <object id="175" type="DecorationFG" gid="112" x="2613.55" y="3648.34" width="201" height="587"/>
+  <object id="176" type="DecorationFG" gid="112" x="3320.34" y="3539.29" width="201" height="587"/>
+  <object id="177" type="DecorationFG" gid="112" x="3594.98" y="3692.77" width="201" height="587"/>
+  <object id="178" type="DecorationFG" gid="112" x="4103.86" y="3700.85" width="201" height="587"/>
+  <object id="179" type="DecorationFG" gid="109" x="2345.11" y="3587.88" width="229" height="611"/>
+  <object id="180" type="DecorationFG" gid="109" x="2769.18" y="3676.73" width="229" height="611"/>
+  <object id="181" type="DecorationFG" gid="111" x="2536.7" y="3390.77" width="177" height="359"/>
+  <object id="182" type="DecorationFG" gid="111" x="2157.06" y="3277.69" width="177" height="359"/>
+  <object id="184" type="Obstacle" gid="103" x="3828.5" y="3106.67" width="207" height="152"/>
+ </objectgroup>
+</map>

@@ -1,0 +1,36 @@
+function popscore(x1, y1, n) {
+	PIXI.Container.call( this );
+	this.init(x1, y1, n);
+}
+
+popscore.prototype = new foxmovieclip();
+
+popscore.prototype.init = function(x1, y1, n) {
+	if(x1){}else{x1=100*scG}
+	if(y1){}else{y1=100*scG}
+	if(n){}else{n=0}
+	
+	this.a = new PIXI.Container();
+	this.addChild(this.a);
+	this.a.b = addText(String(n), 30*scG, "#FF6600", undefined, 
+						"center", 80*scG, 1*scG, fontMain, true, "#FFFFFF");
+	this.a.b.x = -0;
+	this.a.b.y = -this.a.b.height/2;
+	this.a.addChild(this.a.b);
+	
+	this.x = x1;
+	this.y = y1;
+	this.d = 30;
+	
+	fox.initjiggle(this.a, 3, 1, 0.8, 0.8);
+	
+	arClips.push(this);
+}
+
+popscore.prototype.loop = function() {
+	fox.jiggle(this.a);
+	this.d--;
+	if (!this.d) {
+		this.die()
+	}
+}

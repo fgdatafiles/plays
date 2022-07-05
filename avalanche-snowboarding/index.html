@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<title>Looney Tunes Avalanche Snowboarding</title>
+<meta name="robots" content="noindex,nofollow" />
+<script src="js/lib/phaser.js"></script>
+<script src="js/src/utils/Utils.js"></script>
+<script src="js/src/utils/ScaleUtils.js"></script>
+<script src="js/src/Boot.js"></script>
+<script src="js/src/Preloader.js"></script>
+<script src="js/src/MainMenu.js"></script>
+<script src="js/src/Instructions.js"></script>
+<script src="js/src/Win.js"></script>
+<script src="js/src/Lose.js"></script>
+<script src="js/src/Game.js"></script>
+<script src="js/src/data/C.js"></script>
+<script src="js/src/data/Model.js"></script>
+<script src="js/src/objects/AbstractGameObject.js"></script>
+<script src="js/src/objects/PlayerObject.js"></script>
+<script src="js/src/objects/CollideableObject.js"></script>
+<script src="js/src/decorations/Avalanche.js"></script>
+<script src="js/src/decorations/Slope.js"></script>
+<script src="js/src/decorations/Background.js"></script>
+<script src="js/src/ui/HUD.js"></script>
+<style>
+        @font-face {
+            font-family: 'Cervo-Medium';
+            src: url('assets/fonts/Cervo-Medium.otf') format('OpenType');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .fontLoader {
+            position: absolute;
+        }
+
+        body {
+            font-family: 'Cervo-Medium';
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+        }
+
+        html,
+        body {
+            background: #000000;
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="gameContainer"></div>
+<script type="text/javascript">
+        window.onload = function() {
+            var game = new Phaser.Game(700 * window.devicePixelRatio, 360 * window.devicePixelRatio, Phaser.CANVAS, "gameContainer");
+            game.state.add('Boot', AvalancheSnowboarding.Boot);
+            game.state.add('Preloader', AvalancheSnowboarding.Preloader);
+            game.state.add('MainMenu', AvalancheSnowboarding.MainMenu);
+            game.state.add('Instructions', AvalancheSnowboarding.Instructions);
+            game.state.add('Game', AvalancheSnowboarding.Game);
+            game.state.add('Win', AvalancheSnowboarding.Win);
+            game.state.add('Lose', AvalancheSnowboarding.Lose);
+            game.state.start('Boot');
+
+            //document.getElementById('gameContainer').focus();
+        };
+    </script>
+</body>
+</html>

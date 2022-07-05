@@ -1,0 +1,42 @@
+{
+	"off":[0, 30],
+	"p_arma":2,
+	"p_disparo":3,
+	"parts":[
+		{
+			"asset":"img/enemigos/bichos/bicho - agua.png",
+			"isize":[280, 240],
+			"scount":[4, 4],
+			"off": [35, 0],
+			"anims":{
+				"stop": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+			}
+		},{
+			"asset":"img/enemigos/bichos/bicho3-3 - cuerpo.png",
+			"isize": [180, 240],
+			"scount": [3, 3],
+			"off": [30, 30],
+			"anims":{
+				"stop": [0, 1, 2, 3, 4, 5, 6, 7, 8]
+			}
+		},{
+			"asset":"img/enemigos/bichos/bicho3-3 - cabeza.png",
+			"isize":[180, 180],
+			"off":[30, 30],
+			"scount":[3, 3],
+			"dont_loop": ["shoot"],
+			"anims":{
+				"stop":[0],
+				"focus":[0,1,2,3],
+				"focused":[3],
+				"unfocus":[4,5,6,7,8],
+				"shoot":[2,3,4,5,6,7,8]
+			}
+		},{
+			"asset":"img/enemigos/abejas/abeja - disparo.png",
+			"isize":[32, 32], "scount":[2, 2], "off":[8, 8],
+			"apply_off":true, "visible":false,
+			"anims":{ "stop":[0, 1, 2, 3] }
+		}
+	]
+}

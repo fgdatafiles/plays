@@ -1,0 +1,81 @@
+{
+	"off":[0, 55],
+	"p_arma":1,
+	"p_cabeza":2,
+	"p_disparo":3,
+	"p_especial":4,
+	"collider_size":0.8,
+	"bullet_c":2,
+	"bullet_s_c":1,
+	"damage": 2,
+	"damage_s": 4,
+	"defense": 0.8,
+	"defense_b": 1.2,
+	"speed": 0.17,
+	"speed_s": 0.30,
+	"speed_ss": 0.20,
+	"charge_frame_count": 16,
+  	"__notas":"se pueden agregar atributos no específicos para traer desde la clase después o en una parte específica. el atributo name no sirve para nada, es solo para hacerme mas facil la lectura",
+	"parts":[
+		{
+			"__notas":"solo para mostrar que se pueden agregar fps por parte, no por animacion (por ahora) y para mostrar como agregar un comentario",
+			"fps":30,
+			"asset":"img/aliens/alien fuego - cuerpo.png",
+			"scount": [4, 4],
+			"isize": [240, 540],
+			"off": [30, 55],
+			"dont_loop":["still"],
+			"anims":{
+				"stop": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+				"d": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+				"u": [11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
+				"l": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+				"r": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+				"hit": [12, 13, 14, 14, 14, 14, 14, 15],
+				"still": [0]
+			}
+		},{
+			"name":"arma",
+			"asset":"img/aliens/alien fuego - arma.png",
+			"scount":[6, 5],
+			"isize":[660, 550],
+			"off":[55, 55],
+			"_notes": "dont_loop permite especificar que animaciones no hay que loopear",
+			"dont_loop": ["shoot", "charging", "hit"],
+			"anims":{
+				"stop": [0],
+				"charging": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+				"charged": [13, 14, 15, 16],
+				"shoot": [17, 18, 19, 20, 21, 22, 23, 24],
+				"hit": [25, 26, 27, 27, 27, 27, 27, 28, 29]
+			}
+		},{
+			"name":"cabeza",
+			"asset":"img/aliens/alien fuego - cabeza.png",
+			"isize":[160, 128],
+			"off":[20, 55],
+			"scount":[4, 2],
+			"anims":{
+				"stop":[0, 1, 2, 3, 4, 5, 6, 7]
+			}
+		},{
+			"asset":"img/aliens/alien fuego - disparo.png",
+			"isize":[30, 80],
+			"scount":[1, 4],
+			"off":[22, 10],
+			"apply_off":true, "visible":false,
+			"anims":{
+				"stop":[0, 1, 2, 3]
+			}
+		},{
+			"asset":"img/aliens/alien fuego - especial.png",
+			"isize":[240, 300],
+			"scount":[4, 5],
+			"off":[30, 30],
+			"apply_off":true, "visible":false,
+			"anims":{
+				"stop":[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+			}
+		}
+	]
+}

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="256" tileheight="256" nextobjectid="143">
+ <tileset firstgid="1" name="barbie-dt-1024-tile_1" tilewidth="256" tileheight="256" tilecount="16">
+  <image source="images/barbie-dt-1024-tile_1.png" width="1024" height="1024"/>
+ </tileset>
+ <tileset firstgid="17" name="Objects" tilewidth="128" tileheight="128" tilecount="4">
+  <tile id="0">
+   <image width="64" height="128" source="../images/temp/player.png"/>
+  </tile>
+  <tile id="1">
+   <image width="128" height="128" source="../images/temp/dcshg-game-crates-01.png"/>
+  </tile>
+  <tile id="2">
+   <image width="64" height="64" source="../images/temp/collectible.png"/>
+  </tile>
+  <tile id="3">
+   <image width="64" height="64" source="../images/temp/random.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="21" name="barbie-dt-1024-tile-ramps-256-2" tilewidth="256" tileheight="256" tilecount="16">
+  <image source="images/barbie-dt-1024-tile-ramps-256-2.png" width="1024" height="1024"/>
+ </tileset>
+ <tileset firstgid="37" name="Objects" tilewidth="256" tileheight="256" tilecount="2">
+  <tile id="0">
+   <image width="64" height="64" source="../images/temp/collectible.png"/>
+  </tile>
+  <tile id="1">
+   <image width="114" height="113" source="../images/gameplay/cart_game/dcshg-collect-coin.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="39" name="barbie-dt2-sparkmtn-deco-mid-4" tilewidth="177" tileheight="359" tilecount="1">
+  <image source="images/barbie-dt2-sparkmtn-deco-mid-4.png" width="177" height="359"/>
+ </tileset>
+ <tileset firstgid="40" name="barbie-dt2-sparkmtn-deco-mid-3" tilewidth="201" tileheight="587" tilecount="1">
+  <image source="images/barbie-dt2-sparkmtn-deco-mid-3.png" width="201" height="587"/>
+ </tileset>
+ <tileset firstgid="41" name="barbie-dt2-sparkmtn-deco-mid-2" tilewidth="229" tileheight="611" tilecount="1">
+  <image source="images/barbie-dt2-sparkmtn-deco-mid-2.png" width="229" height="611"/>
+ </tileset>
+ <tileset firstgid="42" name="barbie-dt2-sparkmtn-deco-mid-1" tilewidth="378" tileheight="328" tilecount="1">
+  <image source="images/barbie-dt2-sparkmtn-deco-mid-1.png" width="378" height="328"/>
+ </tileset>
+ <tileset firstgid="43" name="barbie-dt2-sparkmtn-deco-detail-2" tilewidth="96" tileheight="155" tilecount="1">
+  <image source="images/barbie-dt2-sparkmtn-deco-detail-2.png" width="96" height="155"/>
+ </tileset>
+ <tileset firstgid="44" name="barbie-dt2-sparkmtn-deco-detail-3" tilewidth="115" tileheight="227" tilecount="1">
+  <image source="images/barbie-dt2-sparkmtn-deco-detail-3.png" width="115" height="227"/>
+ </tileset>
+ <tileset firstgid="45" name="barbie-dt2-sparkmtn-deco-detail-1" tilewidth="167" tileheight="250" tilecount="1">
+  <image source="images/barbie-dt2-sparkmtn-deco-detail-1.png" width="167" height="250"/>
+ </tileset>
+ <tileset firstgid="46" name="barbie-dt2-sparkmtn-deco-mid-7" tilewidth="151" tileheight="201" tilecount="1">
+  <image source="images/barbie-dt2-sparkmtn-deco-mid-7.png" width="151" height="201"/>
+ </tileset>
+ <objectgroup name="Background2">
+  <object id="71" type="Decoration" gid="39" x="581.697" y="1575.97" width="177" height="359"/>
+  <object id="72" type="Decoration" gid="40" x="851.515" y="1812.52" width="201" height="587"/>
+  <object id="73" type="Decoration" gid="41" x="1155.7" y="1662.58" width="229" height="611"/>
+  <object id="74" type="Decoration" gid="42" x="1353.42" y="1551.88" width="378" height="328"/>
+  <object id="75" type="Decoration" gid="40" x="2093.94" y="1774.82" width="201" height="587"/>
+  <object id="76" type="Decoration" gid="40" x="2157.58" y="1971.79" width="201" height="587"/>
+  <object id="77" type="Decoration" gid="41" x="2646.61" y="1986.82" width="229" height="611"/>
+  <object id="79" type="Decoration" gid="39" x="3363.52" y="1609.3" width="177" height="359"/>
+ </objectgroup>
+ <objectgroup name="Background1">
+  <object id="82" type="Decoration" gid="43" x="612" y="1433" width="96" height="155"/>
+  <object id="83" type="Decoration" gid="44" x="907" y="1537" width="115" height="227"/>
+  <object id="84" type="Decoration" gid="45" x="1197" y="1353" width="167" height="250"/>
+  <object id="85" type="Decoration" gid="43" x="3384" y="1457" width="96" height="155"/>
+  <object id="86" type="Decoration" gid="46" x="3057" y="1556" width="151" height="201"/>
+ </objectgroup>
+ <layer name="Background" width="20" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,24,0,0,0,24,0,0,0,0,24,0,0,0,0,0,0,
+0,0,0,0,28,0,0,0,28,0,0,5,6,28,0,0,0,0,0,0,
+0,0,0,0,32,0,0,0,32,0,0,0,0,32,0,0,0,0,0,0,
+0,0,0,0,36,0,0,0,36,0,0,0,0,36,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="Tiles" width="20" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+2147483649,1,2,2147483650,2147483649,1,2,1,2,2147483650,2147483649,2147483649,1,2,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="Foreground01" width="20" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="Foreground02" width="20" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="Collision">
+  <object id="54" type="Pit" x="264" y="1896" width="3320" height="839.394"/>
+  <object id="55" type="PlayerStart" gid="17" x="776" y="1468" width="64" height="128"/>
+  <object id="56" type="Collision" x="256" y="1536" width="3328" height="256"/>
+ </objectgroup>
+ <objectgroup name="Objects">
+  <object id="51" type="Exit" x="3584" y="1536" width="66" height="66">
+   <properties>
+    <property name="tags" value="flatGround"/>
+   </properties>
+  </object>
+  <object id="52" type="Entry" x="768" y="1536" width="66" height="66">
+   <properties>
+    <property name="tags" value="start"/>
+   </properties>
+  </object>
+  <object id="53" type="SpawnNextTrigger" x="1868.18" y="512" width="106.061" height="1146.18"/>
+  <object id="57" type="Gem" gid="38" x="2350.5" y="1334.5" width="43" height="43"/>
+  <object id="58" type="Gem" gid="38" x="2478.5" y="1334.5" width="43" height="43"/>
+  <object id="59" type="Gem" gid="38" x="2350.5" y="1526.5" width="43" height="43"/>
+  <object id="60" type="Gem" gid="38" x="2350.5" y="1398.5" width="43" height="43"/>
+  <object id="61" type="Gem" gid="38" x="2414.5" y="1398.5" width="43" height="43"/>
+  <object id="62" type="Gem" gid="38" x="2414.5" y="1526.5" width="43" height="43"/>
+  <object id="63" type="Gem" gid="38" x="2478.5" y="1526.5" width="43" height="43"/>
+  <object id="64" type="Gem" gid="38" x="2414.5" y="1462.5" width="43" height="43"/>
+  <object id="65" type="Gem" gid="38" x="2478.5" y="1398.5" width="43" height="43"/>
+ </objectgroup>
+ <objectgroup name="DecorationFG">
+  <object id="101" type="DecorationFG" gid="41" x="992.92" y="2072.55" width="229" height="611"/>
+  <object id="104" type="DecorationFG" gid="40" x="1169.75" y="2104.51" width="201" height="587"/>
+  <object id="106" type="DecorationFG" gid="39" x="1102.74" y="2114.67" width="177" height="359"/>
+  <object id="109" type="DecorationFG" gid="41" x="1432.28" y="1981.07" width="229" height="611"/>
+  <object id="110" type="DecorationFG" gid="41" x="1539.5" y="2167.3" width="229" height="611"/>
+  <object id="111" type="DecorationFG" gid="41" x="1889.39" y="1975.43" width="229" height="611"/>
+  <object id="113" type="DecorationFG" gid="41" x="2256.2" y="2133.44" width="229" height="611"/>
+  <object id="114" type="DecorationFG" gid="40" x="1604.29" y="1952.14" width="201" height="587"/>
+  <object id="115" type="DecorationFG" gid="40" x="1694.58" y="2115.8" width="201" height="587"/>
+  <object id="117" type="DecorationFG" gid="40" x="2050.11" y="2036.79" width="201" height="587"/>
+  <object id="119" type="DecorationFG" gid="40" x="2721.67" y="1923.93" width="201" height="587"/>
+  <object id="123" type="DecorationFG" gid="40" x="2394.36" y="2098.87" width="201" height="587"/>
+  <object id="125" type="DecorationFG" gid="39" x="1864.6" y="1973.58" width="177" height="359"/>
+  <object id="126" type="DecorationFG" gid="39" x="2553.08" y="1826.86" width="177" height="359"/>
+  <object id="127" type="DecorationFG" gid="39" x="2637.73" y="1747.85" width="177" height="359"/>
+  <object id="129" type="DecorationFG" gid="41" x="2853.9" y="2155" width="229" height="611"/>
+  <object id="130" type="DecorationFG" gid="41" x="2955.48" y="2296.08" width="229" height="611"/>
+  <object id="131" type="DecorationFG" gid="41" x="3265.86" y="2081.63" width="229" height="611"/>
+  <object id="132" type="DecorationFG" gid="41" x="1301.98" y="2290.44" width="229" height="611"/>
+  <object id="133" type="DecorationFG" gid="40" x="3116.2" y="2054.13" width="201" height="587"/>
+  <object id="134" type="DecorationFG" gid="39" x="3004.05" y="1795.67" width="177" height="359"/>
+  <object id="136" type="DecorationFG" gid="39" x="1339.27" y="1885.96" width="177" height="359"/>
+  <object id="137" type="DecorationFG" gid="39" x="895.482" y="1893.73" width="177" height="359"/>
+  <object id="138" type="DecorationFG" gid="40" x="764.489" y="2187.05" width="201" height="587"/>
+  <object id="139" type="DecorationFG" gid="40" x="622.612" y="2132.13" width="201" height="587"/>
+  <object id="140" type="DecorationFG" gid="40" x="1876.62" y="2333.5" width="201" height="587"/>
+  <object id="141" type="DecorationFG" gid="39" x="3453.83" y="1838.81" width="177" height="359"/>
+  <object id="142" type="DecorationFG" gid="40" x="3446.41" y="2200.78" width="201" height="587"/>
+ </objectgroup>
+</map>

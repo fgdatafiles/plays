@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+        <title>Backyard Hoops</title>
+        <style type="text/css">
+            body
+            {
+                margin: 0;
+                padding: 0;
+                background: #000000;
+            }
+            #turn{
+                width:100%;
+                height:100%;
+                position:fixed;
+                top:0px;
+                left:0px;
+                background-color:white;
+                background-image:url('playportrait.png');
+                background-repeat:no-repeat;
+                background-position: center center;
+                display:none;
+            }
+        </style>
+        <link href="css/Michelin.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="css/DigitalDismay.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="css/BebasNeueRegular.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="css/OswaldSemiBold.css" media="screen" rel="stylesheet" type="text/css">
+        
+    </head>
+    <body> 
+        <div id="orientation"></div>
+        <div id = "turn"></div>
+        
+        <script src="src/lib/phaser.min.js"></script>
+        <script src="src/lib/fontfaceobserver.js"></script>
+        <script src="src/lib/box2d-plugin-full.min.js"></script>
+        <script src="src/config/configGame.js"></script>
+        <script src="src/game/states/stateSplash.js"></script>
+        <script src="src/game/states/statePreloadAssets.js"></script>
+        <script src="src/game/states/stateGameplay.js"></script>
+        <script src="src/game/states/stateTutorial.js"></script>
+        <script src="src/game/states/statePreloadLoader.js"></script>
+        
+        <script src="src/game/logic/gameplayManager.js"></script>
+        <script src="src/game/logic/ball.js"></script>
+        <script src="src/game/logic/livesManager.js"></script>
+        <script src="src/game/logic/basket.js"></script>
+        <script src="src/game/logic/basketFront.js"></script>
+        <script src="src/game/logic/scoreManager.js"></script>
+        <script src="src/game/logic/popUpGameOver.js"></script>
+        <script src="src/game/logic/tom.js"></script>
+        <script src="src/game/logic/jerry.js"></script>
+        <script src="src/game/logic/pausePopUp.js"></script>
+        <script src="src/game/logic/popUpTutorial.js"></script>
+        <script src="src/game/logic/fadeManager.js"></script>
+        <script src="src/game/logic/difficultyManager.js"></script>
+        <script src="src/game/logic/btnMusic.js"></script>
+        <script src="src/game/logic/btnSound.js"></script>
+        <script src="src/game/logic/winScreen/winScreen.js"></script>
+        <script src="src/game/logic/winScreen/starWinScreen.js"></script>
+        <script src="src/game/logic/alertBoxPopUp.js"></script>
+        
+        <script src="src/game/logic/difficulty/difficultyAbstractUnit.js"></script>
+        <script src="src/game/logic/difficulty/difficultyBasketStatic.js"></script>
+        <script src="src/game/logic/difficulty/difficultyMoveRandomPosition.js"></script>
+        <script src="src/game/logic/difficulty/difficultyMoveFast.js"></script>
+        <script src="src/game/logic/difficulty/difficultyMoveSlow.js"></script>
+        
+        <script src="src/j2dm/j2dm_ConsoleLog.js"></script>
+        <script src="src/config/configSprites.js"></script>
+        <script src="src/j2dm/j2dm_Utils.js"></script>
+        <script src="src/game/initialiceGame.js"></script>
+        <script src="src/game/settingGame.js"></script>
+        <script src="src/totalbrain/states/abstractStatePreloadAssets.js"></script>
+        <script src="src/totalbrain/states/abstractStateTapToStart.js"></script>
+    </body>
+
+</html>

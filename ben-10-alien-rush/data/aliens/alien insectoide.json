@@ -1,0 +1,67 @@
+{
+	"off":[0, 60],
+	"p_arma": 0,
+	"p_cabeza":1,
+	"p_disparo":2,
+	"p_especial":3,
+	"collider_size":0.6,
+	"bullet_c":1,
+	"bullet_s_c":3,
+	"damage":3,
+	"damage_s":2,
+	"defense":1.0,
+	"defense_b":1.0,
+	"speed":0.19,
+	"speed_s":0.35,
+	"speed_ss":0.30,
+	"__notas":"se pueden agregar atributos no específicos para traer desde la clase después o en una parte específica. el atributo name no sirve para nada, es solo para hacerme mas facil la lectura",
+	"charge_frame_count": 16,
+	"parts":[
+		{
+			"name":"cuerpo",
+			"fps":30,
+			"asset":"img/aliens/alien insectoide - cuerpo.png",
+			"scount": [6, 6],
+			"isize": [516, 816],
+			"off": [43, 68],
+			"__notas":"al no tener animaciones de movimiento la animaciones no se ven cortada al cambiar de direccion",
+			"dont_loop":["charging", "shoot", "hit"],
+			"anims":{
+				"stop": [0, 1, 2, 3, 4, 5],
+				"hit": [30, 31, 32, 33, 33, 33, 33, 33, 34, 35],
+				"charging": [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21],
+				"charged": [13, 14, 15, 16],
+				"shoot": [22, 23, 24, 25, 26, 27, 27, 27, 27, 27, 28, 29 ]
+			}
+		},{
+			"name":"alas",
+			"asset":"img/aliens/alien insectoide - alas.png",
+			"scount":[2, 2],
+			"isize":[272, 272],
+			"off":[68, 68],
+			"anims":{
+				"stop": [0, 1, 2, 3]
+			}
+		},
+		{
+			"asset":"img/aliens/alien insectoide - disparo.png",
+			"isize":[40, 60],
+			"scount":[1, 4],
+			"off":[32, 8],
+			"apply_off":true, "visible":false,
+			"anims":{
+				"stop":[0, 1, 2, 3]
+			}
+		},{
+			"asset":"img/aliens/alien insectoide - especial.png",
+			"isize":[50, 120],
+			"scount":[1, 4],
+			"off":[38, 15],
+			"apply_off":true,
+			"visible":false,
+			"anims":{
+				"stop":[0, 1, 2, 3]
+			}
+		}
+	]
+}

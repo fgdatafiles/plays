@@ -1,0 +1,343 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,  minimal-ui, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.custom.structure.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile.custom.theme.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+	   <title>Adventure Time</title>
+</head>
+<body>
+    <div id="body_mask" >
+    <div id="load_blocker">&nbsp;</div>
+    <div id="body_wrapper" >
+        <div id="rotation_blocker">&nbsp;</div>
+        <div data-role="page" id="main_screen" >
+            <div id="main_screen_content">
+                    <div id="home_sound_btn">&nbsp;</div>
+                    <div id="home_cn_logo">&nbsp;</div>
+                    <div id="home_play_now_btn">&nbsp;</div>
+            </div>
+        </div>
+         <div data-role="page" id="game_level_screen" >
+                <div id="game_level_screen_content" >
+                <div id="game_level_sound_btn">&nbsp;</div>
+                
+                <div id="game_level_easy_btn">&nbsp;</div>
+                <div id="game_level_hard_btn">&nbsp;</div>
+                <div id="game_level_hard_btn_lock">&nbsp;</div>
+                <div id="game_level_veryhard_btn">&nbsp;</div>
+                <div id="game_level_veryhard_btn_lock">&nbsp;</div>
+                    
+                <div id="game_level_help_btn">&nbsp;</div>
+                <div id="game_level_quit_btn">&nbsp;</div>
+                
+                <div id="game_level_help_popup" style="display:none">
+                    <div id="game_level_help_popup_blocker">&nbsp;</div>
+                    <div id="game_level_help_popup_title">&nbsp;</div>
+                    <div id="game_level_help_popup_panel">&nbsp;</div>
+                    <div id="game_level_help_close_btn">&nbsp;</div>
+                    <div id="game_level_help_page_1">&nbsp;</div>
+                </div>
+                <div id="game_level_quit_popup" style="display:none">
+                    <div id="game_level_quit_popup_blocker">&nbsp;</div>
+                    <div id="game_level_quit_popup_title">&nbsp;</div>
+                    <div id="game_level_quit_popup_panel" >
+                        <div id="game_level_quit_copy">&nbsp;</div>
+                            <a id="game_level_quit_yes" href="javascript:quit_game_level();"><img src="img/yes_btn.png" alt="yes_btn" style="height:100%;width:100%"/></a>
+                            <a id="game_level_quit_no" href="javascript:close_game_level_quit_popup();"><img src="img/no_btn.png" alt="no_btn" style="height:100%;width:100%"/></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="game_screen" >
+            <div id="game_content">
+                <div id="game_easy_title">&nbsp;</div>
+                <div id="game_hard_title">&nbsp;</div>
+                <div id="game_veryhard_title">&nbsp;</div>
+                <div id="game_sound_btn">&nbsp;</div>
+                <div id="game_help_btn">&nbsp;</div>
+                <div id="game_quit_btn">&nbsp;</div>
+                <div id="game_move_title" style=""><span id="game_move_title_span">Moves</span></div>
+                <div id="game_move_counter"><span id="game_move_counter_span">00</span></div>
+                <div id="game_veryhard_wrapper">
+                    <div id="game_veryhard_1">
+                        <div id="game_veryhard_selection_1">&nbsp;</div>
+                        <div id="game_veryhard_holder_1">&nbsp;</div>
+                        <div id="game_veryhard_back_1">&nbsp;</div>
+                    </div>
+                    <div id="game_veryhard_2">
+                        <div id="game_veryhard_selection_2">&nbsp;</div>
+                        <div id="game_veryhard_holder_2">&nbsp;</div>
+                        <div id="game_veryhard_back_2">&nbsp;</div>
+                    </div>
+                    <div id="game_veryhard_3">
+                        <div id="game_veryhard_selection_3">&nbsp;</div>
+                        <div id="game_veryhard_holder_3">&nbsp;</div>
+                        <div id="game_veryhard_back_3">&nbsp;</div>
+                    </div>
+                    <div id="game_veryhard_4">
+                        <div id="game_veryhard_selection_4">&nbsp;</div>
+                        <div id="game_veryhard_holder_4">&nbsp;</div>
+                        <div id="game_veryhard_back_4">&nbsp;</div>
+                    </div>
+                    <div id="game_veryhard_5">
+                        <div id="game_veryhard_selection_5">&nbsp;</div>
+                        <div id="game_veryhard_holder_5">&nbsp;</div>
+                        <div id="game_veryhard_back_5">&nbsp;</div>
+                    </div>
+                    <div id="game_veryhard_6">
+                        <div id="game_veryhard_selection_6">&nbsp;</div>
+                        <div id="game_veryhard_holder_6">&nbsp;</div>
+                        <div id="game_veryhard_back_6">&nbsp;</div>
+                    </div>
+                    <div id="game_veryhard_7">
+                        <div id="game_veryhard_selection_7">&nbsp;</div>
+                        <div id="game_veryhard_holder_7">&nbsp;</div>
+                        <div id="game_veryhard_back_7">&nbsp;</div>
+                    </div>
+                    <div id="game_veryhard_8">
+                        <div id="game_veryhard_selection_8">&nbsp;</div>
+                        <div id="game_veryhard_holder_8">&nbsp;</div>
+                        <div id="game_veryhard_back_8">&nbsp;</div>
+                    </div>
+                    <div id="game_veryhard_9">
+                        <div id="game_veryhard_selection_9">&nbsp;</div>
+                        <div id="game_veryhard_holder_9">&nbsp;</div>
+                        <div id="game_veryhard_back_9">&nbsp;</div>
+                    </div>
+                    <div id="game_veryhard_10">
+                        <div id="game_veryhard_selection_10">&nbsp;</div>
+                        <div id="game_veryhard_holder_10">&nbsp;</div>
+                        <div id="game_veryhard_back_10">&nbsp;</div>
+                    </div>
+                    <div id="game_veryhard_11">
+                        <div id="game_veryhard_selection_11">&nbsp;</div>
+                        <div id="game_veryhard_holder_11">&nbsp;</div>
+                        <div id="game_veryhard_back_11">&nbsp;</div>
+                    </div>
+                    <div id="game_veryhard_12">
+                        <div id="game_veryhard_selection_12">&nbsp;</div>
+                        <div id="game_veryhard_holder_12">&nbsp;</div>
+                        <div id="game_veryhard_back_12">&nbsp;</div>
+                    </div>
+                    <div id="game_veryhard_13">
+                        <div id="game_veryhard_selection_13">&nbsp;</div>
+                        <div id="game_veryhard_holder_13">&nbsp;</div>
+                        <div id="game_veryhard_back_13">&nbsp;</div>
+                    </div>
+                    <div id="game_veryhard_14">
+                        <div id="game_veryhard_selection_14">&nbsp;</div>
+                        <div id="game_veryhard_holder_14">&nbsp;</div>
+                        <div id="game_veryhard_back_14">&nbsp;</div>
+                    </div>
+                    <div id="game_veryhard_15">
+                        <div id="game_veryhard_selection_15">&nbsp;</div>
+                        <div id="game_veryhard_holder_15">&nbsp;</div>
+                        <div id="game_veryhard_back_15">&nbsp;</div>
+                    </div>
+                    <div id="game_veryhard_16">
+                        <div id="game_veryhard_selection_16">&nbsp;</div>
+                        <div id="game_veryhard_holder_16">&nbsp;</div>
+                        <div id="game_veryhard_back_16">&nbsp;</div>
+                    </div>
+                    <div id="game_veryhard_17">
+                        <div id="game_veryhard_selection_17">&nbsp;</div>
+                        <div id="game_veryhard_holder_17">&nbsp;</div>
+                        <div id="game_veryhard_back_17">&nbsp;</div>
+                    </div>
+                    <div id="game_veryhard_18">
+                        <div id="game_veryhard_selection_18">&nbsp;</div>
+                        <div id="game_veryhard_holder_18">&nbsp;</div>
+                        <div id="game_veryhard_back_18">&nbsp;</div>
+                    </div>
+                </div>
+                <div id="game_hard_wrapper">
+                    <div id="game_hard_girl">&nbsp;</div>
+                    <div id="game_hard_1">
+                        <div id="game_hard_selection_1">&nbsp;</div>
+                        <div id="game_hard_holder_1">&nbsp;</div>
+                        <div id="game_hard_back_1">&nbsp;</div>
+                    </div>
+                    <div id="game_hard_2">
+                        <div id="game_hard_selection_2">&nbsp;</div>
+                        <div id="game_hard_holder_2">&nbsp;</div>
+                        <div id="game_hard_back_2">&nbsp;</div>
+                    </div>
+                    <div id="game_hard_3">
+                        <div id="game_hard_selection_3">&nbsp;</div>
+                        <div id="game_hard_holder_3">&nbsp;</div>
+                        <div id="game_hard_back_3">&nbsp;</div>
+                    </div>
+                    <div id="game_hard_4">
+                        <div id="game_hard_selection_4">&nbsp;</div>
+                        <div id="game_hard_holder_4">&nbsp;</div>
+                        <div id="game_hard_back_4">&nbsp;</div>
+                    </div>
+                    <div id="game_hard_5">
+                        <div id="game_hard_selection_5">&nbsp;</div>
+                        <div id="game_hard_holder_5">&nbsp;</div>
+                        <div id="game_hard_back_5">&nbsp;</div>
+                    </div>
+                    <div id="game_hard_6">
+                        <div id="game_hard_selection_6">&nbsp;</div>
+                        <div id="game_hard_holder_6">&nbsp;</div>
+                        <div id="game_hard_back_6">&nbsp;</div>
+                    </div>
+                    <div id="game_hard_7">
+                        <div id="game_hard_selection_7">&nbsp;</div>
+                        <div id="game_hard_holder_7">&nbsp;</div>
+                        <div id="game_hard_back_7">&nbsp;</div>
+                    </div>
+                    <div id="game_hard_8">
+                        <div id="game_hard_selection_8">&nbsp;</div>
+                        <div id="game_hard_holder_8">&nbsp;</div>
+                        <div id="game_hard_back_8">&nbsp;</div>
+                    </div>
+                    <div id="game_hard_9">
+                        <div id="game_hard_selection_9">&nbsp;</div>
+                        <div id="game_hard_holder_9">&nbsp;</div>
+                        <div id="game_hard_back_9">&nbsp;</div>
+                    </div>
+                    <div id="game_hard_10">
+                        <div id="game_hard_selection_10">&nbsp;</div>
+                        <div id="game_hard_holder_10">&nbsp;</div>
+                        <div id="game_hard_back_10">&nbsp;</div>
+                    </div>
+                    <div id="game_hard_11">
+                        <div id="game_hard_selection_11">&nbsp;</div>
+                        <div id="game_hard_holder_11">&nbsp;</div>
+                        <div id="game_hard_back_11">&nbsp;</div>
+                    </div>
+                    <div id="game_hard_12">
+                        <div id="game_hard_selection_12">&nbsp;</div>
+                        <div id="game_hard_holder_12">&nbsp;</div>
+                        <div id="game_hard_back_12">&nbsp;</div>
+                    </div>
+                </div>
+                <div id="game_easy_wrapper">
+                    <div id="game_easy_girl">&nbsp;</div>
+                    <div id="game_easy_1">
+                        <div id="game_easy_selection_1">&nbsp;</div>
+                        <div id="game_easy_holder_1">&nbsp;</div>
+                        <div id="game_easy_back_1">&nbsp;</div>
+                    </div>
+                    <div id="game_easy_2">
+                        <div id="game_easy_selection_2">&nbsp;</div>
+                        <div id="game_easy_holder_2">&nbsp;</div>
+                        <div id="game_easy_back_2">&nbsp;</div>
+                    </div>
+                    <div id="game_easy_3">
+                        <div id="game_easy_selection_3">&nbsp;</div>
+                        <div id="game_easy_holder_3">&nbsp;</div>
+                        <div id="game_easy_back_3">&nbsp;</div>
+                    </div>
+                    <div id="game_easy_4">
+                        <div id="game_easy_selection_4">&nbsp;</div>
+                        <div id="game_easy_holder_4">&nbsp;</div>
+                        <div id="game_easy_back_4">&nbsp;</div>
+                    </div>
+                    <div id="game_easy_5">
+                        <div id="game_easy_selection_5">&nbsp;</div>
+                        <div id="game_easy_holder_5">&nbsp;</div>
+                        <div id="game_easy_back_5">&nbsp;</div>
+                    </div>
+                    <div id="game_easy_6">
+                        <div id="game_easy_selection_6">&nbsp;</div>
+                        <div id="game_easy_holder_6">&nbsp;</div>
+                        <div id="game_easy_back_6">&nbsp;</div>
+                    </div>
+                    <div id="game_easy_7">
+                        <div id="game_easy_selection_7">&nbsp;</div>
+                        <div id="game_easy_holder_7">&nbsp;</div>
+                        <div id="game_easy_back_7">&nbsp;</div>
+                    </div>
+                    <div id="game_easy_8">
+                        <div id="game_easy_selection_8">&nbsp;</div>
+                        <div id="game_easy_holder_8">&nbsp;</div>
+                        <div id="game_easy_back_8">&nbsp;</div>
+                    </div>
+                </div>
+                
+                 <div id="game_help_popup" style="display:none">
+                    <div id="game_help_popup_blocker">&nbsp;</div>
+                    <div id="game_help_popup_title">&nbsp;</div>
+                    <div id="game_help_popup_panel">&nbsp;</div>
+                    <div id="game_help_close_btn">&nbsp;</div>
+                    <div id="game_help_page_1">&nbsp;</div>
+                    
+                </div>
+                <div id="game_quit_popup" style="display:none">
+                    <div id="game_quit_popup_blocker">&nbsp;</div>
+                    <div id="game_quit_popup_title">&nbsp;</div>
+                    <div id="game_quit_popup_panel">
+                            <div id="game_quit_copy">&nbsp;</div>
+                            <a id="game_quit_yes" href="javascript:quit_game();"><img src="img/yes_btn.png" alt="yes_btn" style="height:100%;width:100%"/></a>
+                            <a id="game_quit_no" href="javascript:close_game_quit_popup();"><img src="img/no_btn.png" alt="no_btn" style="height:100%;width:100%"/></a>
+                    </div>
+                </div>
+                <div id="game_results_popup" style="display:none;">
+                    <div id="game_results_popup_blocker">&nbsp;</div>
+                    <div id="game_results_popup_title">&nbsp;</div>
+                    <div id="game_results_popup_panel">
+                        <div id='game_results_elements'>&nbsp;</div>
+                        <div id="game_results_moves" style=""><span id="game_results_moves_span">00</span></div>
+                        <img id="results_star_1" src="img/no_star.png" alt="no_star"/>
+                        <img id="results_star_2" src="img/no_star.png" alt="no_star"/>
+                        <img id="results_star_3" src="img/no_star.png" alt="no_star"/>
+                        <a id="results_next_level_btn" href="javascript:next_level();">&nbsp;</a>
+                        <a id="results_play_again_btn" href="javascript:play_again();"><img src="img/play_again.png" alt="play_again" style="width:100%;height:100%"/></a>
+                       
+                    </div>
+                </div>
+                <div id="game_end_popup" style="display:none;">
+                    <div id="game_end_popup_blocker">&nbsp;</div>
+                    <div id="game_end_popup_title">&nbsp;</div>
+                    <div id="game_end_popup_panel">
+                        <div id='game_end_copy'>&nbsp;</div>
+                        <div id='game_end_elements'>&nbsp;</div>
+                        <div id="game_end_moves" style=""><span id="game_end_moves_span">00</span></div>
+                        <img id="end_star_1" src="img/no_star.png" alt="no_star"/>
+                        <img id="end_star_2" src="img/no_star.png" alt="no_star"/>
+                        <img id="end_star_3" src="img/no_star.png" alt="no_star"/>
+                        
+                        <a id="end_play_again_btn" href="javascript:quit_game();"><img src="img/play_again.png" alt="play_again" style="width:100%;height:100%"/></a>
+                        <div id="end_girl">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+    <div id="hidden-resizer" style='position:absolute;visibility:hidden'>&nbsp;</div>
+    <script type="text/javascript" src="js/lib/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.mobile.custom.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.hammer-full.js"></script>
+    <script type="text/javascript" src="js/lib/jquery-bigtext.js"></script>
+    
+    <script type="text/javascript" src="js/app/game.js"></script>
+    <script type="text/javascript" src="js/app/main.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            if(first_screen_entered==false && window.location.hash){
+                first_screen_entered=true;
+                setTimeout(function(){
+                    $.mobile.changePage( "#main_screen", { transition: page_transition}  );
+                    $("#load_blocker").css( {"display":"none"} );
+                }, 500);
+            }else{
+                $("#load_blocker").css( {"display":"none"} );
+            }
+            
+            init_hax();
+        });
+        
+    </script>
+    
+</body>
+</html>

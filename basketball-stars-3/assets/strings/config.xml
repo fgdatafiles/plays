@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+	
+	<!-- Localization Settings -->
+	<localization>
+		<language>default</language>
+		<defaultFont>arial-hd</defaultFont>
+	</localization>
+	<!-- Nick Service Settings -->
+	<services>
+		<!-- Set to false to disable all Nick Services completely. TRUE will follow the specific service settings. -->
+		<enableServices>true</enableServices> 
+		<!-- Enable Tracking -->
+		<enableTracking>true</enableTracking>
+		<!-- Determines Piracy Control feature is activated or not. A value of 'true' activates it.-->
+		<enablePiracyControl>false</enablePiracyControl>
+		<!-- Piracy Control Redirect Url-->
+		<piracyControlRedirectURL></piracyControlRedirectURL>
+		<!-- Enable Delta DNA.-->
+		<enableDeltaDNA>false</enableDeltaDNA>
+		<!-- DeltaDNA Settings.-->
+		<!-- Delta DNA Server URL.-->
+		<deltaDNA_url></deltaDNA_url>
+		<!-- Delta DNA mode. If 'dev' or 'live'.-->
+		<deltaDNA_mode>dev</deltaDNA_mode>
+		<!-- Delta DNA Game URL.-->
+		<deltaDNA_gameURL></deltaDNA_gameURL>
+		<!-- Delta DNA Key for Dev-->
+		<deltaDNA_keyDev></deltaDNA_keyDev>
+		<!-- Delta DNA Key for Live-->
+		<deltaDNA_keyLive></deltaDNA_keyLive>
+	</services>
+	
+	<!-- Game specific settings -->
+	<gameSettings>
+		<!-- State if debug mode. Enables/disables trace log -->
+		<debugMode>true</debugMode>
+		<!-- Enabled Code Unlock Feature-->
+		<enabledUnlockCode>false</enabledUnlockCode>
+		<!-- Enabled VOs-->
+		<enabledVOs>true</enabledVOs>
+		<!-- Unlock Code -->
+		<unlockCode><![CDATA[code]]></unlockCode>
+		<!-- Version Number for Debugging and DeltaDNA calls -->
+		<version><![CDATA[0.1.30]]></version>
+		<!-- Place other game specific settings inside properties tag -->
+		<properties>
+			<cheatMode>false</cheatMode>
+			
+		</properties>
+	</gameSettings>
+	
+</config>

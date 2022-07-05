@@ -1,0 +1,106 @@
+﻿{
+    "preParticles": 500,
+    "integrationType": "euler",
+    "emitters": [
+        {
+            "rate": {
+                "particlesMin": 5,
+                "particlesMax": 9,
+                "perSecondMin": 0.25,
+                "perSecondMax": 0.45
+            },
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "initializers": [
+                {
+                    "type": "Mass",
+                    "properties": {
+                        "min": 1,
+                        "max": 1,
+                        "isEnabled": true
+                    }
+                },
+                {
+                    "type": "Life",
+                    "properties": {
+                        "min": 2.4,
+                        "max": 5
+                    }
+                },
+                {
+                    "type": "BodySprite",
+                    "properties": {
+                        "texture": "./assets/images/default-particle.png"
+                    }
+                },
+                {
+                    "type": "Radius",
+                    "properties": {
+                        "width": 0.401,
+                        "height": 0.801
+                    }
+                },
+                {
+                    "type": "RadialVelocity",
+                    "properties": {
+                        "radius": 0.5,
+                        "x": 0.2,
+                        "y": 0.2,
+                        "z": 0.2,
+                        "theta": 180
+                    }
+                },
+                {
+                    "type": "Position",
+                    "properties": {
+                        "zoneType": "BoxZone",
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "radius": 1,
+                        "w": 2,
+                        "h": 0,
+                        "d": 2
+                    }
+                }
+            ],
+            "behaviours": [
+                {
+                    "type": "Alpha",
+                    "properties": {
+                        "alphaA": 0.2,
+                        "alphaB": 0
+                    }
+                },
+                {
+                    "type": "Color",
+                    "properties": {
+                        "colorA": "#000000",
+                        "colorB": "#ffffff"
+                    }
+                },
+                {
+                    "type": "Scale",
+                    "properties": {
+                        "scaleA": 0.401,
+                        "scaleB": 1.201,
+                        "easing": "easeOutQuad",
+                        "isEnabled": true
+                    }
+                },
+                {
+                    "type": "Force",
+                    "properties": {
+                        "fx": 0,
+                        "fy": 0,
+                        "fz": 0,
+                        "isEnabled": true
+                    }
+                }
+            ],
+            "blendMode": 1
+        }
+    ]
+}

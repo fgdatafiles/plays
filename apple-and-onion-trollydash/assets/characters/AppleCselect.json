@@ -1,0 +1,271 @@
+{
+"skeleton": {
+	"hash": "+jgO0QF0euHqsmtQ5OShTucZNmA",
+	"spine": "3.8.75",
+	"x": -59.35,
+	"y": -0.35,
+	"width": 141,
+	"height": 233,
+	"images": "./images/CSelect/",
+	"audio": "/Users/markbillington/Dropbox/JW_AppleAndOnion/Project/SpineBuilds"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "A_Main", "parent": "root", "length": 91.08, "rotation": 90, "x": 0.85, "y": 91.56 },
+	{ "name": "A_Arm", "parent": "A_Main", "length": 37.13, "rotation": -138.01, "x": 43.61, "y": -34.22 },
+	{ "name": "A_Leaf", "parent": "A_Main", "length": 38.69, "rotation": -42.11, "x": 97.15, "y": 1.1 },
+	{ "name": "A_Legs", "parent": "A_Main", "length": 84.46, "rotation": 0.37, "x": -84.46, "y": 0.55 },
+	{ "name": "A_Chosen", "parent": "root", "length": 99.21, "rotation": 90.72, "x": 1.73, "y": 212.5 }
+],
+"slots": [
+	{ "name": "A_Leaf", "bone": "A_Leaf", "attachment": "A_Leaf" },
+	{ "name": "A_Main", "bone": "A_Main", "attachment": "A_Main" },
+	{ "name": "A_Legs", "bone": "A_Legs", "attachment": "A_Legs" },
+	{ "name": "A_Arm", "bone": "A_Arm", "attachment": "A_Arm" },
+	{ "name": "A_ChosenGlow", "bone": "A_Chosen" },
+	{ "name": "A_Chosen", "bone": "A_Chosen" }
+],
+"animations": {
+	"idle": {
+		"bones": {
+			"A_Main": {
+				"translate": [
+					{
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0
+					},
+					{
+						"time": 0.7667,
+						"y": -3.58,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 1.5 }
+				]
+			},
+			"A_Legs": {
+				"translate": [
+					{
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0
+					},
+					{
+						"time": 0.7667,
+						"x": 3.58,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 1.5 }
+				]
+			},
+			"A_Arm": {
+				"rotate": [
+					{
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0,
+						"angle": 0.0
+					},
+					{
+						"time": 0.8667,
+						"angle": -4.76,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 1.5, "angle": 0.0 }
+				],
+				"shear": [
+					{
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0
+					},
+					{
+						"time": 0.8667,
+						"y": -6.56,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 1.5 }
+				]
+			},
+			"A_Leaf": {
+				"rotate": [
+					{
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0,
+						"angle": 0.0
+					},
+					{
+						"time": 1.0667,
+						"angle": -5.59,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 1.5, "angle": 0.0 }
+				],
+				"translate": [
+					{
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0
+					},
+					{
+						"time": 1.0667,
+						"x": -1.19,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 1.5 }
+				],
+				"shear": [
+					{
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0
+					},
+					{
+						"time": 1.0667,
+						"x": -4.03,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 1.5 }
+				]
+			}
+		},
+		"drawOrder": [
+			{
+				"offsets": [
+					{ "slot": "A_Legs", "offset": -2, "time": 0.0 }
+				],
+				"time": 0.0
+			}
+		]
+	},
+	"selected": {
+		"slots": {
+			"A_Chosen": {
+				"attachment": [
+					{ "name": "A_Chosen", "time": 0.0 }
+				]
+			},
+			"A_Main": {
+				"attachment": [
+					{ "name": null, "time": 0.0 }
+				]
+			},
+			"A_Arm": {
+				"attachment": [
+					{ "name": null, "time": 0.0 }
+				]
+			},
+			"A_Legs": {
+				"attachment": [
+					{ "name": null, "time": 0.0 }
+				]
+			},
+			"A_Leaf": {
+				"attachment": [
+					{ "name": null, "time": 0.0 }
+				]
+			},
+			"A_ChosenGlow": {
+				"color": [
+					{ "color": "ffffff00", "time": 0.0 },
+					{ "time": 0.6667, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "A_ChosenGlow", "time": 0.0 }
+				]
+			}
+		},
+		"bones": {
+			"A_Chosen": {
+				"translate": [
+					{
+						"curve": [ 0.0, 0.8399999737739563, 0.75, 1.0 ],
+						"time": 0.0
+					},
+					{ "time": 0.6667, "y": 35.56 }
+				]
+			}
+		}
+	},
+	"selected_loop": {
+		"slots": {
+			"A_Chosen": {
+				"attachment": [
+					{ "name": "A_Chosen", "time": 0.0 }
+				]
+			},
+			"A_Main": {
+				"attachment": [
+					{ "name": null, "time": 0.0 }
+				]
+			},
+			"A_Arm": {
+				"attachment": [
+					{ "name": null, "time": 0.0 }
+				]
+			},
+			"A_Legs": {
+				"attachment": [
+					{ "name": null, "time": 0.0 }
+				]
+			},
+			"A_Leaf": {
+				"attachment": [
+					{ "name": null, "time": 0.0 }
+				]
+			},
+			"A_ChosenGlow": {
+				"color": [
+					{
+						"color": "ffffffff",
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0
+					},
+					{
+						"time": 0.6667,
+						"color": "ffffff00",
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 1.3333, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "A_ChosenGlow", "time": 0.0 }
+				]
+			}
+		},
+		"bones": {
+			"A_Chosen": {
+				"translate": [
+					{
+						"y": 35.56,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0
+					},
+					{
+						"time": 0.6667,
+						"y": 24.13,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 1.3333, "y": 35.56 }
+				]
+			}
+		}
+	}
+},
+"skins": {
+	"default": {
+		"A_Legs": {
+			"A_Legs": { "x": 37.54, "y": -0.6, "rotation": -90.37, "width": 80, "height": 90 }
+		},
+		"A_Chosen": {
+			"A_Chosen": { "x": 0.64, "y": -0.93, "rotation": -90.72, "width": 204, "height": 273 }
+		},
+		"A_Main": {
+			"A_Main": { "x": 53.59, "y": 0.2, "rotation": -90, "width": 120, "height": 175 }
+		},
+		"A_Leaf": {
+			"A_Leaf": { "x": 31.16, "y": -4.74, "rotation": -47.89, "width": 43, "height": 34 }
+		},
+		"A_ChosenGlow": {
+			"A_ChosenGlow": { "x": 0.64, "y": -0.93, "rotation": -90.72, "width": 214, "height": 283 }
+		},
+		"A_Arm": {
+			"A_Arm": { "x": 25.86, "y": 14.5, "rotation": 48.01, "width": 37, "height": 54 }
+		}
+	}
+}
+}

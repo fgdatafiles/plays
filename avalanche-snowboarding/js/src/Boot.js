@@ -1,0 +1,2 @@
+AvalancheSnowboarding={};AvalancheSnowboarding.Boot=function(game){};AvalancheSnowboarding.Boot.prototype={preload:function(){this.load.image('preloaderBackground','assets/images/preloader-background.png');this.load.image('preloaderBar','assets/images/preloader-bar.png');},create:function(){this.game.input.maxPointers=1;this.game.stage.disableVisibilityChange=true;if(this.game.device.desktop){ScaleUtils.scaleGame(this.game);this.game.stage.scale.pageAlignHorizontally=true;}else{ScaleUtils.scaleGame(this.game);}
+this.game.state.start('Preloader');}};
