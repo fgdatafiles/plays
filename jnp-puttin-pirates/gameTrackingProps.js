@@ -1,0 +1,1 @@
+document.title="Jake and the Never Land Pirates: Puttin' Pirates";var gamenametitle='jnp_spl_spr_puttinpirates',ctoGameBuCode='djr',ctoAssetId='';var gn=gamenametitle.split("_");

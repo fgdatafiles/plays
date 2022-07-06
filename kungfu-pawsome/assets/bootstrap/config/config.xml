@@ -1,0 +1,62 @@
+<config>
+	
+    <!-- SERVICES -->
+    <!-- Enable, disable, and configure services here -->
+    
+	<services>
+		<service type="analytics" enabled="false" id="795666036880412191" />
+		<service type="canadaTracking" enabled="false" showGameTitle="Kung Fu Panda: Paw'some Panda"/>
+	</services>
+	
+	<!-- LOCALIZATION -->
+	      
+    <localization>
+    	<region>cn</region>
+    </localization>
+    	
+	<!-- PACK DEFINITIONS -->
+	<!-- Define packs, flump folders, and tilesheets to be loaded later -->
+	      
+    <packs>
+    	<!-- EX
+    	<pack id="pack_folder1"/>
+    	<pack id="pack_folder2">
+      		<flump id="flump_folder"/>
+      		<tiles id="folder/tilesheet_id"/>
+  		</pack>
+    	-->
+    	
+    	<pack id="initial_load"/>
+   		<pack id="gameplay_universal">
+      		<flump id="flump_po"/>
+      		<flump id="flump_enemies"/>
+      		<flump id="flump_effects"/>
+      		<flump id="flump_fung"/>
+   		</pack>
+		
+   		<!-- END OF PACKS -->
+    </packs>
+    
+    <!-- CHUNKS -->
+    <!-- Define larger bundles of chunks and packs to load -->
+    
+    <chunks>
+    	<!-- EX
+    	<chunk id="chunk">
+			<chunk>load_part_1</chunk>
+			<pack>load_part_2</chunk>
+		</chunk>
+    	-->
+    
+    	<chunk id="initial">
+    		<pack>initial_load</pack>    		
+    	</chunk>
+    	
+    	<chunk id="gameplay">
+    		<pack>gameplay_universal</pack>
+    	</chunk>
+
+        <!-- END OF CHUNKS -->
+    </chunks>
+    
+</config>

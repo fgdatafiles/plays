@@ -1,0 +1,81 @@
+{
+"skeleton": {
+	"hash": "TUeX5Gv42D8OcoLvpSpD6BrXk6w",
+	"spine": "3.8.86",
+	"x": -1148.84,
+	"y": -111.95,
+	"width": 1147.07,
+	"height": 556.69,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "lava_layer", "parent": "root", "length": 665.95, "rotation": -2.26, "x": -103.2, "y": -595.61 },
+	{ "name": "lava_layer2", "parent": "lava_layer", "length": 665.95, "x": -150.24, "y": 66.25 },
+	{ "name": "lava_layer3", "parent": "lava_layer2", "length": 665.95, "x": -227.77, "y": 118.97 }
+],
+"slots": [
+	{ "name": "lava_layer3", "bone": "lava_layer3", "attachment": "lava_layer" },
+	{ "name": "lava_layer2", "bone": "lava_layer2", "attachment": "lava_layer" },
+	{ "name": "lava_layer", "bone": "lava_layer", "attachment": "lava_layer" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"lava_layer": {
+				"lava_layer": { "x": -332.47, "y": 651.07, "rotation": 2.26, "width": 816, "height": 360 }
+			},
+			"lava_layer2": {
+				"lava_layer": { "x": -293.93, "y": 672.26, "rotation": 2.26, "width": 816, "height": 360 }
+			},
+			"lava_layer3": {
+				"lava_layer": { "x": -293.03, "y": 649.35, "rotation": 2.26, "width": 816, "height": 360 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"bones": {
+			"lava_layer": {
+				"translate": [
+					{ "x": -114.73, "y": -3.28, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.2, "x": 137.68, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.9, "x": -114.73, "y": -3.28 }
+				],
+				"scale": [
+					{ "curve": 0.248, "c3": 0.737, "c4": 0.94 },
+					{ "time": 0.8, "x": 1.168, "curve": 0.343, "c2": 0.66, "c3": 0.676 },
+					{ "time": 1.9 }
+				]
+			},
+			"lava_layer2": {
+				"translate": [
+					{ "x": 3.15, "y": 3.4, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.4333, "x": -66.69, "y": -2.71, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.9, "x": 3.15, "y": 3.4 }
+				],
+				"scale": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.0667, "x": 1.031, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.9 }
+				]
+			},
+			"lava_layer3": {
+				"translate": [
+					{ "curve": 0.43, "c3": 0.553 },
+					{ "time": 0.9667, "x": -49.26, "y": -2.07, "curve": 0.43, "c3": 0.553 },
+					{ "time": 1.9 }
+				],
+				"scale": [
+					{ "curve": 0.43, "c3": 0.553 },
+					{ "time": 1.4333, "x": 1.031, "curve": 0.43, "c3": 0.553 },
+					{ "time": 1.9 }
+				]
+			}
+		}
+	}
+}
+}

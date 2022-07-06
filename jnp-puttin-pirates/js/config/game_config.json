@@ -1,0 +1,332 @@
+{
+	"game_code":"jnp_spl_spr_puttinpirates",
+
+	"CHARACTER_NAMES" : [
+		"jake",
+		"izzy",
+		"cubby",
+		"hook",
+		"smee"
+	],
+
+	"CHARACTERS": {
+		"JAKE": 0,
+		"CUBBY": 1,
+		"IZZY": 2,
+		"HOOK": 3,
+		"SMEE": 4
+	},
+
+	"LEVELS": [
+		"crab",
+		"lighthouse",
+		"coconuts",
+		"tiki",
+		"swamp",
+		"wheel",
+		"cannon",
+		"volcano",
+		"croc"
+	],
+
+	"subtitles": {
+		"character_select": {
+
+			"multi": [
+				"CHARACTER_SELECT_MULTI_FIRST",
+				"CHARACTER_SELECT_MULTI_SECOND",
+				"CHARACTER_SELECT_MULTI_THIRD",
+				"CHARACTER_SELECT_MULTI_FOURTH",
+				"CHARACTER_SELECT_MULTI_LAST"
+			], 
+			"character_pick":[
+				"CHARACTER_PICKED_JAKE",
+				"CHARACTER_PICKED_IZZY",
+				"CHARACTER_PICKED_CUBBY",
+				"CHARACTER_PICKED_HOOK",
+				"CHARACTER_PICKED_SMEE"
+			],
+			"not_hook":[
+				"NOT_HOOK1",
+				"NOT_HOOK2",
+				"NOT_HOOK3",
+				"NOT_HOOK4",
+				"NOT_HOOK5"
+			],
+			"pickedHook": [
+				"PICKED_HOOK1",
+				"PICKED_HOOK2",
+				"PICKED_HOOK3"
+			]
+		}
+
+	},
+
+	"audio": {
+		
+		"cutscene": "hook-cutscene-with-music",
+
+		"end": {
+			"fun":"HOOK060",
+			"another":"HOOK061"
+		},
+
+		"uiVO": {
+			"mute":"HOOK062",
+			"unmute":"HOOK063",
+			"halt": "HOOK073",
+			"next":"HOOK064",
+			"confirm":[
+				"HOOK008",
+				"HOOK009",
+				"HOOK010"
+			],
+			"replay":"HOOK066",
+			"play":"HOOK068",
+			"quit":"HOOK069",
+			"sure":"HOOK070",
+			"back":"HOOK077",
+			"aye":"HOOK071",
+			"nay":"HOOK072",
+			"needhelp":"HOOK076"
+		},
+
+		"title_screen":{
+			"titleVO": "HOOK001",
+			"idle":"HOOK003",
+			"play_btn_hover":"HOOK068",
+			"play_btn_click": "HOOK002",
+			"music":"title-music"
+		},
+
+		"num_players":{
+			"how_many":"HOOK007",
+			"single":"HOOK007A",
+			"multi":"HOOK007B",
+			"confirm":[
+				"HOOK008",
+				"HOOK009",
+				"HOOK010"
+			]
+		},
+
+		"tutorial": {
+			"explain":"HOOK036",
+			"placement":"HOOK037",
+			"ballinhole":"HOOK038",
+			"howhit":"HOOK039",
+			"aimhit":"HOOK040",
+			"harder":"HOOK042",
+			"steplively":"HOOK043"
+		},
+
+		"character_select": {
+			"single":"HOOK011",
+			"multi": [
+				"HOOK012",
+				"HOOK013",
+				"HOOK014",
+				"HOOK015",
+				"HOOK016"
+			], 
+			"character_pick":[
+				"HOOK017",
+				"HOOK019",
+				"HOOK018",
+				"HOOK021",
+				"HOOK020"
+			],
+			"not_hook":[
+				"HOOK022",
+				"HOOK023",
+				"HOOK024",
+				"HOOK025",
+				"HOOK026"
+			],
+			"pickedHook": [
+				"HOOK027",
+				"HOOK028",
+				"HOOK029"
+			]
+		},
+
+		"mode_select": {
+			"prompt":"HOOK030",
+			"practice":"HOOK031",
+			"match":"HOOK032",
+			"prac_hole":"HOOK030A",
+			"entire":"HOOK030B"
+		},
+
+		"hole_select": [
+			"HOOK033",
+			"HOOK034",
+			"HOOK035"
+		],
+
+		"general_sfx":{
+			"button_click":"sfx_buttonclick"
+		},
+
+		"music": {
+			"bgloop1": "background-music-loop1",
+			"bgloop2": "background-music-loop2",
+			"bgloop3": "background-music-loop3",
+			"intro1":"hole-intro1",
+			"intro2":"hole-intro2",
+			"intro3":"hole-intro3",
+			"intro4":"hole-intro4",
+			"holeIn1":"hole-win-music-hole-in-one",
+			"win":"hole-win-music",
+			"holeBad":"hole-out-bad"
+		},
+
+		"gameplay_audio": {
+			"idle": [
+				"jake-idle",
+				"izzy-idle",
+				"cubby-idle",
+				"HOOK044",
+				"smee-idle"
+			], 
+
+			"happy": [
+				[
+					"jake-great",
+					"jake-yohowaytogo",
+					"jake-allright"
+				],
+				[
+					"izzy-allright",
+					"izzy-gotit",
+					"izzy-great"
+				],
+				[
+					"cubby-awesome",
+					"cubby-cool",
+					"cubby-allright"
+				],
+				[
+					"HOOK048",
+					"HOOK049",
+					"HOOK050"
+				],
+				[
+					"smee-aye",
+					"smee-gotit",
+					"smee-hohoho"
+				]
+			],
+
+			"disappoint": [
+				[
+					"jake-uhoh",
+					"jake-what"	
+				],
+				[
+					"izzy-hmmm",
+					"izzy-ohno",
+					"izzy-yayheynoway"
+				],
+				[
+					"cubby-uhoh",
+					"cubby-whoops",
+					"cubby-awcoconuts"
+				],
+				[
+					"HOOK045",
+					"HOOK046",
+					"HOOK047"
+				],
+				[
+					"smee-ohdear",
+					"smee-ohmy",
+					"smee-whoops"
+				]
+			],
+			
+			"ball": {
+				"in_hole":"sfx_ball_n_hole",
+				"sparkle": "sfx_glitterysparkle",
+				"putt":"sfx_ball_putt",
+				"rolling":"sfx_ball_rolling",
+				"splash":"sfx_ball_splash",
+				"bounce": [
+					"sfx_ballbounce_01",
+					"sfx_ballbounce_02",
+					"sfx_ballbounce_03",
+					"sfx_ballbounce_04",
+					"sfx_ballbounce_05"
+				]
+			},
+
+			"cannon":{
+				"move":"sfx_cannon_sliding",
+				"shot":"sfx_cannon_shot"
+			},
+			"croc": {
+				"chomp":"sfx_crocchomp",
+				"background":"sfx_tictoc_croc"
+			},
+			"wheel": {
+				"background":"sfx_boatcreaking"
+			},
+			"volcano": {
+				"erupt":"sfx_volcano_steam"
+			},
+
+			"crab": {
+				"chop":"sfx_crab_chop"
+			},
+
+			"lighthouse": {
+				"horn":"sfx_lighthouse_horn"
+			},
+
+			"vo_sequences": {
+				
+				"firsthole": {
+					"idList":[
+						"HOOK035A",
+						"HOOK035B"
+					],
+					"delays": [
+						0, 50
+					]
+				},
+
+				"tutorial": {
+					"idList":[
+						"HOOK036",
+						"HOOK037",
+						"HOOK038",
+						"HOOK039",
+						"HOOK040",
+						"HOOK042",
+						"HOOK043"
+					], 
+					"delays":[
+						50,
+						50,
+						50,
+						50,
+						50,
+						50,
+						50
+					]
+				},
+				"final": {
+					"idList": [
+						"HOOK060",
+						"HOOK061"
+					],
+					"delays": [
+						50, 
+						50
+					]
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<title>Jake and the Neverland Pirates: Puttin' Pirates</title>
+<meta name="apple-mobile-web-app-title" content="Jake and the Neverland Pirates: Puttin' Pirates">
+<meta name="robots" content="noindex,nofollow">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="minimal-ui, initial-scale=1, maximum-scale=1, width=device-width, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="HandheldFriendly" content="true">
+<meta name="msapplication-TileColor" content="#000000">
+<link rel="apple-touch-icon" sizes="57x57" href="./media/images/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./media/images/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./media/images/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./media/images/icons/apple-icon-144x144.png">
+<link href='css/game.css' rel='stylesheet' type='text/css'>
+<style>
+        #ios7 { display:none } 
+  </style>
+<script type="text/javascript" src="./gameContainer/require.min.js"></script>
+<script type="text/javascript" src="gameTrackingProps.js"></script>
+<script type="text/javascript" src="./gameProps.js"></script>
+<script type="text/javascript" src="./gameConfig/isl.js"></script>
+<script src="js/lib/modernizr.min.js"></script>
+<script type="text/javascript" src="js/startup.min.js"></script>
+<script type="text/javascript">
+                        try {
+                                window.AudioContext = window.AudioContext  || window.webkitAudioContext;
+                                window.audioContextInstance = new AudioContext();
+                        } catch(e) {
+                                
+                        }
+
+                        window.gamificationBaseUrl = "./gamification/"; 
+  </script>
+<script src='./gamification/gam.js.min'></script>
+</head>
+<body>
+
+<img id="unsupported" src="media/images/localized/unsupported.png"> <img id="cookies" src="media/images/localized/cookies.png">
+<div id="wrapper" class="withBG">
+<div id="bgs" class="unselectable withBG"></div>
+<canvas id="canvas" class="unselectable"></canvas>
+<canvas id="gamvas"></canvas>
+<div id="subtitles">
+<div class="inside">
+<p id="subtitleText" class="centered"></p>
+</div>
+</div>
+</div>
+
+
+<div id="ios7">
+<div id="box">
+<div id="message">
+<img src="./gameContainer/overlay/ios7fix/ios7-close-button.png" width="20" height="20" alt="Close Button" id="close-button"> <img src="media/images/icons/apple-icon-114x114.png" width="60" height="60" alt="Galactic Rescue Icon" id="icon"> <img src="./gameContainer/overlay/ios7fix/ios7-add-to-home-screen.png" width="60" height="60" alt="Add To Home Screen Button" id="add-button"> Tap <img src="./gameContainer/overlay/ios7fix/ios7-options-button.png" width="19" height="26" alt="iOS 7 Options Button" id="options-button"> and then<br>
+<strong>Add to Home Screen</strong><br>
+for the best play experience.
+</div>
+</div>
+<center>
+<img src="./gameContainer/overlay/ios7fix/ios7-arrow.png" width="16" height="18" alt="Arrow">
+</center>
+</div>
+ 
+<script type="text/javascript">
+        if (!window.console || !window.console.log) console = {log: function() {}, error: function() {}};
+  </script> 
+<script type="text/javascript">
+
+
+                function gameStart() {
+                        window.cjs = createjs;
+                        GameStartup.init("");
+                }
+  </script>
+<script type="text/javascript" src="js/lib/create.min.js"></script>
+<script type="text/javascript" src="js/game.min.js"></script> 
+<script type="text/javascript">
+
+        window.onload = function(){
+            runISL();
+        }
+  </script>
+</body>
+</html>

@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="utf-8"?>
+<loadBatches>
+	<loadBatch name="loadScreenBatchPreload" basePath="./media">
+		<asset name="loadingScreenHtml" path="/html/loading_screen.html" type="Other"/>	
+		<asset name="comicTemplateDefinitions" path="/xml/comic_templates.xml" type="Other" />
+		<asset name="comicAssetDefinitions" path="/xml/comic_assets.xml" type="Other" />
+		<asset name="comicCompositions" path="/xml/comic_compositions.xml" type="Other" />
+		<asset name="comicChallenges" path="/../locale/${locale}/comic_challenges.xml" type="Other" />
+			
+		<asset name="blackSquare" path="/images/ui/black_square.png" type="Image" />
+						
+		<asset name="splashFrame" path="/images/ui/wb-jlcc-comic-splash-frame.png" type="Image" />		
+		<asset name="splashImage" path="/images/ui/wb-jlcc-comic-splash-image.png" type="Image" />		
+		
+		<asset name="splashPlayButton" path="/images/ui/wb-jlcc-comic-ui-btn-play.png" type="Image" />		
+		
+		<asset name="logo" path="/../locale/${locale}/images/wb-jlcc-comic-pop-up-logo.png" type="Image" />		
+		
+		<asset name="loadingBg" path="/images/ui/wb-jlcc-comic-loading-bg.png" type="Image" />		
+		<asset name="loadingBackground" path="/images/ui/wb-jlcc-comic-loading-character.png" type="Image" />
+		<asset name="loadingMeter" path="/images/ui/wb-jlcc-comic-loading-fill.png" type="Image" />												
+
+	</loadBatch>
+
+	<loadBatch name="menusLoadBatch" basePath="./media">	
+		
+	</loadBatch>
+
+	<loadBatch name="loadBatchPreload" basePath="./media">							
+		
+		<asset name="comicCreatorFinishButton" path="/images/ui/wb-jlcc-comic-hud-btn-check.png" type="Image"/>
+		
+		<asset name="ipadLandscapeHtml" path="/html/ipad_landscape.html" type="Other" />
+		<asset name="iphoneLandscapeHtml" path="/html/iphone_landscape.html" type="Other" />
+		<asset name="watchVideoScreenHtml" path="/html/watch_video_screen.html" type="Other" />
+		<asset name="shareScreenHtml" path="/html/share_screen.html" type="Other" />
+		
+		<asset name="templateBlankIcon" path="/images/ui/wb-jlcc-comic-template-thumb-blank.png" type="Image" />				
+		<asset name="templateStarterIcon" path="/images/ui/wb-jlcc-comic-template-thumb-starter.png" type="Image" />				
+		
+		<asset name="hudFrame" path="/images/ui/wb-jlcc-comic-hud-frame.png" type="Image" />				
+		<asset name="comicCompleteFrame" path="/images/ui/wb-jlcc-comic-complete-frame.png" type="Image" />				
+		<asset name="templateSelectBackground" path="/images/ui/wb-jlcc-comic-template-select-background.png" type="Image" />								
+		
+		<asset name="templateSelectNextButton" path="/images/ui/wb-jlcc-comic-template-select-btn.png" type="Image" />								
+		<asset name="templateSelectPrevButton" path="/images/ui/wb-jlcc-comic-template-select-btn-prev.png" type="Image" />								
+		
+		<asset name="playButton" path="/images/ui/wb-jlcc-comic-pop-up-btn-play.png" type="Image" />		
+		
+		<asset name="backButton" path="/images/ui/wb-jlcc-comic-hud-btn-back.png" type="Image"/>
+		<asset name="backButtonLarge" path="/images/ui/wb-jlcc-comic-pop-up-btn-sound-back.png" type="Image"/>
+		<asset name="helpButton" path="/images/ui/wb-jlcc-comic-pop-up-btn-sound-help.png" type="Image"/>
+		<asset name="soundButton" path="/images/ui/wb-jlcc-comic-ui-btn-sound-on.png" type="Image"/>				
+		<asset name="soundOffButton" path="/images/ui/wb-jlcc-comic-ui-btn-sound-off.png" type="Image"/>				
+		
+		<asset name="soundButtonLarge" path="/images/ui/wb-jlcc-comic-pop-up-btn-sound-on.png" type="Image"/>				
+		<asset name="soundOffButtonLarge" path="/images/ui/wb-jlcc-comic-pop-up-btn-sound-off.png" type="Image"/>				
+		
+		<asset name="category_characters"	path="/images/ui/wb-jlcc-comic-tab-heroes.png" type="Image" />
+		<asset name="category_backgrounds"		path="/images/ui/wb-jlcc-comic-tab-background.png" type="Image" />
+		<asset name="category_speechBubbles"		path="/images/ui/wb-jlcc-comic-tab-text.png" type="Image" />
+		<asset name="category_props"	path="/images/ui/wb-jlcc-comic-tab-props.png" type="Image" />
+		<asset name="category_actions"	path="/images/ui/wb-jlcc-comic-tab-action.png" type="Image" />
+		
+		<asset name="rayParticle" path="/images/particles/ray_particle.png" type="Image"/>
+		<asset name="starParticle" path="/images/particles/star_particle.png" type="Image"/>
+		<asset name="burstParticle" path="/images/particles/burst_particle.png" type="Image"/>
+		<asset name="burstGlow" path="/images/particles/burst_glow.png" type="Image"/>			
+
+		<asset name="printButton" path="/images/ui/wb-jlcc-comic-hud-btn-print.png" type="Image" />			
+		<asset name="shareButton" path="/images/ui/wb-jlcc-comic-hud-btn-share.png" type="Image" />			
+		<asset name="downloadButton" path="/images/ui/wb-jlcc-comic-hud-btn-download.png" type="Image" />			
+
+		<asset name="homeButton" path="/images/ui/wb-jlcc-comic-hud-btn-menu.png" type="Image"/>
+		
+		<asset name="scrollBar" path="/images/ui/wb-jlcc-comic-tab-scroll.png" type="Image" />
+		
+		<asset name="tabArrow" path="/images/ui/wb-jlcc-comic-hero-tab-arrow.png" type="Image" />
+		
+		<asset name="aquamanTab" path="/images/ui/wb-jlcc-comic-hero-tab-aquaman.png" type="Image" />
+		<asset name="batmanTab" path="/images/ui/wb-jlcc-comic-hero-tab-batman.png" type="Image" />
+		<asset name="flashTab" path="/images/ui/wb-jlcc-comic-hero-tab-flash.png" type="Image" />
+		<asset name="greenLanternTab" path="/images/ui/wb-jlcc-comic-hero-tab-green.png" type="Image" />
+		<asset name="supermanTab" path="/images/ui/wb-jlcc-comic-hero-tab-superman.png" type="Image" />
+		<asset name="wonderWomanTab" path="/images/ui/wb-jlcc-comic-hero-tab-wonderwoman.png" type="Image" />
+		<asset name="villainsTab" path="/images/ui/wb-jlcc-comic-hero-tab-villian.png" type="Image" />
+		
+		<asset name="printableBg" path="/../locale/${locale}/images/wb-jlcc-comic-printable-background.png" type="Image" />
+		
+		<asset name="popupContainer" path="/images/ui/wb-jlcc-comic-pop-up-container.png" type="Image" />
+		
+		<asset name="starterAquaman" path="/images/ui/wb-jlcc-comic-template-thumb-aqua.png" type="Image" />
+		<asset name="starterBatman" path="/images/ui/wb-jlcc-comic-template-thumb-bat.png" type="Image" />
+		<asset name="starterFlash" path="/images/ui/wb-jlcc-comic-template-thumbflash.png" type="Image" />
+		<asset name="starterGreenLantern" path="/images/ui/wb-jlcc-comic-template-thumb-green.png" type="Image" />
+		<asset name="starterSuperman" path="/images/ui/wb-jlcc-comic-template-thumb-super.png" type="Image" />
+		<asset name="starterWonderwoman" path="/images/ui/wb-jlcc-comic-template-thumb-ww.png" type="Image" />
+		
+		<asset name="frameLayoutThumbnail1" path="/images/ui/wb-jlcc-comic-template-01-thumb.png" type="Image" />
+		<asset name="frameLayoutThumbnail2" path="/images/ui/wb-jlcc-comic-template-02-thumb.png" type="Image" />
+		<asset name="frameLayoutThumbnail3" path="/images/ui/wb-jlcc-comic-template-03-thumb.png" type="Image" />
+		<asset name="frameLayoutThumbnail4" path="/images/ui/wb-jlcc-comic-template-04-thumb.png" type="Image" />
+		<asset name="frameLayoutThumbnail5" path="/images/ui/wb-jlcc-comic-template-05-thumb.png" type="Image" />
+		<asset name="frameLayoutThumbnail6" path="/images/ui/wb-jlcc-comic-template-06-thumb.png" type="Image" />
+		<asset name="frameLayoutThumbnail7" path="/images/ui/wb-jlcc-comic-template-07-thumb.png" type="Image" />
+		<asset name="frameLayoutThumbnail8" path="/images/ui/wb-jlcc-comic-template-08-thumb.png" type="Image" />
+		<asset name="frameLayoutThumbnail8" path="/images/ui/wb-jlcc-comic-template-08-thumb.png" type="Image" />
+		<asset name="frameLayoutThumbnail9" path="/images/ui/wb-jlcc-comic-template-09-thumb.png" type="Image" />
+		<asset name="frameLayoutThumbnail10" path="/images/ui/wb-jlcc-comic-template-10-thumb.png" type="Image" />
+		<asset name="frameLayoutThumbnail11" path="/images/ui/wb-jlcc-comic-template-11-thumb.png" type="Image" />
+		<asset name="frameLayoutThumbnail12" path="/images/ui/wb-jlcc-comic-template-12-thumb.png" type="Image" />
+				
+		<asset name="editIcon" path="/images/ui/wb-jlcc-comic-hud-btn-edit.png" type="Image" />						
+		
+		<asset name="buttonYes" path="/images/ui/wb-jlcc-comic-pop-up-btn-yes.png" type="Image" />						
+		<asset name="buttonNo" path="/images/ui/wb-jlcc-comic-pop-up-btn-no.png" type="Image" />							
+		
+		<asset name="whiteBg" path="/images/ui/white_bg.png" type="Image"/>	
+		<asset name="greyBg" path="/images/ui/grey_bg.png" type="Image"/>	
+		<asset name="overlayBlack" path="/images/ui/overlay.png" type="Image"/>	
+		<asset name="overlay" path="/images/ui/wb-jlcc-comic-ui-pop-overlay.png" type="Image"/>
+		<asset name="loadingArrow" path="/images/ui/wb-jlcc-comic-ui-loading-arrow.png" type="Image" />			
+
+		<asset name="action_burst1" path="/images/comic_assets/actions/action_burst1.png" type="Image"/>		
+		<asset name="action_burst1Xml" path="/images/comic_assets/actions/action_burst1.xml" type="Other"/>
+		<asset name="action_burst1Thumb" path="/images/comic_assets/actions/wb-jlcc-action-burst1-thumb.png" type="Image"/>						
+		
+		<asset name="action_star" path="/images/comic_assets/actions/action_star.png" type="Image"/>		
+		<asset name="action_starXml" path="/images/comic_assets/actions/action_star.xml" type="Other"/>
+		<asset name="action_starThumb" path="/images/comic_assets/actions/wb-jlcc-action-star-thumb.png" type="Image"/>		
+		
+		<asset name="action_burst_blue" path="/images/comic_assets/actions/action_burst_blue.png" type="Image"/>		
+		<asset name="action_burst_blueXml" path="/images/comic_assets/actions/action_burst_blue.xml" type="Other"/>
+		<asset name="action_burst_blueThumb" path="/images/comic_assets/actions/wb-jlcc-action-burst-blue-thumb.png" type="Image"/>		
+		
+		<asset name="action_burst_green" path="/images/comic_assets/actions/action_burst_green.png" type="Image"/>		
+		<asset name="action_burst_greenXml" path="/images/comic_assets/actions/action_burst_green.xml" type="Other"/>
+		<asset name="action_burst_greenThumb" path="/images/comic_assets/actions/wb-jlcc-action-burst-green-thumb.png" type="Image"/>		
+		
+		<asset name="action_burst_orange" path="/images/comic_assets/actions/action_burst_orange.png" type="Image"/>		
+		<asset name="action_burst_orangeXml" path="/images/comic_assets/actions/action_burst_orange.xml" type="Other"/>
+		<asset name="action_burst_orangeThumb" path="/images/comic_assets/actions/wb-jlcc-action-burst-orange-thumb.png" type="Image"/>		
+		
+		<asset name="action_flash" path="/images/comic_assets/actions/action_flash.png" type="Image"/>		
+		<asset name="action_flashXml" path="/images/comic_assets/actions/action_flash.xml" type="Other"/>
+		<asset name="action_flashThumb" path="/images/comic_assets/actions/wb-jlcc-action-character-flash-thumb.png" type="Image"/>		
+		
+		<asset name="action_green_lantern" path="/images/comic_assets/actions/action_green_lantern.png" type="Image"/>		
+		<asset name="action_green_lanternXml" path="/images/comic_assets/actions/action_green_lantern.xml" type="Other"/>
+		<asset name="action_green_lanternThumb" path="/images/comic_assets/actions/wb-jlcc-action-character-green-thumb.png" type="Image"/>		
+		
+		<asset name="action_meteor" path="/images/comic_assets/actions/action_meteor.png" type="Image"/>		
+		<asset name="action_meteorXml" path="/images/comic_assets/actions/action_meteor.xml" type="Other"/>
+		<asset name="action_meteorThumb" path="/images/comic_assets/actions/wb-jlcc-action-meteor-thumb.png" type="Image"/>		
+		
+		<asset name="action_batarang" path="/images/comic_assets/actions/action_batarang.png" type="Image"/>		
+		<asset name="action_batarangXml" path="/images/comic_assets/actions/action_batarang.xml" type="Other"/>
+		<asset name="action_batarangThumb" path="/images/comic_assets/actions/wb-jlcc-action-character-bat-thumb.png" type="Image"/>		
+		
+		<asset name="action_superman_breath" path="/images/comic_assets/actions/action_superman_breath.png" type="Image"/>		
+		<asset name="action_superman_breathXml" path="/images/comic_assets/actions/action_superman_breath.xml" type="Other"/>
+		<asset name="action_superman_breathThumb" path="/images/comic_assets/actions/wb-jlcc-action-character-breath-thumb.png" type="Image"/>		
+		
+		<asset name="action_superman_laser" path="/images/comic_assets/actions/action_superman_laser.png" type="Image"/>		
+		<asset name="action_superman_laserXml" path="/images/comic_assets/actions/action_superman_laser.xml" type="Other"/>
+		<asset name="action_superman_laserThumb" path="/images/comic_assets/actions/wb-jlcc-action-character-laser-thumb.png" type="Image"/>		
+		
+		<asset name="action_burst" path="/images/comic_assets/actions/wb-jlcc-comic-action-burst-1.png" type="Image"/>				
+		<asset name="action_burstThumb" path="/images/comic_assets/actions/wb-jlcc-comic-action-burst-1-thumb.png" type="Image"/>				
+		<asset name="action_burstAlt" path="/images/comic_assets/actions/wb-jlcc-comic-action-burst-2.png" type="Image"/>				
+		<asset name="action_burstAltThumb" path="/images/comic_assets/actions/wb-jlcc-comic-action-burst-2-thumb.png" type="Image"/>				
+		<asset name="action_burstBlue" path="/images/comic_assets/actions/wb-jlcc-comic-action-burst-blu.png" type="Image"/>				
+		<asset name="action_burstBlueThumb" path="/images/comic_assets/actions/wb-jlcc-comic-action-burst-blu-thumb.png" type="Image"/>				
+		<asset name="action_burstGreen" path="/images/comic_assets/actions/wb-jlcc-comic-action-burst-grn.png" type="Image"/>				
+		<asset name="action_burstGreenThumb" path="/images/comic_assets/actions/wb-jlcc-comic-action-burst-grn-thumb.png" type="Image"/>				
+		<asset name="action_burstOrange" path="/images/comic_assets/actions/wb-jlcc-comic-action-burst-org.png" type="Image"/>				
+		<asset name="action_burstOrangeThumb" path="/images/comic_assets/actions/wb-jlcc-comic-action-burst-org-thumb.png" type="Image"/>				
+		
+		<!--Audio-->
+		<asset name="ui_click_1" path="/sound/ui_click_1.mp3" type="Audio"/>
+		<asset name="ui_click_2" path="/sound/ui_click_2.mp3" type="Audio"/>
+		<asset name="ui_camera_1" path="/sound/ui_camera_1.mp3" type="Audio"/>
+		<asset name="ui_place_1" path="/sound/ui_place_1.mp3" type="Audio"/>
+		<asset name="ui_rotate_1" path="/sound/ui_rotate_1.mp3" type="Audio"/>
+		<asset name="ui_scale_1" path="/sound/ui_scale_1.mp3" type="Audio"/>
+		<asset name="ui_trash_1" path="/sound/ui_trash_1.mp3" type="Audio"/>
+		<asset name="ui_burst_1" path="/sound/ui_burst_1.mp3" type="Audio"/>	
+		<asset name="music_decisions" path="/sound/music_decisions.mp3" type="Audio"/>	
+		
+	</loadBatch>
+
+	<loadBatch name="comicCreatorAssets" basePath="./media">					
+				
+		<asset name="scaleUi" path="/images/ui/wb-jlcc-comic-edit-con-zoom.png" type="Image"/>
+		<asset name="rotateUi" path="/images/ui/wb-jlcc-comic-edit-con-rotate.png" type="Image"/>
+		<asset name="selectUi" path="/images/ui/wb-jlcc-comic-edit-con-center.png" type="Image"/>
+		<asset name="trashUi" path="/images/ui/wb-jlcc-comic-edit-con-trash.png" type="Image"/>
+		<asset name="doneUi" path="/images/ui/wb-jlcc-comic-edit-con-confirm.png" type="Image"/>												
+
+		<asset name="undoButton" path="/images/ui/wb-jlcc-comic-hud-btn-undo.png" type="Image"/>		
+				
+		<asset name="comicCreatorCategoryButtonSelectedPointer" path="/images/ui/wb-jlcc-comic-tab-highlight.png" type="Image" />
+		<asset name="comicCreatorInnerBg" path="/images/ui/comic_bg.png" type="Image" />											
+				
+	</loadBatch>
+
+	<loadBatch name="streamingAssets" basePath="./media">						
+						
+		<!-- Characters -->
+		<!-- Superman -->
+		<asset name="wb-jlcc-comic-character-super-01" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-01.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-super-01-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-01-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-super-02" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-02.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-super-02-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-02-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-super-03" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-03.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-super-03-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-03-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-super-04" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-04.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-super-04-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-04-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-super-05" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-05.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-super-05-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-05-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-super-06" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-06.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-super-06-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-06-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-super-07" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-07.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-super-07-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-07-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-super-08" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-08.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-super-08-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-08-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-super-09" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-09.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-super-09-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-09-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-super-10" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-10.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-super-10-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-10-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-super-11" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-11.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-super-11-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-11-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-super-12" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-12.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-super-12-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-12-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-super-13" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-13.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-super-13-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-13-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-super-14" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-14.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-super-14-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-14-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-super-15" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-15.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-super-15-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-15-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-super-16" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-16.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-super-16-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-16-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-super-17" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-17.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-super-17-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-super-17-thumb.png" type="Image"/>	
+			
+		<!-- Batman -->		
+		<asset name="wb-jlcc-comic-character-bat-01" path="/images/comic_assets/characters/wb-jlcc-comic-character-bat-01.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-bat-01-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-bat-01-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-bat-02" path="/images/comic_assets/characters/wb-jlcc-comic-character-bat-02.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-bat-02-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-bat-02-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-bat-03" path="/images/comic_assets/characters/wb-jlcc-comic-character-bat-03.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-bat-03-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-bat-03-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-bat-04" path="/images/comic_assets/characters/wb-jlcc-comic-character-bat-04.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-bat-04-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-bat-04-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-bat-05" path="/images/comic_assets/characters/wb-jlcc-comic-character-bat-05.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-bat-05-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-bat-05-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-bat-06" path="/images/comic_assets/characters/wb-jlcc-comic-character-bat-06.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-bat-06-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-bat-06-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-bat-07" path="/images/comic_assets/characters/wb-jlcc-comic-character-bat-07.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-bat-07-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-bat-07-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-bat-08" path="/images/comic_assets/characters/wb-jlcc-comic-character-bat-08.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-bat-08-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-bat-08-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-bat-09" path="/images/comic_assets/characters/wb-jlcc-comic-character-bat-09.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-bat-09-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-bat-09-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-bat-10" path="/images/comic_assets/characters/wb-jlcc-comic-character-bat-10.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-bat-10-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-bat-10-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-bat-11" path="/images/comic_assets/characters/wb-jlcc-comic-character-bat-11.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-bat-11-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-bat-11-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-bat-12" path="/images/comic_assets/characters/wb-jlcc-comic-character-bat-12.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-bat-12-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-bat-12-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-bat-13" path="/images/comic_assets/characters/wb-jlcc-comic-character-bat-13.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-bat-13-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-bat-13-thumb.png" type="Image"/>	
+		
+		<!-- Wonder Woman-->		
+		<asset name="wb-jlcc-comic-character-ww-01" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-01.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-ww-01-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-01-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-ww-02" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-02.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-ww-02-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-02-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-ww-03" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-03.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-ww-03-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-03-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-ww-04" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-04.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-ww-04-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-04-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-ww-05" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-05.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-ww-05-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-05-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-ww-06" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-06.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-ww-06-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-06-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-ww-07" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-07.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-ww-07-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-07-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-ww-08" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-08.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-ww-08-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-08-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-ww-09" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-09.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-ww-09-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-09-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-ww-10" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-10.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-ww-10-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-10-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-ww-11" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-11.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-ww-11-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-11-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-ww-12" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-12.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-ww-12-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-12-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-ww-13" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-13.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-ww-13-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-13-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-ww-14" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-14.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-ww-14-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-ww-14-thumb.png" type="Image"/>	
+		
+		<!-- Flash -->		
+		<asset name="wb-jlcc-comic-character-flash-01" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-01.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-flash-01-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-01-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-flash-02" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-02.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-flash-02-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-02-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-flash-03" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-03.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-flash-03-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-03-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-flash-04" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-04.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-flash-04-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-04-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-flash-05" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-05.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-flash-05-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-05-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-flash-06" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-06.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-flash-06-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-06-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-flash-07" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-07.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-flash-07-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-07-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-flash-08" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-08.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-flash-08-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-08-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-flash-09" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-09.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-flash-09-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-09-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-flash-10" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-10.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-flash-10-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-10-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-flash-11" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-11.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-flash-11-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-11-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-flash-12" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-12.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-flash-12-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-12-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-flash-13" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-13.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-flash-13-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-13-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-flash-14" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-14.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-flash-14-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-14-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-flash-15" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-15.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-flash-15-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-flash-15-thumb.png" type="Image"/>	
+		
+		<!-- Green Lantern -->		
+		<asset name="wb-jlcc-comic-character-green-01" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-01.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-green-01-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-01-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-green-02" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-02.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-green-02-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-02-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-green-03" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-03.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-green-03-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-03-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-green-04" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-04.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-green-04-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-04-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-green-05" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-05.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-green-05-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-05-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-green-06" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-06.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-green-06-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-06-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-green-07" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-07.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-green-07-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-07-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-green-08" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-08.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-green-08-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-08-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-green-09" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-09.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-green-09-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-09-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-green-10" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-10.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-green-10-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-10-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-green-11" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-11.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-green-11-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-11-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-green-12" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-12.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-green-12-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-12-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-green-13" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-13.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-green-13-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-13-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-green-14" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-14.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-green-14-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-14-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-green-15" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-15.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-green-15-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-15-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-green-16" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-16.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-green-16-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-16-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-green-17" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-17.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-green-17-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-green-17-thumb.png" type="Image"/>	
+		
+		<!-- Aquaman -->		
+		<asset name="wb-jlcc-comic-character-aqua-01" path="/images/comic_assets/characters/wb-jlcc-comic-character-aqua-01.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-aqua-01-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-aqua-01-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-aqua-02" path="/images/comic_assets/characters/wb-jlcc-comic-character-aqua-02.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-aqua-02-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-aqua-02-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-aqua-03" path="/images/comic_assets/characters/wb-jlcc-comic-character-aqua-03.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-aqua-03-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-aqua-03-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-aqua-04" path="/images/comic_assets/characters/wb-jlcc-comic-character-aqua-04.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-aqua-04-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-aqua-04-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-aqua-05" path="/images/comic_assets/characters/wb-jlcc-comic-character-aqua-05.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-aqua-05-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-aqua-05-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-aqua-06" path="/images/comic_assets/characters/wb-jlcc-comic-character-aqua-06.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-aqua-06-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-aqua-06-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-aqua-07" path="/images/comic_assets/characters/wb-jlcc-comic-character-aqua-07.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-aqua-07-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-aqua-07-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-aqua-08" path="/images/comic_assets/characters/wb-jlcc-comic-character-aqua-08.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-aqua-08-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-aqua-08-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-aqua-09" path="/images/comic_assets/characters/wb-jlcc-comic-character-aqua-09.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-aqua-09-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-aqua-09-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-aqua-10" path="/images/comic_assets/characters/wb-jlcc-comic-character-aqua-10.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-aqua-10-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-aqua-10-thumb.png" type="Image"/>		
+
+		<!-- Villains -->		
+		<asset name="wb-jlcc-comic-character-villian-01" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-01.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-01-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-01-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-villian-02" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-02.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-02-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-02-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-villian-03" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-03.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-03-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-03-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-villian-04" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-04.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-04-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-04-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-villian-05" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-05.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-05-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-05-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-villian-06" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-06.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-06-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-06-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-villian-07" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-07.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-07-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-07-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-villian-08" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-08.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-08-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-08-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-villian-09" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-09.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-09-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-09-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-villian-10" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-10.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-10-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-10-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-11" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-11.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-11-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-11-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-12" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-12.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-12-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-12-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-13" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-13.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-13-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-13-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-14" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-14.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-14-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-14-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-15" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-15.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-15-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-15-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-16" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-16.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-16-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-16-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-17" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-17.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-17-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-17-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-18" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-18.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-18-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-18-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-19" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-19.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-19-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-19-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-20" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-20.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-20-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-20-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-21" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-21.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-21-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-21-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-22" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-22.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-22-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-22-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-23" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-23.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-23-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-23-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-24" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-24.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-24-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-24-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-25" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-25.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-25-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-25-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-26" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-26.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-26-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-26-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-27" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-27.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-27-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-27-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-28" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-28.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-28-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-28-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-29" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-29.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-29-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-29-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-30" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-30.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-30-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-30-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-31" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-31.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-31-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-31-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-32" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-32.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-32-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-32-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-33" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-33.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-33-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-33-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-34" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-34.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-34-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-34-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-35" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-35.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-35-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-35-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-36" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-36.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-36-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-36-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-37" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-37.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-37-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-37-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-38" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-38.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-38-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-38-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-39" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-39.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-39-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-39-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-40" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-40.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-40-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-40-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-villian-41" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-41.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-41-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-41-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-villian-42" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-42.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-42-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-42-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-character-villian-43" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-43.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-43-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-43-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-44" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-44.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-44-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-44-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-character-villian-45" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-45.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-character-villian-45-thumb" path="/images/comic_assets/characters/wb-jlcc-comic-character-villian-45-thumb.png" type="Image"/>				
+		
+		<!-- Props -->
+		<asset name="wb-jlcc-comic-prop-01" path="/images/comic_assets/props/wb-jlcc-comic-prop-01.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-prop-01-thumb" path="/images/comic_assets/props/wb-jlcc-comic-prop-01-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-prop-02" path="/images/comic_assets/props/wb-jlcc-comic-prop-02.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-prop-02-thumb" path="/images/comic_assets/props/wb-jlcc-comic-prop-02-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-prop-03" path="/images/comic_assets/props/wb-jlcc-comic-prop-03.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-prop-03-thumb" path="/images/comic_assets/props/wb-jlcc-comic-prop-03-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-prop-04" path="/images/comic_assets/props/wb-jlcc-comic-prop-04.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-prop-04-thumb" path="/images/comic_assets/props/wb-jlcc-comic-prop-04-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-prop-05" path="/images/comic_assets/props/wb-jlcc-comic-prop-05.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-prop-05-thumb" path="/images/comic_assets/props/wb-jlcc-comic-prop-05-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-prop-06" path="/images/comic_assets/props/wb-jlcc-comic-prop-06.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-prop-06-thumb" path="/images/comic_assets/props/wb-jlcc-comic-prop-06-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-prop-07" path="/images/comic_assets/props/wb-jlcc-comic-prop-07.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-prop-07-thumb" path="/images/comic_assets/props/wb-jlcc-comic-prop-07-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-prop-08" path="/images/comic_assets/props/wb-jlcc-comic-prop-08.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-prop-08-thumb" path="/images/comic_assets/props/wb-jlcc-comic-prop-08-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-prop-09" path="/images/comic_assets/props/wb-jlcc-comic-prop-09.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-prop-09-thumb" path="/images/comic_assets/props/wb-jlcc-comic-prop-09-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-prop-10" path="/images/comic_assets/props/wb-jlcc-comic-prop-10.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-prop-10-thumb" path="/images/comic_assets/props/wb-jlcc-comic-prop-10-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-prop-11" path="/images/comic_assets/props/wb-jlcc-comic-prop-11.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-prop-11-thumb" path="/images/comic_assets/props/wb-jlcc-comic-prop-11-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-prop-12" path="/images/comic_assets/props/wb-jlcc-comic-prop-12.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-prop-12-thumb" path="/images/comic_assets/props/wb-jlcc-comic-prop-12-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-prop-13" path="/images/comic_assets/props/wb-jlcc-comic-prop-13.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-prop-13-thumb" path="/images/comic_assets/props/wb-jlcc-comic-prop-13-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-prop-14" path="/images/comic_assets/props/wb-jlcc-comic-prop-14.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-prop-14-thumb" path="/images/comic_assets/props/wb-jlcc-comic-prop-14-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-prop-15" path="/images/comic_assets/props/wb-jlcc-comic-prop-15.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-prop-15-thumb" path="/images/comic_assets/props/wb-jlcc-comic-prop-15-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-prop-16" path="/images/comic_assets/props/wb-jlcc-comic-prop-16.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-prop-16-thumb" path="/images/comic_assets/props/wb-jlcc-comic-prop-16-thumb.png" type="Image"/>				
+		
+		
+		<!-- Speech Bubbles -->
+		<asset name="wb-jlcc-comic-text-01" path="/images/comic_assets/text/wb-jlcc-comic-text-01.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-text-01-thumb" path="/images/comic_assets/text/wb-jlcc-comic-text-01-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-text-02" path="/images/comic_assets/text/wb-jlcc-comic-text-02.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-text-02-thumb" path="/images/comic_assets/text/wb-jlcc-comic-text-02-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-text-03" path="/images/comic_assets/text/wb-jlcc-comic-text-03.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-text-03-thumb" path="/images/comic_assets/text/wb-jlcc-comic-text-03-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-text-04" path="/images/comic_assets/text/wb-jlcc-comic-text-04.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-text-04-thumb" path="/images/comic_assets/text/wb-jlcc-comic-text-04-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-text-05" path="/images/comic_assets/text/wb-jlcc-comic-text-05.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-text-05-thumb" path="/images/comic_assets/text/wb-jlcc-comic-text-05-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-text-06" path="/images/comic_assets/text/wb-jlcc-comic-text-06.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-text-06-thumb" path="/images/comic_assets/text/wb-jlcc-comic-text-06-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-text-07" path="/images/comic_assets/text/wb-jlcc-comic-text-07.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-text-07-thumb" path="/images/comic_assets/text/wb-jlcc-comic-text-07-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-text-08" path="/images/comic_assets/text/wb-jlcc-comic-text-08.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-text-08-thumb" path="/images/comic_assets/text/wb-jlcc-comic-text-08-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-text-09" path="/images/comic_assets/text/wb-jlcc-comic-text-09.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-text-09-thumb" path="/images/comic_assets/text/wb-jlcc-comic-text-09-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-text-10" path="/images/comic_assets/text/wb-jlcc-comic-text-10.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-text-10-thumb" path="/images/comic_assets/text/wb-jlcc-comic-text-10-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-text-11" path="/images/comic_assets/text/wb-jlcc-comic-text-11.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-text-11-thumb" path="/images/comic_assets/text/wb-jlcc-comic-text-11-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-text-12" path="/images/comic_assets/text/wb-jlcc-comic-text-12.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-text-12-thumb" path="/images/comic_assets/text/wb-jlcc-comic-text-12-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-text-13" path="/images/comic_assets/text/wb-jlcc-comic-text-13.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-text-13-thumb" path="/images/comic_assets/text/wb-jlcc-comic-text-13-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-text-14" path="/images/comic_assets/text/wb-jlcc-comic-text-14.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-text-14-thumb" path="/images/comic_assets/text/wb-jlcc-comic-text-14-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-text-15" path="/images/comic_assets/text/wb-jlcc-comic-text-15.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-text-15-thumb" path="/images/comic_assets/text/wb-jlcc-comic-text-15-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-text-16" path="/images/comic_assets/text/wb-jlcc-comic-text-16.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-text-16-thumb" path="/images/comic_assets/text/wb-jlcc-comic-text-16-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-text-17" path="/images/comic_assets/text/wb-jlcc-comic-text-17.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-text-17-thumb" path="/images/comic_assets/text/wb-jlcc-comic-text-17-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-text-18" path="/images/comic_assets/text/wb-jlcc-comic-text-18.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-text-18-thumb" path="/images/comic_assets/text/wb-jlcc-comic-text-18-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-text-19" path="/images/comic_assets/text/wb-jlcc-comic-text-19.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-text-19-thumb" path="/images/comic_assets/text/wb-jlcc-comic-text-19-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-text-20" path="/images/comic_assets/text/wb-jlcc-comic-text-20.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-text-20-thumb" path="/images/comic_assets/text/wb-jlcc-comic-text-20-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-text-21" path="/images/comic_assets/text/wb-jlcc-comic-text-21.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-text-21-thumb" path="/images/comic_assets/text/wb-jlcc-comic-text-21-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-text-22" path="/images/comic_assets/text/wb-jlcc-comic-text-22.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-text-22-thumb" path="/images/comic_assets/text/wb-jlcc-comic-text-22-thumb.png" type="Image"/>				
+		
+		<asset name="wb-jlcc-comic-text-23" path="/images/comic_assets/text/wb-jlcc-comic-text-23.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-text-23-thumb" path="/images/comic_assets/text/wb-jlcc-comic-text-23-thumb.png" type="Image"/>				
+		
+		<!-- Backgrounds -->
+		<asset name="wb-jlcc-comic-background-01" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-01.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-01-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-01-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-02" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-02.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-02-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-02-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-03" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-03.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-03-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-03-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-04" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-04.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-04-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-04-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-05" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-05.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-05-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-05-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-06" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-06.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-06-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-06-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-07" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-07.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-07-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-07-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-08" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-08.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-08-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-08-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-09" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-09.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-09-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-09-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-10" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-10.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-10-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-10-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-11" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-11.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-11-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-11-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-12" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-12.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-12-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-12-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-13" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-13.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-13-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-13-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-14" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-14.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-14-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-14-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-15" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-15.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-15-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-15-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-16" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-16.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-16-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-16-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-17" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-17.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-17-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-17-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-18" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-18.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-18-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-18-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-19" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-19.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-19-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-19-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-20" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-20.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-20-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-20-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-21" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-21.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-21-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-21-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-22" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-22.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-22-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-22-thumb.png" type="Image"/>	
+						
+		<asset name="wb-jlcc-comic-background-23" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-23.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-23-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-23-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-24" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-24.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-24-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-24-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-25" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-25.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-25-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-25-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-26" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-26.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-26-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-26-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-27" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-27.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-27-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-27-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-28" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-28.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-28-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-28-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-29" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-29.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-29-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-29-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-30" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-30.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-30-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-30-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-31" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-31.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-31-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-31-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-32" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-32.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-32-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-32-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-33" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-33.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-33-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-33-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-34" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-34.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-34-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-34-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-35" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-35.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-35-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-35-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-36" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-36.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-36-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-36-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-37" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-37.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-37-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-37-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-38" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-38.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-38-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-38-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-39" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-39.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-39-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-39-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-40" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-40.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-40-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-40-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-41" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-41.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-41-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-41-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-42" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-42.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-42-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-42-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-43" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-43.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-43-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-43-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-44" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-44.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-44-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-44-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-45" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-45.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-45-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-45-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-46" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-46.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-46-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-46-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-47" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-47.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-47-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-47-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-48" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-48.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-48-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-48-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-49" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-49.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-49-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-49-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-50" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-50.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-50-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-50-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-51" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-51.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-51-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-51-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-52" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-52.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-52-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-52-thumb.png" type="Image"/>	
+		
+		<asset name="wb-jlcc-comic-background-53" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-53.png" type="Image"/>	
+		<asset name="wb-jlcc-comic-background-53-thumb" path="/images/comic_assets/backgrounds/wb-jlcc-comic-background-53-thumb.png" type="Image"/>	
+													
+	</loadBatch>
+</loadBatches>

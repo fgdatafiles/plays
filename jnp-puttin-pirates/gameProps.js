@@ -1,0 +1,2 @@
+var gameProps={gameLink:"",pinterestImg:"",twitterImg:"",facebookImg:"",twitterVerbiage:"",pinterestVerbiage:"",facebookVerbiage:"",facebookCaption:'',gamificationEnabled:true,localizedTextEnabled:false,subtitlesEnabled:true,debugLoad:false,debugLoadArg:"pause",disableVO:false,orientation:1};require(["./gameConfig/gameTracking.js","./gameContainer/jquery.min.js","./gameContainer/datedropdown.js","./gameContainer/HTML5GameContainer.js"],function()
+{console.log("HTML5GameContainer modules have loaded");window.gameObj=new HTML5GameContainer();});
