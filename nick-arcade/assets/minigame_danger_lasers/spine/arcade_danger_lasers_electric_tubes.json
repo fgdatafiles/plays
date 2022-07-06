@@ -1,0 +1,203 @@
+{
+"skeleton": {
+	"hash": "x0upE3Qkk8jyYu+8IBaGxcQbZTM",
+	"spine": "3.8.72",
+	"x": -411.65,
+	"y": -322.64,
+	"width": 829.73,
+	"height": 645,
+	"images": "./images/",
+	"audio": "/Users/workinman009/Documents/Projects/nick international/Arcade/nick_arcade_2-games_1/./_danger_lasers"
+},
+"bones": [
+	{ "name": "root", "color": "ffffffff" },
+	{ "name": "diode", "parent": "root", "x": 5.52, "y": -336.69, "color": "ff0000ff" },
+	{ "name": "electric_tube_1", "parent": "root", "x": -350.25, "y": -331.38, "color": "87e7ffff" },
+	{ "name": "electric_tube_2", "parent": "root", "x": 364.48, "y": -331.38, "color": "87e7ffff" },
+	{ "name": "electric_tube_bolts", "parent": "electric_tube_1", "x": -3.42, "y": 173.43, "color": "87e7ffff" },
+	{ "name": "electric_tube_bolts2", "parent": "electric_tube_1", "x": 711.35, "y": 173.43, "color": "87e7ffff" }
+],
+"slots": [
+	{ "name": "electric_tube_container", "bone": "electric_tube_bolts", "attachment": "electric_tube_container" },
+	{ "name": "electric_tube_container2", "bone": "electric_tube_bolts2", "attachment": "electric_tube_container" },
+	{ "name": "electric_tube_1", "bone": "electric_tube_bolts", "attachment": "electric_tube_1" },
+	{ "name": "electric_tube_4", "bone": "electric_tube_bolts2", "attachment": "electric_tube_1" },
+	{ "name": "electric_tube_2", "bone": "electric_tube_bolts" },
+	{ "name": "electric_tube_5", "bone": "electric_tube_bolts2" },
+	{ "name": "electric_tube_3", "bone": "electric_tube_bolts" },
+	{ "name": "electric_tube_6", "bone": "electric_tube_bolts2" },
+	{ "name": "energy_pole_bottom", "bone": "electric_tube_1", "attachment": "energy_pole_bottom" },
+	{ "name": "energy_pole_bottom2", "bone": "electric_tube_2", "attachment": "energy_pole_bottom" },
+	{ "name": "energy_pole_top", "bone": "electric_tube_1", "attachment": "energy_pole_top" },
+	{ "name": "energy_pole_top2", "bone": "electric_tube_2", "attachment": "energy_pole_top" },
+	{ "name": "booster_time", "bone": "diode" },
+	{ "name": "booster_2X", "bone": "diode" },
+	{ "name": "diode_base", "bone": "diode" },
+	{ "name": "diode_on_base", "bone": "diode" },
+	{ "name": "diode_on_2", "bone": "diode" },
+	{ "name": "diode_gold_base", "bone": "diode" },
+	{ "name": "diode_gold", "bone": "diode" },
+	{ "name": "diode_volt", "bone": "diode" },
+	{ "name": "diode_brainstorm", "bone": "diode" },
+	{ "name": "diode_awol", "bone": "diode" },
+	{ "name": "diode_hit_glow", "bone": "diode" },
+	{ "name": "diode_shoutout", "bone": "diode" },
+	{ "name": "diode_on", "bone": "diode" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"diode_gold_base": {
+				"diode_gold_base": { "x": -119.17, "y": 334.05, "width": 94, "height": 94 }
+			},
+			"diode_base": {
+				"diode_base": { "x": -1.17, "y": 449.05, "width": 94, "height": 94 }
+			},
+			"diode_on_2": {
+				"diode_on_2": { "x": -1.17, "y": 452.55, "width": 111, "height": 107 }
+			},
+			"diode_awol": {
+				"diode_awol": { "x": 230.33, "y": 113.05, "width": 92, "height": 90 }
+			},
+			"diode_shoutout": {
+				"diode_shoutout": { "x": 116.33, "y": 335.05, "width": 77, "height": 77 }
+			},
+			"electric_tube_container2": {
+				"electric_tube_container": { "x": -0.29, "y": 162.55, "width": 74, "height": 398 }
+			},
+			"booster_time": {
+				"booster_time": { "x": 113.33, "y": 221.55, "width": 94, "height": 94 }
+			},
+			"energy_pole_bottom": {
+				"energy_pole_bottom": { "x": -3.9, "y": 111.74, "width": 115, "height": 206 }
+			},
+			"diode_on": {
+				"diode_on": { "x": -1.06, "y": 448.16, "width": 94, "height": 94 }
+			},
+			"diode_gold": {
+				"diode_gold": { "x": -119.17, "y": 333.55, "width": 94, "height": 94 }
+			},
+			"electric_tube_1": {
+				"electric_tube_1": { "x": -0.48, "y": 173.31, "width": 95, "height": 413 }
+			},
+			"electric_tube_2": {
+				"electric_tube_2": { "x": -0.48, "y": 173.31, "width": 95, "height": 414 }
+			},
+			"electric_tube_3": {
+				"electric_tube_3": { "x": -0.48, "y": 173.31, "width": 95, "height": 414 }
+			},
+			"electric_tube_4": {
+				"electric_tube_1": { "x": -0.48, "y": 173.31, "width": 95, "height": 413 }
+			},
+			"electric_tube_5": {
+				"electric_tube_2": { "x": -0.48, "y": 173.31, "width": 95, "height": 414 }
+			},
+			"electric_tube_6": {
+				"electric_tube_3": { "x": -0.48, "y": 173.31, "width": 95, "height": 414 }
+			},
+			"energy_pole_top": {
+				"energy_pole_top": { "x": -3.9, "y": 564.24, "width": 115, "height": 179 }
+			},
+			"diode_brainstorm": {
+				"diode_brainstorm": { "x": 0.33, "y": 218.55, "width": 87, "height": 89 }
+			},
+			"electric_tube_container": {
+				"electric_tube_container": { "x": -0.29, "y": 162.55, "width": 74, "height": 398 }
+			},
+			"energy_pole_top2": {
+				"energy_pole_top": { "x": -3.9, "y": 564.24, "width": 115, "height": 179 }
+			},
+			"booster_2X": {
+				"booster_2X": { "x": -119.17, "y": 113.55, "width": 94, "height": 94 }
+			},
+			"energy_pole_bottom2": {
+				"energy_pole_bottom": { "x": -3.9, "y": 111.74, "width": 115, "height": 206 }
+			},
+			"diode_hit_glow": {
+				"diode_hit_glow": { "x": 113.33, "y": 334.55, "width": 188, "height": 177 }
+			},
+			"diode_volt": {
+				"diode_volt": { "x": -235.17, "y": 220.55, "width": 100, "height": 101 }
+			},
+			"diode_on_base": {
+				"diode_on_base": { "x": -1.17, "y": 449.05, "width": 94, "height": 94 }
+			}
+		}
+	}
+],
+"animations": {
+	"energy_poles": {
+		"slots": {
+			"electric_tube_4": {
+				"color": [
+					{ "color": "ffffffff", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2667, "color": "ffffff8b" }
+				],
+				"attachment": [
+					{ "name": "electric_tube_1" },
+					{ "time": 0.2667, "name": null }
+				]
+			},
+			"electric_tube_1": {
+				"color": [
+					{ "color": "ffffffff", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2667, "color": "ffffff8b" }
+				],
+				"attachment": [
+					{ "name": "electric_tube_1" },
+					{ "time": 0.2667, "name": null }
+				]
+			},
+			"electric_tube_5": {
+				"color": [
+					{ "time": 0.2, "color": "ffffffff", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.4667, "color": "ffffff83" }
+				],
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.2, "name": "electric_tube_2" },
+					{ "time": 0.4667, "name": null }
+				]
+			},
+			"electric_tube_2": {
+				"color": [
+					{ "time": 0.2, "color": "ffffffff", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.4667, "color": "ffffff83" }
+				],
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.2, "name": "electric_tube_2" },
+					{ "time": 0.4667, "name": null }
+				]
+			},
+			"electric_tube_6": {
+				"color": [
+					{ "color": "ffffffb8", "curve": 0.335, "c2": 0.34, "c3": 0.676, "c4": 0.69 },
+					{ "time": 0.1, "color": "ffffff87", "curve": "stepped" },
+					{ "time": 0.3667, "color": "ffffffff", "curve": 0.254, "c3": 0.621, "c4": 0.47 },
+					{ "time": 0.5667, "color": "ffffffb8" }
+				],
+				"attachment": [
+					{ "name": "electric_tube_3" },
+					{ "time": 0.1, "name": null },
+					{ "time": 0.3667, "name": "electric_tube_3" }
+				]
+			},
+			"electric_tube_3": {
+				"color": [
+					{ "color": "ffffffb8", "curve": 0.335, "c2": 0.34, "c3": 0.676, "c4": 0.69 },
+					{ "time": 0.1, "color": "ffffff87", "curve": "stepped" },
+					{ "time": 0.3667, "color": "ffffffff", "curve": 0.254, "c3": 0.621, "c4": 0.47 },
+					{ "time": 0.5667, "color": "ffffffb8" }
+				],
+				"attachment": [
+					{ "name": "electric_tube_3" },
+					{ "time": 0.1, "name": null },
+					{ "time": 0.3667, "name": "electric_tube_3" }
+				]
+			}
+		}
+	}
+}
+}

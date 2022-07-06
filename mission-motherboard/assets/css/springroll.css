@@ -1,0 +1,44 @@
+#content {
+    position: relative;
+}
+
+video {
+    position: absolute;
+    height :100%;
+    width :100%;
+}
+
+canvas {
+    position: absolute;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#cyberchase-skip{
+    border: none;
+    width: 235px;
+    height: 81px;
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    background: transparent;
+    background-image:url('../sprites/r-fair/logiczoo/minigame/Next_Default.png');
+    
+}
+
+#cyberchase-skip:hover {
+    background-image:url('../sprites/r-fair/logiczoo/minigame/Next_Hover.png');
+}
+
+#cyberchase-skip:active {
+    background-image:url('../sprites/r-fair/logiczoo/minigame/Next_Pressed.png');
+}
+
+body::after{
+   position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+   content: url('../sprites/r-fair/logiczoo/minigame/Next_Default.png') url('../sprites/r-fair/logiczoo/minigame/Next_Hover.png') url('../sprites/r-fair/logiczoo/minigame/Next_Pressed.png');
+}

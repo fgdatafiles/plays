@@ -1,0 +1,1 @@
+CuriousJS.MusicShop = {};

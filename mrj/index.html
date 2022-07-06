@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html manifest="offline.appcache">
+    <head>
+        
+        <meta charset="UTF-8" />
+        <title>Pogo - Mighty Raju Jump</title>
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0, minimal-ui" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="apple-mobile-web-app-title" content="Pogo - Mighty Raju Jump">
+
+        <meta name="description" content="Jump from floor to floor, avoid the ghosts! How high can you climb in this endless game?" />
+        <meta name="version" content="1.1.0" />
+
+
+        <link rel="icon" type="image/png" href="icon.png" />
+        <link rel="shortcut icon" href="favicon.png" />
+        <link rel="apple-touch-icon-precomposed" href="icon.png"/>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <style type="text/css">
+
+            #rotate{
+                    width:100%;
+                    height:100%;
+                    position:absolute;
+                    top:0px;
+                    left:0px;
+                    background-color:black;
+                    background-image:url('gzpAssets/rotate.png');
+                    background-repeat:no-repeat;
+                    background-position: center center;
+                    background-size: contain;
+                    z-index: 999;
+                    display:none;
+                   }
+        </style>
+        <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+    </head>
+    <body>
+        <div class="gzp-nofs"  id="noGameHere">
+        </div>
+
+        <div id="rotate"></div>
+
+        <script src="js/gzpLoader.js" type="text/javascript"></script>
+         <script src="js/gamezop.js" type="text/javascript"></script>
+        <script src="js/radio.min.js" type="text/javascript"></script>
+        <script src="js/MetaManager.js" type="text/javascript"></script>
+         <script src="js/lodash.min.js" type="text/javascript"></script>
+        <script src="js/detect.min.js" type="text/javascript"></script>
+        <script src="js/phaser-no-physics.min.js" type="text/javascript"></script>
+        <script src="js/game.js" type="text/javascript"></script>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+{
+"skeleton": { "hash": "NjOqoSpjlKqyygjs/YImXnQLk9A", "spine": "3.7.94", "width": 364.69, "height": 545 },
+"bones": [
+	{ "name": "root", "x": 2.5, "y": -2.5 }
+],
+"slots": [
+	{ "name": "Layer 1_0", "bone": "root", "attachment": "Layer 1_0" },
+	{ "name": "Layer 1_12", "bone": "root", "attachment": "g-static" },
+	{ "name": "Layer 11_0", "bone": "root", "attachment": "Layer 11_0" },
+	{ "name": "mb.png", "bone": "root", "attachment": "mb.png" },
+	{ "name": "m-tv front", "bone": "root", "attachment": "m-tv front" },
+	{ "name": "line_0", "bone": "root", "attachment": "line_0" }
+],
+"skins": {
+	"default": {
+		"Layer 11_0": {
+			"Layer 11_0": { "x": -26.92, "y": 196.98, "width": 198, "height": 262 }
+		},
+		"Layer 1_0": {
+			"Layer 1_0": { "x": -21.68, "y": -5, "width": 324, "height": 380 },
+			"Layer 1_1": { "width": 322, "height": 380 }
+		},
+		"Layer 1_12": {
+			"Layer 1_12": { "y": -30.02, "width": 284, "height": 274 },
+			"Layer 1_16": { "y": -25.85, "width": 284, "height": 274 },
+			"Layer 1_42": { "y": -28.36, "width": 284, "height": 274 },
+			"bg_0": { "y": -25.02, "width": 284, "height": 272 },
+			"bg_1": { "y": -30.02, "width": 284, "height": 272 },
+			"g-static": { "y": -25.85, "width": 292, "height": 288 }
+		},
+		"line_0": {
+			"line_0": { "x": 4.49, "width": 352, "height": 402 },
+			"line_1": { "x": 5, "width": 352, "height": 402 }
+		},
+		"m-tv front": {
+			"m-tv front": { "x": 5, "width": 350, "height": 400 }
+		},
+		"mb.png": {
+			"mb.png": { "x": 7.51, "y": -52.83, "width": 136, "height": 188 }
+		}
+	}
+},
+"animations": {
+	"idle": {
+		"slots": {
+			"Layer 1_12": {
+				"attachment": [
+					{ "time": 0, "name": "g-static" },
+					{ "time": 0.3333, "name": "g-static" },
+					{ "time": 0.6667, "name": "Layer 1_16" },
+					{ "time": 1, "name": "Layer 1_42" },
+					{ "time": 1.3333, "name": "bg_0" },
+					{ "time": 1.6667, "name": "bg_1" },
+					{ "time": 2, "name": "g-static" }
+				]
+			},
+			"line_0": {
+				"attachment": [
+					{ "time": 0, "name": "line_0" }
+				]
+			},
+			"mb.png": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.3333, "name": null },
+					{ "time": 1.3333, "name": "mb.png" }
+				]
+			}
+		}
+	}
+}
+}

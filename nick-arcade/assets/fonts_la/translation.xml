@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--<translation attributes>-->
+<!-- defaultFont dictates the font (based on the id set in fonts.xml) that all fields will use unless fontId is specified within that field's individual tag.-->
+<!-- rtl dictates whether this locale is a right to left language -->
+
+<!-- <Node Attributes> -->
+<!-- id is not Optional. It tells us which text field to change. -->
+<!-- fontScale is Optional. It allows you to customize the size of the font used in this particular field. 1 is normal. 2 is double size. .5 is half size. Defaults to 1.-->
+<!-- fontName is Optional. It allows you to customize the font used in this particular field. Leave it out to use the default font (specified by defaultFont).-->
+<!-- offsetX is Optional. It allows you to move the text field a certain number of pixels on the X axis. Leave it out or use 0 if you don't want to move the text. -->
+<!-- offsetY is Optional. It allows you to move the text field a certain number of pixels on the Y axis. Leave it out or use 0 if you don't want to move the text.-->
+<!-- Variables may be inserted into localization strings through this format - {0} - where 0 is the index of the array of variables passed in. -->
+
+<strings defaultFont="nick-arcade_font_ext_latin" rtl="false">
+	<!--Common-->
+	<string id="common.loading"						 			fontScale=".25" offsetX="0" offsetY="0"><![CDATA[Loading {0}%]]></string>
+	<string id="common.orientation_landscape"					fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Please flip back to Landscape mode.]]></string>
+	<string id="common.yes"										fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[Yes]]></string>
+	<string id="common.no"										fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[No]]></string>
+	<string id="common.next"									fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Next]]></string>
+	<string id="common.back"									fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Back]]></string>
+	<string id="common.continue"								fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Continue]]></string>
+	<string id="common.close"									fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Close]]></string>
+	<!--Splash-->		
+	<string id="splash.title"									fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Nick Arcade]]></string>
+	<string id="splash.tap_anywhere"							fontScale=".55"	offsetX="0" offsetY="0"><![CDATA[Tap Anywhere to Play]]></string>
+	<string id="splash.click_anywhere"							fontScale=".55"	offsetX="0" offsetY="0"><![CDATA[Click Anywhere to Play]]></string>
+	<string id="splash.tap_anywhere_skip"						fontScale=".55"	offsetX="0" offsetY="0"><![CDATA[Tap Anywhere to Skip]]></string>
+	<string id="splash.click_anywhere_skip"						fontScale=".55"	offsetX="0" offsetY="0"><![CDATA[Click Anywhere to Skip]]></string>
+	<string id="splash.play"									fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Play]]></string>
+	<string id="splash.printable"								fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Printable]]></string>
+	<!--Help Screen-->		
+	<string id="help.help"										fontScale=".65"	offsetX="0" offsetY="0"><![CDATA[Help]]></string>
+	<!--Quit Screen-->		
+	<string id="quit_confirm.quit"								fontScale=".65"	offsetX="0" offsetY="0"><![CDATA[Quit]]></string>
+	<string id="quit_confirm.quit_confirm_header"				fontScale=".65"	offsetX="0" offsetY="0"><![CDATA[Really Quit?]]></string>
+	<!--End Screen-->		
+	<string id="end_game.game_over"								fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Game Complete!]]></string>
+	<string id="end_game.tap_anywhere_again"					fontScale=".55"	offsetX="0" offsetY="0"><![CDATA[Tap Anywhere to Play Again]]></string>
+	<string id="end_game.click_anywhere_again"					fontScale=".55"	offsetX="0" offsetY="0"><![CDATA[Click Anywhere to Play Again]]></string>
+	<string id="end_game.play_again"							fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Try Again]]></string>
+	<string id="end_game.return_to_menu"						fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Back to Arcade]]></string>
+	<string id="end_game.tix"									fontScale="0.6"	offsetX="0" offsetY="0"><![CDATA[x{0}]]></string>
+	<string id="end_game.collections"							fontScale="0.7"	offsetX="0" offsetY="0"><![CDATA[Collection]]></string>
+	<!--Boosters-->		
+	<string id="booster.DOUBLE_POINTS"							fontScale="0.35"	offsetX="0" offsetY="0"><![CDATA[2x Points]]></string>
+	<string id="booster.EXTRA_AMMO"								fontScale="0.35"	offsetX="0" offsetY="0"><![CDATA[Extra Ammo]]></string>
+	<string id="booster.EXTRA_TIME"								fontScale="0.35"	offsetX="0" offsetY="0"><![CDATA[Extra Time]]></string>
+	<string id="booster.DANGER_LASER_FRENZY_MODE"				fontScale="0.35"	offsetX="0" offsetY="0"><![CDATA[Rush Mode]]></string>
+	<string id="booster.ANCHOVY_PATRICK_MODE"					fontScale="0.35"	offsetX="0" offsetY="0"><![CDATA[Rush Mode]]></string>
+	<string id="booster.HOOF_MACHINE_STICKY_MODE"				fontScale="0.35"	offsetX="0" offsetY="0"><![CDATA[Sticky Mode]]></string>
+	<string id="booster.HOOF_MACHINE_SINGLE_ITEM"				fontScale="0.35"	offsetX="0" offsetY="0"><![CDATA[Single Item]]></string>
+	<string id="booster.LOUD_LAUGHS_EXPLODING_PIES"				fontScale="0.35"	offsetX="0" offsetY="0"><![CDATA[Pie Explode]]></string>
+	<string id="booster.LOUD_LAUGHS_FRENZY_MODE"				fontScale="0.35"	offsetX="0" offsetY="0"><![CDATA[Rush Mode]]></string>
+	<string id="booster.SLIME_BIG_EXPLOSION"					fontScale="0.35"	offsetX="0" offsetY="0"><![CDATA[Slime Wave]]></string>
+	<string id="booster.SLIME_FRENZY_MODE"						fontScale="0.35"	offsetX="0" offsetY="0"><![CDATA[Rush Mode]]></string>
+	<string id="booster.PACK_MAZE_EXTRA_PICKUPS"				fontScale="0.35"	offsetX="0" offsetY="0"><![CDATA[Extra Snacks]]></string>
+	<string id="booster.PACK_MAZE_EXTRA_POWERUPS"				fontScale="0.35"	offsetX="0" offsetY="0"><![CDATA[Extra Powerups]]></string>
+	<string id="booster.SKATE_SHIELD"							fontScale="0.35"	offsetX="0" offsetY="0"><![CDATA[Shield]]></string>
+	<string id="booster.SKATE_MAGNET"							fontScale="0.35"	offsetX="0" offsetY="0"><![CDATA[Magnet]]></string>
+	<string id="booster.SKATE_FRENZY_MODE"						fontScale="0.35"	offsetX="0" offsetY="0"><![CDATA[Rush Mode]]></string>
+	<string id="booster.ROCKEM_EXTRA_HEALTH"					fontScale="0.35"	offsetX="0" offsetY="0"><![CDATA[Extra Health]]></string>
+	<string id="booster.ROCKEM_ONE_PUNCH"						fontScale="0.35"	offsetX="0" offsetY="0"><![CDATA[Mega Punch]]></string>
+	<string id="booster.SKEEBALL_MAGNET"						fontScale="0.35"	offsetX="0" offsetY="0"><![CDATA[Magnet]]></string>
+	<!--Minigames-->
+	<string id="minigame.title_anchovy"							fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Krabby Patty Toss]]></string>
+	<string id="minigame.title_danger_lasers"					fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Danger Lasers]]></string>
+	<string id="minigame.title_hoof_machine"					fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Hoof Machine]]></string>
+	<string id="minigame.title_loud_laughs"						fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Loud Laughs]]></string>
+	<string id="minigame.title_slime_blast"						fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Slime Blast]]></string>
+	<string id="minigame.title_pack_maze"						fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Pack Maze]]></string>
+	<string id="minigame.title_skate_the_block"					fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Skate The Block]]></string>
+	<string id="minigame.title_rockem_sockem"					fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Rock'em Sock'em]]></string>
+	<string id="minigame.title_basketball"						fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Basketball]]></string>
+	<string id="minigame.title_skeeball"						fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Skeeball]]></string>
+	<string id="minigame.instructions_anchovy"					fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Flick Krabby Patties into the open mouths!]]></string>
+	<string id="minigame.instructions_anchovy_patrick"			fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Patrick's hungry! How fast can you feed him?]]></string>
+	<string id="minigame.instructions_hoof_machine"				fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Collect a prize by using the joystick and button.]]></string>
+	<string id="minigame.instructions_hoof_machine_sticky"		fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[Sticky Mode!\nPrizes will stick to Pony's hooves!]]></string>
+	<string id="minigame.instructions_hoof_machine_single"		fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[One prize only! Get it while it's hot!]]></string>
+	<string id="minigame.instructions_loud_laughs"				fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Drag and drop pies over characters! \nMatch the pie color with the character to get the most points.]]></string>
+	<string id="minigame.instructions_loud_laughs_explode"		fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Exploding Pies active! These pies hit everyone nearby!]]></string>
+	<string id="minigame.instructions_loud_laughs_frenzy"		fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[FRENZY!! Toss those pies as fast as you can!]]></string>
+	<string id="minigame.instructions_slime_blast_click"		fontScale=".35"	offsetX="0" offsetY="0"><![CDATA[Click the slime pump to charge up, then slime characters by smashing the green button.\nBeat your last score to earn a bonus blast!]]></string>
+	<string id="minigame.instructions_slime_blast_tap"			fontScale=".35"	offsetX="0" offsetY="0"><![CDATA[Tap the slime pump to charge up, then slime characters by smashing the green button.\nBeat your last score to earn a bonus blast!]]></string>
+	<string id="minigame.instructions_slime_blast_big"			fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[SLIME WAVE active! It covers the whole screen!]]></string>
+	<string id="minigame.instructions_slime_blast_frenzy"		fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[FRENZY!! Faster characters! Big points only!]]></string>
+	<string id="minigame.instructions_pack_maze"				fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Collect all the pellets! \n\n\nAvoid the ghosts!]]></string>
+	<string id="minigame.instructions_pack_maze_pickups"		fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Pickups galore! Pump up that score!]]></string>
+	<string id="minigame.instructions_pack_maze_powerups"		fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Powerups galore! Time to get some ghosts!]]></string>
+	<string id="minigame.instructions_skate_the_block"			fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Use arrows to move back and forth. \nAvoid the obstacles and collect coins!]]></string>
+	<string id="minigame.instructions_skate_the_block_shield"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Shield Active! It will protect you from a few hits!]]></string>
+	<string id="minigame.instructions_skate_the_block_magnet"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Magnet Mode! Coins and powerups will come right to you!]]></string>
+	<string id="minigame.instructions_rockem_sockem"			fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Punch           Special           Block]]></string>
+	<string id="minigame.instructions_rockem_sockem_health"		fontScale=".55"	offsetX="0" offsetY="0"><![CDATA[Health Boost! You can take a few more hits!]]></string>
+	<string id="minigame.instructions_rockem_sockem_mega_1"		fontScale=".75"	offsetX="0" offsetY="0"><![CDATA[MEGA PUNCH!!]]></string>
+	<string id="minigame.instructions_rockem_sockem_mega_2"		fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[One good hit will do the trick!]]></string>
+	<string id="minigame.instructions_basketball"				fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Flick the slimeballs into the hoop!]]></string>
+	<string id="minigame.instructions_skeeball"					fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Pull back to launch balls down the lanes]]></string>
+	<string id="minigame.instructions_skeeball_magnet"			fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Magnet Mode!\nYour rolls will shoot right down the center!]]></string>
+
+	<!--Danger Laser-->
+	<string id="minigame.instructions_danger_lasers"			fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Tap all lit lasers before they disappear]]></string>
+	<string id="minigame.instructions_danger_lasers_1"			fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[Collect ALL visible \nlasers on screen]]></string>
+	<string id="minigame.instructions_danger_lasers_2"			fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[Slows time, lasers \nstay lit longer]]></string>
+	<string id="minigame.instructions_danger_lasers_3"			fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[Activate ALL \nsurrounding lasers]]></string>
+	<string id="minigame.instructions_danger_lasers_4"			fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[Collect ALL \nsurrounding lasers]]></string>
+	<string id="minigame.instructions_danger_lasers_frenzy"		fontScale=".55"	offsetX="0" offsetY="0"><![CDATA[FRENZY!\nOne powerup appears more often!]]></string>
+
+	<!--Hoof Machine-->
+	<string id="hoof_machine.streak"							fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[{0} PRIZES!\n+Bonus Try!]]></string>
+
+	<string id="danger_laser.floating_score"					fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+	<string id="danger_laser.score"								fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+	<string id="danger_laser.time"								fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[Time: {0}]]></string>
+	<!--Rock em Sock em-->
+	<string id="rockem_sockem.time"								fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[:{0}]]></string>
+	<string id="rockem_sockem.button_punch"						fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[P]]></string>
+	<string id="rockem_sockem.button_mega_punch"				fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[SP]]></string>
+	<string id="rockem_sockem.button_block"						fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[B]]></string>
+	<!--Pack Maze-->
+	<string id="pack_maze.lives"								fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Hearts: {0}]]></string>
+	<string id="pack_maze.score"								fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+	<string id="pack_maze.level"								fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Level {0}]]></string>
+	<!-- Skeeball -->
+	<string id="skeeball.hole_label"							fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+	<string id="skeeball.ball_count"							fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Balls: {0}]]></string>
+	<!-- Slime Blast -->
+	<string id="slime_blast.score_card"							fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+	<string id="slime_blast.completion_0"						fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[OK!]]></string>
+	<string id="slime_blast.completion_1"						fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[Nice!]]></string>
+	<string id="slime_blast.completion_2"						fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[Incredible!!]]></string>
+	<string id="slime_blast.completion_3"						fontScale="1.0"	offsetX="0" offsetY="0"><![CDATA[EPIC!!]]></string>
+	<string id="slime_blast.extra_blast"						fontScale=".65"	offsetX="0" offsetY="0"><![CDATA[You got an extra blast!]]></string>
+	<!-- Basketball -->
+	<string id="basketball.score"								fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+	<string id="basketball.time"								fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[:{0}]]></string>
+	<string id="basketball.streak"								fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[STREAK! +{0}s]]></string>
+	<!-- Skate -->
+	<string id="skate.score"									fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+	<string id="skate.lives"									fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Hearts: {0}]]></string>
+	<!-- Loud Laughs -->
+	<string id="loud_laughs.match"								fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Match!]]></string>
+	<string id="loud_laughs.miss"								fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Miss...]]></string>
+	<!--Gameplay-->
+	<string id="gameplay.menu"									fontScale=".65"	offsetX="0" offsetY="0"><![CDATA[Pause]]></string>
+	<string id="gameplay.level"									fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Level]]></string>
+	<string id="gameplay.score"									fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Score: {0}]]></string>
+	<string id="gameplay.points"								fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Points: {0}]]></string>
+	<string id="gameplay.miniscore"								fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Score: {0}]]></string>
+	<string id="gameplay.tickets"								fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+	<!-- Tutorial -->
+	<string id="dialogue.tutorial_firstplay"					fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[Welcome to The Game!<br>CLICK to continue]]></string>
+	<string id="dialogue.tutorial_firstplay_mobile"				fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[Welcome to The Game!<br>TAP to continue]]></string>
+	<string id="dialogue.tutorial_firstplay2"					fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[Just sit back and relax!<br>SWIPE right to continue.]]></string>
+	<string id="dialogue.tutorial_firstplay3"					fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[Let the ball guide you!<br>CLICK here to<br>end this tutorial.]]></string>
+	<string id="dialogue.tutorial_firstplay3_mobile"			fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[Let the ball guide you!<br>TAP here to<br>end this tutorial.]]></string>
+	<!-- Shop -->
+	<string id="shop.intial_info"								fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[]]></string>
+	<string id="shop.buy_click"									fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Click again to buy!]]></string>
+	<string id="shop.buy_tap"									fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Tap again to buy!]]></string>
+	<string id="shop.need_more_tickets"							fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Not enough tickets!]]></string>
+	<string id="shop.ticket_amount"								fontScale=".35"	offsetX="0" offsetY="0"><![CDATA[x{0}]]></string>
+
+	<string id="collections.count"								fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[x{0}]]></string>
+
+	<string id="shop.sticker_anchovy_flick_0"					fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[The Krabs Wave]]></string>
+	<string id="shop.sticker_anchovy_flick_1"					fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[3:01 AM]]></string>
+	<string id="shop.sticker_anchovy_flick_2"					fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Special Delivery]]></string>
+	<string id="shop.sticker_basketball_0"						fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Slimeball]]></string>
+	<string id="shop.sticker_basketball_1"						fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Slimy Slimeball]]></string>
+	<string id="shop.sticker_basketball_2"						fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Commemorative Backboard]]></string>
+	<string id="shop.sticker_dangerlaser_0"						fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Captain Man]]></string>
+	<string id="shop.sticker_dangerlaser_1"						fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[ShoutOut]]></string>
+	<string id="shop.sticker_dangerlaser_2"						fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Brainstorm]]></string>
+	<string id="shop.sticker_general_0"							fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Pony]]></string>
+	<string id="shop.sticker_general_1"							fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Annie]]></string>
+	<string id="shop.sticker_general_2"							fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Hoof-bump]]></string>
+	<string id="shop.sticker_pack_maze_0"						fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Ollie Allen]]></string>
+	<string id="shop.sticker_pack_maze_1"						fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Andre]]></string>
+	<string id="shop.sticker_pack_maze_2"						fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Bev]]></string>
+	<string id="shop.sticker_rock_em_0"							fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[The Texas Roundhouse]]></string>
+	<string id="shop.sticker_rock_em_1"							fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Kah-Rah-Tay]]></string>
+	<string id="shop.sticker_rock_em_2"							fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Master Udon]]></string>
+	<string id="shop.sticker_skate_lane_0"						fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Ronnie Anne]]></string>
+	<string id="shop.sticker_skate_lane_1"						fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Game Break]]></string>
+	<string id="shop.sticker_skate_lane_2"						fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[KIckflip]]></string>
+	<string id="shop.sticker_skeeball_0"						fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[AWOL]]></string>
+	<string id="shop.sticker_skeeball_1"						fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Volt]]></string>
+	<string id="shop.sticker_skeeball_2"						fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Super Schwoz]]></string>
+	<string id="shop.sticker_slime_explode_0"					fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Slime Splat]]></string>
+	<string id="shop.sticker_slime_explode_1"					fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Slime Explosion]]></string>
+	<string id="shop.sticker_slime_explode_2"					fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Nickelodeon Blimp]]></string>
+	<string id="shop.sticker_whack_a_mole_0"					fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Lincoln]]></string>
+	<string id="shop.sticker_whack_a_mole_1"					fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Luna]]></string>
+	<string id="shop.sticker_whack_a_mole_2"					fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Loud Family Portrait]]></string>
+
+	<string id="shop.sticker_hoof_machine_0"					fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Viking Helmet]]></string>
+	<string id="shop.sticker_hoof_machine_1"					fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Action Figure (Series A)]]></string>
+	<string id="shop.sticker_hoof_machine_2"					fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Chicken]]></string>
+	<string id="shop.sticker_hoof_machine_3"					fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Waffle]]></string>
+	<string id="shop.sticker_hoof_machine_4"					fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Booster Pack]]></string>
+	<string id="shop.sticker_hoof_machine_5"					fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Carrot]]></string>
+	<string id="shop.sticker_hoof_machine_6"					fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Blue Cupcake]]></string>
+	<string id="shop.sticker_hoof_machine_7"					fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Marshmallow]]></string>
+	<string id="shop.sticker_hoof_machine_8"					fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Milkshake]]></string>
+	<string id="shop.sticker_hoof_machine_9"					fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Y-Box Controller]]></string>
+	<string id="shop.sticker_hoof_machine_10"					fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[GameStation Controller]]></string>
+	<string id="shop.sticker_hoof_machine_11"					fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Green Cupcake]]></string>
+	<string id="shop.sticker_hoof_machine_12"					fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Orange Cupcake]]></string>
+	<string id="shop.sticker_hoof_machine_13"					fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Foil Card]]></string>
+	<string id="shop.sticker_hoof_machine_14"					fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Foil Card]]></string>
+	<string id="shop.sticker_hoof_machine_15"					fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Foil Card]]></string>
+	<string id="shop.sticker_hoof_machine_16"					fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Action Figure (Series B)]]></string>
+
+	<!-- Achievements -->
+	<string id="achievement.unlocked"							fontScale=".2"	offsetX="0" offsetY="0"><![CDATA[ACHIEVEMENT UNLOCKED]]></string>
+	<string id="achievement.points"								fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+	<string id="achievement.name.level2"						fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Level 2]]></string>
+	<string id="achievement.desc.level2"						fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Reach level 2]]></string>
+	<string id="achievement.name.level5"						fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Level 5]]></string>
+	<string id="achievement.desc.level5"						fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Reach level 5]]></string>
+	<string id="achievement.name.score100"						fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[100]]></string>
+	<string id="achievement.desc.score100"						fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Get 100 points]]></string>
+	<string id="achievement.name.score1000"						fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[1000]]></string>
+	<string id="achievement.desc.score1000"						fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Get 1000 points]]></string>
+	<string id="achievement.name.codeunlocked"					fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Code Mode]]></string>
+	<string id="achievement.desc.codeunlocked"					fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Use the code to unlock new game features]]></string>
+	<string id="achievement.name.firstplay"						fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Baby Steps]]></string>
+	<string id="achievement.desc.firstplay"						fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Play the game once]]></string>
+	<!--Leaderboard-->
+	<string id="leaderboard.you"								fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[You]]></string>
+	<string id="leaderboard.number"								fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+	<string id="leaderboard.ai_name"							fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+	<string id="leaderboard.score"								fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+	<string id="leaderboard.leaderboard"						fontScale="0.8"	offsetX="0" offsetY="0"><![CDATA[LEADERBOARD]]></string>
+	<string id="leaderboard.submit_score"						fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Submit Score]]></string>
+	<!-- Debug Text -->	
+	<string id="debug.debugfield"								fontScale="1"	offsetX="0" offsetY="0"><![CDATA[{0}}]]></string>
+	<!-- Code Entry -->
+	<string id="code.code_button"								fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Code]]></string>
+	<string id="code.code_copy"									fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Code Unlock]]></string>
+	<string id="code.enter_code_header"							fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Enter Code]]></string>
+	<string id="code.code_key_enter"							fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Enter]]></string>
+	<string id="code.code_key_0"								fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[0]]></string>
+	<string id="code.code_key_1"								fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[1]]></string>
+	<string id="code.code_key_2"								fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[2]]></string>
+	<string id="code.code_key_3"								fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[3]]></string>
+	<string id="code.code_key_4"								fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[4]]></string>
+	<string id="code.code_key_5"								fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[5]]></string>
+	<string id="code.code_key_6"								fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[6]]></string>
+	<string id="code.code_key_7"								fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[7]]></string>
+	<string id="code.code_key_8"								fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[8]]></string>
+	<string id="code.code_key_9"								fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[9]]></string>
+	<string id="code.invalid_code"								fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Invalid Code]]></string>
+	<string id="code.valid_code"								fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Levels Unlocked!]]></string>
+</strings>	

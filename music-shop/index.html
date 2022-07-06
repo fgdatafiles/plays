@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html class="game">
+<head lang="en">
+    <!-- Add game name to title -->
+    <title>Playing Music Shop</title>
+    <style>
+    html {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+    }
+    canvas {
+        position: absolute;
+        transform-origin: top left;
+    }
+    </style>
+    <!-- Include any js needed to run the game -->
+    <!-- #GAME SCRIPTS 1 START# -->
+    <script type="text/javascript" src="src/js/libs/createjs-2015.05.21.combined.js"></script>
+    <script type="text/javascript" src="src/js/libs/soundjs-NEXT.min.js"></script>
+    <script type="text/javascript" src="src/js/game/curiousjs/game.js"></script>
+    <script type="text/javascript" src="src/js/game/curiousjs/scene.js"></script>
+    <script type="text/javascript" src="src/js/game/curiousjs/helpers.js"></script>
+    <script type="text/javascript" src="src/js/game/curiousjs/panzoom.js"></script>
+    <script type="text/javascript" src="src/js/game/scenes/load-scene.js"></script>
+    <script type="text/javascript" src="src/js/game/scenes/title-scene.js"></script>
+    <script type="text/javascript" src="src/js/game/scenes/music-shop/music-shop.js"></script>
+    <script type="text/javascript" src="src/js/game/scenes/music-shop/music-shop-ui.js"></script>
+    <script type="text/javascript" src="src/js/game/scenes/music-shop/music-shop-instruments.js"></script>
+    <script type="text/javascript" src="src/js/game/scenes/music-shop/music-shop-characters.js"></script>
+    <script type="text/javascript" src="src/js/game/scenes/music-shop/music-shop-stage.js"></script>
+    <script type="text/javascript" src="src/js/game/scenes/music-shop/music-shop-scene.js"></script>
+    <script type="text/javascript" src="src/js/game/scenes/activity/activity-scene.js"></script>
+    <script type="text/javascript" src="springroll-tiny-application.js"></script>
+
+    <script type="text/javascript">
+        parentTipID = "music-shop";
+    </script>
+</head>
+    <body class="headband-hidden html-game" id="player" style="padding:0px;">
+        <main class="main">
+            <div class="content-container">
+                <div id="fps"></div>
+                <div id="info"></div>
+                    <canvas id="gameCanvas" width="960" height="500">
+                        We're sorry! Your browser does not support this game. To play with Daniel, update your browser and try again.
+                    </canvas>
+                <div class="parent-tip"></div>
+            </div>
+        </main>
+
+        <!-- #GAME SCRIPTS 2 START# -->
+        <script type="text/javascript" src="src/js/game/main.js"></script>
+
+        <script>
+
+var canvas = document.getElementById('gameCanvas');
+function resize() {
+    let widthScale = window.innerWidth / canvas.width;
+    let heightScale = window.innerHeight / canvas.height;
+
+    if(heightScale < widthScale) {
+        canvas.style.transform = "scale(" + heightScale + ")";
+        let leftOverWidth = window.innerWidth - canvas.width * heightScale;
+        canvas.style.left = "" + leftOverWidth / 2 + "px";
+        canvas.style.top = "0px";
+    } else {
+        canvas.style.transform = "scale(" + widthScale + ")";
+        let leftOverHeight = window.innerHeight - canvas.height * widthScale;
+        canvas.style.top = "" + leftOverHeight / 2 + "px";
+        canvas.style.left = "0px";
+    }
+}
+window.addEventListener('resize', resize);
+resize();
+
+function noop() {};
+window.app = new springroll.TinyApplication({
+    hooks: {
+        soundMuted: function(event) {
+            createjs.Sound._instances.forEach(function(instance) {
+                instance.paused = event.data;
+            });
+        },
+        captionsMuted: noop,
+        musicMuted: noop,
+        voMuted: noop,
+        sfxMuted: noop,
+        captionsStyles: noop,
+        pause: function(event) {
+            createjs.Sound._instances.forEach(function(instance) {
+                instance.paused = event.data;
+            });
+            createjs.Ticker.paused = event.data;
+        },
+        close: noop
+    },
+    features: {
+        sound: true,
+        hints: false,
+        music: false,
+        vo: false,
+        sfx: false,
+        captions: false,
+    }
+});
+        </script>
+    </body>
+</html>

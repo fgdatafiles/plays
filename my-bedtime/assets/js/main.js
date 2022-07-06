@@ -1,0 +1,1 @@
+!function(){var n=new(include("springroll.Application"))({fps:60,name:"my-bedtime",canvasId:"stage",configPath:"assets/config/config.json",captionsPath:"assets/config/captions.json",display:include("springroll.easeljs.EaselJSDisplay"),maxWidth:1664,maxHeight:768}),i=new Bellhop;i.connect(),n.on("init",function(){window.SGGameButler.startGame(n,i)})}();

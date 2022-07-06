@@ -1,0 +1,544 @@
+{
+  "Canvas": {
+    "name": "Canvas",
+    "uuid": "92JFtiqR9ALoYkOzgY0u+T",
+    "type": "container",
+    "position": {
+      "x": 700,
+      "y": 400
+    },
+    "rotation": 0,
+    "scale": {
+      "x": 1,
+      "y": 1
+    },
+    "pivot": {
+      "x": 0,
+      "y": 0
+    },
+    "alpha": 1,
+    "isInteractive": false,
+    "isVisible": true,
+    "mask": null,
+    "zIndex": 0,
+    "children": [
+      {
+        "name": "loading-background",
+        "uuid": "8eAIHIboFG4rBayekRv5eC",
+        "type": "sprite",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "colourTint": "#ffffff",
+        "textureName": "greenSky",
+        "anchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "blendMode": "NORMAL",
+        "skew": {
+          "x": 0,
+          "y": 0
+        },
+        "children": [],
+        "insetTop": 0,
+        "insetBottom": 0,
+        "insetRight": 0,
+        "insetLeft": 0,
+        "width": 1400,
+        "height": 800
+      },
+      {
+        "name": "stars-anim",
+        "type": "spine",
+        "uuid": "63YgNPvAxHvbyzSlYdkS5h",
+        "position": {
+          "x": 0,
+          "y": 442.605
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "colourTint": "#ffffff",
+        "spineName": "stars-anim",
+        "autoUpdate": true,
+        "initiallyEnabled": true,
+        "skinName": "",
+        "attachments": [],
+        "defaultAnimation": "",
+        "children": [],
+        "animations": [
+          {
+            "animationName": "animation",
+            "loop": true,
+            "trackIndex": 0
+          }
+        ]
+      },
+      {
+        "name": "smallShip",
+        "uuid": "17AlhgNFhChKFjB9r8Ct0r",
+        "type": "sprite",
+        "position": {
+          "x": 402.734,
+          "y": -288.502
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "colourTint": "#ffffff",
+        "textureName": "smallShip",
+        "anchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "blendMode": "NORMAL",
+        "skew": {
+          "x": 0,
+          "y": 0
+        },
+        "children": [],
+        "insetTop": 0,
+        "insetBottom": 0,
+        "insetRight": 0,
+        "insetLeft": 0,
+        "width": 217,
+        "height": 207
+      },
+      {
+        "name": "characterShip",
+        "uuid": "40ZhVcUFxHGKva0PmwikmR",
+        "type": "container",
+        "position": {
+          "x": 0,
+          "y": -43.284
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "children": [
+          {
+            "name": "spaceshipBG",
+            "uuid": "821cQWaghKhZbp5Qo8Ke+3",
+            "type": "sprite",
+            "position": {
+              "x": -501.233,
+              "y": 74.388
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "colourTint": "#ffffff",
+            "textureName": "spaceshipBG",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "blendMode": "NORMAL",
+            "skew": {
+              "x": 0,
+              "y": 0
+            },
+            "children": [],
+            "insetTop": 0,
+            "insetBottom": 0,
+            "insetRight": 0,
+            "insetLeft": 0,
+            "width": 423,
+            "height": 502
+          },
+          {
+            "name": "characters",
+            "uuid": "51Zw7n6XRJWYC+hnZBKiNE",
+            "type": "container",
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "children": [
+              {
+                "name": "Digit",
+                "uuid": "bd5aiLAuZJHZ+Rr+YoqRCY",
+                "type": "sprite",
+                "position": {
+                  "x": -562.796,
+                  "y": 162.005
+                },
+                "rotation": 0,
+                "scale": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0
+                },
+                "alpha": 1,
+                "isInteractive": false,
+                "isVisible": false,
+                "mask": null,
+                "zIndex": 0,
+                "colourTint": "#ffffff",
+                "textureName": "Digit",
+                "anchor": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "blendMode": "NORMAL",
+                "skew": {
+                  "x": 0,
+                  "y": 0
+                },
+                "children": [],
+                "insetTop": 0,
+                "insetBottom": 0,
+                "insetRight": 0,
+                "insetLeft": 0,
+                "width": 801,
+                "height": 765
+              },
+              {
+                "name": "Inez",
+                "uuid": "82+7a/z6dLJo+slqVZJSNO",
+                "type": "sprite",
+                "position": {
+                  "x": -548.317,
+                  "y": 153.776
+                },
+                "rotation": 0,
+                "scale": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0
+                },
+                "alpha": 1,
+                "isInteractive": false,
+                "isVisible": false,
+                "mask": null,
+                "zIndex": 0,
+                "colourTint": "#ffffff",
+                "textureName": "Inez",
+                "anchor": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "blendMode": "NORMAL",
+                "skew": {
+                  "x": 0,
+                  "y": 0
+                },
+                "children": [],
+                "insetTop": 0,
+                "insetBottom": 0,
+                "insetRight": 0,
+                "insetLeft": 0,
+                "width": 538,
+                "height": 715
+              },
+              {
+                "name": "Jackie",
+                "uuid": "06RuEMnVdPMbYn2BQ0bdYN",
+                "type": "sprite",
+                "position": {
+                  "x": -559.257,
+                  "y": 111.48
+                },
+                "rotation": 0,
+                "scale": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0
+                },
+                "alpha": 1,
+                "isInteractive": false,
+                "isVisible": false,
+                "mask": null,
+                "zIndex": 0,
+                "colourTint": "#ffffff",
+                "textureName": "Jackie",
+                "anchor": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "blendMode": "NORMAL",
+                "skew": {
+                  "x": 0,
+                  "y": 0
+                },
+                "children": [],
+                "insetTop": 0,
+                "insetBottom": 0,
+                "insetRight": 0,
+                "insetLeft": 0,
+                "width": 616,
+                "height": 909
+              },
+              {
+                "name": "Matt",
+                "uuid": "0eEl2nemlJ4YJ3q4NeESj4",
+                "type": "sprite",
+                "position": {
+                  "x": -522.182,
+                  "y": 121.919
+                },
+                "rotation": 0,
+                "scale": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0
+                },
+                "alpha": 1,
+                "isInteractive": false,
+                "isVisible": false,
+                "mask": null,
+                "zIndex": 0,
+                "colourTint": "#ffffff",
+                "textureName": "Matt",
+                "anchor": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "blendMode": "NORMAL",
+                "skew": {
+                  "x": 0,
+                  "y": 0
+                },
+                "children": [],
+                "insetTop": 0,
+                "insetBottom": 0,
+                "insetRight": 0,
+                "insetLeft": 0,
+                "width": 653,
+                "height": 806
+              }
+            ]
+          },
+          {
+            "name": "spaceship",
+            "uuid": "b4VZJdnXdJM41KkoiLEg2Y",
+            "type": "sprite",
+            "position": {
+              "x": -348.787,
+              "y": 125.37699999999995
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "colourTint": "#ffffff",
+            "textureName": "spaseship",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "blendMode": "NORMAL",
+            "skew": {
+              "x": 0,
+              "y": 0
+            },
+            "children": [],
+            "insetTop": 0,
+            "insetBottom": 0,
+            "insetRight": 0,
+            "insetLeft": 0,
+            "width": 750,
+            "height": 612
+          }
+        ]
+      },
+      {
+        "name": "speechBbl",
+        "uuid": "da3p0ZjXlCioaEGfrbmOzE",
+        "type": "sliceSprite",
+        "position": {
+          "x": 81.715,
+          "y": -0.376
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "colourTint": "#ffffff",
+        "textureName": "speechBbl",
+        "anchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "blendMode": "NORMAL",
+        "skew": {
+          "x": 0,
+          "y": 0
+        },
+        "children": [],
+        "insetTop": 41,
+        "insetBottom": 132,
+        "insetRight": 42,
+        "insetLeft": 155,
+        "width": 900,
+        "height": 400
+      },
+      {
+        "name": "loadingText",
+        "type": "text",
+        "position": {
+          "x": -197.846,
+          "y": -6.616
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "anchor": {
+          "x": 0,
+          "y": 0.5
+        },
+        "width": 650,
+        "height": 288.24,
+        "maxWidth": 650,
+        "text": "Hint text to go here. Hint text to go here.  Hint text to go here  Hint text to go here  Hint text to go here  Hint text to go here  Hint text to go here  Hint text to go here  Hint text to go here  Hint text to go here ",
+        "fontName": "Riffic Free",
+        "fontSize": 40,
+        "align": "left",
+        "tint": "#1f00ff",
+        "fontDirectoryPath": "./assets/fonts/",
+        "uuid": "20NdPNHAxHPYT9iYDH8vCy",
+        "children": []
+      },
+      {
+        "name": "Main Camera",
+        "uuid": "93gPGSdsREzZHOCLU/q6sR",
+        "type": "container",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "children": []
+      }
+    ]
+  }
+}

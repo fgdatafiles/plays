@@ -1,0 +1,32 @@
+﻿{
+	"version": 1580136433,
+	"fileList": [
+		"data.js",
+		"c2runtime.js",
+		"jquery-3.4.1.min.js",
+		"offlineClient.js",
+		"images/how-sheet0.png",
+		"images/title-sheet0.png",
+		"images/play-sheet0.png",
+		"images/menu_numbers-sheet0.png",
+		"images/menu_numbers-sheet1.png",
+		"images/menu_numbers-sheet2.png",
+		"images/o-sheet0.png",
+		"images/answer_box-sheet0.png",
+		"images/timer.png",
+		"images/question_numbers-sheet0.png",
+		"images/question_numbers-sheet1.png",
+		"images/question_numbers-sheet2.png",
+		"images/menu-sheet0.png",
+		"media/correct.m4a",
+		"media/correct.ogg",
+		"media/wrong.m4a",
+		"media/wrong.ogg",
+		"icon-16.png",
+		"icon-32.png",
+		"icon-114.png",
+		"icon-128.png",
+		"icon-256.png",
+		"loading-logo.png"
+	]
+}

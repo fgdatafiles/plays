@@ -1,0 +1,92 @@
+{
+"skeleton": {
+	"hash": "hrGQRQCAVwNacbWYmbx9RB2TPwk",
+	"spine": "3.8.95",
+	"x": -270.5,
+	"y": -197.5,
+	"width": 541,
+	"height": 395,
+	"images": "",
+	"audio": "/Users/WMDesktop043/Documents/Projects/nick_arcade_2020/export/danger_lasers"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "goat", "parent": "root", "length": 183.61, "rotation": 152.61, "x": 1.75, "y": -10.82 }
+],
+"slots": [
+	{ "name": "images/goat-pop_up", "bone": "goat", "attachment": "images/goat-pop_up" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"images/goat-pop_up": {
+				"images/goat-pop_up": { "x": 6.53, "y": -8.81, "rotation": -152.61, "width": 541, "height": 395 }
+			}
+		}
+	}
+],
+"animations": {
+	"off": {
+		"bones": {
+			"goat": {
+				"rotate": [
+					{}
+				],
+				"translate": [
+					{}
+				],
+				"scale": [
+					{}
+				],
+				"shear": [
+					{}
+				]
+			}
+		}
+	},
+	"on": {
+		"bones": {
+			"goat": {
+				"rotate": [
+					{ "curve": "stepped" },
+					{ "time": 0.8333, "curve": "stepped" },
+					{ "time": 1 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.1667, "x": -35.64, "y": 11.88, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.4, "x": -9.9, "y": 9.24, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5667, "x": -9.9, "y": 9.24, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.6667, "curve": "stepped" },
+					{ "time": 0.8333, "curve": "stepped" },
+					{ "time": 1 }
+				],
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 0.8333, "curve": "stepped" },
+					{ "time": 1 }
+				],
+				"shear": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.1667, "x": 6.72, "y": 16.65, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3, "curve": 0.276, "c3": 0.621, "c4": 0.4 },
+					{ "time": 0.4, "y": -1.76, "curve": 0.333, "c2": 0.33, "c3": 0.758 },
+					{ "time": 0.5, "curve": 0.276, "c3": 0.621, "c4": 0.4 },
+					{ "time": 0.5667, "y": -1.76, "curve": 0.333, "c2": 0.33, "c3": 0.758 },
+					{ "time": 0.6667, "curve": "stepped" },
+					{ "time": 0.8333, "curve": "stepped" },
+					{ "time": 1 }
+				]
+			},
+			"root": {
+				"shear": [
+					{ "x": -0.16 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,101 @@
+{
+"skeleton": { "hash": "HgvpTtWql1HhWYwFRxuJswo4XJg", "spine": "3.7.94", "width": 307.49, "height": 455.16 },
+"bones": [
+	{ "name": "root", "x": 34.84, "y": 55.74, "scaleX": 1.364, "scaleY": 1.364 },
+	{ "name": "left", "parent": "root", "length": 119.63, "rotation": 150.22, "x": -43.5, "y": -198.94 },
+	{ "name": "right", "parent": "root", "length": 107.45, "rotation": -30.16, "x": -40.37, "y": -192.06 }
+],
+"slots": [
+	{ "name": "doors-cyberstation/m-doorleft", "bone": "left", "attachment": "doors-cyberstation/m-doorleft" },
+	{ "name": "doors-cyberstation/m-doorright", "bone": "right", "attachment": "doors-cyberstation/m-doorright" }
+],
+"skins": {
+	"default": {
+		"doors-cyberstation/m-doorleft": {
+			"doors-cyberstation/m-doorleft": { "x": 96, "y": -113.96, "rotation": -149.26, "width": 128, "height": 298 }
+		},
+		"doors-cyberstation/m-doorright": {
+			"doors-cyberstation/m-doorright": { "x": 4.66, "y": 114.98, "rotation": 31.14, "width": 130, "height": 280 }
+		}
+	}
+},
+"animations": {
+	"close": {
+		"bones": {
+			"root": {
+				"translate": [
+					{ "time": 1, "x": 0, "y": 0 }
+				]
+			},
+			"right": {
+				"translate": [
+					{ "time": 0, "x": 113.2, "y": -60.95 },
+					{ "time": 1, "x": 0, "y": 0 }
+				]
+			},
+			"left": {
+				"translate": [
+					{ "time": 0, "x": -124.91, "y": 71.02 },
+					{ "time": 1, "x": 0, "y": 0 }
+				]
+			}
+		},
+		"drawOrder": [
+			{ "time": 1 }
+		]
+	},
+	"idle": {
+		"drawOrder": [
+			{ "time": 0 }
+		]
+	},
+	"idle-open": {
+		"bones": {
+			"right": {
+				"translate": [
+					{ "time": 0, "x": 113.2, "y": -60.95 }
+				]
+			},
+			"left": {
+				"translate": [
+					{ "time": 0, "x": -124.91, "y": 71.02 }
+				]
+			}
+		}
+	},
+	"open": {
+		"bones": {
+			"root": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 }
+				]
+			},
+			"right": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.246, 0.32, 0.75, 1 ]
+					},
+					{ "time": 1, "x": 113.2, "y": -60.95 }
+				]
+			},
+			"left": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.246, 0.32, 0.75, 1 ]
+					},
+					{ "time": 1, "x": -124.91, "y": 71.02 }
+				]
+			}
+		},
+		"drawOrder": [
+			{ "time": 0 }
+		]
+	}
+}
+}

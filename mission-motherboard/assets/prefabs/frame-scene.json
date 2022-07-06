@@ -1,0 +1,2329 @@
+{
+  "frame": {
+    "name": "frame",
+    "uuid": "83VfiKko1AMZifDat9BPDi",
+    "type": "container",
+    "position": {
+      "x": 0,
+      "y": 0
+    },
+    "rotation": 0,
+    "scale": {
+      "x": 1,
+      "y": 1
+    },
+    "pivot": {
+      "x": 0,
+      "y": 0
+    },
+    "alpha": 1,
+    "isInteractive": false,
+    "isVisible": true,
+    "mask": null,
+    "zIndex": 0,
+    "children": [
+      {
+        "name": "frame-bg",
+        "uuid": "Node.514",
+        "type": "sprite",
+        "position": {
+          "x": 0,
+          "y": 357
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "colourTint": "#ffffff",
+        "textureName": "frame-bg",
+        "anchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "blendMode": "NORMAL",
+        "skew": {
+          "x": 0,
+          "y": 0
+        },
+        "children": [
+          {
+            "name": "exitButton",
+            "uuid": "Node.515",
+            "type": "button",
+            "position": {
+              "x": -625,
+              "y": -15
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "isInteractive": true,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "width": 106,
+            "height": 117,
+            "colourTint": "#ffffff",
+            "isEnabled": true,
+            "imageFrameNames": {
+              "up": "ExitButtonDefault",
+              "down": "ExitButtonPressed",
+              "over": "ExitButtonHover",
+              "disabled": "ExitButtonDefault"
+            },
+            "transitionColorTints": null,
+            "clickSoundName": null,
+            "children": [
+              {
+                "name": "Background",
+                "uuid": "Node.516",
+                "type": "container",
+                "position": {
+                  "x": 0,
+                  "y": 0
+                },
+                "rotation": 0,
+                "scale": {
+                  "x": 1,
+                  "y": 1
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0
+                },
+                "alpha": 1,
+                "isInteractive": false,
+                "isVisible": true,
+                "mask": null,
+                "zIndex": 0,
+                "children": []
+              }
+            ],
+            "insetTop": 0,
+            "insetBottom": 0,
+            "insetRight": 0,
+            "insetLeft": 0
+          },
+          {
+            "name": "helpButton",
+            "uuid": "Node.517",
+            "type": "button",
+            "position": {
+              "x": -491.435,
+              "y": -10
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "isInteractive": true,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "width": 106,
+            "height": 106,
+            "colourTint": "#ffffff",
+            "isEnabled": true,
+            "imageFrameNames": {
+              "up": "HelpButtonDefault",
+              "down": "HelpButtonPressed",
+              "over": "HelpButtonHover",
+              "disabled": "HelpButtonDefault"
+            },
+            "transitionColorTints": null,
+            "clickSoundName": null,
+            "children": [
+              {
+                "name": "Background",
+                "uuid": "Node.518",
+                "type": "container",
+                "position": {
+                  "x": 0,
+                  "y": 0
+                },
+                "rotation": 0,
+                "scale": {
+                  "x": 1,
+                  "y": 1
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0
+                },
+                "alpha": 1,
+                "isInteractive": false,
+                "isVisible": true,
+                "mask": null,
+                "zIndex": 0,
+                "children": []
+              }
+            ],
+            "insetTop": 0,
+            "insetBottom": 0,
+            "insetRight": 0,
+            "insetLeft": 0
+          },
+          {
+            "name": "SnelfuSymbol",
+            "uuid": "Node.519",
+            "type": "sprite",
+            "position": {
+              "x": 271,
+              "y": -14.733
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "colourTint": "#ffffff",
+            "textureName": "Snelfu",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "blendMode": "NORMAL",
+            "skew": {
+              "x": 0,
+              "y": 0
+            },
+            "children": [],
+            "insetTop": 0,
+            "insetBottom": 0,
+            "insetRight": 0,
+            "insetLeft": 0,
+            "width": 39,
+            "height": 42
+          },
+          {
+            "name": "snelfusAmount",
+            "type": "text",
+            "position": {
+              "x": 300,
+              "y": -16
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "anchor": {
+              "x": 0,
+              "y": 0.5
+            },
+            "width": 300,
+            "height": 50.4,
+            "maxWidth": 300,
+            "text": "100",
+            "fontName": "Riffic Free",
+            "fontSize": 68,
+            "align": "left",
+            "tint": "#000066",
+            "fontDirectoryPath": "./assets/fonts/",
+            "uuid": "Node.520",
+            "children": []
+          },
+          {
+            "name": "skwawkpad",
+            "type": "spine",
+            "uuid": "Node.521",
+            "position": {
+              "x": 599.86,
+              "y": -28.875
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "colourTint": "#ffffff",
+            "spineName": "skwawkpad",
+            "autoUpdate": true,
+            "initiallyEnabled": true,
+            "skinName": "",
+            "attachments": [],
+            "defaultAnimation": "",
+            "children": [],
+            "animations": [
+              {
+                "animationName": "animation",
+                "loop": true,
+                "trackIndex": 0
+              }
+            ]
+          }
+        ],
+        "insetTop": 0,
+        "insetBottom": 0,
+        "insetRight": 0,
+        "insetLeft": 0,
+        "width": 1422,
+        "height": 139
+      },
+      {
+        "name": "help-ui",
+        "uuid": "Node.522",
+        "type": "container",
+        "position": {
+          "x": 0,
+          "y": 900
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "children": [
+          {
+            "name": "tvbacking",
+            "uuid": "Node.523",
+            "type": "sprite",
+            "position": {
+              "x": -347,
+              "y": -201
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "colourTint": "#ffffff",
+            "textureName": "tvbacking",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "blendMode": "NORMAL",
+            "skew": {
+              "x": 0,
+              "y": 0
+            },
+            "children": [],
+            "insetTop": 0,
+            "insetBottom": 0,
+            "insetRight": 0,
+            "insetLeft": 0,
+            "width": 375,
+            "height": 274
+          },
+          {
+            "name": "Inez",
+            "uuid": "Node.524",
+            "type": "sprite",
+            "position": {
+              "x": -333.721,
+              "y": -191.95
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 0.319,
+              "y": 0.319
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "colourTint": "#ffffff",
+            "textureName": "Inez",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "blendMode": "NORMAL",
+            "skew": {
+              "x": 0,
+              "y": 0
+            },
+            "children": [],
+            "insetTop": 0,
+            "insetBottom": 0,
+            "insetRight": 0,
+            "insetLeft": 0,
+            "width": 538,
+            "height": 715
+          },
+          {
+            "name": "Jackie",
+            "uuid": "Node.525",
+            "type": "sprite",
+            "position": {
+              "x": -337.196,
+              "y": -210.429
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 0.334,
+              "y": 0.334
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "colourTint": "#ffffff",
+            "textureName": "Jackie",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "blendMode": "NORMAL",
+            "skew": {
+              "x": 0,
+              "y": 0
+            },
+            "children": [],
+            "insetTop": 0,
+            "insetBottom": 0,
+            "insetRight": 0,
+            "insetLeft": 0,
+            "width": 616,
+            "height": 909
+          },
+          {
+            "name": "Matt",
+            "uuid": "Node.526",
+            "type": "sprite",
+            "position": {
+              "x": -333.017,
+              "y": -194.556
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 0.321,
+              "y": 0.321
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "colourTint": "#ffffff",
+            "textureName": "Matt",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "blendMode": "NORMAL",
+            "skew": {
+              "x": 0,
+              "y": 0
+            },
+            "children": [],
+            "insetTop": 0,
+            "insetBottom": 0,
+            "insetRight": 0,
+            "insetLeft": 0,
+            "width": 653,
+            "height": 806
+          },
+          {
+            "name": "helpscreen-frame",
+            "uuid": "Node.527",
+            "type": "sprite",
+            "position": {
+              "x": 0,
+              "y": -61.852
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "colourTint": "#ffffff",
+            "textureName": "helpscreen-frame",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "blendMode": "NORMAL",
+            "skew": {
+              "x": 0,
+              "y": 0
+            },
+            "children": [
+              {
+                "name": "Help",
+                "type": "text",
+                "position": {
+                  "x": 98.12,
+                  "y": -310.031
+                },
+                "rotation": 0,
+                "scale": {
+                  "x": 1,
+                  "y": 1
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0
+                },
+                "alpha": 1,
+                "isInteractive": false,
+                "isVisible": true,
+                "mask": null,
+                "zIndex": 0,
+                "anchor": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "width": 138.36,
+                "height": 131.04,
+                "maxWidth": 138.36,
+                "text": "HELP",
+                "fontName": "Riffic Free",
+                "fontSize": 60,
+                "align": "center",
+                "tint": "#fedf1f",
+                "fontDirectoryPath": "./assets/fonts/",
+                "uuid": "Node.528",
+                "children": []
+              }
+            ],
+            "insetTop": 0,
+            "insetBottom": 0,
+            "insetRight": 0,
+            "insetLeft": 0,
+            "width": 1176,
+            "height": 787
+          },
+          {
+            "name": "exit",
+            "uuid": "Node.529",
+            "type": "sprite",
+            "position": {
+              "x": -415.734,
+              "y": -16.262
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 0.75,
+              "y": 0.75
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "colourTint": "#ffffff",
+            "textureName": "button0001",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "blendMode": "NORMAL",
+            "skew": {
+              "x": 0,
+              "y": 0
+            },
+            "children": [
+              {
+                "name": "close",
+                "type": "text",
+                "position": {
+                  "x": 0.444,
+                  "y": -5.666
+                },
+                "rotation": 0,
+                "scale": {
+                  "x": 2,
+                  "y": 2
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0
+                },
+                "alpha": 1,
+                "isInteractive": false,
+                "isVisible": true,
+                "mask": null,
+                "zIndex": 0,
+                "anchor": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "width": 23.48,
+                "height": 50.4,
+                "maxWidth": 23.48,
+                "text": "x",
+                "fontName": "Riffic Free",
+                "fontSize": 40,
+                "align": "center",
+                "tint": "#eb00ff",
+                "fontDirectoryPath": "./assets/fonts/",
+                "uuid": "Node.530",
+                "children": []
+              }
+            ],
+            "insetTop": 0,
+            "insetBottom": 0,
+            "insetRight": 0,
+            "insetLeft": 0,
+            "width": 85,
+            "height": 98
+          },
+          {
+            "name": "prev",
+            "uuid": "Node.531",
+            "type": "sprite",
+            "position": {
+              "x": -333.603,
+              "y": -16.262
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 0.75,
+              "y": 0.75
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "colourTint": "#ffffff",
+            "textureName": "button0001",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "blendMode": "NORMAL",
+            "skew": {
+              "x": 0,
+              "y": 0
+            },
+            "children": [
+              {
+                "name": "arrow",
+                "type": "text",
+                "position": {
+                  "x": 0.182,
+                  "y": -5.666
+                },
+                "rotation": 0,
+                "scale": {
+                  "x": 2,
+                  "y": 2
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0
+                },
+                "alpha": 1,
+                "isInteractive": false,
+                "isVisible": true,
+                "mask": null,
+                "zIndex": 0,
+                "anchor": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "width": 19.44,
+                "height": 50.4,
+                "maxWidth": 19.44,
+                "text": "<",
+                "fontName": "Riffic Free",
+                "fontSize": 40,
+                "align": "center",
+                "tint": "#eb00ff",
+                "fontDirectoryPath": "./assets/fonts/",
+                "uuid": "Node.532",
+                "children": []
+              }
+            ],
+            "insetTop": 0,
+            "insetBottom": 0,
+            "insetRight": 0,
+            "insetLeft": 0,
+            "width": 85,
+            "height": 98
+          },
+          {
+            "name": "next",
+            "uuid": "Node.533",
+            "type": "sprite",
+            "position": {
+              "x": -249.008,
+              "y": -16.262
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 0.75,
+              "y": 0.75
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "colourTint": "#ffffff",
+            "textureName": "button0001",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "blendMode": "NORMAL",
+            "skew": {
+              "x": 0,
+              "y": 0
+            },
+            "children": [
+              {
+                "name": "arrow",
+                "type": "text",
+                "position": {
+                  "x": 0.182,
+                  "y": -5.666
+                },
+                "rotation": 0,
+                "scale": {
+                  "x": 2,
+                  "y": 2
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0
+                },
+                "alpha": 1,
+                "isInteractive": false,
+                "isVisible": true,
+                "mask": null,
+                "zIndex": 0,
+                "anchor": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "width": 19.44,
+                "height": 50.4,
+                "maxWidth": 19.44,
+                "text": ">",
+                "fontName": "Riffic Free",
+                "fontSize": 40,
+                "align": "center",
+                "tint": "#eb00ff",
+                "fontDirectoryPath": "./assets/fonts/",
+                "uuid": "Node.534",
+                "children": []
+              }
+            ],
+            "insetTop": 0,
+            "insetBottom": 0,
+            "insetRight": 0,
+            "insetLeft": 0,
+            "width": 85,
+            "height": 98
+          },
+          {
+            "name": "tips",
+            "uuid": "Node.535",
+            "type": "container",
+            "position": {
+              "x": 0,
+              "y": -86.517
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "children": [
+              {
+                "name": "Tip1",
+                "uuid": "Node.536",
+                "type": "container",
+                "position": {
+                  "x": 0,
+                  "y": 0
+                },
+                "rotation": 0,
+                "scale": {
+                  "x": 1,
+                  "y": 1
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0
+                },
+                "alpha": 1,
+                "isInteractive": false,
+                "isVisible": true,
+                "mask": null,
+                "zIndex": 0,
+                "children": [
+                  {
+                    "name": "text",
+                    "type": "text",
+                    "position": {
+                      "x": -125,
+                      "y": -75.272
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "anchor": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "width": 475,
+                    "height": 109.38,
+                    "maxWidth": 475,
+                    "text": "To move, press on the ground to move your character there.",
+                    "fontName": "Nunito",
+                    "fontSize": 35,
+                    "align": "left",
+                    "tint": "#440dcf",
+                    "fontDirectoryPath": "./assets/fonts/",
+                    "uuid": "Node.537",
+                    "children": []
+                  },
+                  {
+                    "name": "helpgrid",
+                    "uuid": "Node.538",
+                    "type": "sprite",
+                    "position": {
+                      "x": 130,
+                      "y": 0
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "helpgrid",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 1228,
+                    "height": 543
+                  },
+                  {
+                    "name": "poddle",
+                    "uuid": "Node.539",
+                    "type": "sprite",
+                    "position": {
+                      "x": 383.144,
+                      "y": -127.237
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 0.238,
+                      "y": 0.238
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "poddle",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 427,
+                    "height": 653
+                  },
+                  {
+                    "name": "cursor",
+                    "uuid": "Node.540",
+                    "type": "sprite",
+                    "position": {
+                      "x": 168.194,
+                      "y": 9.062
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 0.836,
+                      "y": 0.836
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "cursor",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 42,
+                    "height": 62
+                  }
+                ]
+              },
+              {
+                "name": "Tip2",
+                "uuid": "Node.541",
+                "type": "container",
+                "position": {
+                  "x": 0,
+                  "y": 0
+                },
+                "rotation": 0,
+                "scale": {
+                  "x": 1,
+                  "y": 1
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0
+                },
+                "alpha": 1,
+                "isInteractive": false,
+                "isVisible": true,
+                "mask": null,
+                "zIndex": 0,
+                "children": [
+                  {
+                    "name": "text",
+                    "type": "text",
+                    "position": {
+                      "x": -125,
+                      "y": -100
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "anchor": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "width": 580,
+                    "height": 72.92,
+                    "maxWidth": 580,
+                    "text": "Press on the green arrows to go to a new screen...",
+                    "fontName": "Nunito",
+                    "fontSize": 35,
+                    "align": "left",
+                    "tint": "#440dcf",
+                    "fontDirectoryPath": "./assets/fonts/",
+                    "uuid": "Node.542",
+                    "children": []
+                  },
+                  {
+                    "name": "helpgrid",
+                    "uuid": "Node.543",
+                    "type": "sprite",
+                    "position": {
+                      "x": 130,
+                      "y": 0
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "helpgrid",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 1228,
+                    "height": 543
+                  },
+                  {
+                    "name": "poddle",
+                    "uuid": "Node.544",
+                    "type": "sprite",
+                    "position": {
+                      "x": 168.066,
+                      "y": -28.301
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 0.238,
+                      "y": 0.238
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "poddle",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 427,
+                    "height": 653
+                  },
+                  {
+                    "name": "arrow0003",
+                    "uuid": "Node.545",
+                    "type": "sprite",
+                    "position": {
+                      "x": -16.929,
+                      "y": 89.71
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "arrow0003",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 240,
+                    "height": 166
+                  },
+                  {
+                    "name": "cursor",
+                    "uuid": "Node.546",
+                    "type": "sprite",
+                    "position": {
+                      "x": 13.505,
+                      "y": 95.277
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 0.836,
+                      "y": 0.836
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "cursor",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 42,
+                    "height": 62
+                  }
+                ]
+              },
+              {
+                "name": "Tip3",
+                "uuid": "Node.547",
+                "type": "container",
+                "position": {
+                  "x": 0,
+                  "y": 0
+                },
+                "rotation": 0,
+                "scale": {
+                  "x": 1,
+                  "y": 1
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0
+                },
+                "alpha": 1,
+                "isInteractive": false,
+                "isVisible": true,
+                "mask": null,
+                "zIndex": 0,
+                "children": [
+                  {
+                    "name": "text",
+                    "type": "text",
+                    "position": {
+                      "x": -125,
+                      "y": -100
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "anchor": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "width": 470,
+                    "height": 72.92,
+                    "maxWidth": 470,
+                    "text": "Press on a character to talk to them.",
+                    "fontName": "Nunito",
+                    "fontSize": 35,
+                    "align": "left",
+                    "tint": "#440dcf",
+                    "fontDirectoryPath": "./assets/fonts/",
+                    "uuid": "Node.548",
+                    "children": []
+                  },
+                  {
+                    "name": "helpgrid",
+                    "uuid": "Node.549",
+                    "type": "sprite",
+                    "position": {
+                      "x": 130,
+                      "y": 0
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "helpgrid",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 1228,
+                    "height": 543
+                  },
+                  {
+                    "name": "poddle",
+                    "uuid": "Node.550",
+                    "type": "sprite",
+                    "position": {
+                      "x": 336.946,
+                      "y": -77.089
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 0.238,
+                      "y": 0.238
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "poddle",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 427,
+                    "height": 653
+                  },
+                  {
+                    "name": "glow",
+                    "uuid": "Node.551",
+                    "type": "sprite",
+                    "position": {
+                      "x": 159.611,
+                      "y": 4.314
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 0.64,
+                      "y": 0.64
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "glow",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 309,
+                    "height": 356
+                  },
+                  {
+                    "name": "gnome",
+                    "uuid": "Node.552",
+                    "type": "sprite",
+                    "position": {
+                      "x": 164.307,
+                      "y": -2.452
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": -0.638,
+                      "y": 0.638
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "gnome",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 200,
+                    "height": 247
+                  },
+                  {
+                    "name": "cursor",
+                    "uuid": "Node.553",
+                    "type": "sprite",
+                    "position": {
+                      "x": 192.145,
+                      "y": 30.183
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 0.836,
+                      "y": 0.836
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "cursor",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 42,
+                    "height": 62
+                  }
+                ]
+              },
+              {
+                "name": "Tip4",
+                "uuid": "Node.554",
+                "type": "container",
+                "position": {
+                  "x": 0,
+                  "y": 0
+                },
+                "rotation": 0,
+                "scale": {
+                  "x": 1,
+                  "y": 1
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0
+                },
+                "alpha": 1,
+                "isInteractive": false,
+                "isVisible": true,
+                "mask": null,
+                "zIndex": 0,
+                "children": [
+                  {
+                    "name": "text",
+                    "type": "text",
+                    "position": {
+                      "x": -125,
+                      "y": -100
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "anchor": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "width": 450,
+                    "height": 72.92,
+                    "maxWidth": 450,
+                    "text": "Some objects you can pick up by pressing on them.",
+                    "fontName": "Nunito",
+                    "fontSize": 35,
+                    "align": "left",
+                    "tint": "#440dcf",
+                    "fontDirectoryPath": "./assets/fonts/",
+                    "uuid": "Node.555",
+                    "children": []
+                  },
+                  {
+                    "name": "helpgrid",
+                    "uuid": "Node.556",
+                    "type": "sprite",
+                    "position": {
+                      "x": 130,
+                      "y": 0
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "helpgrid",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 1228,
+                    "height": 543
+                  },
+                  {
+                    "name": "tree",
+                    "uuid": "Node.557",
+                    "type": "sprite",
+                    "position": {
+                      "x": 361.118,
+                      "y": -76.166
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 0.261,
+                      "y": 0.261
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "tree",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 585,
+                    "height": 1069
+                  },
+                  {
+                    "name": "glow",
+                    "uuid": "Node.558",
+                    "type": "sprite",
+                    "position": {
+                      "x": 198.435,
+                      "y": 25.883
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 0.64,
+                      "y": 0.64
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "glow",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 309,
+                    "height": 356
+                  },
+                  {
+                    "name": "cyberberries",
+                    "uuid": "Node.559",
+                    "type": "sprite",
+                    "position": {
+                      "x": 196.824,
+                      "y": 46.438
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 0.381,
+                      "y": 0.381
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "cyberberries",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 371,
+                    "height": 274
+                  },
+                  {
+                    "name": "cursor",
+                    "uuid": "Node.560",
+                    "type": "sprite",
+                    "position": {
+                      "x": 218.446,
+                      "y": 47.194
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 0.836,
+                      "y": 0.836
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "cursor",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 42,
+                    "height": 62
+                  }
+                ]
+              },
+              {
+                "name": "Tip5",
+                "uuid": "Node.561",
+                "type": "container",
+                "position": {
+                  "x": 0,
+                  "y": 0
+                },
+                "rotation": 0,
+                "scale": {
+                  "x": 1,
+                  "y": 1
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0
+                },
+                "alpha": 1,
+                "isInteractive": false,
+                "isVisible": true,
+                "mask": null,
+                "zIndex": 0,
+                "children": [
+                  {
+                    "name": "text",
+                    "type": "text",
+                    "position": {
+                      "x": -125,
+                      "y": 125
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "anchor": {
+                      "x": 0,
+                      "y": 1
+                    },
+                    "width": 567,
+                    "height": 291.67,
+                    "maxWidth": 567,
+                    "text": "And lastly, you can always press on the Skwakpad icon to open it up.\nThere's a lot you can learn about Cyberspace and your quest from the Skwakpad!\n\nGood luck!",
+                    "fontName": "Nunito",
+                    "fontSize": 35,
+                    "align": "left",
+                    "tint": "#440dcf",
+                    "fontDirectoryPath": "./assets/fonts/",
+                    "uuid": "Node.562",
+                    "children": []
+                  },
+                  {
+                    "name": "pink-arrow-anim",
+                    "type": "spine",
+                    "uuid": "Node.563",
+                    "position": {
+                      "x": 414.065,
+                      "y": 113.213
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "spineName": "pink-arrow-anim",
+                    "autoUpdate": true,
+                    "initiallyEnabled": true,
+                    "skinName": "",
+                    "attachments": [],
+                    "defaultAnimation": "",
+                    "children": [],
+                    "animations": [
+                      {
+                        "animationName": "animation",
+                        "loop": true,
+                        "trackIndex": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "popupDialog",
+        "uuid": "Node.564",
+        "type": "sprite",
+        "position": {
+          "x": 0,
+          "y": 900
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "colourTint": "#ffffff",
+        "textureName": "dialog-modal",
+        "anchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "blendMode": "NORMAL",
+        "skew": {
+          "x": 0,
+          "y": 0
+        },
+        "children": [
+          {
+            "name": "dialog-text",
+            "type": "text",
+            "position": {
+              "x": -334.698,
+              "y": -214.642
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "anchor": {
+              "x": 0,
+              "y": 0.5
+            },
+            "width": 680,
+            "height": 300,
+            "maxWidth": 680,
+            "text": "Text goes here, text goes here, text goes here, text goes here, text goes here, text goes here, text goes here, text goes here, text goes here, text goes here",
+            "fontName": "Riffic Free",
+            "fontSize": 52,
+            "align": "center",
+            "tint": "#000000",
+            "fontDirectoryPath": "./assets/fonts/",
+            "uuid": "Node.565",
+            "children": []
+          },
+          {
+            "name": "buttons-yes-no",
+            "uuid": "Node.566",
+            "type": "container",
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "children": [
+              {
+                "name": "dialog-modal-button-yes",
+                "uuid": "Node.567",
+                "type": "sliceButton",
+                "position": {
+                  "x": 155.778,
+                  "y": 0
+                },
+                "rotation": 0,
+                "scale": {
+                  "x": 1,
+                  "y": 1
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0
+                },
+                "anchor": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "isInteractive": true,
+                "isVisible": true,
+                "mask": null,
+                "zIndex": 0,
+                "width": 180,
+                "height": 91,
+                "colourTint": "#e6e6e6",
+                "isEnabled": true,
+                "imageFrameNames": {
+                  "up": "dialog-button",
+                  "down": "dialog-button",
+                  "over": "dialog-button",
+                  "disabled": "dialog-button"
+                },
+                "transitionColorTints": {
+                  "up": "e6e6e6",
+                  "down": "c8c8c8",
+                  "over": "ffffff",
+                  "disabled": "787878"
+                },
+                "clickSoundName": null,
+                "children": [
+                  {
+                    "name": "Label",
+                    "type": "text",
+                    "position": {
+                      "x": 55,
+                      "y": 30
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "anchor": {
+                      "x": 0,
+                      "y": 0.5
+                    },
+                    "width": 59.16,
+                    "height": 50.4,
+                    "maxWidth": 59.16,
+                    "text": "OK",
+                    "fontName": "Riffic Free",
+                    "fontSize": 40,
+                    "align": "center",
+                    "tint": "#000000",
+                    "fontDirectoryPath": "./assets/fonts/",
+                    "uuid": "Node.568",
+                    "children": []
+                  }
+                ],
+                "insetTop": 17,
+                "insetBottom": 48,
+                "insetRight": 25,
+                "insetLeft": 17
+              },
+              {
+                "name": "dialog-modal-button-no",
+                "uuid": "Node.569",
+                "type": "sliceButton",
+                "position": {
+                  "x": -155.778,
+                  "y": 0
+                },
+                "rotation": 0,
+                "scale": {
+                  "x": 1,
+                  "y": 1
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0
+                },
+                "anchor": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "isInteractive": true,
+                "isVisible": true,
+                "mask": null,
+                "zIndex": 0,
+                "width": 180,
+                "height": 91,
+                "colourTint": "#e6e6e6",
+                "isEnabled": true,
+                "imageFrameNames": {
+                  "up": "dialog-button",
+                  "down": "dialog-button",
+                  "over": "dialog-button",
+                  "disabled": "dialog-button"
+                },
+                "transitionColorTints": {
+                  "up": "e6e6e6",
+                  "down": "c8c8c8",
+                  "over": "ffffff",
+                  "disabled": "787878"
+                },
+                "clickSoundName": null,
+                "children": [
+                  {
+                    "name": "Label",
+                    "type": "text",
+                    "position": {
+                      "x": 8,
+                      "y": 30
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "anchor": {
+                      "x": 0,
+                      "y": 0.5
+                    },
+                    "width": 158.84,
+                    "height": 50.4,
+                    "maxWidth": 158.84,
+                    "text": "CANCEL",
+                    "fontName": "Riffic Free",
+                    "fontSize": 40,
+                    "align": "center",
+                    "tint": "#000000",
+                    "fontDirectoryPath": "./assets/fonts/",
+                    "uuid": "Node.570",
+                    "children": []
+                  }
+                ],
+                "insetTop": 17,
+                "insetBottom": 48,
+                "insetRight": 25,
+                "insetLeft": 17
+              }
+            ]
+          },
+          {
+            "name": "buttons-yes-only",
+            "uuid": "Node.571",
+            "type": "container",
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "children": [
+              {
+                "name": "dialog-modal-button-yes",
+                "uuid": "Node.572",
+                "type": "sliceButton",
+                "position": {
+                  "x": 10,
+                  "y": 0
+                },
+                "rotation": 0,
+                "scale": {
+                  "x": 1,
+                  "y": 1
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0
+                },
+                "anchor": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "isInteractive": true,
+                "isVisible": true,
+                "mask": null,
+                "zIndex": 0,
+                "width": 180,
+                "height": 91,
+                "colourTint": "#e6e6e6",
+                "isEnabled": true,
+                "imageFrameNames": {
+                  "up": "dialog-button",
+                  "down": "dialog-button",
+                  "over": "dialog-button",
+                  "disabled": "dialog-button"
+                },
+                "transitionColorTints": {
+                  "up": "e6e6e6",
+                  "down": "c8c8c8",
+                  "over": "ffffff",
+                  "disabled": "787878"
+                },
+                "clickSoundName": null,
+                "children": [
+                  {
+                    "name": "Label",
+                    "type": "text",
+                    "position": {
+                      "x": 55,
+                      "y": 30
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "anchor": {
+                      "x": 0,
+                      "y": 0.5
+                    },
+                    "width": 59.16,
+                    "height": 50.4,
+                    "maxWidth": 59.16,
+                    "text": "OK",
+                    "fontName": "Riffic Free",
+                    "fontSize": 40,
+                    "align": "center",
+                    "tint": "#000000",
+                    "fontDirectoryPath": "./assets/fonts/",
+                    "uuid": "Node.573",
+                    "children": []
+                  }
+                ],
+                "insetTop": 17,
+                "insetBottom": 48,
+                "insetRight": 25,
+                "insetLeft": 17
+              }
+            ]
+          }
+        ],
+        "insetTop": 0,
+        "insetBottom": 0,
+        "insetRight": 0,
+        "insetLeft": 0,
+        "width": 956,
+        "height": 885
+      },
+      {
+        "name": "navigation",
+        "uuid": "Node.574",
+        "type": "container",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "children": []
+      },
+      {
+        "name": "FrameController",
+        "uuid": "Node.575",
+        "type": "container",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "children": []
+      }
+    ]
+  }
+}

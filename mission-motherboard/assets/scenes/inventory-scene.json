@@ -1,0 +1,2448 @@
+{
+  "Canvas": {
+    "name": "Canvas",
+    "uuid": "78li9g/olJ/6h2a6FMZesU",
+    "type": "container",
+    "position": {
+      "x": 700,
+      "y": 400
+    },
+    "rotation": 0,
+    "scale": {
+      "x": 1,
+      "y": 1
+    },
+    "pivot": {
+      "x": 0,
+      "y": 0
+    },
+    "alpha": 1,
+    "isInteractive": false,
+    "isVisible": true,
+    "mask": null,
+    "zIndex": 0,
+    "children": [
+      {
+        "name": "background",
+        "uuid": "32pnkXMDVKXKngBRm45lTT",
+        "type": "sprite",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "colourTint": "#ffffff",
+        "textureName": "Tablet",
+        "anchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "blendMode": "NORMAL",
+        "skew": {
+          "x": 0,
+          "y": 0
+        },
+        "children": [],
+        "insetTop": 0,
+        "insetBottom": 0,
+        "insetRight": 0,
+        "insetLeft": 0,
+        "width": 1345,
+        "height": 756
+      },
+      {
+        "name": "exitButton",
+        "uuid": "9dTIgEHTdPRqWw+2RZCXJ0",
+        "type": "button",
+        "position": {
+          "x": -443.867,
+          "y": -244.491
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isInteractive": true,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "width": 122,
+        "height": 122,
+        "colourTint": "#ffffff",
+        "isEnabled": true,
+        "imageFrameNames": {
+          "up": "ExitDefault",
+          "down": "ExitPressed",
+          "over": "ExitHover",
+          "disabled": "ExitDefault"
+        },
+        "transitionColorTints": null,
+        "clickSoundName": null,
+        "children": [],
+        "insetTop": 0,
+        "insetBottom": 0,
+        "insetRight": 0,
+        "insetLeft": 0
+      },
+      {
+        "name": "inventoryBox",
+        "path": "./assets/prefabs/inventoryBox-scene.json",
+        "assetsPath": "./assets/prefabs/inventoryBox-assets.json",
+        "type": "prefab"
+      },
+      {
+        "name": "inventoryGridContainer",
+        "uuid": "54MYmcxExF7bX6zUw8uE6m",
+        "type": "container",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "children": [
+          {
+            "name": "title",
+            "type": "text",
+            "position": {
+              "x": -12.5,
+              "y": -250.46
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "width": 319.12,
+            "height": 72.06,
+            "maxWidth": 319.12,
+            "text": "Inventory",
+            "fontName": "Riffic Free",
+            "fontSize": 70,
+            "align": "center",
+            "tint": "#ffffff",
+            "fontDirectoryPath": "./assets/fonts/",
+            "uuid": "c4FnhWVlNFOJmLpnMj+WlZ",
+            "children": []
+          },
+          {
+            "name": "line",
+            "uuid": "bfmkyQm0VB54jgWY+1cUY9",
+            "type": "sliceSprite",
+            "position": {
+              "x": 0,
+              "y": -174.43
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "colourTint": "#ffffff",
+            "textureName": "Underline",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "blendMode": "NORMAL",
+            "skew": {
+              "x": 0,
+              "y": 0
+            },
+            "children": [],
+            "insetTop": 8,
+            "insetBottom": 4,
+            "insetRight": 8,
+            "insetLeft": 8,
+            "width": 747,
+            "height": 4
+          },
+          {
+            "name": "inventoryGrid",
+            "uuid": "c0FDTNYxJHMqLdxBW4FDrM",
+            "type": "container",
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "children": []
+          },
+          {
+            "name": "nextButton",
+            "uuid": "58jteFeKJCxI/qtuYycD0s",
+            "type": "button",
+            "position": {
+              "x": 479.276,
+              "y": -13.409
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "isInteractive": true,
+            "isVisible": false,
+            "mask": null,
+            "zIndex": 0,
+            "width": 85,
+            "height": 85,
+            "colourTint": "#ffffff",
+            "isEnabled": true,
+            "imageFrameNames": {
+              "up": "ButtonRight_Default",
+              "down": "ButtonRight_Pressed",
+              "over": "ButtonRight_Hover",
+              "disabled": "ButtonRight_Default"
+            },
+            "transitionColorTints": null,
+            "clickSoundName": null,
+            "children": [
+              {
+                "name": "Background",
+                "uuid": "7dVEAm+QZAn5gtDeR6tktR",
+                "type": "sprite",
+                "position": {
+                  "x": 0,
+                  "y": 0
+                },
+                "rotation": 0,
+                "scale": {
+                  "x": 1,
+                  "y": 1
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0
+                },
+                "alpha": 1,
+                "isInteractive": false,
+                "isVisible": false,
+                "mask": null,
+                "zIndex": 0,
+                "colourTint": "#e6e6e6",
+                "textureName": "ButtonRight_Default",
+                "anchor": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "blendMode": "NORMAL",
+                "skew": {
+                  "x": 0,
+                  "y": 0
+                },
+                "children": [],
+                "insetTop": 0,
+                "insetBottom": 0,
+                "insetRight": 0,
+                "insetLeft": 0,
+                "width": 85,
+                "height": 85
+              }
+            ],
+            "insetTop": 0,
+            "insetBottom": 0,
+            "insetRight": 0,
+            "insetLeft": 0
+          },
+          {
+            "name": "prevButton",
+            "uuid": "d0g+XEZ4BI4r+yaLgC+zF0",
+            "type": "button",
+            "position": {
+              "x": -490.069,
+              "y": -13.409
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "isInteractive": true,
+            "isVisible": false,
+            "mask": null,
+            "zIndex": 0,
+            "width": 85,
+            "height": 85,
+            "colourTint": "#ffffff",
+            "isEnabled": true,
+            "imageFrameNames": {
+              "up": "ButtonLeft_Default",
+              "down": "ButtonLeft_Pressed",
+              "over": "ButtonLeft_Hover",
+              "disabled": "ButtonLeft_Default"
+            },
+            "transitionColorTints": null,
+            "clickSoundName": null,
+            "children": [
+              {
+                "name": "Background",
+                "uuid": "96yeKVsDRPeYSMSK8hAegp",
+                "type": "sprite",
+                "position": {
+                  "x": 0,
+                  "y": 0
+                },
+                "rotation": 0,
+                "scale": {
+                  "x": 1,
+                  "y": 1
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0
+                },
+                "alpha": 1,
+                "isInteractive": false,
+                "isVisible": false,
+                "mask": null,
+                "zIndex": 0,
+                "colourTint": "#e6e6e6",
+                "textureName": "ButtonLeft_Default",
+                "anchor": {
+                  "x": 0.5,
+                  "y": 0.5
+                },
+                "blendMode": "NORMAL",
+                "skew": {
+                  "x": 0,
+                  "y": 0
+                },
+                "children": [],
+                "insetTop": 0,
+                "insetBottom": 0,
+                "insetRight": 0,
+                "insetLeft": 0,
+                "width": 85,
+                "height": 85
+              }
+            ],
+            "insetTop": 0,
+            "insetBottom": 0,
+            "insetRight": 0,
+            "insetLeft": 0
+          }
+        ]
+      },
+      {
+        "name": "questItemContainer",
+        "uuid": "b2RtzZHlJM2rgcCFcmkkZk",
+        "type": "container",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "children": [
+          {
+            "name": "title",
+            "type": "text",
+            "position": {
+              "x": -12.5,
+              "y": -250.46
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "width": 393.24,
+            "height": 72.06,
+            "maxWidth": 393.24,
+            "text": "Your Quest",
+            "fontName": "Riffic Free",
+            "fontSize": 70,
+            "align": "center",
+            "tint": "#ffffff",
+            "fontDirectoryPath": "./assets/fonts/",
+            "uuid": "fazAzmh5lEbId/CRHldvtZ",
+            "children": []
+          },
+          {
+            "name": "line",
+            "uuid": "ecRzj+4v9ETr44SSm/Z3Uz",
+            "type": "sliceSprite",
+            "position": {
+              "x": 0,
+              "y": -174.43
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "colourTint": "#ffffff",
+            "textureName": "Underline",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "blendMode": "NORMAL",
+            "skew": {
+              "x": 0,
+              "y": 0
+            },
+            "children": [],
+            "insetTop": 8,
+            "insetBottom": 4,
+            "insetRight": 8,
+            "insetLeft": 8,
+            "width": 747,
+            "height": 4
+          },
+          {
+            "name": "questItemList",
+            "uuid": "f2/5BlTUFCUrE5/JzNLLn4",
+            "type": "container",
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "children": [
+              {
+                "name": "questCardMemoryIntegrator",
+                "uuid": "69/+ppivhJLZbzLnqDZnqq",
+                "type": "container",
+                "position": {
+                  "x": -402.5,
+                  "y": 0
+                },
+                "rotation": 0,
+                "scale": {
+                  "x": 1,
+                  "y": 1
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0
+                },
+                "alpha": 1,
+                "isInteractive": false,
+                "isVisible": true,
+                "mask": null,
+                "zIndex": 0,
+                "children": [
+                  {
+                    "name": "Card_Complete",
+                    "uuid": "2ct2fObq1Ayqo/+kxHbcz/",
+                    "type": "sprite",
+                    "position": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "Card_Complete",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 195,
+                    "height": 301.5
+                  },
+                  {
+                    "name": "Card_Incomplete",
+                    "uuid": "ecaK19nsJAK54Dj5Edpd8p",
+                    "type": "sprite",
+                    "position": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "Card_Incomplete",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 195,
+                    "height": 301.5
+                  },
+                  {
+                    "name": "checkbox",
+                    "uuid": "6f1Mc22E1IjZ0WPjKhfbPX",
+                    "type": "sprite",
+                    "position": {
+                      "x": -62.616,
+                      "y": -126.183
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "checkbox",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 43,
+                    "height": 37
+                  },
+                  {
+                    "name": "itemIcon",
+                    "uuid": "13e8lqVSNKqoSymAYyQ28C",
+                    "type": "sprite",
+                    "position": {
+                      "x": 3.07,
+                      "y": -16
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "memoryIntegrator",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 150,
+                    "height": 102.3
+                  },
+                  {
+                    "name": "itemDescriptionText",
+                    "type": "text",
+                    "position": {
+                      "x": 3.003,
+                      "y": 90.939
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "width": 190,
+                    "height": 93.33,
+                    "maxWidth": 190,
+                    "text": "Memory\nIntegrator",
+                    "fontName": "Nunito",
+                    "fontSize": 32,
+                    "align": "center",
+                    "tint": "#ffffff",
+                    "fontDirectoryPath": "./assets/fonts/",
+                    "uuid": "0byGo4cMtCpY1EyRJu2N+5",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "questCardCubeGel",
+                "uuid": "12qG+sM8lOsLXLNfzznzz2",
+                "type": "container",
+                "position": {
+                  "x": -201.5,
+                  "y": 0
+                },
+                "rotation": 0,
+                "scale": {
+                  "x": 1,
+                  "y": 1
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0
+                },
+                "alpha": 1,
+                "isInteractive": false,
+                "isVisible": true,
+                "mask": null,
+                "zIndex": 0,
+                "children": [
+                  {
+                    "name": "Card_Complete",
+                    "uuid": "b6boxpGCFKVrQFhvJuZcaF",
+                    "type": "sprite",
+                    "position": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "Card_Complete",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 195,
+                    "height": 301.5
+                  },
+                  {
+                    "name": "Card_Incomplete",
+                    "uuid": "40RKbm7+FEqoArropXgvF0",
+                    "type": "sprite",
+                    "position": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "Card_Incomplete",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 195,
+                    "height": 301.5
+                  },
+                  {
+                    "name": "checkbox",
+                    "uuid": "48SZRgbvVHvLJxxxy0oAG3",
+                    "type": "sprite",
+                    "position": {
+                      "x": -62.616,
+                      "y": -126.183
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "checkbox",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 43,
+                    "height": 37
+                  },
+                  {
+                    "name": "itemIcon",
+                    "uuid": "20ExsdcFtCEKkrm9Yx+Siu",
+                    "type": "sprite",
+                    "position": {
+                      "x": 3.07,
+                      "y": -16
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "wigGels",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 112.5,
+                    "height": 90.2
+                  },
+                  {
+                    "name": "itemDescriptionText",
+                    "type": "text",
+                    "position": {
+                      "x": 3.003,
+                      "y": 90.939
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "width": 190,
+                    "height": 93.33,
+                    "maxWidth": 190,
+                    "text": "5 Cubes of\nWig Gel",
+                    "fontName": "Nunito",
+                    "fontSize": 32,
+                    "align": "center",
+                    "tint": "#ffffff",
+                    "fontDirectoryPath": "./assets/fonts/",
+                    "uuid": "95c7UOHMtHqKQIUnCoe50b",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "questCardKappatron",
+                "uuid": "73gkfPBbFP37e4QdLPTb+o",
+                "type": "container",
+                "position": {
+                  "x": -0.5,
+                  "y": 0
+                },
+                "rotation": 0,
+                "scale": {
+                  "x": 1,
+                  "y": 1
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0
+                },
+                "alpha": 1,
+                "isInteractive": false,
+                "isVisible": true,
+                "mask": null,
+                "zIndex": 0,
+                "children": [
+                  {
+                    "name": "Card_Complete",
+                    "uuid": "6eglnqOkdKAaI6SDraPdGJ",
+                    "type": "sprite",
+                    "position": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "Card_Complete",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 195,
+                    "height": 301.5
+                  },
+                  {
+                    "name": "Card_Incomplete",
+                    "uuid": "16I7PIqCNGF5u0VawdxmTr",
+                    "type": "sprite",
+                    "position": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "Card_Incomplete",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 195,
+                    "height": 301.5
+                  },
+                  {
+                    "name": "checkbox",
+                    "uuid": "bdzHXW7tRNKb9OaRhkeQs9",
+                    "type": "sprite",
+                    "position": {
+                      "x": -62.616,
+                      "y": -126.183
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "checkbox",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 43,
+                    "height": 37
+                  },
+                  {
+                    "name": "itemIcon",
+                    "uuid": "5bALqcC85JN5zNoMLOqB6p",
+                    "type": "sprite",
+                    "position": {
+                      "x": 3.07,
+                      "y": -16
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "kappatron",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 173,
+                    "height": 70.3
+                  },
+                  {
+                    "name": "itemDescriptionText",
+                    "type": "text",
+                    "position": {
+                      "x": 3.003,
+                      "y": 90.939
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "width": 190,
+                    "height": 46.67,
+                    "maxWidth": 190,
+                    "text": "Kappatron",
+                    "fontName": "Nunito",
+                    "fontSize": 32,
+                    "align": "center",
+                    "tint": "#ffffff",
+                    "fontDirectoryPath": "./assets/fonts/",
+                    "uuid": "7bnPUsC9hJooGEvKPqTkWd",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "questCardChocolateChiller",
+                "uuid": "75hv/PAhFI2pK90Lt1IS2E",
+                "type": "container",
+                "position": {
+                  "x": 200.5,
+                  "y": 0
+                },
+                "rotation": 0,
+                "scale": {
+                  "x": 1,
+                  "y": 1
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0
+                },
+                "alpha": 1,
+                "isInteractive": false,
+                "isVisible": true,
+                "mask": null,
+                "zIndex": 0,
+                "children": [
+                  {
+                    "name": "Card_Complete",
+                    "uuid": "2fkhh3A+FE06C8nD815D2G",
+                    "type": "sprite",
+                    "position": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "Card_Complete",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 195,
+                    "height": 301.5
+                  },
+                  {
+                    "name": "Card_Incomplete",
+                    "uuid": "4dhH2SHw5Bwb8mjjZiAIid",
+                    "type": "sprite",
+                    "position": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "Card_Incomplete",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 195,
+                    "height": 301.5
+                  },
+                  {
+                    "name": "checkbox",
+                    "uuid": "546YCmy1dGk5JO6MnTDm8t",
+                    "type": "sprite",
+                    "position": {
+                      "x": -62.616,
+                      "y": -126.183
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "checkbox",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 43,
+                    "height": 37
+                  },
+                  {
+                    "name": "itemIcon",
+                    "uuid": "5dJjx0WSRD3ZcQhQMwThXo",
+                    "type": "sprite",
+                    "position": {
+                      "x": 3.07,
+                      "y": -16
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "ChocoberryChiller",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 57,
+                    "height": 99
+                  },
+                  {
+                    "name": "itemDescriptionText",
+                    "type": "text",
+                    "position": {
+                      "x": 3.003,
+                      "y": 90.939
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "width": 190,
+                    "height": 93.33,
+                    "maxWidth": 190,
+                    "text": "Chocoberry\nChiller",
+                    "fontName": "Nunito",
+                    "fontSize": 32,
+                    "align": "center",
+                    "tint": "#ffffff",
+                    "fontDirectoryPath": "./assets/fonts/",
+                    "uuid": "1dRAKuYKdG0qJkkCaQ4hu0",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "questCardCans",
+                "uuid": "0bVNaws+dJ45H3u9g/b3U4",
+                "type": "container",
+                "position": {
+                  "x": 401.5,
+                  "y": 0
+                },
+                "rotation": 0,
+                "scale": {
+                  "x": 1,
+                  "y": 1
+                },
+                "pivot": {
+                  "x": 0,
+                  "y": 0
+                },
+                "alpha": 1,
+                "isInteractive": false,
+                "isVisible": true,
+                "mask": null,
+                "zIndex": 0,
+                "children": [
+                  {
+                    "name": "Card_Complete",
+                    "uuid": "820GbT6rhCcYo3eLUlG0kl",
+                    "type": "sprite",
+                    "position": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "Card_Complete",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 195,
+                    "height": 301.5
+                  },
+                  {
+                    "name": "Card_Incomplete",
+                    "uuid": "3fBKGgy2tCJrxNr4E89x6i",
+                    "type": "sprite",
+                    "position": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "Card_Incomplete",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 195,
+                    "height": 301.5
+                  },
+                  {
+                    "name": "checkbox",
+                    "uuid": "4e7kk5L89HI4olz9zDPBnI",
+                    "type": "sprite",
+                    "position": {
+                      "x": -62.616,
+                      "y": -126.183
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "checkbox",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 43,
+                    "height": 37
+                  },
+                  {
+                    "name": "itemIcon",
+                    "uuid": "0cyM3zjohPYaol+u9G8fId",
+                    "type": "sprite",
+                    "position": {
+                      "x": 3.07,
+                      "y": -16
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "colourTint": "#ffffff",
+                    "textureName": "2Cans",
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "blendMode": "NORMAL",
+                    "skew": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "children": [],
+                    "insetTop": 0,
+                    "insetBottom": 0,
+                    "insetRight": 0,
+                    "insetLeft": 0,
+                    "width": 89,
+                    "height": 93.5
+                  },
+                  {
+                    "name": "itemDescriptionText",
+                    "type": "text",
+                    "position": {
+                      "x": 3.003,
+                      "y": 90.939
+                    },
+                    "rotation": 0,
+                    "scale": {
+                      "x": 1,
+                      "y": 1
+                    },
+                    "pivot": {
+                      "x": 0,
+                      "y": 0
+                    },
+                    "alpha": 1,
+                    "isInteractive": false,
+                    "isVisible": true,
+                    "mask": null,
+                    "zIndex": 0,
+                    "anchor": {
+                      "x": 0.5,
+                      "y": 0.5
+                    },
+                    "width": 190,
+                    "height": 93.33,
+                    "maxWidth": 190,
+                    "text": "2 Cans of\nCryoxide",
+                    "fontName": "Nunito",
+                    "fontSize": 32,
+                    "align": "center",
+                    "tint": "#ffffff",
+                    "fontDirectoryPath": "./assets/fonts/",
+                    "uuid": "9bn0lVhOJOTJOqNzIfslRx",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "walletContainer",
+        "uuid": "f0e8lBXk1AJKGkUk/Vpy4v",
+        "type": "container",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "children": [
+          {
+            "name": "title",
+            "type": "text",
+            "position": {
+              "x": -12.5,
+              "y": -250.46
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "width": 443.76,
+            "height": 72.06,
+            "maxWidth": 443.76,
+            "text": "Your Snelfus",
+            "fontName": "Riffic Free",
+            "fontSize": 70,
+            "align": "center",
+            "tint": "#ffffff",
+            "fontDirectoryPath": "./assets/fonts/",
+            "uuid": "15bA6IwfhEHaIKbPf3WBc+",
+            "children": []
+          },
+          {
+            "name": "line-0",
+            "uuid": "88UWrTyaVCmq3MKKpJgs5G",
+            "type": "sliceSprite",
+            "position": {
+              "x": 0,
+              "y": -174.43
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "colourTint": "#ffffff",
+            "textureName": "Underline",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "blendMode": "NORMAL",
+            "skew": {
+              "x": 0,
+              "y": 0
+            },
+            "children": [],
+            "insetTop": 8,
+            "insetBottom": 4,
+            "insetRight": 8,
+            "insetLeft": 8,
+            "width": 747,
+            "height": 4
+          },
+          {
+            "name": "line-1",
+            "uuid": "f1obuplm5JurDqvts5oRKy",
+            "type": "sliceSprite",
+            "position": {
+              "x": 0,
+              "y": 45.87
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "colourTint": "#ffffff",
+            "textureName": "Underline",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "blendMode": "NORMAL",
+            "skew": {
+              "x": 0,
+              "y": 0
+            },
+            "children": [],
+            "insetTop": 8,
+            "insetBottom": 4,
+            "insetRight": 8,
+            "insetLeft": 8,
+            "width": 747,
+            "height": 4
+          },
+          {
+            "name": "log-desc-0",
+            "type": "text",
+            "position": {
+              "x": -355.358,
+              "y": -129.314
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "anchor": {
+              "x": 0,
+              "y": 0.5
+            },
+            "width": 564.38,
+            "height": 43.75,
+            "maxWidth": 564.38,
+            "text": "This is a long test tring about something",
+            "fontName": "Nunito",
+            "fontSize": 30,
+            "align": "left",
+            "tint": "#ffffff",
+            "fontDirectoryPath": "./assets/fonts/",
+            "uuid": "19xiIGcZdA15nioIpPC5nT",
+            "children": []
+          },
+          {
+            "name": "log-amount-0",
+            "type": "text",
+            "position": {
+              "x": 351.823,
+              "y": -140.032
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "anchor": {
+              "x": 1,
+              "y": 0.5
+            },
+            "width": 108.53,
+            "height": 61.76,
+            "maxWidth": 108.53,
+            "text": "100",
+            "fontName": "Riffic Free",
+            "fontSize": 60,
+            "align": "right",
+            "tint": "#ffffff",
+            "fontDirectoryPath": "./assets/fonts/",
+            "uuid": "1bxS7e5+NJAJdrg/tK9sSG",
+            "children": []
+          },
+          {
+            "name": "log-desc-1",
+            "type": "text",
+            "position": {
+              "x": -357.768,
+              "y": -62.314
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "anchor": {
+              "x": 0,
+              "y": 0.5
+            },
+            "width": 564.38,
+            "height": 43.75,
+            "maxWidth": 564.38,
+            "text": "This is a long test tring about something",
+            "fontName": "Nunito",
+            "fontSize": 30,
+            "align": "left",
+            "tint": "#ffffff",
+            "fontDirectoryPath": "./assets/fonts/",
+            "uuid": "99kL8cfYBLuo/umA3MlpPR",
+            "children": []
+          },
+          {
+            "name": "log-amount-1",
+            "type": "text",
+            "position": {
+              "x": 351.823,
+              "y": -70.032
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "anchor": {
+              "x": 1,
+              "y": 0.5
+            },
+            "width": 108.53,
+            "height": 61.76,
+            "maxWidth": 108.53,
+            "text": "100",
+            "fontName": "Riffic Free",
+            "fontSize": 60,
+            "align": "right",
+            "tint": "#ffffff",
+            "fontDirectoryPath": "./assets/fonts/",
+            "uuid": "5bXI7QM1tBGbWdSCslOn/O",
+            "children": []
+          },
+          {
+            "name": "log-desc-2",
+            "type": "text",
+            "position": {
+              "x": -357.768,
+              "y": 0.686
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "anchor": {
+              "x": 0,
+              "y": 0.5
+            },
+            "width": 564.38,
+            "height": 43.75,
+            "maxWidth": 564.38,
+            "text": "This is a long test tring about something",
+            "fontName": "Nunito",
+            "fontSize": 30,
+            "align": "left",
+            "tint": "#ffffff",
+            "fontDirectoryPath": "./assets/fonts/",
+            "uuid": "45KWb4JihG3aKIcXdzoyj9",
+            "children": []
+          },
+          {
+            "name": "log-amount-2",
+            "type": "text",
+            "position": {
+              "x": 351.823,
+              "y": -3.032
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "anchor": {
+              "x": 1,
+              "y": 0.5
+            },
+            "width": 108.53,
+            "height": 61.76,
+            "maxWidth": 108.53,
+            "text": "100",
+            "fontName": "Riffic Free",
+            "fontSize": 60,
+            "align": "right",
+            "tint": "#ffffff",
+            "fontDirectoryPath": "./assets/fonts/",
+            "uuid": "93sXVQKkxIGoWLcMuKxsF/",
+            "children": []
+          },
+          {
+            "name": "balance-desc",
+            "type": "text",
+            "position": {
+              "x": 13.905,
+              "y": 95.425
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "width": 178.75,
+            "height": 43.75,
+            "maxWidth": 178.75,
+            "text": "Your Snelfus",
+            "fontName": "Nunito",
+            "fontSize": 30,
+            "align": "right",
+            "tint": "#ffffff",
+            "fontDirectoryPath": "./assets/fonts/",
+            "uuid": "dddxL0zmlAS6bsTP2lAEQ2",
+            "children": []
+          },
+          {
+            "name": "balance-amount",
+            "type": "text",
+            "position": {
+              "x": 351.823,
+              "y": 87.491
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "anchor": {
+              "x": 1,
+              "y": 0.5
+            },
+            "width": 150.88,
+            "height": 61.76,
+            "maxWidth": 150.88,
+            "text": "1000",
+            "fontName": "Riffic Free",
+            "fontSize": 60,
+            "align": "right",
+            "tint": "#ffffff",
+            "fontDirectoryPath": "./assets/fonts/",
+            "uuid": "3fHnZdp6lJ4r6YzAq80Atd",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "inventoryButton",
+        "uuid": "28YKR/XINKfbAfSJJZtdH9",
+        "type": "button",
+        "position": {
+          "x": 77.679,
+          "y": 246.427
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isInteractive": true,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "width": 136.5,
+        "height": 119.5,
+        "colourTint": "#ffffff",
+        "isEnabled": true,
+        "imageFrameNames": {
+          "up": "ButtonInventory_Default",
+          "down": "ButtonInventory_Pressed",
+          "over": "ButtonInventory_Pressed",
+          "disabled": "ButtonInventory_Default"
+        },
+        "transitionColorTints": null,
+        "clickSoundName": null,
+        "children": [],
+        "insetTop": 0,
+        "insetBottom": 0,
+        "insetRight": 0,
+        "insetLeft": 0
+      },
+      {
+        "name": "questButton",
+        "uuid": "a1Y7cqKxNLspTKrvqPjxDi",
+        "type": "button",
+        "position": {
+          "x": -74.681,
+          "y": 247.88
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isInteractive": true,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "width": 136.5,
+        "height": 119.5,
+        "colourTint": "#ffffff",
+        "isEnabled": true,
+        "imageFrameNames": {
+          "up": "ButtonQuest_Default",
+          "down": "ButtonQuest_Pressed",
+          "over": "ButtonQuest_Pressed",
+          "disabled": "ButtonQuest_Default"
+        },
+        "transitionColorTints": null,
+        "clickSoundName": null,
+        "children": [],
+        "insetTop": 0,
+        "insetBottom": 0,
+        "insetRight": 0,
+        "insetLeft": 0
+      },
+      {
+        "name": "Main Camera",
+        "uuid": "70btEDbvdK55b2vk9UfBTx",
+        "type": "container",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "children": []
+      },
+      {
+        "name": "walletButton",
+        "uuid": "feh5Pl5qdNHo6GwtB73QIk",
+        "type": "button",
+        "position": {
+          "x": -224.474,
+          "y": 266.334
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1.032,
+          "y": 1.032
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isInteractive": true,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "width": 136.5,
+        "height": 119.5,
+        "colourTint": "#ffffff",
+        "isEnabled": true,
+        "imageFrameNames": {
+          "up": "ButtonSnelfus_Default",
+          "down": "ButtonSnelfus_Pressed",
+          "over": "ButtonSnelfus_Pressed",
+          "disabled": "ButtonSnelfus_Default"
+        },
+        "transitionColorTints": null,
+        "clickSoundName": null,
+        "children": [],
+        "insetTop": 0,
+        "insetBottom": 0,
+        "insetRight": 0,
+        "insetLeft": 0
+      },
+      {
+        "name": "skwawkopediaButton",
+        "uuid": "25MD+0o2NF64lPqliC79Nt",
+        "type": "button",
+        "position": {
+          "x": 226.743,
+          "y": 259.897
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1.024,
+          "y": 1.024
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isInteractive": true,
+        "isVisible": false,
+        "mask": null,
+        "zIndex": 0,
+        "width": 136.5,
+        "height": 119.5,
+        "colourTint": "#ffffff",
+        "isEnabled": true,
+        "imageFrameNames": {
+          "up": "ButtonSkwawkopedia_Default",
+          "down": "ButtonSkwawkopedia_Pressed",
+          "over": "ButtonSkwawkopedia_Default",
+          "disabled": "ButtonSkwawkopedia_Default"
+        },
+        "transitionColorTints": null,
+        "clickSoundName": null,
+        "children": [],
+        "insetTop": 0,
+        "insetBottom": 0,
+        "insetRight": 0,
+        "insetLeft": 0
+      },
+      {
+        "name": "descriptionBoxContainer",
+        "uuid": "1dstShc3lClotmjUnzuprg",
+        "type": "container",
+        "position": {
+          "x": -331.235,
+          "y": 111.327
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "children": [
+          {
+            "name": "descriptionBox",
+            "uuid": "75Hr3rizlI5KumXQ7nLjDY",
+            "type": "sprite",
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "colourTint": "#ffffff",
+            "textureName": "descriptionBox",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "blendMode": "NORMAL",
+            "skew": {
+              "x": 0,
+              "y": 0
+            },
+            "children": [],
+            "insetTop": 0,
+            "insetBottom": 0,
+            "insetRight": 0,
+            "insetLeft": 0,
+            "width": 315,
+            "height": 208
+          },
+          {
+            "name": "title",
+            "type": "text",
+            "position": {
+              "x": -129.684,
+              "y": -47.531
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "anchor": {
+              "x": 0,
+              "y": 0.5
+            },
+            "width": 280,
+            "height": 20,
+            "maxWidth": 280,
+            "text": "Label",
+            "fontName": "Nunito",
+            "fontSize": 24,
+            "align": "left",
+            "tint": "#ffffff",
+            "fontDirectoryPath": "./assets/fonts/",
+            "uuid": "f2L0co/ltNq5o34CDw6LxB",
+            "children": []
+          },
+          {
+            "name": "description",
+            "type": "text",
+            "position": {
+              "x": -129.684,
+              "y": -12.045
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "anchor": {
+              "x": 0,
+              "y": 0
+            },
+            "width": 250,
+            "height": 16.67,
+            "maxWidth": 250,
+            "text": "Label",
+            "fontName": "Nunito",
+            "fontSize": 20,
+            "align": "left",
+            "tint": "#ffffff",
+            "fontDirectoryPath": "./assets/fonts/",
+            "uuid": "bcM1+gRUFMKKogl3t1CvtR",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}

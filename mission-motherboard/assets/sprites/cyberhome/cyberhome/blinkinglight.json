@@ -1,0 +1,41 @@
+{
+"skeleton": { "hash": "xQAL6kejvKVdQbi9454Rq+fMzz0", "spine": "3.7.94", "width": 28.01, "height": 28.23, "images": "../../", "audio": "" },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "cyberhome/blinkie1", "bone": "root", "attachment": "cyberhome/blinkie1" },
+	{ "name": "cyberhome/blinkie2", "bone": "root", "attachment": "cyberhome/blinkie2" }
+],
+"skins": {
+	"default": {
+		"cyberhome/blinkie1": {
+			"cyberhome/blinkie1": { "x": 1, "y": -0.5, "width": 28, "height": 28 }
+		},
+		"cyberhome/blinkie2": {
+			"cyberhome/blinkie2": { "x": 0.99, "y": -0.73, "width": 28, "height": 28 }
+		}
+	}
+},
+"animations": {
+	"idle": {
+		"slots": {
+			"cyberhome/blinkie2": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffffff",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1,
+						"color": "ffffff00",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2, "color": "ffffffff" }
+				]
+			}
+		}
+	}
+}
+}

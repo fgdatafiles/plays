@@ -1,0 +1,292 @@
+{
+"skeleton": {
+	"hash": "8dfKDFfZ7c0o1dmgaBViWsmoOLs",
+	"spine": "3.8.95",
+	"x": -55.16,
+	"y": -53.58,
+	"width": 108,
+	"height": 107,
+	"images": "./images/",
+	"audio": "/Users/workinman009/Documents/Projects/nick international/Arcade/nick_arcade_2-games_1/_slimeball"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "ball", "parent": "root", "rotation": 180, "x": -0.64, "y": 0.32, "color": "f7ff57ff" },
+	{ "name": "drip", "parent": "root", "x": 7.26, "y": 14.02, "color": "20ff21ff" },
+	{
+		"name": "drip2",
+		"parent": "root",
+		"x": -18.36,
+		"y": 25,
+		"scaleX": 0.8706,
+		"scaleY": 0.8706,
+		"color": "20ff21ff"
+	},
+	{ "name": "drip3", "parent": "root", "x": 4.52, "y": -40.88, "color": "20ff21ff" }
+],
+"slots": [
+	{ "name": "drip_1_line", "bone": "drip" },
+	{ "name": "drip_1_line2", "bone": "drip2" },
+	{ "name": "drip_1_line3", "bone": "drip3" },
+	{ "name": "slime_ball_6", "bone": "ball" },
+	{ "name": "slime_ball_5", "bone": "ball" },
+	{ "name": "slime_ball_4", "bone": "ball" },
+	{ "name": "slime_ball_3", "bone": "ball" },
+	{ "name": "slime_ball_2", "bone": "ball" },
+	{ "name": "slime_ball_1", "bone": "ball" },
+	{ "name": "slime_ball", "bone": "root", "attachment": "slime_ball" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"drip_1_line": {
+				"drip_1_line": { "y": 12.81, "rotation": -179.69, "width": 20, "height": 34 }
+			},
+			"drip_1_line2": {
+				"drip_1_line": { "y": 12.81, "rotation": -179.69, "width": 20, "height": 34 }
+			},
+			"drip_1_line3": {
+				"drip_1_line": { "y": 12.81, "rotation": -179.69, "width": 20, "height": 34 }
+			},
+			"slime_ball": {
+				"slime_ball": { "x": -1.16, "y": -0.08, "width": 108, "height": 107 }
+			},
+			"slime_ball_1": {
+				"slime_ball_1": { "x": -0.57, "y": 1.21, "width": 104, "height": 124 }
+			},
+			"slime_ball_2": {
+				"slime_ball_2": { "x": -0.57, "y": 1.21, "width": 104, "height": 124 }
+			},
+			"slime_ball_3": {
+				"slime_ball_3": { "x": -2.07, "y": 7.71, "width": 107, "height": 127 }
+			},
+			"slime_ball_4": {
+				"slime_ball_4": { "x": -1.07, "y": 8.21, "width": 106, "height": 127 }
+			},
+			"slime_ball_5": {
+				"slime_ball_5": { "x": -0.57, "y": -0.79, "width": 104, "height": 119 }
+			},
+			"slime_ball_6": {
+				"slime_ball_6": { "x": -0.57, "y": 3.71, "width": 104, "height": 117 }
+			}
+		}
+	}
+],
+"animations": {
+	"ball_idle": {
+		"slots": {
+			"slime_ball": {
+				"attachment": [
+					{ "name": "slime_ball" }
+				]
+			}
+		}
+	},
+	"ball_roll": {
+		"slots": {
+			"drip_1_line": {
+				"color": [
+					{ "time": 0.1333, "color": "ffffffff", "curve": 0.25, "c3": 0.619, "c4": 0.5 },
+					{ "time": 0.3333, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "drip_1_line" }
+				]
+			},
+			"drip_1_line2": {
+				"color": [
+					{ "time": 0.0667, "color": "ffffffff", "curve": 0.25, "c3": 0.619, "c4": 0.5 },
+					{ "time": 0.2667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.3333, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "drip_1_line" }
+				]
+			},
+			"drip_1_line3": {
+				"color": [
+					{ "color": "ffffffcd", "curve": 0.296, "c2": 0.22, "c3": 0.644, "c4": 0.61 },
+					{ "time": 0.1333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.2, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.3333, "color": "ffffffff", "curve": 0.292, "c3": 0.63, "c4": 0.38 },
+					{ "time": 0.4, "color": "ffffffcd" }
+				],
+				"attachment": [
+					{ "name": "drip_1_line" },
+					{ "time": 0.2, "name": "drip_1_line" },
+					{ "time": 0.4, "name": "drip_1_line" }
+				]
+			},
+			"slime_ball": {
+				"attachment": [
+					{ "name": null }
+				]
+			},
+			"slime_ball_1": {
+				"color": [
+					{ "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.0667, "color": "ffffffff", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.1333, "color": "ffffff01" }
+				],
+				"attachment": [
+					{ "name": "slime_ball_1" },
+					{ "time": 0.1333, "name": null }
+				]
+			},
+			"slime_ball_2": {
+				"color": [
+					{ "time": 0.1333, "color": "ffffffff", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0.0667, "name": "slime_ball_2" },
+					{ "time": 0.2, "name": null }
+				]
+			},
+			"slime_ball_3": {
+				"color": [
+					{ "time": 0.2, "color": "ffffffff", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2667, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0.1333, "name": "slime_ball_3" },
+					{ "time": 0.2667, "name": null }
+				]
+			},
+			"slime_ball_4": {
+				"color": [
+					{ "time": 0.2667, "color": "ffffffff", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3333, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0.2, "name": "slime_ball_4" },
+					{ "time": 0.3333, "name": null }
+				]
+			},
+			"slime_ball_5": {
+				"color": [
+					{ "time": 0.3333, "color": "ffffffff", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.4, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0.2667, "name": "slime_ball_5" },
+					{ "time": 0.4, "name": null }
+				]
+			},
+			"slime_ball_6": {
+				"color": [
+					{ "color": "ffffffff", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.0667, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.3333, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "slime_ball_6" },
+					{ "time": 0.0667, "name": null },
+					{ "time": 0.3333, "name": "slime_ball_6" }
+				]
+			}
+		},
+		"bones": {
+			"ball": {
+				"scale": [
+					{ "x": 1.007, "y": 0.986, "curve": 0.431, "c3": 0.581 },
+					{ "time": 0.2333, "x": 0.952, "y": 1.062, "curve": 0.431, "c3": 0.581 },
+					{ "time": 0.4, "x": 1.007, "y": 0.986 }
+				]
+			},
+			"drip": {
+				"rotate": [
+					{ "angle": -14.89 }
+				],
+				"translate": [
+					{ "x": 5.49, "y": 14.64, "curve": 0.25, "c3": 0.236 },
+					{ "time": 0.3333, "x": 20.13, "y": 129.93 }
+				],
+				"scale": [
+					{ "x": 1.402, "y": 0.905, "curve": 0.39, "c2": 0.5, "c3": 0.771 },
+					{ "time": 0.3333, "x": 0.827, "y": 1.509 }
+				]
+			},
+			"drip2": {
+				"rotate": [
+					{ "angle": 10.53, "curve": "stepped" },
+					{ "time": 0.3333, "angle": 10.53, "curve": "stepped" },
+					{ "time": 0.4, "angle": 10.53 }
+				],
+				"translate": [
+					{ "x": 1.84, "y": 32.18, "curve": 0.17, "c2": 0.29, "c3": 0.3 },
+					{ "time": 0.2667, "x": -16.47, "y": 103.39, "curve": "stepped" },
+					{ "time": 0.3333, "x": 8.23, "y": 7.32, "curve": 0.395, "c3": 0.706, "c4": 0.38 },
+					{ "time": 0.4, "x": 1.84, "y": 32.18 }
+				],
+				"scale": [
+					{ "x": 1.255, "y": 1.059, "curve": 0.396, "c2": 0.54, "c3": 0.762 },
+					{ "time": 0.2667, "x": 0.827, "y": 1.509, "curve": "stepped" },
+					{
+						"time": 0.3333,
+						"x": 1.402,
+						"y": 0.905,
+						"curve": 0.336,
+						"c2": 0.34,
+						"c3": 0.671,
+						"c4": 0.68
+					},
+					{ "time": 0.4, "x": 1.255, "y": 1.059 }
+				]
+			},
+			"drip3": {
+				"rotate": [
+					{ "angle": -171.89, "curve": 0.381, "c2": 0.55, "c3": 0.742 },
+					{ "time": 0.1333, "angle": -173.25, "curve": "stepped" },
+					{ "time": 0.2, "angle": -169.55, "curve": 0.245, "c3": 0.637, "c4": 0.56 },
+					{ "time": 0.4, "angle": -171.89 }
+				],
+				"translate": [
+					{ "x": 17.48, "y": -47.47, "curve": 0.387, "c2": 0.61, "c3": 0.73 },
+					{ "time": 0.1333, "x": 21.96, "y": -68.62, "curve": "stepped" },
+					{
+						"time": 0.2,
+						"x": 5.49,
+						"y": 9.15,
+						"curve": 0.353,
+						"c2": 0.38,
+						"c3": 0.703,
+						"c4": 0.76
+					},
+					{ "time": 0.4, "x": 17.48, "y": -47.47 }
+				],
+				"scale": [
+					{ "x": 0.983, "y": 1.345, "curve": 0.387, "c2": 0.61, "c3": 0.73 },
+					{ "time": 0.1333, "x": 0.827, "y": 0.852, "curve": "stepped" },
+					{
+						"time": 0.2,
+						"x": 1.402,
+						"y": 0.905,
+						"curve": 0.353,
+						"c2": 0.38,
+						"c3": 0.703,
+						"c4": 0.76
+					},
+					{ "time": 0.4, "x": 0.983, "y": 1.345 }
+				]
+			}
+		},
+		"drawOrder": [
+			{
+				"offsets": [
+					{ "slot": "slime_ball_6", "offset": 6 }
+				]
+			},
+			{ "time": 0.0667 },
+			{
+				"time": 0.1333,
+				"offsets": [
+					{ "slot": "slime_ball_6", "offset": 5 }
+				]
+			},
+			{ "time": 0.2667 }
+		]
+	}
+}
+}

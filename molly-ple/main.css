@@ -1,0 +1,150 @@
+h1 {
+    color:blue;
+}
+
+div,html,body,canvas {
+    border:0;
+    padding:0;
+    margin:0;
+}
+
+
+@font-face {
+    font-family: "Muli SemiBold";
+    src: url("fonts/Muli-SemiBold.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Muli Bold";
+    src: url("fonts/Muli-Bold.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Muli";
+    src: url("fonts/Muli-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Grandstander Clean";
+    src: url("fonts/Grandstander-clean.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Granstander Clean";
+    src: url("fonts/Grandstander-clean.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+.fontload {
+	position:absolute;
+}
+
+.muli {
+    font-family:"Muli"
+}
+
+.mulisemi {
+    font-family:"Muli SemiBold"
+}
+.mulibold {
+    font-family:"Muli Bold"
+}
+
+.grandstander {
+    font-family:"Grandstander Clean"
+}
+
+.grandstander2 {
+    font-family:"Granstander Clean"
+}
+
+#content {
+    margin:0;
+}
+
+
+#frame{
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+    height:100vh;
+    width:100vw;
+}
+
+/*
+canvas{
+	width:200vh;
+	height:100vh;
+	display:block;
+	margin:0 auto;
+	position:relative;
+	left:calc(-100vh + 50vw);
+	top:0;
+}
+
+@media screen and (min-aspect-ratio: 2/1) {
+	canvas {
+	left:0;
+	}
+}
+
+@media screen and (max-aspect-ratio:4/3) {
+	canvas {
+		height:75vw;
+		width:150vw;
+		margin:auto 0;
+		left:-25vw;
+	}
+}
+
+@media screen and (min-width: 500px) and (max-width:800px) {
+
+}
+*/
+
+/* different */
+
+#content {
+	position:relative;
+	left:0;
+	top:0;
+	width:100vw;
+	height:100vh;
+	margin:0;
+}
+
+@media screen and (min-aspect-ratio: 2/1) {
+	#content {
+		width:200vh;
+		height:100vh;
+		opacity:1;
+		top:0;
+		left:calc(-100vh + 50vw);
+	}
+}
+
+@media screen and (max-aspect-ratio: 4/3) {
+	#content {
+		height:75vw;
+		width:100vw;
+		margin:0;
+		padding:0;
+		opacity:1;
+		left:0;
+		top:calc((100vh - 75vw)/2);
+	}
+}
+*{
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}

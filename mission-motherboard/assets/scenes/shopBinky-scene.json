@@ -1,0 +1,865 @@
+{
+  "Canvas": {
+    "name": "Canvas",
+    "uuid": "92JFtiqR9ALoYkOzgY0u+T",
+    "type": "container",
+    "position": {
+      "x": 700,
+      "y": 400
+    },
+    "rotation": 0,
+    "scale": {
+      "x": 1,
+      "y": 1
+    },
+    "pivot": {
+      "x": 0,
+      "y": 0
+    },
+    "alpha": 1,
+    "isInteractive": false,
+    "isVisible": true,
+    "mask": null,
+    "zIndex": 0,
+    "children": [
+      {
+        "name": "background",
+        "uuid": "79lE8cv6RAPbzPafFUpKGG",
+        "type": "sprite",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "colourTint": "#ffffff",
+        "textureName": "floor",
+        "anchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "blendMode": "NORMAL",
+        "skew": {
+          "x": 0,
+          "y": 0
+        },
+        "children": [],
+        "insetTop": 0,
+        "insetBottom": 0,
+        "insetRight": 0,
+        "insetLeft": 0,
+        "width": 1412,
+        "height": 812
+      },
+      {
+        "name": "walls",
+        "uuid": "a9iUlo5mlIt6SwZqlHMDcu",
+        "type": "sprite",
+        "position": {
+          "x": 0,
+          "y": -12.217
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "colourTint": "#ffffff",
+        "textureName": "walls",
+        "anchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "blendMode": "NORMAL",
+        "skew": {
+          "x": 0,
+          "y": 0
+        },
+        "children": [
+          {
+            "name": "wallsCollider",
+            "uuid": "feGvLQP4NPEZ1ydNNUCI8+",
+            "type": "polygonCollider",
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "children": [],
+            "points": [
+              {
+                "x": -718,
+                "y": 413
+              },
+              {
+                "x": -712.6,
+                "y": -290.2
+              },
+              {
+                "x": -420.2,
+                "y": -290.3
+              },
+              {
+                "x": -308.8,
+                "y": -406.4
+              },
+              {
+                "x": 134.1,
+                "y": -406.9
+              },
+              {
+                "x": 158.4,
+                "y": -349.9
+              },
+              {
+                "x": 159.8,
+                "y": -239.5
+              },
+              {
+                "x": -46.4,
+                "y": -135.6
+              },
+              {
+                "x": 70,
+                "y": -61
+              },
+              {
+                "x": 85,
+                "y": -3
+              },
+              {
+                "x": 324.8,
+                "y": -113.4
+              },
+              {
+                "x": 327.4,
+                "y": 204.2
+              },
+              {
+                "x": 412,
+                "y": 187
+              },
+              {
+                "x": 493.6,
+                "y": 125.1
+              },
+              {
+                "x": 495.8,
+                "y": -194.8
+              },
+              {
+                "x": 723.2,
+                "y": -310.2
+              },
+              {
+                "x": 724,
+                "y": 404
+              }
+            ]
+          }
+        ],
+        "insetTop": 0,
+        "insetBottom": 0,
+        "insetRight": 0,
+        "insetLeft": 0,
+        "width": 1450,
+        "height": 812
+      },
+      {
+        "name": "column-anim",
+        "type": "spine",
+        "uuid": "e393vNz+lB0rRAyy4Xt/h4",
+        "position": {
+          "x": 28.892,
+          "y": -179.365
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "colourTint": "#ffffff",
+        "spineName": "column-anim",
+        "autoUpdate": true,
+        "initiallyEnabled": true,
+        "skinName": "",
+        "attachments": [],
+        "defaultAnimation": "",
+        "children": [],
+        "animations": [
+          {
+            "animationName": "animation",
+            "loop": true,
+            "trackIndex": 0
+          }
+        ]
+      },
+      {
+        "name": "column2-anim",
+        "type": "spine",
+        "uuid": "41cwHD8xFCc5oyANnwFkL3",
+        "position": {
+          "x": -618.604,
+          "y": 124.668
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "colourTint": "#ffffff",
+        "spineName": "column2-anim",
+        "autoUpdate": true,
+        "initiallyEnabled": true,
+        "skinName": "",
+        "attachments": [],
+        "defaultAnimation": "",
+        "children": [],
+        "animations": [
+          {
+            "animationName": "animation",
+            "loop": true,
+            "trackIndex": 0
+          }
+        ]
+      },
+      {
+        "name": "decors",
+        "uuid": "02pzCayzlK94XOpcD0d8Co",
+        "type": "container",
+        "position": {
+          "x": -186.632,
+          "y": 208.808
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "children": [
+          {
+            "name": "Background",
+            "uuid": "8c/WGwmZFE4YxBEGfLIcp7",
+            "type": "sprite",
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "colourTint": "#ffffff",
+            "textureName": "tableAndChair",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "blendMode": "NORMAL",
+            "skew": {
+              "x": 0,
+              "y": 0
+            },
+            "children": [],
+            "insetTop": 0,
+            "insetBottom": 0,
+            "insetRight": 0,
+            "insetLeft": 0,
+            "width": 708,
+            "height": 763
+          }
+        ]
+      },
+      {
+        "name": "binky",
+        "type": "spine",
+        "uuid": "33mD/Ni9RBK7qLJe3+Tekx",
+        "position": {
+          "x": -48.9,
+          "y": 27.642
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "colourTint": "#ffffff",
+        "spineName": "binky",
+        "autoUpdate": true,
+        "initiallyEnabled": true,
+        "skinName": "",
+        "attachments": [],
+        "defaultAnimation": "",
+        "children": [],
+        "animations": [
+          {
+            "animationName": "animation",
+            "loop": true,
+            "trackIndex": 0
+          }
+        ]
+      },
+      {
+        "name": "glassTube",
+        "uuid": "cfw+WO22FEkrC666qO+/7m",
+        "type": "container",
+        "position": {
+          "x": 30.594,
+          "y": 39.335
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "children": [
+          {
+            "name": "bolt",
+            "uuid": "83ZJcTnBNHTaCKr7T0qPnA",
+            "type": "sprite",
+            "position": {
+              "x": 431.218,
+              "y": 191.108
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "colourTint": "#ffffff",
+            "textureName": "bolt",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "blendMode": "NORMAL",
+            "skew": {
+              "x": 0,
+              "y": 0
+            },
+            "children": [],
+            "insetTop": 0,
+            "insetBottom": 0,
+            "insetRight": 0,
+            "insetLeft": 0,
+            "width": 74,
+            "height": 103
+          },
+          {
+            "name": "emptyGlassTube",
+            "uuid": "97bfiOrfpFFLEhF2XxnzVU",
+            "type": "sprite",
+            "position": {
+              "x": 432.11,
+              "y": 207
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "colourTint": "#ffffff",
+            "textureName": "emptyGlassTube",
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "blendMode": "NORMAL",
+            "skew": {
+              "x": 0,
+              "y": 0
+            },
+            "children": [],
+            "insetTop": 0,
+            "insetBottom": 0,
+            "insetRight": 0,
+            "insetLeft": 0,
+            "width": 176,
+            "height": 428
+          }
+        ]
+      },
+      {
+        "name": "Main Camera",
+        "uuid": "93gPGSdsREzZHOCLU/q6sR",
+        "type": "container",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "children": [
+          {
+            "name": "frame",
+            "path": "./assets/prefabs/frame-scene.json",
+            "assetsPath": "./assets/prefabs/frame-assets.json",
+            "type": "prefab"
+          }
+        ]
+      },
+      {
+        "name": "exitButtonLeft",
+        "uuid": "31SfC2ojdFpKBYgbHEBaSu",
+        "type": "button",
+        "position": {
+          "x": 327.396,
+          "y": 174.171
+        },
+        "rotation": 0,
+        "scale": {
+          "x": -1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "anchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "isInteractive": true,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "width": 163,
+        "height": 114,
+        "colourTint": "#ffffff",
+        "isEnabled": true,
+        "imageFrameNames": {
+          "up": "arrow-top-disabled",
+          "down": "arrow-top-normal",
+          "over": "arrow-top-normal",
+          "disabled": "arrow-top-disabled"
+        },
+        "transitionColorTints": null,
+        "clickSoundName": null,
+        "children": [
+          {
+            "name": "Background",
+            "uuid": "103wxX4vVF/bGrRWAWFNz1",
+            "type": "container",
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "rotation": 0,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "alpha": 1,
+            "isInteractive": false,
+            "isVisible": true,
+            "mask": null,
+            "zIndex": 0,
+            "children": []
+          }
+        ],
+        "insetTop": 0,
+        "insetBottom": 0,
+        "insetRight": 0,
+        "insetLeft": 0
+      },
+      {
+        "name": "navigation",
+        "uuid": "1asC1UQRdGMbaZFWjLuIbf",
+        "type": "container",
+        "position": {
+          "x": -700,
+          "y": 400
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "children": []
+      },
+      {
+        "name": "CybermallController",
+        "uuid": "f2jH9aJ6dEL7uC3R1Zmze4",
+        "type": "container",
+        "position": {
+          "x": -700,
+          "y": 400
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "children": []
+      },
+      {
+        "name": "navMeshHitLabel",
+        "type": "text",
+        "position": {
+          "x": 336.8479919,
+          "y": 359.4049988
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "anchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "width": 0,
+        "height": 50.4,
+        "maxWidth": 0,
+        "text": "",
+        "fontName": "Riffic Free",
+        "fontSize": 40,
+        "align": "left",
+        "tint": "#ffffff",
+        "fontDirectoryPath": "./assets/fonts/",
+        "uuid": "254U6Khj9DQJwTz4t0HYOR",
+        "children": []
+      },
+      {
+        "name": "_mover",
+        "uuid": "53JnxmnB9PzbRwkcT6gaHE",
+        "type": "sprite",
+        "position": {
+          "x": 300.533,
+          "y": 167.834
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "colourTint": "#ffffff",
+        "textureName": "cursor",
+        "anchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "blendMode": "NORMAL",
+        "skew": {
+          "x": 0,
+          "y": 0
+        },
+        "children": [],
+        "insetTop": 0,
+        "insetBottom": 0,
+        "insetRight": 0,
+        "insetLeft": 0,
+        "width": 62,
+        "height": 32
+      },
+      {
+        "name": "_navMesh",
+        "uuid": "21KWrDes5HRL8DXtWNWMyM",
+        "type": "polygonCollider",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "children": [],
+        "points": [
+          {
+            "x": 155,
+            "y": -242
+          },
+          {
+            "x": 160,
+            "y": -347
+          },
+          {
+            "x": 245,
+            "y": -289
+          },
+          {
+            "x": 502,
+            "y": -291
+          },
+          {
+            "x": 505,
+            "y": -266
+          },
+          {
+            "x": 632,
+            "y": -269
+          },
+          {
+            "x": 492,
+            "y": -195
+          },
+          {
+            "x": 326,
+            "y": -110
+          },
+          {
+            "x": 84,
+            "y": 10
+          },
+          {
+            "x": 69,
+            "y": -2
+          },
+          {
+            "x": 76,
+            "y": -41
+          },
+          {
+            "x": -29,
+            "y": -135
+          }
+        ]
+      },
+      {
+        "name": "_debugGraphics",
+        "uuid": "c9oIwx6ZdEfZX74u9yM9r6",
+        "type": "graphics",
+        "position": {
+          "x": -700,
+          "y": 400
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": false,
+        "mask": null,
+        "zIndex": 0,
+        "children": [],
+        "anchor": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "width": 0,
+        "height": 0
+      },
+      {
+        "name": "spawnPoint0",
+        "uuid": "42hHPVng1CZIujTn7Gh9+O",
+        "type": "container",
+        "position": {
+          "x": 400.115,
+          "y": 128.75
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "children": []
+      },
+      {
+        "name": "spawnTarget0",
+        "uuid": "d8Z90joK9MjpZbyOG7Pgjv",
+        "type": "container",
+        "position": {
+          "x": 189.664,
+          "y": 181.474
+        },
+        "rotation": 0,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "pivot": {
+          "x": 0,
+          "y": 0
+        },
+        "alpha": 1,
+        "isInteractive": false,
+        "isVisible": true,
+        "mask": null,
+        "zIndex": 0,
+        "children": []
+      }
+    ]
+  }
+}

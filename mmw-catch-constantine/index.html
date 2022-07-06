@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!--[if lt IE 8]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Muppets Most Wanted : Catch Constantine</title>
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=1024,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" sizes="72x72" href="static/img/apple-touch-ipad.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="static/img/apple-touch-iphone4.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="static/img/apple-touch-ipad-retina.png">
+    <link rel="stylesheet" id="caboose" href="static/css/style.css">
+    <script src="static/js/libs/modernizr/modernizr.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="main" role="main">
+            <canvas id="world" width="1024" height="748"></canvas>
+            <div id="debug"></div>
+            <div id="hitZones"></div>
+            <div id="ui">
+                <div id="paused">
+                    <div>
+                        <h1>GAME PAUSED</h1>
+                        <div class="icons"></div><br>
+                    </div>
+                </div>
+                <div id="tutorials">
+                    <div class="tut" id="tut1">
+                        <h2>HOW TO PLAY</h2>
+                        <p>1/3</p>
+                        <p>Constantine has been spotted at the museum! Investigate with a flashlight and click/tap Constantine when you find him.</p>
+                        <div class="icons">
+                            <span id="icon_movement"></span>
+                            <canvas class="img_movement">
+                                <span id="icon_movement"></span>
+                            </canvas>
+                            <p id="p_movement"><span id="icon_movement">DRAG TO MOVE FLASHLIGHT</span></p><span id="icon_constantine"></span>
+                            <canvas class="img_constantine">
+                                <span id="icon_constantine"></span>
+                            </canvas>
+                            <p id="p_constantine"><span id="icon_constantine">FIND CONSTANTINE and Tap!</span></p>
+                        </div><a class="btn_lg btn_play"><span>OK!</span></a>
+                    </div>
+                    <div class="tut" id="tut2">
+                        <h2>GOOD JOB</h2>
+                        <p>2/3</p>
+                        <p>Due to their strikingly similar appearance, The Muppets think Kermit is Constantine. Avoid your well-intentioned friends or else Constantine will escape!</p>
+                        <div class="icons">
+                            <span id="icon_distraction"></span>
+                            <canvas class="img_distraction_2">
+                                <span id="icon_distraction"></span>
+                            </canvas>
+                            <canvas class="img_distraction">
+                                <span id="icon_distraction"></span>
+                            </canvas>
+                            <canvas class="img_distraction_3">
+                                <span id="icon_distraction"></span>
+                            </canvas>
+                            <p id="p_others"><span id="icon_distraction">Don’t tap on the others!</span></p>
+                        </div><a class="btn_lg btn_play"><span>OK!</span></a>
+                    </div>
+                    <div class="tut" id="tut3">
+                        <h2>YOU ALMOST HAD HIM!</h2>
+                        <p>3/3</p>
+                        <p>Not satisfied with his previous plunder, Constantine is stealing jewels! Click/tap on any he drops to increase the time you have to catch him!</p>
+                        <div class="icons">
+                            <span id="icon_ruby"></span>
+                            <canvas class="img_ruby">
+                                <span id="icon_ruby"></span>
+                            </canvas>
+                            <p><span id="icon_ruby">COLLECT THE RUBIES TO GET TIME BONUSES</span></p>
+                        </div>
+                        <a class="btn_lg btn_play"><span>OK!</span></a>
+                    </div>
+                    <div class="tut" id="tut4">
+                        <h2>GOOD JOB!</h2>
+                        <p>Now that you have all<br>
+                            the skills, let's go</p><a class="btn_lg btn_play"><span>CATCH CONSTANTINE!</span></a>
+                    </div>
+                </div>
+                <div id="end_game_overlay">
+                    <h1>GOOD <strong>JOB!</strong><br>
+                        <small>SMALL</small></h1>
+                    <p>YOU GOT TO</p>
+                    <p id="lev"><strong>LEVEL</strong> 5!</p>
+                </div><a id="audio">
+                    <div class="circleHolder"><img src="static/img/btn_audio.png"> <img id="btn_audio_waves" src="static/img/btn_audio_waves.png"></div>
+                </a>
+                <div id="hud">
+                    <div id="counter">
+                        <div class="circleHolder">
+                            <canvas class="icon_minus1_lg"></canvas><img id="cc" src="static/img/chrome_constantine.png"></div>
+                        <p id="tags">0</p>
+                        <p id="level_label">LEVEL</p>
+                        <div id="count">
+                            1
+                        </div>
+                        <canvas id="levelProgress" width="150" height="26"></canvas>
+                        <p id="level_up"><strong>LEVEL</strong> UP!</p>
+                    </div>
+                    <div id="timer">
+                        <div class="circleHolder">
+                            <canvas id="countDownPie" width="60" height="60"></canvas>
+                        </div>
+                        <div id="time">
+                            1:00
+                        </div>
+                    </div><a id="pause">
+                        <img id="btn_pause_play" src="static/img/btn_pause_play.png"> <img id="btn_pause" src="static/img/btn_pause.png"></a> <a href="" class="backToSite"><img src="static/img/icon_arrowLeft.png">BACK TO SITE</a> <a id="btn_resume"><img src="static/img/btn_resume.png"></a>
+                </div>
+                <div class="logo_small"><img src="static/img/mmw_logo_small.png"></div>
+            </div>
+            <div id="start">
+                <div id="tune_in"></div>
+                <canvas class="img_logo"></canvas><br>
+                <canvas class="intro_constantine"></canvas>
+                <p id="intro_p">Constantine is the World's Number One criminal with a striking resemblance to Kermit the Frog. He has been spotted at locations throughout the Muppets' World Tour. Visit each location and catch Constantine before he gets away. Collect the rubies he drops along the way to help keep the treasures safe!</p><a id="btn_how2play">
+                    <canvas class="btn_how2play_bg"></canvas><span>HOW TO PLAY</span></a>
+                <div class="highScore">
+                    <p><span class="label">HIGH SCORE</span></p>
+                    <canvas class="img_constantine"></canvas><span class="hits">00</span>
+                    <p></p>
+                </div><a id="btn_playNow">
+                    <canvas class="btn_playNow_bg"></canvas>
+                    <canvas class="btn_playNow_constantine"></canvas><span class="copy">CATCH<br>
+                        CONSTANTINE</span> <span class="btn_lg">PLAY NOW</span></a>
+            </div>
+            <div id="intro">
+                <canvas class="img_splash"></canvas>
+                <canvas class="img_title"></canvas><a class="btn_lg btn_play"><span>PLAY</span></a>
+            </div>
+            <div id="end_win">
+                <a href="" class="backToSite"><img src="static/img/icon_arrowLeft.png">BACK TO SITE</a>
+                <div class="copy">
+                    <h1 id="END_WIN_H1">CONGRATULATIONS</h1>
+                </div>
+                <div class="score" id="currentScore">
+                    <h2>NEW HIGH SCORE!</h2>
+                    <canvas class="img_constantine"></canvas>
+                    <p class="score_tags">350</p>
+                    <p class="score_meta"></p>
+                    <canvas class="ruby"></canvas><span><small>X</small> <strong>27</strong> <small>LEVEL</small> <strong>12</strong> <small>IN</small> <strong>0:23</strong></span>
+                    <p></p>
+                </div>
+                <div class="score" id="highScore">
+                    <h2>HIGH SCORE</h2>
+                    <canvas class="img_constantine"></canvas>
+                    <p class="score_tags">37</p>
+                    <p class="score_meta"></p>
+                    <canvas class="ruby"></canvas><span><small>X</small> <strong>27</strong> <small>LEVEL</small> <strong>12</strong> <small>IN</small> <strong>0:23</strong></span>
+                    <p></p>
+                </div>
+                <div id="videoHolder">
+                    <p>WATCH THE VIDEO</p>
+                    <div id="disneyPlayer"></div>
+                </div><a class="btn_lg" id="btn_playAgain"><span>PLAY<br>
+                        AGAIN</span></a>
+            </div>
+            <div id="preloaderHolder">
+                <div id="preloader">
+                    <p>CHARGING FLASHLIGHT BATTERIES...</p>
+                    <div id="battery">
+                        <div id="bar"></div><img src="static/img/preloader_battery.png">
+                    </div><img src="static/img/mmw_logo_small.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ios7">
+        <div id="box">
+            <div id="message">
+                <img src="static/img/ios7-close-button.png" width="30" height="30" alt="Close Button" id="close-button"> <img src="static/img/apple-touch-ipad.png" width="100" height="100" alt="Catching Constantine Icon" id="icon"> <img src="static/img/ios7-add-to-home-screen.png" width="100" height="100" alt="Add To Home Screen Button" id="add-button"> Tap <img src="static/img/ios7-options-button.png" width="19" height="26" alt="iOS 7 Options Button" id="options-button"> and then<br>
+                <strong>Add to Home Screen</strong><br>
+                for the best play experience.
+            </div>
+        </div><img src="static/img/ios7-arrow.png" width="32" height="36" alt="Arrow">
+    </div>
+    <div id="orient_tablet"></div>
+    <div id="orient_phone"></div>
+    <div id="browser_not_supported"></div>
+    <script src="static/js/libs/requirejs/require.min.js"></script>
+    <script>
+    require.config({
+        baseUrl: "static/js",
+        paths: {
+            "mnw/Site": "site.min"
+        }
+    });
+    </script>
+    <script>
+    if (typeof console === "undefined") {
+        window.console = {
+            log: function() {}
+        };
+    }
+    </script>
+    <script type="text/javascript" src="static/js/gameTracking.js"></script>
+    <script type="text/javascript" src="static/js/gameConfig/isl.js"></script>
+    <script type="text/javascript">
+    runISL();
+
+    function gameStart() {
+
+        /* Begin iOS 7 Javascript */
+        var ua = window.navigator.userAgent;
+        var iOS7Phone = (ua.indexOf('OS 7') > -1 && (ua.indexOf('iPhone') > -1 || ua.indexOf('iPod') > -1));
+        var standalone = (((window.outerHeight - window.innerHeight <= 20 || window.innerHeight == window.outerHeight) && (window.orientation == 90 || window.orientation == -90)) || ((window.orientation == 0 || window.orientation == 180) && window.outerHeight >= 480));
+
+        if (iOS7Phone && !standalone) {
+            var ios7 = document.getElementById('ios7');
+            ios7.style.display = 'block';
+            ios7.onclick = function(e) { ios7.style.display = 'none'; };
+        }
+        /* End iOS 7 Javascript */
+
+        // *@* Insert Game Start code to run the game if sitelocking does not fail
+        require(["mnw/Site"], function(Site) {
+            Site.initialize({
+                "STATIC_URL": "static/"
+            });
+        });
+    }
+    </script>
+</body>
+
+</html>

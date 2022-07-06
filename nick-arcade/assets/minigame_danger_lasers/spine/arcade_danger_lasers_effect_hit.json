@@ -1,0 +1,83 @@
+{
+"skeleton": { "hash": "fo9int/cWUKyZODDDY0UDCJC5TI", "spine": "3.8.72", "images": "./images/", "audio": "/Users/workinman009/Documents/Projects/nick international/Arcade/nick_arcade_2-games_1/./_danger_lasers" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "color": "ff9000ff" },
+	{ "name": "glow", "parent": "bone", "color": "ff9000ff" },
+	{ "name": "glow_1", "parent": "glow", "x": 0.88, "y": 0.21, "color": "dc3d00ff" },
+	{ "name": "glow_yellow", "parent": "glow_1", "color": "ffa700ff" },
+	{ "name": "spark", "parent": "bone", "color": "ff9000ff" }
+],
+"slots": [
+	{ "name": "spark_blue", "bone": "spark" },
+	{ "name": "glow_blue", "bone": "glow_yellow" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"glow_blue": {
+				"diode_hit_glow": { "x": -2.73, "y": -0.53, "width": 188, "height": 177 }
+			},
+			"spark_blue": {
+				"spark_blue": { "x": -1.14, "y": 2.02, "width": 77, "height": 87 }
+			}
+		}
+	}
+],
+"animations": {
+	"effect_hit": {
+		"slots": {
+			"spark_blue": {
+				"color": [
+					{ "color": "ffffffff", "curve": 0.25, "c3": 0.625, "c4": 0.5 },
+					{ "time": 0.1, "color": "ffffffe8", "curve": 0.359, "c2": 0.42, "c3": 0.718, "c4": 0.85 },
+					{ "time": 0.3, "color": "ffffff12" }
+				],
+				"attachment": [
+					{ "name": "spark_blue" },
+					{ "time": 0.3, "name": null }
+				]
+			},
+			"glow_blue": {
+				"color": [
+					{ "color": "ffffff23", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.1, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.3, "color": "ffffffff", "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.4667, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "diode_hit_glow" },
+					{ "time": 0.4667, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"glow_1": {
+				"rotate": [
+					{ "angle": -9.61, "curve": 0.163, "c2": 0.5, "c3": 0.472 },
+					{ "time": 0.6 }
+				]
+			},
+			"glow_yellow": {
+				"scale": [
+					{ "curve": 0.39, "c2": 0.5, "c3": 0.771 },
+					{ "time": 0.4667, "x": 1.232, "y": 1.232 }
+				]
+			},
+			"glow": {
+				"scale": [
+					{ "x": 0.682, "y": 0.682, "curve": 0.163, "c2": 0.5, "c3": 0.472 },
+					{ "time": 0.6, "x": 0.837, "y": 0.837 }
+				]
+			},
+			"spark": {
+				"scale": [
+					{ "curve": 0.39, "c2": 0.5, "c3": 0.771 },
+					{ "time": 0.3, "x": 1.955, "y": 1.955 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"/>
+    <link rel='stylesheet' href='css/reset.css' type='text/css' />
+    <link rel='stylesheet' href='css/stylesheet.css?v=8' type='text/css' />
+    <link rel='stylesheet' href='css/fonts/styles.css' type='text/css' />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>>
+    <script type='text/javascript' src='js/createjs-min.js'></script>
+    <script type='text/javascript' src='src/strings.js?v='></script>
+    <script type='text/javascript' src='src/utils/Commons.js?v='></script>
+    <script type='text/javascript' src='src/app.js?v=2'></script>
+	<script type='text/javascript' src='src/Step1.js?v=5'></script>
+
+    <script type='text/javascript' src='src/utils/OnOffBtt.js?v='></script>
+
+    <script type='text/javascript' src='src/Preloader.js?v=4'></script>
+    <script type='text/javascript' src='src/utils/FrameBtt.js?v='></script>
+    <script type='text/javascript' src='src/Main.js?v=30'></script>
+    <script type='text/javascript' src='src/GameOver.js?v=2'></script>
+    <script type='text/javascript' src='src/Game.js?v=2'></script>
+    <script type='text/javascript' src='src/Slot0.js'></script>
+    <script type='text/javascript' src='src/Slot1.js'></script>
+    <script type='text/javascript' src='src/Slot2.js'></script>
+    <script type='text/javascript' src='src/Slot3.js'></script>
+    <script type='text/javascript' src='src/Slot4.js'></script>
+    <script type='text/javascript' src='src/Slot5.js'></script>
+    <script type='text/javascript' src='src/Slot6.js'></script>
+    <script type='text/javascript' src='src/Slot7.js'></script>
+    <script type='text/javascript' src='src/Slot8.js'></script>
+    <script type='text/javascript' src='src/Slot9.js'></script>
+    <script type='text/javascript' src='src/Slot10.js'></script>
+    <script type='text/javascript' src='src/Slot11.js'></script>
+    <script type='text/javascript' src='src/Slot12.js'></script>
+    <script type='text/javascript' src='src/Slot13.js'></script>
+    <script type='text/javascript' src='src/Slot14.js'></script>
+    <script type='text/javascript' src='src/Slot15.js'></script>
+    <script type='text/javascript' src='src/Slot16.js'></script>
+    <script type='text/javascript' src='src/Slots.js'></script>
+
+	
+	<style>
+
+        #stage-canvas{
+            position: absolute;
+            top:0;
+        }
+	  #imageOverlay{
+            left:0;
+            top:0;
+            display:none;
+            position:fixed;
+            margin-left: auto;
+            margin-right: auto;
+            width:100%;
+            height:100%;
+            background-image: url('img/rotate_screen.png');
+			background-color: #EFF084;
+			background-size: 100% auto;
+            background-position: center center;
+            background-repeat: no-repeat;
+
+        }
+        @media only screen and (max-width:768px)  and (orientation: portrait){
+            #imageOverlay{
+                display:block;
+            }
+        }
+
+        @media only screen and (max-width:768px) and (-webkit-min-device-pixel-ratio: 2){
+            #imageOverlay{
+                display: block;
+            }
+        }
+
+        @media only screen and (max-width:766px)  and (orientation: landscape) {
+            #imageOverlay {
+                display: none;
+            }
+        }
+		
+		</style>
+</head>
+
+<body class="home">
+    <canvas id='stage-canvas' width='1680' height='720'></canvas>
+    <div id="imageOverlay"></div>
+</body>
+
+
+
+</html>

@@ -1,0 +1,1 @@
+var game=game||{};game.config=game.config||{};(function(){'use strict';game.config.loadingspritesheets={path:"",manifest:[]};game.config.spritesheets={manifest:[]};game.config.json={manifest:[]};}());

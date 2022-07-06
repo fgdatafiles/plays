@@ -1,0 +1,1184 @@
+{
+	"debug":{
+		"on":false,
+		"skipIntro":true,
+		"skipTrolleyRide":false,		
+		"trolleyTeleport":true,
+		"gameProgression":[	{"minigameType":"decorateGames", "minigame":"mgDecorateTree", "hostCharacter":"Jodi", "location":"castle"}]
+	},
+	"destinations":[{
+			"id":"house", 
+			"host":"Jodi",
+			"arrivalVO":"jodi_neighbor_11",
+			"people":
+			[
+				{
+					"character":"Jodi",
+					"position":{"x":1100, "y":630},
+					"scale":0.3125
+				},
+				{
+					"character":"Nana",
+					"position":{"x":880, "y":495},
+					"scale":0.82
+				},
+				{
+					"character":"DrPlat",
+					"position":{"x":800, "y":495},
+					"scale":0.82
+				},
+				{
+					"character":"Teddy",
+					"position":{"x":750, "y":495},
+					"scale":0.82
+				},
+				{
+					"character":"Leo",
+					"position":{"x":700, "y":495},
+					"scale":0.82
+				}
+			]
+		},
+		{
+			"id":"bungalow", 
+			"host":"Daniel",
+			"arrivalVO":"dad_neighbor_02",
+			"people":
+			[
+				{
+					"character":"DadTiger",
+					"position":{"x":1025, "y":600},
+					"scale":1.2
+				},
+				{
+					"character":"MomTiger",
+					"position":{"x":915, "y":610},
+					"scale":1.2
+				},
+				{
+					"character":"Margaret",
+					"position":{"x":955, "y":618},
+					"scale":1.2
+					
+				}
+			]
+		},
+		{
+			"id":"museum", 
+			"host":"Elaina",
+			"arrivalVO":"elaina_neighbor_11",
+			"people":
+			[
+				{
+					"character":"Elaina",
+					"position":{"x":1100, "y":630},
+					"scale":0.35
+				},
+				{
+					"character":"Stan",
+					"position":{"x":880, "y":480},
+					"scale":1.2
+				},
+				{
+					"character":"LadyElaine",
+					"position":{"x":800, "y":480},
+					"scale":1.2
+				}
+			]
+		},
+		{
+			"id":"treehouse", 
+			"host":"Katerina",
+			"arrivalVO":"katerina_neighbor_11",
+			"people":
+			[
+				{
+					"character":"Henrietta",
+					"position":{"x":770, "y":600},
+					"scale":1.2
+				},
+				{
+					"character":"XOwl",
+					"position":{"x":870, "y":600},
+					"scale":1.2
+				},
+				{
+					"character":"Katerina",
+					"position":{"x":1000, "y":660},
+					"scale":0.2875
+				}
+			]
+		},
+		{
+			"id":"castle", 
+			"host":"Wednesday",
+			"arrivalVO":"wednesday_neighbor_11",
+			"people":
+			[
+				{
+					"character":"QueenSara",
+					"position":{"x":710, "y":400}
+				},
+				{
+					"character":"KingFriday",
+					"position":{"x":800, "y":400}
+				},
+				{
+					"character":"Tuesday",
+					"position":{"x":1000, "y":550},
+					"scale":1.2
+				},
+				{
+					"character":"Wednesday",
+					"position":{"x":935, "y":630},
+					"scale":0.3125
+				}
+			]
+		},
+		{
+			"id":"partyScene", 
+			"arrivalVO":null,
+			"host":null,
+			"people":
+			[
+				{
+					"character":"KingFriday",
+					"position":{"x":880, "y":430},
+					"scale":1.2
+				},
+				{
+					"character":"QueenSara",
+					"position":{"x":990, "y":450},
+					"scale":1.2
+				},
+				{
+					"character":"Tuesday",
+					"position":{"x":950, "y":500},
+					"scale":1.2
+				},
+				{
+					"character":"Stan",
+					"position":{"x":820, "y":480},
+					"scale":1.2
+				},
+				{
+					"character":"LadyElaine",
+					"position":{"x":720, "y":480},
+					"scale":1.2
+				},
+				{
+					"character":"XOwl",
+					"position":{"x":1025, "y":540},
+					"scale":1.2
+				},
+				{
+					"character":"Henrietta",
+					"position":{"x":1127, "y":565},
+					"scale":1.2
+				},
+				{
+					"character":"DrPlat",
+					"position":{"x":815, "y":580},
+					"scale":1.0
+				},
+				{
+					"character":"Nana",
+					"position":{"x":740, "y":600},
+					"scale":1.0
+				},
+				{
+					"character":"Teddy",
+					"position":{"x":835, "y":615},
+					"scale":1.0
+				},
+				{
+					"character":"Leo",
+					"position":{"x":760, "y":625},
+					"scale":1.0
+				},
+				{
+					"character":"MomTiger",
+					"position":{"x":920, "y":640},
+					"scale":1.2
+				},
+				{
+					"character":"DadTiger",
+					"position":{"x":1025, "y":660},
+					"scale":1.2
+				},
+				{
+					"character":"Margaret",
+					"position":{"x":960, "y":680},
+					"scale":1.2
+				}		
+			]
+		}
+	],
+	"minigames":{
+		"decorateGames":["mgDecorateTree", "mgDecorateCake", "mgDecorateFlowers"],
+		"otherGames":["mgLeafRake", "mgBalloons", "mgTableClean", "mgSalad"]
+	},
+	"scenes":
+	[
+		{
+			"name":"introScene",
+			"sharedAssets":{
+				"id":"shared",
+				"assetManifest":[
+					{
+						"id":"introBG",
+						"src":"assets/images/environments/trolley_intro_bg.jpg",
+						"type":"image"
+					}
+				],
+				"audioManifest":[
+					{"id":"trolley_ding"}
+				]
+			},
+			"variableAssets":[
+			],
+			"data":
+			{
+				"bg":"introBG",
+				"position":{"x":750, "y":650},
+				"scale":0.75,
+				"idle":"idle",
+				"intro":"intro"
+			}
+		},
+		{
+			"name":"trolleyScene",
+			"sharedAssets":{
+				"id":"shared",
+				"assetManifest":[
+					{
+						"id":"trolley",
+						"src":"assets/sheets/trolley.json",
+						"type":"spritesheet"
+					},
+					{
+						"id":"groundplane_01",
+						"src":"assets/images/environments/trolley_road_01.png",
+						"type":"image"
+					},
+					{
+						"id":"groundplane_02",
+						"src":"assets/images/environments/trolley_road_02.png",
+						"type":"image"
+					},
+					{
+						"id":"skybox",
+						"src":"assets/images/environments/skybox.jpg",
+						"type":"image"
+					},
+					{
+						"id":"skybox_daniel",
+						"src":"assets/images/environments/skybox_Dan_Bungalow.jpg",
+						"type":"image"
+					},
+					{
+						"id":"farplaneSheet",
+						"src":"assets/sheets/farplane_elements.json",
+						"type":"spritesheet"
+					}
+				],
+				"audioManifest":[
+					{"id":"trolley_ding"},
+					{"id":"dad_neighbor_02"},
+					{"id":"elaina_neighbor_11"},
+					{"id":"katerina_neighbor_11"},
+					{"id":"wednesday_neighbor_11"},
+					{"id":"jodi_neighbor_11"},
+					{"id":"trolley_music_loop"}
+				]
+			},				
+			"variableAssets":[
+				{
+					"id":"house",
+					"assetManifest":[
+						{
+							"id":"housetile",
+							"src":"assets/images/environments/jodi_house.png",
+							"type":"image"
+						}
+					],
+					"audioManifest":[						
+					]
+				},
+				{
+					"id":"bungalow",
+					"assetManifest":[
+						{
+							"id":"housetile",
+							"src":"assets/images/environments/dan_bungalow.png",
+							"type":"image"
+						}
+					],
+					"audioManifest":[						
+					]
+				},
+				{
+					"id":"treehouse",
+					"assetManifest":[
+						{
+							"id":"housetile",
+							"src":"assets/images/environments/treehouse.png",
+							"type":"image"
+						}
+					],
+					"audioManifest":[						
+					]
+				},
+				{
+					"id":"museum",
+					"assetManifest":[
+						{
+							"id":"housetile",
+							"src":"assets/images/environments/museum.png",
+							"type":"image"
+						}
+					],
+					"audioManifest":[						
+					]
+				},
+				{
+					"id":"castle",
+					"assetManifest":[
+						{
+							"id":"housetile",
+							"src":"assets/images/environments/castle.png",
+							"type":"image"
+						}
+					],
+					"audioManifest":[						
+					]
+				},
+				{
+					"id":"partyScene",
+					"assetManifest":[
+						{
+							"id":"housetile",
+							"src":"assets/images/environments/final_destination.png",
+							"type":"image"
+						},
+						{
+							"id":"partyBack",
+							"src":"assets/images/environments/party_back.png",
+							"type":"image"
+						},
+						{
+							"id":"partyFront",
+							"src":"assets/images/environments/party_front.png",
+							"type":"image"
+						},
+						{
+							"id":"partySheet",
+							"src":"assets/sheets/party.json",
+							"type":"spritesheet"
+						}
+					],
+					"audioManifest":[
+						{"id":"dad_neighbor_01"},
+						{"id":"daniel_neighbor_14"},
+						{"id":"daniel_neighbor_15"},
+						{"id":"song_theme_intro"},
+						{"id":"song_theme_intro_loop"},
+						{"id":"camera_snap"}
+					]
+				}
+			],
+			"data":
+			{
+				"trolley":{
+					"back":"trolleyBack",
+					"front":"trolleyFront",
+					"kids":[
+						{"character":"Jodi", "id":"trolleyJodi"},
+						{"character":"Katerina", "id":"trolleyOKat"},
+						{"character":"Wednesday", "id":"trolleyWednesday"},
+						{"character":"Elaina", "id":"trolleyElaina"}
+					]
+				},
+				"environments":[
+					{
+						"id":"house", 
+						"skybox":"skybox_daniel",
+						"groundTiles":["groundplane_01", "groundplane_02"],
+						"houseTile":"housetile",
+						"farplaneObjectIDs": null,
+						"farplaneMinGap":200,
+						"farplaneMaxGap":700,
+						"farplaneRatio":0.8,
+						"farplaneStartY":460
+					},
+					{
+						"id":"bungalow", 
+						"skybox":"skybox_daniel",
+						"groundTiles":["groundplane_01", "groundplane_02"],
+						"houseTile":"housetile",
+						"farplaneObjectIDs": null,
+						"farplaneMinGap":200,
+						"farplaneMaxGap":700,
+						"farplaneRatio":0.8,
+						"farplaneStartY":460
+					},
+					{
+						"id":"museum", 
+						"skybox":"skybox",
+						"groundTiles":["groundplane_01", "groundplane_02"],
+						"houseTile":"housetile",
+						"farplaneObjectIDs":["hill01", "hill02", "hill03"],
+						"farplaneMinGap":200,
+						"farplaneMaxGap":700,
+						"farplaneRatio":0.8,
+						"farplaneStartY":460
+					},
+					{
+						"id":"treehouse", 
+						"skybox":"skybox",
+						"groundTiles":["groundplane_01", "groundplane_02"],
+						"houseTile":"housetile",
+						"farplaneObjectIDs":["hill01", "hill02", "hill03"],
+						"farplaneMinGap":200,
+						"farplaneMaxGap":700,
+						"farplaneRatio":0.8,
+						"farplaneStartY":460
+					},
+					{
+						"id":"castle", 
+						"skybox":"skybox",
+						"groundTiles":["groundplane_01", "groundplane_02"],
+						"houseTile":"housetile",
+						"farplaneObjectIDs":["hill01", "hill02", "hill03"],
+						"farplaneMinGap":200,
+						"farplaneMaxGap":700,
+						"farplaneRatio":0.8,
+						"farplaneStartY":460
+					},
+					{
+						"id":"partyScene", 
+						"skybox":"skybox",
+						"groundTiles":["groundplane_01", "groundplane_02"],
+						"houseTile":"housetile",
+						"farplaneObjectIDs":["hill01", "hill02", "hill03"],
+						"farplaneMinGap":200,
+						"farplaneMaxGap":700,
+						"farplaneRatio":0.8,
+						"farplaneStartY":460
+					}	
+				],
+				"partySetup":{
+					"back":{
+						"sheetID":"partyBack",
+						"position":{"x":0, "y":0}
+					},
+					"front":{
+						"sheetID":"partyFront",
+						"position":{"x":0, "y":0}
+					},
+					"defaultBalloons":{
+						"sheetID":"balloons",
+						"position":{"x":317, "y":562}
+					},
+					"defaultFlowers":{
+						"sheetID":"bouquet",
+						"position":{"x":650, "y":724 }
+					},
+					"defaultCake":{
+						"sheetID":"fruitboard",
+						"position":{"x":345, "y":605},
+						"defaultPosition": {"x":450, "y":520}
+					},
+					"defaultSalad":{
+						"sheetID":"fruitboard",
+						"position":{"x":730, "y":470},
+						"defaultPosition": {"x":600, "y":400}
+					},
+					"defaultTree":{
+						"sheetID":"tree_default",
+						"position":{"x":270, "y":450},
+						"defaultPosition":{"x":110, "y":80}
+					},
+					"balloons":[						
+						{"x":110, "y":180},										
+						{"x":540, "y":176},				
+						{"x":710, "y":188},
+						{"x":850, "y":210},
+						{"x":960, "y":175},
+						{"x":1180, "y":180}
+					],
+					"flashSFX":"camera_snap",
+					"dadLine":"dad_neighbor_01",
+					"danielLine":"daniel_neighbor_14",
+					"danielMoral":"daniel_neighbor_15",
+					"finaleSong":"song_theme_intro",
+					"finaleLoop":"song_theme_intro_loop",
+					"treeScale":0.6,
+					"balloonScale":0.47,
+					"cakeScale":0.44,
+					"saladScale":0.35,
+					"flowersScale":0.5
+				}				
+			}
+		},
+		{
+			"name":"mgDecorateTree",
+			"sharedAssets":{
+				"id":"shared",
+				"assetManifest":[
+					{
+						"id":"bg_decorateTree",
+						"src":"assets/images/environments/decorate_02_bg.jpg",
+						"type":"image"
+					},
+					{
+						"id":"sheet_decorateTree",
+						"src":"assets/sheets/minigames/mg_tree_decorate.json",
+						"type":"spritesheet"
+					}
+				],
+				"audioManifest":[
+					{"id":"item_pickup"},
+					{"id":"item_place_tree"},
+					{"id":"item_drop"}
+				]
+			},
+			"data":{
+				"characterPosition":{"x":1070, "y":730},
+				"characterScale":0.625,
+				"bg":"bg_decorateTree",
+				"pickupSFX":"item_pickup",
+				"placeSFX":"item_place_tree",
+				"dropSFX":"item_drop",
+				"decorateObject":[
+					{
+						"origin":{"x":680, "y":620},
+						"back":[
+							{
+								"sheetID":"trunk",
+								"position":{"x":-50, "y":-140}
+							},
+							{
+								"sheetID":"pom_top",
+								"position":{"x":-300, "y":-604}
+							},
+							{
+								"sheetID":"trunk_base",
+								"position":{"x":-148, "y":0}
+							}
+						],
+						"front":null				
+					},
+					{
+						"origin":{"x":660, "y":620},
+						"back":[
+							{
+								"sheetID":"trunk",
+								"position":{"x":-50, "y":-140}
+							},
+							{
+								"sheetID":"pine_top",
+								"position":{"x":-230, "y":-604}
+							},
+							{
+								"sheetID":"trunk_base",
+								"position":{"x":-148, "y":0}
+							}
+						],
+						"front":null				
+					}
+				],	
+				"spawnPoints":[
+					{"x":160, "y":640},
+					{"x":260, "y":640},
+					{"x":360, "y":640}
+				],
+				"uiPosition":{"x":90, "y":681},
+				"uiID":"basket",
+				"decorationIDs":{
+					"shared":["deco00", "deco05", "deco08","deco09","deco10",
+					"deco11","deco12", "deco13", "deco15", "deco16", "deco17", "deco18", 
+					"deco19", "deco20", "deco21", "deco22", "deco23", "deco24","deco27", 
+					"deco31", "deco32", "deco33", "deco34", "deco35"],
+					"Daniel":["deco01","deco26","deco30"],
+					"Elaina":["deco06","deco07"],
+					"Katerina":["deco25", "deco02", "deco29"],
+					"Wednesday":["deco03","deco04", "Deco38","Deco39"],
+					"Jodi":["Deco37","Deco36"]
+				}
+			}
+		},
+		{
+			"name":"mgDecorateCake",
+			"sharedAssets":{
+				"id":"shared",
+				"assetManifest":[
+					{
+						"id":"bg_decorateCake",
+						"src":"assets/images/environments/decorate_03_bg.jpg",
+						"type":"image"
+					},
+					{
+						"id":"sheet_decorateCake",
+						"src":"assets/sheets/minigames/mg_cakeDecorate.json",
+						"type":"spritesheet"
+					}
+				],
+				"audioManifest":[
+					{"id":"item_pickup"},
+					{"id":"item_place_cake"},
+					{"id":"item_drop"}
+				]
+			},
+			"data":{
+				"characterPosition":{"x":1000, "y":1000},
+				"characterScale":1.125,
+				"bg":"bg_decorateCake",
+				"pickupSFX":"item_pickup",
+				"placeSFX":"item_place_cake",
+				"dropSFX":"item_drop",
+				"decorateObject":[
+					{
+						"origin":{"x":120, "y":500},
+						"back":[
+							{
+								"sheetID":"cake01_Bottom",
+								"position":{"x":0, "y":-150}
+							},
+							{
+								"sheetID":"cake01_Middle",
+								"position":{"x":80, "y":-230}
+							},
+							{
+								"sheetID":"cake01_Top",
+								"position":{"x":120, "y":-350}
+							}
+						],
+						"front":null				
+					}
+				],	
+				"spawnPoints":[
+					{"x":130, "y":650},
+					{"x":310, "y":650},
+					{"x":490, "y":650}
+				],
+				"uiPosition":{"x":350, "y":1000},
+				"uiID":"basket01",
+				"decorationIDs":{
+					"shared":["lollipop","pinwheel01","pinwheel02","pinwheel03","starTopper1","starTopper2",
+					"sprinkles01", "sprinkles02", "minichips1", "minichips2","redhots01", "redhots02",
+					"candle01", "candle02","candle03",
+					"sunflower", "strawberry", "icingRosette01","icingRosette02", "icingRosette03","icingRosette04"],
+					"Daniel":["danTopper","danTopper2"],
+					"Elaina":["elainaTopper"],
+					"Katerina":["katTopper","oTopper"],
+					"Wednesday":["candle04","princewedTopper", "HorseCandle"],
+					"Jodi":["CactusCandle"]
+				}
+			}
+		},
+		{
+			"name":"mgDecorateFlowers",
+			"sharedAssets":{
+				"id":"shared",
+				"assetManifest":[
+					{
+						"id":"bg_decorateFlowers",
+						"src":"assets/images/environments/decorate_03_bg.jpg",
+						"type":"image"
+					},
+					{
+						"id":"sheet_decorateFlowers",
+						"src":"assets/sheets/minigames/flowerDecorate.json",
+						"type":"spritesheet"
+					}
+				],
+				"audioManifest":[
+					{"id":"item_pickup"},
+					{"id":"item_place_tree"},
+					{"id":"item_drop"}
+				]
+			},
+			"data":{
+				"characterPosition":{"x":1000, "y":1000},
+				"characterScale":1.125,
+				"bg":"bg_decorateFlowers",
+				"pickupSFX":"item_pickup",
+				"placeSFX":"item_place_tree",
+				"dropSFX":"item_drop",
+				"decorateObject":[
+					{
+						"origin":{"x":350, "y":500},
+						"back":[
+							{
+								"sheetID":"mgFlowersplantBase03",
+								"position":{"x":-200, "y":-175}
+							}
+						],
+						"front":[
+							{
+								"sheetID":"mgFlowersplantBase03_front",
+								"position":{"x":-200, "y":-104}
+							}
+						]				
+					}
+				],	
+				"spawnPoints":[
+					{"x":120, "y":670},
+					{"x":295, "y":670},
+					{"x":470, "y":670}
+				],
+				"uiPosition":{"x":150, "y":970},
+				"uiID":null,
+				"decorationIDs":{
+					"shared":["mgFlowersSunflower02", 
+					"mgFlowersLily01","mgFlowersLily02","mgFlowersLily03", "mgFlowersLily04" , "mgFlowersLily05", "mgFlowersLily06", 
+					"mgFlowersRose01","mgFlowersRose02", "mgFlowersRose03", 
+					"mgFlowersFreesia01","mgFlowersFreesia02", "mgFlowersFreesia03", "mgFlowersFreesia04", "mgFlowersFreesia05", 
+					"mgFlowersFreesia06", "mgFlowersFreesia07", "mgFlowersFreesia08","mgFlowersFreesia09", 
+					"mgFlowersDaisy01","mgFlowersDaisy02", "mgFlowersDaisy03", "mgFlowersDaisy04", "mgFlowersDaisybunch",
+					"mgFlowersplantBase01","mgFlowersplantBase02","mgFlowersTigerLilly01","mgFlowersTigerLilly02","mgFlowersGreenery"],
+					"Daniel":[],
+					"Elaina":[],
+					"Katerina":[],
+					"Wednesday":[],
+					"Jodi":[]
+				}
+			}
+		},
+		{
+			"name":"mgBalloons",
+			"sharedAssets":{
+				"id":"shared",
+				"assetManifest":[
+					{
+						"id":"bg_balloonGame",
+						"src":"assets/images/environments/decorate_01_bg.jpg",
+						"type":"image"
+					},
+					{
+						"id":"sheet_balloonGame",
+						"src":"assets/sheets/minigames/mg_balloons.json",
+						"type":"spritesheet"
+					}
+				],
+				"audioManifest":[
+					{"id":"balloon_fill"}
+				]
+			},
+			"data":{
+				"sfx":"balloon_fill",
+				"characterPosition":{"x":1100, "y":770},
+				"characterScale":0.75,
+				"bg":"bg_balloonGame",
+				"ui":"table",
+				"uiPos":{"x":60, "y":550},
+				"balloonSpawnArea":{"x":180, "y":580, "width":600, "height":67},
+				"totalBalloons":6,
+				"balloons":{
+					"shared":[
+						{
+							"fresh":"balloon00_fresh",
+							"blownup":"balloon00_bu",
+							"offset":{"x":75, "y":180},
+							"scaleFactor":{"x":0.32, "y":0.32},
+							"stringLength":{"min":200, "max":300}
+						},
+						{
+							"fresh":"balloon01_fresh",
+							"blownup":"balloon01_bu",
+							"offset":{"x":75, "y":180},
+							"scaleFactor":{"x":0.32, "y":0.32},
+							"stringLength":{"min":200, "max":300}
+						},
+						{
+							"fresh":"balloon02_fresh",
+							"blownup":"balloon02_bu",
+							"offset":{"x":75, "y":180},
+							"scaleFactor":{"x":0.32, "y":0.32},
+							"stringLength":{"min":200, "max":300}
+						},
+						{
+							"fresh":"balloon03_fresh",
+							"blownup":"balloon03_bu",
+							"offset":{"x":75, "y":180},
+							"scaleFactor":{"x":0.32, "y":0.32},
+							"stringLength":{"min":200, "max":300}
+						},
+						{
+							"fresh":"balloon04_fresh",
+							"blownup":"balloon04_bu",
+							"offset":{"x":75, "y":180},
+							"scaleFactor":{"x":0.32, "y":0.32},
+							"stringLength":{"min":200, "max":300}
+						},
+						{
+							"fresh":"balloon05_fresh",
+							"blownup":"balloon05_bu",
+							"offset":{"x":30, "y":305},
+							"scaleFactor":{"x":0.32, "y":0.32},
+							"stringLength":{"min":180, "max":225}
+						},
+						{
+							"fresh":"balloon06_fresh",
+							"blownup":"balloon06_bu",
+							"offset":{"x":29, "y":301},
+							"scaleFactor":{"x":0.32, "y":0.32},
+							"stringLength":{"min":180, "max":225}
+						},
+						{
+							"fresh":"balloon10_fresh",
+							"blownup":"balloon10_bu",
+							"offset":{"x":30, "y":313},
+							"scaleFactor":{"x":0.32, "y":0.32},
+							"stringLength":{"min":180, "max":225}
+						},
+						{
+							"fresh":"balloon11_fresh",
+							"blownup":"balloon11_bu",
+							"offset":{"x":28, "y":304},
+							"scaleFactor":{"x":0.32, "y":0.32},
+							"stringLength":{"min":200, "max":225}
+						},
+						{
+							"fresh":"balloon12_fresh",
+							"blownup":"balloon12_bu",
+							"offset":{"x":104, "y":181},
+							"scaleFactor":{"x":0.32, "y":0.32},
+							"stringLength":{"min":180, "max":250}
+						}
+					],
+					"Daniel":[
+						{
+							"fresh":"balloon15_fresh",
+							"blownup":"balloon15_bu",
+							"offset":{"x":110, "y":208},
+							"scaleFactor":{"x":0.32, "y":0.32},
+							"stringLength":{"min":150, "max":260}
+						}
+					],
+					"Elaina":[
+						{
+							"fresh":"balloon13_fresh",
+							"blownup":"balloon13_bu",
+							"offset":{"x":98, "y":203},
+							"scaleFactor":{"x":0.32, "y":0.32},
+							"stringLength":{"min":160, "max":260}
+						}
+					],
+					"Katerina":[
+						{
+							"fresh":"balloon07_fresh",
+							"blownup":"balloon07_bu",
+							"offset":{"x":110, "y":225},
+							"scaleFactor":{"x":0.32, "y":0.32},
+							"stringLength":{"min":150, "max":220}
+						},
+						{
+							"fresh":"balloon08_fresh",
+							"blownup":"balloon08_bu",
+							"offset":{"x":112, "y":191},
+							"scaleFactor":{"x":0.32, "y":0.32},
+							"stringLength":{"min":150, "max":220}
+						},
+						{
+							"fresh":"balloon14_fresh",
+							"blownup":"balloon14_bu",
+							"offset":{"x":104, "y":211},
+							"scaleFactor":{"x":0.32, "y":0.32},
+							"stringLength":{"min":180, "max":250}
+						}
+					],
+					"Wednesday":[
+						{
+							"fresh":"balloon09_fresh",
+							"blownup":"balloon09_bu",
+							"offset":{"x":114, "y":162},
+							"scaleFactor":{"x":0.32, "y":0.32},
+							"stringLength":{"min":160, "max":280}
+						},
+						{
+							"fresh":"balloon16_fresh",
+							"blownup":"balloon16_bu",
+							"offset":{"x":104, "y":211},
+							"scaleFactor":{"x":0.32, "y":0.32},
+							"stringLength":{"min":180, "max":250}
+						}
+					],
+					"Jodi":[
+						{
+							"fresh":"balloon17_fresh",
+							"blownup":"balloon17_bu",
+							"offset":{"x":125, "y":191},
+							"scaleFactor":{"x":0.32, "y":0.32},
+							"stringLength":{"min":160, "max":280}
+						},
+						{
+							"fresh":"balloon18_fresh",
+							"blownup":"balloon18_bu",
+							"offset":{"x":75, "y":180},
+							"scaleFactor":{"x":0.32, "y":0.32},
+							"stringLength":{"min":200, "max":300}
+						}
+					]					
+				}	
+			}
+		},
+		{
+			"name":"mgLeafRake",
+			"sharedAssets":{
+				"id":"shared",
+				"assetManifest":[
+					{
+						"id":"bg_leafRake",
+						"src":"assets/images/environments/decorate_01_bg.jpg",
+						"type":"image"
+					},
+					{
+						"id":"sheet_leafRake",
+						"src":"assets/sheets/minigames/mg_leafRake.json",
+						"type":"spritesheet"
+					}
+				],
+				"audioManifest":[
+					{"id":"clean_rake01"},
+					{"id":"clean_rake02"},
+					{"id":"clean_rake03"}
+				]
+			},
+			"data":{
+				"interactSFX":["clean_rake01", "clean_rake02", "clean_rake03"],
+				"characterPosition":{"x":1100, "y":750},
+				"characterScale":0.625,
+				"bg":"bg_leafRake",
+				"spots":{
+					"group1":[
+						{
+							"position":{"x":120, "y":320},
+							"center":{"x":118, "y":53},
+							"states":["leafPile01", "leafPile02", "leafPile03", "leafPile04"],
+							"interactAnimation":"rake",
+							"animationOrigin":{"x":103, "y":258}
+							
+						},
+						{
+							"position":{"x":210, "y":423},
+							"center":{"x":118, "y":53},
+							"states":["leafPile01", "leafPile02", "leafPile03", "leafPile04"],
+							"interactAnimation":"rake",
+							"animationOrigin":{"x":103, "y":258}
+						},
+						{
+							"position":{"x":270, "y":750},
+							"center":{"x":118, "y":53},
+							"states":["leafPile01", "leafPile02", "leafPile03", "leafPile04"],
+							"interactAnimation":"rake",
+							"animationOrigin":{"x":103, "y":258}
+						}
+					],
+					"group2":[
+						{
+							"position":{"x":310, "y":524},
+							"center":{"x":118, "y":53},
+							"states":["leafPile01", "leafPile02", "leafPile03", "leafPile04"],
+							"interactAnimation":"rake",
+							"animationOrigin":{"x":103, "y":258}
+							
+						},
+						{
+							"position":{"x":360, "y":450},
+							"center":{"x":118, "y":53},
+							"states":["leafPile01", "leafPile02", "leafPile03", "leafPile04"],
+							"interactAnimation":"rake",
+							"animationOrigin":{"x":103, "y":258}
+						},
+						{
+							"position":{"x":450, "y":645},
+							"center":{"x":118, "y":53},
+							"states":["leafPile01", "leafPile02", "leafPile03", "leafPile04"],
+							"interactAnimation":"rake",
+							"animationOrigin":{"x":103, "y":258}
+						}
+					],
+					"group3":[
+						{
+							"position":{"x":495, "y":190},
+							"center":{"x":118, "y":53},
+							"states":["leafPile01", "leafPile02", "leafPile03", "leafPile04"],
+							"interactAnimation":"rake",
+							"animationOrigin":{"x":103, "y":258}
+							
+						},
+						{
+							"position":{"x":550, "y":360},
+							"center":{"x":118, "y":53},
+							"states":["leafPile01", "leafPile02", "leafPile03", "leafPile04"],
+							"interactAnimation":"rake",
+							"animationOrigin":{"x":103, "y":258}
+						},
+						{
+							"position":{"x":630, "y":670},
+							"center":{"x":118, "y":53},
+							"states":["leafPile01", "leafPile02", "leafPile03", "leafPile04"],
+							"interactAnimation":"rake",
+							"animationOrigin":{"x":103, "y":258}
+						}
+					],
+					"group4":[
+						{
+							"position":{"x":670, "y":660},
+							"center":{"x":118, "y":53},
+							"states":["leafPile01", "leafPile02", "leafPile03", "leafPile04"],
+							"interactAnimation":"rake",
+							"animationOrigin":{"x":103, "y":258}
+							
+						},
+						{
+							"position":{"x":750, "y":480},
+							"center":{"x":118, "y":53},
+							"states":["leafPile01", "leafPile02", "leafPile03", "leafPile04"],
+							"interactAnimation":"rake",
+							"animationOrigin":{"x":103, "y":258}
+						},
+						{
+							"position":{"x":850, "y":200},
+							"center":{"x":118, "y":53},
+							"states":["leafPile01", "leafPile02", "leafPile03", "leafPile04"],
+							"interactAnimation":"rake",
+							"animationOrigin":{"x":103, "y":258}
+						}
+					]
+				}
+			}
+		},
+		{
+			"name":"mgTableClean",
+			"sharedAssets":{
+				"id":"shared",
+				"assetManifest":[	
+					{
+						"id":"bg_tableClean",
+						"src":"assets/images/environments/decorate_01_bg.jpg",
+						"type":"image"
+					},
+					{
+						"id":"table",
+						"src":"assets/images/environments/table.jpg",
+						"type":"image"
+					},
+					{
+						"id":"dirt",
+						"src":"assets/images/environments/dirt.png",
+						"type":"image"
+					},
+					{
+						"id":"sponge",
+						"src":"assets/images/environments/sponge.png",
+						"type":"image"
+					}
+				],
+				"audioManifest":[
+				]
+			},
+			"data":{
+				"characterPosition":{"x":950, "y":670},
+				"characterScale":1.1625,
+				"bg":"bg_tableClean",
+				"table":"table",
+				"dirtCover":"dirt",
+				"sponge":"sponge",
+				"position":{"x":0, "y":442},
+				"activationGrid":{"x":0, "y":0, "width":10, "height":5},
+				"completetionPercentage":0.93,
+				"brushSize":70,
+				"sfx":["clean_wipe01","clean_wipe02","clean_wipe03","clean_wipe04"]
+			}
+		},
+		{
+			"name":"mgSalad",
+			"sharedAssets":{
+				"id":"shared",
+				"assetManifest":[	
+					{
+						"id":"bg_tableClean",
+						"src":"assets/images/environments/decorate_01_bg.jpg",
+						"type":"image"
+					},
+					{
+						"id":"table",
+						"src":"assets/images/environments/table.jpg",
+						"type":"image"
+					},
+					{
+						"id":"sheet_saladGame",
+						"src":"assets/sheets/minigames/mg_salad.json",
+						"type":"spritesheet"
+					}
+				],
+				"audioManifest":[
+					{"id":"ingredient_pickup"},
+					{"id":"ingredient_pour"},
+					{"id":"dressing_pour"}
+				]
+			},
+			"data":{
+				"tapThreshold":200,
+				"wait":1200,
+				"characterPosition":{"x":950, "y":670},
+				"characterScale":1.1625,
+				"bg":"bg_tableClean",
+				"table":"table",				
+				"tablePosition":{"x":0, "y":442},
+				"bowlBack":"BowlBack",
+				"bowlFront":"Bowl Front",
+				"bowlPosition":{"x":400, "y":360},
+				"ingredientBowlId":"Ingredientbowl",
+				"bowls":[
+					{"position":{"x":175, "y":675}},
+					{"position":{"x":330, "y":770}},
+					{"position":{"x":950, "y":760}},
+					{"position":{"x":1150, "y":695}},
+					{"position":{"x":960, "y":620}}
+									],
+				"dressings":[
+					{"position":{"x":128, "y":528}, "pourSFX":"dressing_squirt", "ingredientData":{"name":"ranch", "sheetID":"RanchDressing", "bowlID":"DressingBottle", "type":"dressing", "anims":{"idle":"dressing_01_idle", "tilt":"dressing_01_tilt", "pour":"dressing_01_pour"}}},
+					{"position":{"x":349, "y":518}, "pourSFX":"dressing_pour", "ingredientData":{"name":"italian", "sheetID":"ItalianDressing", "bowlID":"DressingPitcher", "type":"dressing", "anims":{"idle":"dressing_02_idle", "tilt":"dressing_02_tilt", "pour":"dressing_02_pour"}}}
+				],
+				"ingredients":[
+					{"name":"carrots", "sheetID":"Carrot", "bowlID":"Carrot_bowl", "type":"veg", "anims":{"idle":"ingredient05_idle", "tilt":"ingredient05_tilt", "pour":"ingredient05_pour"}},						
+					{"name":"greens", "sheetID":"MixedGreens", "bowlID":"MixedGreens_bowl", "type":"veg", "anims":{"idle":"ingredient01_idle", "tilt":"ingredient01_tilt", "pour":"ingredient01_pour"}},						
+					{"name":"cucumber", "sheetID":"Cucumber", "bowlID":"Cucumber_bowl", "type":"veg", "anims":{"idle":"ingredient06_idle", "tilt":"ingredient06_tilt", "pour":"ingredient06_pour"}},						
+					{"name":"pepper", "sheetID":"BellPepper", "bowlID":"BellPepper_bowl", "type":"veg", "anims":{"idle":"ingredient03_idle", "tilt":"ingredient03_tilt", "pour":"ingredient03_pour"}},						
+					{"name":"tomato", "sheetID":"Tomato", "bowlID":"tomato_bowl", "type":"veg", "anims":{"idle":"ingredient07_idle", "tilt":"ingredient07_tilt", "pour":"ingredient07_pour"}},						
+					{"name":"broccoli", "sheetID":"broccoli", "bowlID":"broccoli_bowl", "type":"veg", "anims":{"idle":"ingredient04_idle", "tilt":"ingredient04_tilt", "pour":"ingredient04_pour"}},						
+					{"name":"watermelon", "sheetID":"watermelon", "bowlID":"watermelon_bowl", "type":"fruit", "anims":{"idle":"ingredient08_idle", "tilt":"ingredient08_tilt", "pour":"ingredient08_pour"}},						
+					{"name":"orange", "sheetID":"Orange", "bowlID":"Orange_bowl", "type":"fruit", "anims":{"idle":"ingredient10_idle", "tilt":"ingredient10_tilt", "pour":"ingredient10_pour"}},						
+					{"name":"blueberry", "sheetID":"Blueberry", "bowlID":"Blueberry_bowl", "type":"fruit", "anims":{"idle":"ingredient12_idle", "tilt":"ingredient12_tilt", "pour":"ingredient12_pour"}},						
+					{"name":"grape", "sheetID":"grape", "bowlID":"grape_bowl", "type":"fruit", "anims":{"idle":"ingredient11_idle", "tilt":"ingredient11_tilt", "pour":"ingredient11_pour"}},						
+					{"name":"cabbage", "sheetID":"RedCabbage", "bowlID":"RedCabbage_bowl", "type":"veg", "anims":{"idle":"ingredient02_idle", "tilt":"ingredient02_tilt", "pour":"ingredient02_pour"}},						
+					{"name":"strawberry", "sheetID":"Strawberry", "bowlID":"Strawberry_bowl", "type":"veg", "anims":{"idle":"ingredient09_idle", "tilt":"ingredient09_tilt", "pour":"ingredient09_pour"}}
+				],
+				"bowlDBData":{
+					"name":"bowl",
+					"armatureName":"ingredientBowl",
+					"baseURL":"",
+					"skeleton":{
+						"id":"ingredientBowl_skeleton",
+						"src":"assets/dragonBones/ingredientBowl_anim/ingredient_skeleton.json",
+						"type":"json"
+						},
+					"texture":{
+						"id":"ingredientBowl_texture",
+						"src":"assets/dragonBones/ingredientBowl_anim/ingredient_texture.png",
+						"type":"image"
+						},
+					"textureJSON":{
+						"id":"ingredientBowl_texture_def",
+						"src":"assets/dragonBones/ingredientBowl_anim/ingredient_texture.json",
+						"type":"json"
+						}
+				}
+			}
+		}		
+	]	
+}
