@@ -1,0 +1,53 @@
+{
+    "world": {
+        "gravity": 200
+    },
+    "materials": [
+        {
+            "id": "ball",
+            "elasticity": 0.2,
+            "dynamicFriction": 0.57,
+            "staticFriction": 0.74,
+            "density": 7.8,
+            "rollingFriction": 0.001,
+            "initialVelocityX": 200,
+            "initialVelocityY": 200
+        },
+        {
+            "id": "border",
+            "elasticity": 0.2,
+            "dynamicFriction": 0.57,
+            "staticFriction": 0.74,
+            "density": 7.8,
+            "rollingFriction": 0.001
+        },
+        {
+            "id": "track",
+            "elasticity": 0.2,
+            "dynamicFriction": 0.57,
+            "staticFriction": 0.74,
+            "density": 7.8,
+            "rollingFriction": 0.001
+        },
+        {
+            "id": "spring",
+            "elasticity": 0.8,
+            "dynamicFriction": 1,
+            "staticFriction": 1.4,
+            "density": 1.5,
+            "rollingFriction": 0.01,
+            "surfaceVelocityX": 250,
+            "surfaceVelocityY": 500
+        },
+        {
+            "id": "conveyor",
+            "elasticity": 0,
+            "dynamicFriction": 1,
+            "staticFriction": 1,
+            "density": 7.8,
+            "rollingFriction": 0.001,
+            "surfaceVelocityX": 400,
+            "surfaceVelocityY": 400
+        }
+    ]
+}

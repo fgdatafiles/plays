@@ -1,0 +1,144 @@
+<config>
+
+	<!-- CHUNKS -->
+    <!-- Define bundles of folders and other chunks to load -->
+
+    <chunks>
+    	<!-- EX
+    	<chunk id="chunk">
+			<pack>load_part_1</pack> - loads a folder in assets named "load_part_1"
+			<pack>load_part_2</pack> - loads a folder in assets named "load_part_2"
+			<chunk>other_chunk</chunk> - loads another chunk named "other_chunk" which will have its own list of folders in assets
+		</chunk>
+    	-->
+
+    	<chunk id="preload">
+    		<pack>preload</pack>
+    	</chunk>
+
+    	<chunk id="initial_sd">
+    		<pack>initial_universal</pack>
+            <pack>character_lana</pack>
+            <pack>character_leni</pack>
+            <pack>character_lily</pack>
+            <pack>character_lincoln</pack>
+            <pack>character_lisa</pack>
+            <pack>character_lola</pack>
+            <pack>character_lori</pack>
+            <pack>character_luan</pack>
+            <pack>character_lucy</pack>
+            <pack>character_luna</pack>
+            <pack>character_lynn</pack>
+    	</chunk>
+
+    	<chunk id="initial_hd">
+    		<pack>initial_universal</pack>
+            <pack>character_lana</pack>
+            <pack>character_leni</pack>
+            <pack>character_lily</pack>
+            <pack>character_lincoln</pack>
+            <pack>character_lisa</pack>
+            <pack>character_lola</pack>
+            <pack>character_lori</pack>
+            <pack>character_luan</pack>
+            <pack>character_lucy</pack>
+            <pack>character_luna</pack>
+            <pack>character_lynn</pack>
+    	</chunk>
+
+    	<chunk id="initial_audio_optional">
+    		<chunk>initial_audio_required</chunk>
+    		<!-- Create this folder and uncomment if you need optional initial audio. -- <pack>initial_audio_optional</pack> -->
+    	</chunk>
+
+    	<chunk id="initial_audio_required">
+    		<pack>initial_audio_required</pack>
+    	</chunk>
+
+		<chunk id="venue_1">
+    		<pack>venue_1</pack>
+    	</chunk>
+
+		<chunk id="venue_2">
+    		<pack>venue_2</pack>
+    	</chunk>
+
+		<chunk id="venue_3">
+    		<pack>venue_3</pack>
+    	</chunk>
+
+		<chunk id="venue_4">
+    		<pack>venue_4</pack>
+    	</chunk>
+
+		<chunk id="venue_5">
+    		<pack>venue_5</pack>
+    	</chunk>
+
+        <chunk id="character_lana">
+    		<pack>character_lana</pack>
+    	</chunk>
+
+        <chunk id="character_leni">
+    		<pack>character_leni</pack>
+    	</chunk>
+
+        <chunk id="character_lily">
+    		<pack>character_lily</pack>
+    	</chunk>
+
+        <chunk id="character_lincoln">
+    		<pack>character_lincoln</pack>
+    	</chunk>
+
+        <chunk id="character_lisa">
+    		<pack>character_lisa</pack>
+    	</chunk>
+
+        <chunk id="character_lola">
+    		<pack>character_lola</pack>
+    	</chunk>
+
+        <chunk id="character_lori">
+    		<pack>character_lori</pack>
+    	</chunk>
+
+        <chunk id="character_luan">
+    		<pack>character_luan</pack>
+    	</chunk>
+
+        <chunk id="character_lucy">
+    		<pack>character_lucy</pack>
+    	</chunk>
+
+        <chunk id="character_luna">
+    		<pack>character_luna</pack>
+    	</chunk>
+
+        <chunk id="character_lynn">
+    		<pack>character_lynn</pack>
+    	</chunk>
+
+    	<chunk id="gameplay_sd">
+    		<pack>gameplay_universal</pack>
+    		<!-- Create this folder and uncomment if you need sd gameplay assets. -- <pack>gameplay_sd</pack> -->
+    	</chunk>
+
+    	<chunk id="gameplay_hd">
+    		<pack>gameplay_universal</pack>
+    		<!-- Create this folder and uncomment if you need hd gameplay assets. -- <pack>gameplay_hd</pack> -->
+    	</chunk>
+
+    	<chunk id="gameplay_audio_optional">
+    		<chunk>gameplay_audio_required</chunk>
+    		<!-- Create this folder and uncomment if you need optional gameplay audio. -- <pack>gameplay_audio_optional</pack> -->
+    	</chunk>
+
+    	<chunk id="gameplay_audio_required">
+    		<pack>gameplay_audio_required</pack>
+    	</chunk>
+
+        <!-- END OF CHUNKS -->
+    </chunks>
+
+</config>

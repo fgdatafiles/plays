@@ -1,0 +1,1498 @@
+{
+    "settings": {
+        "loader": {
+            "x": 0,
+            "y": 150
+        },
+        "loader_fill_color": "#F6882B",
+        "loader_frame_color": "#000000",
+        "loader_bg_color": "#FFFFFF",
+        "meter_fill_color_left": "#6E8F82",
+        "meter_back_color_left": "#000000",
+        "meter_bg_color_left": "",
+        "meter_frame_color_left": "#595959",
+        "meter_fill_color_right": "#BD4026",
+        "meter_back_color_right": "#000000",
+        "meter_bg_color_right": "",
+        "meter_frame_color_right": "#595959",
+        "animation_transition": "auto",
+        "animation_transition_in": "slide",
+        "animation_transition_out": "slide",
+        "animation_transition_time": 4,
+        "default_text": {
+            "color": "#000000",
+            "bgPadding": 8
+        },
+        "default_text_header": {
+            "color": "",
+            "bgPadding": 8
+        },
+        "default_text_copy": {
+            "color": "",
+            "bgPadding": 8
+        },
+        "share": {
+            "bgColor": "#55D8F6",
+            "textColor": "#333333"
+        },
+        "promos": {
+            "enabled": false,
+            "src": ""
+        },
+        "text": [
+            {
+                "id": "loading",
+                "color": "#FFFFFF",
+                "bgImage": {
+                    "enabled": false
+                }
+            },
+            {
+                "id": "promoscreen_header",
+                "color": "#FFFFFF",
+                "bgImage": {
+                    "enabled": false
+                }
+            },
+            {
+                "id": "play_click",
+                "color": "#FFFFFF",
+                "bgImage": {
+                    "enabled": false
+                },
+                "textAlign": "center"
+            },
+            {
+                "id": "play_tap",
+                "color": "#FFFFFF",
+                "bgImage": {
+                    "enabled": false
+                }
+            },
+            {
+                "id": "replay_click",
+                "color": "#000000",
+                "bgImage": {
+                    "enabled": false
+                }
+            },
+            {
+                "id": "replay_tap",
+                "color": "#000000",
+                "bgImage": {
+                    "enabled": false
+                }
+            },
+            {
+                "id": "or",
+                "color": "#000000"
+            },
+            {
+                "id": "page_number",
+                "color": "#000000",
+                "bgImage": {
+                    "enabled": false
+                }
+            },
+            {
+                "id": "stats_number",
+                "color": "#FFFFFF",
+                "bgImage": {
+                    "enabled": false
+                }
+            },
+            {
+                "id": "share_header",
+                "color": "#000000",
+                "bgImage": {
+                    "enabled": false
+                }
+            },
+            {
+                "id": "share_copy",
+                "color": "#000000",
+                "bgImage": {
+                    "enabled": false
+                }
+            },
+            {
+                "id": "continue_btn",
+                "color": "#000000"
+            },
+            {
+                "id": "share_btn",
+                "color": "#000000",
+                "bgImage": {
+                    "enabled": false
+                }
+            },
+            {
+                "id": "replay_btn",
+                "color": "#000000",
+                "bgImage": {
+                    "enabled": false
+                }
+            },
+            {
+                "id": "replay_result_btn",
+                "color": "#000000",
+                "bgImage": {
+                    "enabled": false
+                }
+            },
+            {
+                "id": "copy_btn",
+                "color": "#000000",
+                "bgImage": {
+                    "enabled": false
+                }
+            },
+            {
+                "id": "next_btn",
+                "color": "#000000",
+                "bgImage": {
+                    "enabled": false
+                }
+            },
+            {
+                "id": "play_btn",
+                "color": "#FFFFFF",
+                "bgImage": {
+                    "enabled": false
+                }
+            },
+            {
+                "id": "advertisement",
+                "color": "#000000",
+                "bgColor": "#FFFFFF",
+                "bgAlpha": 1,
+                "textAlign": "center",
+                "bgPadding": 8,
+                "bgResize": "none",
+                "bgImage": {
+                    "enabled": false
+                }
+            },
+            {
+                "id": "promo_title",
+                "color": "#FFFFFF",
+                "bgImage": {
+                    "enabled": false
+                }
+            },
+            {
+                "id": "endscreen_header",
+                "bgImage": {
+                    "enabled": false
+                },
+                "color": "#000000"
+            }
+        ],
+        "results_enabled": true,
+        "ad_bar_enabled": false,
+        "meter_type": "line",
+        "funnel_alias": "lh_naughty_or_nice",
+        "spacing_image": 10,
+        "spacing": 10,
+        "scale_up": true,
+        "analytics_enabled": false,
+        "btn_hud_alpha": 1,
+        "antipiracy_url": "http:\/\/www.nick.com",
+        "game_id": 124
+    },
+    "preload": {
+        "images": {
+            "path": "images\/",
+            "array": [
+                {
+                    "id": "splash",
+                    "name": "splash",
+                    "type": "jpg",
+                    "align": "center",
+                    "resize": "fill_to",
+                    "enabled": true
+                },
+                {
+                    "id": "splash_logo",
+                    "name": "splash_logo",
+                    "type": "png",
+                    "x": 0,
+                    "y": -50,
+                    "align": "center",
+                    "location": "splash",
+                    "enabled": false
+                },
+                {
+                    "id": "button_play",
+                    "name": "button_play",
+                    "type": "png",
+                    "align": "center",
+                    "location": "splash",
+                    "enabled": false
+                },
+                {
+                    "id": "button_sound_on",
+                    "name": "",
+                    "type": "png",
+                    "enabled": false
+                },
+                {
+                    "id": "button_sound_off",
+                    "name": "",
+                    "type": "png",
+                    "enabled": false
+                },
+                {
+                    "id": "loader_bg",
+                    "name": "ui_loader_bg",
+                    "type": "png"
+                },
+                {
+                    "id": "loader_frame",
+                    "name": "ui_loader_top",
+                    "type": "png"
+                },
+                {
+                    "id": "banner_logo",
+                    "enabled": false
+                }
+            ]
+        },
+        "audio": {
+            "path": "audio\/",
+            "array": [
+                {
+                    "id": "music_splash",
+                    "name": "music_splash",
+                    "type": [
+                        "mp3",
+                        "ogg"
+                    ],
+                    "enabled": false
+                }
+            ]
+        }
+    },
+    "initial": {
+        "images": {
+            "path": "images\/",
+            "array": []
+        },
+        "audio": {
+            "path": "audio\/",
+            "array": [
+                {
+                    "id": "sfx_button_click",
+                    "name": "sfx_button_click",
+                    "type": [
+                        "mp3",
+                        "ogg"
+                    ]
+                },
+                {
+                    "id": "sfx_button_over",
+                    "name": "sfx_button_over",
+                    "type": [
+                        "mp3",
+                        "ogg"
+                    ]
+                }
+            ]
+        }
+    },
+    "gameplay": {
+        "images": {
+            "path": "images\/",
+            "array": [
+                {
+                    "id": "gameplay_bg",
+                    "name": "bg_gameplay",
+                    "type": "jpg",
+                    "align": "center",
+                    "resize": "fill_to",
+                    "enabled": true
+                },
+                {
+                    "id": "promoscreen_bg",
+                    "name": "bg_promoscreen",
+                    "type": "jpg",
+                    "align": "center",
+                    "resize": "fill_to"
+                },
+                {
+                    "id": "option_left_bg",
+                    "name": "ui_optionleft_bg",
+                    "type": "png",
+                    "enabled": false
+                },
+                {
+                    "id": "option_right_bg",
+                    "name": "ui_optionright_bg",
+                    "type": "png",
+                    "enabled": false
+                },
+                {
+                    "id": "option_left_frame",
+                    "name": "ui_optionleft_top",
+                    "type": "png",
+                    "enabled": false
+                },
+                {
+                    "id": "option_right_frame",
+                    "name": "ui_optionright_top",
+                    "type": "png",
+                    "enabled": false
+                },
+                {
+                    "id": "or_bg",
+                    "name": "ui_or_bg",
+                    "type": "png",
+                    "enabled": false
+                },
+                {
+                    "id": "stats_bg",
+                    "name": "ui_stats_bg",
+                    "type": "png",
+                    "enabled": false
+                },
+                {
+                    "id": "meter_bg",
+                    "name": "ui_meter_bg",
+                    "type": "png"
+                },
+                {
+                    "id": "meter_frame",
+                    "name": "ui_meter_top",
+                    "type": "png"
+                },
+                {
+                    "id": "promo_bg",
+                    "name": "ui_relatedgames_bg",
+                    "type": "png"
+                },
+                {
+                    "id": "button_replay",
+                    "name": "button_replay",
+                    "type": "png"
+                },
+                {
+                    "id": "button_replay_result",
+                    "name": "button_replay_B",
+                    "type": "png"
+                },
+                {
+                    "id": "button_continue",
+                    "name": "button_continue",
+                    "type": "png",
+                    "enabled": false
+                },
+                {
+                    "id": "button_next",
+                    "name": "button_next",
+                    "type": "png"
+                },
+                {
+                    "id": "button_share",
+                    "name": "button_share",
+                    "type": "png"
+                },
+                {
+                    "id": "button_close",
+                    "name": "btn_close",
+                    "type": "png"
+                },
+                {
+                    "id": "button_copy",
+                    "name": "button_copy",
+                    "type": "png"
+                },
+                {
+                    "id": "result_bg",
+                    "name": "ui_result_bg",
+                    "type": "png",
+                    "enabled": false
+                },
+                {
+                    "id": "share_bg",
+                    "name": "ui_share_bg",
+                    "type": "png"
+                },
+                {
+                    "id": "checkmark",
+                    "name": "ui_checkmark",
+                    "type": "png"
+                }
+            ]
+        },
+        "audio": {
+            "path": "audio\/",
+            "array": [
+                {
+                    "id": "music_gameplay",
+                    "name": "music_gameplay",
+                    "type": [
+                        "mp3",
+                        "ogg"
+                    ],
+                    "enabled": false
+                },
+                {
+                    "id": "qt1_audio_this",
+                    "enabled": false,
+                    "volume": 1
+                },
+                {
+                    "id": "qt1_audio_that",
+                    "enabled": false,
+                    "volume": 1
+                },
+                {
+                    "id": "this_audio_1",
+                    "enabled": false
+                },
+                {
+                    "id": "that_audio_1",
+                    "enabled": false
+                },
+                {
+                    "id": "this_audio_2",
+                    "enabled": false
+                },
+                {
+                    "id": "that_audio_2",
+                    "enabled": false
+                },
+                {
+                    "id": "this_audio_3",
+                    "enabled": false
+                },
+                {
+                    "id": "that_audio_3",
+                    "enabled": false
+                },
+                {
+                    "id": "this_audio_4",
+                    "enabled": false
+                },
+                {
+                    "id": "that_audio_4",
+                    "enabled": false
+                },
+                {
+                    "id": "this_audio_5",
+                    "enabled": false
+                },
+                {
+                    "id": "that_audio_5",
+                    "enabled": false
+                },
+                {
+                    "id": "this_audio_6",
+                    "enabled": false
+                },
+                {
+                    "id": "that_audio_6",
+                    "enabled": false
+                },
+                {
+                    "id": "this_audio_7",
+                    "enabled": false
+                },
+                {
+                    "id": "that_audio_7",
+                    "enabled": false
+                },
+                {
+                    "id": "this_audio_8",
+                    "enabled": false
+                },
+                {
+                    "id": "that_audio_8",
+                    "enabled": false
+                },
+                {
+                    "id": "this_audio_9",
+                    "enabled": false
+                },
+                {
+                    "id": "that_audio_9",
+                    "enabled": false
+                },
+                {
+                    "id": "this_audio_10",
+                    "enabled": false
+                },
+                {
+                    "id": "that_audio_10",
+                    "enabled": false
+                },
+                {
+                    "id": "this_audio_11",
+                    "enabled": false
+                },
+                {
+                    "id": "that_audio_11",
+                    "enabled": false
+                },
+                {
+                    "id": "this_audio_12",
+                    "enabled": false
+                },
+                {
+                    "id": "that_audio_12",
+                    "enabled": false
+                },
+                {
+                    "id": "this_results_audio",
+                    "enabled": false
+                },
+                {
+                    "id": "that_results_audio",
+                    "enabled": false
+                }
+            ]
+        }
+    },
+    "question_templates": [
+        {
+            "id": 1,
+            "question": {
+                "id": "template_question_1",
+                "color": "#000000",
+                "bgImage": {
+                    "enabled": false
+                },
+                "textAlign": "center",
+                "bgColor": "",
+                "bgAlpha": 1,
+                "bgPadding": 8,
+                "bgResize": "none"
+            },
+            "order": "flipped",
+            "this": {
+                "text": {
+                    "id": "template_question_1_answer_this",
+                    "color": "#FFFFFF",
+                    "bgImage": {
+                        "enabled": false
+                    },
+                    "textAlign": "center",
+                    "bgColor": "",
+                    "bgAlpha": 1,
+                    "bgPadding": 8,
+                    "bgResize": "none"
+                },
+                "idSound": "qt1_audio_this"
+            },
+            "that": {
+                "text": {
+                    "id": "template_question_1_answer_that",
+                    "color": "#FFFFFF",
+                    "bgImage": {
+                        "enabled": false
+                    },
+                    "textAlign": "center",
+                    "bgColor": "",
+                    "bgAlpha": 1,
+                    "bgPadding": 8,
+                    "bgResize": "none"
+                },
+                "idSound": "qt1_audio_that"
+            },
+            "translations": [
+                {
+                    "id": "template_question_1",
+                    "fontScale": "0.7",
+                    "fontName": "font_futura_bold",
+                    "text": "",
+                    "offsetX": "0",
+                    "offsetY": "0"
+                },
+                {
+                    "id": "template_question_1_answer_this",
+                    "fontScale": "0.25",
+                    "fontName": "font_futura_medium",
+                    "offsetX": "0",
+                    "offsetY": "0"
+                },
+                {
+                    "id": "template_question_1_answer_that",
+                    "fontScale": "0.25",
+                    "fontName": "font_futura_medium",
+                    "offsetX": "0",
+                    "offsetY": "0"
+                }
+            ],
+            "enabled": true
+        }
+    ],
+    "quizzes": [
+        {
+            "id": 1,
+            "name": "Default",
+            "questions_last_id": 13,
+            "questions": [
+                {
+                    "id": 1,
+                    "question": {
+                        "id": "q1",
+                        "color": "#000000",
+                        "bgImage": {
+                            "enabled": false
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "order": "flipped",
+                    "this": {
+                        "text": {
+                            "id": "q1_a1",
+                            "color": "#FFFFFF",
+                            "bgImage": {
+                                "enabled": false
+                            },
+                            "textAlign": "center",
+                            "bgColor": "",
+                            "bgAlpha": 1,
+                            "bgPadding": 8,
+                            "bgResize": "none"
+                        },
+                        "idSound": "this_audio_1",
+                        "image": {
+                            "name": "this_image_1",
+                            "id": "this_image_1",
+                            "type": "png"
+                        }
+                    },
+                    "that": {
+                        "text": {
+                            "id": "q1_a2",
+                            "color": "#FFFFFF",
+                            "bgImage": {
+                                "enabled": false
+                            },
+                            "textAlign": "center",
+                            "bgColor": "",
+                            "bgAlpha": 1,
+                            "bgPadding": 8,
+                            "bgResize": "none"
+                        },
+                        "idSound": "that_audio_1",
+                        "image": {
+                            "name": "that_image_1",
+                            "id": "that_image_1",
+                            "type": "png"
+                        }
+                    },
+                    "enabled": true,
+                    "translations": {
+                        "[id=text_question]": {
+                            "text": null
+                        },
+                        "[id=text_this]": {
+                            "fontScale": null
+                        },
+                        "[id=text_that]": {
+                            "fontScale": null
+                        }
+                    },
+                    "decoupled_fields": [
+                        "text_question_text",
+                        "questionOrder",
+                        "text_this_color",
+                        "text_that_color",
+                        "text_this_fontScale",
+                        "text_that_fontScale"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "question": {
+                        "id": "q2",
+                        "color": "#000000",
+                        "bgImage": {
+                            "enabled": false
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "order": "flipped",
+                    "this": {
+                        "text": {
+                            "id": "q2_a1",
+                            "color": "#FFFFFF",
+                            "bgImage": {
+                                "enabled": false
+                            },
+                            "textAlign": "center",
+                            "bgColor": "",
+                            "bgAlpha": 1,
+                            "bgPadding": 8,
+                            "bgResize": "none"
+                        },
+                        "idSound": "this_audio_2",
+                        "image": {
+                            "name": "this_image_2",
+                            "id": "this_image_2",
+                            "type": "png"
+                        }
+                    },
+                    "that": {
+                        "text": {
+                            "id": "q2_a2",
+                            "color": "#FFFFFF",
+                            "bgImage": {
+                                "enabled": false
+                            },
+                            "textAlign": "center",
+                            "bgColor": "",
+                            "bgAlpha": 1,
+                            "bgPadding": 8,
+                            "bgResize": "none"
+                        },
+                        "idSound": "that_audio_2",
+                        "image": {
+                            "name": "that_image_2",
+                            "id": "that_image_2",
+                            "type": "png"
+                        }
+                    },
+                    "enabled": true,
+                    "translations": {
+                        "[id=text_question]": {
+                            "text": null
+                        }
+                    },
+                    "decoupled_fields": [
+                        "text_question_text",
+                        "questionOrder"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "question": {
+                        "id": "q3",
+                        "color": "#000000",
+                        "bgImage": {
+                            "enabled": false
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "order": "flipped",
+                    "this": {
+                        "text": {
+                            "id": "q3_a1",
+                            "color": "#FFFFFF",
+                            "bgImage": {
+                                "enabled": false
+                            },
+                            "textAlign": "center",
+                            "bgColor": "",
+                            "bgAlpha": 1,
+                            "bgPadding": 8,
+                            "bgResize": "none"
+                        },
+                        "idSound": "this_audio_3",
+                        "image": {
+                            "name": "this_image_3",
+                            "id": "this_image_3",
+                            "type": "png"
+                        }
+                    },
+                    "that": {
+                        "text": {
+                            "id": "q3_a2",
+                            "color": "#FFFFFF",
+                            "bgImage": {
+                                "enabled": false
+                            },
+                            "textAlign": "center",
+                            "bgColor": "",
+                            "bgAlpha": 1,
+                            "bgPadding": 8,
+                            "bgResize": "none"
+                        },
+                        "idSound": "that_audio_3",
+                        "image": {
+                            "name": "that_image_3",
+                            "id": "that_image_3",
+                            "type": "png"
+                        }
+                    },
+                    "enabled": true,
+                    "translations": {
+                        "[id=text_question]": {
+                            "text": null
+                        }
+                    },
+                    "decoupled_fields": [
+                        "text_question_text"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "question": {
+                        "id": "q4",
+                        "color": "#000000",
+                        "bgImage": {
+                            "enabled": false
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "order": "normal",
+                    "this": {
+                        "text": {
+                            "id": "q4_a1",
+                            "color": "#FFFFFF",
+                            "bgImage": {
+                                "enabled": false
+                            },
+                            "textAlign": "center",
+                            "bgColor": "",
+                            "bgAlpha": 1,
+                            "bgPadding": 8,
+                            "bgResize": "none"
+                        },
+                        "idSound": "this_audio_4",
+                        "image": {
+                            "name": "this_image_4",
+                            "id": "this_image_4",
+                            "type": "png"
+                        }
+                    },
+                    "that": {
+                        "text": {
+                            "id": "q4_a2",
+                            "color": "#FFFFFF",
+                            "bgImage": {
+                                "enabled": false
+                            },
+                            "textAlign": "center",
+                            "bgColor": "",
+                            "bgAlpha": 1,
+                            "bgPadding": 8,
+                            "bgResize": "none"
+                        },
+                        "idSound": "that_audio_4",
+                        "image": {
+                            "name": "that_image_4",
+                            "id": "that_image_4",
+                            "type": "png"
+                        }
+                    },
+                    "enabled": true,
+                    "translations": {
+                        "[id=text_question]": {
+                            "text": null
+                        }
+                    },
+                    "decoupled_fields": [
+                        "text_question_text",
+                        "questionOrder"
+                    ]
+                },
+                {
+                    "id": 5,
+                    "question": {
+                        "id": "q5",
+                        "color": "#000000",
+                        "bgImage": {
+                            "enabled": false
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "order": "normal",
+                    "this": {
+                        "text": {
+                            "id": "q5_a1",
+                            "color": "#FFFFFF",
+                            "bgImage": {
+                                "enabled": false
+                            },
+                            "textAlign": "center",
+                            "bgColor": "",
+                            "bgAlpha": 1,
+                            "bgPadding": 8,
+                            "bgResize": "none"
+                        },
+                        "idSound": "this_audio_5",
+                        "image": {
+                            "name": "this_image_5",
+                            "id": "this_image_5",
+                            "type": "png"
+                        }
+                    },
+                    "that": {
+                        "text": {
+                            "id": "q5_a2",
+                            "color": "#FFFFFF",
+                            "bgImage": {
+                                "enabled": false
+                            },
+                            "textAlign": "center",
+                            "bgColor": "",
+                            "bgAlpha": 1,
+                            "bgPadding": 8,
+                            "bgResize": "none"
+                        },
+                        "idSound": "that_audio_5",
+                        "image": {
+                            "name": "that_image_5",
+                            "id": "that_image_5",
+                            "type": "png"
+                        }
+                    },
+                    "enabled": true,
+                    "translations": {
+                        "[id=text_question]": {
+                            "text": null
+                        }
+                    },
+                    "decoupled_fields": [
+                        "text_question_text",
+                        "questionOrder"
+                    ]
+                },
+                {
+                    "id": 6,
+                    "question": {
+                        "id": "q6",
+                        "color": "#000000",
+                        "bgImage": {
+                            "enabled": false
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "order": "normal",
+                    "this": {
+                        "text": {
+                            "id": "q6_a1",
+                            "color": "#FFFFFF",
+                            "bgImage": {
+                                "enabled": false
+                            },
+                            "textAlign": "center",
+                            "bgColor": "",
+                            "bgAlpha": 1,
+                            "bgPadding": 8,
+                            "bgResize": "none"
+                        },
+                        "idSound": "this_audio_6",
+                        "image": {
+                            "name": "this_image_6",
+                            "id": "this_image_6",
+                            "type": "png"
+                        }
+                    },
+                    "that": {
+                        "text": {
+                            "id": "q6_a2",
+                            "color": "#FFFFFF",
+                            "bgImage": {
+                                "enabled": false
+                            },
+                            "textAlign": "center",
+                            "bgColor": "",
+                            "bgAlpha": 1,
+                            "bgPadding": 8,
+                            "bgResize": "none"
+                        },
+                        "idSound": "that_audio_6",
+                        "image": {
+                            "name": "that_image_6",
+                            "id": "that_image_6",
+                            "type": "png"
+                        }
+                    },
+                    "enabled": true,
+                    "translations": {
+                        "[id=text_question]": {
+                            "text": null
+                        }
+                    },
+                    "decoupled_fields": [
+                        "text_question_text",
+                        "questionOrder"
+                    ]
+                },
+                {
+                    "id": 7,
+                    "question": {
+                        "id": "q7",
+                        "color": "#000000",
+                        "bgImage": {
+                            "enabled": false
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "order": "flipped",
+                    "this": {
+                        "text": {
+                            "id": "q7_a1",
+                            "color": "#FFFFFF",
+                            "bgImage": {
+                                "enabled": false
+                            },
+                            "textAlign": "center",
+                            "bgColor": "",
+                            "bgAlpha": 1,
+                            "bgPadding": 8,
+                            "bgResize": "none"
+                        },
+                        "idSound": "this_audio_7",
+                        "image": {
+                            "name": "this_image_7",
+                            "id": "this_image_7",
+                            "type": "png"
+                        }
+                    },
+                    "that": {
+                        "text": {
+                            "id": "q7_a2",
+                            "color": "#FFFFFF",
+                            "bgImage": {
+                                "enabled": false
+                            },
+                            "textAlign": "center",
+                            "bgColor": "",
+                            "bgAlpha": 1,
+                            "bgPadding": 8,
+                            "bgResize": "none"
+                        },
+                        "idSound": "that_audio_7",
+                        "image": {
+                            "name": "that_image_7",
+                            "id": "that_image_7",
+                            "type": "png"
+                        }
+                    },
+                    "enabled": true,
+                    "translations": {
+                        "[id=text_question]": {
+                            "text": null
+                        }
+                    },
+                    "decoupled_fields": [
+                        "text_question_text",
+                        "questionOrder"
+                    ]
+                },
+                {
+                    "id": 8,
+                    "question": {
+                        "id": "q8",
+                        "color": "#000000",
+                        "bgImage": {
+                            "enabled": false
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "order": "flipped",
+                    "this": {
+                        "text": {
+                            "id": "q8_a1",
+                            "color": "#FFFFFF",
+                            "bgImage": {
+                                "enabled": false
+                            },
+                            "textAlign": "center",
+                            "bgColor": "",
+                            "bgAlpha": 1,
+                            "bgPadding": 8,
+                            "bgResize": "none"
+                        },
+                        "idSound": "this_audio_8",
+                        "image": {
+                            "name": "this_image_8",
+                            "id": "this_image_8",
+                            "type": "png"
+                        }
+                    },
+                    "that": {
+                        "text": {
+                            "id": "q8_a2",
+                            "color": "#FFFFFF",
+                            "bgImage": {
+                                "enabled": false
+                            },
+                            "textAlign": "center",
+                            "bgColor": "",
+                            "bgAlpha": 1,
+                            "bgPadding": 8,
+                            "bgResize": "none"
+                        },
+                        "idSound": "that_audio_8",
+                        "image": {
+                            "name": "that_image_8",
+                            "id": "that_image_8",
+                            "type": "png"
+                        }
+                    },
+                    "enabled": true,
+                    "translations": {
+                        "[id=text_question]": {
+                            "text": null
+                        }
+                    },
+                    "decoupled_fields": [
+                        "text_question_text",
+                        "questionOrder"
+                    ]
+                },
+                {
+                    "id": 9,
+                    "question": {
+                        "id": "q9",
+                        "color": "#000000",
+                        "bgImage": {
+                            "enabled": false
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "order": "normal",
+                    "this": {
+                        "text": {
+                            "id": "q9_a1",
+                            "color": "#FFFFFF",
+                            "bgImage": {
+                                "enabled": false
+                            },
+                            "textAlign": "center",
+                            "bgColor": "",
+                            "bgAlpha": 1,
+                            "bgPadding": 8,
+                            "bgResize": "none"
+                        },
+                        "idSound": "this_audio_9",
+                        "image": {
+                            "name": "this_image_9",
+                            "id": "this_image_9",
+                            "type": "png"
+                        }
+                    },
+                    "that": {
+                        "text": {
+                            "id": "q9_a2",
+                            "color": "#FFFFFF",
+                            "bgImage": {
+                                "enabled": false
+                            },
+                            "textAlign": "center",
+                            "bgColor": "",
+                            "bgAlpha": 1,
+                            "bgPadding": 8,
+                            "bgResize": "none"
+                        },
+                        "idSound": "that_audio_9",
+                        "image": {
+                            "name": "that_image_9",
+                            "id": "that_image_9",
+                            "type": "png"
+                        }
+                    },
+                    "enabled": true,
+                    "translations": {
+                        "[id=text_question]": {
+                            "text": null
+                        }
+                    },
+                    "decoupled_fields": [
+                        "text_question_text",
+                        "questionOrder"
+                    ]
+                },
+                {
+                    "id": 10,
+                    "question": {
+                        "id": "q10",
+                        "color": "#000000",
+                        "bgImage": {
+                            "enabled": false
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "order": "normal",
+                    "this": {
+                        "text": {
+                            "id": "q10_a1",
+                            "color": "#FFFFFF",
+                            "bgImage": {
+                                "enabled": false
+                            },
+                            "textAlign": "center",
+                            "bgColor": "",
+                            "bgAlpha": 1,
+                            "bgPadding": 8,
+                            "bgResize": "none"
+                        },
+                        "idSound": "this_audio_10",
+                        "image": {
+                            "name": "this_image_10",
+                            "id": "this_image_10",
+                            "type": "png"
+                        }
+                    },
+                    "that": {
+                        "text": {
+                            "id": "q10_a2",
+                            "color": "#FFFFFF",
+                            "bgImage": {
+                                "enabled": false
+                            },
+                            "textAlign": "center",
+                            "bgColor": "",
+                            "bgAlpha": 1,
+                            "bgPadding": 8,
+                            "bgResize": "none"
+                        },
+                        "idSound": "that_audio_10",
+                        "image": {
+                            "name": "that_image_10",
+                            "id": "that_image_10",
+                            "type": "png"
+                        }
+                    },
+                    "enabled": true,
+                    "translations": {
+                        "[id=text_question]": {
+                            "text": null
+                        }
+                    },
+                    "decoupled_fields": [
+                        "text_question_text",
+                        "questionOrder"
+                    ]
+                },
+                {
+                    "id": 11,
+                    "question": {
+                        "id": "q11",
+                        "color": "#000000",
+                        "bgImage": {
+                            "enabled": false
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "order": "flipped",
+                    "this": {
+                        "text": {
+                            "id": "q11_a1",
+                            "color": "#FFFFFF",
+                            "bgImage": {
+                                "enabled": false
+                            },
+                            "textAlign": "center",
+                            "bgColor": "",
+                            "bgAlpha": 1,
+                            "bgPadding": 8,
+                            "bgResize": "none"
+                        },
+                        "idSound": "this_audio_11",
+                        "image": {
+                            "name": "this_image_11",
+                            "id": "this_image_11",
+                            "type": "png"
+                        }
+                    },
+                    "that": {
+                        "text": {
+                            "id": "q11_a2",
+                            "color": "#FFFFFF",
+                            "bgImage": {
+                                "enabled": false
+                            },
+                            "textAlign": "center",
+                            "bgColor": "",
+                            "bgAlpha": 1,
+                            "bgPadding": 8,
+                            "bgResize": "none"
+                        },
+                        "idSound": "that_audio_11",
+                        "image": {
+                            "name": "that_image_11",
+                            "id": "that_image_11",
+                            "type": "png"
+                        }
+                    },
+                    "enabled": true,
+                    "translations": {
+                        "[id=text_question]": {
+                            "text": null
+                        }
+                    },
+                    "decoupled_fields": [
+                        "text_question_text",
+                        "questionOrder"
+                    ]
+                },
+                {
+                    "id": 12,
+                    "question": {
+                        "id": "q12",
+                        "color": "#000000",
+                        "bgImage": {
+                            "enabled": false
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "order": "flipped",
+                    "this": {
+                        "text": {
+                            "id": "q12_a1",
+                            "color": "#FFFFFF",
+                            "bgImage": {
+                                "enabled": false
+                            },
+                            "textAlign": "center",
+                            "bgColor": "",
+                            "bgAlpha": 1,
+                            "bgPadding": 8,
+                            "bgResize": "none"
+                        },
+                        "idSound": "this_audio_12",
+                        "image": {
+                            "name": "this_image_12",
+                            "id": "this_image_12",
+                            "type": "png"
+                        }
+                    },
+                    "that": {
+                        "text": {
+                            "id": "q12_a2",
+                            "color": "#FFFFFF",
+                            "bgImage": {
+                                "enabled": false
+                            },
+                            "textAlign": "center",
+                            "bgColor": "",
+                            "bgAlpha": 1,
+                            "bgPadding": 8,
+                            "bgResize": "none"
+                        },
+                        "idSound": "that_audio_12",
+                        "image": {
+                            "name": "that_image_12",
+                            "id": "that_image_12",
+                            "type": "png"
+                        }
+                    },
+                    "enabled": true,
+                    "translations": {
+                        "[id=text_question]": {
+                            "text": null
+                        }
+                    },
+                    "decoupled_fields": [
+                        "text_question_text"
+                    ]
+                }
+            ],
+            "results": {
+                "this": {
+                    "image": {
+                        "name": "this_results_image",
+                        "type": "png",
+                        "id": "ui_results_image_this"
+                    },
+                    "header": {
+                        "id": "result_header_1",
+                        "color": "#000000",
+                        "bgImage": {
+                            "name": "this_ui_results_title_bg",
+                            "type": "png"
+                        },
+                        "textAlign": "left"
+                    },
+                    "copy": {
+                        "id": "result_copy_1",
+                        "color": "#000000",
+                        "bgImage": {
+                            "name": "this_ui_results_description_bg",
+                            "type": "png"
+                        },
+                        "textAlign": "left",
+                        "bgResize": "fill"
+                    },
+                    "idSound": null
+                },
+                "that": {
+                    "image": {
+                        "name": "that_results_image",
+                        "type": "png",
+                        "id": "ui_results_image_that"
+                    },
+                    "header": {
+                        "id": "result_header_2",
+                        "color": "#000000",
+                        "bgImage": {
+                            "name": "that_ui_results_title_bg",
+                            "type": "png"
+                        },
+                        "textAlign": "left"
+                    },
+                    "copy": {
+                        "id": "result_copy_2",
+                        "color": "#000000",
+                        "bgImage": {
+                            "name": "that_ui_results_description_bg",
+                            "type": "png"
+                        },
+                        "textAlign": "left",
+                        "bgResize": "fill"
+                    },
+                    "idSound": null
+                }
+            }
+        }
+    ],
+    "meta": {
+        "built_at": "28 November 2016, 15:52",
+        "builder_num": "124"
+    }
+}
