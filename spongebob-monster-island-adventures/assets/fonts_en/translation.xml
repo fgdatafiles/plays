@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--<translation attributes>-->
+<!-- defaultFont dictates the font (based on the id set in fonts.xml) that all fields will use unless fontId is specified within that field's individual tag.-->
+<!-- rtl dictates whether this locale is a right to left language -->
+
+<!-- <Node Attributes> -->
+<!-- id is not Optional. It tells us which text field to change. -->
+<!-- fontScale is Optional. It allows you to customize the size of the font used in this particular field. 1 is normal. 2 is double size. .5 is half size. Defaults to 1.-->
+<!-- fontName is Optional. It allows you to customize the font used in this particular field. Leave it out to use the default font (specified by defaultFont).-->
+<!-- offsetX is Optional. It allows you to move the text field a certain number of pixels on the X axis. Leave it out or use 0 if you don't want to move the text. -->
+<!-- offsetY is Optional. It allows you to move the text field a certain number of pixels on the Y axis. Leave it out or use 0 if you don't want to move the text.-->
+<!-- Variables may be inserted into localization strings through this format - {0} - where 0 is the index of the array of variables passed in. -->
+
+<strings defaultFont="main_font" rtl="false">
+	<!--Common-->
+	<string id="common.loading"							fontName="ui_font" 	fontScale="1" offsetX="0" offsetY="0"><![CDATA[Loading {0}%]]></string>
+	<string id="common.orientation_landscape"			fontName="main_font"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Please flip back to Landscape mode.]]></string>
+	<string id="common.yes"								fontName="main_font"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[Yes]]></string>
+	<string id="common.no"								fontName="main_font"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[No]]></string>
+	<string id="common.next"							fontName="main_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Next]]></string>
+	<string id="common.back"							fontName="main_font"	fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Back]]></string>
+	<string id="common.continue"						fontName="main_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Continue]]></string>
+	<string id="common.close"							fontName="main_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Close]]></string>
+	<!-- Dialogue -->
+	<string id="dialogue_message_text"		fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[DEFAULT DIALOGUE LINE]]></string>
+	<string id="tutorial_text"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[DEFAULT TUTORIAL LINE]]></string>
+	<string id="line_intro_1"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[I'm ready!! I can't wait to explore Monster Island again!!]]></string>
+	<string id="line_intro_2"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[We're only here to deliver Krabby Patties, SpongeBob.]]></string>
+	<string id="line_intro_3"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Too bad we don't know who they're going to, though..]]></string>
+	<string id="line_intro_4"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Look sharp! The monsters here will take our Krabby Patties!]]></string>
+	<string id="line_intro_5"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[We've gotta get past these monsters - for the customer!!]]></string>
+	<string id="line_battle_1"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Protect the patties! Use character moves to attack the monsters.]]></string>
+	<string id="line_battle_2"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Great! Keep making the monster angry and they'll run away.]]></string>
+	<string id="line_weaknesses_1"				fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Every Monster has a weakness. This one is weak to Sight attacks.]]></string>
+	<string id="line_weaknesses_2"				fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Use DoodleBob's matching Sight attack to hit the monster's weak spot!]]></string>
+	<string id="line_charswap_1"					fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Different characters have different abilities. Switch between them here.]]></string>
+	<string id="line_outfits_0"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Here, you can equip each character with an outfit.]]></string>
+	<string id="line_outfits_1"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[The icon next to an outfit is it's attack type: Sound, Sight, or Smell.]]></string>
+	<string id="line_outfits_2"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Select the DoodleBob outfit to use the Sight attack type in battle!]]></string>
+	<string id="line_camp_switch_1"				fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Great work! Now, let's unlock outfits and abilities for my friends!]]></string>
+	<string id="line_camp_switch_2"				fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Click on each character to switch between their upgrade menus.]]></string>
+	<string id="line_cooldowns_1"					fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Some abilities take turns to cool down after being used.]]></string>
+	<string id="line_cooldowns_2"					fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[This ability won't be ready until it's timer reaches 0.]]></string>
+	<string id="line_locked_1"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[You haven't unlocked this ability yet.]]></string>
+	<string id="line_locked_2"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Unlock new abilities in the Level Up screen.]]></string>
+	<string id="line_firstwin_1"					fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[We did it! Let's go back to camp before our next adventure.]]></string>
+	<string id="line_firstloss_1"					fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[They got our patties!]]></string>
+	<string id="line_firstloss_2"					fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[What in tarnation are we gonna do?]]></string>
+	<string id="line_firstloss_3"					fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[.. I could cook up some more!]]></string>
+	<string id="line_firstloss_4"					fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[.. brilliant ..]]></string>
+	<string id="line_upgrades_1"					fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[When you finish a level, you'll earn 1 Level Point (LP)]]></string>
+	<string id="line_upgrades_2"					fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Spend Level Points to unlock new OUTFITS or ABILITIES!]]></string>
+	<string id="line_upgrades_3"					fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[For now, let's buy SpongeBob's DoodleBob outfit.]]></string>
+	<string id="line_upgrades_4"					fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Great! Let's go equip SpongeBob's new outfit.]]></string>
+	<string id="line_map_1"								fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[According to the map.. we need to go through six zones..]]></string>
+	<string id="line_map_2"								fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[.. to reach our Mysterious Customer!]]></string>
+	<string id="line_map_3"								fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Let's start at "Sandy Shore"!]]></string>
+	<string id="line_map2_1"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Ooo, it's jungley here.]]></string>
+	<string id="line_map2_2"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[.. What was that?]]></string>
+	<string id="line_map2_3"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Oh it was nothin', ya scaredy cat.]]></string>
+	<string id="line_map2_4"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Probably a monster.]]></string>
+	<string id="line_map3_1"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Are we there yet?]]></string>
+	<string id="line_map3_2"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Does it look like we're there?]]></string>
+	<string id="line_map3_3"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Yes.]]></string>
+	<string id="line_map3_4"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Well we're not.]]></string>
+	<string id="line_map4_1"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Ooo! I see a glowing thing!]]></string>
+	<string id="line_map4_2"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[LET'S SEE WHAT IT IS!]]></string>
+	<string id="line_map4_3"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[I don't know if that's such a good idea..]]></string>
+	<string id="line_map4_4"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[.. it sure is dark in here.]]></string>
+	<string id="line_map5_1"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[I smell burning.]]></string>
+	<string id="line_map5_2"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[It's probably the volcano over there.]]></string>
+	<string id="line_map5_3"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Ooooooh!]]></string>
+	<string id="line_map5_4"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Hey, that's where we're headed!]]></string>
+	<string id="line_map5_5"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[.. and we'll finally get to see who ordered these patties!]]></string>
+	<string id="line_map6_1"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[We made it!]]></string>
+	<string id="line_map6_2"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Well almost.. the map says we need to deliver AT the volcano.]]></string>
+	<string id="line_map6_3"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[That sounds dangerous.]]></string>
+	<string id="line_map6_4"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[This whole PLACE is dangerous!]]></string>
+	<string id="line_ending_1"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[.. What do we do now?]]></string>
+	<string id="line_ending_2"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[The map points to here.. I guess we wait.]]></string>
+	<string id="line_ending_3"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[I wonder who it'll be!]]></string>
+	<string id="line_ending_4"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Whoever it is must be pretty brave to be on Monster Island.]]></string>
+	<string id="line_ending_5"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Shh. did you hear that? Someone's coming.]]></string>
+	<string id="line_ending_6"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Meep.]]></string>
+	<string id="line_ending_7"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Are those the patties I delivered?]]></string>
+	<string id="line_ending_8"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[. . .]]></string>
+	<string id="line_ending_9"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Uh, yes sir! Still hot!]]></string>
+	<string id="line_ending_10"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Thanks, I was getting hungry. What took so long?]]></string>
+	<!--Splash-->
+	<string id="splash.title"							fontName="main_font"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[]]></string>
+	<string id="splash.tap_anywhere"			fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Tap Anywhere to Play]]></string>
+	<string id="splash.click_anywhere"		fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Click Anywhere to Play]]></string>
+	<string id="splash.tap_anywhere_skip"	fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Tap Anywhere to Skip]]></string>
+	<string id="splash.click_anywhere_skip" fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Click Anywhere to Skip]]></string>
+	<string id="splash.play"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Play]]></string>
+	<string id="splash.printable"					fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Printable]]></string>
+	<!--Help Screen-->
+	<string id="help.help"								fontName="main_font"	fontScale=".65"	offsetX="0" offsetY="0"><![CDATA[Help]]></string>
+	<!--Quit Screen-->
+	<string id="quit_confirm.quit_confirm_header"		fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[RUN AWAY?]]></string>
+	<string id="quit_confirm.quit_yes"		fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[YES!]]></string>
+	<string id="quit_confirm.quit_no"			fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[NO!]]></string>
+	<!-- Ending -->
+	<string id="gameover_title"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[DELIVERY COMPLETE!!]]></string>
+	<string id="gameover_win"							fontName="main_font"	fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[SpongeBob and his companions can now<br>return to Bikini Bottom!]]></string>
+	<string id="reset_game"								fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[PLAY AGAIN]]></string>
+	<!--End Screen-->
+	<string id="end_continue"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[CONTINUE]]></string>
+	<string id="end_win_title"						fontName="main_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[GREAT JOB!]]></string>
+	<string id="end_lose_title"						fontName="main_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[DEFEAT]]></string>
+	<string id="end_win"									fontName="main_font"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[You earned 1 level point!]]></string>
+	<string id="end_lose"									fontName="main_font"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[You ran out of patties.]]></string>
+	<!--Map-->
+	<string id="text_monster_island"			fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[MONSTER ISLAND]]></string>
+	<string id="text_location"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Location]]></string>
+	<string id="text_continue"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Continue]]></string>
+	<string id="text_camp"								fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Camp]]></string>
+	<string id="map.location1"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Sandy Shore]]></string>
+	<string id="map.location2"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Creeping Jungle]]></string>
+	<string id="map.location3"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Rushing Riverway]]></string>
+	<string id="map.location4"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Winding Cavern]]></string>
+	<string id="map.location5"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Path of Boulders]]></string>
+	<string id="map.location6"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Mount Molten]]></string>
+	<!--Gameplay-->
+	<string id="gameplay.menu"						fontName="main_font"	fontScale=".65"	offsetX="0" offsetY="0"><![CDATA[Menu]]></string>
+	<string id="gameplay.level"						fontName="main_font"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Level]]></string>
+	<string id="gameplay.score"						fontName="main_font"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Score: {0}]]></string>
+	<string id="gameplay.points"					fontName="main_font"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Points: {0}]]></string>
+	<string id="gameplay.miniscore"				fontName="main_font"	fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Score: {0}]]></string>
+	<string id="enemy_name"								fontName="main_font"	fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[ENEMY NAME]]></string>
+	<string id="player_name"							fontName="main_font"	fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[PLAYER NAME]]></string>
+
+	<!-- Debug Text -->
+	<string id="debug.debugfield"						fontName="main_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[{0}}]]></string>
+	<!-- Cooldown Numbers -->
+	<string id="cooldown_base"				fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[0]]></string>
+	<string id="0"										fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[0]]></string>
+	<string id="1"										fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[1]]></string>
+	<string id="2"										fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[2]]></string>
+	<string id="3"										fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[3]]></string>
+	<string id="4"										fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[4]]></string>
+	<string id="5"										fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[5]]></string>
+	<string id="6"										fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[6]]></string>
+	<string id="7"										fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[7]]></string>
+	<string id="8"										fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[8]]></string>
+	<string id="9"										fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[9]]></string>
+	<!-- Move Names -->
+	<string id="attack_spongebob_bubbles"				fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Blow Bubbles]]></string>
+	<string id="attack_spongebob_cook"					fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Restore Patties]]></string>
+	<string id="attack_spongebob_laugh"					fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Annoying Laugh]]></string>
+	<string id="attack_spongebob_oogabooga"				fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Ooga Booga]]></string>
+	<string id="attack_spongebob_doodle"					fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Doodle]]></string>
+	<string id="attack_patrick_stand"					fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Stand Very Still]]></string>
+	<string id="attack_patrick_rock"					fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Hide Under Rock]]></string>
+	<string id="attack_patrick_drool"					fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Drool]]></string>
+	<string id="attack_patrick_play"					fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Play Band Music]]></string>
+	<string id="attack_patrick_hippie"				fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Smelly Incense]]></string>
+	<string id="attack_sandy_howdy"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Howdy]]></string>
+	<string id="attack_sandy_science"					fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Science]]></string>
+	<string id="attack_sandy_read"						fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Read A Book]]></string>
+	<string id="attack_sandy_hibernation"					fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Morning Breath]]></string>
+	<string id="attack_sandy_hootenanny"				fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Hootenanny]]></string>
+	<string id="attack_squidward_nag"					fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Nag]]></string>
+	<string id="attack_squidward_dance"					fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Dance]]></string>
+	<string id="attack_squidward_clarinet"				fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Clarinet Lessons]]></string>
+	<string id="attack_squidward_gorgeous"				fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Be Handsome]]></string>
+	<string id="attack_squidward_paint"					fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Paint]]></string>
+	<!-- Bottom Bar Messages -->
+	<string id="bottombar_wait_input"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[What will {0} do?]]></string>
+	<string id="appear_message"							fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} appears!]]></string>
+	<string id="run_away_message"						fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} leaves in frustration!]]></string>
+	<string id="attack_spongebob_bubbles_message"		fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} blows bubbles!]]></string>
+	<string id="attack_spongebob_cook_message"			fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} cooks up some patties!]]></string>
+	<string id="attack_spongebob_laugh_message"			fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} laughs annoyingly!]]></string>
+	<string id="attack_spongebob_oogabooga_message"		fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} goes ooga booga!]]></string>
+	<string id="attack_spongebob_doodle_message"		fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} doodles a picture!]]></string>
+	<string id="attack_patrick_stand_message"			fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} stands very still...]]></string>
+	<string id="attack_patrick_rock_message"			fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} hides under his rock!]]></string>
+	<string id="attack_patrick_drool_message"			fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} drools...]]></string>
+	<string id="attack_patrick_play_message"			fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} plays band music!]]></string>
+	<string id="attack_patrick_hippie_message"			fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} lights some incense!]]></string>
+	<string id="attack_sandy_howdy_message"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} says howdy!]]></string>
+	<string id="attack_sandy_science_message"			fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} performs science!]]></string>
+	<string id="attack_sandy_read_message"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} reads a book.]]></string>
+	<string id="attack_sandy_hibernation_message"		fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} roars with morning breath!]]></string>
+	<string id="attack_sandy_hootenanny_message"		fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} starts a hootenanny!]]></string>
+	<string id="attack_squidward_nag_message"			fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} nags the monster...]]></string>
+	<string id="attack_squidward_dance_message"			fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} does interpretative dance.]]></string>
+	<string id="attack_squidward_clarinet_message"		fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} gives clarinet lessons...]]></string>
+	<string id="attack_squidward_gorgeous_message"		fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} continues to be handsome!]]></string>
+	<string id="attack_squidward_paint_message"			fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} paints a portrait of the monster!]]></string>
+	<string id="attack_small_bite_message"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} takes a small bite of Krabby Patty!]]></string>
+	<string id="attack_bite_message"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} takes a bite of Krabby Patty!]]></string>
+	<string id="attack_chomp_message"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} takes a chomp of Krabby Patty!]]></string>
+	<string id="attack_monster_chomp_message"			fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} takes a monster chomp of Krabby Patty!]]></string>
+	<string id="attack_nap_message"						fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} takes a nap... Zzz...]]></string>
+	<string id="attack_sleep_message"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} goes to sleep... Zzz...]]></string>
+	<string id="attack_cover_eyes_message"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} covers their eyes!]]></string>
+	<string id="attack_cover_ears_message"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} covers their ears!]]></string>
+	<string id="attack_cover_nose_message"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} plugs their nose!]]></string>
+	<string id="attack_zen_message"						fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} goes into a state of zen!]]></string>
+	<string id="attack_digest_message"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} digests some of the patties!]]></string>
+	<string id="attack_nibble_message"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} starts nibbling at your patties!]]></string>
+	<string id="attack_slime_message"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} shoots slime at you!]]></string>
+	<string id="attack_slow_message"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} slows you with goo!]]></string>
+	<string id="attack_burp_message"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} burps! It smells gross!]]></string>
+	<string id="attack_big_burp_message"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} lets out a huge belch!]]></string>
+	<string id="attack_monster_call_message"			fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} calls for help!]]></string>
+	<string id="attack_change_message"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0}'s weakness changes!]]></string>
+	<string id="attack_shell_message"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} curls up in its shell!]]></string>
+	<string id="attack_relax_message"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} starts relaxing.]]></string>
+	<string id="attack_charge_message"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} is charging up for a big attack!]]></string>
+	<string id="super_effective_sight"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} hates the sight of that!]]></string>
+	<string id="super_effective_sound"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} hates that noise!]]></string>
+	<string id="super_effective_smell"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} hates that smell!]]></string>
+	<string id="ineffective_sight"						fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} doesn't care - its eyes are covered!]]></string>
+	<string id="ineffective_sound"						fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} doesn't care - its ears are covered!]]></string>
+	<string id="ineffective_smell"						fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} doesn't care - its nose is plugged!]]></string>
+	<string id="ineffective_zen"						fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} doesn't care - it's in a state of zen!]]></string>
+	<string id="ineffective_rock"						fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} ignores everything - he's under a rock!]]></string>
+	<string id="expire_immune_sight"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} uncovers its eyes!]]></string>
+	<string id="expire_immune_sound"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} uncovers its ears!]]></string>
+	<string id="expire_immune_smell"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} unplugs its nose!]]></string>
+	<string id="expire_relaxing"						fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[{0} stops relaxing!]]></string>
+	<!-- Player Names -->
+	<string id="bottom_name_spongebob"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[SpongeBob]]></string>
+	<string id="bottom_name_patrick"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Patrick]]></string>
+	<string id="bottom_name_sandy"						fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Sandy]]></string>
+	<string id="bottom_name_squidward"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Squidward]]></string>
+	<string id="costume_name_spongebob_1"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[SpongeBob]]></string>
+	<string id="costume_name_spongebob_2"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[DoodleBob]]></string>
+	<string id="costume_name_spongebob_3"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[SpongeGar]]></string>
+	<string id="costume_name_patrick_1"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Patrick]]></string>
+	<string id="costume_name_patrick_2"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Band Geek Patrick]]></string>
+	<string id="costume_name_patrick_3"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Hippie Patrick]]></string>
+	<string id="costume_name_sandy_1"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Sandy]]></string>
+	<string id="costume_name_sandy_2"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Hibernation Sandy]]></string>
+	<string id="costume_name_sandy_3"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Cowgirl Sandy]]></string>
+	<string id="costume_name_squidward_1"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Squidward]]></string>
+	<string id="costume_name_squidward_2"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Artist Squidward]]></string>
+	<string id="costume_name_squidward_3"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Handsome Squidward]]></string>
+
+	<!-- Enemy Names -->
+	<string id="enemy_name_turtle_cave"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Spiky Turtish]]></string>
+	<string id="enemy_name_turtle_jungle"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Grassy Turtish]]></string>
+	<string id="enemy_name_turtle_mountain"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Rocky Turtish]]></string>
+	<string id="enemy_name_turtle_beach"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Sea Turtish]]></string>
+	<string id="enemy_name_turtle_volcano"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Magma Turtish]]></string>
+
+	<string id="enemy_name_gem_cave"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Quartzy Grinpin]]></string>
+	<string id="enemy_name_gem_jungle"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Emerald Grinpin]]></string>
+	<string id="enemy_name_gem_mountain"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Amethyst Grinpin]]></string>
+	<string id="enemy_name_gem_river"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Aqua Grinpin]]></string>
+	<string id="enemy_name_gem_volcano"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Ruby Grinpin]]></string>
+
+	<string id="enemy_name_flower_cave"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Glowing Startle]]></string>
+	<string id="enemy_name_flower_jungle"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Leafy Startle]]></string>
+	<string id="enemy_name_flower_mountain"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Wild Startle]]></string>
+	<string id="enemy_name_flower_river"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Striped Startle]]></string>
+	<string id="enemy_name_flower_volcano"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Sun Startle]]></string>
+
+	<string id="enemy_name_squid_beach"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Aqua Cyclaps]]></string>
+	<string id="enemy_name_squid_cave"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Slimey Cyclaps]]></string>
+	<string id="enemy_name_squid_jungle"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Longhorn Cyclaps]]></string>
+	<string id="enemy_name_squid_river"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Underwater Cyclaps]]></string>
+	<string id="enemy_name_squid_volcano"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Fuming Cyclaps]]></string>
+
+	<string id="enemy_name_urchin_beach"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Ground Spike]]></string>
+	<string id="enemy_name_urchin_cave"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Ground Spike]]></string>
+	<string id="enemy_name_urchin_mountain"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Cliff Spike]]></string>
+	<string id="enemy_name_urchin_river"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Sea Spike]]></string>
+	<string id="enemy_name_urchin_volcano"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Glow Spike]]></string>
+
+	<string id="enemy_name_jelly_beach"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Wiggling Jellyfang]]></string>
+	<string id="enemy_name_jelly_cave"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Glow-eyed Jellyfang]]></string>
+	<string id="enemy_name_jelly_jungle"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Glowing Jellyfang]]></string>
+	<string id="enemy_name_jelly_mountain"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Flowery Jellyfang]]></string>
+	<string id="enemy_name_jelly_volcano"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Thorny Jellyfang]]></string>
+
+	<string id="enemy_name_mite_beach"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Sandy Scuttle]]></string>
+	<string id="enemy_name_mite_cave"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Dark Scuttle]]></string>
+	<string id="enemy_name_mite_jungle"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Flowering Scuttle]]></string>
+	<string id="enemy_name_mite_river"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Hiding Scuttle]]></string>
+	<string id="enemy_name_mite_volcano"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Gloppy Scuttle]]></string>
+
+	<string id="enemy_name_tongue_beach"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Orange Slorp]]></string>
+	<string id="enemy_name_tongue_cave"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Spiked Slorp]]></string>
+	<string id="enemy_name_tongue_jungle"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Sprouting Slorp]]></string>
+	<string id="enemy_name_tongue_mountain"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Fungus Slorp]]></string>
+	<string id="enemy_name_tongue_river"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Geyser Slorp]]></string>
+
+	<string id="enemy_name_manta_beach"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Playful Glider]]></string>
+	<string id="enemy_name_manta_jungle"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Tropical Glider]]></string>
+	<string id="enemy_name_manta_mountain"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Grinning Glider]]></string>
+	<string id="enemy_name_manta_river"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Swimming Glider]]></string>
+	<string id="enemy_name_manta_volcano"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Fiery Glider]]></string>
+
+	<string id="enemy_name_boss_1_beach"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Crumbler]]></string>
+	<string id="enemy_name_boss_2_jungle"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Cyfin]]></string>
+	<string id="enemy_name_boss_3_river"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Ness]]></string>
+	<string id="enemy_name_boss_4_cave"					fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Blobok]]></string>
+	<string id="enemy_name_boss_5_mountain"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Krabbler]]></string>
+	<string id="enemy_name_boss_6_volcano"				fontName="main_font"	fontScale="0.33"	offsetX="0" offsetY="0"><![CDATA[Skolten]]></string>
+
+	<!-- Camp Screen -->
+	<string id="outfit_select"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[OUTFIT SELECT]]></string>
+	<string id="outfit_select_description"				fontName="ui_font"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Select outfits for each character]]></string>
+	<string id="to_map"									fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[MAP]]></string>
+	<string id="to_level_up"							fontName="ui_font"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[LEVEL UP]]></string>
+	<string id="camp_name_spongebob"					fontName="main_font"	fontScale="0.25"	offsetX="0" offsetY="0"><![CDATA[SpongeBob]]></string>
+	<string id="camp_name_patrick"						fontName="main_font"	fontScale="0.25"	offsetX="0" offsetY="0"><![CDATA[Patrick]]></string>
+	<string id="camp_name_sandy"						fontName="main_font"	fontScale="0.25"	offsetX="0" offsetY="0"><![CDATA[Sandy]]></string>
+	<string id="camp_name_squidward"					fontName="main_font"	fontScale="0.25"	offsetX="0" offsetY="0"><![CDATA[Squidward]]></string>
+
+	<!-- Levelup Screen -->
+	<string id="text_lp_count"							fontName="main_font"	fontScale="0.3"	offsetX="0" offsetY="0"><![CDATA[{0}LP]]></string>
+	<string id="unlock_ability"							fontName="main_font"	fontScale="0.22"	offsetX="0" offsetY="0"><![CDATA[Unlock<br>Ability]]></string>
+	<string id="unlock_outfit"							fontName="main_font"	fontScale="0.22"	offsetX="0" offsetY="0"><![CDATA[Unlock<br>Outfit]]></string>
+	<string id="upgrade_outfit_1"							fontName="main_font"	fontScale="0.22"	offsetX="0" offsetY="0"><![CDATA[Upgrade<br>Attack]]></string>
+	<string id="upgrade_outfit_2"							fontName="main_font"	fontScale="0.22"	offsetX="0" offsetY="0"><![CDATA[Speed Up<br>Ability]]></string>
+	<string id="special_name_spongebob"					fontName="main_font"	fontScale="0.25"	offsetX="0" offsetY="0"><![CDATA[Cook Patties]]></string>
+	<string id="special_description_spongebob"			fontName="main_font"	fontScale="0.2"		offsetX="0" offsetY="0"><![CDATA[Restores Health]]></string>
+	<string id="special_name_patrick"					fontName="main_font"	fontScale="0.25"	offsetX="0" offsetY="0"><![CDATA[Hide Under Rock]]></string>
+	<string id="special_description_patrick"			fontName="main_font"	fontScale="0.2"		offsetX="0" offsetY="0"><![CDATA[Prevents all damage from the next enemy attack]]></string>
+	<string id="special_name_sandy"						fontName="main_font"	fontScale="0.25"	offsetX="0" offsetY="0"><![CDATA[Science]]></string>
+	<string id="special_description_sandy"				fontName="main_font"	fontScale="0.2"		offsetX="0" offsetY="0"><![CDATA[Adds a random weakness to the monster]]></string>
+	<string id="special_name_squidward"					fontName="main_font"	fontScale="0.25"	offsetX="0" offsetY="0"><![CDATA[Dance]]></string>
+	<string id="special_description_squidward"			fontName="main_font"	fontScale="0.2"		offsetX="0" offsetY="0"><![CDATA[Character abilities become ready faster.]]></string>
+</strings>

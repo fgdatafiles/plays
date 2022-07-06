@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui"
+        />
+        <title>BOOMERANG All Stars</title>
+        <link rel="stylesheet" type="text/css" href="source/css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="source/fnt/fred_font/font.css" />
+        <link rel="stylesheet" type="text/css" href="source/fnt/fred_font_ar/font.css" />
+        <link rel="stylesheet" type="text/css" href="source/fnt/fred_font_shadow/font.css" />
+        <link rel="stylesheet" type="text/css" href="source/fnt/fred_font_shadow_ar/font.css" />
+    </head>
+    <body>
+        <script>
+            var assetsURL = "source/";
+            var COPY_DECK = {
+                get copy() {
+                    return this.languages[this.currentLanguage];
+                },
+                currentLanguage: "en-gb",
+                languages: {
+                    "en-gb": {
+                        select_game: "Choose a game!",
+                        select_team: "Choose a team!",
+                        end_panel_game_ball: "Baskets",
+                        end_panel_game_ring: "Time",
+                        end_panel_game_sky: "Rings",
+                        end_panel_game_pogo: "Distance",
+                        end_panel_game_rocket: "Targets",
+                        end_panel_score: "Score",
+                        end_panel_record: "Record",
+                        pause_panel_music: "Music",
+                        pause_panel_sound: "Sound",
+                        settings_panel_title: "Settings",
+                        leader_board_title: "Leader Board",
+                        pause_panel_title: "Paused",
+                        end_panel_ratings: ["Awesome", "Amazing", "Brilliant", "Fantastic"]
+                    }
+                }
+            };
+        </script>
+
+        <script src="source/js/lib.js"></script>
+        <script src="source/js/cc.js"></script>
+        <script src="source/js/src.js"></script>
+
+        <div id="rotate_device_graphics"></div>
+        <div id="interactive-area"></div>
+        <!-- <canvas id="webGLCanvasTest"></canvas> -->
+        <script>
+            window.onload = function() {
+                if (window.StatusBar) {
+                    StatusBar.hide();
+                }
+
+                    document.getElementById("rotate_device_graphics").style.display = "none";
+
+                var hidden, visibilityChange;
+                if (typeof document.hidden !== "undefined") {
+                    // Opera 12.10 and Firefox 18 and later support
+                    hidden = "hidden";
+                    visibilityChange = "visibilitychange";
+                } else if (typeof document.msHidden !== "undefined") {
+                    hidden = "msHidden";
+                    visibilityChange = "msvisibilitychange";
+                } else if (typeof document.webkitHidden !== "undefined") {
+                    hidden = "webkitHidden";
+                    visibilityChange = "webkitvisibilitychange";
+                }
+
+                document.addEventListener(
+                    "mousedown",
+                    function(e) {
+                        window.focus();
+                    },
+                    false
+                );
+
+                var hidden = false;
+                var muted;
+
+                document.addEventListener(
+                    visibilityChange,
+                    function(e) {
+                        hidden = !hidden;
+                        if (document.hidden) {
+                            muted = Game.sound.musicMuted;
+                        }
+                        if (hidden) {
+                            Game.sound.muteMusic();
+                        } else if (!hidden && !muted) {
+                            Game.sound.unmuteMusic();
+                        }
+                    },
+                    false
+                );
+
+                initApp();
+            };
+        </script>
+    </body>
+</html>

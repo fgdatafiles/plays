@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<levels> <!-- Beach, Jungle, River, Cavern, MtJungle, Volcano -->
+	<!-- Mite, Turtle, Urchin, Squid, Tongue, Jelly, Flower, Gem, Manta -->
+	<!-- BIOME RESTRICTIONS
+		Beach - No Gem, No Flower
+		Jungle - No Urchin
+		River - No Jelly, No Turtle
+		Cave - No Manta
+		Mountain - No Mite, No Squid
+		Volcano - No Tongue
+	-->
+
+	<!-- Beach - No Gem, No Flower -->
+	<!-- Also not present to not being introduced yet, No Urchin, No Manta -->
+	<!-- Mite, Turtle, Jelly, Squid, Tongue introduced -->
+	<level id="1" 	enemies="Mite"				 	background="Beach"></level>
+	<level id="2" 	enemies="Tongue"		 		background="Beach"></level>
+	<level id="3" 	enemies="Jelly" 				background="Beach"></level>
+	<level id="4" 	enemies="Squid"					background="Beach"></level>
+	<level id="5" 	enemies="Turtle,Jelly"			background="Beach"></level>
+	<level id="6" 	enemies="Mite"					background="Beach"></level>
+	<level id="7" 	enemies="Tongue,Squid"		 	background="Beach"></level>
+	<level id="8" 	enemies="Turtle,Jelly"			background="Beach"></level>
+	<level id="9" 	enemies="Mite,Tongue"			background="Beach"></level>
+	<level id="10" 	enemies="Boss1"					background="Beach"></level>
+
+	<!-- Jungle - No Urchin -->
+	<!-- Gem, Flower, Manta introduced -->
+	<level id="11" 	enemies="Squid"					background="Jungle"></level>
+	<level id="12" 	enemies="Jelly"					background="Jungle"></level>
+	<level id="13" 	enemies="Tongue,Gem"			background="Jungle"></level>
+	<level id="14" 	enemies="Flower,Gem"			background="Jungle"></level>
+	<level id="15" 	enemies="Squid,Jelly,Flower"	background="Jungle"></level>
+	<level id="16" 	enemies="Manta,Jelly"			background="Jungle"></level>
+	<level id="17" 	enemies="Tongue,Squid"			background="Jungle"></level>
+	<level id="18" 	enemies="Turtle,Flower,Turtle"	background="Jungle"></level>
+	<level id="19" 	enemies="Jelly,Squid,Gem"		background="Jungle"></level>
+	<level id="20" 	enemies="Boss2"					background="Jungle"></level>
+
+	<!-- River - No Jelly, No Turtle -->
+	<!-- Urchin introduced -->
+	<level id="21" 	enemies="Urchin"				background="River"></level>
+	<level id="22" 	enemies="Gem,Squid"				background="River"></level>
+	<level id="23" 	enemies="Squid,Mite"			background="River"></level>
+	<level id="24" 	enemies="Flower,Urchin"			background="River"></level>
+	<level id="25" 	enemies="Mite,Gem,Manta"		background="River"></level>
+	<level id="26" 	enemies="Flower,Mite"			background="River"></level>
+	<level id="27" 	enemies="Squid,Tongue"			background="River"></level>
+	<level id="28" 	enemies="Tongue,Urchin,Gem"		background="River"></level>
+	<level id="29" 	enemies="Flower,Mite,Manta"		background="River"></level>
+	<level id="30" 	enemies="Boss3"					background="River"></level>
+
+	<!-- Cave - No Manta -->
+	<level id="31" 	enemies="Urchin,Gem"			background="Cavern"></level>
+	<level id="32" 	enemies="Squid,Tongue"			background="Cavern"></level>
+	<level id="33" 	enemies="Flower,Gem"			background="Cavern"></level>
+	<level id="34" 	enemies="Squid,Urchin,Squid"	background="Cavern"></level>
+	<level id="35" 	enemies="Flower,Turtle,Mite"	background="Cavern"></level>
+	<level id="36" 	enemies="Tongue,Urchin"			background="Cavern"></level>
+	<level id="37" 	enemies="Turtle,Jelly,Mite"		background="Cavern"></level>
+	<level id="38" 	enemies="Flower,Squid,Turtle"	background="Cavern"></level>
+	<level id="39" 	enemies="Tongue,Urchin,Jelly"	background="Cavern"></level>
+	<level id="40" 	enemies="Boss4"					background="Cavern"></level>
+
+	<!-- Mountain - No Mite, No Squid -->
+	<!-- Each of these should be much more difficult individually -->
+	<level id="41" 	enemies="Turtle"				background="Mountain"></level>
+	<level id="42" 	enemies="Tongue,Manta"			background="Mountain"></level>
+	<level id="43" 	enemies="Jelly"					background="Mountain"></level>
+	<level id="44" 	enemies="Turtle,Flower"			background="Mountain"></level>
+	<level id="45" 	enemies="Tongue,Jelly"			background="Mountain"></level>
+	<level id="46" 	enemies="Urchin"				background="Mountain"></level>
+	<level id="47" 	enemies="Manta"					background="Mountain"></level>
+	<level id="48" 	enemies="Turtle,Gem"			background="Mountain"></level>
+	<level id="49" 	enemies="Gem,Jelly"				background="Mountain"></level>
+	<level id="50" 	enemies="Boss5"					background="Mountain"></level>
+
+	<!-- Volcano - No Tongue -->
+	<!-- Each of these should be much more difficult individually -->
+	<level id="51" 	enemies="Flower"				background="Volcano"></level>
+	<level id="52" 	enemies="Squid"					background="Volcano"></level>
+	<level id="53" 	enemies="Mite,Flower"			background="Volcano"></level>
+	<level id="54" 	enemies="Gem"					background="Volcano"></level>
+	<level id="55" 	enemies="Manta,Flower"			background="Volcano"></level>
+	<level id="56" 	enemies="Urchin,Jelly"			background="Volcano"></level>
+	<level id="57" 	enemies="Turtle"				background="Volcano"></level>
+	<level id="58" 	enemies="Flower,Gem"			background="Volcano"></level>
+	<level id="59" 	enemies="Mite,Squid"			background="Volcano"></level>
+	<level id="60" 	enemies="Boss6"					background="Volcano"></level>
+</levels>

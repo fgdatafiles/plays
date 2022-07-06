@@ -1,0 +1,91 @@
+
+
+var LevelScreen = function(options){
+
+	trace("--> LevelScreen()");
+
+	var me = this;
+	options = options || {};
+
+	var canvas = SCREENS.my_canvas;
+
+	canvas.style.display = "block";
+	canvas.style.backgroundColor = "black";
+
+	var stage = SCREENS.stage;
+	stage.removeAllChildren();
+	stage.enableMouseOver(0);
+
+	var frame = stage.addChild(new lib.scene_level);
+
+	//level text
+	var temp_obj = JSON.parse(JSON.stringify(oLANG.level));
+	temp_obj.value =  __utils.doSubText(temp_obj.value, "~amt~", GAME.level);
+	
+	__utils.doText(frame.txt, temp_obj);
+
+	__utils.doText(frame.txt_mission, oLANG["level_mission_" + GAME.level]);
+
+frame.txt.visible=false;
+frame.txt_mission.visible=false;
+	//---------------------------
+	// resize update
+	//---------------------------
+
+	frame.my_scale = null;
+	this.doResizeUpdate = function(){
+		frame.x = oSTAGE.game_width_margins;
+		frame.y = oSTAGE.game_height_margins;
+		frame.my_scale = oSTAGE.scale;
+		stage.needUpdate = true;
+	}
+
+	//---------------------------
+	// reveal
+	//---------------------------
+
+	this.doFadeIn = function(){
+		if(options.snap){
+			canvas.style.opacity = 1;
+			canvas.style.display = "block";
+			me.doFadeOut();
+		}else{
+			canvas.style.opacity = 0;
+			canvas.style.display = "block";
+			TweenLite.to(canvas, 0.25, {opacity: 1, overwrite:true, onComplete: me.doFadeOut});
+		}
+	}
+
+	this.doFadeOut = function(){
+		TweenLite.to(canvas, 0.25, {opacity: 0, delay: 1, overwrite:true, onComplete: me.doFadeEnd});
+	}
+
+	this.doFadeEnd = function(){
+		if(options.callback){
+			options.callback();
+		}
+		me.doDestroy();
+
+	}
+
+	this.doDestroy = function(){
+		canvas.style.display = "none";
+		stage.removeAllChildren();
+		resize_updater.forget = true;
+		
+	}
+
+
+	//register the resizer
+	var resize_updater = {doResizeUpdate : me.doResizeUpdate};
+	update_queue.push(resize_updater);
+
+	me.doResizeUpdate();
+	me.doFadeIn();
+
+	stage.needUpdate = true;
+
+	SCREENS.doShow();
+
+
+}

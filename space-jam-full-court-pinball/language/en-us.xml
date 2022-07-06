@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+
+
+    <!--image overdides-->
+    <img id="theaters">media/images/Localized/en/theaters.png</img>
+    <img id="theaters_white">media/images/Localized/en/theaters_white.png</img>
+    <img id="TitleLogo_sm">media/images/Localized/en/TitleLogo_sm.png</img>
+    <img id="MovieLogo">media/images/Localized/en/TitleLogo.png</img>
+
+    <!--
+
+    [Canvas Font Overrides:]
+
+    fontFamily: Override font family (fontFamily="MontserratBold") ** Must be declared in style sheet
+    fontSize: Override font size (fontSize="20px" or fontSize="80%")
+    regY: Offset registration point (regY="-30") note: Negative numbers will move the object down.
+    regX: Offset registration point (regX="10")
+    color: Change the color (color="#000000")
+
+    example:
+    <txt id="play" fontFamily="MouseMemoirs" fontSize="80%" regY="-30">PLAY</txt>
+
+    [CSS Font Overrides:]
+
+    Any valid CSS can be inserted to the legal panel text in this section
+
+    -->
+
+    <txt id="loading_msg" fontFamily="Century Gothic" fontSize="100%"><![CDATA[LOADING...]]></txt>
+
+    <!--title screen-->
+    <txt id="title_game_name" fontFamily="Century Gothic Bold" fontSize="100%" regY="0"><![CDATA[FULL COURT PINBALL]]></txt>
+    <txt id="title_play" fontFamily="Century Gothic Bold" fontSize="100%" regY="0"><![CDATA[PLAY]]></txt>
+
+    <!--instructions-->
+    <txt id="instructions_resume" fontFamily="Century Gothic Bold" fontSize="100%" regY="0"><![CDATA[RESUME]]></txt>
+    <txt id="instructions_play" fontFamily="Century Gothic Bold" fontSize="100%" regY="0"><![CDATA[PLAY]]></txt>
+
+    <!--mobile specific (css text)-->
+    <txt id="instruction_mobile_1" fontFamily="Century Gothic" fontSize="100%" type="instruction_mobile" img="media/images/Instructions/Instructions_mobile_01.jpg" w="318" h="446" active="true"><![CDATA[TO LAUNCH A BALL, TAP AND DRAG DOWN TO PULL BACK THE LAUNCHER. LET GO TO RELEASE.]]></txt>
+    <txt id="instruction_mobile_2" fontFamily="Century Gothic" fontSize="100%" type="instruction_mobile" img="media/images/Instructions/Instructions_mobile_02.jpg" w="318" h="446" active="true"><![CDATA[TAP ON BOTTOM LEFT AND RIGHT OF THE SCREEN TO USE FLIPPERS.]]></txt>
+
+    <!--desktop specific (css text)-->
+    <txt id="instruction_desktop_1" fontFamily="Century Gothic" fontSize="100%" type="instruction_desktop" img="media/images/Instructions/Instructions_pc_01.jpg" w="318" h="446" active="true"><![CDATA[PRESS AND HOLD THE DOWN ARROW KEY TO PULL BACK THE BALL.]]></txt>
+    <txt id="instruction_desktop_2" fontFamily="Century Gothic" fontSize="100%" type="instruction_desktop" img="media/images/Instructions/Instructions_pc_02.jpg" w="318" h="446" active="true"><![CDATA[TAP LEFT AND RIGHT ARROW KEYS TO USE FLIPPERS.]]></txt>
+
+    <!--pause menu-->
+    <txt id="pause_exit" fontFamily="Century Gothic Bold" fontSize="100%" regY="0"><![CDATA[EXIT GAME]]></txt>
+    <txt id="pause_resume" fontFamily="Century Gothic Bold" fontSize="100%" regY="0"><![CDATA[RESUME]]></txt>
+    <txt id="pause_help" fontFamily="Century Gothic Bold" fontSize="100%" regY="0"><![CDATA[HELP]]></txt>
+
+    <!--recap-->
+    <txt id="recap_hdr" fontFamily="Century Gothic" fontSize="100%" regY="0"><![CDATA[YOUR SCORE:]]></txt>
+    <txt id="recap_score" fontFamily="Century Gothic Bold" fontSize="100%" regY="0"><![CDATA[~amt~]]></txt>
+    <txt id="recap_share" fontFamily="Century Gothic Bold" fontSize="100%" regY="0"><![CDATA[SHARE]]></txt>
+    <txt id="recap_replay" fontFamily="Century Gothic Bold" fontSize="100%" regY="0"><![CDATA[PLAY AGAIN]]></txt>
+    <txt id="recap_processing" fontFamily="Century Gothic Bold" fontSize="100%" regY="0"><![CDATA[PROCESSING...]]></txt>
+
+    <!--shareable-->
+    <txt id="sharable_game_name" fontFamily="Century Gothic Bold" fontSize="100%" regY="0"><![CDATA[FULL COURT PINBALL]]></txt>
+    <txt id="sharable_hdr" fontFamily="Century Gothic" fontSize="100%" regY="0"><![CDATA[TRY TO BEAT MY SCORE!]]></txt>
+    <txt id="sharable_score" fontFamily="Century Gothic Bold" fontSize="100%" regY="0"><![CDATA[SCORE: ~amt~]]></txt>
+   
+
+    <txt id="sharable_available" fontFamily="Century Gothic" fontSize="100%" regY="0"><![CDATA[]]></txt>
+    <txt id="sharable_copyright" fontFamily="Century Gothic" fontSize="100%" regY="0"><![CDATA[©2021 WarnerMedia Direct, LLC.<br>ALL RIGHTS RESERVED.]]></txt>
+
+
+
+    <!--sharing (these values are text only)-->
+    <txt id="sharable_default_filename"><![CDATA[My Score]]></txt>
+    <txt id="tweet_text"><![CDATA[I just played Space Jam Full Court Pinball! TRY TO BEAT MY SCORE! And don’t miss the new Space Jam: A New Legacy movie In cinemas July 16]]></txt>
+    <!--TRAILER: https://youtu.be/kP9TfCWaQT4-->
+    <txt id="mobile_download_intructions"><![CDATA[Tap image to save]]></txt>
+    <txt id="instagram_text_mobile" fontFamily="Century Gothic" fontSize="100%" ><![CDATA[To share on Instagram, first tap to download the static image to your mobile device, then upload from your device library on Instagram!]]></txt>
+    <txt id="instagram_text_desktop" fontFamily="Century Gothic" fontSize="100%"><![CDATA[To share on Instagram, click to download the static image and transfer to your mobile device, then upload from your device library on Instagram!]]></txt>
+
+    <config id="share_facebook">false</config>
+    <config id="share_twitter">false</config>
+    <config id="share_instagram">false</config>
+    <config id="share_download">false</config>
+
+
+    <txt id="legal_privacy_policy" fontFamily="Century Gothic" fontSize="100%" type="legal_link" link="https://policies.warnerbros.com/privacy/children/en-us/html/children_privacy_en-us_1.0.0.html" after=" | " active="true"><![CDATA[PRIVACY POLICY]]></txt>  
+    <txt id="legal_terms" fontFamily="Century Gothic" fontSize="100%" type="legal_link" link="https://policies.warnerbros.com/terms/en-us/" after=" | " active="true"><![CDATA[TERMS OF USE]]></txt>
+    <!--<txt id="legal_cookies" classAdd="ot-sdk-show-settings" fontFamily="Century Gothic" fontSize="100%" type="legal_link" link="javascript:void(0);" after=" | " active="true"><![CDATA[DO NOT SELL MY INFO]]></txt>-->
+    <txt id="legal_credits" fontFamily="Century Gothic" fontSize="100%" type="legal_link" action="doOpenCredits" active="false"><![CDATA[CREDITS]]></txt>
+	<txt id="legal_mpaa" fontFamily="Century Gothic" fontSize="100%" type="legal_link" link="https://www.mpaa.org/" after=" | " active="false"><![CDATA[MPAA]]></txt>  	
+	<txt id="legal_parents" fontFamily="Century Gothic" fontSize="100%" type="legal_link" link="https://www.parentalguide.org/" after=" | " active="false"><![CDATA[PARENTAL GUIDE]]></txt>  
+    <txt id="legal_ratings" fontFamily="Century Gothic" fontSize="100%" type="legal_link" link="https://www.filmratings.com/" active="false"><![CDATA[FILM RATINGS]]></txt>
+
+    <!--legal images-->
+    <txt id="legal_image_1" type="legal_image" alt="" active="false">media/images/Localized/en/billing-block.png</txt>
+
+
+    <!--browser alert (no settings available)-->
+    <txt id="browser_alert"><![CDATA[YOUR BROWSER SEEMS TO BE OUT OF DATE. PLEASE ENSURE THAT YOU ARE RUNNING ONE OF THESE LATEST BROWSERS.]]></txt>
+    <txt id="warning_screensize"><![CDATA[<table width="100%" height="100%"><tr><td align="center" valign="middle">Oops!<br>This game requires a bigger screen.<br>Please resize your browser.</td></tr></table>]]></txt>
+
+</xml>

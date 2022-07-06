@@ -1,0 +1,205 @@
+{
+"skeleton": {
+	"hash": "vxC/ef54k/Lv78VjWRe2NAIgVyA",
+	"spine": "3.2.01",
+	"width": 0,
+	"height": 0,
+	"images": "./../../03_to-dev/characters/images/"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "length": 59.03, "rotation": 88.05, "x": 2.5, "y": -16 },
+	{ "name": "bone2", "parent": "bone", "x": 43.16, "y": 25.47 },
+	{ "name": "bone3", "parent": "bone2", "x": 9.3, "y": -21.44 }
+],
+"slots": [
+	{ "name": "D_45_b2", "bone": "bone2" },
+	{ "name": "D_head2", "bone": "bone3" },
+	{ "name": "D_front", "bone": "bone" }
+],
+"skins": {
+	"default": {
+		"D_45_b2": {
+			"D_45_b": { "x": 44.51, "y": -35.62, "rotation": -88.05, "width": 102, "height": 98 }
+		},
+		"D_front": {
+			"D_34": { "x": 54.57, "y": 12.37, "rotation": -88.05, "width": 159, "height": 108 },
+			"D_45_f": { "x": 67.96, "y": 4.74, "rotation": -88.05, "width": 149, "height": 117 },
+			"D_back": { "x": 69.34, "y": 3.44, "rotation": -88.05, "width": 112, "height": 109 },
+			"D_front": { "x": 68.96, "y": 2.33, "rotation": -88.05, "width": 124, "height": 105 },
+			"D_side": { "x": 70.66, "y": 1.6, "rotation": -88.05, "width": 170, "height": 114 }
+		},
+		"D_head2": {
+			"D_head": { "x": 22.45, "y": 1.49, "rotation": -88.05, "width": 62, "height": 45 }
+		}
+	}
+},
+"animations": {
+	"34": {
+		"slots": {
+			"D_front": {
+				"attachment": [
+					{ "time": 0, "name": "D_34" }
+				]
+			},
+			"D_head2": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"bone": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 9.26 }
+				]
+			}
+		}
+	},
+	"45": {
+		"slots": {
+			"D_45_b2": {
+				"attachment": [
+					{ "time": 0, "name": "D_45_b" }
+				]
+			},
+			"D_front": {
+				"attachment": [
+					{ "time": 0, "name": "D_45_f" }
+				]
+			},
+			"D_head2": {
+				"attachment": [
+					{ "time": 0, "name": "D_head" }
+				]
+			}
+		},
+		"bones": {
+			"bone": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 5.95 }
+				]
+			},
+			"bone3": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.3333,
+						"angle": -6.15,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.6666, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 8.04, "y": -12.64 }
+				]
+			}
+		}
+	},
+	"back": {
+		"slots": {
+			"D_front": {
+				"attachment": [
+					{ "time": 0, "name": "D_back" }
+				]
+			},
+			"D_head2": {
+				"attachment": [
+					{ "time": 0, "name": null }
+				]
+			}
+		}
+	},
+	"front": {
+		"slots": {
+			"D_front": {
+				"attachment": [
+					{ "time": 0, "name": "D_front" }
+				]
+			},
+			"D_head2": {
+				"attachment": [
+					{ "time": 0, "name": "D_head" }
+				]
+			}
+		},
+		"bones": {
+			"bone": {
+				"translate": [
+					{ "time": 0, "x": 0.66, "y": 5.95 }
+				]
+			},
+			"bone3": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": -4.26,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.3333,
+						"angle": 3.25,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.6666, "angle": -4.26 }
+				]
+			}
+		},
+		"drawOrder": [
+			{
+				"time": 0,
+				"offsets": [
+					{ "slot": "D_head2", "offset": 1 }
+				]
+			}
+		]
+	},
+	"side": {
+		"slots": {
+			"D_front": {
+				"attachment": [
+					{ "time": 0, "name": "D_side" }
+				]
+			},
+			"D_head2": {
+				"attachment": [
+					{ "time": 0, "name": "D_head" }
+				]
+			}
+		},
+		"bones": {
+			"bone3": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 5.55,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.3333,
+						"angle": -7.24,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.6666, "angle": 5.55 }
+				],
+				"translate": [
+					{ "time": 0, "x": 11.71, "y": -11.55, "curve": "stepped" },
+					{ "time": 0.6666, "x": 11.71, "y": -11.55 }
+				]
+			}
+		},
+		"drawOrder": [
+			{
+				"time": 0,
+				"offsets": [
+					{ "slot": "D_head2", "offset": 1 }
+				]
+			}
+		]
+	}
+}
+}
