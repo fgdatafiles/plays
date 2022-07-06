@@ -1,0 +1,413 @@
+{
+  "header": {
+    "id": "3e3c0017-694c-444d-b3fc-4d3013c52482",
+    "timestamp": 1.32518413874355E+17
+  },
+  "meta": {
+    "name": "",
+    "heroID": "Em"
+  },
+  "feedback": {
+    "start": [
+      {
+        "split": [
+          {
+            "text": "Mira, a switch! ",
+            "timestamp": 0
+          },
+          {
+            "text": "Can you figure out how it works?",
+            "timestamp": 2.5
+          }
+        ],
+        "voice": "voice:SPARKS_START_3"
+      }
+    ],
+    "complete": [
+      {
+        "split": [
+          {
+            "text": "Why do you think the ball rolled ",
+            "timestamp": 0
+          },
+          {
+            "text": "farther than the box?",
+            "timestamp": 2.11999988555908
+          }
+        ],
+        "voice": "voice:SPARKS_WIN_6"
+      }
+    ]
+  },
+  "display": {
+    "size": [
+      8,
+      6
+    ],
+    "background": "ramps"
+  },
+  "collisions": {
+    "tiles": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "actors": {
+    "actors": [
+      {
+        "id": 1,
+        "className": "start",
+        "position": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "className": "furBlur",
+        "position": [
+          0,
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "className": "switchBlock",
+        "position": [
+          6,
+          2
+        ],
+        "size": [
+          1,
+          2
+        ],
+        "properties": {
+          "anchor": 3
+        }
+      },
+      {
+        "id": 4,
+        "className": "goal",
+        "position": [
+          7,
+          2
+        ]
+      },
+      {
+        "id": 5,
+        "className": "switch",
+        "position": [
+          4,
+          2
+        ],
+        "properties": {
+          "targetID": 3,
+          "wire": {
+            "startDirection": 3,
+            "endDirection": 1,
+            "path": [
+              [
+                4,
+                1
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                6,
+                1
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "id": 6,
+        "className": "hotspot",
+        "position": [
+          3,
+          2
+        ]
+      }
+    ]
+  },
+  "toolbox": {
+    "actors": [
+      {
+        "id": 7,
+        "className": "pushable",
+        "properties": {
+          "shape": 0,
+          "skin": 1
+        }
+      },
+      {
+        "id": 8,
+        "className": "pushable",
+        "properties": {
+          "shape": 1,
+          "skin": 1
+        }
+      }
+    ]
+  },
+  "bgTiles": {
+    "tiles": [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  "collisionTiles": {
+    "tiles": [
+      16,
+      2,
+      2,
+      1,
+      0,
+      2,
+      15,
+      0,
+      20,
+      4,
+      5,
+      3,
+      19,
+      3,
+      19,
+      5,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  "fgTiles": {
+    "tiles": [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  "decorations": {
+    "decorations": [
+    ]
+  },
+  "nav": {
+    "tiles": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

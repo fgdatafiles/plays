@@ -1,0 +1,871 @@
+{
+	"actors": [
+		{
+			"template": {
+				"key": "bg",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 50,
+					"y": 0
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "ground",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 1000
+				},
+				"rotation": 0
+			}
+		},
+		{
+			"template": {
+				"key": "step",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 300,
+					"y": 900
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "step",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 300,
+					"y": 780
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "step",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1700,
+					"y": 900
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "step",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1560,
+					"y": 900
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "step",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1700,
+					"y": 780
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "wall_right",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1850,
+					"y": 550
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "wall_left",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 150,
+					"y": 550
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "step",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1280,
+					"y": 900
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "step",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1420,
+					"y": 900
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "step",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 440,
+					"y": 900
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "step",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 440,
+					"y": 800
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "pickups_spawner",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 940
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "step",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1560,
+					"y": 780
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "invisible_ceil",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": -130
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_ball",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 650
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_ally",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 520,
+					"y": 420
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "goal_hover_ally",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 400,
+					"y": 400
+				}
+			},
+			"waypoint": {
+				"x": 0,
+				"y": -49
+			},
+			"waypointLinks": {
+				"nodes": [
+					"802",
+					"866",
+					"90",
+					"15",
+					"872"
+				]
+			}
+		},
+		{
+			"template": {
+				"key": "goal_hover_opponent",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1600,
+					"y": 400
+				}
+			},
+			"waypoint": {
+				"x": 0,
+				"y": -49
+			},
+			"waypointLinks": {
+				"nodes": [
+					"867",
+					"803",
+					"871",
+					"14"
+				]
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through_moving",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 700,
+					"y": 550
+				}
+			},
+			"waypoint": {
+				"x": 450,
+				"y": 0
+			},
+			"waypointLinks": {
+				"nodes": [
+					"8685",
+					"869",
+					"8673"
+				]
+			}
+		},
+		{
+			"template": {
+				"key": "pathfinding",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 0,
+					"y": 0
+				}
+			},
+			"image": {
+				"pack": "editor_icons",
+				"asset": "web",
+				"layer": "front"
+			},
+			"pathfinding": {
+				"nodes": [
+					{
+						"id": "1",
+						"x": 610.5,
+						"y": 663.5
+					},
+					{
+						"id": "3",
+						"x": 1010.5,
+						"y": 929.5
+					},
+					{
+						"id": "5",
+						"x": 839.5,
+						"y": 815.5
+					},
+					{
+						"id": "7",
+						"x": 1651.5,
+						"y": 687.5
+					},
+					{
+						"id": "10",
+						"x": 1158.5,
+						"y": 799.5
+					},
+					{
+						"id": "14",
+						"x": 1479.5,
+						"y": 431.5
+					},
+					{
+						"id": "15",
+						"x": 514.5,
+						"y": 427.5
+					},
+					{
+						"id": "85",
+						"x": 843.5,
+						"y": 931.5
+					},
+					{
+						"id": "86",
+						"x": 1159.5,
+						"y": 941.5
+					},
+					{
+						"id": "89",
+						"x": 1484,
+						"y": 290
+					},
+					{
+						"id": "90",
+						"x": 504,
+						"y": 289
+					},
+					{
+						"id": "802",
+						"x": 367.5,
+						"y": 388.5
+					},
+					{
+						"id": "803",
+						"x": 1652.5,
+						"y": 376.5
+					},
+					{
+						"id": "866",
+						"x": 388,
+						"y": 290
+					},
+					{
+						"id": "867",
+						"x": 1601.5,
+						"y": 290.5
+					},
+					{
+						"id": "868",
+						"x": 906.5,
+						"y": 509.5
+					},
+					{
+						"id": "869",
+						"x": 683.5,
+						"y": 512.5
+					},
+					{
+						"id": "871",
+						"x": 1582.5,
+						"y": 439.5
+					},
+					{
+						"id": "872",
+						"x": 451.5,
+						"y": 423.5
+					},
+					{
+						"id": "8669",
+						"x": 1435.5,
+						"y": 813.5
+					},
+					{
+						"id": "8670",
+						"x": 580.5,
+						"y": 817.5
+					},
+					{
+						"id": "8671",
+						"x": 1310.5,
+						"y": 815.5
+					},
+					{
+						"id": "8672",
+						"x": 695.5,
+						"y": 818.5
+					},
+					{
+						"id": "8673",
+						"x": 782.5,
+						"y": 515.5
+					},
+					{
+						"id": "8676",
+						"x": 1306.5,
+						"y": 659.5
+					},
+					{
+						"id": "8678",
+						"x": 704.5,
+						"y": 661.5
+					},
+					{
+						"id": "8679",
+						"x": 1004.5,
+						"y": 807.5
+					},
+					{
+						"id": "8682",
+						"x": 948.5,
+						"y": 808.5
+					},
+					{
+						"id": "8683",
+						"x": 1060.5,
+						"y": 808.5
+					},
+					{
+						"id": "8684",
+						"x": 986.5,
+						"y": 502.5
+					},
+					{
+						"id": "8685",
+						"x": 610.5,
+						"y": 513.5
+					},
+					{
+						"id": "8686",
+						"x": 790.5,
+						"y": 661.5
+					},
+					{
+						"id": "8687",
+						"x": 1224.5,
+						"y": 660.5
+					},
+					{
+						"id": "8688",
+						"x": 1387.5,
+						"y": 660.5
+					},
+					{
+						"id": "8689",
+						"x": 355.5,
+						"y": 690.5
+					}
+				],
+				"links": [
+					{
+						"from": "5",
+						"to": "85",
+						"type": "bothWays"
+					},
+					{
+						"from": "86",
+						"to": "10",
+						"type": "bothWays"
+					},
+					{
+						"from": "3",
+						"to": "85",
+						"type": "bothWays"
+					},
+					{
+						"from": "3",
+						"to": "86",
+						"type": "bothWays"
+					},
+					{
+						"from": "15",
+						"to": "90",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "14",
+						"to": "89",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "866",
+						"to": "90",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "867",
+						"to": "89",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "871",
+						"to": "14",
+						"type": "bothWays"
+					},
+					{
+						"from": "871",
+						"to": "803",
+						"type": "bothWays"
+					},
+					{
+						"from": "15",
+						"to": "872",
+						"type": "bothWays"
+					},
+					{
+						"from": "872",
+						"to": "802",
+						"type": "bothWays"
+					},
+					{
+						"from": "869",
+						"to": "8673",
+						"type": "bothWays"
+					},
+					{
+						"from": "8673",
+						"to": "868",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "869",
+						"to": "15",
+						"type": "bothWays"
+					},
+					{
+						"from": "868",
+						"to": "14",
+						"type": "bothWays"
+					},
+					{
+						"from": "8670",
+						"to": "8672",
+						"type": "bothWays"
+					},
+					{
+						"from": "8672",
+						"to": "5",
+						"type": "bothWays"
+					},
+					{
+						"from": "10",
+						"to": "8671",
+						"type": "bothWays"
+					},
+					{
+						"from": "8671",
+						"to": "8669",
+						"type": "bothWays"
+					},
+					{
+						"from": "8678",
+						"to": "8672",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "3",
+						"to": "8679",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "8682",
+						"to": "8679",
+						"type": "bothWays"
+					},
+					{
+						"from": "8683",
+						"to": "8679",
+						"type": "bothWays"
+					},
+					{
+						"from": "8683",
+						"to": "10",
+						"type": "bothWays"
+					},
+					{
+						"from": "8682",
+						"to": "5",
+						"type": "bothWays"
+					},
+					{
+						"from": "8671",
+						"to": "8676",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "3",
+						"to": "8683",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "3",
+						"to": "8682",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "869",
+						"to": "8685",
+						"type": "bothWays"
+					},
+					{
+						"from": "868",
+						"to": "8684",
+						"type": "bothWays"
+					},
+					{
+						"from": "8684",
+						"to": "8676",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "8685",
+						"to": "8678",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "8678",
+						"to": "869",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "8678",
+						"to": "8673",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "8678",
+						"to": "868",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "8676",
+						"to": "869",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "8676",
+						"to": "868",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "8685",
+						"to": "15",
+						"type": "bothWays"
+					},
+					{
+						"from": "8684",
+						"to": "14",
+						"type": "bothWays"
+					},
+					{
+						"from": "8676",
+						"to": "8673",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "8669",
+						"to": "8688",
+						"type": "bothWays"
+					},
+					{
+						"from": "8688",
+						"to": "7",
+						"type": "bothWays"
+					},
+					{
+						"from": "8688",
+						"to": "8676",
+						"type": "bothWays"
+					},
+					{
+						"from": "8676",
+						"to": "8687",
+						"type": "bothWays"
+					},
+					{
+						"from": "8687",
+						"to": "10",
+						"type": "bothWays"
+					},
+					{
+						"from": "1",
+						"to": "8670",
+						"type": "bothWays"
+					},
+					{
+						"from": "1",
+						"to": "8678",
+						"type": "bothWays"
+					},
+					{
+						"from": "8678",
+						"to": "8686",
+						"type": "bothWays"
+					},
+					{
+						"from": "8686",
+						"to": "5",
+						"type": "bothWays"
+					},
+					{
+						"from": "1",
+						"to": "8689",
+						"type": "bothWays"
+					},
+					{
+						"from": "8679",
+						"to": "8685",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "8683",
+						"to": "8684",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "8683",
+						"to": "8685",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "8679",
+						"to": "8684",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "8682",
+						"to": "8684",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "8682",
+						"to": "8685",
+						"type": "oneWayFrom"
+					}
+				]
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 850
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through_moving",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 850,
+					"y": 550
+				}
+			},
+			"waypoint": {
+				"x": 450,
+				"y": 0
+			},
+			"waypointLinks": {
+				"nodes": [
+					"868",
+					"8684"
+				]
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_ally",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 700,
+					"y": 600
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_opponent",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1500,
+					"y": 400
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_opponent",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1300,
+					"y": 600
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 700,
+					"y": 700
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1300,
+					"y": 700
+				}
+			}
+		}
+	],
+	"filename": "level2"
+}

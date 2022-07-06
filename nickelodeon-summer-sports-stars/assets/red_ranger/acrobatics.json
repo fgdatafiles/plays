@@ -1,0 +1,128 @@
+{
+	pieces : [{
+			asset : "trunk", 
+			x : 0, 
+			y : 0, 
+			rotation : 0, 
+			back : false, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 53, 
+				height : 59
+			}
+		},{
+			asset : "head", 
+			x : -1, 
+			y : -62, 
+			rotation : 0, 
+			back : false, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 60, 
+				height : 61
+			}
+		},{
+			asset : "leg_front", 
+			x : -11, 
+			y : 49, 
+			rotation : 21, 
+			back : false, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 39, 
+				height : 59
+			}
+		},{
+			asset : "leg_back", 
+			x : 31, 
+			y : 42, 
+			rotation : -17, 
+			back : true, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 39, 
+				height : 57
+			}
+		},{
+			asset : "arm_front", 
+			x : -42, 
+			y : -19, 
+			rotation : 82, 
+			back : false, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 41, 
+				height : 60
+			}
+		},{
+			asset : "arm_back", 
+			x : 36, 
+			y : -18, 
+			rotation : -83, 
+			back : true, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 41, 
+				height : 60
+			}
+		}], 
+	constraints : [{
+			id1 : "trunk", 
+			id2 : "head", 
+			x : 0, 
+			y : -17, 
+			type : "WeldJoint", 
+			params : null, 
+			maxForce : null
+		},{
+			id1 : "trunk", 
+			id2 : "leg_front", 
+			x : -3, 
+			y : 21, 
+			type : "WeldJoint", 
+			params : [21], 
+			maxForce : null
+		},{
+			id1 : "trunk", 
+			id2 : "leg_back", 
+			x : 11, 
+			y : 20, 
+			type : "WeldJoint", 
+			params : [-17], 
+			maxForce : null
+		},{
+			id1 : "trunk", 
+			id2 : "arm_front", 
+			x : -13, 
+			y : -13, 
+			type : "WeldJoint", 
+			params : [82], 
+			maxForce : null
+		},{
+			id1 : "trunk", 
+			id2 : "arm_back", 
+			x : 9, 
+			y : -12, 
+			type : "WeldJoint", 
+			params : [-83], 
+			maxForce : null
+		}]
+}

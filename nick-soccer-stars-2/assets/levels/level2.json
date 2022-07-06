@@ -1,0 +1,520 @@
+{
+	"actors": [
+		{
+			"template": {
+				"key": "bg",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 50,
+					"y": 0
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "ground",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 1000
+				},
+				"rotation": 0
+			}
+		},
+		{
+			"template": {
+				"key": "pickups_spawner",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 690
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "wall_right",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1800,
+					"y": 580
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "wall_left",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 200,
+					"y": 580
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "invisible_ceil",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": -80
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "goal_hover_ally",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 460,
+					"y": 720
+				}
+			},
+			"waypoint": {
+				"x": -1.5,
+				"y": 45
+			},
+			"waypointLinks": {
+				"nodes": [
+					"7539447",
+					"7539443",
+					"7539460",
+					"75397"
+				]
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_ball",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 800
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_ally",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 600,
+					"y": 750
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "goal_hover_opponent",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1540,
+					"y": 720
+				}
+			},
+			"waypoint": {
+				"x": -0.5,
+				"y": 46
+			},
+			"waypointLinks": {
+				"nodes": [
+					"7539445",
+					"7539446",
+					"7539444",
+					"7539459"
+				]
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 750,
+					"y": 830
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1250,
+					"y": 830
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 730
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "pathfinding",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 0,
+					"y": 0
+				}
+			},
+			"pathfinding": {
+				"nodes": [
+					{
+						"id": "0",
+						"x": 399.5,
+						"y": 929.5
+					},
+					{
+						"id": "4",
+						"x": 677.5,
+						"y": 933.5
+					},
+					{
+						"id": "78",
+						"x": 1125.5,
+						"y": 923.5
+					},
+					{
+						"id": "75394",
+						"x": 1611.5,
+						"y": 923.5
+					},
+					{
+						"id": "75396",
+						"x": 755.5,
+						"y": 798.5
+					},
+					{
+						"id": "75397",
+						"x": 589.5,
+						"y": 769.5
+					},
+					{
+						"id": "7539440",
+						"x": 883.5,
+						"y": 929.5
+					},
+					{
+						"id": "7539441",
+						"x": 1350.5,
+						"y": 922.5
+					},
+					{
+						"id": "7539442",
+						"x": 1257.5,
+						"y": 795.5
+					},
+					{
+						"id": "7539443",
+						"x": 560.5,
+						"y": 610.5
+					},
+					{
+						"id": "7539444",
+						"x": 1415.5,
+						"y": 760.5
+					},
+					{
+						"id": "7539445",
+						"x": 1455.5,
+						"y": 608.5
+					},
+					{
+						"id": "7539446",
+						"x": 1611.5,
+						"y": 610.5
+					},
+					{
+						"id": "7539447",
+						"x": 429.5,
+						"y": 607.5
+					},
+					{
+						"id": "7539450",
+						"x": 1142.5,
+						"y": 799.5
+					},
+					{
+						"id": "7539451",
+						"x": 667.5,
+						"y": 802.5
+					},
+					{
+						"id": "7539453",
+						"x": 851.5,
+						"y": 801.5
+					},
+					{
+						"id": "7539454",
+						"x": 1003.5,
+						"y": 653.5
+					},
+					{
+						"id": "7539456",
+						"x": 1350.5,
+						"y": 766.5
+					},
+					{
+						"id": "7539458",
+						"x": 1302.5,
+						"y": 680.5
+					},
+					{
+						"id": "7539459",
+						"x": 1386.5,
+						"y": 706.5
+					},
+					{
+						"id": "7539460",
+						"x": 613.5,
+						"y": 705.5
+					},
+					{
+						"id": "7539461",
+						"x": 704.5,
+						"y": 694.5
+					}
+				],
+				"links": [
+					{
+						"from": "0",
+						"to": "4",
+						"type": "bothWays"
+					},
+					{
+						"from": "7539441",
+						"to": "75394",
+						"type": "bothWays"
+					},
+					{
+						"from": "7539440",
+						"to": "78",
+						"type": "bothWays"
+					},
+					{
+						"from": "7539443",
+						"to": "75397",
+						"type": "bothWays"
+					},
+					{
+						"from": "7539445",
+						"to": "7539444",
+						"type": "bothWays"
+					},
+					{
+						"from": "7539446",
+						"to": "7539445",
+						"type": "bothWays"
+					},
+					{
+						"from": "7539447",
+						"to": "7539443",
+						"type": "bothWays"
+					},
+					{
+						"from": "75397",
+						"to": "7539451",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "75396",
+						"to": "7539451",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "7539451",
+						"to": "4",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "75396",
+						"to": "7539453",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "7539453",
+						"to": "7539440",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "75396",
+						"to": "7539454",
+						"type": "bothWays"
+					},
+					{
+						"from": "7539454",
+						"to": "7539442",
+						"type": "bothWays"
+					},
+					{
+						"from": "7539442",
+						"to": "7539450",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "7539450",
+						"to": "78",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "7539442",
+						"to": "7539456",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "7539444",
+						"to": "7539456",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "7539456",
+						"to": "7539441",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "7539442",
+						"to": "7539459",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "7539459",
+						"to": "7539444",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "7539458",
+						"to": "7539444",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "7539442",
+						"to": "7539458",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "7539461",
+						"to": "75397",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "75396",
+						"to": "7539461",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "75396",
+						"to": "7539460",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "7539460",
+						"to": "75397",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "4",
+						"to": "7539440",
+						"type": "bothWays"
+					},
+					{
+						"from": "78",
+						"to": "7539441",
+						"type": "bothWays"
+					},
+					{
+						"from": "7539442",
+						"to": "78",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "7539442",
+						"to": "7539441",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "4",
+						"to": "75396",
+						"type": "bothWays"
+					},
+					{
+						"from": "75396",
+						"to": "7539440",
+						"type": "oneWayFrom"
+					}
+				]
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_ally",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 760,
+					"y": 710
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_opponent",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1250,
+					"y": 500
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_opponent",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1250,
+					"y": 700
+				}
+			}
+		}
+	],
+	"filename": "level2"
+}

@@ -1,0 +1,87 @@
+{
+"skeleton": {
+	"hash": "hN8OQeSXxU0irsXyegdJ0vZt1Xc",
+	"spine": "3.8.95",
+	"x": -445,
+	"y": -335.5,
+	"width": 887,
+	"height": 365,
+	"images": "./assets/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "algae_top", "parent": "root", "length": 60, "rotation": -90, "x": -99, "y": 8.5 },
+	{ "name": "algae_bottoms", "parent": "algae_top", "length": 83.02, "rotation": -1.38, "x": 65, "y": -61 },
+	{ "name": "anchor_1", "parent": "algae_top", "x": 52.43, "y": -172.32 },
+	{ "name": "anchor_2", "parent": "algae_top", "x": 115.74, "y": -94.8 },
+	{ "name": "anchor_3", "parent": "algae_top", "x": 172.58, "y": 3.39 },
+	{ "name": "anchor_4", "parent": "algae_top", "x": 117.03, "y": 201.07 },
+	{ "name": "anchor_5", "parent": "algae_top", "x": 150.62, "y": 356.11 },
+	{ "name": "anchor_6", "parent": "algae_top", "x": 65.35, "y": 295.38 }
+],
+"slots": [
+	{ "name": "Algae_bottoms", "bone": "algae_bottoms", "attachment": "Algae_bottoms" },
+	{ "name": "Algae_bottoms2", "bone": "algae_bottoms", "attachment": "Algae_bottoms" },
+	{ "name": "Algae_top", "bone": "algae_top", "attachment": "Algae_top" }
+],
+"animations": {
+	"idle": {
+		"bones": {
+			"algae_top": {
+				"scale": [
+					{
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0,
+						"x": 1.0,
+						"y": 1.0
+					},
+					{
+						"time": 3.3333,
+						"x": 1.109,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"y": 1.0
+					},
+					{ "time": 6.6667, "x": 1.0, "y": 1.0 }
+				]
+			},
+			"algae_bottoms": {
+				"scale": [
+					{
+						"x": 1.017,
+						"curve": [ 0.375, 0.6200000047683716, 0.7160000205039978, 1.0 ],
+						"time": 0.0,
+						"y": 1.0
+					},
+					{
+						"time": 0.6667,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"x": 1.0,
+						"y": 1.0
+					},
+					{
+						"time": 4,
+						"x": 1.129,
+						"curve": [ 0.24300000071525574, 0.0, 0.6800000071525574, 0.7099999785423279 ],
+						"y": 1.0
+					},
+					{ "time": 6.6667, "x": 1.017, "y": 1.0 }
+				]
+			}
+		}
+	}
+},
+"skins": {
+	"default": {
+		"Algae_bottoms": {
+			"Algae_bottoms": { "x": 133.4, "y": 5.72, "rotation": 91.38, "width": 193, "height": 291 }
+		},
+		"Algae_bottoms2": {
+			"Algae_bottoms": { "x": 80.9, "y": 361.15, "rotation": 91.38, "width": 193, "height": 291 }
+		},
+		"Algae_top": {
+			"Algae_top": { "x": 108.5, "y": 97.5, "rotation": 90, "width": 887, "height": 259 }
+		}
+	}
+}
+}

@@ -1,0 +1,33 @@
+{
+  "audioSprites": [
+    "sfx_general"
+  ],
+  "audio":        [
+    "music_title"
+  ],
+  "spineIntroData":        {
+    "id":          "intro",
+    "description": "game intro",
+    "anims":       ["animation"],
+    "skeletons":   [
+      "cs_intro_bg",
+      "cs_intro_elinor",
+      "cs_intro_olive",
+      "cs_intro_ari",
+      "cs_intro_tufts",
+      "cs_intro_audio"
+    ],
+    "audio_skeleton_id": "cs_intro_audio",
+    "icon_skeleton_id":  ""
+  },
+  "lifecycles": {
+    "frog":             { "priority": 8, "from": "tadpole" },
+    "diving_beetle":    { "priority": 7, "from": "diving_beetle_larvae" },
+    "scavenger_beetle": { "priority": 6, "from": "scavenger_beetle_larvae" },
+    "dragonfly":        { "priority": 5, "from": "dragonfly_larvae" },
+    "mayfly":           { "priority": 4, "from": "mayfly_larvae" },
+    "caddisfly":        { "priority": 3, "from": "caddisfly_larvae" },
+    "mosquito":         { "priority": 2, "from": "mosquito_larvae" },
+    "frog_surface":     { "priority": 1, "from": "tadpole" }
+  }
+}

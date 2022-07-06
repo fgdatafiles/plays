@@ -1,0 +1,132 @@
+{
+	pieces : [{
+			asset : "trunk", 
+			x : 0, 
+			y : 0, 
+			rotation : 0, 
+			back : false, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 19, 
+				height : 42
+			}, 
+			massMultiplier : 8
+		},{
+			asset : "leg_back_stilt", 
+			x : 54, 
+			y : 101, 
+			rotation : -25, 
+			back : true, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 40, 
+				height : 218
+			}, 
+			massMultiplier : 5
+		},{
+			asset : "leg_front_stilt", 
+			x : -41, 
+			y : 106, 
+			rotation : 25, 
+			back : false, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 40, 
+				height : 218
+			}, 
+			massMultiplier : 5
+		},{
+			asset : "arm_front", 
+			x : -16, 
+			y : 13, 
+			rotation : 0, 
+			back : false, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 22, 
+				height : 48
+			}
+		},{
+			asset : "head", 
+			x : 3, 
+			y : -35, 
+			rotation : 0, 
+			back : true, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 84, 
+				height : 106
+			}, 
+			massMultiplier : 0.1
+		},{
+			asset : "arm_back", 
+			x : 19, 
+			y : 12, 
+			rotation : 0, 
+			back : true, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 24, 
+				height : 47
+			}
+		}], 
+	constraints : [{
+			id1 : "trunk", 
+			id2 : "head", 
+			x : 1, 
+			y : -18, 
+			type : "WeldJoint", 
+			params : null, 
+			maxForce : null
+		},{
+			id1 : "trunk", 
+			id2 : "leg_front_stilt", 
+			x : -2, 
+			y : 18, 
+			type : "PivotJoint", 
+			params : null, 
+			maxForce : null
+		},{
+			id1 : "trunk", 
+			id2 : "leg_back_stilt", 
+			x : 2, 
+			y : 18, 
+			type : "PivotJoint", 
+			params : null, 
+			maxForce : null
+		},{
+			id1 : "trunk", 
+			id2 : "arm_front", 
+			x : -8, 
+			y : -8, 
+			type : "PivotJoint", 
+			params : null, 
+			maxForce : null
+		},{
+			id1 : "trunk", 
+			id2 : "arm_back", 
+			x : 8, 
+			y : -9, 
+			type : "PivotJoint", 
+			params : null, 
+			maxForce : null
+		}]
+}

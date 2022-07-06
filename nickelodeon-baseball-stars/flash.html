@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Nickelodeon Baseball Stars (FLASH)</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="icons/57x57.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/72x72.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/114x114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/144x144.png">
+
+  <style>
+	html {
+	  overflow: hidden;
+	}
+	html, body {
+	  height: 100%;
+	}
+	body {
+	  margin: 0;
+	  background: #000;
+	}
+	#content{
+		width:960px;
+		height:560px;
+	}
+  </style>
+</head>
+<body>
+
+<div id="content"></div>
+<script src="flambe.js"></script>
+<script>
+
+var setCssTransform = function(styleObject,transform){
+	styleObject.webkitTransform = transform;
+	styleObject.MozTransform = transform;
+	styleObject.msTransform = transform;
+	styleObject.OTransform = transform;
+	styleObject.transform = transform;
+}
+var setCssTransformOrigin = function(styleObject,transform){
+	styleObject.webkitTransformOrigin = transform;
+	styleObject.MozTransformOrigin = transform;
+	styleObject.msTransformOrigin = transform;
+	styleObject.OTransformOrigin = transform;
+	styleObject.transformOrigin = transform;
+}
+
+var contentDiv = document.getElementById('content');
+setCssTransformOrigin(contentDiv.style,'0 0');
+
+var oldW = 0;
+var oldH = 0;
+
+function checkOnSizeForever(){
+	
+	var newW = window.innerWidth;
+	var newH = window.innerHeight;
+	
+	if ((newW != oldW) || (newH != oldH)) {
+		oldW = newW;
+		oldH = newH;
+		
+		var scaleW = newW/960;
+		var scaleH = newH/560;
+		var newGameScale = Math.min(scaleW,scaleH);
+		
+		var scaledW = 960*newGameScale;
+		var scaledH = 560*newGameScale;
+		var offX = Math.round((newW-scaledW)/2);
+		var offY = Math.round((newH-scaledH)/2);
+		
+		console.log(offX,offY);
+		
+		setCssTransform(contentDiv.style,'translate('+offX+'px,'+offY+'px) scale('+newGameScale+','+newGameScale+')');
+	}
+	
+}
+
+</script>
+<script>
+  flambe.embed(["targets/main-flash.swf"], "content");
+  if (contentDiv.getElementsByTagName('canvas')[0]) {//kind of sloppy, but the scaling doesn't work right for flash right now and it shouldn't matter for flash anyway, so this'll do
+	checkOnSizeForever();
+	setInterval(checkOnSizeForever,1000);
+  }
+</script>
+<!-- Canada Tracking: see "canada_tracking" option in config.json -->
+<script language="JavaScript">
+function trackFlashEvent(gameTitle,gameEvent,playEvent)
+{
+	//console.log('Tracking:', gameTitle, gameEvent, playEvent);
+}
+</script>
+
+<link rel="preload" href="/privacy.css" as="style" />
+    <script src="/privacy.js"></script></body>
+</html>

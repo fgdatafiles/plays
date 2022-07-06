@@ -1,0 +1,425 @@
+{
+"skeleton": {
+	"hash": "x/bkdViFwNPdgVPUkCaWVVtY+Nc",
+	"spine": "3.8.97",
+	"x": 72.6,
+	"y": -241.74,
+	"width": 233.33,
+	"height": 283.5,
+	"images": "../../../EWWHIDE/_design_illustration_audio_source/animation/_assets/assets_olive/",
+	"audio": "C:/Users/DButcher/Desktop/Git/EWWHIDE/_design_illustration_audio_source/animation"
+},
+"bones": [
+	{ "name": "RootBone", "x": 180.33, "y": -234.07, "scaleX": 0.492, "scaleY": 0.492 },
+	{ "name": "BodyBone", "parent": "RootBone", "length": 89.1, "rotation": 90.58, "x": -4.1, "y": 116.57, "color": "f71c1cff" },
+	{ "name": "ChestBone", "parent": "BodyBone", "length": 70.63, "rotation": -5.52, "x": 89.1, "color": "f71c1cff" },
+	{ "name": "HeadBone", "parent": "ChestBone", "length": 250.21, "rotation": 4.33, "x": 31.76, "y": 0.67, "color": "f71c1cff" },
+	{
+		"name": "ArmRBone",
+		"parent": "ChestBone",
+		"length": 37.99,
+		"rotation": -146.92,
+		"x": -3.47,
+		"y": -59.07,
+		"scaleX": 0.9476,
+		"color": "1c7ff7ff"
+	},
+	{ "name": "HandRBone", "parent": "ArmRBone", "length": 86, "rotation": -8.43, "x": 57.3, "y": -0.74, "color": "1c7ff7ff" },
+	{ "name": "ArmLBone", "parent": "ChestBone", "length": 67, "rotation": 162.4, "x": 19.97, "y": 51.62, "color": "1cf71cff" },
+	{ "name": "HandLBone", "parent": "ArmLBone", "length": 85, "rotation": 0.28, "x": 69.02, "y": -1.1, "color": "1cf71cff" },
+	{ "name": "EyeBone", "parent": "HeadBone", "length": 64.55, "rotation": 90.62, "x": 131.39, "y": 1.42, "color": "f71c1cff" },
+	{ "name": "EyebrowLBone", "parent": "EyeBone", "rotation": 180, "x": 92.37, "y": -89.1, "color": "f71c1cff" },
+	{ "name": "EyebrowRBone", "parent": "EyeBone", "rotation": 180, "x": -33.58, "y": -77.95, "color": "f71c1cff" },
+	{ "name": "TrunkBone", "parent": "HeadBone", "length": 155.88, "rotation": 167.26, "x": 137.13, "y": 86.12, "color": "f7c91cff" },
+	{ "name": "TrunkTipBone", "parent": "TrunkBone", "length": 81.11, "rotation": -37.4, "x": 155.88, "color": "f7c91cff" },
+	{
+		"name": "EarFrontBone",
+		"parent": "HeadBone",
+		"length": 135.18,
+		"rotation": -60.63,
+		"x": 184.48,
+		"y": -77.52,
+		"color": "f7c91cff"
+	},
+	{ "name": "EarBackBone", "parent": "HeadBone", "length": 73.73, "rotation": 52.14, "x": 227.3, "y": 78.11, "color": "f7c91cff" },
+	{ "name": "RibbonBone", "parent": "HeadBone", "rotation": -89.38, "x": 268.27, "y": -0.35, "color": "f7c91cff" },
+	{
+		"name": "TrunkBackBone",
+		"parent": "HeadBone",
+		"length": 147.25,
+		"rotation": 139.56,
+		"x": 138.16,
+		"y": 86.45,
+		"color": "de1cf6ff"
+	},
+	{
+		"name": "TrunkFrontBone",
+		"parent": "TrunkBackBone",
+		"length": 122.98,
+		"rotation": 118.38,
+		"x": 136.22,
+		"y": 1.1,
+		"color": "de1cf6ff"
+	},
+	{ "name": "RootBone2", "parent": "RootBone", "x": -12.89, "y": -7.45 }
+],
+"slots": [
+	{ "name": "Shadow", "bone": "RootBone2", "attachment": "Shadow" },
+	{ "name": "ArmBackAtt", "bone": "ArmLBone", "attachment": "ArmBackAtt" },
+	{ "name": "HandBackAtt", "bone": "HandLBone", "attachment": "HandBackAtt" },
+	{ "name": "Olive_pond_cutscene_legs", "bone": "RootBone", "attachment": "Olive_pond_cutscene_legs" },
+	{ "name": "BodySlot", "bone": "BodyBone" },
+	{ "name": "Olive_pond_cutscene_body", "bone": "BodyBone", "attachment": "Olive_pond_cutscene_body" },
+	{ "name": "ArmFrontAtt", "bone": "ArmRBone", "attachment": "ArmFrontAtt" },
+	{ "name": "HandFrontAtt", "bone": "HandRBone", "attachment": "HandFrontAtt" },
+	{ "name": "EarBackSlot", "bone": "EarBackBone", "attachment": "EarBackAtt" },
+	{ "name": "RibbonSlot", "bone": "RibbonBone", "attachment": "RibbonAtt" },
+	{ "name": "HeadSlot", "bone": "HeadBone", "attachment": "HeadAtt" },
+	{ "name": "MouthSlot", "bone": "HeadBone", "attachment": "MouthSmileAtt" },
+	{ "name": "EarFrontSlot", "bone": "EarFrontBone", "attachment": "EarFrontAtt" },
+	{ "name": "TrunkBackAtt", "bone": "TrunkBackBone" },
+	{ "name": "TrunkFrontAtt", "bone": "TrunkFrontBone" },
+	{ "name": "TrunkSlot", "bone": "TrunkBone", "attachment": "TrunkAtt" },
+	{ "name": "EyebrowRSlot", "bone": "EyebrowRBone", "attachment": "EyebrowRAtt" },
+	{ "name": "EyeBrowLSlot", "bone": "EyebrowLBone", "attachment": "EyeBrowLAtt" },
+	{ "name": "Eyes", "bone": "EyeBone", "attachment": "Eyes_open" }
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"Eyes": {
+				"attachment": [
+					{ "time": 2.3, "name": "eyes_closed" },
+					{ "time": 2.5333, "name": "Eyes_open" },
+					{ "time": 5.6667, "name": "eyes_closed" },
+					{ "time": 5.9, "name": "Eyes_open" },
+					{ "time": 6.6473, "name": "eyes_closed" },
+					{ "time": 6.8807, "name": "Eyes_open" },
+					{ "time": 10.6667, "name": "eyes_closed" },
+					{ "time": 10.9, "name": "Eyes_open" },
+					{ "time": 13.7333, "name": "eyes_closed" },
+					{ "time": 13.9667, "name": "Eyes_open" }
+				]
+			},
+			"MouthSlot": {
+				"attachment": [
+					{ "time": 5.5, "name": "MouthOpen2" },
+					{ "time": 5.6, "name": "MouthSmileAtt" },
+					{ "time": 5.7, "name": "mouth_oo" },
+					{ "time": 5.8, "name": "MouthOpen2" },
+					{ "time": 5.9667, "name": "MouthOpen" },
+					{ "time": 6.0667, "name": "mouthff" },
+					{ "time": 6.1667, "name": "mouth_oo" },
+					{ "time": 6.3333, "name": "MouthOpenAtt" },
+					{ "time": 6.4667, "name": "MouthOpen" },
+					{ "time": 6.8333, "name": "MouthSmileAtt" },
+					{ "time": 7.2333, "name": "mouth_oo" },
+					{ "time": 7.5333, "name": "MouthSmileAtt" },
+					{ "time": 7.6667, "name": "MouthOpen2" },
+					{ "time": 7.7667, "name": "MouthSmileAtt" },
+					{ "time": 7.8667, "name": "mouth_oo" },
+					{ "time": 7.9667, "name": "MouthOpen2" },
+					{ "time": 8.1333, "name": "MouthOpen" },
+					{ "time": 8.5, "name": "MouthSmileAtt" },
+					{ "time": 13.1667, "name": "MouthOpen2" },
+					{ "time": 13.3667, "name": "MouthSmileAtt" },
+					{ "time": 13.4667, "name": "MouthOpen2" },
+					{ "time": 13.8667, "name": "mouth_oo" },
+					{ "time": 14.1, "name": "MouthOpenAtt" },
+					{ "time": 14.2333, "name": "MouthOpen" },
+					{ "time": 14.6, "name": "MouthSmileAtt" },
+					{ "time": 14.8333, "name": "MouthOpen" },
+					{ "time": 15.1667, "name": "mouth_oo" },
+					{ "time": 15.3, "name": "MouthSmileAtt" }
+				]
+			}
+		},
+		"bones": {
+			"BodyBone": {
+				"rotate": [
+					{ "angle": 20.83, "time": 0.0 }
+				],
+				"translate": [
+					{ "x": -2.12, "y": -7.08, "time": 0.0 }
+				]
+			},
+			"ArmLBone": {
+				"rotate": [
+					{ "angle": -6.2, "time": 0.0 }
+				],
+				"translate": [
+					{ "x": -11.8, "y": 3.41, "time": 0.0 }
+				],
+				"scale": [
+					{ "x": 1.098, "time": 0.0, "y": 1.0 }
+				]
+			},
+			"HandLBone": {
+				"rotate": [
+					{ "angle": -12.41, "time": 0.0 }
+				]
+			},
+			"ArmRBone": {
+				"rotate": [
+					{ "angle": -42.25, "time": 0.0 }
+				],
+				"translate": [
+					{ "x": -63.98, "y": 7.97, "time": 0.0 }
+				],
+				"scale": [
+					{ "x": 0.995, "time": 0.0, "y": 1.0 }
+				]
+			},
+			"HeadBone": {
+				"rotate": [
+					{
+						"angle": -14.4,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0
+					},
+					{
+						"time": 2.3333,
+						"angle": -5.71,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 5.2667,
+						"angle": -17.09,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 7.2,
+						"angle": -8.7,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 8.9,
+						"angle": -12.75,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 10.4667,
+						"angle": -7.51,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 10.9667,
+						"angle": -14.68,
+						"curve": [ 0.2619999945163727, 0.0, 0.6179999709129333, 0.4399999976158142 ]
+					},
+					{
+						"time": 12.5667,
+						"angle": -12.16,
+						"curve": [ 0.3269999921321869, 0.3100000023841858, 0.6639999747276306, 0.6600000262260437 ]
+					},
+					{
+						"time": 13.2333,
+						"angle": -4.41,
+						"curve": [ 0.37599998712539673, 0.5, 0.75, 1.0 ]
+					},
+					{ "time": 16.7, "angle": -14.4 }
+				],
+				"translate": [
+					{ "x": -56.1, "y": 6.7, "time": 0.0 }
+				]
+			},
+			"TrunkBone": {
+				"rotate": [
+					{ "time": 0.0, "angle": 0.0 },
+					{ "time": 3.6, "angle": 5.79 },
+					{ "time": 6.6, "angle": -10.38 },
+					{ "time": 9.1333, "angle": -2.72 },
+					{ "time": 10.1, "angle": -17.27 },
+					{ "time": 12.9667, "angle": -1.34 },
+					{ "time": 16.7, "angle": 0.0 }
+				]
+			},
+			"TrunkTipBone": {
+				"rotate": [
+					{ "time": 0.0, "angle": 0.0 },
+					{ "time": 3.6, "angle": 5.79 },
+					{ "time": 6.6, "angle": -10.38 },
+					{ "time": 9.1333, "angle": -2.72 },
+					{ "time": 10.1, "angle": -17.27 },
+					{ "time": 12.9667, "angle": -1.34 },
+					{ "time": 16.7, "angle": 0.0 }
+				]
+			},
+			"EarFrontBone": {
+				"rotate": [
+					{ "time": 0.0, "angle": 0.0 },
+					{ "time": 2.6, "angle": 6.32 },
+					{ "time": 3.6, "angle": -2.77 },
+					{ "time": 6.8667, "angle": -11.16 },
+					{ "time": 7.7, "angle": 7.47 },
+					{ "time": 10.6, "angle": -20.33 },
+					{ "time": 11, "angle": -0.35 },
+					{ "time": 13.2333, "angle": -1.12 },
+					{ "time": 13.7333, "angle": -13.66 },
+					{ "time": 16.7, "angle": 0.0 }
+				]
+			},
+			"EarBackBone": {
+				"rotate": [
+					{ "time": 0.0, "angle": 0.0 },
+					{ "time": 2.6, "angle": -11.9 },
+					{ "time": 3.6, "angle": 3.7 },
+					{ "time": 6.8667, "angle": 10.83 },
+					{ "time": 7.7, "angle": -1.46 },
+					{ "time": 10.6, "angle": 15.46 },
+					{ "time": 11, "angle": -15.03 },
+					{ "time": 13.2333, "angle": -13.18 },
+					{ "time": 13.7333, "angle": 4.75 },
+					{ "time": 16.7, "angle": 0.0 }
+				]
+			},
+			"RootBone2": {
+				"translate": [
+					{ "x": -26.84, "y": -17.32, "time": 0.0 }
+				],
+				"scale": [
+					{ "x": 1.074, "y": 1.074, "time": 0.0 }
+				]
+			},
+			"RootBone": {
+				"translate": [
+					{ "x": 1.05, "y": -2.06, "time": 0.0 }
+				]
+			}
+		},
+		"deform": {
+			"default": {
+				"ArmFrontAtt": {
+					"ArmFrontAtt": [
+						{
+							"offset": 16,
+							"vertices": [ 73.03098, 3.58469, -68.56006, 7.44525 ],
+							"time": 0.0
+						}
+					]
+				},
+				"Olive_pond_cutscene_body": {
+					"Olive_pond_cutscene_body": [
+						{
+							"vertices": [ -38.43497, 12.60619, -40.74878, 1.4902, -49.0502, 0.66801, -37.92834, 2.93643, -20.59888, 15.17902, 24.70074, 17.08517, 37.28424, -1.62093, 24.59833, 0.39386, 15.47223, 0.46149, 8.46246, -2.37062, -3.48776, -7.4041, -19.35635, -12.13696, -42.84741, 16.80243, 0, 0, -18.61075, 9.35306, -10.47467, 16.4368, -4.93405, 17.55186, 3.00485, 17.78421 ],
+							"time": 0.0
+						}
+					]
+				}
+			}
+		}
+	}
+},
+"skins": {
+	"default": {
+		"ArmBackAtt": {
+			"ArmBackAtt": { "x": 40.22, "y": -2.04, "rotation": 112.54, "width": 75, "height": 108 }
+		},
+		"ArmFrontAtt": {
+			"ArmFrontAtt": {
+				"type": "mesh",
+				"uvs": [ 0.79644, 0.24091, 1, 0.525, 1, 0.92302, 0.20359, 0.96156, 0.14177, 0.80411, 0, 0.4811, 0.02126, 0, 0.50659, 1.0E-5 ],
+				"triangles": [ 5, 6, 7, 5, 7, 0, 4, 5, 0, 4, 0, 1, 4, 1, 2, 3, 4, 2 ],
+				"vertices": [ 2, 4, 23.74, 40.61, 0.96, 2, 75.59, -106.45, 0.04, 1, 4, 61.34, 41.88, 1, 1, 4, 103.16, 21.23, 1, 1, 4, 76.6, -42.92, 1, 1, 4, 57.7, -39.61, 1, 2, 4, 18.4, -34.05, 0.85, 2, 41.53, -39.79, 0.15, 2, 4, -30.84, -8.19, 0.43, 2, 97.04, -36.44, 0.57, 2, 4, -12.62, 30.34, 0.85, 2, 101.39, -78.84, 0.15 ],
+				"hull": 8,
+				"edges": [ 4, 6, 12, 14, 10, 12, 0, 14, 10, 0, 6, 8, 8, 10, 0, 2, 2, 4, 8, 2 ],
+				"width": 87,
+				"height": 117
+			}
+		},
+		"EarBackSlot": {
+			"EarBackAtt": { "x": 40.06, "y": 64.35, "rotation": -141.52, "width": 138, "height": 148 }
+		},
+		"EarFrontSlot": {
+			"EarFrontAtt": { "x": 72.64, "y": -48.92, "rotation": -28.75, "width": 183, "height": 158 }
+		},
+		"EyeBrowLSlot": {
+			"EyeBrowLAtt": { "x": -1.72, "y": -2.27, "width": 28, "height": 19 }
+		},
+		"EyebrowRSlot": {
+			"EyebrowRAtt": { "x": -1.68, "y": -1.62, "width": 26, "height": 26 }
+		},
+		"Eyes": {
+			"Eyes_open": { "x": 42.28, "y": -1.92, "rotation": 180, "width": 132, "height": 57 },
+			"eyes_closed": { "x": 46.27, "y": -1.22, "rotation": 180, "width": 148, "height": 28 }
+		},
+		"HandBackAtt": {
+			"HandBack2": { "x": 58.44, "y": -22.13, "scaleX": 0.9044, "scaleY": 0.9044, "rotation": -78.37, "width": 110, "height": 126 },
+			"HandBack3": { "x": 35.23, "y": -14.44, "scaleX": 0.9044, "scaleY": 0.9044, "rotation": 107.03, "width": 104, "height": 109 },
+			"HandBackAtt": { "x": 34.23, "y": -1.75, "rotation": 124.06, "width": 95, "height": 102 }
+		},
+		"HandFrontAtt": {
+			"HandFront2": { "x": 63.45, "y": -2.1, "rotation": -130.67, "width": 130, "height": 112 },
+			"HandFrontAtt": { "x": 50.2, "y": 6.88, "rotation": 72.21, "width": 104, "height": 138 }
+		},
+		"HeadSlot": {
+			"HeadAtt": { "x": 122.09, "y": 13.41, "rotation": -89.38, "width": 298, "height": 278 }
+		},
+		"MouthSlot": {
+			"MouthOpen": { "x": 34.18, "y": 24.04, "rotation": -89.38, "width": 115, "height": 65 },
+			"MouthOpen2": { "x": 40.11, "y": 23.89, "rotation": -89.38, "width": 114, "height": 50 },
+			"MouthOpenAtt": { "x": 27.42, "y": 28.39, "rotation": -89.38, "width": 120, "height": 61 },
+			"MouthSmileAtt": { "x": 47.28, "y": 41.61, "rotation": -89.38, "width": 148, "height": 31 },
+			"mouth_oo": { "x": 17.95, "y": 29.48, "rotation": -89.38, "width": 28, "height": 30 },
+			"mouthff": { "x": 34.24, "y": 16.78, "rotation": -89.38, "width": 95, "height": 29 }
+		},
+		"Olive_pond_cutscene_body": {
+			"Olive_pond_cutscene_body": {
+				"type": "mesh",
+				"uvs": [ 1, 0.34327, 1, 0.52054, 1, 0.65354, 1, 0.77965, 1, 1, 0.31812, 1, 0, 1, 0, 0.774, 0, 0.66157, 0, 0.5184, 0, 0.33753, 0, 0, 0.53215, 0, 1, 0, 0.33764, 0.33947, 0.32596, 0.5191, 0.32855, 0.65893, 0.32518, 0.77584 ],
+				"triangles": [ 14, 10, 11, 12, 14, 11, 12, 13, 0, 14, 12, 0, 15, 9, 10, 14, 15, 10, 14, 0, 1, 15, 14, 1, 16, 15, 1, 2, 16, 1, 8, 9, 15, 8, 15, 16, 17, 7, 8, 16, 17, 8, 16, 2, 3, 17, 16, 3, 5, 6, 7, 17, 5, 7, 17, 3, 4, 5, 17, 4 ],
+				"vertices": [ 87.57, -98.11, 54.07, -97.62, 28.94, -97.26, 5.1, -96.91, -36.54, -96.3, -34.6, 35.97, -33.7, 97.68, 9.01, 97.06, 30.26, 96.75, 57.32, 96.35, 91.5, 95.85, 155.28, 94.91, 153.77, -8.31, 152.44, -99.06, 90.17, 30.36, 56.26, 33.12, 29.83, 33.01, 7.74, 33.98 ],
+				"hull": 14,
+				"edges": [ 8, 6, 12, 14, 0, 26, 20, 22, 0, 2, 18, 20, 2, 4, 4, 6, 14, 16, 16, 18, 0, 28, 28, 20, 22, 24, 24, 26, 28, 24, 2, 30, 30, 18, 28, 30, 4, 32, 32, 16, 30, 32, 6, 34, 34, 14, 32, 34, 8, 10, 10, 12, 34, 10 ],
+				"width": 194,
+				"height": 189
+			}
+		},
+		"Olive_pond_cutscene_legs": {
+			"Olive_pond_cutscene_legs": { "x": -12.76, "y": 85.48, "width": 209, "height": 164 }
+		},
+		"RibbonSlot": {
+			"RibbonAtt": { "x": 16.79, "y": 3.05, "width": 191, "height": 104 }
+		},
+		"Shadow": {
+			"Shadow": { "x": 7.59, "y": 43.36, "width": 352, "height": 103 }
+		},
+		"TrunkBackAtt": {
+			"TrunkBackAtt": {
+				"type": "mesh",
+				"uvs": [ 0.99797, 0.40041, 0.99797, 0.69855, 0.43831, 0.76494, 0.3677, 0.99084, 0.09267, 0.99085, 0.00203, 0.76964, 0.00202, 0.42986, 0.24196, 0.00915, 0.46747, 0.00916, 0.7629, 0.08622, 0.44429, 0.42163 ],
+				"triangles": [ 2, 6, 10, 5, 6, 2, 2, 4, 5, 3, 4, 2, 10, 7, 8, 10, 8, 9, 10, 9, 0, 1, 10, 0, 6, 7, 10, 2, 10, 1 ],
+				"vertices": [ 1, 3, 87.36, -26.96, 1, 1, 3, 38.47, -27.49, 1, 2, 3, 26.09, 110.62, 0.1, 16, 100.97, 54.29, 0.9, 2, 3, -11.15, 127.66, 0.0068, 16, 140.37, 65.47, 0.9932, 1, 16, 184.98, 14.25, 1, 2, 3, 24.15, 218.37, 0.25, 16, 172.33, -26.46, 0.75, 2, 3, 79.87, 218.97, 0.5, 16, 130.31, -63.06, 0.5, 1, 3, 149.51, 160.45, 1, 1, 3, 150.11, 104.76, 1, 1, 3, 138.26, 31.65, 1, 2, 3, 82.4, 109.75, 0.5, 16, 57.55, 18.43, 0.5 ],
+				"hull": 10,
+				"edges": [ 8, 10, 6, 8, 2, 4, 4, 10, 6, 4, 14, 16, 16, 18, 10, 12, 12, 14, 4, 20, 20, 16, 12, 20, 2, 0, 0, 18, 20, 0 ],
+				"width": 247,
+				"height": 164
+			}
+		},
+		"TrunkFrontAtt": {
+			"TrunkFrontAtt": {
+				"type": "mesh",
+				"uvs": [ 0.99295, 0.88654, 0.69654, 1, 0.42883, 1, 0.18286, 0.96443, 0.00705, 0.72445, 0.00704, 0, 0.53263, 0, 0.58937, 0.18205, 0.74118, 0.22488, 0.99295, 0.2066 ],
+				"triangles": [ 6, 7, 3, 5, 6, 4, 4, 6, 3, 8, 1, 2, 1, 8, 0, 8, 2, 7, 8, 9, 0, 2, 3, 7 ],
+				"vertices": [ 1, 17, 126.48, -30.26, 1, 2, 17, 86.25, -45, 0.85, 16, 130.2, 98.41, 0.15, 2, 17, 49.44, -50.87, 0.77, 16, 157.47, 68.78, 0.23, 2, 17, 14.42, -55.29, 0.7, 16, 175.52, 41.87, 0.3, 1, 16, 180.18, 12.21, 1, 1, 16, 142.83, -20.33, 1, 1, 16, 93.81, 35.95, 1, 2, 17, 61.54, 8.28, 0.25, 16, 99.68, 51.3, 0.75, 2, 17, 83.71, 7.28, 0.75, 16, 86.78, 68.93, 0.25, 1, 17, 118.74, 14.64, 1 ],
+				"hull": 10,
+				"edges": [ 8, 10, 0, 18, 6, 8, 10, 12, 6, 12, 16, 18, 0, 2, 16, 2, 12, 14, 14, 16, 2, 4, 4, 6, 14, 4 ],
+				"width": 142,
+				"height": 67
+			}
+		},
+		"TrunkSlot": {
+			"TrunkAtt": {
+				"type": "mesh",
+				"uvs": [ 0.97906, 0.26302, 0.97906, 0.50969, 0.82358, 0.66597, 0.69485, 0.79536, 0.49405, 0.91056, 0.21047, 1, 0.11428, 1, 0, 0.83889, 0, 0.79873, 0.19382, 0.74914, 0.25676, 0.67725, 0.24673, 0.54118, 0.23211, 0.34283, 0.26589, 0.17099, 0.44113, 0.02561, 0.89615, 0.0256 ],
+				"triangles": [ 8, 5, 7, 8, 9, 5, 5, 6, 7, 4, 5, 9, 11, 12, 1, 2, 11, 1, 10, 11, 2, 3, 10, 2, 4, 10, 3, 9, 10, 4, 14, 15, 0, 13, 14, 0, 12, 13, 0, 1, 12, 0 ],
+				"vertices": [ 1, 3, 116.86, 28.36, 1, 2, 3, 44.6, 27.58, 0.4, 11, 77.36, 77.5, 0.6, 3, 3, -1.51, 56.78, 0.26498, 11, 128.77, 59.18, 0.58502, 12, -57.48, 30.55, 0.15, 2, 11, 171.33, 44.02, 0.6, 12, -14.46, 44.35, 0.4, 2, 11, 213.03, 14.5, 0.39, 12, 36.6, 46.22, 0.61, 2, 11, 251.04, -32.15, 0.06, 12, 95.12, 32.25, 0.94, 1, 12, 109.35, 20.62, 1, 1, 12, 96.39, -29.74, 1, 2, 11, 202.94, -84.88, 0.1, 12, 88.94, -38.86, 0.9, 2, 11, 180.26, -52.22, 0.47, 12, 51.08, -26.68, 0.53, 2, 11, 156.99, -45.39, 0.94, 12, 28.44, -35.39, 0.06, 3, 3, 33.86, 167.35, 0.26257, 11, 118.64, -56.46, 0.59743, 12, 4.7, -67.47, 0.14, 3, 3, 91.94, 170.76, 0.10811, 11, 62.74, -72.6, 0.8, 12, -29.91, -114.24, 0.09189, 1, 3, 142.36, 164.86, 1, 1, 3, 185.32, 131.85, 1, 1, 3, 186.26, 44.94, 1 ],
+				"hull": 16,
+				"edges": [ 12, 14, 28, 30, 20, 6, 2, 24, 6, 8, 18, 8, 24, 26, 26, 28, 2, 0, 0, 30, 26, 0, 14, 16, 16, 18, 8, 10, 10, 12, 16, 10, 18, 20, 20, 22, 22, 24, 2, 4, 4, 6, 22, 4 ],
+				"width": 191,
+				"height": 293
+			}
+		}
+	}
+}
+}

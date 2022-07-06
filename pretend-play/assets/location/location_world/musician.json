@@ -1,0 +1,112 @@
+{
+"skeleton": {
+	"hash": "75Mb45GIFxjKzKr7X41gnd4wMjs",
+	"spine": "3.8.94",
+	"x": -100.78,
+	"y": -2.26,
+	"width": 206,
+	"height": 357,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "AM_Music", "parent": "root", "length": 168.78, "rotation": 90.3, "x": 0.66, "y": 26.07 },
+	{ "name": "AM_Music_Mouth2", "parent": "AM_Music", "length": 14.79, "rotation": 179.7, "x": 200.06, "y": -8.86 },
+	{ "name": "AM_Music_blink", "parent": "AM_Music", "x": 239.24, "y": -2.97 }
+],
+"slots": [
+	{ "name": "AM_Music", "bone": "AM_Music", "attachment": "AM_Music" },
+	{ "name": "AM_Music_blink", "bone": "AM_Music_blink" },
+	{ "name": "AM_Music_Mouth2", "bone": "AM_Music_Mouth2" },
+	{ "name": "AM_music_mouth1", "bone": "AM_Music_Mouth2", "attachment": "AM_music_mouth1" }
+],
+"animations": {
+	"idle": {
+		"slots": {
+			"AM_Music_blink": {
+				"attachment": [
+					{ "time": 3.2333, "name": "AM_Music_blink" },
+					{ "time": 3.3667, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"AM_Music": {
+				"scale": [
+					{
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0,
+						"x": 1.0,
+						"y": 1.0
+					},
+					{
+						"time": 1.3333,
+						"x": 1.017,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"y": 1.0
+					},
+					{
+						"time": 2.6667,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"x": 1.0,
+						"y": 1.0
+					},
+					{
+						"time": 4,
+						"x": 1.017,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"y": 1.0
+					},
+					{ "time": 5.3333, "x": 1.0, "y": 1.0 }
+				]
+			}
+		}
+	},
+	"talk": {
+		"slots": {
+			"AM_Music_Mouth2": {
+				"attachment": [
+					{ "name": "AM_Music_Mouth2", "time": 0.0 },
+					{ "time": 0.2667, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"AM_Music_Mouth2": {
+				"scale": [
+					{
+						"x": 0.879,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0,
+						"y": 1.0
+					},
+					{
+						"time": 0.1333,
+						"x": 1.221,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"y": 1.0
+					},
+					{ "time": 0.3333, "x": 1.0, "y": 1.0 }
+				]
+			}
+		}
+	}
+},
+"skins": {
+	"default": {
+		"AM_Music": {
+			"AM_Music": { "x": 150.16, "y": -2.34, "rotation": -90.3, "width": 206, "height": 357 }
+		},
+		"AM_Music_Mouth2": {
+			"AM_Music_Mouth2": { "x": 2.36, "y": 0.93, "rotation": 90, "width": 37, "height": 18 }
+		},
+		"AM_Music_blink": {
+			"AM_Music_blink": { "x": -1.07, "y": -0.91, "rotation": -90.3, "width": 93, "height": 45 }
+		},
+		"AM_music_mouth1": {
+			"AM_music_mouth1": { "x": -5.32, "y": -6.85, "rotation": 90, "width": 68, "height": 14 }
+		}
+	}
+}
+}

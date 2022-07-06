@@ -1,0 +1,179 @@
+{
+  "width": 1920,
+  "scroll": 160,
+  "allCompleteTrackingName": "Architect",
+  "dialogue": {
+    "characters": {
+      "abby": {
+        "spine": "abby",
+        "x": -185,
+        "y": 340,
+        "dialogueClick": "character_clicked",
+        "trackingName": "Abby"
+      }
+    },
+    "data": {
+      "first_visit": {
+        "character": "abby",
+        "script": [
+          "ASP_6.0_132",
+          { "type": "pause", "delay": 0.2 },
+          "ASP_6.0_132A",
+          { "type": "pause", "delay": 0.2 },
+          {
+            "type": "combine",
+            "options": [
+              {
+                "type": "interact",
+                "options": { "touch": "ASP_10.0_258", "click": "ASP_10.0_259" }
+              },
+              "ASP_6.0_133"
+            ]
+          }
+        ]
+      },
+      "character_clicked": {
+        "character": "abby",
+        "script": "ASP_6.0_134"
+      },
+      "all_games_finished": {
+        "character": "abby",
+        "script": [
+          { "type": "random", "options": ["ASP_9.0_246", "ASP_9.0_247"] },
+          { "type": "pause", "delay": 0.2 },
+          "ASP_9.0_253"
+        ]
+      },
+      "prompt": {
+        "character": "abby",
+        "script": {
+          "type": "interact",
+          "options": { "touch": "ASP_6.0_145", "click": "ASP_6.0_146" }
+        }
+      },
+      "interact_1": {
+        "character": "abby",
+        "script": "ASP_6.0_139"
+      },
+      "interact_2": {
+        "character": "abby",
+        "script": "ASP_6.0_142"
+      },
+      "interact_3": {
+        "character": "abby",
+        "script": "ASP_6.0_143"
+      },
+      "interact_4": {
+        "character": "abby",
+        "script": "ASP_6.0_137"
+      },
+      "interact_character": {
+        "character": "location_incidental_am",
+        "script": {
+          "type": "exhaust",
+          "options": ["ASP_6.0_135", "ASP_6.0_136"]
+        }
+      },
+      "architect": {
+        "character": "abby",
+        "script": "ASP_10.0_263"
+      }
+    }
+  },
+  "sfx": {
+    "ASP_6.0_140": "ASP_6.0_140",
+    "ASP_6.0_141": "ASP_6.0_141",
+    "ASP_6.0_144": "ASP_6.0_144",
+    "ASP_6.0_138": "ASP_6.0_138"
+  },
+  "layers": [
+    {
+      "buttons": [
+        {
+          "x": -530,
+          "y": 160,
+          "check_icon": { "x": 200, "y": 100 },
+          "sprite": "minigame_draft_a_building",
+          "highlight": "minigame_draft_a_building_hl",
+          "sprite_complete": "minigame_draft_a_building_complete",
+          "highlight_complete": "minigame_draft_a_building_complete_hl",
+          "label": "Draft a Building",
+          "destination_type": "minigame",
+          "destination_id": "MINIGAME_DRAFT_A_BUILDING"
+        },
+        {
+          "x": 90,
+          "y": 322,
+          "check_icon": { "x": 85, "y": -20 },
+          "sprite": "minigame_model_building",
+          "highlight": "minigame_model_building_hl",
+          "sprite_complete": "minigame_model_building_complete",
+          "highlight_complete": "minigame_model_building_complete_hl",
+          "label": "Model Building",
+          "destination_type": "minigame",
+          "destination_id": "MINIGAME_MODEL_BUILDING"
+        }
+      ],
+      "incidentals": [
+        {
+          "x": -900,
+          "y": 310,
+          "spine": "location_incidental_1",
+          "interact": "interact",
+          "dialogue": "interact_1",
+          "sfx": "ASP_6.0_140",
+          "trackingName": "Clay",
+          "initialAudio": "vo"
+        },
+        {
+          "x": -630,
+          "y": 270,
+          "spine": "location_incidental_2",
+          "interact": "interact",
+          "dialogue": "interact_2",
+          "sfx": "ASP_6.0_141",
+          "trackingName": "Cooler",
+          "initialAudio": "sfx"
+        },
+        {
+          "x": 490,
+          "y": 270,
+          "spine": "location_incidental_3",
+          "interact": "interact",
+          "dialogue": "interact_3",
+          "sfx": "ASP_6.0_144",
+          "trackingName": "Lights",
+          "initialAudio": "vo"
+        },
+        {
+          "x": 645,
+          "y": 230,
+          "spine": "location_incidental_4",
+          "interact": "interact",
+          "dialogue": "interact_4",
+          "sfx": "ASP_6.0_138",
+          "trackingName": "Ruler",
+          "initialAudio": "vo"
+        },
+        {
+          "x": 270,
+          "y": 290,
+          "spine": "location_incidental_am",
+          "dialogue_character_id": "location_incidental_am",
+          "dialogue": "interact_character",
+          "dialogueOver": "architect",
+          "trackingName": "Architect"
+        }
+      ]
+    },
+    {
+      "static": [
+        {
+          "x": 80,
+          "y": 426,
+          "sprite": "table"
+        }
+      ]
+    }
+  ]
+}

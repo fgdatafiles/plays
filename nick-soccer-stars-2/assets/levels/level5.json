@@ -1,0 +1,992 @@
+{
+	"actors": [
+		{
+			"template": {
+				"key": "bg",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 50,
+					"y": 0
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "ground",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 1000
+				},
+				"rotation": 0
+			}
+		},
+		{
+			"template": {
+				"key": "pickups_spawner",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 350
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "wall_left",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 200,
+					"y": 540
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "wall_right",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1800,
+					"y": 540
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "invisible_ceil",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": -140
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "goal_hover_opponent",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1560,
+					"y": 440
+				}
+			},
+			"waypoint": {
+				"x": 0,
+				"y": 82
+			},
+			"waypointLinks": {
+				"nodes": [
+					"9",
+					"10",
+					"13",
+					"11"
+				]
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_opponent",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1460,
+					"y": 460
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_ball",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 800
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_ally",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 540,
+					"y": 460
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "goal_hover_ally",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 440,
+					"y": 440
+				}
+			},
+			"waypoint": {
+				"x": 0,
+				"y": 81
+			},
+			"waypointLinks": {
+				"nodes": [
+					"14",
+					"15",
+					"4",
+					"12"
+				]
+			}
+		},
+		{
+			"template": {
+				"key": "trampoline",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 850,
+					"y": 950
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "trampoline",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1150,
+					"y": 950
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through_moving",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1150,
+					"y": 590
+				}
+			},
+			"waypoint": {
+				"x": -160,
+				"y": 0
+			},
+			"waypointLinks": {
+				"nodes": []
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through_moving",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 850,
+					"y": 720
+				}
+			},
+			"waypoint": {
+				"x": 160,
+				"y": 0
+			},
+			"waypointLinks": {
+				"nodes": []
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 850
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through_moving",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 590
+				}
+			},
+			"waypoint": {
+				"x": -160,
+				"y": 0
+			},
+			"waypointLinks": {
+				"nodes": []
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through_moving",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 720
+				}
+			},
+			"waypoint": {
+				"x": 160,
+				"y": 0
+			},
+			"waypointLinks": {
+				"nodes": []
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 700,
+					"y": 850
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1300,
+					"y": 850
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "platform",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 400
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_ally",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 560,
+					"y": 920
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_opponent",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1440,
+					"y": 920
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "pathfinding",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 0,
+					"y": 0
+				}
+			},
+			"image": {
+				"pack": "editor_icons",
+				"asset": "web",
+				"layer": "front"
+			},
+			"pathfinding": {
+				"nodes": [
+					{
+						"id": "0",
+						"x": 1058.5,
+						"y": 488.5
+					},
+					{
+						"id": "1",
+						"x": 957.5,
+						"y": 486.5
+					},
+					{
+						"id": "2",
+						"x": 948.5,
+						"y": 366.5
+					},
+					{
+						"id": "3",
+						"x": 808.5,
+						"y": 409.5
+					},
+					{
+						"id": "4",
+						"x": 590.5,
+						"y": 476.5
+					},
+					{
+						"id": "5",
+						"x": 1062.5,
+						"y": 364.5
+					},
+					{
+						"id": "6",
+						"x": 1165.5,
+						"y": 411.5
+					},
+					{
+						"id": "7",
+						"x": 1060.5,
+						"y": 684.5
+					},
+					{
+						"id": "8",
+						"x": 950.5,
+						"y": 681.5
+					},
+					{
+						"id": "9",
+						"x": 1612.5,
+						"y": 339.5
+					},
+					{
+						"id": "10",
+						"x": 1464.5,
+						"y": 342.5
+					},
+					{
+						"id": "11",
+						"x": 1355.5,
+						"y": 481.5
+					},
+					{
+						"id": "12",
+						"x": 658.5,
+						"y": 476.5
+					},
+					{
+						"id": "13",
+						"x": 1424.5,
+						"y": 483.5
+					},
+					{
+						"id": "14",
+						"x": 544.5,
+						"y": 343.5
+					},
+					{
+						"id": "15",
+						"x": 398.5,
+						"y": 340.5
+					},
+					{
+						"id": "17",
+						"x": 953.5,
+						"y": 815.5
+					},
+					{
+						"id": "19",
+						"x": 739.5,
+						"y": 284.5
+					},
+					{
+						"id": "20",
+						"x": 1294.5,
+						"y": 305.5
+					},
+					{
+						"id": "21",
+						"x": 587.5,
+						"y": 834.5
+					},
+					{
+						"id": "22",
+						"x": 860.5,
+						"y": 840.5
+					},
+					{
+						"id": "23",
+						"x": 650.5,
+						"y": 814.5
+					},
+					{
+						"id": "24",
+						"x": 759.5,
+						"y": 814.5
+					},
+					{
+						"id": "25",
+						"x": 1419.5,
+						"y": 834.5
+					},
+					{
+						"id": "26",
+						"x": 1363.5,
+						"y": 815.5
+					},
+					{
+						"id": "27",
+						"x": 1247.5,
+						"y": 817.5
+					},
+					{
+						"id": "28",
+						"x": 1152.5,
+						"y": 846.5
+					},
+					{
+						"id": "29",
+						"x": 1062.5,
+						"y": 814.5
+					},
+					{
+						"id": "30",
+						"x": 1011.5,
+						"y": 948.5
+					},
+					{
+						"id": "31",
+						"x": 585.5,
+						"y": 943.5
+					},
+					{
+						"id": "32",
+						"x": 862.5,
+						"y": 926.5
+					},
+					{
+						"id": "33",
+						"x": 1311.5,
+						"y": 943.5
+					},
+					{
+						"id": "34",
+						"x": 1632.5,
+						"y": 946.5
+					},
+					{
+						"id": "35",
+						"x": 1157.5,
+						"y": 925.5
+					},
+					{
+						"id": "36",
+						"x": 1452.5,
+						"y": 946.5
+					},
+					{
+						"id": "37",
+						"x": 406.5,
+						"y": 950.5
+					},
+					{
+						"id": "38",
+						"x": 711.5,
+						"y": 944.5
+					},
+					{
+						"id": "42",
+						"x": 752.5,
+						"y": 571.5
+					},
+					{
+						"id": "43",
+						"x": 753.5,
+						"y": 703.5
+					},
+					{
+						"id": "44",
+						"x": 1262.5,
+						"y": 708.5
+					},
+					{
+						"id": "45",
+						"x": 1258.5,
+						"y": 572.5
+					},
+					{
+						"id": "46",
+						"x": 1129.5,
+						"y": 552.5
+					},
+					{
+						"id": "47",
+						"x": 947.5,
+						"y": 558.5
+					}
+				],
+				"links": [
+					{
+						"from": "3",
+						"to": "2",
+						"type": "bothWays"
+					},
+					{
+						"from": "5",
+						"to": "2",
+						"type": "bothWays"
+					},
+					{
+						"from": "5",
+						"to": "6",
+						"type": "bothWays"
+					},
+					{
+						"from": "6",
+						"to": "0",
+						"type": "bothWays"
+					},
+					{
+						"from": "1",
+						"to": "0",
+						"type": "bothWays"
+					},
+					{
+						"from": "14",
+						"to": "15",
+						"type": "bothWays"
+					},
+					{
+						"from": "4",
+						"to": "14",
+						"type": "bothWays"
+					},
+					{
+						"from": "12",
+						"to": "4",
+						"type": "bothWays"
+					},
+					{
+						"from": "9",
+						"to": "10",
+						"type": "bothWays"
+					},
+					{
+						"from": "10",
+						"to": "13",
+						"type": "bothWays"
+					},
+					{
+						"from": "11",
+						"to": "13",
+						"type": "bothWays"
+					},
+					{
+						"from": "10",
+						"to": "11",
+						"type": "bothWays"
+					},
+					{
+						"from": "14",
+						"to": "12",
+						"type": "bothWays"
+					},
+					{
+						"from": "7",
+						"to": "8",
+						"type": "bothWays"
+					},
+					{
+						"from": "8",
+						"to": "1",
+						"type": "bothWays"
+					},
+					{
+						"from": "8",
+						"to": "0",
+						"type": "bothWays"
+					},
+					{
+						"from": "7",
+						"to": "1",
+						"type": "bothWays"
+					},
+					{
+						"from": "7",
+						"to": "0",
+						"type": "bothWays"
+					},
+					{
+						"from": "14",
+						"to": "19",
+						"type": "bothWays"
+					},
+					{
+						"from": "20",
+						"to": "6",
+						"type": "bothWays"
+					},
+					{
+						"from": "10",
+						"to": "20",
+						"type": "bothWays"
+					},
+					{
+						"from": "34",
+						"to": "36",
+						"type": "bothWays"
+					},
+					{
+						"from": "33",
+						"to": "26",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "33",
+						"to": "27",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "38",
+						"to": "24",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "38",
+						"to": "23",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "30",
+						"to": "29",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "30",
+						"to": "17",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "21",
+						"to": "31",
+						"type": "bothWays"
+					},
+					{
+						"from": "37",
+						"to": "31",
+						"type": "bothWays"
+					},
+					{
+						"from": "31",
+						"to": "38",
+						"type": "bothWays"
+					},
+					{
+						"from": "38",
+						"to": "32",
+						"type": "bothWays"
+					},
+					{
+						"from": "22",
+						"to": "24",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "22",
+						"to": "17",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "22",
+						"to": "32",
+						"type": "bothWays"
+					},
+					{
+						"from": "28",
+						"to": "29",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "28",
+						"to": "27",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "27",
+						"to": "26",
+						"type": "bothWays"
+					},
+					{
+						"from": "29",
+						"to": "17",
+						"type": "bothWays"
+					},
+					{
+						"from": "24",
+						"to": "23",
+						"type": "bothWays"
+					},
+					{
+						"from": "25",
+						"to": "26",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "33",
+						"to": "35",
+						"type": "bothWays"
+					},
+					{
+						"from": "35",
+						"to": "30",
+						"type": "bothWays"
+					},
+					{
+						"from": "30",
+						"to": "32",
+						"type": "bothWays"
+					},
+					{
+						"from": "33",
+						"to": "36",
+						"type": "bothWays"
+					},
+					{
+						"from": "25",
+						"to": "36",
+						"type": "bothWays"
+					},
+					{
+						"from": "24",
+						"to": "8",
+						"type": "bothWays"
+					},
+					{
+						"from": "17",
+						"to": "8",
+						"type": "bothWays"
+					},
+					{
+						"from": "29",
+						"to": "8",
+						"type": "bothWays"
+					},
+					{
+						"from": "29",
+						"to": "7",
+						"type": "bothWays"
+					},
+					{
+						"from": "17",
+						"to": "7",
+						"type": "bothWays"
+					},
+					{
+						"from": "27",
+						"to": "7",
+						"type": "bothWays"
+					},
+					{
+						"from": "21",
+						"to": "23",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "31",
+						"to": "23",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "36",
+						"to": "26",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "35",
+						"to": "27",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "28",
+						"to": "35",
+						"type": "bothWays"
+					},
+					{
+						"from": "35",
+						"to": "29",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "32",
+						"to": "17",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "32",
+						"to": "24",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "29",
+						"to": "27",
+						"type": "bothWays"
+					},
+					{
+						"from": "6",
+						"to": "11",
+						"type": "bothWays"
+					},
+					{
+						"from": "17",
+						"to": "24",
+						"type": "bothWays"
+					},
+					{
+						"from": "43",
+						"to": "42",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "44",
+						"to": "45",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "45",
+						"to": "0",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "42",
+						"to": "1",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "8",
+						"to": "42",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "7",
+						"to": "45",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "44",
+						"to": "7",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "43",
+						"to": "8",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "24",
+						"to": "43",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "23",
+						"to": "43",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "26",
+						"to": "44",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "27",
+						"to": "44",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "22",
+						"to": "8",
+						"type": "bothWays"
+					},
+					{
+						"from": "2",
+						"to": "19",
+						"type": "bothWays"
+					},
+					{
+						"from": "5",
+						"to": "20",
+						"type": "bothWays"
+					},
+					{
+						"from": "3",
+						"to": "4",
+						"type": "bothWays"
+					},
+					{
+						"from": "4",
+						"to": "19",
+						"type": "bothWays"
+					},
+					{
+						"from": "1",
+						"to": "47",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "47",
+						"to": "3",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "0",
+						"to": "46",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "46",
+						"to": "6",
+						"type": "oneWayTo"
+					}
+				]
+			}
+		}
+	],
+	"filename": "level5"
+}

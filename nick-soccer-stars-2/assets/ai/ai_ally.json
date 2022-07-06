@@ -1,0 +1,34 @@
+{
+	"type":"selector", 
+	"behaviors":
+	[
+		{
+			"type":"sequence",
+			"behaviors":
+			[
+				{
+					"type":"action",
+					"action":"HasBall"
+				},
+				{
+					"type":"file", 
+					"file":"ai_offense"
+				}
+			]
+		},
+		{
+			"type":"selector",
+			"behaviors":
+			[
+				{
+					"type":"action",
+					"action":"HasBall"
+				},
+				{
+					"type":"file", 
+					"file":"ai_defense"
+				}
+			]
+		}
+	]
+}

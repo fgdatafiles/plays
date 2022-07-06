@@ -1,0 +1,77 @@
+{
+	pieces : [{
+			asset : "arm_back", 
+			x : 34, 
+			y : 14, 
+			rotation : 0, 
+			back : false
+		},{
+			asset : "leg_back", 
+			x : 21, 
+			y : 48, 
+			rotation : 0, 
+			back : false, 
+			massMultiplier : 5
+		},{
+			asset : "trunk", 
+			x : 0, 
+			y : 0, 
+			rotation : 0, 
+			back : false
+		},{
+			asset : "head", 
+			x : -6, 
+			y : -55, 
+			rotation : 0, 
+			back : false
+		},{
+			asset : "leg_front", 
+			x : -9, 
+			y : 48, 
+			rotation : 0, 
+			back : false, 
+			massMultiplier : 5
+		},{
+			asset : "arm_front", 
+			x : -26, 
+			y : 11, 
+			rotation : 0, 
+			back : false
+		}], 
+	constraints : [{
+			id1 : "trunk", 
+			id2 : "head", 
+			x : 3, 
+			y : -27, 
+			type : "WeldJoint", 
+			params : null
+		},{
+			id1 : "trunk", 
+			id2 : "leg_front", 
+			x : -10, 
+			y : 28, 
+			type : "WeldJoint", 
+			params : null
+		},{
+			id1 : "trunk", 
+			id2 : "leg_back", 
+			x : 19, 
+			y : 28, 
+			type : "WeldJoint", 
+			params : null
+		},{
+			id1 : "trunk", 
+			id2 : "arm_front", 
+			x : -13, 
+			y : -13, 
+			type : "PivotJoint", 
+			params : null
+		},{
+			id1 : "trunk", 
+			id2 : "arm_back", 
+			x : 19, 
+			y : -13, 
+			type : "PivotJoint", 
+			params : null
+		}]
+}

@@ -1,0 +1,232 @@
+{
+"skeleton": {
+	"hash": "qBV3zsZqPbvsCkPVJ2Ea33PcGtY",
+	"spine": "3.8.95",
+	"x": -327.03,
+	"y": -119.41,
+	"width": 409.63,
+	"height": 414.67,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "body", "parent": "root", "length": 61.34, "rotation": 4.69, "x": 13.62, "y": 6.42, "scaleX": -1.115, "scaleY": 1.115 },
+	{ "name": "wing_front", "parent": "body", "length": 77.95, "rotation": 25.49, "x": 29.21, "y": 17.26 },
+	{ "name": "wing_back", "parent": "body", "length": 61.01, "rotation": 59.23, "x": 23.14, "y": 18.24 },
+	{ "name": "body2", "parent": "body", "length": 89.48, "rotation": -5.06, "x": 39.98, "y": 15.52 },
+	{ "name": "body3", "parent": "body", "length": 82.11, "rotation": 4.77, "x": 37.72, "y": 21.14 },
+	{ "name": "wingss", "parent": "body", "length": 158.96, "rotation": 94.04, "x": 20.09, "y": 11.91 }
+],
+"slots": [
+	{ "name": "assets/dragonfly_wing4", "bone": "body3", "attachment": "assets/dragonfly_wing" },
+	{ "name": "assets/dragonfly_wing2", "bone": "wing_back", "attachment": "assets/dragonfly_wing" },
+	{ "name": "assets/dragonfly", "bone": "body", "attachment": "assets/dragonfly" },
+	{ "name": "assets/dragonfly_wing3", "bone": "body2", "attachment": "assets/dragonfly_wing" },
+	{ "name": "assets/dragonfly_wing", "bone": "wing_front", "attachment": "assets/dragonfly_wing" },
+	{ "name": "assets/legs", "bone": "body", "attachment": "assets/legs" },
+	{ "name": "assets/blured wing_1", "bone": "wingss", "attachment": "assets/blured_wing_2" }
+],
+"animations": {
+	"fly": {
+		"slots": {
+			"assets/blured wing_1": {
+				"attachment": [
+					{ "time": 0.0333, "name": "assets/blured wing_1" },
+					{ "time": 0.0667, "name": "assets/blured_wing_2" },
+					{ "time": 0.1, "name": "assets/blured wing_1" },
+					{ "time": 0.1333, "name": "assets/blured_wing_2" }
+				]
+			},
+			"assets/dragonfly_wing": {
+				"attachment": [
+					{ "name": null, "time": 0.0 }
+				]
+			},
+			"assets/dragonfly_wing2": {
+				"attachment": [
+					{ "name": null, "time": 0.0 }
+				]
+			},
+			"assets/dragonfly_wing3": {
+				"attachment": [
+					{ "name": null, "time": 0.0 }
+				]
+			},
+			"assets/dragonfly_wing4": {
+				"attachment": [
+					{ "name": null, "time": 0.0 }
+				]
+			},
+			"assets/legs": {
+				"attachment": [
+					{ "name": null, "time": 0.0 }
+				]
+			}
+		},
+		"bones": {
+			"body": {
+				"translate": [
+					{ "x": 91.65, "y": 1.54, "time": 0.0 }
+				]
+			},
+			"body3": {
+				"rotate": [
+					{ "angle": 72.58, "time": 0.0 }
+				],
+				"scale": [
+					{ "x": -0.349, "y": 0.989, "time": 0.0 }
+				]
+			},
+			"body2": {
+				"rotate": [
+					{ "angle": 96.44, "time": 0.0 }
+				],
+				"scale": [
+					{ "x": -0.278, "y": 0.989, "time": 0.0 }
+				]
+			},
+			"wing_front": {
+				"rotate": [
+					{ "angle": 43.42, "time": 0.0 }
+				],
+				"scale": [
+					{ "x": 0.658, "y": 0.989, "time": 0.0 }
+				]
+			},
+			"wing_back": {
+				"rotate": [
+					{ "angle": 27.36, "time": 0.0 }
+				],
+				"scale": [
+					{ "x": 0.85, "y": 0.989, "time": 0.0 }
+				]
+			},
+			"wingss": {
+				"rotate": [
+					{ "angle": 1.14, "time": 0.0 }
+				],
+				"translate": [
+					{ "x": -2.55, "y": -2.02, "time": 0.0 }
+				],
+				"scale": [
+					{ "x": 1.122, "time": 0.0, "y": 1.0 },
+					{ "time": 0.0667, "x": 0.27, "y": 1.0 },
+					{ "time": 0.1333, "x": 1.122, "y": 1.0 }
+				]
+			}
+		}
+	},
+	"stand": {
+		"slots": {
+			"assets/blured wing_1": {
+				"attachment": [
+					{ "name": null, "time": 0.0 }
+				]
+			}
+		},
+		"bones": {
+			"body3": {
+				"rotate": [
+					{
+						"angle": -10.54,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0
+					},
+					{
+						"time": 1.5,
+						"angle": -1.9,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 3.1667, "angle": -10.54 }
+				]
+			},
+			"wing_back": {
+				"rotate": [
+					{
+						"angle": -61.63,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0
+					},
+					{
+						"time": 1.5,
+						"angle": -58.31,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 3.1667, "angle": -61.63 }
+				],
+				"scale": [
+					{ "y": 0.355, "time": 0.0, "x": 1.0 }
+				]
+			},
+			"wing_front": {
+				"rotate": [
+					{
+						"angle": -36.85,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0
+					},
+					{
+						"time": 1.5,
+						"angle": -33.53,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 3.1667, "angle": -36.85 }
+				],
+				"scale": [
+					{ "y": 0.431, "time": 0.0, "x": 1.0 }
+				]
+			},
+			"body": {
+				"rotate": [
+					{ "angle": -12.86, "time": 0.0 }
+				],
+				"translate": [
+					{ "x": 11.46, "y": 84.49, "time": 0.0 }
+				]
+			},
+			"body2": {
+				"rotate": [
+					{
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0,
+						"angle": 0.0
+					},
+					{
+						"time": 1.5,
+						"angle": 5.94,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 3.1667, "angle": 0.0 }
+				]
+			}
+		}
+	}
+},
+"skins": {
+	"default": {
+		"assets/blured wing_1": {
+			"assets/blured_wing_2": { "x": 64.22, "y": -33.13, "scaleX": 1.169, "scaleY": -1.182, "rotation": 90.65, "width": 102, "height": 313 },
+			"assets/blured wing_1": { "x": 45.63, "y": -10.74, "scaleX": 1.0238, "scaleY": 1.414, "rotation": 90.65, "width": 143, "height": 157 }
+		},
+		"assets/dragonfly": {
+			"assets/dragonfly": { "x": 112.44, "y": -2.03, "rotation": -4.69, "width": 339, "height": 80 }
+		},
+		"assets/dragonfly_wing": {
+			"assets/dragonfly_wing": { "x": 124.49, "y": 22.07, "rotation": 17.09, "width": 275, "height": 96 }
+		},
+		"assets/dragonfly_wing2": {
+			"assets/dragonfly_wing": { "x": 99.1, "y": -22.37, "scaleX": 0.7573, "rotation": 0.69, "width": 275, "height": 96 }
+		},
+		"assets/dragonfly_wing3": {
+			"assets/dragonfly_wing": { "x": 127.15, "y": -13.29, "scaleY": 0.727, "rotation": 0.37, "width": 275, "height": 96 }
+		},
+		"assets/dragonfly_wing4": {
+			"assets/dragonfly_wing": { "x": 109.77, "y": -13.77, "scaleX": 0.89, "scaleY": 0.6496, "rotation": -2.07, "width": 275, "height": 96 }
+		},
+		"assets/legs": {
+			"assets/legs": { "x": 24.65, "y": -59.9, "rotation": -4.69, "width": 131, "height": 82 }
+		}
+	}
+}
+}

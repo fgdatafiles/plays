@@ -1,0 +1,97 @@
+{
+  "boot": [
+    {
+      "type": "xml",
+      "key": "copy_xml",
+      "url": "locale/copy.xml",
+      "overwrite": true
+    },
+    {
+      "type": "json",
+      "key": "load_manifest",
+      "url": "data/load_manifest.json",
+      "overwrite": true
+    },
+    {
+      "type": "image",
+      "key":  "bg_underwater",
+      "url":  "ui/images/bg_underwater.jpg"
+    },
+    {
+      "type": "spine",
+      "key": "tadpole_loader",
+      "url": "spine/tadpole_loader.json"
+    }
+  ],
+  "load": [
+    {
+      "type": "json",
+      "key": "app_config",
+      "url": "data/config.json",
+      "overwrite": true
+    },
+    {
+      "type": "json",
+      "key": "decision_tree_data",
+      "url": "data/decision_tree.json",
+      "overwrite": true
+    },
+    {
+      "type": "json",
+      "key": "pond_config",
+      "url": "data/pond_config.json",
+      "overwrite": true
+    },
+
+    {
+      "type": "atlasJSONArray",
+      "key": "ui_icons",
+      "textureURL": "spritesheets/ui/icons.png",
+      "atlasURL": "spritesheets/ui/icons.json",
+      "atlasData": null
+    },
+    {
+      "type": "atlasJSONArray",
+      "key": "ui_various",
+      "textureURL": "spritesheets/ui/various.png",
+      "atlasURL": "spritesheets/ui/various.json",
+      "atlasData": null
+    },
+    {
+      "type": "atlasJSONArray",
+      "key": "ui_buttons",
+      "textureURL": "spritesheets/ui/buttons.png",
+      "atlasURL": "spritesheets/ui/buttons.json",
+      "atlasData": null
+    },
+    {
+      "type": "atlasJSONArray",
+      "key": "ui_mycreatures",
+      "textureURL": "spritesheets/ui/mycreatures.png",
+      "atlasURL": "spritesheets/ui/mycreatures.json",
+      "atlasData": null
+    },
+
+    {
+      "type": "image",
+      "key":  "logo_game",
+      "url":  "ui/images/logo_game.png"
+    },
+    {
+      "type": "image",
+      "key":  "bg_welcome",
+      "url":  "ui/images/bg_welcome.jpg"
+    },
+    {
+      "type": "image",
+      "key":  "sight_range",
+      "url":  "ui/images/sight_range.png"
+    },
+
+    {
+      "type": "spine",
+      "key":  "transition_ring",
+      "url":  "spine/transition_ring.json"
+    }
+  ]
+}

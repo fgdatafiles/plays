@@ -1,0 +1,222 @@
+{
+  "pathsByPondLevel": {
+    "bottom": [
+      {
+        "id":  "1.1",
+        "options": [
+          ["rock"],
+          ["underwater", "surface"],
+          ["worm", "snail"]
+        ]
+      }
+    ],
+    "middle1": [
+      {
+        "id":  "2.1",
+        "required": ["worm", "surface"],
+        "nextPath": ["3.1"],
+        "options": [
+          ["dragonfly_larvae", "scavenger_beetle_larvae"],
+          ["tadpole", "diving_beetle_larvae"],
+          ["reject_1", "reject_2"]
+        ]
+      },
+      {
+        "id":  "2.2",
+        "required": ["worm", "surface"],
+        "nextPath": ["3.1"],
+        "options": [
+          ["tadpole", "dragonfly_larvae"],
+          ["scavenger_beetle_larvae", "diving_beetle_larvae"],
+          ["reject_1", "reject_2"]
+        ]
+      },
+      {
+        "id":  "2.3",
+        "required": ["worm", "underwater"],
+        "nextPath": ["3.1", "3.2"],
+        "options": [
+          ["tadpole", "dragonfly_larvae"],
+          ["reject_1", "scavenger_beetle_larvae"],
+          ["reject_2", "caddisfly_larvae"]
+        ]
+      },
+      {
+        "id":  "2.4",
+        "required": ["snail", "surface"],
+        "nextPath": ["3.1", "3.2"],
+        "options": [
+          ["scavenger_beetle_larvae", "caddisfly_larvae"],
+          ["reject_1", "tadpole"],
+          ["reject_2", "dragonfly_larvae"]
+        ]
+      },
+      {
+        "id":  "2.5",
+        "required": ["snail", "underwater"],
+        "nextPath": ["3.2"],
+        "options": [
+          ["mayfly_larvae", "tadpole"],
+          ["reject_1", "mosquito_larvae"],
+          ["reject_2", "caddisfly_larvae"]
+        ]
+      },
+      {
+        "id":  "2.6",
+        "required": ["snail", "underwater"],
+        "nextPath": ["3.2"],
+        "options": [
+          ["tadpole", "caddisfly_larvae"],
+          ["reject_1", "mosquito_larvae"],
+          ["reject_2", "mayfly_larvae"]
+        ]
+      }
+    ],
+    "middle2": [
+      {
+        "id":  "3.1",
+        "nextPath": ["4.1"],
+        "options": [
+          ["pumpkinseed", "red_spotted_newt"],
+          ["reject_1", "spotted_bass"],
+          ["reject_2", "yellow_bullhead_catfish"]
+        ]
+      },
+      {
+        "id":  "3.2",
+        "nextPath": ["4.2"],
+        "options": [
+          ["northern_pike", "red_spotted_newt"],
+          ["reject_1", "pumpkinseed"],
+          ["reject_2", "spotted_bass"]
+        ]
+      }
+    ],
+    "surface": [
+      {
+        "id":  "4.1",
+        "options": [
+          ["teal_duck", "map_turtle"],
+          ["heron", "kingfisher"],
+          ["reject_1", "reject_2"]
+        ]
+      },
+      {
+        "id":  "4.2",
+        "options": [
+          ["heron", "kingfisher"],
+          ["mallard_duck", "painted_turtle"],
+          ["reject_1", "reject_2"]
+        ]
+      }
+    ]
+  },
+
+
+  "choicesByID": {
+    "rock" : {
+      "id": "rock", "key": "rock",
+      "options": ["rock", "rock", "rock_2", "rock_3"]
+    },
+
+    "underwater": {
+      "id": "underwater","key": "underwater",
+      "options": ["fanwort", "wild_cellary", "fanwort"]
+    },
+    "surface": {
+      "id": "surface", "key": "surface",
+      "options": ["lillypad", "lillypad"]
+    },
+
+    "worm" : {
+      "id": "worm", "key": "worm",
+      "options": ["worm", "worm", "worm", "worm"]
+    },
+    "snail" : {
+      "id": "snail", "key": "snail",
+      "options": ["snail", "snail"]
+    },
+
+    "dragonfly_larvae" : {
+      "id": "dragonfly_larvae", "key": "dragonfly_larvae",
+      "options": ["dragonfly_larvae", "dragonfly_larvae"],
+      "unlock" : [{"name": "dragonfly", "id" : "dragonfly", "targetLayer": "surface"}]
+    },
+    "scavenger_beetle_larvae" : {
+      "id": "scavenger_beetle_larvae", "key": "scavenger_beetle_larvae",
+      "options": ["scavenger_beetle_larvae", "scavenger_beetle_larvae"],
+      "unlock" : [{"name": "scavenger_beetle", "id" : "scavenger_beetle", "targetLayer": "middle2"}]
+    },
+    "tadpole" : {
+      "id": "tadpole", "key": "tadpole",
+      "options": ["tadpole", "tadpole", "tadpole", "tadpole"],
+      "unlock" : [{"name": "frog", "id" : "frog", "targetLayer": "middle2"}, {"name": "frog_surface", "id" : "frog_surface", "targetLayer": "surface"}]
+    },
+    "diving_beetle_larvae" : {
+      "id": "diving_beetle_larvae", "key": "diving_beetle_larvae",
+      "options": ["diving_beetle_larvae", "diving_beetle_larvae"],
+      "unlock" : [{"name": "diving_beetle", "id" : "diving_beetle", "targetLayer": "middle2"}]
+    },
+    "caddisfly_larvae" : {
+      "id": "caddisfly_larvae", "key": "caddisfly_larvae",
+      "options": ["caddisfly_larvae", "caddisfly_larvae"],
+      "unlock" : [{"name": "caddisfly", "id" : "caddisfly", "targetLayer": "surface"}]
+    },
+    "mayfly_larvae" : {
+      "id": "mayfly_larvae", "key": "mayfly_larvae",
+      "options": ["mayfly_larvae", "mayfly_larvae", "mayfly_larvae"],
+      "unlock" : [{"name": "mayfly", "id" : "mayfly", "targetLayer": "surface"}]
+    },
+    "mosquito_larvae" : {
+      "id": "mosquito_larvae", "key": "mosquito_larvae",
+      "options": ["mosquito_larvae", "mosquito_larvae", "mosquito_larvae", "mosquito_larvae"],
+      "unlock" : [{"name": "mosquito", "id" : "mosquito", "targetLayer": "surface"}]
+    },
+
+    "pumpkinseed" : {
+      "id": "pumpkinseed", "key": "pumpkinseed",
+      "options": ["pumpkinseed", "pumpkinseed"]
+    },
+    "red_spotted_newt" : {
+      "id": "red_spotted_newt", "key": "red_spotted_newt",
+      "options": ["red_spotted_newt", "red_spotted_newt"]
+    },
+    "spotted_bass" : {
+      "id": "spotted_bass", "key": "spotted_bass",
+      "options": ["spotted_bass", "spotted_bass"]
+    },
+    "yellow_bullhead_catfish" : {
+      "id": "yellow_bullhead_catfish", "key": "yellow_bullhead_catfish",
+      "options": ["yellow_bullhead_catfish", "yellow_bullhead_catfish"]
+    },
+    "northern_pike" : {
+      "id": "northern_pike", "key": "northern_pike",
+      "options": ["northern_pike"]
+    },
+
+    "teal_duck" : {
+      "id": "teal_duck", "key": "teal_duck",
+      "options": ["teal_duck"]
+    },
+    "mallard_duck" : {
+      "id": "mallard_duck", "key": "mallard_duck",
+      "options": ["mallard_duck"]
+    },
+    "kingfisher" : {
+      "id": "kingfisher", "key": "kingfisher",
+      "options": ["kingfisher"]
+    },
+    "painted_turtle" : {
+      "id": "painted_turtle", "key": "painted_turtle",
+      "options": ["painted_turtle"]
+    },
+    "map_turtle" : {
+      "id": "map_turtle", "key": "map_turtle",
+      "options": ["map_turtle"]
+    },
+    "heron" : {
+      "id": "heron", "key": "heron",
+      "options": ["heron"]
+    }
+  }
+}

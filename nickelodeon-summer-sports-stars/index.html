@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Nick Summer Games</title>
+
+    <style>
+        html,body { margin: 0; padding: 0; width: 100%; height: 100%; background:#000000}		
+    </style>
+</head>
+<body>
+	<script>
+		// FOR TOUCH DEVICES, REDIRECT TO JSEMBED
+		// @see https://github.com/Modernizr/Modernizr/blob/master/feature-detects/touchevents.js
+		if(('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
+			top.location.href = "jsembed.html";
+		}
+	</script>
+	
+	<!-- Nick container page uses require.js, so we load it now to check game's compatibility -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js"></script>
+	
+	<div id="embedtarget" style="margin:0 auto; width:960px;"></div>
+	<!-- Libraries listed in hanvil.json and prepended  by hanvil tools -->
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<!-- Canada Tracking: see "canada_tracking" option in config.json -->
+	<script language="JavaScript">
+		function trackFlashEvent(gameTitle,gameEvent,playEvent)
+		{
+			console.log('Tracking:', gameTitle, gameEvent, playEvent);
+		}
+	</script>
+		
+	<!-- http://jillix.github.io/url.js/
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/urljs/1.2.0/url.min.js"></script>
+	<script>
+	var sample = Url.queryString("sample");
+	var script = document.createElement('script');
+	js.src = "js/" + sample + ".js";
+	document.body.appendChild(js);
+	</script>
+	</body> -->
+</html>

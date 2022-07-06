@@ -1,0 +1,45 @@
+{
+"skeleton": {
+	"hash": "3jNpN4rcmLRn/IXb/UjQ3rHu3Rw",
+	"spine": "3.8.86",
+	"x": -56.92,
+	"y": -2.21,
+	"width": 136,
+	"height": 192.95,
+	"images": "./model_lights_assets/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "lights", "parent": "root", "x": -0.44, "y": 34.29 }
+],
+"slots": [
+	{ "name": "model", "bone": "root", "attachment": "model" },
+	{ "name": "model_lights", "bone": "lights", "color": "ffffff00", "attachment": "model_lights" }
+],
+"animations": {
+	"idle": {},
+	"interact": {
+		"slots": {
+			"model_lights": {
+				"color": [
+					{ "color": "ffffff00", "time": 0.0 },
+					{ "time": 0.1667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.3333, "color": "ffffffff" },
+					{ "time": 2.5, "color": "ffffff00" }
+				]
+			}
+		}
+	}
+},
+"skins": {
+	"default": {
+		"model": {
+			"model": { "x": 11.08, "y": 95.24, "width": 136, "height": 191 }
+		},
+		"model_lights": {
+			"model_lights": { "x": 11.74, "y": 54, "width": 105, "height": 181 }
+		}
+	}
+}
+}

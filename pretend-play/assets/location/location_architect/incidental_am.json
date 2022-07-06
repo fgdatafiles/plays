@@ -1,0 +1,103 @@
+{
+"skeleton": {
+	"hash": "jz2B5E8E2HMqL8SvyLwVOGRwmEE",
+	"spine": "3.8.94",
+	"x": -72.4,
+	"y": 0.45,
+	"width": 180,
+	"height": 292,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "AM_Architect", "parent": "root", "length": 161.91, "rotation": 91.06, "x": 3.12, "y": 32.66 },
+	{ "name": "AM_Architect_blink", "parent": "AM_Architect", "x": 223.3, "y": 11.55 },
+	{ "name": "AM_Architect_mouth1", "parent": "AM_Architect", "length": 15.68, "rotation": 176.22, "x": 196.4, "y": 9.06 }
+],
+"slots": [
+	{ "name": "AM_Architect", "bone": "AM_Architect", "attachment": "AM_Architect" },
+	{ "name": "AM_Architect_blink", "bone": "AM_Architect_blink" },
+	{ "name": "AM_Architect_mouth1", "bone": "AM_Architect_mouth1", "attachment": "AM_Architect_mouth1" },
+	{ "name": "AM_Architect_mouth2", "bone": "AM_Architect_mouth1" },
+	{ "name": "AM_Architect_table", "bone": "root" }
+],
+"animations": {
+	"idle": {
+		"slots": {
+			"AM_Architect_blink": {
+				"attachment": [
+					{ "time": 2.8, "name": "AM_Architect_blink" },
+					{ "time": 3.0333, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"AM_Architect": {
+				"scale": [
+					{
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0,
+						"x": 1.0,
+						"y": 1.0
+					},
+					{
+						"time": 1.3333,
+						"x": 1.018,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"y": 1.0
+					},
+					{
+						"time": 2.6667,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"x": 1.0,
+						"y": 1.0
+					},
+					{
+						"time": 4,
+						"x": 1.018,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"y": 1.0
+					},
+					{ "time": 5.3333, "x": 1.0, "y": 1.0 }
+				]
+			}
+		}
+	},
+	"talk": {
+		"slots": {
+			"AM_Architect_mouth2": {
+				"attachment": [
+					{ "name": "AM_Architect_mouth2", "time": 0.0 },
+					{ "time": 0.2667, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"AM_Architect_mouth1": {
+				"scale": [
+					{ "time": 0.0, "x": 1.0, "y": 1.0 },
+					{ "time": 0.1, "x": 1.207, "y": 1.0 },
+					{ "time": 0.3667, "x": 1.0, "y": 1.0 }
+				]
+			}
+		}
+	}
+},
+"skins": {
+	"default": {
+		"AM_Architect": {
+			"AM_Architect": { "x": 113.51, "y": -16.58, "rotation": -91.06, "width": 180, "height": 292 }
+		},
+		"AM_Architect_blink": {
+			"AM_Architect_blink": { "x": -4.91, "y": -0.09, "rotation": -91.06, "width": 51, "height": 22 }
+		},
+		"AM_Architect_mouth1": {
+			"AM_Architect_mouth1": { "x": -5.95, "y": -0.19, "rotation": 92.73, "width": 70, "height": 16 }
+		},
+		"AM_Architect_mouth2": {
+			"AM_Architect_mouth2": { "x": 5.88, "y": -1.95, "rotation": 92.73, "width": 38, "height": 14 }
+		}
+	}
+}
+}

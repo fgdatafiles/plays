@@ -1,0 +1,104 @@
+{
+"skeleton": {
+	"hash": "ykE82z6Hm5PqUi7+sg8tWHZO7vg",
+	"spine": "3.8.94",
+	"x": -53.91,
+	"y": 0.77,
+	"width": 103,
+	"height": 168,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "AM_Delivery", "parent": "root", "length": 85.31, "rotation": 90.26, "x": -0.86, "y": 20.05 },
+	{ "name": "AM_Delivery_blink", "parent": "AM_Delivery", "x": 119.64, "y": -5.56 },
+	{ "name": "AM_Deliver_Mouth1", "parent": "AM_Delivery", "x": 100.35, "y": -2.77 }
+],
+"slots": [
+	{ "name": "AM_Delivery", "bone": "AM_Delivery", "attachment": "AM_Delivery" },
+	{ "name": "AM_Delivery_blink", "bone": "AM_Delivery_blink" },
+	{ "name": "AM_Deliver_Mouth1", "bone": "AM_Deliver_Mouth1", "attachment": "AM_Deliver_Mouth1" },
+	{ "name": "AM_Delivery_Mouth2", "bone": "AM_Deliver_Mouth1" }
+],
+"animations": {
+	"idle": {
+		"slots": {
+			"AM_Delivery_blink": {
+				"attachment": [
+					{ "time": 2.4667, "name": "AM_Delivery_blink" },
+					{ "time": 2.6333, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"AM_Delivery": {
+				"scale": [
+					{
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0,
+						"x": 1.0,
+						"y": 1.0
+					},
+					{
+						"time": 1.3333,
+						"x": 1.023,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"y": 1.0
+					},
+					{
+						"time": 2.6667,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"x": 1.0,
+						"y": 1.0
+					},
+					{
+						"time": 4,
+						"x": 1.023,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"y": 1.0
+					},
+					{ "time": 5.3333, "x": 1.0, "y": 1.0 }
+				]
+			}
+		}
+	},
+	"talk": {
+		"slots": {
+			"AM_Delivery_Mouth2": {
+				"attachment": [
+					{ "name": "AM_Delivery_Mouth2", "time": 0.0 },
+					{ "time": 0.2333, "name": null },
+					{ "time": 0.4, "name": "AM_Delivery_Mouth2" }
+				]
+			}
+		},
+		"bones": {
+			"AM_Deliver_Mouth1": {
+				"scale": [
+					{ "x": 0.815, "time": 0.0, "y": 1.0 },
+					{ "time": 0.1667, "x": 1.086, "y": 1.0 },
+					{ "time": 0.3333, "x": 0.89, "y": 1.0 },
+					{ "time": 0.4, "x": 0.815, "y": 1.0 }
+				]
+			}
+		}
+	}
+},
+"skins": {
+	"default": {
+		"AM_Deliver_Mouth1": {
+			"AM_Deliver_Mouth1": { "x": 2.33, "y": -1.12, "rotation": -90.26, "width": 32, "height": 9 }
+		},
+		"AM_Delivery": {
+			"AM_Delivery": { "x": 64.73, "y": 1.26, "rotation": -90.26, "width": 103, "height": 168 }
+		},
+		"AM_Delivery_Mouth2": {
+			"AM_Delivery_Mouth2": { "x": -2.64, "y": -4.36, "rotation": -90.26, "width": 23, "height": 9 }
+		},
+		"AM_Delivery_blink": {
+			"AM_Delivery_blink": { "x": -3.37, "y": -0.51, "rotation": -90.26, "width": 37, "height": 16 }
+		}
+	}
+}
+}

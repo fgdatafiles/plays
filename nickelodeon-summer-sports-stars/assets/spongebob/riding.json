@@ -1,0 +1,109 @@
+{
+	pieces : [{
+			asset : "head", 
+			x : 0, 
+			y : 0, 
+			rotation : 0, 
+			back : false, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 78, 
+				height : 81
+			},
+			massMultiplier: 1.5
+		},{
+			asset : "leg_front", 
+			x : -2, 
+			y : 55, 
+			rotation : 0, 
+			back : false, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 32, 
+				height : 38
+			},
+			massMultiplier: 5
+		},{
+			asset : "leg_back", 
+			x : 23, 
+			y : 55, 
+			rotation : 0, 
+			back : true, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 32, 
+				height : 38
+			},
+			massMultiplier: 5
+		},{
+			asset : "arm_front", 
+			x : -36, 
+			y : 30, 
+			rotation : 0, 
+			back : false, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 21, 
+				height : 36
+			}
+		},{
+			asset : "arm_back", 
+			x : 42, 
+			y : 29, 
+			rotation : 0, 
+			back : true, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 24, 
+				height : 35
+			}
+		}], 
+	constraints : [{
+			id1 : "head", 
+			id2 : "leg_front", 
+			x : -5, 
+			y : 38, 
+			type : "WeldJoint", 
+			params : null, 
+			maxForce : null
+		},{
+			id1 : "head", 
+			id2 : "leg_back", 
+			x : 15, 
+			y : 38, 
+			type : "WeldJoint", 
+			params : null, 
+			maxForce : null
+		},{
+			id1 : "head", 
+			id2 : "arm_front", 
+			x : -24, 
+			y : 12, 
+			type : "PivotJoint", 
+			params : null, 
+			maxForce : null
+		},{
+			id1 : "head", 
+			id2 : "arm_back", 
+			x : 27, 
+			y : 12, 
+			type : "PivotJoint", 
+			params : null, 
+			maxForce : null
+		}]
+}

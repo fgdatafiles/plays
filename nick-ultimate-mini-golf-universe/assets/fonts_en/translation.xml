@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--<translation attributes>-->
+<!-- defaultFont dictates the font (based on the id set in fonts.xml) that all fields will use unless fontId is specified within that field's individual tag.-->
+<!-- rtl dictates whether this locale is a right to left language -->
+
+<!-- <Node Attributes> -->
+<!-- id is not Optional. It tells us which text field to change. -->
+<!-- fontScale is Optional. It allows you to customize the size of the font used in this particular field. 1 is normal. 2 is double size. .5 is half size. Defaults to 1.-->
+<!-- fontName is Optional. It allows you to customize the font used in this particular field. Leave it out to use the default font (specified by defaultFont).-->
+<!-- offsetX is Optional. It allows you to move the text field a certain number of pixels on the X axis. Leave it out or use 0 if you don't want to move the text. -->
+<!-- offsetY is Optional. It allows you to move the text field a certain number of pixels on the Y axis. Leave it out or use 0 if you don't want to move the text.-->
+<!-- Variables may be inserted into localization strings through this format - {0} - where 0 is the index of the array of variables passed in. -->
+
+<strings defaultFont="golf_font_black" rtl="false">
+	<!--Common-->
+	<string id="common.loading"							fontName="golf_font_gradient" 	fontScale=".35" offsetX="0" offsetY="0"><![CDATA[Loading {0}%]]></string>
+	<string id="common.loading_shadow"					fontName="golf_font_black" 	fontScale=".35" offsetX="0" offsetY="0"><![CDATA[Loading {0}%]]></string>
+	<string id="common.orientation_landscape"			fontName="golf_font_black"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Please flip back to Landscape mode.]]></string>
+	<string id="common.yes"								fontName="golf_font_black"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[Yes]]></string>
+	<string id="common.no"								fontName="golf_font_black"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[No]]></string>
+	<string id="common.next"							fontName="golf_font_black"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Next]]></string>
+	<string id="common.back"							fontName="golf_font_black"	fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Back]]></string>
+	<string id="common.continue"						fontName="golf_font_black"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Continue]]></string>
+	<string id="common.close"							fontName="golf_font_black"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Close]]></string>
+	<!--Splash-->
+	<string id="splash.title"							fontName="golf_font_gradient"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Nick Minigolf]]></string>
+	<string id="splash.tap_anywhere"					fontName="golf_font_gradient"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Tap Anywhere to Play]]></string>
+	<string id="splash.click_anywhere"					fontName="golf_font_gradient"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Click Anywhere to Play]]></string>
+	<string id="splash.tap_anywhere_skip"				fontName="golf_font_gradient"	fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Tap Anywhere to Skip]]></string>
+	<string id="splash.click_anywhere_skip"				fontName="golf_font_gradient"	fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Click Anywhere to Skip]]></string>
+	<string id="splash.play"							fontName="golf_font_gradient"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Play]]></string>
+	<string id="splash.printable"						fontName="golf_font_gradient"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Printable]]></string>
+	<!--Help Screen-->
+	<string id="help.help"								fontName="golf_font_gradient"	fontScale=".65"	offsetX="0" offsetY="0"><![CDATA[How to play]]></string>
+	<!--Quit Screen-->
+	<string id="quit_confirm.quit"						fontName="golf_font_black"	fontScale=".65"	offsetX="0" offsetY="0"><![CDATA[Quit]]></string>
+	<string id="quit_confirm.quit_confirm_header"		fontName="golf_font_gradient"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Really Quit?]]></string>
+	<!--End Screen-->
+	<string id="end_game.game_over"						fontName="golf_font_gradient"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[GREAT JOB!]]></string>
+
+	<string id="end_game.hole_number_label"				fontName="golf_font_black"	fontScale="0.25"	offsetX="0" offsetY="0"><![CDATA[hole]]></string>
+	<string id="end_game.hole_par_label"				fontName="golf_font_black"	fontScale="0.25"	offsetX="0" offsetY="0"><![CDATA[par]]></string>
+	<string id="end_game.hole_stroke_label"				fontName="golf_font_black"	fontScale="0.25"	offsetX="0" offsetY="0"><![CDATA[shots]]></string>
+	
+	<string id="end_game.hole_number"					fontName="golf_font_black"	fontScale="0.4"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+	<string id="end_game.hole_shots_black"				fontName="golf_font_black"	fontScale="0.4"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+	<string id="end_game.hole_shots_red"				fontName="golf_font_red"	fontScale="0.4"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+	<string id="end_game.hole_shots_green"				fontName="golf_font_rgreen"	fontScale="0.4"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+	<string id="end_game.hole_coins"					fontName="golf_font_black"	fontScale="0.3"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+
+	<string id="end_game.hole_number_white"				fontName="golf_font_gradient"	fontScale="0.4"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+	<string id="end_game.hole_shots_white"				fontName="golf_font_gradient"	fontScale="0.4"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+
+	<string id="end_game.result_generic"				fontName="golf_font_gradient"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[AWESOME!]]></string>
+	<string id="end_game.result_hole_in_one"			fontName="golf_font_gradient"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[HOLE IN ONE!]]></string>
+	<string id="end_game.result_double_eagle"			fontName="golf_font_gradient"	fontScale="0.45" offsetX="0" offsetY="0"><![CDATA[DOUBLE EAGLE!]]></string>
+	<string id="end_game.result_eagle"					fontName="golf_font_gradient"	fontScale="0.6"	offsetX="0" offsetY="0"><![CDATA[EAGLE!]]></string>
+	<string id="end_game.result_birdie"					fontName="golf_font_gradient"	fontScale="0.6"	offsetX="0" offsetY="0"><![CDATA[BIRDIE!]]></string>
+	<string id="end_game.result_par"					fontName="golf_font_gradient"	fontScale="0.6"	offsetX="0" offsetY="0"><![CDATA[PAR!]]></string>
+	<string id="end_game.result_bogey"					fontName="golf_font_gradient"	fontScale="0.6"	offsetX="0" offsetY="0"><![CDATA[BOGEY!]]></string>
+
+
+	<!--Gameplay-->
+	<string id="gameplay.menu"							fontName="golf_font_gradient"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[GAME PAUSED]]></string>
+	
+	<string id="gameplay.par"							fontName="golf_font_gradient"	fontScale=".15"	offsetX="0" offsetY="0"><![CDATA[Par:]]></string>
+	<string id="gameplay.par_num"						fontName="golf_font_gradient"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+	<string id="gameplay.shots"							fontName="golf_font_gradient"	fontScale=".16"	offsetX="0" offsetY="0"><![CDATA[Shots:]]></string>
+	<string id="gameplay.shots_num"						fontName="golf_font_gradient"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+
+	<string id="gameplay.hole_number"					fontName="golf_font_gradient"	fontScale="0.2"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+	<string id="gameplay.hole_shots"					fontName="golf_font_black"		fontScale="0.2"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+	<string id="gameplay.hole_shots_red"				fontName="golf_font_red"		fontScale="0.2"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+	<string id="gameplay.hole_shots_green"				fontName="golf_font_rgreen"		fontScale="0.2"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+	<string id="gameplay.hole_coins"					fontName="golf_font_black"		fontScale="0.25" offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+	<string id="gameplay.hole_number_white"				fontName="golf_font_gradient"	fontScale="0.3"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+	<string id="gameplay.hole_shots_white"				fontName="golf_font_gradient"	fontScale="0.3"	offsetX="0" offsetY="0"><![CDATA[{0}]]></string>
+
+	<string id="gameplay.hole_name_sb_1"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[SPONGEBOB 1]]></string>
+	<string id="gameplay.hole_name_sb_2"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[SPONGEBOB 2]]></string>
+	<string id="gameplay.hole_name_sb_3"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[SPONGEBOB 3]]></string>
+	<string id="gameplay.hole_name_sb_4"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[SPONGEBOB 4]]></string>
+	<string id="gameplay.hole_name_sb_5"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[SPONGEBOB 5]]></string>
+	<string id="gameplay.hole_name_sb_6"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[SPONGEBOB 6]]></string>
+	<string id="gameplay.hole_name_sb_7"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[SPONGEBOB 7]]></string>
+	<string id="gameplay.hole_name_sb_8"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[SPONGEBOB 8]]></string>
+
+	<string id="gameplay.hole_name_lh_1"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[LOUD HOUSE 1]]></string>
+	<string id="gameplay.hole_name_lh_2"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[LOUD HOUSE 2]]></string>
+	<string id="gameplay.hole_name_lh_3"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[LOUD HOUSE 3]]></string>
+	<string id="gameplay.hole_name_lh_4"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[LOUD HOUSE 4]]></string>
+	<string id="gameplay.hole_name_lh_5"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[LOUD HOUSE 5]]></string>
+	<string id="gameplay.hole_name_lh_6"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[LOUD HOUSE 6]]></string>
+	<string id="gameplay.hole_name_lh_7"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[LOUD HOUSE 7]]></string>
+	<string id="gameplay.hole_name_lh_8"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[LOUD HOUSE 8]]></string>
+
+	<string id="gameplay.hole_name_cg_1"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[CASAGRANDES 1]]></string>
+	<string id="gameplay.hole_name_cg_2"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[CASAGRANDES 2]]></string>
+	<string id="gameplay.hole_name_cg_3"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[CASAGRANDES 3]]></string>
+	<string id="gameplay.hole_name_cg_4"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[CASAGRANDES 4]]></string>
+	<string id="gameplay.hole_name_cg_5"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[CASAGRANDES 5]]></string>
+	<string id="gameplay.hole_name_cg_6"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[CASAGRANDES 6]]></string>
+
+	<string id="gameplay.hole_name_hd_1"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[KID DANGER 1]]></string>
+	<string id="gameplay.hole_name_hd_2"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[KID DANGER 2]]></string>
+	<string id="gameplay.hole_name_hd_3"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[KID DANGER 3]]></string>
+	<string id="gameplay.hole_name_hd_4"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[KID DANGER 4]]></string>
+	<string id="gameplay.hole_name_hd_5"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[KID DANGER 5]]></string>
+	<string id="gameplay.hole_name_hd_6"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[KID DANGER 6]]></string>
+	<string id="gameplay.hole_name_hd_7"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[KID DANGER 7]]></string>
+	<string id="gameplay.hole_name_hd_8"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[KID DANGER 8]]></string>
+
+	<string id="gameplay.hole_name_nick_1"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[NICKELODEON 1]]></string>
+	<string id="gameplay.hole_name_nick_2"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[NICKELODEON 2]]></string>
+	<string id="gameplay.hole_name_nick_3"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[NICKELODOEN 3]]></string>
+	<string id="gameplay.hole_name_nick_4"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[NICKELODEON 4]]></string>
+	<string id="gameplay.hole_name_nick_5"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[NICKELODEON 5]]></string>
+	<string id="gameplay.hole_name_nick_6"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[NICKELODEON 6]]></string>
+	<string id="gameplay.hole_name_nick_7"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[NICKELODEON 7]]></string>
+	<string id="gameplay.hole_name_nick_8"				fontName="golf_font_black"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[NICKELODEON 8]]></string>
+	
+	<string id="gameplay.level_select"					fontName="golf_font_gradient"	fontScale=".35"	offsetX="0" offsetY="15"><![CDATA[LEVEL SELECT]]></string>
+
+	<!-- Tutorial -->
+	
+	<!-- Debug Text -->
+	<string id="debug.debugfield"						fontName="golf_font_black"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[{0}}]]></string>
+	
+</strings>

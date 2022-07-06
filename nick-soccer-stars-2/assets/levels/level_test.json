@@ -1,0 +1,280 @@
+{
+	"actors": [
+		{
+			"template": {
+				"key": "bg",
+				"spawner": 1
+			}
+		},
+		{
+			"template": {
+				"key": "pickups_spawner",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 506,
+					"y": 890
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "ground",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 960,
+					"y": 934
+				},
+				"rotation": 0
+			}
+		},
+		{
+			"template": {
+				"key": "wall_left",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 140,
+					"y": 511
+				},
+				"rotation": 0
+			}
+		},
+		{
+			"template": {
+				"key": "wall_right",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1800,
+					"y": 511
+				},
+				"rotation": 0
+			}
+		},
+		{
+			"template": {
+				"key": "step",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 550,
+					"y": 850
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "platform_moving",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 550
+				}
+			},
+			"waypointLinks": {
+				"nodes": [
+					"9"
+				]
+			},
+			"waypoint": {
+				"x": 35,
+				"y": -209.5
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_ball",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1500,
+					"y": 350
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_ally",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 550,
+					"y": 350
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "pathfinding",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 0,
+					"y": 0
+				}
+			},
+			"image": {
+				"pack": "editor_icons",
+				"asset": "web",
+				"layer": "front"
+			},
+			"pathfinding": {
+				"nodes": [
+					{
+						"id": "0",
+						"x": 420.5,
+						"y": 869.5
+					},
+					{
+						"id": "1",
+						"x": 327.5,
+						"y": 873.5
+					},
+					{
+						"id": "2",
+						"x": 511.5,
+						"y": 739.5
+					},
+					{
+						"id": "3",
+						"x": 837.5,
+						"y": 872.5
+					},
+					{
+						"id": "4",
+						"x": 706.5,
+						"y": 872.5
+					},
+					{
+						"id": "5",
+						"x": 587.5,
+						"y": 739.5
+					},
+					{
+						"id": "6",
+						"x": 1368.5,
+						"y": 866.5
+					},
+					{
+						"id": "7",
+						"x": 1249.5,
+						"y": 866.5
+					},
+					{
+						"id": "8",
+						"x": 1151.5,
+						"y": 862.5
+					},
+					{
+						"id": "9",
+						"x": 1019.5,
+						"y": 881.5
+					},
+					{
+						"id": "10",
+						"x": 933.5,
+						"y": 874.5
+					}
+				],
+				"links": [
+					{
+						"from": "0",
+						"to": "2",
+						"type": "bothWays"
+					},
+					{
+						"from": "1",
+						"to": "0",
+						"type": "bothWays"
+					},
+					{
+						"from": "2",
+						"to": "5",
+						"type": "bothWays"
+					},
+					{
+						"from": "5",
+						"to": "4",
+						"type": "bothWays"
+					},
+					{
+						"from": "4",
+						"to": "3",
+						"type": "bothWays"
+					},
+					{
+						"from": "3",
+						"to": "10",
+						"type": "bothWays"
+					},
+					{
+						"from": "10",
+						"to": "9",
+						"type": "bothWays"
+					},
+					{
+						"from": "8",
+						"to": "9",
+						"type": "bothWays"
+					},
+					{
+						"from": "7",
+						"to": "8",
+						"type": "bothWays"
+					},
+					{
+						"from": "6",
+						"to": "7",
+						"type": "bothWays"
+					}
+				]
+			}
+		},
+		{
+			"template": {
+				"key": "goal_hover_ally"
+			},
+			"transform": {
+				"position": {
+					"x": 550,
+					"y": 500
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "goal_hover_opponent"
+			},
+			"transform": {
+				"position": {
+					"x": 1500,
+					"y": 500
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_opponent"
+			},
+			"transform": {
+				"position": {
+					"x": 1350,
+					"y": 450
+				}
+			}
+		}
+	],
+	"filename": "level_test"
+}

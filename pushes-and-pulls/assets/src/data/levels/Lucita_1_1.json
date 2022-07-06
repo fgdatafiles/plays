@@ -1,0 +1,332 @@
+{
+  "header": {
+    "id": "29e6fd85-9d6e-4657-ba95-3d2b63f18019",
+    "timestamp": 1.32501946439302E+17
+  },
+  "meta": {
+    "name": "Push it!",
+    "heroID": "Em"
+  },
+  "feedback": {
+    "start": [
+      {
+        "split": [
+          {
+            "text": "Fur Blur needs help ",
+            "timestamp": 0
+          },
+          {
+            "text": "getting to her snack!",
+            "timestamp": 1.60000002384186
+          },
+          {
+            "text": "Can you make a path for her?",
+            "timestamp": 3.29999995231628
+          }
+        ],
+        "voice": "voice:SPARKS_TUTORIAL_1"
+      }
+    ],
+    "complete": [
+      {
+        "split": [
+          {
+            "text": "You did it! ",
+            "timestamp": 0
+          },
+          {
+            "text": "Can you help Fur Blur",
+            "timestamp": 1.89999997615814
+          },
+          {
+            "text": "get more snacks?",
+            "timestamp": 3.09999990463257
+          }
+        ],
+        "voice": "voice:SPARKS_TUTORIAL_2"
+      }
+    ]
+  },
+  "display": {
+    "size": [
+      6,
+      6
+    ],
+    "background": "rings"
+  },
+  "collisions": {
+    "tiles": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      0,
+      3,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "actors": {
+    "actors": [
+      {
+        "id": 1,
+        "className": "start",
+        "position": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "className": "furBlur",
+        "position": [
+          0,
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "className": "goal",
+        "position": [
+          5,
+          2
+        ]
+      },
+      {
+        "id": 4,
+        "className": "hotspot",
+        "name": "tut-hotspot",
+        "position": [
+          2,
+          2
+        ],
+        "properties": {
+          "renameActor": "tut-pushable-active"
+        }
+      },
+      {
+        "id": 5,
+        "className": "node",
+        "name": "tut-target-player",
+        "position": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 6,
+        "className": "node",
+        "name": "tut-target-pushable",
+        "position": [
+          3,
+          1
+        ]
+      }
+    ]
+  },
+  "toolbox": {
+    "actors": [
+      {
+        "id": 7,
+        "className": "pushable",
+        "name": "tut-pushable-toolbox",
+        "properties": {
+          "shape": 1,
+          "skin": 0
+        }
+      }
+    ]
+  },
+  "bgTiles": {
+    "tiles": [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  "collisionTiles": {
+    "tiles": [
+      2,
+      16,
+      2,
+      20,
+      0,
+      16,
+      3,
+      3,
+      5,
+      -1,
+      5,
+      19,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  "fgTiles": {
+    "tiles": [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  "decorations": {
+    "decorations": [
+    ]
+  },
+  "nav": {
+    "tiles": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

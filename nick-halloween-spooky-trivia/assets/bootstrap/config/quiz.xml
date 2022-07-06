@@ -1,0 +1,123 @@
+<config>	
+	<quiz image="background.jpg" bgColor="0x363535" fontDefault="futura_medium" auto="true" localize="true" loadStart="true" swfID="objectFlashPiece" fontDefaultColor="0x000000" >
+		<strings>
+			<string id="loading" text="loading" />
+			<string id="share_header" text="share_header" />
+			<string id="share_copy" text="share_copy" />
+			<string id="share_popup" loadStart="true" image="bg_share.png" bgColor="#55d8f6"/>
+			<string id="share_link" text="12px arial" bgColor="#333333" />
+			<string id="result_0" text="result_0_title" textAlign="center"/>
+			<string id="result_1" text="result_1_title" textAlign="center"/>
+			<string id="result_2" text="result_2_title" textAlign="center" />
+			<string id="result_3" text="result_3_title" textAlign="center" />
+			<string id="result_4" text="result_4_title" textAlign="center" />
+			<string id="result_5" text="result_5_title" textAlign="center"/>
+			<string id="result_6" text="result_6_title" textAlign="center"/>
+			<string id="result_7" text="result_7_title" textAlign="center"/>
+			<string id="result_8" text="result_8_title" textAlign="center"/>
+			<string id="result_9" text="result_9_title" textAlign="center"/>
+			<string id="result_10" text="result_10_title" textAlign="center"/>
+			<string id="cocoon_ok" text="cocoon_ok" />
+			<string id="cocoon_cancel" text="cocoon_cancel"  />
+		</strings>
+		<buttons>
+			<button id="start" x="485" y="450" text="start" image="btn_start" textColor="0xffffff"/>
+			<button id="page" bgColor="#ff652a" image="template_circle_empty"/>
+			<button id="page_done" bgColor="#451868"/>
+			<button id="page_arrow" enabled="false" bgColor="0x467bc1" image="template_btn_arrow" />
+			<button id="page_select" bgColor="#2da78f" />
+			<button id="more" text="more" image="btn_more" url="http://www.nick.com.au/games" enabled="true" textColor="0xFF652A"/>
+			<button id="submit" text="submit" image="btn_submit" textColor="0xffffff">
+				<descriptions text="description_1" x="0" y="-100" textWidth="800" textColor="0xF5E43C" textRot="-4" addTop="true"/>
+				<descriptions text="description_2" x="0" y="40" textWidth="800" textColor="0x039579" textSpacing="15" addTop="true" />
+			</button>
+			<button id="replay" text="try_again" image="btn_replay" textColor="0xFF652A"/>
+			<button id="share" text="share" image="btn_share" enabled="true" textColor="0xFF652A"/>
+			<button id="take" text="take_quiz" image="btn_take" textColor="0xffffff"/>
+			<button id="copy" text="copy" image="btn_copy" />
+			<button id="close" text="" image="btn_close"/>
+		</buttons>
+		<prompt>
+			<splash image="splash.jpg"/>
+			<title/>
+			<description_title/> 
+			<submit/>
+			<submit_header/>
+			<description_submit />
+			<result/>
+			<result_header/>
+			<descriptions text="description_1" x="480" y="150" textWidth="800" textColor="0xF5E43C" textRot="-4"/>
+			<descriptions text="description_2" x="480" y="240" textWidth="800" textColor="0x562E62" textSpacing="15" />
+			<descriptions text="description_3" x="480" y="355" textWidth="800" textColor="0xffffff"/>
+		</prompt>
+		<question type="1" prefixImage="question_1" text="question_1" pos="bottom">
+			<answer value="1" text="answer_1_1" />
+			<answer value="0" text="answer_1_2" />
+			<answer value="0" text="answer_1_3" />
+		</question>
+		<question type="1" prefixImage="question_2" text="question_2" pos="bottom" >
+			<answer value="0" text="answer_2_1" />
+			<answer value="1" text="answer_2_2" />
+			<answer value="0" text="answer_2_3" />
+		</question>
+		<question type="1" prefixImage="question_3" text="question_3" pos="bottom">
+			<answer value="0" text="answer_3_1" />
+			<answer value="0" text="answer_3_2" />
+			<answer value="1" text="answer_3_3" />
+		</question>
+		<question type="1" prefixImage="question_4" text="question_4" pos="bottom">
+			<answer value="1" text="answer_4_1" />
+			<answer value="0" text="answer_4_2" />
+			<answer value="0" text="answer_4_3" />
+		</question>
+		<question type="1" prefixImage="question_5" text="question_5" pos="bottom">
+			<answer value="0" text="answer_5_1" />
+			<answer value="1" text="answer_5_2" />
+			<answer value="0" text="answer_5_3" />
+		</question>
+		<question type="1" prefixImage="question_6" text="question_6" pos="bottom">
+			<answer value="1" text="answer_6_1" />
+			<answer value="0" text="answer_6_2" />
+			<answer value="0" text="answer_6_3" />
+		</question>
+		<question type="1" prefixImage="question_7" text="question_7" pos="bottom">
+			<answer value="0" text="answer_7_1" />
+			<answer value="0" text="answer_7_2" />
+			<answer value="1" text="answer_7_3" />
+		</question>
+		<question type="1" prefixImage="question_8" text="question_8" pos="bottom">
+			<answer value="0" text="answer_8_1" />
+			<answer value="0" text="answer_8_2" />
+			<answer value="1" text="answer_8_3" />
+		</question>
+		<question type="1" prefixImage="question_9" text="question_9" pos="bottom">
+			<answer value="1" text="answer_9_1" />
+			<answer value="0" text="answer_9_2" />
+			<answer value="0" text="answer_9_3" />
+		</question>
+		<question type="1" prefixImage="question_10" text="question_10" pos="bottom">
+			<answer value="1" text="answer_10_1" />
+			<answer value="0" text="answer_10_2" />
+			<answer value="0" text="answer_10_3" />
+		</question>
+		<results type="2" prefixImage="result" >
+			<result id="0" text="result_0_copy" textAlign="left" />
+			<result id="1" text="result_1_copy" textAlign="left" />
+			<result id="2" text="result_2_copy" textAlign="left" />
+			<result id="3" text="result_3_copy" textAlign="left" />
+			<result id="4" text="result_4_copy" textAlign="left" />
+			<result id="5" text="result_5_copy" textAlign="left" />
+			<result id="6" text="result_6_copy" textAlign="left" />
+			<result id="7" text="result_7_copy" textAlign="left" />
+			<result id="8" text="result_8_copy" textAlign="left" >
+				<descriptions text="description_4" x="200" y="312" textWidth="800" textColor="0xffffff" textRot="-8" addTop="true" />
+			</result>
+			<result id="9" text="result_9_copy" textAlign="left" >
+				<descriptions text="description_4" x="200" y="312" textWidth="800" textColor="0xffffff" textRot="-8" addTop="true" />
+			</result>
+			<result id="10" text="result_10_copy" textAlign="left" >
+				<descriptions text="description_4" x="200" y="312" textWidth="800" textColor="0xffffff" textRot="-8" addTop="true" />
+			</result>
+		</results>
+	</quiz>
+</config>

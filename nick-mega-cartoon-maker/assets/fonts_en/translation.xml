@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--<translation attributes>-->
+<!-- defaultFont dictates the font (based on the id set in fonts.xml) that all fields will use unless fontId is specified within that field's individual tag.-->
+
+<!-- <Node Attributes> -->
+<!-- id is not Optional. It tells flash which text field to change. -->
+<!-- fontScale is Optional. It allows you to customize the size of the font used in this particular field. 1 is normal. 2 is double size. .5 is half size. Defaults to 1.-->
+<!-- fontName is Optional. It allows you to customize the font used in this particular field. Leave it out to use the default font (specified by defaultFont).-->
+<!-- offsetX is Optional. It allows you to move the text field a certain number of pixels on the X axis. Leave it out or use 0 if you don't want to move the text. -->
+<!-- offsetY is Optional. It allows you to move the text field a certain number of pixels on the Y axis. Leave it out or use 0 if you don't want to move the text.-->
+
+<strings defaultFont="nick_comic_creator_font_regular">
+	<!--Preloader-->
+	<string id="loading"				fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Loading]]></string>
+
+	<!--Main-->
+	<string id="title"					fontName="nick_comic_creator_font_outline"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Mega<br>Cartoon<br>Maker]]></string>
+	<string id="tap_anywhere"			fontName="nick_comic_creator_font_outline"	fontScale=".75"	offsetX="0" offsetY="0"><![CDATA[Tap Anywhere to Play]]></string>
+	<string id="click_anywhere"			fontName="nick_comic_creator_font_outline"	fontScale=".75"	offsetX="0" offsetY="0"><![CDATA[Click Anywhere to Play]]></string>
+	<string id="tap_anywhere_again"		fontName="nick_comic_creator_font_regular"	fontScale=".55"	offsetX="0" offsetY="0"><![CDATA[Tap Anywhere to Play Again]]></string>
+	<string id="click_anywhere_again"	fontName="nick_comic_creator_font_regular"	fontScale=".55"	offsetX="0" offsetY="0"><![CDATA[Click Anywhere to Play Again]]></string>
+	<string id="play"					fontName="nick_comic_creator_font_regular"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Play]]></string>
+	<string id="play_again"				fontName="nick_comic_creator_font_regular"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Try Again]]></string>
+	<string id="how_to_play"			fontName="nick_comic_creator_font_regular"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[How to Play]]></string>
+	<string id="next"					fontName="nick_comic_creator_font_regular"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Next]]></string>
+	<string id="continue"				fontName="nick_comic_creator_font_regular"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Continue]]></string>
+	<string id="close"					fontName="nick_comic_creator_font_regular"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[close]]></string>
+	<string id="printable"				fontName="nick_comic_creator_font_regular"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Printable]]></string>
+	<string id="orientation_landscape"	fontName="nick_comic_creator_font_regular"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Please flip back to Landscape mode.]]></string>
+
+	<!--Game Buttons-->
+	<string id="yes"					fontName="nick_comic_creator_font_regular"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[YES]]></string>
+	<string id="no"						fontName="nick_comic_creator_font_regular"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[NO]]></string>
+	<string id="ok"						fontName="nick_comic_creator_font_regular"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[OK]]></string>
+	<string id="finish_btn"				fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[VIEW]]></string>
+	<string id="overview_btn"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[FINISH]]></string>
+	<string id="print_btn"				fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Print]]></string>
+	<string id="comic_tab_1"			fontName="nick_comic_creator_font_regular"	fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Avatars]]></string>
+	<string id="comic_tab_2"			fontName="nick_comic_creator_font_regular"	fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Backgrounds]]></string>
+	<string id="comic_tab_3"			fontName="nick_comic_creator_font_regular"	fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Characters]]></string>
+	<string id="comic_tab_4"			fontName="nick_comic_creator_font_regular"	fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Bubbles]]></string>
+	<string id="comic_tab_5"			fontName="nick_comic_creator_font_regular"	fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Text]]></string>
+	<string id="mute"					fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Mute]]></string>
+	<string id="submit_to_nick"			fontName="nick_comic_creator_font_regular"	fontScale=".35"	offsetX="0" offsetY="0"><![CDATA[SUBMIT TO NICK]]></string>
+	<string id="delete_avatar"			fontName="nick_comic_creator_font_outline"	fontScale=".55"	offsetX="0" offsetY="0"><![CDATA[ARE YOU SURE YOU WANT TO<br>DELETE THIS AVATAR?]]></string>
+	<string id="delete_avatar_header"	fontName="nick_comic_creator_font_regular"	fontScale=".6"	offsetX="0"	offsetY="0"><![CDATA[DELETING AVATAR]]></string>
+	<string id="print_close"			fontName="nick_comic_creator_font_regular"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[CLICK TO RETURN]]></string>
+
+	<!--Submit Popup-->
+	<string id="submit_name"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[NAME]]></string>
+	<string id="submit_location"		fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[STATE]]></string>
+	<string id="submit_age"				fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[AGE]]></string>
+	<string id="submit"					fontName="nick_comic_creator_font_regular"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[SUBMIT]]></string>
+	<string id="x"						fontName="nick_comic_creator_font_regular"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[X]]></string>
+	<string id="submit_title"			fontName="nick_comic_creator_font_regular"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[SUBMIT TO NICK]]></string>
+	<string id="share_title"			fontName="nick_comic_creator_font_regular"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[SHARE LINK]]></string>
+	<string id="submitURL"				fontName="nick_comic_creator_font_regular"	fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[_just_for_formating_]]></string>
+
+	<!--Main Menu Screen-->
+	<string id="main_menu"				fontName="nick_comic_creator_font_regular"	fontScale=".95"	offsetX="0" offsetY="0"><![CDATA[Main Menu]]></string>
+	<string id="btn_avatar"				fontName="nick_comic_creator_font_outline"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[AVATAR<br>BUILDER]]></string>
+	<string id="btn_comic"				fontName="nick_comic_creator_font_outline"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[CARTOON<br>CREATOR]]></string>
+
+	<!--Popups-->
+	<string id="submit_popup"			fontName="nick_comic_creator_font_regular"	fontScale=".55"	offsetX="0" offsetY="0"><![CDATA[YOUR AVATAR HAS BEEN<br>SUBMITTED TO NICK!]]></string>
+	<string id="share_popup"			fontName="nick_comic_creator_font_regular"	fontScale=".45"	offsetX="0" offsetY="0"><![CDATA[The page will refresh,<br>then copy the URL in your browser's<br>address bar to share with friends!]]></string>
+	<string id="copy"					fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[COPY]]></string>
+	<string id="copied"					fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[COPIED]]></string>
+
+	<!--Avatar Tray Screen-->
+	<string id="avatar_tray"			fontName="nick_comic_creator_font_regular"	fontScale=".95"	offsetX="0" offsetY="0"><![CDATA[Avatar Tray]]></string>
+	<string id="avatar_builder"			fontName="nick_comic_creator_font_regular"	fontScale=".95"	offsetX="0" offsetY="0"><![CDATA[Avatar Builder]]></string>
+	<string id="choose_avatar"			fontName="nick_comic_creator_font_regular"	fontScale=".55"	offsetX="0" offsetY="0"><![CDATA[CHOOSE AN AVATAR]]></string>
+
+	<string id="temp_+"					fontName="nick_comic_creator_font_regular"	fontScale="1.5"	offsetX="0" offsetY="0"><![CDATA[+]]></string>
+	<string id="temp_avatar"			fontName="nick_comic_creator_font_regular"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Avatar]]></string>
+	<string id="temp_comic"				fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Cartoon]]></string>
+	<string id="temp_share"				fontName="nick_comic_creator_font_regular"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[Share]]></string>
+
+	<!--Avatar Builder Screen-->
+	<string id="selection_body"			fontName="nick_comic_creator_font_regular"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[BODY]]></string>
+	<string id="selection_face"			fontName="nick_comic_creator_font_regular"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[FEATURES]]></string>
+	<string id="selection_hair"			fontName="nick_comic_creator_font_regular"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[HAIR]]></string>
+	<string id="selection_clothes"		fontName="nick_comic_creator_font_regular"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[CLOTHES]]></string>
+	<string id="selection_accessories"	fontName="nick_comic_creator_font_regular"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[ACCESSORIES]]></string>
+	<string id="btn_back"				fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Back]]></string>
+	<string id="btn_next"				fontName="nick_comic_creator_font_regular"	fontScale=".35"	offsetX="0" offsetY="0"><![CDATA[Next]]></string>
+	<string id="page_number_format_curr"		fontName="nick_comic_creator_font_regular"	fontScale=".3"	offsetX="5.0" offsetY="2.0"><![CDATA[_just_for_formating_]]></string>
+	<string id="page_number_format_slash"		fontName="nick_comic_creator_font_regular"	fontScale=".3"	offsetX="0" offsetY="2.0"><![CDATA[_just_for_formating_]]></string>
+	<string id="page_number_format_total"		fontName="nick_comic_creator_font_regular"	fontScale=".3"	offsetX="-5.0" offsetY="2.0"><![CDATA[_just_for_formating_]]></string>
+
+	<string id="gender_girl"			fontName="nick_comic_creator_font_regular"	fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[GIRL]]></string>
+	<string id="gender_boy"				fontName="nick_comic_creator_font_regular"	fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[BOY]]></string>
+
+	<string id="avatar_name_1"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Pepper Rohne]]></string>
+	<string id="avatar_name_2"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Isabella Ringing]]></string>
+	<string id="avatar_name_3"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Chloe Missions]]></string>
+	<string id="avatar_name_4"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Kim Pressive]]></string>
+	<string id="avatar_name_5"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Sam Moreye]]></string>
+	<string id="avatar_name_6"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Ida Fythee]]></string>
+	<string id="avatar_name_7"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Gina Yuss]]></string>
+	<string id="avatar_name_8"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Sasha Bigshot]]></string>
+	<string id="avatar_name_9"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Allie Kazam]]></string>
+	<string id="avatar_name_10"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Candace Betrew]]></string>
+
+	<string id="avatar_name_11"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Colin Sique]]></string>
+	<string id="avatar_name_12"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Ian Credible]]></string>
+	<string id="avatar_name_13"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Beau Gosse]]></string>
+	<string id="avatar_name_14"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Noah Equill]]></string>
+	<string id="avatar_name_15"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Reb Tyles]]></string>
+	<string id="avatar_name_16"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Andy Scores]]></string>
+	<string id="avatar_name_17"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Willy Wynn]]></string>
+	<string id="avatar_name_18"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Cliff Hangur]]></string>
+
+	<string id="avatar_name_display_format"		fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[_just_for_formating_]]></string>
+	<string id="avatar_single_name_format"		fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[_just_for_formating_]]></string>
+	<string id="avatar_single_name_1"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Roy]]></string>
+	<string id="avatar_single_name_2"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Pamela]]></string>
+	<string id="avatar_single_name_3"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Marisa]]></string>
+	<string id="avatar_single_name_4"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[James]]></string>
+	<string id="avatar_single_name_5"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Saul]]></string>
+	<string id="avatar_single_name_6"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Estelle]]></string>
+	<string id="avatar_single_name_7"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Lucien]]></string>
+	<string id="avatar_single_name_8"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Josafat]]></string>
+	<string id="avatar_single_name_9"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Richa]]></string>
+	<string id="avatar_single_name_10"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Taras]]></string>
+	<string id="avatar_single_name_11"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Max]]></string>
+	<string id="avatar_single_name_12"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Chase]]></string>
+	<string id="avatar_single_name_13"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Emily]]></string>
+	<string id="avatar_single_name_14"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Laura]]></string>
+	<string id="avatar_single_name_15"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Genevieve]]></string>
+	<string id="avatar_single_name_16"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Dave]]></string>
+	<string id="avatar_single_name_17"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Darren]]></string>
+	<string id="avatar_single_name_18"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Jason]]></string>
+	<string id="avatar_single_name_19"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Eric]]></string>
+	<string id="avatar_single_name_20"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Brad]]></string>
+	<string id="avatar_single_name_21"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Edgar]]></string>
+	<string id="avatar_single_name_22"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Renee]]></string>
+	<string id="avatar_single_name_23"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Keith]]></string>
+	<string id="avatar_single_name_24"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Matt]]></string>
+	<string id="avatar_single_name_25"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Vince]]></string>
+	<string id="avatar_single_name_26"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Dale]]></string>
+	<string id="avatar_single_name_27"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Claudia]]></string>
+	<string id="avatar_single_name_28"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Kelley]]></string>
+	<string id="avatar_single_name_29"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Brandon]]></string>
+	<string id="avatar_single_name_30"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Brian]]></string>
+	<string id="avatar_single_name_31"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Sally]]></string>
+	<string id="avatar_single_name_32"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Fred]]></string>
+	<string id="avatar_single_name_33"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Jill]]></string>
+	<string id="avatar_single_name_34"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Bob]]></string>
+	<string id="avatar_single_name_35"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Tim]]></string>
+	<string id="avatar_single_name_36"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Tom]]></string>
+	<string id="avatar_single_name_37"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Billy]]></string>
+	<string id="avatar_single_name_38"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[John]]></string>
+	<string id="avatar_single_name_39"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Alex]]></string>
+	<string id="avatar_single_name_40"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Sabrina]]></string>
+	<string id="avatar_single_name_41"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Miraj]]></string>
+	<string id="avatar_single_name_42"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Karina]]></string>
+	<string id="avatar_single_name_43"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Anna]]></string>
+	<string id="avatar_single_name_44"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Anne]]></string>
+	<string id="avatar_single_name_45"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Grace]]></string>
+	<string id="avatar_single_name_46"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Shawn]]></string>
+	<string id="avatar_single_name_47"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Ria]]></string>
+	<string id="avatar_single_name_48"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Marko]]></string>
+	<string id="avatar_single_name_49"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Cathy]]></string>
+	<string id="avatar_single_name_50"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Juan]]></string>
+	<string id="avatar_single_name_51"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Jose]]></string>
+	<string id="avatar_single_name_52"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Carlos]]></string>
+	<string id="avatar_single_name_53"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Griffin]]></string>
+	<string id="avatar_single_name_54"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Justin]]></string>
+	<string id="avatar_single_name_55"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Travis]]></string>
+	<string id="avatar_single_name_56"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Nick]]></string>
+	<string id="avatar_single_name_57"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Rachel]]></string>
+	<string id="avatar_single_name_58"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Henry]]></string>
+	<string id="avatar_single_name_59"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Steve]]></string>
+	<string id="avatar_single_name_60"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Harry]]></string>
+	<string id="avatar_single_name_61"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Jasper]]></string>
+	<string id="avatar_single_name_62"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Charlotte]]></string>
+	<string id="avatar_single_name_63"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Ray]]></string>
+	<string id="avatar_single_name_64"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Jeff]]></string>
+	<string id="avatar_single_name_65"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Joseph]]></string>
+	<string id="avatar_single_name_66"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Gene]]></string>
+	<string id="avatar_single_name_67"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Stephan]]></string>
+	<string id="avatar_single_name_68"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Amanda]]></string>
+	<string id="avatar_single_name_69"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Alexa]]></string>
+	<string id="avatar_single_name_70"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Hope]]></string>
+	<string id="avatar_single_name_71"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Destiny]]></string>
+	<string id="avatar_single_name_72"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Faith]]></string>
+	<string id="avatar_single_name_73"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Traci]]></string>
+	<string id="avatar_single_name_74"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Omar]]></string>
+	<string id="avatar_single_name_75"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Chad]]></string>
+	<string id="avatar_single_name_76"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Josh]]></string>
+	<string id="avatar_single_name_77"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Seth]]></string>
+	<string id="avatar_single_name_78"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Emilio]]></string>
+	<string id="avatar_single_name_79"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Christa]]></string>
+	<string id="avatar_single_name_80"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Cheryl]]></string>
+	<string id="avatar_single_name_81"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Katy]]></string>
+	<string id="avatar_single_name_82"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Eliot]]></string>
+	<string id="avatar_single_name_83"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Charlie]]></string>
+	<string id="avatar_single_name_84"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Charles]]></string>
+	<string id="avatar_single_name_85"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Jenkins]]></string>
+	<string id="avatar_single_name_86"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Jordan]]></string>
+	<string id="avatar_single_name_87"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Michael]]></string>
+	<string id="avatar_single_name_88"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Tyler]]></string>
+	<string id="avatar_single_name_89"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Robert]]></string>
+	<string id="avatar_single_name_90"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Zach]]></string>
+	<string id="avatar_single_name_91"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Anya]]></string>
+	<string id="avatar_single_name_92"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Isabelle]]></string>
+	<string id="avatar_single_name_93"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Beth]]></string>
+	<string id="avatar_single_name_94"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Rick]]></string>
+	<string id="avatar_single_name_95"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Jerry]]></string>
+	<string id="avatar_single_name_96"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Summer]]></string>
+	<string id="avatar_single_name_97"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Jenny]]></string>
+	<string id="avatar_single_name_98"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Jennifer]]></string>
+	<string id="avatar_single_name_99"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Chris]]></string>
+	<string id="avatar_single_name_100"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Teresa]]></string>
+	<string id="avatar_single_name_101"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Irene]]></string>
+	<string id="avatar_single_name_102"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Angela]]></string>
+	<string id="avatar_single_name_103"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Prairie]]></string>
+	<string id="avatar_single_name_104"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Ella]]></string>
+	<string id="avatar_single_name_105"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Greg]]></string>
+	<string id="avatar_single_name_106"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Carrie]]></string>
+	<string id="avatar_single_name_107"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Spencer]]></string>
+	<string id="avatar_single_name_108"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Michelle]]></string>
+	<string id="avatar_single_name_109"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Erin]]></string>
+	<string id="avatar_single_name_110"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Jane]]></string>
+	<string id="avatar_single_name_111"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Hannah]]></string>
+	<string id="avatar_single_name_112"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Austin]]></string>
+	<string id="avatar_single_name_113"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Patrick]]></string>
+	<string id="avatar_single_name_114"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Danielle]]></string>
+	<string id="avatar_single_name_115"			fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Noelle]]></string>
+
+	<!--Panel Select Screen-->
+	<string id="select_panel"			fontName="nick_comic_creator_font_regular"	fontScale=".55"	offsetX="0" offsetY="0"><![CDATA[CHOOSE A LAYOUT]]></string>
+	<string id="btn_panels_1"			fontName="nick_comic_creator_font_outline"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[1 PANEL]]></string>
+	<string id="btn_panels_4"			fontName="nick_comic_creator_font_outline"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[4 PANELS]]></string>
+	<string id="btn_panels_8"			fontName="nick_comic_creator_font_outline"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[8 PANELS]]></string>
+
+	<!--Panel Select Screen-->
+	<string id="tap_to_edit"			fontName="nick_comic_creator_font_regular"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[PICK A PANEL]]></string>
+	<string id="click_to_edit"			fontName="nick_comic_creator_font_regular"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[PICK A PANEL]]></string>
+
+	<!--Avatar Builder Screen-->
+	<string id="comic_text_1"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[The inner machinations of my mind are an enigma.]]></string>
+	<string id="comic_text_2"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Too bad SpongeBob isn't here to enjoy SpongeBob not being here.]]></string>
+	<string id="comic_text_3"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[I Wumbo, You Wumbo, He / she Wumbo.]]></string>
+	<string id="comic_text_4"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[My name's not Rick!.]]></string>
+	<string id="comic_text_5"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Hi SpongeBob!]]></string>
+	<string id="comic_text_6"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[And who put the "hiya-hi-ho-K" in karate?]]></string>
+	<string id="comic_text_7"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Welcome to the Salty Spittoon. How tough are ya?]]></string>
+	<string id="comic_text_8"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Hi Patrick!]]></string>
+	<string id="comic_text_9"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Best Day Ever!]]></string>
+	<string id="comic_text_10"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[I'm ready!]]></string>
+	<string id="comic_text_11"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Is this the Krusty Krab?]]></string>
+	<string id="comic_text_12"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[No... this is Patrick.]]></string>
+	<string id="comic_text_13"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Wumbology, the study of Wumbo.]]></string>
+	<string id="comic_text_14"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[I ate a bowl of nails for breakfast this morning... without any milk!]]></string>
+	<string id="comic_text_15"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Rev up those fryers!]]></string>
+	<string id="comic_text_16"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[He was NUMBER ONE!]]></string>
+	<string id="comic_text_17"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Are you SUUUUUURE...?]]></string>
+	<string id="comic_text_18"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Hello! I like money!]]></string>
+	<string id="comic_text_19"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Aw, nuts! I'm out of nuts.]]></string>
+	<string id="comic_text_20"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[What? There is no Smitty Webenjagermanjensen.]]></string>
+	<string id="comic_text_21"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[With cheese, Mr. Squidward. With cheese.]]></string>
+
+	<string id="comic_text_22"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[My name is Henry Hart. I'm here about the job.]]></string>
+	<string id="comic_text_23"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Guys, I need help.]]></string>
+	<string id="comic_text_24"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[I'm going to blow a bubble.]]></string>
+	<string id="comic_text_25"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Feelin' gooood!]]></string>
+	<string id="comic_text_26"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Is that an invisible motorcycle?]]></string>
+	<string id="comic_text_27"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[You people are crazy.]]></string>
+	<string id="comic_text_28"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[It's called Hypermotility]]></string>
+	<string id="comic_text_29"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Time to fight crime.]]></string>
+	<string id="comic_text_30"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[I tried to tunnel through the wall to steal some breakfast and got stuck.]]></string>
+	<string id="comic_text_31"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Yes, but tell us about Puerto Rico.]]></string>
+	<string id="comic_text_32"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[What's cookin, good lookin'.]]></string>
+	<string id="comic_text_33"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Looks like we have a situation...]]></string>
+	<string id="comic_text_34"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[I think I lost a noodle.]]></string>
+	<string id="comic_text_35"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[I know Puerto Rico!]]></string>
+	<string id="comic_text_36"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Now, let's go get some Chinese food.]]></string>
+	<string id="comic_text_37"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[And I'm Kid Danger... I'm here too!]]></string>
+	<string id="comic_text_38"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[I'm going to blow a bubble. I'm going to blow your mind.]]></string>
+	<string id="comic_text_39"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[I'm going to leave the bad teeth in ya mouth, and yank out the good ones!]]></string>
+	<string id="comic_text_40"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[HENRY!!!]]></string>
+	<string id="comic_text_41"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Up the tube!]]></string>
+	<string id="comic_text_42"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Can't touch this.]]></string>
+
+	<string id="comic_text_43"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Ever wonder what it's like to grow up in a big family?]]></string>
+	<string id="comic_text_44"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[O.M.Gosh, you guys!]]></string>
+	<string id="comic_text_45"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Can I get a ride to the comic book store?]]></string>
+	<string id="comic_text_46"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Would you care for some tea?]]></string>
+	<string id="comic_text_47"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[I'm glad you're my brother.]]></string>
+	<string id="comic_text_48"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[I'm glad you're my sister.]]></string>
+	<string id="comic_text_49"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[If you're not number one, I can't go number two. But no pressure.]]></string>
+	<string id="comic_text_50"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Roger that!]]></string>
+	<string id="comic_text_51"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[I had couch commando!]]></string>
+	<string id="comic_text_52"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[I wouldn't do that if I were you...]]></string>
+	<string id="comic_text_53"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[What are you doing in my room?]]></string>
+	<string id="comic_text_54"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Anybody wanna jam?]]></string>
+	<string id="comic_text_55"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Looks like the joke's on you!]]></string>
+	<string id="comic_text_56"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Has anybody seen the remote? My show's on!]]></string>
+	<string id="comic_text_57"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[If I had a heart, it would be swelling right now.]]></string>
+	<string id="comic_text_58"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Do you want me to read your fortune?]]></string>
+	<string id="comic_text_59"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Handyman's code: always be prepared.]]></string>
+	<string id="comic_text_60"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[I'm more than just a pretty face!]]></string>
+	<string id="comic_text_61"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Usually, I'm impervious to human emotion, but...eeeeee!!]]></string>
+	<string id="comic_text_62"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Waaaaah!]]></string>
+	<string id="comic_text_63"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[This sounds like a really bad idea, and I'm totally in!]]></string>
+
+	<string id="comic_text_64"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[No more Mister Nice Turtle.]]></string>
+	<string id="comic_text_65"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[We need a plan.]]></string>
+	<string id="comic_text_66"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[I've got this.]]></string>
+	<string id="comic_text_67"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Gentlemen, let's save the world!]]></string>
+	<string id="comic_text_68"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[You wanna talk metallurgy?!]]></string>
+	<string id="comic_text_69"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Think, you shellbrain!]]></string>
+	<string id="comic_text_70"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[I love being a Turtle!]]></string>
+	<string id="comic_text_71"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Just working out the bugs...]]></string>
+	<string id="comic_text_72"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[We're not kung fu frogs. We're Ninja Turtles.]]></string>
+	<string id="comic_text_73"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[An all-you-can-beat buffet!]]></string>
+	<string id="comic_text_74"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Now we're talking!]]></string>
+	<string id="comic_text_75"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Maybe we're just that awesome.]]></string>
+	<string id="comic_text_76"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Meet my nunchuk...]]></string>
+	<string id="comic_text_77"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[This is all kinds of wrong!]]></string>
+	<string id="comic_text_78"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[I don't wanna live in a world without pizza!]]></string>
+	<string id="comic_text_79"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Yeah, boyyyeee!]]></string>
+	<string id="comic_text_80"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[We're Ninjas. We move swiftly and silently.]]></string>
+	<string id="comic_text_81"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Hai, Sensei!]]></string>
+	<string id="comic_text_82"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Splinter made me do it!]]></string>
+	<string id="comic_text_83"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Who wants pizza?!]]></string>
+
+	<string id="comic_text_84"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Whoever controls the Wayne, controls the world.]]></string>
+	<string id="comic_text_85"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[We protect people.]]></string>
+	<string id="comic_text_86"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Gasp!]]></string>
+	<string id="comic_text_87"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Protect the Wayne and everyone in it.]]></string>
+	<string id="comic_text_88"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[What is this place?]]></string>
+	<string id="comic_text_89"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[That was fine. We're fine. Everything's fine!]]></string>
+	<string id="comic_text_90"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Say hello to Snatch Adams.]]></string>
+	<string id="comic_text_91"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[You Nothinmuffin!]]></string>
+	<string id="comic_text_92"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Just go with the flow.]]></string>
+	<string id="comic_text_93"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Bunsy!]]></string>
+	<string id="comic_text_94"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Sha-wha!?]]></string>
+	<string id="comic_text_95"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[It's mission time!]]></string>
+	<string id="comic_text_96"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[I love secret mysteries!]]></string>
+	<string id="comic_text_97"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Group scream anyone?]]></string>
+	<string id="comic_text_98"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Use the Grapvine!]]></string>
+	<string id="comic_text_99"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Table that.]]></string>
+	<string id="comic_text_100"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[That's what we have to find out.]]></string>
+
+	<string id="comic_text_101"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Wassup!]]></string>
+	<string id="comic_text_102"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Yasss!]]></string>
+	<string id="comic_text_103"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[So excited!]]></string>
+	<string id="comic_text_104"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[My body is a mystery even to me.]]></string>
+	<string id="comic_text_105"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[A for effort, Mikey!]]></string>
+	<string id="comic_text_106"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[You are the best friend ever!]]></string>
+	<string id="comic_text_107"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[No amount of ice cream trucks can keep us apart!]]></string>
+	<string id="comic_text_108"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Is it really that weird?]]></string>
+	<string id="comic_text_109"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Mikey and Bunsen to the rescue!]]></string>
+	<string id="comic_text_110"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Don't worry buddy!]]></string>
+	<string id="comic_text_111"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[This is a perfect mix of weird and awesome!]]></string>
+	<string id="comic_text_112"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[You did it, Bunsen!]]></string>
+	<string id="comic_text_113"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[I'm on it, buddy!]]></string>
+	<string id="comic_text_114"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[That's both sweet and disturbing.]]></string>
+	<string id="comic_text_115"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[It's what friends do.]]></string>
+	<string id="comic_text_116"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Oh sugar snaps!]]></string>
+	<string id="comic_text_117"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Excuse me, this spitting makes me dehydrated.]]></string>
+	<string id="comic_text_118"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[I'll stop you and your beast buddy if it's the last thing I do!]]></string>
+	<string id="comic_text_119"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[You're toast, beast!]]></string>
+	<string id="comic_text_120"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Miss Sassy is back in town.]]></string>
+	<string id="comic_text_121"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Not if I have anything to do with it!]]></string>
+	<string id="comic_text_122"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Welcome to the high life sweetie.]]></string>
+
+	<string id="comic_text_123"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[No one tells Alvin what to do.]]></string>
+	<string id="comic_text_124"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Hasta la bye-bye.]]></string>
+	<string id="comic_text_125"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[I'm 1000% positive this time.]]></string>
+	<string id="comic_text_126"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Put your game face on!]]></string>
+	<string id="comic_text_127"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[I didn't listen to Theodore's rap song.]]></string>
+	<string id="comic_text_128"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[I have friends in very high places.]]></string>
+	<string id="comic_text_129"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Who's da bomb? Simon's da bomb!]]></string>
+	<string id="comic_text_130"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[You're better than this!]]></string>
+	<string id="comic_text_131"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Next stop, Awesometown! Where rainbows and giggles wash your fears away.]]></string>
+	<string id="comic_text_132"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[It's just a hiccup.]]></string>
+	<string id="comic_text_133"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[You're twelve inches tall...]]></string>
+	<string id="comic_text_134"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Little Ball of Hope.]]></string>
+	<string id="comic_text_135"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[I just wanna hug you.]]></string>
+	<string id="comic_text_136"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[It's Lil T, now.]]></string>
+	<string id="comic_text_137"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Sorry I'm not sorry.]]></string>
+	<string id="comic_text_138"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[You brought us to a town, full of GHOSTS?!]]></string>
+	<string id="comic_text_139"			fontName="nick_comic_creator_font_outline"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Watch out, cause here we come!]]></string>
+
+	<!--Gameplay Menu Screen-->
+	<string id="menu"					fontName="nick_comic_creator_font_regular"	fontScale=".65"	offsetX="0" offsetY="0"><![CDATA[Menu]]></string>
+
+	<!--Help Screen-->
+	<string id="help"					fontName="nick_comic_creator_font_regular"	fontScale=".65"	offsetX="0" offsetY="0"><![CDATA[Help]]></string>
+
+	<!--Quit Screen-->
+	<string id="quit"					fontName="nick_comic_creator_font_regular"	fontScale=".65"	offsetX="0" offsetY="0"><![CDATA[Quit]]></string>
+	<string id="quit_confirm_header"	fontName="nick_comic_creator_font_outline"	fontScale=".55"	offsetX="0" offsetY="0"><![CDATA[REALLY QUIT?<br>YOUR CARTOON WILL BE LOST!]]></string>
+
+	<!--End Screen-->
+	<string id="game_over"				fontName="nick_comic_creator_font_regular"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Game Over]]></string>
+
+	<!--Gameplay-->
+	<string id="level"					fontName="nick_comic_creator_font_regular"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Level]]></string>
+	<string id="panel_number"			fontName="nick_comic_creator_font_regular"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[PANEL]]></string>
+	<string id="items_page_number"		fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[PANEL]]></string>
+	<string id="char_count"				fontName="nick_comic_creator_font_regular"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Characters]]></string>
+	<string id="points"					fontName="nick_comic_creator_font_regular"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Points:]]></string>
+	<string id="miniscore"				fontName="nick_comic_creator_font_regular"	fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Score:]]></string>
+
+	<!-- Tutorial -->
+	<string id="tutorial_firstplay"		fontName="nick_comic_creator_font_regular"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[Welcome to The Game!<br>CLICK to continue]]></string>
+	<string id="tutorial_firstplay_mobile"fontName="nick_comic_creator_font_regular"fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[Welcome to The Game!<br>TAP to continue]]></string>
+	<string id="tutorial_firstplay2"	fontName="nick_comic_creator_font_regular"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[Just sit back and relax!<br>SWIPE right to continue.]]></string>
+	<string id="tutorial_firstplay3"	fontName="nick_comic_creator_font_regular"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[Let the ball guide you!<br>CLICK here to<br>end this tutorial.]]></string>
+	<string id="tutorial_firstplay3_mobile"fontName="nick_comic_creator_font_regular"fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[Let the ball guide you!<br>TAP here to<br>end this tutorial.]]></string>
+
+
+
+	<!-- Achievements -->
+	<string id="achievement_unlocked"		fontName="nick_comic_creator_font_regular"	fontScale=".2"	offsetX="0" offsetY="0"><![CDATA[ACHIEVEMENT UNLOCKED]]></string>
+	<string id="achievement_name_default"		fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Achievement Name]]></string>
+	<string id="achievement_desc_default"		fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Achievement Description]]></string>
+	<string id="achievement_name_level2"		fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Level 2]]></string>
+	<string id="achievement_name_level5"		fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Level 5]]></string>
+	<string id="achievement_name_score100"		fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[100]]></string>
+	<string id="achievement_name_score1000"		fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[1000]]></string>
+	<string id="achievement_name_codeunlocked"	fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Code Mode]]></string>
+	<string id="achievement_name_firstplay"		fontName="nick_comic_creator_font_regular"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Baby Steps]]></string>
+	<string id="achievement_desc_level2"		fontName="nick_comic_creator_font_regular"	fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Reach level 2]]></string>
+	<string id="achievement_desc_level5"		fontName="nick_comic_creator_font_regular"	fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Reach level 5]]></string>
+	<string id="achievement_desc_score100"		fontName="nick_comic_creator_font_regular"	fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Get 100 points]]></string>
+	<string id="achievement_desc_score1000"		fontName="nick_comic_creator_font_regular"	fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Get 1000 points]]></string>
+	<string id="achievement_desc_codeunlocked"	fontName="nick_comic_creator_font_regular"	fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Use the code to unlock new game features]]></string>
+	<string id="achievement_desc_firstplay"		fontName="nick_comic_creator_font_regular"	fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Play the game once]]></string>
+
+	<!--Leaderboard-->
+	<string id="you"					fontName="nick_comic_creator_font_regular"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[You:]]></string>
+	<string id="top"					fontName="nick_comic_creator_font_regular"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Top]]></string>
+	<string id="leaderboard"			fontName="nick_comic_creator_font_regular"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[High Scores]]></string>
+	<string id="submit_score"			fontName="nick_comic_creator_font_regular"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Submit Score]]></string>
+
+	<!-- Debug Text -->
+	<string id="debugtext"				fontName="nick_comic_creator_font_regular"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[THIS TEXT IS LOCALIZED!]]></string>
+
+	<!--Submit stuff-->
+	<string id="submit_field_first_name"	fontName="nick_comic_creator_font_outline"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[First Name]]></string>
+	<string id="submit_field_last_name"		fontName="nick_comic_creator_font_outline"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[Last Initial]]></string>
+	<string id="submit_field_age"			fontName="nick_comic_creator_font_outline"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[]]></string>
+	<string id="submit_text"			fontName="nick_comic_creator_font_outline"	fontScale=".25"	offsetX="0" offsetY="0"><![CDATA[SUBMIT]]></string>
+	<string id="submit_success_header"	fontName="nick_comic_creator_font_regular"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[SUCCESS]]></string>
+	<string id="submit_success_body"	fontName="nick_comic_creator_font_regular"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[YOUR AVATAR HAS BEEN<br>SUBMITTED TO NICK!]]></string>
+	<string id="submit_fail_header"		fontName="nick_comic_creator_font_regular"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[OOPS]]></string>
+	<string id="submit_fail_body"		fontName="nick_comic_creator_font_regular"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[SUBMISSION FAILED. PLEASE TRY AGAIN LATER.]]></string>
+	<string id="submit_empty_header"	fontName="nick_comic_creator_font_regular"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[OOPS]]></string>
+	<string id="submit_empty_body"		fontName="nick_comic_creator_font_regular"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[PLEASE FILL OUT ALL EMPTY FIELDS.]]></string>
+	<string id="agreement_intro"		fontName="nick_comic_creator_font_outline"	fontScale=".15"	offsetX="0" offsetY="0"><![CDATA[I have read and agreed to the]]></string>
+	<string id="terms_clickable"		fontName="nick_comic_creator_font_outline"	fontScale=".2"	offsetX="0" offsetY="0"><![CDATA[Nickelodeon Terms of Use]]></string>
+	<string id="and"					fontName="nick_comic_creator_font_outline"	fontScale=".15"	offsetX="0" offsetY="0"><![CDATA[and]]></string>
+	<string id="content_clickable"		fontName="nick_comic_creator_font_outline"	fontScale=".2"	offsetX="0" offsetY="0"><![CDATA[User Content Submissions Agreement]]></string>
+
+	<string id="textarea_terms_agreement"	fontName="nick_comic_creator_font_outline"	fontScale=".2"	offsetX="0" offsetY="0"><![CDATA[]]></string>
+	<string id="terms_title"				fontName="nick_comic_creator_font_regular"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Nickelodeon Terms of Use]]></string>
+</strings>

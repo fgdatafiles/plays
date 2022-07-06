@@ -1,0 +1,112 @@
+{
+"skeleton": {
+	"hash": "bzURIhGtG/D2acf+huDXLDH/s2c",
+	"spine": "3.8.94",
+	"x": -90.98,
+	"y": -0.69,
+	"width": 177,
+	"height": 361,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "AM_Vet", "parent": "root", "length": 189.67, "rotation": 88.54, "x": 0.06, "y": 21.72 },
+	{ "name": "AM_Vet_Mouth1", "parent": "AM_Vet", "x": 220.29, "y": 0.94 },
+	{ "name": "AM_Vet_Blink", "parent": "AM_Vet", "x": 261.99, "y": 3.14 }
+],
+"slots": [
+	{ "name": "AM_Vet", "bone": "AM_Vet", "attachment": "AM_Vet" },
+	{ "name": "AM_Vet_Blink", "bone": "AM_Vet_Blink" },
+	{ "name": "AM_Vet_Mouth1", "bone": "AM_Vet_Mouth1", "attachment": "AM_Vet_Mouth1" },
+	{ "name": "AM_Vet_Mouth2", "bone": "AM_Vet_Mouth1" }
+],
+"animations": {
+	"idle": {
+		"slots": {
+			"AM_Vet_Blink": {
+				"attachment": [
+					{ "time": 3.4333, "name": "AM_Vet_Blink" },
+					{ "time": 3.5667, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"AM_Vet": {
+				"scale": [
+					{
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0,
+						"x": 1.0,
+						"y": 1.0
+					},
+					{
+						"time": 1.3333,
+						"x": 1.021,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"y": 1.0
+					},
+					{
+						"time": 2.6667,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"x": 1.0,
+						"y": 1.0
+					},
+					{
+						"time": 4,
+						"x": 1.021,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"y": 1.0
+					},
+					{ "time": 5.3333, "x": 1.0, "y": 1.0 }
+				]
+			}
+		}
+	},
+	"talk": {
+		"slots": {
+			"AM_Vet_Mouth2": {
+				"attachment": [
+					{ "name": "AM_Vet_Mouth2", "time": 0.0 },
+					{ "time": 0.2333, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"AM_Vet_Mouth1": {
+				"scale": [
+					{
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0,
+						"x": 1.0,
+						"y": 1.0
+					},
+					{
+						"time": 0.1333,
+						"x": 1.185,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"y": 1.0
+					},
+					{ "time": 0.4, "x": 1.0, "y": 1.0 }
+				]
+			}
+		}
+	}
+},
+"skins": {
+	"default": {
+		"AM_Vet": {
+			"AM_Vet": { "x": 157.98, "y": 6.57, "rotation": -88.54, "width": 177, "height": 361 }
+		},
+		"AM_Vet_Blink": {
+			"AM_Vet_Blink": { "x": -5.67, "y": -0.04, "rotation": -88.54, "width": 64, "height": 38 }
+		},
+		"AM_Vet_Mouth1": {
+			"AM_Vet_Mouth1": { "x": 10.32, "y": 0.67, "rotation": -88.54, "width": 81, "height": 23 }
+		},
+		"AM_Vet_Mouth2": {
+			"AM_Vet_Mouth2": { "x": -2.6, "y": 1.37, "rotation": -88.54, "width": 39, "height": 14 }
+		}
+	}
+}
+}

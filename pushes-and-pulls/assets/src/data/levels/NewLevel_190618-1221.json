@@ -1,0 +1,187 @@
+{
+  "header": {
+    "id": "75d4513d-6c3c-485a-a5fb-7c22e0436d33",
+    "timestamp": 1.31745148557754E+17
+  },
+  "dependencies": {
+    "dependencies": [
+    ]
+  },
+  "meta": {
+    "name": "Switch Test",
+    "description": "A level where we test falling objects, switches, and doors",
+    "heroID": "Em"
+  },
+  "feedback": {
+    "start": [
+      {
+        "text": "Let's try working with switches!"
+      }
+    ],
+    "complete": [
+      {
+        "text": "Nice work!",
+        "header": "Mr. Sparks"
+      },
+      {
+        "text": "Would this have been possible were you not a Hero?",
+        "header": "Mr. Sparks"
+      }
+    ]
+  },
+  "display": {
+    "size": [
+      10,
+      7
+    ]
+  },
+  "collisions": {
+    "tiles": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "actors": {
+    "actors": [
+      {
+        "id": 1,
+        "className": "switch",
+        "position": [
+          3,
+          2
+        ],
+        "properties": {
+          "targetID": 2,
+          "switchGroup": 0
+        }
+      },
+      {
+        "id": 2,
+        "className": "switchBlock",
+        "position": [
+          7,
+          3
+        ],
+        "size": [
+          1,
+          2
+        ],
+        "properties": {
+          "anchor": 3,
+          "switchGroup": 0
+        }
+      },
+      {
+        "id": 3,
+        "className": "start",
+        "position": [
+          5,
+          5
+        ]
+      },
+      {
+        "id": 4,
+        "className": "hotspot",
+        "position": [
+          4,
+          5
+        ]
+      },
+      {
+        "id": 5,
+        "className": "goal",
+        "position": [
+          9,
+          3
+        ]
+      },
+      {
+        "id": 6,
+        "className": "furBlur",
+        "position": [
+          5,
+          5
+        ]
+      }
+    ]
+  },
+  "toolbox": {
+    "actors": [
+      {
+        "id": 7,
+        "className": "pushable",
+        "properties": {
+          "shape": 1
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "width": 3840,
+  "scroll": 250,
+  "border": 200,
+  "anchor": 0,
+  "dialogue": {
+    "characters": {
+      "elmo": {
+        "spine": "elmo",
+        "idle_animation": "idle_right",
+        "talk_animation": "talk_right",
+        "x": -50,
+        "y": 550,
+        "trackingName": "Elmo"
+      },
+      "abby": {
+        "spine": "abby",
+        "idle_animation": "idle_right",
+        "talk_animation": "talk_right",
+        "x": 50,
+        "y": 550,
+        "trackingName": "Abby"
+      }
+    },
+    "data": {
+      "first_visit": {
+        "character": "elmo",
+        "script": "ASP_2.0_7"
+      },
+      "subsequent_visit_1": {
+        "character": "abby",
+        "script": "ASP_2.0_8"
+      },
+      "subsequent_visit_2": {
+        "character": "elmo",
+        "script": "ASP_2.0_9"
+      },
+      "prompt_1": {
+        "character": "elmo",
+        "script": {
+          "type": "combine",
+          "options": [
+            { "type": "interact", "options": { "touch": "ASP_10.0_256", "click": "ASP_10.0_257" } },
+            "ASP_2.0_13"
+          ]
+        }
+      },
+      "prompt_2": {
+        "character": "elmo",
+        "script": {
+          "type": "combine",
+          "options": [
+            { "type": "interact", "options": { "touch": "ASP_10.0_256", "click": "ASP_10.0_257" } },
+            "ASP_2.0_14"
+          ]
+        }
+      },
+      "abby_clicked": {
+        "character": "abby",
+        "script": "ASP_2.0_12"
+      },
+      "elmo_clicked": {
+        "character": "elmo",
+        "script": "ASP_2.0_11"
+      },
+      "architect": {
+        "character": "abby",
+        "script": "ASP_10.0_263"
+      },
+      "delivery_driver": {
+        "character": "abby",
+        "script": "ASP_10.0_265"
+      },
+      "fire_fighter": {
+        "character": "elmo",
+        "script": "ASP_10.0_260"
+      },
+      "musician": {
+        "character": "elmo",
+        "script": "ASP_10.0_262"
+      },
+      "scientist": {
+        "character": "abby",
+        "script": "ASP_10.0_264"
+      },
+      "vet": {
+        "character": "elmo",
+        "script": "ASP_10.0_261"
+      }
+    }
+  },
+  "layers": [
+    {
+      "buttons": [
+        {
+          "x": 929,
+          "y": 155,
+          "sprite": "location_delivery_driver",
+          "highlight": "location_delivery_driver_hl",
+          "label": "Delivery Driver",
+          "destination_type": "location",
+          "destination_id": "LOCATION_DELIVERY_DRIVER",
+          "dialogue": "delivery_driver",
+          "trackingName": "Delivery Driver"
+        },
+        {
+          "x": 1845,
+          "y": 68,
+          "sprite": "location_fire_fighter",
+          "highlight": "location_fire_fighter_hl",
+          "label": "Fire Fighter",
+          "destination_type": "location",
+          "destination_id": "LOCATION_FIRE_FIGHTER",
+          "dialogue": "fire_fighter",
+          "trackingName": "Firefighter"
+        },
+        {
+          "x": 110,
+          "y": 125,
+          "sprite": "location_musician",
+          "highlight": "location_musician_hl",
+          "label": "Musician",
+          "destination_type": "location",
+          "destination_id": "LOCATION_MUSICIAN",
+          "dialogue": "musician",
+          "trackingName": "Musician"
+        },
+        {
+          "x": 566,
+          "y": 47,
+          "sprite": "location_vet",
+          "highlight": "location_vet_hl",
+          "label": "Vet",
+          "destination_type": "location",
+          "destination_id": "LOCATION_VET",
+          "dialogue": "vet",
+          "trackingName": "Vet"
+        }
+      ]
+    },
+    {
+      "static": [
+        {
+          "x": 2260,
+          "y": 390,
+          "sprite": "fg_engine"
+        }
+      ]
+    },
+    {
+      "buttons": [
+        {
+          "x": 2584,
+          "y": 84,
+          "sprite": "location_architect",
+          "highlight": "location_architect_hl",
+          "label": "Architect",
+          "destination_type": "location",
+          "destination_id": "LOCATION_ARCHITECT",
+          "dialogue": "architect",
+          "trackingName": "Architect"
+        },
+        {
+          "x": 2994,
+          "y": 85,
+          "sprite": "location_scientist",
+          "highlight": "location_scientist_hl",
+          "label": "Scientist",
+          "destination_type": "location",
+          "destination_id": "LOCATION_SCIENTIST",
+          "dialogue": "scientist",
+          "trackingName": "Scientist"
+        }
+      ]
+    },
+    {
+      "static": [
+        {
+          "x": 560,
+          "y": 540,
+          "sprite": "fg_mailbox"
+        },
+        {
+          "x": 1600,
+          "y": 440,
+          "sprite": "fg_van"
+        },
+        {
+          "x": 2610,
+          "y": 510,
+          "sprite": "fg_meter"
+        },
+        {
+          "x": 3460,
+          "y": 414,
+          "sprite": "fg_meter_tree"
+        },
+        {
+          "x": 3744,
+          "y": 497,
+          "sprite": "fg_subway"
+        }
+      ]
+    },
+    {
+      "incidentals": [
+        {
+          "x": 320,
+          "y": 460,
+          "sprite": "am_musician",
+          "dialogueOver": "musician",
+          "trackingName": "Musician"
+        },
+        {
+          "x": 715,
+          "y": 485,
+          "sprite": "am_vet",
+          "dialogueOver": "vet",
+          "trackingName": "Vet"
+        },
+        {
+          "x": 1220,
+          "y": 500,
+          "sprite": "am_delivery",
+          "dialogueOver": "delivery_driver",
+          "trackingName": "Delivery Driver"
+        },
+        {
+          "x": 2140,
+          "y": 400,
+          "sprite": "am_firefighter",
+          "dialogueOver": "fire_fighter",
+          "trackingName": "Firefighter"
+        },
+        {
+          "x": 2805,
+          "y": 480,
+          "sprite": "am_architect",
+          "dialogueOver": "architect",
+          "trackingName": "Architect"
+        },
+        {
+          "x": 3125,
+          "y": 485,
+          "sprite": "am_scientist",
+          "dialogueOver": "scientist",
+          "trackingName": "Scientist"
+        }
+      ]
+    }
+  ]
+}

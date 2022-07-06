@@ -1,0 +1,27 @@
+<config>
+
+	<!-- CODE UNLOCK -->
+	<unlockEnabled>true</unlockEnabled> <!-- Set whether or not to allow the use of the code unlock screen -->
+	<unlockCode>00000</unlockCode> <!-- Set the code unlock number here, should be less than 10 digits and you can use the number 0 -->
+
+    <!-- SERVICES -->
+    <!-- Enable, disable, and configure services here -->
+	<services>
+		<service type="deltadna" enabled="true" development="false"/>
+		<service type="canadaTracking" enabled="false" showGameTitle="Nickelodeon: Cooking Contest"/>
+		<service type="nickavatar" enabled="false" url="http://54.243.42.37:8080/nick/avatar" />
+		<service type="leaderboard" enabled="false" url="http://hs.nick.com/scores/" keyword="keyword" />
+	</services>
+
+	<!-- ACHIEVEMENTS -->
+	<achievements enabled="true"/>
+
+	<!-- LOCALIZATION -->
+    <localization>
+    	<region>en</region>
+    </localization>
+
+	<!-- VO -->
+	<enableVO>true</enableVO>
+
+</config>

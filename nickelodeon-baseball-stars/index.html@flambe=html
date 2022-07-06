@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Nickelodeon Baseball Stars</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="icons/57x57.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/72x72.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/114x114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/144x144.png">
+	<!--<script src="http://markknol.github.io/console-log-viewer/console-log-viewer.js"></script>-->
+
+	<style>
+		body {
+			text-align: center;
+			margin: 0;
+			background: #1D1D1D;
+			color: #404040;
+			font-family: sans-serif;
+			font-size: 10pt;
+			height: 100%;
+			width: 100%;
+		}
+		
+		a {
+			color: #F88113;
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+
+		#content {
+			width:960px;
+			height:560px;
+			margin: 60px auto 20px auto;
+			box-shadow: 0px 4px 16px -4px #333;
+		}
+
+		#content canvas {
+			width: 100%;
+			height: 100%;
+		}
+
+		/* On small devices, fill the entire screen and hide the rest of the page. */
+		@media (max-device-width: 8in), (max-device-height: 8in) {
+			html {
+			/* Prevent scrollbars from causing a resize feedback loop. */
+				overflow: hidden;
+			}
+			html, body {
+				height: 100%;
+				width: 100%;
+			}
+			#content {
+				width: 960px;
+				height: 560px;
+				margin: auto;
+				box-shadow: none;
+			}
+			.no-mobile {
+				display: none;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="content"></div>
+	<script src="flambe.js"></script>
+	<script>
+
+		// DEBUG ONLY INDEX
+		// FOR TOUCH DEVICES, REDIRECT TO JSEMBED
+		// @see https://github.com/Modernizr/Modernizr/blob/master/feature-detects/touchevents.js
+		if(('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
+			top.location.href = "jsembed.html";
+		} else {
+			flambe.embed(["targets/main-html.js","targets/main-flash.swf"], "content");
+
+			var canvas = document.getElementsByTagName("canvas")[0];
+
+			// Set the canvas size (ONLY necessary when flambe_disable_autoresize compile flags is set to true)
+			if(canvas)
+			{
+				canvas.width = 960;
+				canvas.height = 560;
+			}
+		}
+	</script>
+
+	<!-- Canada Tracking: see "canada_tracking" option in config.json -->
+	<script language="JavaScript">
+		function trackFlashEvent(gameTitle,gameEvent,playEvent)
+		{
+			console.log('Tracking:', gameTitle, gameEvent, playEvent);
+		}
+	</script>
+
+	<footer class="no-mobile">
+		<p>
+			DEBUG ONLY
+		</p>
+			<a href="?flambe=flash">Debug Flash</a> | 
+			<a href="?flambe=html">Debug HTML5</a>
+		</p>
+		<p>
+			OTHER INDEXES
+		</p>
+			<a href="jsembed.html">JSEMBED</a> | 
+			<a href="flash.html">FLASH ONLY</a>
+		</p>
+
+		<br />
+		<p>Cooked with <a href="http://getflambe.com">Flambe</a></p>
+	</footer>
+
+</body>
+</html>

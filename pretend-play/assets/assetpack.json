@@ -1,0 +1,72 @@
+{
+  "boot": [
+    {
+      "type": "atlasJSONArray",
+      "key": "preloader",
+      "textureURL": "spritesheets/preloader/spritesheet.png",
+      "atlasURL": "spritesheets/preloader/spritesheet.json",
+      "atlasData": null
+    },
+    {
+      "type": "xml",
+      "key": "copy_xml",
+      "url": "locale/copy.xml",
+      "overwrite": true
+    }
+  ],
+  "load": [
+    {
+      "type": "json",
+      "key": "app_config",
+      "url": "data/config.json",
+      "overwrite": true
+    },
+    {
+      "type": "json",
+      "key": "ui_config",
+      "url": "data/ui.json",
+      "overwrite": true
+    },
+    {
+      "type": "atlasJSONArray",
+      "key": "uibuttons",
+      "textureURL": "spritesheets/buttons.png",
+      "atlasURL": "spritesheets/buttons.json",
+      "atlasData": null
+    },
+    {
+      "type": "atlasJSONArray",
+      "key": "generic_sprites",
+      "textureURL": "spritesheets/generic.png",
+      "atlasURL": "spritesheets/generic.json",
+      "atlasData": null
+    },
+    {
+      "type": "json",
+      "key": "state_config",
+      "url": "welcome/config.json",
+      "overwrite": true
+    },
+    {
+      "type": "atlasJSONArray",
+      "key": "state_spritesheet",
+      "textureURL": "welcome/spritesheet.png",
+      "atlasURL": "welcome/spritesheet.json",
+      "atlasData": null
+    },
+    {
+      "type": "audiosprite",
+      "key": "state_audiosprite",
+      "urls": ["welcome/64/audiosprite.ogg", "welcome/64/audiosprite.m4a", "welcome/64/audiosprite.mp3"],
+      "jsonURL": "welcome/64/audiosprite.json",
+      "jsonData": null,
+      "autoDecode": true
+    },
+    {
+      "type": "json",
+      "key": "state_captions",
+      "url": "welcome/audiosprite_captions.json",
+      "overwrite": true
+    }
+  ]
+}

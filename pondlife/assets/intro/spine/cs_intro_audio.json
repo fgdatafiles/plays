@@ -1,0 +1,48 @@
+{
+"skeleton": {
+	"hash": "uTOmrQBIBRZZrZL3o5kZ7Sn3OsI",
+	"spine": "3.8.97",
+	"x": -37.08,
+	"y": 471.24,
+	"width": 74.16,
+	"height": 95.13,
+	"images": "./BG/",
+	"audio": "../../vo/intro/"
+},
+"bones": [
+	{ "name": "root", "rotation": -0.1 }
+],
+"slots": [
+	{ "name": "tuft_1", "bone": "root", "attachment": "tuft_1" }
+],
+"events": {
+	"intro_01_elinor": { "audio": "intro_01_elinor.wav" },
+	"intro_02_olive": { "audio": "intro_02_olive.wav" },
+	"intro_03_elinor": { "audio": "intro_03_elinor.wav" },
+	"intro_05_olive": { "audio": "intro_05_olive.wav" }
+},
+"animations": {
+	"animation": {
+		"bones": {
+			"root": {
+				"translate": [
+					{ "time": 16.7 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.1667, "name": "intro_01_elinor", "volume": 0.5 },
+			{ "time": 5.3333, "name": "intro_02_olive", "volume": 0.51 },
+			{ "time": 8.9667, "name": "intro_03_elinor", "volume": 0.51 },
+			{ "time": 12.9333, "name": "intro_05_olive", "volume": 0.5 }
+		]
+	}
+},
+"skins": {
+	"default": {
+		"tuft_1": {
+			"tuft_1": { "x": -0.89, "y": 518.81, "width": 74, "height": 95 }
+		}
+	}
+}
+}

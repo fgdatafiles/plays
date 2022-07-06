@@ -1,0 +1,133 @@
+{
+"skeleton": {
+	"hash": "eo2ukvpaXZCxukBkGYstK9Cho7w",
+	"spine": "3.8.95",
+	"x": -744.81,
+	"y": -244.86,
+	"width": 1887,
+	"height": 5703.99,
+	"images": "./assets/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "stem" },
+	{ "name": "bone", "parent": "stem", "length": 1005.94, "rotation": 101.78, "x": 0.82, "y": 46.09 },
+	{ "name": "pad", "parent": "stem", "x": 66.94, "y": 5214.25 },
+	{
+		"name": "bone2",
+		"parent": "bone",
+		"length": 166.47,
+		"rotation": 0.89,
+		"x": 1175.12,
+		"y": 44.28,
+		"scaleX": 0.9001,
+		"scaleY": 0.9001
+	},
+	{ "name": "bone3", "parent": "stem", "length": 1005.94, "rotation": 86.55, "x": 0.82, "y": 46.09 },
+	{ "name": "bone4", "parent": "bone3", "length": 166.47, "rotation": 0.89, "x": 1991.8, "y": 77.43 },
+	{ "name": "anchor_1", "parent": "bone4", "x": 61.01, "y": -25.01 },
+	{ "name": "anchor_2", "parent": "bone2", "x": 39.95, "y": -23.52 },
+	{ "name": "anchor_3", "parent": "stem", "x": 5.07, "y": 704.73 },
+	{ "name": "anchor_4", "parent": "stem", "x": -248.43, "y": 2697.24 },
+	{ "name": "anchor_5", "parent": "stem", "x": -25.35, "y": 3655.47 },
+	{ "name": "anchor_6", "parent": "stem", "x": 121.68, "y": 5298.15 },
+	{ "name": "anchor_7", "parent": "stem", "x": -121.68, "y": 5313.36 },
+	{ "name": "anchor_8", "parent": "stem", "x": 537.42, "y": 5080.14 }
+],
+"slots": [
+	{ "name": "lily stem", "bone": "stem", "attachment": "lily stem" },
+	{ "name": "lily_stem_bit", "bone": "pad", "attachment": "lily_stem_bit" },
+	{ "name": "lilypad", "bone": "pad", "attachment": "lilypad" },
+	{ "name": "lilflower", "bone": "pad", "attachment": "lilflower" },
+	{ "name": "roots", "bone": "stem", "attachment": "roots" },
+	{ "name": "lily stem2", "bone": "bone", "attachment": "lily stem" },
+	{ "name": "lily stem3", "bone": "bone3", "attachment": "lily stem" },
+	{ "name": "lilyculred", "bone": "bone2", "attachment": "lilyculred" },
+	{ "name": "lilyculred2", "bone": "bone4", "attachment": "lilyculred" }
+],
+"animations": {
+	"idle": {
+		"bones": {
+			"bone": {
+				"rotate": [
+					{
+						"angle": -8.36,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0
+					},
+					{
+						"time": 5.9667,
+						"angle": 2.97,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 9.9333, "angle": -8.36 }
+				]
+			},
+			"bone2": {
+				"rotate": [
+					{ "angle": -8.4, "time": 0.0 },
+					{ "time": 2.4667, "angle": -16.05 },
+					{ "time": 4.9667, "angle": -8.4 },
+					{ "time": 7.4333, "angle": -5.22 },
+					{ "time": 9.9333, "angle": -8.4 }
+				]
+			},
+			"bone4": {
+				"rotate": [
+					{ "angle": -8.4, "time": 0.0 },
+					{ "time": 2.4667, "angle": -16.05 },
+					{ "time": 4.9667, "angle": -8.4 },
+					{ "time": 7.4333, "angle": -5.22 },
+					{ "time": 9.9333, "angle": -8.4 }
+				]
+			},
+			"bone3": {
+				"rotate": [
+					{
+						"angle": -1.16,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0
+					},
+					{
+						"time": 4.9667,
+						"angle": 9.44,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 9.9333, "angle": -1.16 }
+				]
+			}
+		}
+	}
+},
+"skins": {
+	"default": {
+		"lilflower": {
+			"lilflower": { "x": -17.72, "y": 35.88, "width": 798, "height": 418 }
+		},
+		"lily_stem_bit": {
+			"lily_stem_bit": { "x": 9.16, "y": -297.97, "width": 126, "height": 311 }
+		},
+		"lilyculred": {
+			"lilyculred": { "x": -1.11, "y": -10.93, "rotation": -84.48, "width": 202, "height": 582 }
+		},
+		"lilyculred2": {
+			"lilyculred": { "x": -1.11, "y": -10.93, "rotation": -84.48, "width": 202, "height": 582 }
+		},
+		"lilypad": {
+			"lilypad": { "x": 131.75, "y": -150.3, "width": 1887, "height": 84 }
+		},
+		"lily stem": {
+			"lily stem": { "x": -110.99, "y": 2521.01, "scaleY": 0.9978, "rotation": -0.38, "width": 376, "height": 4921 }
+		},
+		"lily stem2": {
+			"lily stem": { "x": 588.11, "y": 101.53, "scaleX": -0.5632, "scaleY": -0.2266, "rotation": 92.13, "width": 376, "height": 4921 }
+		},
+		"lily stem3": {
+			"lily stem": { "x": 1018.16, "y": -36.01, "scaleX": 0.5632, "scaleY": -0.4031, "rotation": 92.13, "width": 376, "height": 4921 }
+		},
+		"roots": {
+			"roots": { "x": -1.78, "y": -72.33, "scaleX": 1.5829, "scaleY": 1.5829, "width": 186, "height": 218 }
+		}
+	}
+}
+}

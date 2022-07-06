@@ -1,0 +1,134 @@
+{
+	pieces : [{
+			asset : "trunk", 
+			x : 0, 
+			y : 0, 
+			rotation : 0, 
+			back : false, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 33, 
+				height : 50
+			}, 
+			massMultiplier : 0.80
+		},{
+			asset : "head", 
+			x : 9, 
+			y : -65, 
+			rotation : 0, 
+			back : false, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 102, 
+				height : 106
+			}, 
+			massMultiplier : 0.14
+		},{
+			asset : "leg_front", 
+			x : 7, 
+			y : 25, 
+			rotation : 21, 
+			back : false, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 23, 
+				height : 50
+			},
+			massMultiplier : 0.8
+		},{
+			asset : "leg_back", 
+			x : 20, 
+			y : 26, 
+			rotation : 0, 
+			back : true, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 23, 
+				height : 50
+			},
+			massMultiplier : 0.8
+		},{
+			asset : "arm_front", 
+			x : -13, 
+			y : -12, 
+			rotation : 82, 
+			back : false, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 18, 
+				height : 34
+			},
+			massMultiplier : 1.7
+		},{
+			asset : "arm_back", 
+			x : 23, 
+			y : -17, 
+			rotation : -103, 
+			back : true, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 19, 
+				height : 33
+			},
+			massMultiplier : 1.7
+		}], 
+	constraints : [{
+			id1 : "trunk", 
+			id2 : "head", 
+			x : 9, 
+			y : -14, 
+			type : "WeldJoint", 
+			params : null, 
+			maxForce : null
+		},{
+			id1 : "trunk", 
+			id2 : "leg_front", 
+			x : 5, 
+			y : 13, 
+			type : "WeldJoint", 
+			params : [21], 
+			maxForce : null
+		},{
+			id1 : "trunk", 
+			id2 : "leg_back", 
+			x : 13, 
+			y : 12, 
+			type : "WeldJoint", 
+			params : [-17], 
+			maxForce : null
+		},{
+			id1 : "trunk", 
+			id2 : "arm_front", 
+			x : 3, 
+			y : -6, 
+			type : "WeldJoint", 
+			params : [82], 
+			maxForce : null
+		},{
+			id1 : "trunk", 
+			id2 : "arm_back", 
+			x : 14, 
+			y : -7, 
+			type : "WeldJoint", 
+			params : [-103], 
+			maxForce : null
+		}]
+}

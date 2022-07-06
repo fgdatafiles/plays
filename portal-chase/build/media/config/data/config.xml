@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<configs>
+	<!-- Localization Settings -->
+	<localization>
+		<language>english</language>
+		<defaultFont>arial</defaultFont>
+	</localization>
+	<!-- Nick Service Settings -->
+	<services>
+		<!-- Set to false to disable all Nick Services completely. TRUE will follow the specific service settings. -->
+		<enableServices>true</enableServices> 
+		<!-- Enable Tracking -->
+		<enableTracking>true</enableTracking>
+		<!-- Enable Canada Tracking -->
+		<enableCanadaTracking>true</enableCanadaTracking>
+		<!-- Canada Tracking Game Title -->
+		<canadaTrackingGameTitle><![CDATA[Portal Chase]]></canadaTrackingGameTitle>
+		<!-- Determines Piracy Control feature is activated or not. A value of 'true' activates it.-->
+		<enablePiracyControl>true</enablePiracyControl>
+		<!-- Piracy Control Redirect Url-->
+		<piracyControlRedirectURL>http://www.nick.com/mash-ups/games/portal-chase/</piracyControlRedirectURL>
+		<!-- Enable Delta DNA.-->
+		<enableDeltaDNA>false</enableDeltaDNA>
+		<!-- DeltaDNA Settings.-->
+		<!-- Delta DNA Server URL.-->
+		<deltaDNA_url></deltaDNA_url>
+		<!-- Delta DNA mode. If 'dev' or 'live'.-->
+		<deltaDNA_mode>dev</deltaDNA_mode>
+		<!-- Delta DNA Game URL.-->
+		<deltaDNA_gameURL>http://www.nick.com/games/portal-chase/</deltaDNA_gameURL>
+		<!-- Delta DNA Key for Dev-->
+		<deltaDNA_keyDev></deltaDNA_keyDev>
+		<!-- Delta DNA Key for Live-->
+		<deltaDNA_keyLive></deltaDNA_keyLive>
+	</services>
+	
+	<!-- Game specific settings -->
+	<gameSettings>
+		
+		<achievement>5</achievement>
+		
+		<!-- State if debug mode. Enables/disables trace log -->
+		<debugMode>false</debugMode>
+		<!-- Enabled VOs-->
+		<enabledVOs>false</enabledVOs>
+		<!-- Place other game specific settings here -->
+		<properties>
+			<!-- No Level Values -->
+		</properties>
+	</gameSettings>
+</configs>

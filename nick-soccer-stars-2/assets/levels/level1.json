@@ -1,0 +1,404 @@
+{
+	"actors": [
+		{
+			"template": {
+				"key": "bg",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 50,
+					"y": 0
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "ground",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 1000
+				},
+				"rotation": 0
+			}
+		},
+		{
+			"template": {
+				"key": "pickups_spawner",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 740
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "wall_right",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1800,
+					"y": 590
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "wall_left",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 200,
+					"y": 590
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "invisible_ceil",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": -80
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "goal_hover_ally",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 440,
+					"y": 830
+				}
+			},
+			"waypoint": {
+				"x": 0,
+				"y": 0
+			},
+			"waypointLinks": {
+				"nodes": [
+					"7539447",
+					"7539443",
+					"75397"
+				]
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_ball",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 830
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_ally",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 570,
+					"y": 840
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "goal_hover_opponent",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1560,
+					"y": 830
+				}
+			},
+			"waypoint": {
+				"x": 0,
+				"y": 0
+			},
+			"waypointLinks": {
+				"nodes": [
+					"7539445",
+					"7539446",
+					"7539444"
+				]
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 790
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "pathfinding",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 0,
+					"y": 0
+				}
+			},
+			"pathfinding": {
+				"nodes": [
+					{
+						"id": "4",
+						"x": 686.5,
+						"y": 930.5
+					},
+					{
+						"id": "78",
+						"x": 1137.5,
+						"y": 923.5
+					},
+					{
+						"id": "75397",
+						"x": 561.5,
+						"y": 858.5
+					},
+					{
+						"id": "7539440",
+						"x": 845.5,
+						"y": 932.5
+					},
+					{
+						"id": "7539441",
+						"x": 1350.5,
+						"y": 922.5
+					},
+					{
+						"id": "7539443",
+						"x": 544.5,
+						"y": 709.5
+					},
+					{
+						"id": "7539444",
+						"x": 1449.5,
+						"y": 854.5
+					},
+					{
+						"id": "7539445",
+						"x": 1467.5,
+						"y": 716.5
+					},
+					{
+						"id": "7539446",
+						"x": 1628.5,
+						"y": 715.5
+					},
+					{
+						"id": "7539447",
+						"x": 407.5,
+						"y": 705.5
+					},
+					{
+						"id": "7539450",
+						"x": 1109.5,
+						"y": 762.5
+					},
+					{
+						"id": "7539451",
+						"x": 633.5,
+						"y": 799.5
+					},
+					{
+						"id": "7539453",
+						"x": 905.5,
+						"y": 759.5
+					},
+					{
+						"id": "7539456",
+						"x": 1369.5,
+						"y": 855.5
+					},
+					{
+						"id": "7539458",
+						"x": 1396.5,
+						"y": 790.5
+					},
+					{
+						"id": "7539461",
+						"x": 647.5,
+						"y": 860.5
+					},
+					{
+						"id": "7539462",
+						"x": 1008.5,
+						"y": 753.5
+					}
+				],
+				"links": [
+					{
+						"from": "7539440",
+						"to": "78",
+						"type": "bothWays"
+					},
+					{
+						"from": "7539443",
+						"to": "75397",
+						"type": "bothWays"
+					},
+					{
+						"from": "7539445",
+						"to": "7539444",
+						"type": "bothWays"
+					},
+					{
+						"from": "7539446",
+						"to": "7539445",
+						"type": "bothWays"
+					},
+					{
+						"from": "7539447",
+						"to": "7539443",
+						"type": "bothWays"
+					},
+					{
+						"from": "7539453",
+						"to": "7539440",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "7539450",
+						"to": "78",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "7539461",
+						"to": "75397",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "4",
+						"to": "7539440",
+						"type": "bothWays"
+					},
+					{
+						"from": "78",
+						"to": "7539441",
+						"type": "bothWays"
+					},
+					{
+						"from": "4",
+						"to": "7539461",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "4",
+						"to": "7539451",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "7539451",
+						"to": "75397",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "7539458",
+						"to": "7539444",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "7539441",
+						"to": "7539458",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "7539441",
+						"to": "7539456",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "7539456",
+						"to": "7539444",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "7539462",
+						"to": "7539453",
+						"type": "bothWays"
+					},
+					{
+						"from": "7539450",
+						"to": "7539462",
+						"type": "bothWays"
+					},
+					{
+						"from": "78",
+						"to": "7539462",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "7539440",
+						"to": "7539462",
+						"type": "oneWayTo"
+					}
+				]
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_ally",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 760,
+					"y": 900
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_opponent",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1440,
+					"y": 840
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_opponent",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1260,
+					"y": 890
+				}
+			}
+		}
+	],
+	"filename": "level1"
+}

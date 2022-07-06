@@ -1,0 +1,1517 @@
+{
+	"actors": [
+		{
+			"template": {
+				"key": "bg",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 50,
+					"y": 0
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "ground",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 1000
+				},
+				"rotation": 0
+			}
+		},
+		{
+			"template": {
+				"key": "step",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1600,
+					"y": 900
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "step",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 400,
+					"y": 900
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "wall_left",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 200,
+					"y": 500
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "wall_right",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1800,
+					"y": 500
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "step",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 540,
+					"y": 900
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "step",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1460,
+					"y": 900
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "pickups_spawner",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1600,
+					"y": 800
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "pickups_spawner",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 400,
+					"y": 800
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "step",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 680,
+					"y": 900
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "step",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1320,
+					"y": 900
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "pickups_spawner",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 500
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "invisible_ceil"
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": -250
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "invisible_wall"
+			},
+			"transform": {
+				"position": {
+					"x": 200,
+					"y": 400
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "invisible_wall"
+			},
+			"transform": {
+				"position": {
+					"x": 1800,
+					"y": 400
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_ball",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 800
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "goal_hover_ally",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 450,
+					"y": 300
+				}
+			},
+			"waypoint": {
+				"x": 0,
+				"y": 250
+			},
+			"waypointLinks": {
+				"nodes": [
+					"57",
+					"39",
+					"38",
+					"54",
+					"37"
+				]
+			}
+		},
+		{
+			"template": {
+				"key": "goal_hover_opponent",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1550,
+					"y": 300
+				}
+			},
+			"waypoint": {
+				"x": 0,
+				"y": 250
+			},
+			"waypointLinks": {
+				"nodes": [
+					"56",
+					"42",
+					"41",
+					"53",
+					"40"
+				]
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 450,
+					"y": 150
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1300,
+					"y": 400
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1550,
+					"y": 150
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1300,
+					"y": 700
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 700,
+					"y": 700
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 550
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 700,
+					"y": 400
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1300,
+					"y": 550
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 700,
+					"y": 550
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "trampoline",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 850,
+					"y": 950
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "trampoline",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1150,
+					"y": 950
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "teleporter_in",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1550,
+					"y": 70
+				}
+			},
+			"teleporter": {
+				"to": {
+					"x": 452,
+					"y": 73
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "pathfinding",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 0,
+					"y": 0
+				}
+			},
+			"image": {
+				"pack": "editor_icons",
+				"asset": "web",
+				"layer": "front"
+			},
+			"pathfinding": {
+				"nodes": [
+					{
+						"id": "0",
+						"x": 628.5,
+						"y": 824.5
+					},
+					{
+						"id": "1",
+						"x": 406.5,
+						"y": 813.5
+					},
+					{
+						"id": "11",
+						"x": 654.5,
+						"y": 664.5
+					},
+					{
+						"id": "12",
+						"x": 739.5,
+						"y": 663.5
+					},
+					{
+						"id": "13",
+						"x": 734.5,
+						"y": 821.5
+					},
+					{
+						"id": "14",
+						"x": 951.5,
+						"y": 365.5
+					},
+					{
+						"id": "15",
+						"x": 768.5,
+						"y": 354.5
+					},
+					{
+						"id": "16",
+						"x": 672.5,
+						"y": 350.5
+					},
+					{
+						"id": "17",
+						"x": 765.5,
+						"y": 505.5
+					},
+					{
+						"id": "18",
+						"x": 653.5,
+						"y": 506.5
+					},
+					{
+						"id": "19",
+						"x": 1057.5,
+						"y": 667.5
+					},
+					{
+						"id": "20",
+						"x": 965.5,
+						"y": 671.5
+					},
+					{
+						"id": "21",
+						"x": 1335.5,
+						"y": 361.5
+					},
+					{
+						"id": "22",
+						"x": 1259.5,
+						"y": 365.5
+					},
+					{
+						"id": "23",
+						"x": 1054.5,
+						"y": 510.5
+					},
+					{
+						"id": "24",
+						"x": 961.5,
+						"y": 510.5
+					},
+					{
+						"id": "25",
+						"x": 1067.5,
+						"y": 366.5
+					},
+					{
+						"id": "26",
+						"x": 1360.5,
+						"y": 662.5
+					},
+					{
+						"id": "27",
+						"x": 1246.5,
+						"y": 665.5
+					},
+					{
+						"id": "28",
+						"x": 1360.5,
+						"y": 512.5
+					},
+					{
+						"id": "29",
+						"x": 1249.5,
+						"y": 505.5
+					},
+					{
+						"id": "30",
+						"x": 1278.5,
+						"y": 829.5
+					},
+					{
+						"id": "31",
+						"x": 1384.5,
+						"y": 826.5
+					},
+					{
+						"id": "32",
+						"x": 1612.5,
+						"y": 819.5
+					},
+					{
+						"id": "37",
+						"x": 591.5,
+						"y": 355.5
+					},
+					{
+						"id": "38",
+						"x": 484.5,
+						"y": 204.5
+					},
+					{
+						"id": "39",
+						"x": 408.5,
+						"y": 204.5
+					},
+					{
+						"id": "40",
+						"x": 1430.5,
+						"y": 365.5
+					},
+					{
+						"id": "41",
+						"x": 1517.5,
+						"y": 204.5
+					},
+					{
+						"id": "42",
+						"x": 1595.5,
+						"y": 204.5
+					},
+					{
+						"id": "43",
+						"x": 1158.5,
+						"y": 585.5
+					},
+					{
+						"id": "44",
+						"x": 850.5,
+						"y": 300.5
+					},
+					{
+						"id": "45",
+						"x": 852.5,
+						"y": 455.5
+					},
+					{
+						"id": "46",
+						"x": 852.5,
+						"y": 593.5
+					},
+					{
+						"id": "47",
+						"x": 1147.5,
+						"y": 462.5
+					},
+					{
+						"id": "48",
+						"x": 1151.5,
+						"y": 306.5
+					},
+					{
+						"id": "49",
+						"x": 1148.5,
+						"y": 748.5
+					},
+					{
+						"id": "50",
+						"x": 848.5,
+						"y": 742.5
+					},
+					{
+						"id": "51",
+						"x": 1061.5,
+						"y": 815.5
+					},
+					{
+						"id": "52",
+						"x": 945.5,
+						"y": 814.5
+					},
+					{
+						"id": "53",
+						"x": 1434.5,
+						"y": 207.5
+					},
+					{
+						"id": "54",
+						"x": 574.5,
+						"y": 212.5
+					},
+					{
+						"id": "56",
+						"x": 1561.5,
+						"y": 327.5
+					},
+					{
+						"id": "57",
+						"x": 424.5,
+						"y": 331.5
+					},
+					{
+						"id": "58",
+						"x": 855.5,
+						"y": 141.5
+					},
+					{
+						"id": "59",
+						"x": 855.5,
+						"y": 381.5
+					},
+					{
+						"id": "60",
+						"x": 850.5,
+						"y": 508.5
+					},
+					{
+						"id": "61",
+						"x": 848.5,
+						"y": 673.5
+					},
+					{
+						"id": "62",
+						"x": 849.5,
+						"y": 860.5
+					},
+					{
+						"id": "63",
+						"x": 1001.5,
+						"y": 284.5
+					},
+					{
+						"id": "64",
+						"x": 1152.5,
+						"y": 152.5
+					},
+					{
+						"id": "65",
+						"x": 1155.5,
+						"y": 350.5
+					},
+					{
+						"id": "66",
+						"x": 1153.5,
+						"y": 498.5
+					},
+					{
+						"id": "67",
+						"x": 1153.5,
+						"y": 674.5
+					},
+					{
+						"id": "68",
+						"x": 1156.5,
+						"y": 867.5
+					},
+					{
+						"id": "69",
+						"x": 1297.5,
+						"y": 288.5
+					},
+					{
+						"id": "70",
+						"x": 720.5,
+						"y": 272.5
+					},
+					{
+						"id": "71",
+						"x": 1207.5,
+						"y": 219.5
+					},
+					{
+						"id": "72",
+						"x": 1105.5,
+						"y": 217.5
+					},
+					{
+						"id": "73",
+						"x": 905.5,
+						"y": 216.5
+					},
+					{
+						"id": "74",
+						"x": 807.5,
+						"y": 218.5
+					},
+					{
+						"id": "75",
+						"x": 1335.5,
+						"y": 80.5
+					},
+					{
+						"id": "76",
+						"x": 681.5,
+						"y": 80.5
+					},
+					{
+						"id": "77",
+						"x": 1610.5,
+						"y": 114.5
+					},
+					{
+						"id": "78",
+						"x": 413.5,
+						"y": 113.5
+					},
+					{
+						"id": "81",
+						"x": 100,
+						"y": 100
+					},
+					{
+						"id": "82",
+						"x": 100,
+						"y": 100
+					}
+				],
+				"links": [
+					{
+						"from": "1",
+						"to": "0",
+						"type": "bothWays"
+					},
+					{
+						"from": "13",
+						"to": "0",
+						"type": "bothWays"
+					},
+					{
+						"from": "32",
+						"to": "31",
+						"type": "bothWays"
+					},
+					{
+						"from": "31",
+						"to": "30",
+						"type": "bothWays"
+					},
+					{
+						"from": "30",
+						"to": "27",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "30",
+						"to": "26",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "13",
+						"to": "11",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "13",
+						"to": "12",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "11",
+						"to": "18",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "12",
+						"to": "17",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "12",
+						"to": "18",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "11",
+						"to": "17",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "18",
+						"to": "16",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "17",
+						"to": "15",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "18",
+						"to": "15",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "17",
+						"to": "16",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "20",
+						"to": "23",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "19",
+						"to": "24",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "19",
+						"to": "23",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "20",
+						"to": "24",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "24",
+						"to": "14",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "24",
+						"to": "25",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "23",
+						"to": "14",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "23",
+						"to": "25",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "27",
+						"to": "28",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "26",
+						"to": "29",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "26",
+						"to": "28",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "27",
+						"to": "29",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "28",
+						"to": "21",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "29",
+						"to": "22",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "28",
+						"to": "22",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "29",
+						"to": "21",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "46",
+						"to": "12",
+						"type": "bothWays"
+					},
+					{
+						"from": "46",
+						"to": "20",
+						"type": "bothWays"
+					},
+					{
+						"from": "19",
+						"to": "43",
+						"type": "bothWays"
+					},
+					{
+						"from": "11",
+						"to": "12",
+						"type": "bothWays"
+					},
+					{
+						"from": "18",
+						"to": "17",
+						"type": "bothWays"
+					},
+					{
+						"from": "15",
+						"to": "16",
+						"type": "bothWays"
+					},
+					{
+						"from": "25",
+						"to": "14",
+						"type": "bothWays"
+					},
+					{
+						"from": "23",
+						"to": "24",
+						"type": "bothWays"
+					},
+					{
+						"from": "19",
+						"to": "20",
+						"type": "bothWays"
+					},
+					{
+						"from": "27",
+						"to": "26",
+						"type": "bothWays"
+					},
+					{
+						"from": "28",
+						"to": "29",
+						"type": "bothWays"
+					},
+					{
+						"from": "22",
+						"to": "21",
+						"type": "bothWays"
+					},
+					{
+						"from": "43",
+						"to": "27",
+						"type": "bothWays"
+					},
+					{
+						"from": "29",
+						"to": "47",
+						"type": "bothWays"
+					},
+					{
+						"from": "47",
+						"to": "23",
+						"type": "bothWays"
+					},
+					{
+						"from": "45",
+						"to": "24",
+						"type": "bothWays"
+					},
+					{
+						"from": "45",
+						"to": "17",
+						"type": "bothWays"
+					},
+					{
+						"from": "15",
+						"to": "44",
+						"type": "bothWays"
+					},
+					{
+						"from": "14",
+						"to": "44",
+						"type": "bothWays"
+					},
+					{
+						"from": "25",
+						"to": "48",
+						"type": "bothWays"
+					},
+					{
+						"from": "48",
+						"to": "22",
+						"type": "bothWays"
+					},
+					{
+						"from": "50",
+						"to": "13",
+						"type": "bothWays"
+					},
+					{
+						"from": "50",
+						"to": "52",
+						"type": "bothWays"
+					},
+					{
+						"from": "52",
+						"to": "51",
+						"type": "bothWays"
+					},
+					{
+						"from": "51",
+						"to": "49",
+						"type": "bothWays"
+					},
+					{
+						"from": "49",
+						"to": "30",
+						"type": "bothWays"
+					},
+					{
+						"from": "21",
+						"to": "40",
+						"type": "bothWays"
+					},
+					{
+						"from": "16",
+						"to": "37",
+						"type": "bothWays"
+					},
+					{
+						"from": "37",
+						"to": "18",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "40",
+						"to": "28",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "39",
+						"to": "38",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "41",
+						"to": "42",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "41",
+						"to": "53",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "53",
+						"to": "40",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "54",
+						"to": "37",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "38",
+						"to": "54",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "40",
+						"to": "56",
+						"type": "bothWays"
+					},
+					{
+						"from": "57",
+						"to": "37",
+						"type": "bothWays"
+					},
+					{
+						"from": "62",
+						"to": "61",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "61",
+						"to": "60",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "60",
+						"to": "59",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "59",
+						"to": "58",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "68",
+						"to": "67",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "67",
+						"to": "66",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "66",
+						"to": "65",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "65",
+						"to": "64",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "13",
+						"to": "62",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "52",
+						"to": "62",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "51",
+						"to": "68",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "30",
+						"to": "68",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "0",
+						"to": "11",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "31",
+						"to": "26",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "74",
+						"to": "58",
+						"type": "oneWayFrom"
+					},
+					{
+						"from": "58",
+						"to": "73",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "64",
+						"to": "72",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "64",
+						"to": "71",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "74",
+						"to": "76",
+						"type": "bothWays"
+					},
+					{
+						"from": "74",
+						"to": "70",
+						"type": "bothWays"
+					},
+					{
+						"from": "71",
+						"to": "69",
+						"type": "bothWays"
+					},
+					{
+						"from": "69",
+						"to": "22",
+						"type": "bothWays"
+					},
+					{
+						"from": "69",
+						"to": "21",
+						"type": "bothWays"
+					},
+					{
+						"from": "70",
+						"to": "16",
+						"type": "bothWays"
+					},
+					{
+						"from": "70",
+						"to": "15",
+						"type": "bothWays"
+					},
+					{
+						"from": "14",
+						"to": "63",
+						"type": "bothWays"
+					},
+					{
+						"from": "63",
+						"to": "25",
+						"type": "bothWays"
+					},
+					{
+						"from": "72",
+						"to": "63",
+						"type": "bothWays"
+					},
+					{
+						"from": "73",
+						"to": "63",
+						"type": "bothWays"
+					},
+					{
+						"from": "71",
+						"to": "75",
+						"type": "bothWays"
+					},
+					{
+						"from": "75",
+						"to": "77",
+						"type": "bothWays"
+					},
+					{
+						"from": "76",
+						"to": "78",
+						"type": "bothWays"
+					},
+					{
+						"from": "15",
+						"to": "24",
+						"type": "bothWays"
+					},
+					{
+						"from": "14",
+						"to": "17",
+						"type": "bothWays"
+					},
+					{
+						"from": "25",
+						"to": "29",
+						"type": "bothWays"
+					},
+					{
+						"from": "22",
+						"to": "23",
+						"type": "bothWays"
+					},
+					{
+						"from": "24",
+						"to": "12",
+						"type": "bothWays"
+					},
+					{
+						"from": "17",
+						"to": "20",
+						"type": "bothWays"
+					},
+					{
+						"from": "23",
+						"to": "27",
+						"type": "bothWays"
+					},
+					{
+						"from": "29",
+						"to": "19",
+						"type": "bothWays"
+					},
+					{
+						"from": "19",
+						"to": "30",
+						"type": "bothWays"
+					},
+					{
+						"from": "20",
+						"to": "13",
+						"type": "bothWays"
+					},
+					{
+						"from": "12",
+						"to": "52",
+						"type": "bothWays"
+					},
+					{
+						"from": "28",
+						"to": "32",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "32",
+						"to": "26",
+						"type": "bothWays"
+					},
+					{
+						"from": "18",
+						"to": "1",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "11",
+						"to": "1",
+						"type": "bothWays"
+					},
+					{
+						"from": "22",
+						"to": "19",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "15",
+						"to": "20",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "17",
+						"to": "52",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "29",
+						"to": "51",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "14",
+						"to": "12",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "25",
+						"to": "27",
+						"type": "oneWayTo"
+					},
+					{
+						"from": "51",
+						"to": "27",
+						"type": "bothWays"
+					}
+				]
+			}
+		},
+		{
+			"template": {
+				"key": "platform",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 850
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 400
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1000,
+					"y": 700
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 600,
+					"y": 150
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1400,
+					"y": 150
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 850,
+					"y": 250
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "platform_through",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1150,
+					"y": 250
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_ally",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 560,
+					"y": 340
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_ally",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 680,
+					"y": 480
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_opponent",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1440,
+					"y": 340
+				}
+			}
+		},
+		{
+			"template": {
+				"key": "spawn_point_opponent",
+				"spawner": 1
+			},
+			"transform": {
+				"position": {
+					"x": 1320,
+					"y": 480
+				}
+			}
+		}
+	],
+	"filename": "level6"
+}

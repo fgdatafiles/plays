@@ -1,0 +1,3319 @@
+{
+  "skeleton": {
+    "hash": "+7q6jlSoq33jgw+PCYFK8GPtPfc",
+    "spine": "3.8.94",
+    "x": -34.6,
+    "y": 1.82,
+    "width": 62.19,
+    "height": 134.14,
+    "images": "./images/",
+    "audio": ""
+  },
+  "bones": [
+    { "name": "root" },
+    { "name": "bone", "parent": "root", "x": -0.22, "y": 4.01 },
+    {
+      "name": "elmo_body",
+      "parent": "bone",
+      "length": 130.18,
+      "rotation": 89.41,
+      "x": -3.89,
+      "y": 39.51,
+      "scaleX": 0.2897,
+      "scaleY": 0.2897,
+      "transform": "noScale"
+    },
+    {
+      "name": "elmo_head",
+      "parent": "elmo_body",
+      "length": 120.9,
+      "rotation": 3.14,
+      "x": 144.91,
+      "y": 2.84,
+      "scaleX": 0.2897,
+      "scaleY": 0.2897,
+      "transform": "noScale"
+    },
+    {
+      "name": "elmo_arm_upper",
+      "parent": "elmo_body",
+      "length": 71.58,
+      "rotation": 150.18,
+      "x": 114.44,
+      "y": 28.01,
+      "scaleX": 0.2897,
+      "scaleY": 0.2897,
+      "transform": "noScale"
+    },
+    {
+      "name": "elmo_arm_front",
+      "parent": "elmo_arm_upper",
+      "length": 69.8,
+      "rotation": 31.51,
+      "x": 70.9,
+      "y": 1.16,
+      "scaleX": 0.2897,
+      "scaleY": 0.2897,
+      "transform": "noScale"
+    },
+    {
+      "name": "elmo_hand_front",
+      "parent": "elmo_arm_front",
+      "length": 49.67,
+      "rotation": 0.45,
+      "x": 67.16,
+      "y": 2.74,
+      "scaleX": 0.2897,
+      "scaleY": 0.2897,
+      "transform": "noScale"
+    },
+    {
+      "name": "elmo_arm_upper2",
+      "parent": "elmo_body",
+      "length": 71.58,
+      "rotation": 166.54,
+      "x": 130.44,
+      "y": -25.5,
+      "scaleX": 0.2897,
+      "scaleY": 0.2897,
+      "transform": "noScale"
+    },
+    {
+      "name": "elmo_arm_front2",
+      "parent": "elmo_arm_upper2",
+      "length": 69.8,
+      "rotation": 31.51,
+      "x": 70.9,
+      "y": 1.16,
+      "scaleX": 0.2897,
+      "scaleY": 0.2897,
+      "transform": "noScale"
+    },
+    {
+      "name": "elmo_hand_front2",
+      "parent": "elmo_arm_front2",
+      "length": 49.67,
+      "rotation": 0.45,
+      "x": 67.16,
+      "y": 2.74,
+      "scaleX": 0.2897,
+      "scaleY": 0.2897,
+      "transform": "noScale"
+    },
+    {
+      "name": "elmo_leg_upper",
+      "parent": "elmo_body",
+      "length": 65.44,
+      "rotation": -163.95,
+      "x": 4.57,
+      "y": -12.67,
+      "scaleX": 0.2897,
+      "scaleY": 0.2897,
+      "transform": "noScale"
+    },
+    {
+      "name": "elmo_shin",
+      "parent": "elmo_leg_upper",
+      "length": 60.4,
+      "rotation": -27.89,
+      "x": 59.91,
+      "y": 0.14,
+      "scaleX": 0.2897,
+      "scaleY": 0.2897,
+      "transform": "noScale"
+    },
+    {
+      "name": "elmo_foot",
+      "parent": "elmo_shin",
+      "length": 69.8,
+      "rotation": 99.65,
+      "x": 53.7,
+      "y": -0.15,
+      "scaleX": 0.2897,
+      "scaleY": 0.2897,
+      "transform": "noScale"
+    },
+    {
+      "name": "elmo_leg_upper2",
+      "parent": "elmo_body",
+      "length": 65.44,
+      "rotation": 179.59,
+      "x": 2.38,
+      "y": 29.36,
+      "scaleX": 0.2897,
+      "scaleY": 0.2897,
+      "transform": "noScale"
+    },
+    {
+      "name": "elmo_shin2",
+      "parent": "elmo_leg_upper2",
+      "length": 60.4,
+      "rotation": -16.76,
+      "x": 59.91,
+      "y": 0.14,
+      "scaleX": 0.2897,
+      "scaleY": 0.2897,
+      "transform": "noScale"
+    },
+    {
+      "name": "elmo_foot2",
+      "parent": "elmo_shin2",
+      "length": 69.8,
+      "rotation": 105.86,
+      "x": 53.7,
+      "y": -0.15,
+      "scaleX": 0.2897,
+      "scaleY": 0.2897,
+      "transform": "noScale"
+    },
+    {
+      "name": "elmo_mouth_1",
+      "parent": "elmo_head",
+      "x": 46.89,
+      "y": 22.4,
+      "scaleX": 0.2897,
+      "scaleY": 0.2897,
+      "transform": "noScale"
+    }
+  ],
+  "slots": [
+    { "name": "elmo_arm_upper2", "bone": "elmo_arm_upper2", "attachment": "elmo_arm_upper" },
+    { "name": "elmo_arm_front2", "bone": "elmo_arm_front2", "attachment": "elmo_arm_front" },
+    { "name": "elmo_hand_back", "bone": "elmo_hand_front2", "attachment": "elmo_hand_back" },
+    { "name": "elmo_shin", "bone": "elmo_shin", "attachment": "elmo_shin" },
+    { "name": "elmo_shin2", "bone": "elmo_shin2", "attachment": "elmo_shin" },
+    { "name": "elmo_leg_upper", "bone": "elmo_leg_upper", "attachment": "elmo_leg_upper" },
+    { "name": "elmo_leg_upper2", "bone": "elmo_leg_upper2", "attachment": "elmo_leg_upper" },
+    { "name": "elmo_body", "bone": "elmo_body", "attachment": "elmo_body" },
+    { "name": "elmo_foot", "bone": "elmo_foot", "attachment": "elmo_foot" },
+    { "name": "elmo_foot2", "bone": "elmo_foot2", "attachment": "elmo_foot" },
+    { "name": "elmo_arm_upper", "bone": "elmo_arm_upper", "attachment": "elmo_arm_upper" },
+    { "name": "elmo_arm_front", "bone": "elmo_arm_front", "attachment": "elmo_arm_front" },
+    { "name": "elmo_hand_front", "bone": "elmo_hand_front", "attachment": "elmo_hand_front" },
+    { "name": "elmo_head", "bone": "elmo_head", "attachment": "elmo_head" },
+    { "name": "elmo_blink", "bone": "elmo_head" },
+    { "name": "elmo_mouth_1", "bone": "elmo_mouth_1", "attachment": "elmo_mouth_1" },
+    { "name": "elmo_mouth_2", "bone": "elmo_mouth_1" }
+  ],
+  "animations": {
+    "idle_left": {
+      "slots": {
+        "elmo_blink": {
+          "attachment": [
+            { "time": 2.1333, "name": "elmo_blink" },
+            { "time": 2.2667, "name": null }
+          ]
+        }
+      },
+      "bones": {
+        "elmo_body": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ],
+          "translate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0
+            },
+            {
+              "time": 1,
+              "x": -0.55,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 3,
+              "x": -0.55,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4 }
+          ],
+          "scale": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 1,
+              "x": 1.02,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "y": 1.0
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 3,
+              "x": 1.02,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "y": 1.0
+            },
+            { "time": 4, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_head": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 2.74,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 2.74,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_arm_upper": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_arm_front": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_hand_front": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_arm_upper2": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_arm_front2": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_hand_front2": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_leg_upper": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 3.69,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 3.69,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_shin": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": -6.6,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": -6.6,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_foot": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.58,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.58,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_leg_upper2": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 4.35,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 4.35,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_shin2": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": -6.65,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": -6.65,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_foot2": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.67,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.67,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_mouth_1": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "bone": {
+				"scale": [
+					{ "x": -1, "time": 0.0, "y": 1.0 }
+				]
+        }
+      }
+    },
+    "idle_right": {
+      "slots": {
+        "elmo_blink": {
+          "attachment": [
+            { "time": 2.1333, "name": "elmo_blink" },
+            { "time": 2.2667, "name": null }
+          ]
+        }
+      },
+      "bones": {
+        "elmo_body": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ],
+          "translate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0
+            },
+            {
+              "time": 1,
+              "x": -0.55,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 3,
+              "x": -0.55,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4 }
+          ],
+          "scale": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 1,
+              "x": 1.02,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "y": 1.0
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 3,
+              "x": 1.02,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "y": 1.0
+            },
+            { "time": 4, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_head": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 2.74,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 2.74,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_arm_upper": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_arm_front": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_hand_front": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_arm_upper2": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_arm_front2": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_hand_front2": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_leg_upper": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 3.69,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 3.69,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_shin": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": -6.6,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": -6.6,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_foot": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.58,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.58,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_leg_upper2": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 4.35,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 4.35,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_shin2": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": -6.65,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": -6.65,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_foot2": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.67,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.67,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_mouth_1": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        }
+      }
+    },
+    "talk_left": {
+      "slots": {
+        "elmo_blink": {
+          "attachment": [
+            { "time": 2.1333, "name": "elmo_blink" },
+            { "time": 2.2667, "name": null }
+          ]
+        },
+        "elmo_mouth_2": {
+          "attachment": [
+            { "time": 0.0667, "name": "elmo_mouth_2" },
+            { "time": 0.2667, "name": null },
+            { "time": 0.4, "name": "elmo_mouth_2" },
+            { "time": 0.6, "name": null },
+            { "time": 0.7333, "name": "elmo_mouth_2" },
+            { "time": 0.9333, "name": null },
+            { "time": 1.0667, "name": "elmo_mouth_2" },
+            { "time": 1.2667, "name": null },
+            { "time": 1.4, "name": "elmo_mouth_2" },
+            { "time": 1.6, "name": null },
+            { "time": 1.7333, "name": "elmo_mouth_2" },
+            { "time": 1.9333, "name": null },
+            { "time": 2.0667, "name": "elmo_mouth_2" },
+            { "time": 2.2667, "name": null },
+            { "time": 2.4, "name": "elmo_mouth_2" },
+            { "time": 2.6, "name": null },
+            { "time": 2.7333, "name": "elmo_mouth_2" },
+            { "time": 2.9333, "name": null },
+            { "time": 3.0667, "name": "elmo_mouth_2" },
+            { "time": 3.2667, "name": null },
+            { "time": 3.4, "name": "elmo_mouth_2" },
+            { "time": 3.6, "name": null },
+            { "time": 3.7333, "name": "elmo_mouth_2" },
+            { "time": 3.9333, "name": null }
+          ]
+        }
+      },
+      "bones": {
+        "elmo_body": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ],
+          "translate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0
+            },
+            {
+              "time": 1,
+              "x": -0.55,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 3,
+              "x": -0.55,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4 }
+          ],
+          "scale": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 1,
+              "x": 1.02,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "y": 1.0
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 3,
+              "x": 1.02,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "y": 1.0
+            },
+            { "time": 4, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_head": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 2.74,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 2.74,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_arm_upper": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_arm_front": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_hand_front": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_arm_upper2": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_arm_front2": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_hand_front2": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_leg_upper": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 3.69,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 3.69,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_shin": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": -6.6,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": -6.6,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_foot": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.58,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.58,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_leg_upper2": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 4.35,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 4.35,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_shin2": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": -6.65,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": -6.65,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_foot2": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.67,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.67,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_mouth_1": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ],
+          "scale": [
+            {
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "time": 0.0,
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 0.1667,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            {
+              "time": 0.3333,
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 0.5,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            {
+              "time": 0.6667,
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 0.8333,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            {
+              "time": 1,
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 1.1667,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            {
+              "time": 1.3333,
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 1.5,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            {
+              "time": 1.6667,
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 1.8333,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            {
+              "time": 2,
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 2.1667,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            {
+              "time": 2.3333,
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 2.5,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            {
+              "time": 2.6667,
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 2.8333,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            {
+              "time": 3,
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 3.1667,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            {
+              "time": 3.3333,
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 3.5,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            {
+              "time": 3.6667,
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 3.8333,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            { "time": 4, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "bone": {
+				"scale": [
+					{ "x": -1, "time": 0.0, "y": 1.0 }
+				]
+        }
+      }
+    },
+    "talk_right": {
+      "slots": {
+        "elmo_blink": {
+          "attachment": [
+            { "time": 2.1333, "name": "elmo_blink" },
+            { "time": 2.2667, "name": null }
+          ]
+        },
+        "elmo_mouth_2": {
+          "attachment": [
+            { "time": 0.0667, "name": "elmo_mouth_2" },
+            { "time": 0.2667, "name": null },
+            { "time": 0.4, "name": "elmo_mouth_2" },
+            { "time": 0.6, "name": null },
+            { "time": 0.7333, "name": "elmo_mouth_2" },
+            { "time": 0.9333, "name": null },
+            { "time": 1.0667, "name": "elmo_mouth_2" },
+            { "time": 1.2667, "name": null },
+            { "time": 1.4, "name": "elmo_mouth_2" },
+            { "time": 1.6, "name": null },
+            { "time": 1.7333, "name": "elmo_mouth_2" },
+            { "time": 1.9333, "name": null },
+            { "time": 2.0667, "name": "elmo_mouth_2" },
+            { "time": 2.2667, "name": null },
+            { "time": 2.4, "name": "elmo_mouth_2" },
+            { "time": 2.6, "name": null },
+            { "time": 2.7333, "name": "elmo_mouth_2" },
+            { "time": 2.9333, "name": null },
+            { "time": 3.0667, "name": "elmo_mouth_2" },
+            { "time": 3.2667, "name": null },
+            { "time": 3.4, "name": "elmo_mouth_2" },
+            { "time": 3.6, "name": null },
+            { "time": 3.7333, "name": "elmo_mouth_2" },
+            { "time": 3.9333, "name": null }
+          ]
+        }
+      },
+      "bones": {
+        "elmo_body": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ],
+          "translate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0
+            },
+            {
+              "time": 1,
+              "x": -0.55,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 3,
+              "x": -0.55,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4 }
+          ],
+          "scale": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 1,
+              "x": 1.02,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "y": 1.0
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 3,
+              "x": 1.02,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "y": 1.0
+            },
+            { "time": 4, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_head": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 2.74,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 2.74,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_arm_upper": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_arm_front": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_hand_front": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_arm_upper2": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_arm_front2": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_hand_front2": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_leg_upper": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 3.69,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 3.69,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_shin": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": -6.6,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": -6.6,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_foot": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.58,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.58,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_leg_upper2": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 4.35,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 4.35,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_shin2": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": -6.65,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": -6.65,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_foot2": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.67,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.67,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ]
+        },
+        "elmo_mouth_1": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 1,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            {
+              "time": 2,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "angle": 0.0
+            },
+            {
+              "time": 3,
+              "angle": 0.97,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 4, "angle": 0.0 }
+          ],
+          "scale": [
+            {
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "time": 0.0,
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 0.1667,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            {
+              "time": 0.3333,
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 0.5,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            {
+              "time": 0.6667,
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 0.8333,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            {
+              "time": 1,
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 1.1667,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            {
+              "time": 1.3333,
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 1.5,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            {
+              "time": 1.6667,
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 1.8333,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            {
+              "time": 2,
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 2.1667,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            {
+              "time": 2.3333,
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 2.5,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            {
+              "time": 2.6667,
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 2.8333,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            {
+              "time": 3,
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 3.1667,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            {
+              "time": 3.3333,
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 3.5,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            {
+              "time": 3.6667,
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 3.8333,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            { "time": 4, "x": 1.0, "y": 1.0 }
+          ]
+        }
+      }
+    },
+    "walk_left": {
+      "bones": {
+        "elmo_body": {
+          "rotate": [
+            { "angle": 6.03, "time": 0.0 },
+            {
+              "time": 0.5,
+              "angle": 2.89,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 0.9333, "angle": 6.03 }
+          ],
+          "scale": [
+            { "time": 0.0, "x": 1.0, "y": 1.0 },
+            {
+              "time": 0.5,
+              "y": 1.012,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "x": 1.0
+            },
+            { "time": 0.9333, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_leg_upper2": {
+          "rotate": [
+            { "angle": -21.14, "time": 0.0 },
+            { "time": 0.3333, "angle": 55.83 },
+            { "time": 0.5333, "angle": 30.9 },
+            { "time": 0.8, "angle": -24.65 },
+            { "time": 0.9333, "angle": -21.14 }
+          ],
+          "translate": [
+            { "time": 0.0 },
+            { "time": 0.3333, "x": -2.01, "y": -21.07 },
+            { "time": 0.5333 }
+          ],
+          "scale": [
+            { "time": 0.0, "x": 1.0, "y": 1.0 },
+            { "time": 0.3333, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_leg_upper": {
+          "rotate": [
+            { "angle": 5.34, "time": 0.0 },
+            { "time": 0.3333, "angle": -49.35 },
+            { "time": 0.5333, "angle": -35.72 },
+            { "time": 0.8, "angle": 26.12 },
+            { "time": 0.9333, "angle": 5.34 }
+          ],
+          "translate": [
+            { "time": 0.0 },
+            { "time": 0.3333, "x": 1.53, "y": 16.09 },
+            { "time": 0.5333 }
+          ],
+          "scale": [
+            { "time": 0.0, "x": 1.0, "y": 1.0 },
+            { "time": 0.3333, "x": 1.057, "y": 1.0 },
+            { "time": 0.5333, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_arm_upper2": {
+          "rotate": [
+            {
+              "angle": 5.26,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0
+            },
+            {
+              "time": 0.4667,
+              "angle": 14.61,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 0.9333, "angle": 5.26 }
+          ],
+          "scale": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "x": 1.0,
+              "y": 1.0
+            },
+            { "time": 0.4667, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_arm_upper": {
+          "rotate": [
+            {
+              "angle": 16.27,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0
+            },
+            {
+              "time": 0.4667,
+              "angle": -2.94,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 0.9333, "angle": 16.27 }
+          ],
+          "scale": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "x": 1.0,
+              "y": 1.0
+            },
+            { "time": 0.4667, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_foot2": {
+          "rotate": [
+            { "angle": 23.74, "curve": "stepped", "time": 0.0 },
+            { "time": 0.3333, "angle": 23.74 },
+            { "time": 0.5333, "angle": -24.37 },
+            { "time": 0.8, "angle": 15.42 },
+            { "time": 0.9333, "angle": 23.74 }
+          ],
+          "scale": [
+            { "time": 0.0, "x": 1.0, "y": 1.0 },
+            { "time": 0.3333, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_head": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 0.4333,
+              "angle": -7.69,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 0.9333, "angle": 0.0 }
+          ],
+          "scale": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "x": 1.0,
+              "y": 1.0
+            },
+            { "time": 0.4333, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_arm_front": {
+          "scale": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "x": 1.0,
+              "y": 1.0
+            },
+            { "time": 0.4667, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_hand_front": {
+          "scale": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "x": 1.0,
+              "y": 1.0
+            },
+            { "time": 0.4667, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_arm_front2": {
+          "rotate": [
+            {
+              "angle": -18.7,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0
+            },
+            {
+              "time": 0.4667,
+              "angle": -9.35,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 0.9333, "angle": -18.7 }
+          ],
+          "scale": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "x": 1.0,
+              "y": 1.0
+            },
+            { "time": 0.4667, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_hand_front2": {
+          "rotate": [
+            {
+              "angle": -18.7,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0
+            },
+            {
+              "time": 0.4667,
+              "angle": -9.35,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 0.9333, "angle": -18.7 }
+          ],
+          "scale": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "x": 1.0,
+              "y": 1.0
+            },
+            { "time": 0.4667, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_shin": {
+          "rotate": [
+            { "time": 0.0, "angle": 0.0 },
+            { "time": 0.3333, "angle": -1.44 },
+            { "time": 0.5333, "angle": -65.68 },
+            { "time": 0.8, "angle": -49.61 },
+            { "time": 0.9333, "angle": 0.0 }
+          ],
+          "scale": [
+            { "time": 0.0, "x": 1.0, "y": 1.0 },
+            { "time": 0.3333, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_foot": {
+          "rotate": [
+            { "angle": -3.79, "time": 0.0 },
+            { "time": 0.3333, "angle": 33.85 },
+            { "time": 0.5333, "angle": 13.73 },
+            { "time": 0.8, "angle": 27.5 },
+            { "time": 0.9333, "angle": -3.79 }
+          ],
+          "scale": [
+            { "time": 0.0, "x": 1.0, "y": 1.0 },
+            { "time": 0.3333, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_shin2": {
+          "rotate": [
+            { "angle": -38.65, "time": 0.0 },
+            { "time": 0.3333, "angle": -61.61 },
+            { "time": 0.5333, "angle": -4.57 },
+            { "time": 0.8, "angle": 8.53 },
+            { "time": 0.9333, "angle": -38.65 }
+          ],
+          "scale": [
+            { "time": 0.0, "x": 1.0, "y": 1.0 },
+            { "time": 0.3333, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_mouth_1": {
+          "scale": [
+            { "time": 0.0, "x": 1.0, "y": 1.0 },
+            { "time": 0.3333, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "bone": {
+				"scale": [
+					{ "x": -1, "time": 0.0, "y": 1.0 }
+				]
+        }
+      }
+    },
+    "walk_left_talk": {
+      "slots": {
+        "elmo_mouth_2": {
+          "attachment": [
+            { "time": 0.0667, "name": "elmo_mouth_2" },
+            { "time": 0.2667, "name": null },
+            { "time": 0.4, "name": "elmo_mouth_2" },
+            { "time": 0.6, "name": null },
+            { "time": 0.7333, "name": "elmo_mouth_2" },
+            { "time": 0.9333, "name": null }
+          ]
+        }
+      },
+      "bones": {
+        "elmo_body": {
+          "rotate": [
+            { "angle": 6.03, "time": 0.0 },
+            {
+              "time": 0.5,
+              "angle": 2.89,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 0.9333, "angle": 6.03 }
+          ],
+          "scale": [
+            { "time": 0.0, "x": 1.0, "y": 1.0 },
+            {
+              "time": 0.5,
+              "y": 1.012,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "x": 1.0
+            },
+            { "time": 0.9333, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_leg_upper2": {
+          "rotate": [
+            { "angle": -21.14, "time": 0.0 },
+            { "time": 0.3333, "angle": 55.83 },
+            { "time": 0.5333, "angle": 30.9 },
+            { "time": 0.8, "angle": -24.65 },
+            { "time": 0.9333, "angle": -21.14 }
+          ],
+          "translate": [
+            { "time": 0.0 },
+            { "time": 0.3333, "x": -2.01, "y": -21.07 },
+            { "time": 0.5333 }
+          ],
+          "scale": [
+            { "time": 0.0, "x": 1.0, "y": 1.0 },
+            { "time": 0.3333, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_leg_upper": {
+          "rotate": [
+            { "angle": 5.34, "time": 0.0 },
+            { "time": 0.3333, "angle": -49.35 },
+            { "time": 0.5333, "angle": -35.72 },
+            { "time": 0.8, "angle": 26.12 },
+            { "time": 0.9333, "angle": 5.34 }
+          ],
+          "translate": [
+            { "time": 0.0 },
+            { "time": 0.3333, "x": 1.53, "y": 16.09 },
+            { "time": 0.5333 }
+          ],
+          "scale": [
+            { "time": 0.0, "x": 1.0, "y": 1.0 },
+            { "time": 0.3333, "x": 1.057, "y": 1.0 },
+            { "time": 0.5333, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_arm_upper2": {
+          "rotate": [
+            {
+              "angle": 5.26,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0
+            },
+            {
+              "time": 0.4667,
+              "angle": 14.61,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 0.9333, "angle": 5.26 }
+          ],
+          "scale": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "x": 1.0,
+              "y": 1.0
+            },
+            { "time": 0.4667, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_arm_upper": {
+          "rotate": [
+            {
+              "angle": 16.27,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0
+            },
+            {
+              "time": 0.4667,
+              "angle": -2.94,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 0.9333, "angle": 16.27 }
+          ],
+          "scale": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "x": 1.0,
+              "y": 1.0
+            },
+            { "time": 0.4667, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_foot2": {
+          "rotate": [
+            { "angle": 23.74, "curve": "stepped", "time": 0.0 },
+            { "time": 0.3333, "angle": 23.74 },
+            { "time": 0.5333, "angle": -24.37 },
+            { "time": 0.8, "angle": 15.42 },
+            { "time": 0.9333, "angle": 23.74 }
+          ],
+          "scale": [
+            { "time": 0.0, "x": 1.0, "y": 1.0 },
+            { "time": 0.3333, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_head": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 0.4333,
+              "angle": -7.69,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 0.9333, "angle": 0.0 }
+          ],
+          "scale": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "x": 1.0,
+              "y": 1.0
+            },
+            { "time": 0.4333, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_arm_front": {
+          "scale": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "x": 1.0,
+              "y": 1.0
+            },
+            { "time": 0.4667, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_hand_front": {
+          "scale": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "x": 1.0,
+              "y": 1.0
+            },
+            { "time": 0.4667, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_arm_front2": {
+          "rotate": [
+            {
+              "angle": -18.7,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0
+            },
+            {
+              "time": 0.4667,
+              "angle": -9.35,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 0.9333, "angle": -18.7 }
+          ],
+          "scale": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "x": 1.0,
+              "y": 1.0
+            },
+            { "time": 0.4667, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_hand_front2": {
+          "rotate": [
+            {
+              "angle": -18.7,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0
+            },
+            {
+              "time": 0.4667,
+              "angle": -9.35,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 0.9333, "angle": -18.7 }
+          ],
+          "scale": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "x": 1.0,
+              "y": 1.0
+            },
+            { "time": 0.4667, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_shin": {
+          "rotate": [
+            { "time": 0.0, "angle": 0.0 },
+            { "time": 0.3333, "angle": -1.44 },
+            { "time": 0.5333, "angle": -65.68 },
+            { "time": 0.8, "angle": -49.61 },
+            { "time": 0.9333, "angle": 0.0 }
+          ],
+          "scale": [
+            { "time": 0.0, "x": 1.0, "y": 1.0 },
+            { "time": 0.3333, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_foot": {
+          "rotate": [
+            { "angle": -3.79, "time": 0.0 },
+            { "time": 0.3333, "angle": 33.85 },
+            { "time": 0.5333, "angle": 13.73 },
+            { "time": 0.8, "angle": 27.5 },
+            { "time": 0.9333, "angle": -3.79 }
+          ],
+          "scale": [
+            { "time": 0.0, "x": 1.0, "y": 1.0 },
+            { "time": 0.3333, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_shin2": {
+          "rotate": [
+            { "angle": -38.65, "time": 0.0 },
+            { "time": 0.3333, "angle": -61.61 },
+            { "time": 0.5333, "angle": -4.57 },
+            { "time": 0.8, "angle": 8.53 },
+            { "time": 0.9333, "angle": -38.65 }
+          ],
+          "scale": [
+            { "time": 0.0, "x": 1.0, "y": 1.0 },
+            { "time": 0.3333, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_mouth_1": {
+          "scale": [
+            {
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "time": 0.0,
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 0.1667,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            {
+              "time": 0.3333,
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 0.5,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            { "time": 0.5333, "curve": "stepped", "x": 1.0, "y": 1.0 },
+            { "time": 0.8, "x": 1.0, "y": 1.0 },
+            {
+              "time": 0.8333,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            { "time": 0.9333, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "bone": {
+				"scale": [
+					{ "x": -1, "time": 0.0, "y": 1.0 }
+				]
+        }
+      }
+    },
+    "walk_right": {
+      "bones": {
+        "elmo_body": {
+          "rotate": [
+            { "angle": 6.03, "time": 0.0 },
+            {
+              "time": 0.5,
+              "angle": 2.89,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 0.9333, "angle": 6.03 }
+          ],
+          "scale": [
+            { "time": 0.0, "x": 1.0, "y": 1.0 },
+            {
+              "time": 0.5,
+              "y": 1.012,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "x": 1.0
+            },
+            { "time": 0.9333, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_leg_upper2": {
+          "rotate": [
+            { "angle": -21.14, "time": 0.0 },
+            { "time": 0.3333, "angle": 55.83 },
+            { "time": 0.5333, "angle": 30.9 },
+            { "time": 0.8, "angle": -24.65 },
+            { "time": 0.9333, "angle": -21.14 }
+          ],
+          "translate": [
+            { "time": 0.0 },
+            { "time": 0.3333, "x": -2.01, "y": -21.07 },
+            { "time": 0.5333 }
+          ]
+        },
+        "elmo_leg_upper": {
+          "rotate": [
+            { "angle": 5.34, "time": 0.0 },
+            { "time": 0.3333, "angle": -49.35 },
+            { "time": 0.5333, "angle": -35.72 },
+            { "time": 0.8, "angle": 26.12 },
+            { "time": 0.9333, "angle": 5.34 }
+          ],
+          "translate": [
+            { "time": 0.0 },
+            { "time": 0.3333, "x": 1.53, "y": 16.09 },
+            { "time": 0.5333 }
+          ],
+          "scale": [
+            { "time": 0.0, "x": 1.0, "y": 1.0 },
+            { "time": 0.3333, "x": 1.057, "y": 1.0 },
+            { "time": 0.5333, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_arm_upper2": {
+          "rotate": [
+            {
+              "angle": 5.26,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0
+            },
+            {
+              "time": 0.4667,
+              "angle": 14.61,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 0.9333, "angle": 5.26 }
+          ]
+        },
+        "elmo_arm_upper": {
+          "rotate": [
+            {
+              "angle": 16.27,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0
+            },
+            {
+              "time": 0.4667,
+              "angle": -2.94,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 0.9333, "angle": 16.27 }
+          ]
+        },
+        "elmo_foot2": {
+          "rotate": [
+            { "angle": 23.74, "curve": "stepped", "time": 0.0 },
+            { "time": 0.3333, "angle": 23.74 },
+            { "time": 0.5333, "angle": -24.37 },
+            { "time": 0.8, "angle": 15.42 },
+            { "time": 0.9333, "angle": 23.74 }
+          ]
+        },
+        "elmo_head": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 0.4333,
+              "angle": -7.69,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 0.9333, "angle": 0.0 }
+          ]
+        },
+        "elmo_arm_front2": {
+          "rotate": [
+            {
+              "angle": -18.7,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0
+            },
+            {
+              "time": 0.4667,
+              "angle": -9.35,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 0.9333, "angle": -18.7 }
+          ]
+        },
+        "elmo_hand_front2": {
+          "rotate": [
+            {
+              "angle": -18.7,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0
+            },
+            {
+              "time": 0.4667,
+              "angle": -9.35,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 0.9333, "angle": -18.7 }
+          ]
+        },
+        "elmo_shin": {
+          "rotate": [
+            { "time": 0.0, "angle": 0.0 },
+            { "time": 0.3333, "angle": -1.44 },
+            { "time": 0.5333, "angle": -65.68 },
+            { "time": 0.8, "angle": -49.61 },
+            { "time": 0.9333, "angle": 0.0 }
+          ]
+        },
+        "elmo_foot": {
+          "rotate": [
+            { "angle": -3.79, "time": 0.0 },
+            { "time": 0.3333, "angle": 33.85 },
+            { "time": 0.5333, "angle": 13.73 },
+            { "time": 0.8, "angle": 27.5 },
+            { "time": 0.9333, "angle": -3.79 }
+          ]
+        },
+        "elmo_shin2": {
+          "rotate": [
+            { "angle": -38.65, "time": 0.0 },
+            { "time": 0.3333, "angle": -61.61 },
+            { "time": 0.5333, "angle": -4.57 },
+            { "time": 0.8, "angle": 8.53 },
+            { "time": 0.9333, "angle": -38.65 }
+          ]
+        }
+      }
+    },
+    "walk_right_talk": {
+      "slots": {
+        "elmo_mouth_2": {
+          "attachment": [
+            { "time": 0.0667, "name": "elmo_mouth_2" },
+            { "time": 0.2667, "name": null },
+            { "time": 0.4, "name": "elmo_mouth_2" },
+            { "time": 0.6, "name": null },
+            { "time": 0.7333, "name": "elmo_mouth_2" },
+            { "time": 0.9333, "name": null }
+          ]
+        }
+      },
+      "bones": {
+        "elmo_body": {
+          "rotate": [
+            { "angle": 6.03, "time": 0.0 },
+            {
+              "time": 0.5,
+              "angle": 2.89,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 0.9333, "angle": 6.03 }
+          ],
+          "scale": [
+            { "time": 0.0, "x": 1.0, "y": 1.0 },
+            {
+              "time": 0.5,
+              "y": 1.012,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "x": 1.0
+            },
+            { "time": 0.9333, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_leg_upper2": {
+          "rotate": [
+            { "angle": -21.14, "time": 0.0 },
+            { "time": 0.3333, "angle": 55.83 },
+            { "time": 0.5333, "angle": 30.9 },
+            { "time": 0.8, "angle": -24.65 },
+            { "time": 0.9333, "angle": -21.14 }
+          ],
+          "translate": [
+            { "time": 0.0 },
+            { "time": 0.3333, "x": -2.01, "y": -21.07 },
+            { "time": 0.5333 }
+          ]
+        },
+        "elmo_leg_upper": {
+          "rotate": [
+            { "angle": 5.34, "time": 0.0 },
+            { "time": 0.3333, "angle": -49.35 },
+            { "time": 0.5333, "angle": -35.72 },
+            { "time": 0.8, "angle": 26.12 },
+            { "time": 0.9333, "angle": 5.34 }
+          ],
+          "translate": [
+            { "time": 0.0 },
+            { "time": 0.3333, "x": 1.53, "y": 16.09 },
+            { "time": 0.5333 }
+          ],
+          "scale": [
+            { "time": 0.0, "x": 1.0, "y": 1.0 },
+            { "time": 0.3333, "x": 1.057, "y": 1.0 },
+            { "time": 0.5333, "x": 1.0, "y": 1.0 }
+          ]
+        },
+        "elmo_arm_upper2": {
+          "rotate": [
+            {
+              "angle": 5.26,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0
+            },
+            {
+              "time": 0.4667,
+              "angle": 14.61,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 0.9333, "angle": 5.26 }
+          ]
+        },
+        "elmo_arm_upper": {
+          "rotate": [
+            {
+              "angle": 16.27,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0
+            },
+            {
+              "time": 0.4667,
+              "angle": -2.94,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 0.9333, "angle": 16.27 }
+          ]
+        },
+        "elmo_foot2": {
+          "rotate": [
+            { "angle": 23.74, "curve": "stepped", "time": 0.0 },
+            { "time": 0.3333, "angle": 23.74 },
+            { "time": 0.5333, "angle": -24.37 },
+            { "time": 0.8, "angle": 15.42 },
+            { "time": 0.9333, "angle": 23.74 }
+          ]
+        },
+        "elmo_head": {
+          "rotate": [
+            {
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0,
+              "angle": 0.0
+            },
+            {
+              "time": 0.4333,
+              "angle": -7.69,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 0.9333, "angle": 0.0 }
+          ]
+        },
+        "elmo_arm_front2": {
+          "rotate": [
+            {
+              "angle": -18.7,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0
+            },
+            {
+              "time": 0.4667,
+              "angle": -9.35,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 0.9333, "angle": -18.7 }
+          ]
+        },
+        "elmo_hand_front2": {
+          "rotate": [
+            {
+              "angle": -18.7,
+              "curve": [0.25, 0.0, 0.75, 1.0],
+              "time": 0.0
+            },
+            {
+              "time": 0.4667,
+              "angle": -9.35,
+              "curve": [0.25, 0.0, 0.75, 1.0]
+            },
+            { "time": 0.9333, "angle": -18.7 }
+          ]
+        },
+        "elmo_shin": {
+          "rotate": [
+            { "time": 0.0, "angle": 0.0 },
+            { "time": 0.3333, "angle": -1.44 },
+            { "time": 0.5333, "angle": -65.68 },
+            { "time": 0.8, "angle": -49.61 },
+            { "time": 0.9333, "angle": 0.0 }
+          ]
+        },
+        "elmo_foot": {
+          "rotate": [
+            { "angle": -3.79, "time": 0.0 },
+            { "time": 0.3333, "angle": 33.85 },
+            { "time": 0.5333, "angle": 13.73 },
+            { "time": 0.8, "angle": 27.5 },
+            { "time": 0.9333, "angle": -3.79 }
+          ]
+        },
+        "elmo_shin2": {
+          "rotate": [
+            { "angle": -38.65, "time": 0.0 },
+            { "time": 0.3333, "angle": -61.61 },
+            { "time": 0.5333, "angle": -4.57 },
+            { "time": 0.8, "angle": 8.53 },
+            { "time": 0.9333, "angle": -38.65 }
+          ]
+        },
+        "elmo_mouth_1": {
+          "scale": [
+            {
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "time": 0.0,
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 0.1667,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            {
+              "time": 0.3333,
+              "curve": [0.28999999165534973, 0.0, 0.6290000081062317, 0.3799999952316284],
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 0.5,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            { "time": 0.5333, "curve": "stepped", "x": 1.0, "y": 1.0 },
+            { "time": 0.8, "x": 1.0, "y": 1.0 },
+            {
+              "time": 0.8333,
+              "x": 1.092,
+              "curve": [0.3109999895095825, 0.25, 0.6489999890327454, 0.6000000238418579],
+              "y": 1.0
+            },
+            { "time": 0.9333, "x": 1.0, "y": 1.0 }
+          ]
+        }
+      }
+    }
+  },
+  "skins": {
+    "default": {
+      "elmo_arm_front": {
+        "elmo_arm_front": { "x": 30.19, "y": 2.18, "rotation": 88.9, "width": 35, "height": 87 }
+      },
+      "elmo_arm_front2": {
+        "elmo_arm_front": { "x": 30.19, "y": 2.18, "rotation": 88.9, "width": 35, "height": 87 }
+      },
+      "elmo_arm_upper": {
+        "elmo_arm_upper": { "x": 34.48, "y": 2.46, "rotation": 120.41, "width": 60, "height": 87 }
+      },
+      "elmo_arm_upper2": {
+        "elmo_arm_upper": { "x": 34.48, "y": 2.46, "rotation": 120.41, "width": 60, "height": 87 }
+      },
+      "elmo_blink": {
+        "elmo_blink": { "x": 136.38, "y": 1.28, "rotation": -92.54, "width": 129, "height": 77 }
+      },
+      "elmo_body": {
+        "elmo_body": { "x": 67.51, "y": -4.81, "rotation": -89.41, "width": 136, "height": 169 }
+      },
+      "elmo_foot": {
+        "elmo_foot": { "x": 38.8, "y": -5.59, "rotation": 1.1, "width": 106, "height": 56 }
+      },
+      "elmo_foot2": {
+        "elmo_foot": { "x": 38.8, "y": -5.59, "rotation": 1.1, "width": 106, "height": 56 }
+      },
+      "elmo_hand_back": {
+        "elmo_hand_back": { "x": 20.12, "y": 1.15, "rotation": 72.09, "width": 70, "height": 64 }
+      },
+      "elmo_hand_front": {
+        "elmo_hand_front": { "x": 23, "y": 4.1, "rotation": 88.45, "width": 66, "height": 64 }
+      },
+      "elmo_head": {
+        "elmo_head": { "x": 80.05, "y": -2.66, "rotation": -92.54, "width": 206, "height": 188 }
+      },
+      "elmo_leg_upper": {
+        "elmo_leg_upper": { "x": 35.47, "y": 4.28, "rotation": 74.54, "width": 39, "height": 75 }
+      },
+      "elmo_leg_upper2": {
+        "elmo_leg_upper": { "x": 35.47, "y": 4.28, "rotation": 74.54, "width": 39, "height": 75 }
+      },
+      "elmo_mouth_1": {
+        "elmo_mouth_1": { "x": -1.93, "y": -2.86, "rotation": -92.54, "width": 56, "height": 42 }
+      },
+      "elmo_mouth_2": {
+        "elmo_mouth_2": { "x": -6.68, "y": -8.27, "rotation": -92.54, "width": 71, "height": 36 }
+      },
+      "elmo_shin": {
+        "elmo_shin": { "x": 25.98, "y": 1.25, "rotation": 91.27, "width": 29, "height": 76 }
+      },
+      "elmo_shin2": {
+        "elmo_shin": { "x": 25.98, "y": 1.25, "rotation": 91.27, "width": 29, "height": 76 }
+      }
+    }
+  }
+}

@@ -1,0 +1,735 @@
+{
+"skeleton": {
+	"hash": "n1v+FCtY/4rrGyMCE6Nq/QRIalY",
+	"spine": "3.8.95",
+	"x": -140.13,
+	"y": 0.66,
+	"width": 299,
+	"height": 496.71,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "elmo_body", "parent": "root", "length": 130.18, "rotation": 89.41, "x": 13.37, "y": 144.96 },
+	{ "name": "elmo_head", "parent": "elmo_body", "length": 120.9, "rotation": 3.14, "x": 144.91, "y": 2.84 },
+	{ "name": "elmo_arm_upper", "parent": "elmo_body", "length": 71.58, "rotation": 150.18, "x": 93.36, "y": 27.79 },
+	{ "name": "elmo_arm_front", "parent": "elmo_arm_upper", "length": 69.8, "rotation": 31.51, "x": 37.53, "y": -2.07 },
+	{ "name": "elmo_hand_front", "parent": "elmo_arm_front", "length": 49.67, "rotation": 0.45, "x": 50.63, "y": 14.52 },
+	{ "name": "elmo_arm_upper2", "parent": "elmo_body", "length": 71.58, "rotation": -176.28, "x": 98.43, "y": -37.02 },
+	{ "name": "elmo_arm_front2", "parent": "elmo_arm_upper2", "length": 69.8, "rotation": 31.51, "x": 52.57, "y": -0.97 },
+	{ "name": "elmo_hand_front2", "parent": "elmo_arm_front2", "length": 49.67, "rotation": 0.45, "x": 42.02, "y": 5.1 },
+	{ "name": "elmo_leg_upper", "parent": "elmo_body", "length": 65.44, "rotation": -163.95, "x": 4.57, "y": -12.67 },
+	{ "name": "elmo_shin", "parent": "elmo_leg_upper", "length": 60.4, "rotation": -27.89, "x": 59.91, "y": 0.14 },
+	{ "name": "elmo_foot", "parent": "elmo_shin", "length": 69.8, "rotation": 99.65, "x": 53.7, "y": -0.15 },
+	{ "name": "elmo_leg_upper2", "parent": "elmo_body", "length": 65.44, "rotation": 179.59, "x": 2.38, "y": 29.36 },
+	{ "name": "elmo_shin2", "parent": "elmo_leg_upper2", "length": 60.4, "rotation": -16.76, "x": 59.91, "y": 0.14 },
+	{ "name": "elmo_foot2", "parent": "elmo_shin2", "length": 69.8, "rotation": 105.86, "x": 53.7, "y": -0.15 },
+	{ "name": "elmo_mouth_1", "parent": "elmo_head", "x": -10.83, "y": -5.05 }
+],
+"slots": [
+	{ "name": "elmo_arm_upper2", "bone": "elmo_arm_upper2", "attachment": "abby_arm_upper" },
+	{ "name": "elmo_arm_front2", "bone": "elmo_arm_front2", "attachment": "abby_forearm" },
+	{ "name": "elmo_hand_back", "bone": "elmo_hand_front2", "attachment": "abby_hand" },
+	{ "name": "elmo_shin", "bone": "elmo_shin", "attachment": "abby_shin" },
+	{ "name": "elmo_shin2", "bone": "elmo_shin2", "attachment": "abby_shin" },
+	{ "name": "elmo_leg_upper", "bone": "elmo_leg_upper", "attachment": "abby_leg_upper" },
+	{ "name": "elmo_leg_upper2", "bone": "elmo_leg_upper2", "attachment": "abby_leg_upper" },
+	{ "name": "elmo_body", "bone": "elmo_body", "attachment": "abby_body" },
+	{ "name": "elmo_foot", "bone": "elmo_foot", "attachment": "abby_foot" },
+	{ "name": "elmo_foot2", "bone": "elmo_foot2", "attachment": "abby_foot" },
+	{ "name": "elmo_arm_upper", "bone": "elmo_arm_upper", "attachment": "abby_arm_upper" },
+	{ "name": "elmo_arm_front", "bone": "elmo_arm_front", "attachment": "abby_forearm" },
+	{ "name": "elmo_hand_front", "bone": "elmo_hand_front", "attachment": "abby_hand" },
+	{ "name": "elmo_head", "bone": "elmo_head", "attachment": "abby_head" },
+	{ "name": "elmo_blink", "bone": "elmo_head" },
+	{ "name": "elmo_mouth_1", "bone": "elmo_mouth_1", "attachment": "abby_mouth_1" },
+	{ "name": "elmo_mouth_2", "bone": "elmo_mouth_1" }
+],
+"animations": {
+	"idle": {
+		"bones": {
+			"elmo_body": {
+				"rotate": [
+					{ "angle": 6.03, "time": 0.0 },
+					{
+						"time": 0.5,
+						"angle": 2.89,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 0.9333, "angle": 6.03 }
+				],
+				"scale": [
+					{ "time": 0.0, "x": 1.0, "y": 1.0 },
+					{
+						"time": 0.5,
+						"y": 1.012,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"x": 1.0
+					},
+					{ "time": 0.9333, "x": 1.0, "y": 1.0 }
+				]
+			},
+			"elmo_leg_upper2": {
+				"rotate": [
+					{ "angle": -21.14, "time": 0.0 },
+					{ "time": 0.3333, "angle": 55.83 },
+					{ "time": 0.5333, "angle": 30.9 },
+					{ "time": 0.8, "angle": -24.65 },
+					{ "time": 0.9333, "angle": -21.14 }
+				],
+				"translate": [
+					{ "time": 0.0 },
+					{ "time": 0.3333, "x": -2.01, "y": -21.07 },
+					{ "time": 0.5333 }
+				]
+			},
+			"elmo_leg_upper": {
+				"rotate": [
+					{ "angle": 5.34, "time": 0.0 },
+					{ "time": 0.3333, "angle": -49.35 },
+					{ "time": 0.5333, "angle": -35.72 },
+					{ "time": 0.8, "angle": 26.12 },
+					{ "time": 0.9333, "angle": 5.34 }
+				],
+				"translate": [
+					{ "time": 0.0 },
+					{ "time": 0.3333, "x": 1.53, "y": 16.09 },
+					{ "time": 0.5333 }
+				],
+				"scale": [
+					{ "time": 0.0, "x": 1.0, "y": 1.0 },
+					{ "time": 0.3333, "x": 1.057, "y": 1.0 },
+					{ "time": 0.5333, "x": 1.0, "y": 1.0 }
+				]
+			},
+			"elmo_arm_upper2": {
+				"rotate": [
+					{
+						"angle": 5.26,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0
+					},
+					{
+						"time": 0.4667,
+						"angle": 14.61,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 0.9333, "angle": 5.26 }
+				]
+			},
+			"elmo_arm_upper": {
+				"rotate": [
+					{
+						"angle": 16.27,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0
+					},
+					{
+						"time": 0.4667,
+						"angle": -2.94,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 0.9333, "angle": 16.27 }
+				]
+			},
+			"elmo_foot2": {
+				"rotate": [
+					{ "angle": 23.74, "curve": "stepped", "time": 0.0 },
+					{ "time": 0.3333, "angle": 23.74 },
+					{ "time": 0.5333, "angle": -24.37 },
+					{ "time": 0.8, "angle": 15.42 },
+					{ "time": 0.9333, "angle": 23.74 }
+				]
+			},
+			"elmo_head": {
+				"rotate": [
+					{
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0,
+						"angle": 0.0
+					},
+					{
+						"time": 0.4333,
+						"angle": -7.69,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 0.9333, "angle": 0.0 }
+				]
+			},
+			"elmo_arm_front2": {
+				"rotate": [
+					{
+						"angle": -18.7,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0
+					},
+					{
+						"time": 0.4667,
+						"angle": -9.35,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 0.9333, "angle": -18.7 }
+				]
+			},
+			"elmo_hand_front2": {
+				"rotate": [
+					{
+						"angle": -18.7,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0
+					},
+					{
+						"time": 0.4667,
+						"angle": -9.35,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 0.9333, "angle": -18.7 }
+				]
+			},
+			"elmo_shin": {
+				"rotate": [
+					{ "time": 0.0, "angle": 0.0 },
+					{ "time": 0.3333, "angle": -1.44 },
+					{ "time": 0.5333, "angle": -65.68 },
+					{ "time": 0.8, "angle": -49.61 },
+					{ "time": 0.9333, "angle": 0.0 }
+				]
+			},
+			"elmo_foot": {
+				"rotate": [
+					{ "angle": -3.79, "time": 0.0 },
+					{ "time": 0.3333, "angle": 33.85 },
+					{ "time": 0.5333, "angle": 13.73 },
+					{ "time": 0.8, "angle": 27.5 },
+					{ "time": 0.9333, "angle": -3.79 }
+				]
+			},
+			"elmo_shin2": {
+				"rotate": [
+					{ "angle": -38.65, "time": 0.0 },
+					{ "time": 0.3333, "angle": -61.61 },
+					{ "time": 0.5333, "angle": -4.57 },
+					{ "time": 0.8, "angle": 8.53 },
+					{ "time": 0.9333, "angle": -38.65 }
+				]
+			}
+		}
+	},
+	"talk": {
+		"slots": {
+			"elmo_mouth_1": {
+				"attachment": [
+					{ "name": null, "time": 0.0 },
+					{ "time": 0.2333, "name": "abby_mouth_1" },
+					{ "time": 0.3333, "name": null },
+					{ "time": 0.4667, "name": "abby_mouth_1" },
+					{ "time": 0.6333, "name": null },
+					{ "time": 0.8667, "name": "abby_mouth_1" },
+					{ "time": 0.9333, "name": null },
+					{ "time": 1.1667, "name": "abby_mouth_1" },
+					{ "time": 1.2667, "name": null },
+					{ "time": 1.3667, "name": "abby_mouth_1" },
+					{ "time": 1.5667, "name": null },
+					{ "time": 1.8, "name": "abby_mouth_1" }
+				]
+			},
+			"elmo_mouth_2": {
+				"attachment": [
+					{ "name": "Abby_mouth_2", "time": 0.0 },
+					{ "time": 0.2333, "name": null },
+					{ "time": 0.3333, "name": "Abby_mouth_2" },
+					{ "time": 0.4667, "name": null },
+					{ "time": 0.6333, "name": "Abby_mouth_2" },
+					{ "time": 0.8667, "name": null },
+					{ "time": 0.9333, "name": "Abby_mouth_2" },
+					{ "time": 1.1667, "name": null },
+					{ "time": 1.2667, "name": "Abby_mouth_2" },
+					{ "time": 1.3667, "name": null },
+					{ "time": 1.5667, "name": "Abby_mouth_2" },
+					{ "time": 1.8, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"elmo_body": {
+				"rotate": [
+					{ "angle": 6.03, "time": 0.0 },
+					{
+						"time": 0.5,
+						"angle": 2.89,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 0.9333, "angle": 6.03 },
+					{
+						"time": 1.4333,
+						"angle": 2.89,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 1.8667, "angle": 6.03 }
+				],
+				"scale": [
+					{ "time": 0.0, "x": 1.0, "y": 1.0 },
+					{
+						"time": 0.5,
+						"y": 1.012,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"x": 1.0
+					},
+					{ "time": 0.9333, "x": 1.0, "y": 1.0 },
+					{
+						"time": 1.4333,
+						"y": 1.012,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"x": 1.0
+					},
+					{ "time": 1.8667, "x": 1.0, "y": 1.0 }
+				]
+			},
+			"elmo_leg_upper2": {
+				"rotate": [
+					{ "angle": -21.14, "time": 0.0 },
+					{ "time": 0.3333, "angle": 55.83 },
+					{ "time": 0.5333, "angle": 30.9 },
+					{ "time": 0.8, "angle": -24.65 },
+					{ "time": 0.9333, "angle": -21.14 },
+					{ "time": 1.2667, "angle": 55.83 },
+					{ "time": 1.4667, "angle": 30.9 },
+					{ "time": 1.7333, "angle": -24.65 },
+					{ "time": 1.8667, "angle": -21.14 }
+				],
+				"translate": [
+					{ "time": 0.0 },
+					{ "time": 0.3333, "x": -2.01, "y": -21.07 },
+					{ "time": 0.5333, "curve": "stepped" },
+					{ "time": 0.9333 },
+					{ "time": 1.2667, "x": -2.01, "y": -21.07 },
+					{ "time": 1.4667 }
+				]
+			},
+			"elmo_leg_upper": {
+				"rotate": [
+					{ "angle": 5.34, "time": 0.0 },
+					{ "time": 0.3333, "angle": -49.35 },
+					{ "time": 0.5333, "angle": -35.72 },
+					{ "time": 0.8, "angle": 26.12 },
+					{ "time": 0.9333, "angle": 5.34 },
+					{ "time": 1.2667, "angle": -49.35 },
+					{ "time": 1.4667, "angle": -35.72 },
+					{ "time": 1.7333, "angle": 26.12 },
+					{ "time": 1.8667, "angle": 5.34 }
+				],
+				"translate": [
+					{ "time": 0.0 },
+					{ "time": 0.3333, "x": 1.53, "y": 16.09 },
+					{ "time": 0.5333, "curve": "stepped" },
+					{ "time": 0.9333 },
+					{ "time": 1.2667, "x": 1.53, "y": 16.09 },
+					{ "time": 1.4667 }
+				],
+				"scale": [
+					{ "time": 0.0, "x": 1.0, "y": 1.0 },
+					{ "time": 0.3333, "x": 1.057, "y": 1.0 },
+					{ "time": 0.5333, "curve": "stepped", "x": 1.0, "y": 1.0 },
+					{ "time": 0.9333, "x": 1.0, "y": 1.0 },
+					{ "time": 1.2667, "x": 1.057, "y": 1.0 },
+					{ "time": 1.4667, "x": 1.0, "y": 1.0 }
+				]
+			},
+			"elmo_arm_upper2": {
+				"rotate": [
+					{
+						"angle": 5.26,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0
+					},
+					{
+						"time": 0.4667,
+						"angle": 14.61,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 0.9333,
+						"angle": 5.26,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 1.4,
+						"angle": 14.61,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 1.8667, "angle": 5.26 }
+				]
+			},
+			"elmo_arm_upper": {
+				"rotate": [
+					{
+						"angle": 16.27,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0
+					},
+					{
+						"time": 0.4667,
+						"angle": -2.94,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 0.9333,
+						"angle": 16.27,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 1.4,
+						"angle": -2.94,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 1.8667, "angle": 16.27 }
+				]
+			},
+			"elmo_foot2": {
+				"rotate": [
+					{ "angle": 23.74, "curve": "stepped", "time": 0.0 },
+					{ "time": 0.3333, "angle": 23.74 },
+					{ "time": 0.5333, "angle": -24.37 },
+					{ "time": 0.8, "angle": 15.42 },
+					{ "time": 0.9333, "angle": 23.74, "curve": "stepped" },
+					{ "time": 1.2667, "angle": 23.74 },
+					{ "time": 1.4667, "angle": -24.37 },
+					{ "time": 1.7333, "angle": 15.42 },
+					{ "time": 1.8667, "angle": 23.74 }
+				]
+			},
+			"elmo_head": {
+				"rotate": [
+					{
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0,
+						"angle": 0.0
+					},
+					{
+						"time": 0.4333,
+						"angle": -7.69,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 0.9333,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"angle": 0.0
+					},
+					{
+						"time": 1.3667,
+						"angle": -7.69,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 1.8667, "angle": 0.0 }
+				]
+			},
+			"elmo_arm_front2": {
+				"rotate": [
+					{
+						"angle": -18.7,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0
+					},
+					{
+						"time": 0.4667,
+						"angle": -9.35,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 0.9333,
+						"angle": -18.7,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 1.4,
+						"angle": -9.35,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 1.8667, "angle": -18.7 }
+				]
+			},
+			"elmo_hand_front2": {
+				"rotate": [
+					{
+						"angle": -18.7,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0
+					},
+					{
+						"time": 0.4667,
+						"angle": -9.35,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 0.9333,
+						"angle": -18.7,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 1.4,
+						"angle": -9.35,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 1.8667, "angle": -18.7 }
+				]
+			},
+			"elmo_shin": {
+				"rotate": [
+					{ "time": 0.0, "angle": 0.0 },
+					{ "time": 0.3333, "angle": -1.44 },
+					{ "time": 0.5333, "angle": -65.68 },
+					{ "time": 0.8, "angle": -49.61 },
+					{ "time": 0.9333, "angle": 0.0 },
+					{ "time": 1.2667, "angle": -1.44 },
+					{ "time": 1.4667, "angle": -65.68 },
+					{ "time": 1.7333, "angle": -49.61 },
+					{ "time": 1.8667, "angle": 0.0 }
+				]
+			},
+			"elmo_foot": {
+				"rotate": [
+					{ "angle": -3.79, "time": 0.0 },
+					{ "time": 0.3333, "angle": 33.85 },
+					{ "time": 0.5333, "angle": 13.73 },
+					{ "time": 0.8, "angle": 27.5 },
+					{ "time": 0.9333, "angle": -3.79 },
+					{ "time": 1.2667, "angle": 33.85 },
+					{ "time": 1.4667, "angle": 13.73 },
+					{ "time": 1.7333, "angle": 27.5 },
+					{ "time": 1.8667, "angle": -3.79 }
+				]
+			},
+			"elmo_shin2": {
+				"rotate": [
+					{ "angle": -38.65, "time": 0.0 },
+					{ "time": 0.3333, "angle": -61.61 },
+					{ "time": 0.5333, "angle": -4.57 },
+					{ "time": 0.8, "angle": 8.53 },
+					{ "time": 0.9333, "angle": -38.65 },
+					{ "time": 1.2667, "angle": -61.61 },
+					{ "time": 1.4667, "angle": -4.57 },
+					{ "time": 1.7333, "angle": 8.53 },
+					{ "time": 1.8667, "angle": -38.65 }
+				]
+			},
+			"elmo_mouth_1": {
+				"translate": [
+					{
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0
+					},
+					{
+						"time": 0.1333,
+						"x": 0.2,
+						"y": 1.99,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 0.2667,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 0.4,
+						"x": 0.2,
+						"y": 1.99,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 0.5333, "curve": "stepped" },
+					{
+						"time": 0.6333,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 0.7667,
+						"x": 0.2,
+						"y": 1.99,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 0.9, "curve": "stepped" },
+					{
+						"time": 0.9333,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 1.0667,
+						"x": 0.2,
+						"y": 1.99,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 1.2,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 1.2667,
+						"x": 0.2,
+						"y": 1.99,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 1.3667, "curve": "stepped" },
+					{
+						"time": 1.4,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 1.5,
+						"x": 0.2,
+						"y": 1.99,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 1.7 }
+				],
+				"scale": [
+					{
+						"x": 0.722,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0,
+						"y": 1.0
+					},
+					{
+						"time": 0.1333,
+						"x": 1.195,
+						"y": 0.804,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 0.2667,
+						"x": 0.722,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"y": 1.0
+					},
+					{
+						"time": 0.4,
+						"x": 1.195,
+						"y": 0.804,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 0.5333,
+						"x": 0.783,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"y": 1.0
+					},
+					{
+						"time": 0.6333,
+						"x": 0.722,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"y": 1.0
+					},
+					{
+						"time": 0.7667,
+						"x": 1.195,
+						"y": 0.804,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 0.9,
+						"x": 0.783,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"y": 1.0
+					},
+					{
+						"time": 0.9333,
+						"x": 0.722,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"y": 1.0
+					},
+					{
+						"time": 1.0667,
+						"x": 1.195,
+						"y": 0.804,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 1.2,
+						"x": 0.722,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"y": 1.0
+					},
+					{
+						"time": 1.2667,
+						"x": 1.195,
+						"y": 0.804,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 1.3667,
+						"x": 0.783,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"y": 1.0
+					},
+					{
+						"time": 1.4,
+						"x": 0.722,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"y": 1.0
+					},
+					{
+						"time": 1.5,
+						"x": 1.195,
+						"y": 0.804,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 1.7, "x": 0.783, "y": 1.0 }
+				]
+			}
+		}
+	}
+},
+"skins": {
+	"default": {
+		"elmo_arm_front": {
+			"abby_forearm": { "x": 30.19, "y": 2.18, "rotation": 61.61, "width": 35, "height": 43 }
+		},
+		"elmo_arm_front2": {
+			"abby_forearm": { "x": 30.19, "y": 2.18, "rotation": 64.87, "width": 35, "height": 43 }
+		},
+		"elmo_arm_upper": {
+			"abby_arm_upper": { "x": 24.3, "y": 5.64, "rotation": 120.41, "width": 47, "height": 80 }
+		},
+		"elmo_arm_upper2": {
+			"abby_arm_upper": { "x": 34.48, "y": 2.46, "rotation": 120.41, "width": 47, "height": 80 }
+		},
+		"elmo_blink": {
+			"Abby_Blink": { "x": 136.38, "y": 1.28, "rotation": -92.54, "width": 135, "height": 61 }
+		},
+		"elmo_body": {
+			"abby_body": { "x": 51.48, "y": 10.02, "rotation": -89.41, "width": 244, "height": 212 }
+		},
+		"elmo_foot": {
+			"abby_foot": { "x": 21.18, "y": -6.45, "rotation": 1.1, "width": 86, "height": 57 }
+		},
+		"elmo_foot2": {
+			"abby_foot": { "x": 26.46, "y": -6, "rotation": 1.1, "width": 86, "height": 57 }
+		},
+		"elmo_hand_back": {
+			"abby_hand": { "x": 20.12, "y": 1.15, "rotation": 72.09, "width": 56, "height": 60 }
+		},
+		"elmo_hand_front": {
+			"abby_hand": { "x": 23, "y": 4.1, "rotation": 88.45, "width": 56, "height": 60 }
+		},
+		"elmo_head": {
+			"abby_head": { "x": 81.01, "y": -0.94, "rotation": -92.54, "width": 299, "height": 253 }
+		},
+		"elmo_leg_upper": {
+			"abby_leg_upper": { "x": 34.75, "y": 1.68, "rotation": 74.54, "width": 36, "height": 76 }
+		},
+		"elmo_leg_upper2": {
+			"abby_leg_upper": { "x": 29.18, "y": 4.17, "rotation": 74.54, "width": 36, "height": 76 }
+		},
+		"elmo_mouth_1": {
+			"abby_mouth_1": { "x": -1.93, "y": -2.86, "rotation": -92.54, "width": 45, "height": 23 }
+		},
+		"elmo_mouth_2": {
+			"Abby_mouth_2": { "x": -6.68, "y": -8.27, "rotation": -92.54, "width": 53, "height": 29 }
+		},
+		"elmo_shin": {
+			"abby_shin": { "x": 22.17, "y": -2.35, "rotation": 91.27, "width": 31, "height": 75 }
+		},
+		"elmo_shin2": {
+			"abby_shin": { "x": 18.59, "y": 0.77, "rotation": 91.27, "width": 31, "height": 75 }
+		}
+	}
+}
+}

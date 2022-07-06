@@ -1,0 +1,271 @@
+{
+"skeleton": {
+	"hash": "igvTAeumQo/4f7crtCBuudWCUWs",
+	"spine": "3.8.95",
+	"x": -146.18,
+	"y": -5.5,
+	"width": 275,
+	"height": 454,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "Abby_Scientist", "parent": "root", "length": 173.66, "rotation": 90.29, "x": 0.54, "y": 35.75 },
+	{ "name": "Abby_mouth_talk", "parent": "Abby_Scientist", "x": 210.92, "y": 9.93 },
+	{ "name": "Abby_Blink", "parent": "Abby_Scientist", "x": 258.79, "y": 14.63 }
+],
+"slots": [
+	{ "name": "Abby_Scientist", "bone": "Abby_Scientist", "attachment": "Abby_Architect" },
+	{ "name": "Abby_Blink", "bone": "Abby_Blink" },
+	{ "name": "Abby_mouth_talk", "bone": "Abby_mouth_talk" }
+],
+"animations": {
+	"idle": {
+		"slots": {
+			"Abby_Blink": {
+				"attachment": [
+					{ "time": 3.1667, "name": "Abby_Blink" },
+					{ "time": 3.3, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"Abby_Scientist": {
+				"scale": [
+					{
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0,
+						"x": 1.0,
+						"y": 1.0
+					},
+					{
+						"time": 1.3333,
+						"x": 1.018,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"y": 1.0
+					},
+					{
+						"time": 2.6667,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"x": 1.0,
+						"y": 1.0
+					},
+					{
+						"time": 4,
+						"x": 1.018,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"y": 1.0
+					},
+					{ "time": 5.3333, "x": 1.0, "y": 1.0 }
+				]
+			}
+		}
+	},
+	"talk": {
+		"slots": {
+			"Abby_mouth_talk": {
+				"attachment": [
+					{ "name": "Abby_mouth_talk", "time": 0.0 },
+					{ "time": 0.3333, "name": null },
+					{ "time": 0.4667, "name": "Abby_mouth_talk" },
+					{ "time": 0.8, "name": null },
+					{ "time": 0.9, "name": "Abby_mouth_talk" },
+					{ "time": 1.0667, "name": null },
+					{ "time": 1.1333, "name": "Abby_mouth_talk" },
+					{ "time": 1.2667, "name": null },
+					{ "time": 1.3667, "name": "Abby_mouth_talk" },
+					{ "time": 1.5333, "name": null },
+					{ "time": 1.6667, "name": "Abby_mouth_talk" },
+					{ "time": 1.7333, "name": null },
+					{ "time": 1.9, "name": "Abby_mouth_talk" }
+				]
+			}
+		},
+		"bones": {
+			"Abby_mouth_talk": {
+				"rotate": [
+					{ "time": 0.6333, "angle": 0.0 },
+					{ "time": 0.8333, "angle": 4.25 },
+					{ "time": 0.9667, "angle": 0.0 }
+				],
+				"translate": [
+					{
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0
+					},
+					{
+						"time": 0.2,
+						"x": -1.98,
+						"y": 0.01,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 0.4,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 0.6333,
+						"x": -1.65,
+						"y": 0.01,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 0.8333,
+						"x": 1.98,
+						"y": -0.01,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 0.9667,
+						"x": -1.65,
+						"y": 0.01,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 1.1,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 1.2,
+						"x": -1.65,
+						"y": 0.01,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 1.3,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 1.4333,
+						"x": -1.65,
+						"y": 0.01,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 1.5333,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 1.6667,
+						"x": -1.65,
+						"y": 0.01,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 1.8,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 1.9333,
+						"x": -1.65,
+						"y": 0.01,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 2 }
+				],
+				"scale": [
+					{
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"time": 0.0,
+						"x": 1.0,
+						"y": 1.0
+					},
+					{
+						"time": 0.2,
+						"x": 1.325,
+						"y": 0.907,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 0.4,
+						"y": 1.056,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"x": 1.0
+					},
+					{
+						"time": 0.6333,
+						"x": 1.218,
+						"y": 0.898,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 0.8333,
+						"y": 1.069,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"x": 1.0
+					},
+					{
+						"time": 0.9667,
+						"x": 1.218,
+						"y": 0.898,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 1.1,
+						"y": 1.069,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"x": 1.0
+					},
+					{
+						"time": 1.2,
+						"x": 1.218,
+						"y": 0.898,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 1.3,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"x": 1.0,
+						"y": 1.0
+					},
+					{
+						"time": 1.4333,
+						"x": 1.218,
+						"y": 0.898,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 1.5333,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"x": 1.0,
+						"y": 1.0
+					},
+					{
+						"time": 1.6667,
+						"x": 1.218,
+						"y": 0.898,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{
+						"time": 1.8,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ],
+						"x": 1.0,
+						"y": 1.0
+					},
+					{
+						"time": 1.9333,
+						"x": 1.218,
+						"y": 0.898,
+						"curve": [ 0.25, 0.0, 0.75, 1.0 ]
+					},
+					{ "time": 2, "x": 1.0, "y": 1.0 }
+				]
+			}
+		}
+	}
+},
+"skins": {
+	"default": {
+		"Abby_Blink": {
+			"Abby_Blink": { "x": 4.7, "y": 8.79, "scaleX": 1.0418, "scaleY": 1.0418, "rotation": -90.29, "width": 114, "height": 49 }
+		},
+		"Abby_Scientist": {
+			"Abby_Architect": { "x": 185.79, "y": 8.27, "rotation": -90.29, "width": 275, "height": 454 }
+		},
+		"Abby_mouth_talk": {
+			"Abby_mouth_talk": { "x": 2, "y": 4.02, "rotation": -90.29, "width": 43, "height": 23 }
+		}
+	}
+}
+}

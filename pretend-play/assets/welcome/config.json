@@ -1,0 +1,37 @@
+{
+  "dialogue": {
+    "characters": {
+      "elmo": {
+        "sprite": "elmo",
+        "x": 100,
+        "y": 522
+      },
+      "abby": {
+        "sprite": "abby",
+        "x": -105,
+        "y": 532
+      }
+    },
+    "no_move": true,
+    "data": {
+      "welcome_1": {
+        "character": "elmo",
+        "script": [
+          "ASP_1.0_2",
+          { "type": "pause", "delay": 0.2 }
+        ]
+      },
+      "welcome_2": {
+        "character": "abby",
+        "script": [
+          "ASP_1.0_2A",
+          { "type": "pause", "delay": 0.5 }
+        ]
+      },
+      "start_prompt": {
+        "character": "elmo",
+        "script": "ASP_1.0_3"
+      }
+    }
+  }
+}

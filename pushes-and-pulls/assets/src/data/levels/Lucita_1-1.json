@@ -1,0 +1,266 @@
+{
+  "header": {
+    "id": "8917a3b8-27ef-414f-a439-bca82e2591a0",
+    "timestamp": 1.31822985469875E+17
+  },
+  "meta": {
+    "name": "Push it!",
+    "heroID": "Em"
+  },
+  "feedback": {
+    "start": [
+      {
+        "text": "Fur Blur needs help getting to her snack. Can you make a path for her?",
+        "voice": "voice:SPARKS_TUTORIAL_1"
+      }
+    ],
+    "complete": [
+      {
+        "text": "You did it! Can you help Fur Blur get more snacks?",
+        "voice": "voice:SPARKS_WIN_1"
+      }
+    ]
+  },
+  "display": {
+    "size": [
+      6,
+      6
+    ],
+    "background": "rings"
+  },
+  "collisions": {
+    "tiles": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      0,
+      3,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "actors": {
+    "actors": [
+      {
+        "id": 1,
+        "className": "start",
+        "position": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "className": "furBlur",
+        "position": [
+          0,
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "className": "goal",
+        "position": [
+          5,
+          2
+        ]
+      },
+      {
+        "id": 4,
+        "className": "hotspot",
+        "name": "tut-hotspot",
+        "position": [
+          2,
+          2
+        ],
+        "properties": {
+          "renameActor": "tut-pushable-active"
+        }
+      },
+      {
+        "id": 5,
+        "className": "node",
+        "name": "tut-target-player",
+        "position": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 6,
+        "className": "node",
+        "name": "tut-target-pushable",
+        "position": [
+          3,
+          1
+        ]
+      }
+    ]
+  },
+  "toolbox": {
+    "actors": [
+      {
+        "id": 7,
+        "className": "pushable",
+        "name": "tut-pushable-toolbox",
+        "properties": {
+          "shape": 1,
+          "skin": 0
+        }
+      }
+    ]
+  },
+  "bgTiles": {
+    "tiles": [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  "collisionTiles": {
+    "tiles": [
+      2,
+      16,
+      2,
+      20,
+      0,
+      16,
+      3,
+      3,
+      5,
+      -1,
+      5,
+      19,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  "fgTiles": {
+    "tiles": [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  "decorations": {
+    "decorations": [
+    ]
+  }
+}

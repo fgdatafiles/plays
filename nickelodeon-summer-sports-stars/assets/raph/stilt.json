@@ -1,0 +1,132 @@
+{
+	pieces : [{
+			asset : "trunk", 
+			x : 0, 
+			y : 0, 
+			rotation : 0, 
+			back : false, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 53, 
+				height : 59
+			}, 
+			massMultiplier : 5
+		},{
+			asset : "arm_back", 
+			x : 34, 
+			y : 14, 
+			rotation : 0, 
+			back : true, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 41, 
+				height : 60
+			}
+		},{
+			asset : "leg_back_stilt", 
+			x : 56, 
+			y : 111, 
+			rotation : -25, 
+			back : false, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 39, 
+				height : 204
+			}, 
+			massMultiplier : 3
+		},{
+			asset : "head", 
+			x : -4, 
+			y : -48, 
+			rotation : 0, 
+			back : false, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 98, 
+				height : 60
+			}, 
+			massMultiplier : 0.1
+		},{
+			asset : "leg_front_stilt", 
+			x : -41, 
+			y : 112, 
+			rotation : 25, 
+			back : false, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 39, 
+				height : 203
+			}, 
+			massMultiplier : 3
+		},{
+			asset : "arm_front", 
+			x : -26, 
+			y : 10, 
+			rotation : 0, 
+			back : false, 
+			pivot : {
+				x : 0, 
+				y : 0
+			}, 
+			shape : {
+				width : 41, 
+				height : 60
+			}
+		}], 
+	constraints : [{
+			id1 : "trunk", 
+			id2 : "head", 
+			x : 3, 
+			y : -27, 
+			type : "WeldJoint", 
+			params : null, 
+			maxForce : null
+		},{
+			id1 : "trunk", 
+			id2 : "leg_front_stilt", 
+			x : -1, 
+			y : 24, 
+			type : "PivotJoint", 
+			params : null, 
+			maxForce : null
+		},{
+			id1 : "trunk", 
+			id2 : "leg_back_stilt", 
+			x : 12, 
+			y : 24, 
+			type : "PivotJoint", 
+			params : null, 
+			maxForce : null
+		},{
+			id1 : "trunk", 
+			id2 : "arm_front", 
+			x : -10, 
+			y : -17, 
+			type : "PivotJoint", 
+			params : null, 
+			maxForce : null
+		},{
+			id1 : "trunk", 
+			id2 : "arm_back", 
+			x : 19, 
+			y : -13, 
+			type : "PivotJoint", 
+			params : null, 
+			maxForce : null
+		}]
+}
