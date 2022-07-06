@@ -1,0 +1,55 @@
+/* Fonts */
+@font-face {
+  font-family: 'GrilledCheese';
+  src: url('assets/fonts/GrilledCheeseBTNWideBold.WOFF') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MartenPro';
+  src: url('assets/fonts/FontFont - MartenPro.WOFF') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fredburger-Regular';
+  src: url('assets/fonts/FREDFREDBURGERARA-REGULAR.WOFF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#font_preload1 {
+  font-family: 'GrilledCheese';
+  color: red;
+}
+#font_preload2 {
+  font-family: 'MartenPro';
+  color: red;
+}
+#font_preload3 {
+  font-family: 'Fredburger-Regular';
+  color: red;
+}
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #000;
+}
+
+canvas {
+  border:0px solid black;
+  /*border:1px solid white;*/
+  background: #000000;
+  display:block;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.preload {
+  display: none;
+}

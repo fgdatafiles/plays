@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<title>Loading Rocket Engine Project</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="user-scalable=no">
+<meta name="HandheldFriendly" content="true">
+<link rel="stylesheet" type="text/css" href="assets/sources/css/game.min.css">
+<script type="text/javascript" src="assets/sources/js/boot/boot.client.min.js"></script>
+<script type="text/javascript">
+  rpjs.info.buildTarget = '';
+  </script>
+<script type="text/javascript" id="rpjsSources"></script>
+<script type="text/javascript">
+                        document.oncontextmenu = function oncontextmenu(e) {
+                                e = e || window.event;
+                                if (e.preventDefault)
+                                        e.preventDefault();
+                                else
+                                        return false;
+                        };
+                        document.ontouchmove = function ontouchmove(e)
+                        {
+                                e = e || window.event;
+                                e.preventDefault();
+                        }
+
+                        function RPJS_SetLoadingLabel(text)
+                        {
+                                var elem = RPJS_Loader.getElement('#rpjsLoadingLabel');
+                                if (elem != undefined)
+                                {
+                                        if (text.length > 0 && text[text.length-1] != '!')
+                                                text = text + '...';
+                                        elem.innerText = text;
+                                }
+                        }
+                        function RPJS_SetLoadingProgress(pct)
+                        {
+                                var barInner = RPJS_Loader.getElement('#rpjsLoadingBarInner');
+                                if (barInner == null) {
+                                        var spinner = RPJS_Loader.getElement('#rpjsLoadingSpinner');
+                                        if (spinner != undefined)
+                                                spinner.parentNode.removeChild(spinner);
+
+                                        var loadingScreen = RPJS_Loader.getElement('#rpjsLoadingScreen');
+                                        if (loadingScreen != null) {
+                                                barInner = document.createElement('div')
+                                                barInner.setAttribute('id', 'rpjsLoadingBarInner');
+                                                var barOuter = document.createElement('div')
+                                                barOuter.setAttribute('id', 'rpjsLoadingBarOuter');
+                                                barOuter.appendChild(barInner);
+                                                loadingScreen.appendChild(barOuter);
+                                        }
+                                }
+
+                                if (barInner != undefined)
+                                        barInner.style.width = (pct*100.0) + '%';
+                        }
+                        function RPJS_ShowSpinner()
+                        {
+                                var spinner = RPJS_Loader.getElement('#rpjsLoadingSpinner');
+                                if (spinner == null) {
+                                        var bar = RPJS_Loader.getElement('#rpjsLoadingBarOuter');
+                                        if (bar != undefined)
+                                                bar.parentNode.removeChild(bar);
+
+                                        var loadingScreen = RPJS_Loader.getElement('#rpjsLoadingScreen');
+                                        if (loadingScreen != null) {
+                                                spinner = document.createElement('div')
+                                                spinner.setAttribute('id', 'rpjsLoadingSpinner');
+                                                loadingScreen.appendChild(spinner);
+                                        }
+                                }
+                        }
+
+                        if (rpjs.info.buildTarget != 'PhoneGap')
+                        {
+                                RPJS_Boot.__RPJS_PreEntryPoint();
+                        }
+                        else
+                        {
+                                // TODO: build this into PhoneGap's __RPJS_PreEntryPoint() instead of having here...
+                                document.addEventListener("deviceready", onDeviceReady, false);
+                                function onDeviceReady()
+                                {
+                                        RPJS_Boot.__RPJS_PreEntryPoint();
+                        RPJS_Boot.__RPJS_EntryPoint();
+                                }
+                        }
+  </script>
+</head>
+<body>
+<div id="rpjsStaticCss"></div>
+<div id="rpjsDynamicCss"></div>
+<div id="rpjsMain" class="rpjsFill">
+<div id="rpjsGame" class="rpjsFill">
+<div id="rpjsLoadingScreen" class="rpjsFill">
+<div id="rpjsLoadingImage" title="Rocket Engine"></div>
+<div id="rpjsLoadingBarOuter">
+<div id="rpjsLoadingBarInner"></div>
+</div>
+<p id="rpjsLoadingLabel">Loading game...</p>
+</div>
+<div id="rpjsSafeDialog" class="rpnLoginTree" style="display:none">
+<div id="rpjsOverlay" style="opacity:0.8;">
+<div class="rpjsOverlayDialog rpjsSmall" id="rpjsUIDialog" style="top: 50%;">
+<h1 id="rpjsUIDialogTitle">Welcome to Rocket Engine!</h1>
+<div id="rpjsUIDialogContent">
+<div id="rpnLoginDialog">
+<form id="rpnLoginForm" target="rpnIdFrame" autocomplete="on" method="post" action="/id/ping" name="rpnLoginForm">
+<div>
+<label for="login">Email</label><input class="rpnLogin" id="rpnLoginEmail" type="text" name="login" value="">
+</div>
+<div class="rpnPasswordInputDiv">
+<label for="password">Password</label><input class="rpnPassword" id="rpnLoginPassword" type="password" name="password">
+</div>
+<div>
+<span class="rpnLoginError"></span> <button id="rpnLoginButton" class="ui-state-default ui-corner-all" type="submit">Sign in</button>
+</div>
+<div>
+<a id="rpnShowRegister" href="#">Create an account</a>
+</div>
+<div id="rpnShowResetPasswordDiv">
+<a id="rpnShowResetPassword" href="#">Forgot password?</a>
+</div>
+</form>
+<form id="rpnPasswordlessLoginForm" target="rpnIdFrame" autocomplete="on" method="post" action="/id/ping" name="rpnPasswordlessLoginForm">
+<div>
+<label for="login">Name</label><input class="rpnLogin" id="rpnPasswordlessLoginEmail" type="text" name="login" value=""> <button id="rpnPasswordlessLoginButton" class="ui-state-default ui-corner-all" type="submit">Sign in</button>
+</div>
+<div>
+<span class="rpnLoginError"></span>
+</div>
+</form>
+<form id="rpnRegisterForm" target="rpnIdFrame" autocomplete="on" method="post" action="/id/ping" name="rpnRegisterForm">
+<div>
+<label for="login">Email</label><input class="rpnLogin" id="rpnRegisterEmail" type="text" name="login" value="">
+ </div>
+<div class="rpnPasswordInputDiv">
+<label for="password">Password</label><input class="rpnPassword" id="rpnRegisterPassword" type="password" name="password">
+</div>
+<div>
+<span class="rpnLoginError">error</span> <button id="rpnRegisterButton" class="ui-state-default ui-corner-all" type="submit">Create an account</button>
+</div>
+<div>
+<a class="rpnShowLogin" href="#">Back to sign in</a>
+</div>
+</form>
+<form id="rpnResetPasswordForm" name="rpnResetPasswordForm">
+<div>
+<label for="login">Email</label><input class="rpnLogin" type="text" name="login" value="">
+</div>
+<div>
+<span class="rpnLoginError"></span> <button id="rpnResetPasswordButton" class="ui-state-default ui-corner-all" type="submit">Send new password</button>
+</div>
+<div>
+<a class="rpnShowLogin" href="#">Back to sign in</a>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="fb-root"></div>
+<div id="rpjsLoggingDiv" errors="0"></div>
+<script type="text/javascript">
+                        if (rpjs.info.buildTarget != 'PhoneGap') 
+            {
+
+                    RPJS_Boot.__RPJS_EntryPoint();
+            }
+                        // trackLoad();
+  </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+/* Fonts */
+@font-face {
+  font-family: 'Unpack-Regular';
+  src: url('assets/fonts/Unpack-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MartenPro';
+  src: url('assets/fonts/FREDFREDBURGER-REGULAR.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fredburger-Regular';
+  src: url('assets/fonts/FREDFREDBURGERARA-REGULAR.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#font_preload1 {
+  font-family: 'Unpack-Regular';
+  color: red;
+}
+
+#font_preload2 {
+  font-family: 'MartenPro';
+  color: red;
+}
+
+#font_preload3 {
+  font-family: 'Fredburger-Regular';
+  color: red;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #000;
+}
+
+canvas {
+  border:0px solid black;
+  /*border:1px solid white;*/
+  background: #000000;
+  display:block;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.preload {
+  display: none;
+}

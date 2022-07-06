@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--<translation attributes>-->
+<!-- defaultFont dictates the font (based on the id set in fonts.xml) that all fields will use unless fontId is specified within that field's individual tag.-->
+
+<!-- <Node Attributes> -->
+<!-- id is not Optional. It tells flash which text field to change. -->
+<!-- fontScale is Optional. It allows you to customize the size of the font used in this particular field. 1 is normal. 2 is double size. .5 is half size. Defaults to 1.-->
+<!-- fontName is Optional. It allows you to customize the font used in this particular field. Leave it out to use the default font (specified by defaultFont).-->
+<!-- offsetX is Optional. It allows you to move the text field a certain number of pixels on the X axis. Leave it out or use 0 if you don't want to move the text. -->
+<!-- offsetY is Optional. It allows you to move the text field a certain number of pixels on the Y axis. Leave it out or use 0 if you don't want to move the text.-->
+
+<strings defaultFont="font_body">
+	<!--Preloader-->
+	<string id="loading"				fontName="font_body"	fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Loading]]></string>
+	<!--Splash-->
+	<string id="title"					fontName="font_body"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Pizza Quest]]></string>
+	<string id="tmnt_logo"				fontName="font_body"	fontScale="0.2"	offsetX="0" offsetY="0"><![CDATA[nickelodeon<br>Teenage Mutant<br>Ninja Turtles]]></string>
+	<string id="tap_anywhere"			fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Tap Anywhere to Play]]></string>
+	<string id="click_anywhere"			fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Click Anywhere to Play]]></string>
+	<string id="tap_anywhere_again"		fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Tap Anywhere to Play Again]]></string>
+	<string id="click_anywhere_again"	fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Click Anywhere to Play Again]]></string>
+	<string id="tap_anywhere_skip"		fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Tap Anywhere to Skip]]></string>
+	<string id="click_anywhere_skip"	fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Click Anywhere to Skip]]></string>
+	<string id="play"					fontName="font_body"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Play]]></string>
+	<string id="play_again"				fontName="font_body"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Try Again]]></string>
+	<string id="how_to_play"			fontName="font_body"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[How to Play]]></string>
+	<string id="next"					fontName="font_body"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Next]]></string>
+	<string id="back"					fontName="font_body"	fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Back]]></string>
+	<string id="continue"				fontName="font_body"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Continue]]></string>
+	<string id="close"					fontName="font_body"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[close]]></string>
+	<string id="printable"				fontName="font_body"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[Printable]]></string>
+	<string id="orientation_landscape"	fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Please flip back to Landscape mode.]]></string>
+	<string id="go"						fontName="font_title"	fontScale="0.75"	offsetX="0" offsetY="0"><![CDATA[GO!]]></string>
+	<string id="currency"				fontName="font_health"	fontScale=".65"	offsetX="0" offsetY="0"><![CDATA[$]]></string>
+	<!--Game Buttons-->
+	<string id="yes"					fontName="font_body"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[Yes]]></string>
+	<string id="no"						fontName="font_body"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[No]]></string>
+	<!--Game Menu Screen-->
+	<string id="menu"					fontName="font_body"	fontScale=".65"	offsetX="0" offsetY="0"><![CDATA[Menu]]></string>
+	<string id="sound_on"				fontName="font_title"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[SOUND<br>ON]]></string>
+	<string id="sound_off"				fontName="font_title"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[SOUND<br>OFF]]></string>
+	<string id="back_to_lair"			fontName="font_title"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[BACK TO<br>THE LAIR]]></string>
+	<!--Help Screen-->
+	<string id="help"					fontName="font_body"	fontScale=".65"	offsetX="0" offsetY="0"><![CDATA[Help]]></string>
+	<!--Quit Screen-->
+	<string id="quit"					fontName="font_body"	fontScale=".65"	offsetX="0" offsetY="0"><![CDATA[Quit]]></string>
+	<string id="quit_confirm_header"	fontName="font_title"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[ARE YOU SURE YOU<br>WANT TO QUIT?]]></string>
+	<!--End Screen-->
+	<string id="game_over"				fontName="font_title"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[COLLECT<br>LOOT!]]></string>
+	<string id="game_over_won"			fontName="font_title"	fontScale="0.8"	offsetX="0" offsetY="0"><![CDATA[You Win!<br>BOOYAKASHA!]]></string>
+	<string id="battles_won"			fontName="font_title"	fontScale="0.4"	offsetX="0" offsetY="0"><![CDATA[BATTLES WON]]></string>
+	<string id="gold_recieved"			fontName="font_title"	fontScale="0.4"	offsetX="0" offsetY="0"><![CDATA[GOLD RECIEVED]]></string>
+	<string id="items_attained"			fontName="font_title"	fontScale="0.4"	offsetX="0" offsetY="0"><![CDATA[ITEMS ATTAINED]]></string>
+	
+	<!--Gameplay-->
+	<string id="hud_level"				fontName="TMNT_Metal"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[Level]]></string>
+	<string id="hud_hp"					fontName="TMNT_Metal"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[HP]]></string>
+	<string id="hud_mp"					fontName="TMNT_Metal"	fontScale=".4"	offsetX="0" offsetY="0"><![CDATA[AP]]></string>
+	
+	<string id="level"					fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Level]]></string>
+	<string id="score"					fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Score:]]></string>
+	<string id="points"					fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Points:]]></string>
+	<string id="miniscore"				fontName="font_body"	fontScale=".3"	offsetX="0" offsetY="0"><![CDATA[Score:]]></string>
+	
+	<string id="enemy_hp"				fontName="font_health"	fontScale=".35"	offsetX="0" offsetY="0"><![CDATA[]]></string>
+	<string id="unit_evaded"			fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[MISS]]></string>
+	<string id="unit_damaged"			fontName="font_title"	fontScale=".9"	offsetX="0" offsetY="0"><![CDATA[]]></string>
+	<string id="unit_money_drop"		fontName="font_health"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[$]]></string>
+	
+	<!--Actions-->
+	<string id="atk_default"			fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Attack]]></string>
+	<string id="atk_default_desc"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Perform a basic attack on a single opponent.]]></string>
+	<string id="atk_derv_dnc"			fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Dervish Dance]]></string>
+	<string id="atk_derv_dnc_desc"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Do a far reaching swing that hits all enemies on screen.]]></string>
+	
+	<string id="atk_chn_whrl"			fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Chain Whirlwind]]></string>
+	<string id="atk_chn_whrl_desc"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Perform a deadly maneuver that strikes a single target.]]></string>
+	<string id="atk_xslash"				fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[X Slash]]></string>
+	<string id="atk_xslash_desc"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Target a single opponent with the full power of both your blades.]]></string>
+	<string id="atk_lmt_brk"			fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Limit Break]]></string>
+	<string id="atk_lmt_brk_desc"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Release all of your power in a single strike.]]></string>
+	<string id="atk_cycln_swp"			fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Cyclone Sweep]]></string>
+	<string id="atk_cycln_swp_desc"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Target a single opponent with the full force of your staff.]]></string>
+	
+	<string id="act_defend"				fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Defend]]></string>
+	<string id="act_defend_desc"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Protect yourself from the full force of an opponent's blow.]]></string>
+	<string id="act_heal"				fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Pizza Party!]]></string>
+	<string id="act_heal_desc"			fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Heal an ally a fraction of their maximum health.]]></string>
+	<string id="act_protect"			fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Warrior's Protection]]></string>
+	<string id="act_protect_desc"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Recieve all damage done to your team in their stead.]]></string>
+	<string id="act_steal"				fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Ninja Swipe]]></string>
+	<string id="act_steal_desc"			fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Pilfer loot from an opponent.]]></string>
+	
+	<string id="atk_instant_kill"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Instant-Takedown]]></string>
+	<string id="atk_instant_kill_desc"	fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Intantly defeat a single target. Single use; consumes item upon use.]]></string>
+	<string id="act_smoke_bomb"			fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Smoke Bomb]]></string>
+	<string id="act_smoke_bomb_desc"	fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Prevents Attacks for one turn.]]></string>
+	<string id="act_freeze"				fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Time Freeze]]></string>
+	<string id="act_freeze_desc"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Freezes enemies for 5 turns. Single use; consumes item upon use.]]></string>
+	
+	<string id="act_mind_control"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Mind Control]]></string>
+	<string id="act_mind_control_desc"	fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[50% chance to confuse each enemy on-screen. Consued enemies have 50% of attacking.]]></string>
+	<string id="act_stun_gun"			fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Stunner]]></string>
+	<string id="act_stun_gun_desc"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[25% chance to stun each enemy on-screen.]]></string>
+	
+	<!-- Tutorial -->
+	<string id="tutorial_firstplay1"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Welcome to the Lair!<br>(CLICK to continue)]]></string>
+	<string id="tutorial_firstplay1_mobile"	fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Welcome to the Lair!<br>(TAP to continue)]]></string>
+	<string id="tutorial_firstplay2"		fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[This is where you prepare between missions]]></string>
+	<string id="tutorial_firstplay3"		fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[When you're ready to fight, click "GO!" to start]]></string>
+	
+	<string id="tutorial_battle1"		fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[You have encountered an enemy!]]></string>
+	<string id="tutorial_battle2"		fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[During combat, every character gets a turn.<br>You select your action by pressing an action button.]]></string>
+	<string id="tutorial_battle3"		fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Once an action is selected, it may be performed on a highlighted character]]></string>
+	
+	<string id="tutorial_battleb1"		fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[In addition to attacking you can defend yourself to recieve less damage. Once selected you can tap that character or press the icon again.]]></string>
+	<string id="tutorial_battleb2"		fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Each turtle also has a special ability only they have. These use AP (Action Points) so make sure to use them wisely!]]></string>
+	
+	<string id="tutorial_upgrades1"		fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[You can use earned money to upgrade your lair, which will make your team stronger.]]></string>
+	<string id="tutorial_upgrades2"		fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Purchasing the kitchen unlocks the ability to get pizza recipes to attract allies to your lair.]]></string>
+	<string id="tutorial_upgrades3"		fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[You can manage and outfit your team by clicking a teammate in your party.]]></string>
+	
+	<string id="tutorial_upgradesb1"	fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Purchasing the zen garden will allow you to hone your skills, as well as increasing a turtle's strength.]]></string>
+	<string id="tutorial_upgradesb2"	fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[You may also get other furniture around the lair to give boosts for your team, which can be upgraded to increase their effects.]]></string>
+	
+	<string id="tutorial_pizza"			fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[In the pizza kitchen, you can cook up delicious recipes to attract new allies.]]></string>
+	<string id="tutorial_add_ally"		fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[You've just gained a new ally!<br>Allies will appear around your lair, and can be selected to join your team.<br>Select your new ally now!]]></string>
+	
+	<string id="tutorial_equipment1"	fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Here you can equip your team to prepare for the next battle using equipment you've found while fighting.]]></string>
+	<string id="tutorial_equipment2"	fontName="font_body"	fontScale=".6"	offsetX="0" offsetY="0"><![CDATA[Equipment can be equipped by selecting a slot.<br>There are two types of equipment: Weapons, which focus on offense and gear, which help provide additional benefits.]]></string>
+	<string id="tutorial_equipment3"	fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Re-organizing the order of your team may also be done here, which affects the order your team fights in battle.]]></string>
+	<string id="tutorial_equipment_add"	fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Each item has three main stats: Attack, Health Points, and Action Points. These will strenthen a character.<br>Most equipment has additional stats as well.]]></string>
+	
+	<string id="tutorial_firstminiboss"	fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[This is a miniboss. It's stronger than the average enemy.]]></string>
+	<string id="tutorial_firstboss"		fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Boss fight! This enemy is much tougher than others you've seen.]]></string>
+	
+	<string id="tutorial_sewer"			fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[You've cleared the Sewer of bad guys! Let's continue to the next area.]]></string>
+	<string id="tutorial_rooftops"		fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[You've cleared the Rooftops of bad guys! Let's continue to the next area.]]></string>
+	<string id="tutorial_shredder"		fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[You've cleared Shredder's Lair of bad guys! Let's continue to the next area.]]></string>
+	<string id="tutorial_dimensionx"	fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[You've cleared Dimension X of bad guys! Let's continue to the next area.]]></string>
+	<string id="tutorial_space"			fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[You've cleared away all the bad guys! But the fight is never over. You may continue the fight where you started with even stronger foes!]]></string>
+	
+	<!-- Loading Tips -->
+	<string id="tip_1"					fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[You can find new allies by purchasing wacky pizza flavors from the kitchen.]]></string>
+	<string id="tip_2"					fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[If you're having difficulty with enemies, upgrade your lair and visit the zen garden.]]></string>
+	<string id="tip_3"					fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Equip your party! Defeated enemies drop equipment, which can be used back in your lair. You need to be well outfitted so you're a force to be reckoned with!]]></string>
+	<string id="tip_4"					fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[While weapons are important for dealing damage, don't forget to equip gear as well. Some gear even give you additional actions to use in battle.]]></string>
+	<string id="tip_5"					fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Special moves offer unique abilities that can really make your team kick butt! But remember that they use AP, so use them wisely.]]></string>
+	<string id="tip_6"					fontName="font_body"	fontScale=".7"	offsetX="0" offsetY="0"><![CDATA[Some special actions can be used together in a great show of teamwork. Mikey and Leonardo know this better than anyone...]]></string>
+	
+	<!-- Lair Upgrade -->
+	<string id="buy"					fontName="font_title"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[GET]]></string>
+	<string id="upgrade_sold_out"		fontName="font_title"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[MAX]]></string>
+	<string id="upgrade_cost"			fontName="font_title"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[$]]></string>
+
+	<string id="upgrade_name_dummy"		fontName="font_title"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[FIGHT DUMMY]]></string>
+	<string id="upgrade_name_arcade"	fontName="font_title"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[ARCADE GAME]]></string>
+	<string id="upgrade_name_tv"		fontName="font_title"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[TELEVISION]]></string>
+	<string id="upgrade_name_chair"		fontName="font_title"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[BEAN BAG CHAIR]]></string>
+	<string id="upgrade_name_lab"		fontName="font_title"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[DONNY'S LAB]]></string>
+	<string id="upgrade_name_zen"		fontName="font_title"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[ZEN CORNER]]></string>
+	<string id="upgrade_name_kitchen"	fontName="font_title"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[PIZZA KITCHEN]]></string>
+
+	<string id="upgrade_desc_dummy"		fontName="font_body"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Passive Attack Bonus:]]></string>
+	<string id="upgrade_desc_arcade"	fontName="font_body"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Passive Critical Attack Bonus:]]></string>
+	<string id="upgrade_desc_tv"		fontName="font_body"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Ally Tier Level:]]></string>
+	<string id="upgrade_desc_chair"		fontName="font_body"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Passive Health Bonus:]]></string>
+	<string id="upgrade_desc_lab"		fontName="font_body"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Passive Item Find Bonus:]]></string>
+	<string id="upgrade_desc_zen"		fontName="font_body"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Add new special abilities]]></string>
+	<string id="upgrade_desc_kitchen"	fontName="font_body"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Unlock new heroes]]></string>
+
+	<!-- Kitchen -->
+	<string id="kitchen_sold_out"		fontName="font_title"	fontScale="0.9"	offsetX="0" offsetY="0"><![CDATA[SOLD]]></string>
+
+	<string id="pizza_name_splinter"	fontName="font_title"	fontScale="0.4"	offsetX="0" offsetY="0"><![CDATA[Cheese]]></string>
+	<string id="pizza_name_april"		fontName="font_title"	fontScale="0.4"	offsetX="0" offsetY="0"><![CDATA[Pepperoni]]></string>
+	<string id="pizza_name_casey"		fontName="font_title"	fontScale="0.4"	offsetX="0" offsetY="0"><![CDATA[Pepperoni & Onions]]></string>
+	<string id="pizza_name_karai"		fontName="font_title"	fontScale="0.4"	offsetX="0" offsetY="0"><![CDATA[Guac & Marshmallows]]></string>
+	<string id="pizza_name_fug"			fontName="font_title"	fontScale="0.4"	offsetX="0" offsetY="0"><![CDATA[Onions & Anchovies]]></string>
+	
+	<string id="pizza_name_slash"		fontName="font_title"	fontScale="0.4"	offsetX="0" offsetY="0"><![CDATA[Choc Sprinkles & Clams]]></string>
+	<string id="pizza_name_mondo"		fontName="font_title"	fontScale="0.4"	offsetX="0" offsetY="0"><![CDATA[Peanut Butter & Clams]]></string>
+	<string id="pizza_name_metalhead"	fontName="font_title"	fontScale="0.4"	offsetX="0" offsetY="0"><![CDATA[PB, Avocado, & Pickles]]></string>
+	<string id="pizza_name_mona"		fontName="font_title"	fontScale="0.35"offsetX="0" offsetY="0"><![CDATA[Butterscotch & Anchovies]]></string>
+	<string id="pizza_name_shini"		fontName="font_title"	fontScale="0.4"	offsetX="0" offsetY="0"><![CDATA[Tuna Fish, PB, & Jelly]]></string>
+
+	<string id="pizza_desc_splinter"	fontName="font_body"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Vital to maintain zen state]]></string>
+	<string id="pizza_desc_april"		fontName="font_body"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Favorite snack for late night reporting]]></string>
+	<string id="pizza_desc_casey"		fontName="font_body"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Fuels the sport addict]]></string>
+	<string id="pizza_desc_karai"		fontName="font_body"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Swallow it whole]]></string>
+	<string id="pizza_desc_fug"			fontName="font_body"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Driod za]]></string>
+	
+	<string id="pizza_desc_slash"		fontName="font_body"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Slashing me a slice]]></string>
+	<string id="pizza_desc_mondo"		fontName="font_body"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Skating makes me hungry]]></string>
+	<string id="pizza_desc_metalhead"	fontName="font_body"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Bang your head]]></string>
+	<string id="pizza_desc_mona"		fontName="font_body"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[The da vinci of pizzas]]></string>
+	<string id="pizza_desc_shini"		fontName="font_body"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Witch pizza is your fav]]></string>
+
+	<string id="pizza_char_splinter"	fontName="font_title"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Splinter]]></string>
+	<string id="pizza_char_april"		fontName="font_title"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[April O'Neil]]></string>
+	<string id="pizza_char_casey"		fontName="font_title"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Casey Jones]]></string>
+	<string id="pizza_char_karai"		fontName="font_title"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Karai]]></string>
+	<string id="pizza_char_fug"			fontName="font_title"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Fugitoid]]></string>
+	
+	<string id="pizza_char_slash"		fontName="font_title"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Slash]]></string>
+	<string id="pizza_char_mondo"		fontName="font_title"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Mondo Gecko]]></string>
+	<string id="pizza_char_metalhead"	fontName="font_title"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Metalhead]]></string>
+	<string id="pizza_char_mona"		fontName="font_title"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Mona Lisa]]></string>
+	<string id="pizza_char_shini"		fontName="font_title"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Shinigami]]></string>
+
+	<!-- Zen -->
+	<string id="zen_sold_out"			fontName="font_title"	fontScale="0.9"	offsetX="0" offsetY="0"><![CDATA[SOLD]]></string>
+	<string id="zen_cost"				fontName="font_title"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[$]]></string>
+
+	<string id="zen_skill_name_raph"	fontName="font_title"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Raphael Upgrade]]></string>
+	<string id="zen_skill_name_mikey"	fontName="font_title"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Mikey Upgrade]]></string>
+	<string id="zen_skill_name_leo"		fontName="font_title"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Leonardo Upgrade]]></string>
+	<string id="zen_skill_name_don"		fontName="font_title"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Donatello Upgrade]]></string>
+
+	<string id="zen_skill_desc_raph"	fontName="font_body"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Empower Raphael's "Limit Break" skill.<br>Also increases base Attack, HP, and AP.]]></string>
+	<string id="zen_skill_desc_mikey"	fontName="font_body"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Empower Mikey's "Chain Whirlwind" skill.<br>Also increases base Attack, HP, and AP.]]></string>
+	<string id="zen_skill_desc_leo"		fontName="font_body"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Empower Leonardo's "X Slash" skill.<br>Also increases base Attack, HP, and AP.]]></string>
+	<string id="zen_skill_desc_don"		fontName="font_body"	fontScale="0.5"	offsetX="0" offsetY="0"><![CDATA[Empower Donatello's "Cyclone Sweep" skill.<br>Also increases base Attack, HP, and AP.]]></string>
+
+	<string id="zen_skill_name_raph_b"	fontName="font_title"	fontScale="0.35"	offsetX="0" offsetY="0"><![CDATA[Raphael Lvl]]></string>
+	<string id="zen_skill_name_mikey_b"	fontName="font_title"	fontScale="0.35"	offsetX="0" offsetY="0"><![CDATA[Mikey Lvl]]></string>
+	<string id="zen_skill_name_leo_b"	fontName="font_title"	fontScale="0.35"	offsetX="0" offsetY="0"><![CDATA[Leonardo Lvl]]></string>
+	<string id="zen_skill_name_don_b"	fontName="font_title"	fontScale="0.35"	offsetX="0" offsetY="0"><![CDATA[Donatello Lvl]]></string>
+
+	<!-- Equip Screen -->
+	<string id="equip"					fontName="font_title"	fontScale="0.35"	offsetX="0" offsetY="0"><![CDATA[EQUIP]]></string>
+	<string id="unequip"				fontName="font_title"	fontScale="0.35"	offsetX="0" offsetY="0"><![CDATA[UNEQUIP]]></string>
+
+	<!-- Items - Weapons -->
+	<string id="item_name_don_w1"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Bo-Staff]]></string>
+	<string id="item_name_don_w2"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Naginata]]></string>
+	<string id="item_name_don_w3"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Metal Bo-Staff]]></string>
+	<string id="item_name_don_w4"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Silver Bo-Staff]]></string>
+	<string id="item_name_don_w5"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Gold Bo-Staff]]></string>
+	<string id="item_name_don_w6"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Balanced Naginata]]></string>
+	<string id="item_name_don_w7"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Meteorite Naginata]]></string>
+	<string id="item_name_don_w8"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Energy Bo-Staff]]></string>
+	<string id="item_name_don_w9"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Ancient Bo-Staff]]></string>
+	<string id="item_name_don_w10"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Mystical Naginata]]></string>
+	
+	<string id="item_name_leo_w1"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Worn Katana]]></string>
+	<string id="item_name_leo_w2"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Katana]]></string>
+	<string id="item_name_leo_w3"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Sharpened Katana]]></string>
+	<string id="item_name_leo_w4"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Silver Katana]]></string>
+	<string id="item_name_leo_w5"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Gold Katana]]></string>
+	<string id="item_name_leo_w6"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Balanced Katana]]></string>
+	<string id="item_name_leo_w7"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Meteorite Katana]]></string>
+	<string id="item_name_leo_w8"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Energy Katana]]></string>
+	<string id="item_name_leo_w9"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Ancient Katana]]></string>
+	<string id="item_name_leo_w10"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Mystical Katana]]></string>
+	
+	<string id="item_name_mikey_w1"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Nunchaku]]></string>
+	<string id="item_name_mikey_w2"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Kusarigama]]></string>
+	<string id="item_name_mikey_w3"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Metal Nunchaku]]></string>
+	<string id="item_name_mikey_w4"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Silver Nunchaku]]></string>
+	<string id="item_name_mikey_w5"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Gold Nunchaku]]></string>
+	<string id="item_name_mikey_w6"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Balanced Kusarigama]]></string>
+	<string id="item_name_mikey_w7"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Meteorite Kusarigama]]></string>
+	<string id="item_name_mikey_w8"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Energy Nunchaku]]></string>
+	<string id="item_name_mikey_w9"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Ancient Nunchaku]]></string>
+	<string id="item_name_mikey_w10"	fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Mystical Kusarigama]]></string>
+	
+	<string id="item_name_raph_w1"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Worn Sai]]></string>
+	<string id="item_name_raph_w2"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Sai]]></string>
+	<string id="item_name_raph_w3"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Sharpened Sai]]></string>
+	<string id="item_name_raph_w4"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Silver Sai]]></string>
+	<string id="item_name_raph_w5"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Gold Sai]]></string>
+	<string id="item_name_raph_w6"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Balanced Sai]]></string>
+	<string id="item_name_raph_w7"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Meteorite Sai]]></string>
+	<string id="item_name_raph_w8"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Energy Sai]]></string>
+	<string id="item_name_raph_w9"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Ancient Sai]]></string>
+	<string id="item_name_raph_w10"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Mystical Sai]]></string>
+	
+	<string id="item_desc_tier_1"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Basic weapon]]></string>
+	<string id="item_desc_tier_2"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Raises HP]]></string>
+	<string id="item_desc_tier_3"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Raises critical attack chance]]></string>
+	<string id="item_desc_tier_4"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Raises AP]]></string>
+	<string id="item_desc_tier_5"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Raises gold dropped]]></string>
+	<string id="item_desc_tier_6"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Slightly raises HP, AP, and critical]]></string>
+	<string id="item_desc_tier_7"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Raises AP and HP]]></string>
+	<string id="item_desc_tier_8"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Raises critical attack chance]]></string>
+	<string id="item_desc_tier_9"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Raises the user's evade speed]]></string>
+	<string id="item_desc_tier_10"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Raises HP, AP, critical, evade speed, and gold]]></string>
+
+	<!-- Items - Relics -->
+	<string id="item_name_mut_track"	fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Mutagen Tracker]]></string>
+	<string id="item_desc_mut_track"	fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[HP Regen (+5% of health per turn)]]></string>
+	
+	<string id="item_name_tphone"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[T-phones]]></string>
+	<string id="item_desc_tphone"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Critical Hit chance for whole team increased +2%]]></string>
+	
+	<string id="item_name_dheart"		fontName="font_title"	fontScale=".45"	offsetX="0" offsetY="0"><![CDATA[Heart of Darkness]]></string>
+	<string id="item_desc_dheart"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Instant-Takedown device (disappears after use)]]></string>
+	
+	<string id="item_name_tessen"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Tessen]]></string>
+	<string id="item_desc_tessen"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Bonus to Attack]]></string>
+	
+	<string id="item_name_smk_bmb"		fontName="font_title"	fontScale=".45"	offsetX="0" offsetY="0"><![CDATA[Ninja Smoke Bombs]]></string>
+	<string id="item_desc_smk_bmb"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Prevents any attacks against user for 1 turn]]></string>
+	
+	<string id="item_name_sk_brd"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Skate Board]]></string>
+	<string id="item_desc_sk_brd"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Bonus to Attack, increase evade chance]]></string>
+	
+	<string id="item_name_mind_con"		fontName="font_title"	fontScale=".45"	offsetX="0" offsetY="0"><![CDATA[Mind control device]]></string>
+	<string id="item_desc_mind_con"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[50% chance to confuse each enemy on screen]]></string>
+	
+	<string id="item_name_laptop"		fontName="font_title"	fontScale=".45"	offsetX="0" offsetY="0"><![CDATA[Donatello's laptop]]></string>
+	<string id="item_desc_laptop"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Increases Max AP]]></string>
+	
+	<string id="item_name_cheeseph"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Cheese Phone]]></string>
+	<string id="item_desc_cheeseph"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[AP Regen (+5% of AP per turn rounded)]]></string>
+	
+	<string id="item_name_stun_gun"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Stunner]]></string>
+	<string id="item_desc_stun_gun"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[25% chance to freeze each enemy on screen for 1 turn]]></string>
+	
+	<string id="item_name_kuro"			fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Kuro Kabuto]]></string>
+	<string id="item_desc_kuro"			fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Extra hard to inflict damage<br>An ally may have a special use for this.]]></string>
+	
+	<string id="item_name_laser"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Kraang Laser]]></string>
+	<string id="item_desc_laser"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Bonus to Attack]]></string>
+	
+	<string id="item_name_grapple"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Grappling Hook]]></string>
+	<string id="item_desc_grapple"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Increases endurance]]></string>
+	
+	<string id="item_name_goggles"		fontName="font_title"	fontScale=".45"	offsetX="0" offsetY="0"><![CDATA[Examination Goggles]]></string>
+	<string id="item_desc_goggles"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Adds 10% Chance of Critical Hit]]></string>
+	
+	<string id="item_name_kitty"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Ice Cream Kitty]]></string>
+	<string id="item_desc_kitty"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[10% chance enemy attack misses]]></string>
+	
+	<string id="item_name_scepter"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Time Scepter]]></string>
+	<string id="item_desc_scepter"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Rare, consumes upon use - Freezes enemies for 5 turns]]></string>
+	
+	<string id="item_name_breath"		fontName="font_title"	fontScale=".45"	offsetX="0" offsetY="0"><![CDATA[Breathing Apparatus]]></string>
+	<string id="item_desc_breath"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Protects you from enemy attacks]]></string>
+	
+	<string id="item_name_sol"			fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Sol Star]]></string>
+	<string id="item_desc_sol"			fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Rare, +25% Chance of Critical Hits]]></string>
+	
+	<string id="item_name_tpod"			fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[T-pod]]></string>
+	<string id="item_desc_tpod"			fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Increased damage and +5% to Critical]]></string>
+	
+	<string id="item_name_grenade"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Electro Grenade]]></string>
+	<string id="item_desc_grenade"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[10% chance of Critical Hit]]></string>
+	
+	<string id="item_name_pshake"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[P-Shake]]></string>
+	<string id="item_desc_pshake"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[HP Regen (+8% of health per turn)]]></string>
+	
+	<string id="item_name_mousernip"	fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Mousernip]]></string>
+	<string id="item_desc_mousernip"	fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Distracts enemies causing them to miss more often]]></string>
+	
+	<string id="item_name_tegaki"		fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Tegaki]]></string>
+	<string id="item_desc_tegaki"		fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Bonus to Attack]]></string>
+	
+	<string id="item_name_semulacks"	fontName="font_title"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Semulacks]]></string>
+	<string id="item_desc_semulacks"	fontName="font_body"	fontScale=".5"	offsetX="0" offsetY="0"><![CDATA[Bonus money Recieved]]></string>
+	
+	<!-- Achievements -->
+	<string id="achievements"				fontName="font_title"	fontScale=".55"	offsetX="0" offsetY="0"><![CDATA[ACHIEVEMENTS]]></string>
+	<!-- <string id="achievement_unlocked"		fontName="font_body"	fontScale=".2"	offsetX="0" offsetY="0"><![CDATA[ACHIEVEMENT UNLOCKED]]></string> -->
+	<string id="achievement_locked"			fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[??????????????]]></string>
+	
+	<string id="achievement_desc_mikey"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Get All of Mikey's Weapons]]></string>
+	<string id="achievement_desc_raph"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Get All of Raph's Weapons]]></string>
+	<string id="achievement_desc_donny"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Get All of Donny's Weapons]]></string>
+	<string id="achievement_desc_leo"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Get all of Leo's Weapons]]></string>
+	
+	<string id="achievement_desc_battle10"	fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Defeat 10 Enemies]]></string>
+	<string id="achievement_desc_battle100"	fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Defeat 100 Enemies]]></string>
+	<string id="achievement_desc_battle1000"fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Defeat 1000 Enemies]]></string>
+	
+	<string id="achievement_desc_rooftop"	fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Get to the Rooftops!]]></string>
+	<string id="achievement_desc_shredderlair"	fontName="font_body"fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Get to Shredder's Lair!]]></string>
+	<string id="achievement_desc_dimensionx"fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Get to Dimension X!]]></string>
+	<string id="achievement_desc_space"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Get to Outer Space!]]></string>
+	
+	<string id="achievement_desc_friends"	fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Get all Allies]]></string>
+	<string id="achievement_desc_upgrade"	fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Get every Upgrade!]]></string>
+	<string id="achievement_desc_1500"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat Level 150]]></string>
+	
+	<string id="achievement_desc_armaggon"	fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Defeat Armaggon]]></string>
+	<string id="achievement_desc_bebop"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Defeat Bebop]]></string>
+	<string id="achievement_desc_chrome"	fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Defeat Chrome Dome]]></string>
+	<string id="achievement_desc_creep"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Defeat Creep]]></string>
+	<string id="achievement_desc_dregg"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Defeat Lord Vrinagath Dregg]]></string>
+	<string id="achievement_desc_fish"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Defeat Fishface]]></string>
+	<string id="achievement_desc_mozar"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Defeat Captain Mozar]]></string>
+	<string id="achievement_desc_mutagen"	fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Defeat Mutagen Man]]></string>
+	<string id="achievement_desc_newt"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Defeat Newtralizer]]></string>
+	<string id="achievement_desc_pizza"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Defeat Pizza Face]]></string>
+	<string id="achievement_desc_prime"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Defeat Kraang Prime]]></string>
+	<string id="achievement_desc_purple"	fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Defeat Hun & Purple Dragons]]></string>
+	<string id="achievement_desc_rahzar"	fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Defeat Rahzar]]></string>
+	<string id="achievement_desc_ratking"	fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Defeat The Rat King]]></string>
+	<string id="achievement_desc_rocksteady"fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Defeat Rocksteady]]></string>
+	<string id="achievement_desc_shredder"	fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Defeat Shredder]]></string>
+	<string id="achievement_desc_stockman"	fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Defeat Stockman-Fly]]></string>
+	<string id="achievement_desc_tiger"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Defeat Tiger Claw]]></string>
+	<string id="achievement_desc_zax"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Defeat Lieutenant Zax]]></string>
+	<string id="achievement_desc_zog"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Defeat Zog]]></string>
+	
+	<string id="achievement_desc_mouser1"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 1 Mouser]]></string>
+	<string id="achievement_desc_mouser2"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 15 Mousers]]></string>
+	<string id="achievement_desc_mouser3"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 30 Mousers]]></string>
+	
+	<string id="achievement_desc_mouser_black1"	fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 1 Strong Mouser]]></string>
+	<string id="achievement_desc_mouser_black2"	fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 15 Strong Mousers]]></string>
+	<string id="achievement_desc_mouser_black3"	fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 30 Strong Mousers]]></string>
+	
+	<string id="achievement_desc_footclan1"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 1 Footclan]]></string>
+	<string id="achievement_desc_footclan2"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 15 Footclan]]></string>
+	<string id="achievement_desc_footclan3"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 30 Footclan]]></string>
+	
+	<string id="achievement_desc_footbot1"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 1 Footbot]]></string>
+	<string id="achievement_desc_footbot2"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 15 Footbots]]></string>
+	<string id="achievement_desc_footbot3"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 30 Footbots]]></string>
+	
+	<string id="achievement_desc_strong1"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 1 Strong Footbot]]></string>
+	<string id="achievement_desc_strong2"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 15 Strong Footbots]]></string>
+	<string id="achievement_desc_strong3"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 30 Strong Footbots]]></string>
+	
+	<string id="achievement_desc_elite1"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 1 Elite Footbot]]></string>
+	<string id="achievement_desc_elite2"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 15 Elite Footbots]]></string>
+	<string id="achievement_desc_elite3"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 30 Elite Footbots]]></string>
+	
+	<string id="achievement_desc_kraang1"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 1 Kraang]]></string>
+	<string id="achievement_desc_kraang2"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 15 Kraang]]></string>
+	<string id="achievement_desc_kraang3"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 30 Kraang]]></string>
+	
+	<string id="achievement_desc_disguise1"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 1 Disguised Kraang]]></string>
+	<string id="achievement_desc_disguise2"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 15 Disguised Kraang]]></string>
+	<string id="achievement_desc_disguise3"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 30 Disguised Kraang]]></string>
+	
+	<string id="achievement_desc_bot1"			fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 1 Kraang Bot]]></string>
+	<string id="achievement_desc_bot2"			fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 15 Kraang Bots]]></string>
+	<string id="achievement_desc_bot3"			fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 30 Kraang Bots]]></string>
+	
+	<string id="achievement_desc_tric1"			fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 1 Triceraton]]></string>
+	<string id="achievement_desc_tric2"			fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 15 Triceratons]]></string>
+	<string id="achievement_desc_tric3"			fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 30 Triceratons]]></string>
+	
+	<string id="achievement_desc_vreen1"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 1 Vreen]]></string>
+	<string id="achievement_desc_vreen2"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 15 Vreen]]></string>
+	<string id="achievement_desc_vreen3"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 30 Vreen]]></string>
+	
+	<string id="achievement_desc_battle1"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 1 Vreen (Battle Mode)]]></string>
+	<string id="achievement_desc_battle2"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 15 Vreen (Battle Mode)]]></string>
+	<string id="achievement_desc_battle3"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Beat 30 Vreen (Battle Mode)]]></string>
+	
+	<string id="achievement_desc_karai"		fontName="font_body"	fontScale=".8"	offsetX="0" offsetY="0"><![CDATA[Discover Karai's Snake Form]]></string>
+	<!-- Debug Text -->
+	<string id="debugtext"				fontName="font_body"	fontScale="1"	offsetX="0" offsetY="0"><![CDATA[THIS TEXT IS LOCALIZED!]]></string>
+</strings>

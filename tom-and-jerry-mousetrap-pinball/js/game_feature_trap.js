@@ -1,0 +1,11 @@
+Game.prototype.doActivateTrap=function(trap)
+{trace("doActivateTrap()");for(var i=0;i<trap.gates.length;i++){var gate=trap.gates[i];PHYSICS.queue.push({me:oTABLE.items[gate],action:GAME.doActivateBody});}
+GAME.ball_in_trap=true;if(oGAME.active_balls<=1){GAME.doMakeBall(oGAME.ball_spawn_pos);}
+var cage=GAME.table.getObjectByName("cage");cage.visible=true;cage.position.y=30;TweenLite.to(cage.position,.5,{y:0,ease:Bounce.easeOut});GAME.score+=1000;var p3D=new THREE.Vector3(cage.position.x,3,cage.position.z);new PointObject(p3D,1000);GUI.doUpdateScore();setTimeout(function(){GAME.doResetTriggerGroup(4);},500);}
+Game.prototype.doCompleteTrap=function()
+{trace("doCompleteTrap()");PHYSICS.queue.push({me:GAME.blocker.rb,action:GAME.doActivateBody});TweenLite.to(GAME.blocker.object.position,.5,{y:2,ease:Elastic.easeOut});var delay=0;var cage=GAME.table.getObjectByName("cage");var drone=GAME.table.getObjectByName("drone");drone.visible=true;drone.position.y=30;TweenLite.to(drone.position,1,{y:0,ease:Power1.easeOut,delay:delay});delay+=1;TweenLite.to(drone.position,1,{y:30,ease:Power1.easeIn,delay:delay});TweenLite.to(cage.position,1,{y:30,ease:Power1.easeIn,delay:delay});setTimeout(function(){GAME.doReleaseTrap();},1000);}
+Game.prototype.doReleaseTrap=function()
+{trace("doReleaseTrap()");var cage=GAME.table.getObjectByName("cage");GAME.score+=2000;var p3D=new THREE.Vector3(cage.position.x,3,cage.position.z);new PointObject(p3D,2000);GUI.doUpdateScore();GAME.ball_in_trap=false;var trap=oTABLE.traps[0];trap.captured_ball=null;trap.grace_period=60*5;for(var i=0;i<trap.gates.length;i++){var gate=trap.gates[i];PHYSICS.queue.push({me:oTABLE.items[gate],action:GAME.doDeactivateBody});}
+var group_array=oTABLE.trigger_groups['group_'+4];for(var i=0;i<group_array.length;i++){var user_data=group_array[i].getUserData();var light=user_data.light;if(light){GAME.doSetLitState(light,false);}
+var light_en=user_data.light_en;if(light_en){GAME.doSetLitState(light_en,false);}}
+setTimeout(function(){PHYSICS.queue.push({me:GAME.blocker.rb,action:GAME.doDeactivateBody});TweenLite.to(GAME.blocker.object.position,.2,{y:0});},1000);}

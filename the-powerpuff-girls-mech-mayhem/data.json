@@ -1,0 +1,165 @@
+{
+  "_comment1": "debug settings should all default to false.",
+  "debug": {
+    "showFps": false,
+    "fpsMeasurePeriod": 0,
+    "forceSegmentStart": false,
+    "showDeviceFrame": false,
+    "disableSound": false,
+    "showHitbox": false
+  },
+  "language": "en",
+  "_comment2": "jsonData can include any other json file but is commonly used for sprite sheets.",
+  "jsonData": {
+    "gameTextData": "assets/jsonData/copy.json",
+    "difficultyData": "assets/jsonData/difficulty.json",
+    "blossom": "assets/jsonData/blossom-sheet.json",
+    "bubbles": "assets/jsonData/bubbles-sheet.json",
+    "buttercup": "assets/jsonData/buttercup-sheet.json",
+    "bronze": "assets/jsonData/bronze-sheet.json",
+    "silver": "assets/jsonData/silver-sheet.json",
+    "gold": "assets/jsonData/gold-sheet.json",
+    "morbucks": "assets/jsonData/morbucks-sheet.json",
+    "ui": "assets/jsonData/ui-sprite-sheet.json",
+    "special": "assets/jsonData/special-sprite-sheet.json",
+    "heartsSpecial": "assets/jsonData/hearts-special.json",
+    "smoke": "assets/jsonData/smoke-sheet.json",
+    "effects": "assets/jsonData/effects-sheet.json"
+  },
+  "images": [
+    "assets/images/basement.jpg",
+    "assets/images/basement-crack.png",
+    "assets/images/blossom-sheet.png",
+    "assets/images/bronze-sheet.png",
+    "assets/images/bubbles-sheet.png",
+    "assets/images/buttercup-sheet.png",
+    "assets/images/effects-sheet.png",
+    "assets/images/gold-sheet.png",
+    "assets/images/hearts-special.png",
+    "assets/images/junkyard.jpg",
+    "assets/images/junkyard-crack.png",
+    "assets/images/logo.png",
+    "assets/images/morbucks-sheet.png",
+    "assets/images/overpass.jpg",
+    "assets/images/overpass-crack.png",
+    "assets/images/silver-sheet.png",
+    "assets/images/smoke-sheet.png",
+    "assets/images/special-sprite-sheet.png",
+    "assets/images/story.png",
+    "assets/images/title-attack.png",
+    "assets/images/title-backup.png",
+    "assets/images/title-bg.jpg",
+    "assets/images/ui-sprite-sheet.png"
+  ],
+  "audio": {
+    "explosion1": "assets/audio/EMEA_MM_Explosion01.m4a",
+    "explosion2": "assets/audio/EMEA_MM_Explosion02.m4a",
+    "titleMusic": "assets/audio/EMEA_MechMayhem_PPGThemeSong.m4a",
+    "gameplayMusic": "assets/audio/EMEA_MechMayhem_Music.m4a",
+    "melee1": "assets/audio/EMEA_MM_Attack01.m4a",
+    "melee2": "assets/audio/EMEA_MM_Attack02.m4a",
+    "melee3": "assets/audio/EMEA_MM_Attack03.m4a",
+    "melee4": "assets/audio/EMEA_MM_Attack04.m4a",
+    "melee5": "assets/audio/EMEA_MM_Attack05.m4a",
+    "melee6": "assets/audio/EMEA_MM_Attack06.m4a",
+    "dash": "assets/audio/EMEA_MM_PPGDash.m4a",
+    "laser": "assets/audio/EMEA_MM_LaserBlast.m4a",
+    "hurt1": "assets/audio/EMEA_MM_PPGCough.m4a",
+    "hurt2": "assets/audio/EMEA_MM_PPGGrunt.m4a",
+    "hurt3": "assets/audio/EMEA_MM_PPGUgh.m4a",
+    "hurt4": "assets/audio/EMEA_MM_ButtercupNo.m4a",
+    "whoosh": "assets/audio/EMEA_MM_BronzeGoldWoosh.m4a",
+    "taunt": "assets/audio/EMEA_MM_MorbucksLaugh.m4a",
+    "specialAttack": "assets/audio/EMEA_MM_Special.m4a",
+    "specialExplode": "assets/audio/EMEA_MM_Special_Explode.m4a",
+    "buttonBkw": "assets/audio/EMEA_MM_ButtonFwd.m4a",
+    "buttonFwd": "assets/audio/EMEA_MM_ButtonBkw.m4a",
+    "scoreTick": "assets/audio/EMEA_MM_ScoreTick01.m4a",
+    "victory": "assets/audio/EMEA_MM_Victory.m4a",
+    "specialCounter1": "assets/audio/EMEA_MM_SpecialCounter_Tone1.m4a",
+    "specialCounter2": "assets/audio/EMEA_MM_SpecialCounter_Tone2.m4a",
+    "specialCounter3": "assets/audio/EMEA_MM_SpecialCounter_Tone3.m4a"
+  },
+  "desktopViewPort": {
+    "width": 940,
+    "height": 529
+  },
+  "fps": 30,
+  "reactionInfo": {
+    "width": 66,
+    "height": 120,
+    "scale": 0.6
+  },
+  "musicCrossFadeStartPercent": 1,
+  "musicFadeOutTime": 500,
+  "transitionFadeTime": 300,
+  "transitionFadeOutHangTime": 0,
+  "transitionFadeInHangTime": 500,
+  "tutorialBotCount": 3,
+  "gameFeel": {
+    "special": {
+      "when": "enemiesSeen",
+      "score": 4000,
+      "enemiesSeen": 20,
+      "enemiesDefeated": 10,
+      "time": 30000,
+      "combo": 25
+    },
+    "difficultyRampTime": 100000,
+    "difficultyScaleBackFormula": "x * 0.7",
+    "snapToEnemyTime": 200,
+    "earlyAnimationChangeFraction": 0.95,
+    "basicImpactHitStopTime": 100,
+    "hoverAroundEnemyTime": 400,
+    "laserFrameInterval": 65,
+    "onMissCoolDownTime": 2000,
+    "reactionGracePeriodPercent": 0.05,
+    "success": {
+      "shake": {
+        "method": "smallShake"
+      }
+    },
+    "miss": {
+      "shake": {
+        "method": "mediumShake"
+      }
+    }
+  },
+  "backgrounds": {
+    "basement": "assets/images/basement.jpg",
+    "overpass": "assets/images/overpass.jpg",
+    "junkyard": "assets/images/junkyard.jpg"
+  },
+  "bgSize": {
+    "width": 1344,
+    "height": 756
+  },
+  "crack": {
+    "width": 718,
+    "height": 109
+  },
+  "botsAttack": {
+    "width": 772,
+    "height": 588
+  },
+  "girlsBackup": {
+    "width": 394,
+    "height": 213
+  },
+  "gameLogo": {
+    "width": 1704,
+    "height": 699
+  },
+  "preLoaderLogo": {
+    "width": 495,
+    "height": 311
+  },
+  "story": {
+    "width": 1344,
+    "height": 1523
+  },
+  "rotateOutBack": {
+    "width": 761,
+    "height": 395
+  }
+}

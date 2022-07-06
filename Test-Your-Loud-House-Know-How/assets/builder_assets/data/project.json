@@ -1,0 +1,3241 @@
+{
+    "settings": {
+        "loader": {
+            "x": 0,
+            "y": 150
+        },
+        "loader_fill_color": "#FFA200",
+        "loader_frame_color": "#595959",
+        "loader_bg_color": "#FFFFFF",
+        "animation_transition_in": "slide",
+        "animation_transition_out": "slide",
+        "animation_transition_time": 3,
+        "default_text": {
+            "color": "#000000",
+            "bgPadding": 8
+        },
+        "default_text_header": {
+            "color": "#000000",
+            "bgPadding": 8
+        },
+        "default_text_copy": {
+            "color": "#000000",
+            "bgPadding": 8
+        },
+        "share": {
+            "bgColor": "#55D8F6",
+            "textColor": "#333333"
+        },
+        "promos": {
+            "enabled": false,
+            "src": ""
+        },
+        "text": [
+            {
+                "id": "loading",
+                "color": "#000000",
+                "bgImage": {
+                    "enabled": false
+                }
+            },
+            {
+                "id": "promoscreen_header",
+                "color": "#000000"
+            },
+            {
+                "id": "endscreen_header",
+                "color": "#000000"
+            },
+            {
+                "id": "play_click",
+                "color": "#000000",
+                "bgImage": {
+                    "enabled": false
+                }
+            },
+            {
+                "id": "play_tap",
+                "color": "#000000",
+                "bgImage": {
+                    "enabled": false
+                }
+            },
+            {
+                "id": "replay_click",
+                "color": "#000000"
+            },
+            {
+                "id": "replay_tap",
+                "color": "#000000"
+            },
+            {
+                "id": "page_number",
+                "color": "#000000"
+            },
+            {
+                "id": "result_header",
+                "color": "#000000"
+            },
+            {
+                "id": "result_copy",
+                "color": "#000000"
+            },
+            {
+                "id": "share_header",
+                "color": "#000000"
+            },
+            {
+                "id": "share_copy",
+                "color": "#000000"
+            },
+            {
+                "id": "continue_btn",
+                "color": "#000000"
+            },
+            {
+                "id": "share_btn",
+                "color": "#000000"
+            },
+            {
+                "id": "replay_btn",
+                "color": "#000000"
+            },
+            {
+                "id": "replay_result_btn",
+                "color": "#000000"
+            },
+            {
+                "id": "copy_btn",
+                "color": "#000000"
+            },
+            {
+                "id": "next_btn",
+                "color": "#000000"
+            },
+            {
+                "id": "play_btn",
+                "color": "#000000"
+            },
+            {
+                "id": "take_quiz_btn",
+                "color": "#000000"
+            },
+            {
+                "id": "advertisement",
+                "color": "#000000",
+                "bgColor": "#FFFFFF",
+                "bgAlpha": 1,
+                "textAlign": "center",
+                "bgPadding": 8,
+                "bgResize": "none",
+                "bgImage": {
+                    "enabled": false
+                }
+            },
+            {
+                "id": "promo_title",
+                "color": "#000000"
+            },
+            {
+                "id": "hud_timer_value",
+                "color": "#000000"
+            },
+            {
+                "id": "answer_correct",
+                "color": "#000000",
+                "bgImage": {
+                    "name": "ui_answer_correct",
+                    "type": "png"
+                }
+            },
+            {
+                "id": "answer_incorrect",
+                "color": "#000000",
+                "bgImage": {
+                    "name": "ui_answer_incorrect",
+                    "type": "png"
+                }
+            },
+            {
+                "id": "strikes",
+                "color": "#000000"
+            },
+            {
+                "id": "result_percent",
+                "color": "#000000"
+            },
+            {
+                "id": "result_score",
+                "color": "#000000"
+            },
+            {
+                "id": "result_grade",
+                "color": "#000000"
+            },
+            {
+                "id": "result_tally_right",
+                "color": "#000000"
+            },
+            {
+                "id": "result_tally_wrong",
+                "color": "#000000"
+            },
+            {
+                "id": "result_strikes",
+                "color": "#000000"
+            },
+            {
+                "id": "result_time",
+                "color": "#000000"
+            }
+        ],
+        "ad_bar_enabled": false,
+        "spacing": 10,
+        "page_color": "#FF0000",
+        "page_done_color": "#FFFF00",
+        "page_selected_color": "#00FF00",
+        "page_arrow_color": "#60C9E2",
+        "header_height": 100,
+        "show_correct": true,
+        "show_correct_fill": true,
+        "show_correct_text": false,
+        "show_correct_question": false,
+        "answer_correct_color": "#00FF00",
+        "answer_incorrect_color": "#FF0000",
+        "timer_bg_color": "",
+        "timer_fill_color": "#60C9E2",
+        "timer_frame_color": "",
+        "scale_up": true,
+        "analytics_enabled": false,
+        "match_ui_enabled": true,
+        "hud_arrows_enabled": false,
+        "hud_buttons_enabled": false,
+        "results_enabled": true,
+        "result_title": "result_title_id_html",
+        "result_gameURL": "result_gameURL_id_html",
+        "result_gameAssetURL": "result_gameAssetURL_id_html",
+        "result_description": "result_description_id_html",
+        "result_twitterSite": "result_twitterSite_id_html",
+        "btn_hud_alpha": 0.5,
+        "antipiracy_url": "http:\/\/www.nick.com",
+        "antipiracy_enabled": false,
+        "game_id": "140Test Your Loud House Know How"
+    },
+    "preload": {
+        "images": {
+            "path": "images\/",
+            "array": [
+                {
+                    "id": "splash",
+                    "name": "splash",
+                    "type": "jpg",
+                    "align": "center",
+                    "resize": "fill_to"
+                },
+                {
+                    "id": "splash_logo",
+                    "name": "ui_logo",
+                    "type": "png",
+                    "x": 0,
+                    "y": -50,
+                    "align": "center",
+                    "location": "splash",
+                    "enabled": false
+                },
+                {
+                    "id": "button_play",
+                    "align": "center",
+                    "location": "splash",
+                    "enabled": false
+                },
+                {
+                    "id": "button_sound_on",
+                    "name": "ui_soundon",
+                    "type": "png"
+                },
+                {
+                    "id": "button_sound_off",
+                    "name": "ui_soundoff",
+                    "type": "png"
+                },
+                {
+                    "id": "loader_bg",
+                    "name": "ui_loader_bg",
+                    "type": "png"
+                },
+                {
+                    "id": "loader_frame",
+                    "name": "ui_loader_top",
+                    "type": "png"
+                },
+                {
+                    "id": "banner_logo",
+                    "name": "",
+                    "enabled": false,
+                    "href": "",
+                    "align": "top_left"
+                }
+            ]
+        },
+        "audio": {
+            "path": "audio\/",
+            "array": []
+        }
+    },
+    "initial": {
+        "images": {
+            "path": "images\/",
+            "array": []
+        },
+        "audio": {
+            "path": "audio\/",
+            "array": [
+                {
+                    "id": "sfx_button_click",
+                    "name": "sfx_button_click",
+                    "type": [
+                        "mp3",
+                        "ogg"
+                    ]
+                },
+                {
+                    "id": "sfx_button_over",
+                    "name": "sfx_button_over",
+                    "type": [
+                        "mp3",
+                        "ogg"
+                    ]
+                }
+            ]
+        }
+    },
+    "gameplay": {
+        "images": {
+            "path": "images\/",
+            "array": [
+                {
+                    "id": "gameplay_bg",
+                    "name": "bg_gameplay",
+                    "type": "jpg",
+                    "align": "center",
+                    "resize": "fill_to"
+                },
+                {
+                    "id": "promoscreen_bg",
+                    "name": "bg_promoscreen",
+                    "type": "jpg",
+                    "align": "center",
+                    "resize": "fill_to"
+                },
+                {
+                    "id": "checkmark",
+                    "name": "ui_checkmark",
+                    "type": "png"
+                },
+                {
+                    "id": "checkmark_box",
+                    "name": "ui_rec_empty",
+                    "type": "png"
+                },
+                {
+                    "id": "checkmark_fill",
+                    "name": "ui_rec_checked",
+                    "type": "png"
+                },
+                {
+                    "id": "nav_empty",
+                    "name": "template_circle_empty",
+                    "type": "png"
+                },
+                {
+                    "id": "nav_fill",
+                    "name": "template_circle_filled",
+                    "type": "png"
+                },
+                {
+                    "id": "button_continue",
+                    "name": "button_continue",
+                    "type": "png"
+                },
+                {
+                    "id": "timer_bg",
+                    "name": "timer_bg",
+                    "type": "png"
+                },
+                {
+                    "id": "timer_frame",
+                    "name": "",
+                    "type": "png",
+                    "enabled": false
+                },
+                {
+                    "id": "strikes_bg",
+                    "name": "ui_strikes_bg",
+                    "type": "png"
+                },
+                {
+                    "id": "strikes_x",
+                    "name": "ui_strikes_x",
+                    "type": "png"
+                },
+                {
+                    "id": "answer_box",
+                    "name": "answer_box",
+                    "type": "png"
+                },
+                {
+                    "id": "answer_empty",
+                    "name": "answer_empty",
+                    "type": "png"
+                },
+                {
+                    "id": "answer_fill",
+                    "name": "temp_match_answer2",
+                    "type": "png"
+                },
+                {
+                    "id": "answer_indicator",
+                    "name": "",
+                    "type": "png",
+                    "enabled": false
+                },
+                {
+                    "id": "promo_bg",
+                    "name": "ui_relatedgames_bg",
+                    "type": "png"
+                },
+                {
+                    "id": "button_replay",
+                    "name": "button_replay",
+                    "type": "png"
+                },
+                {
+                    "id": "button_replay_result",
+                    "name": "button_replay_result",
+                    "type": "png"
+                },
+                {
+                    "id": "button_next",
+                    "name": "button_next",
+                    "type": "png"
+                },
+                {
+                    "id": "button_share",
+                    "name": "button_share",
+                    "type": "png"
+                },
+                {
+                    "id": "button_close",
+                    "name": "btn_close",
+                    "type": "png"
+                },
+                {
+                    "id": "button_copy",
+                    "name": "button_copy",
+                    "type": "png"
+                },
+                {
+                    "id": "button_take_quiz",
+                    "name": "button_take_quiz",
+                    "type": "png"
+                },
+                {
+                    "id": "result_bg",
+                    "name": "result_bg",
+                    "type": "png"
+                },
+                {
+                    "id": "share_bg",
+                    "name": "ui_share_bg",
+                    "type": "png"
+                },
+                {
+                    "id": "nav_left",
+                    "name": "btn_arrow_left",
+                    "type": "png"
+                },
+                {
+                    "id": "nav_right",
+                    "name": "btn_arrow_right",
+                    "type": "png"
+                }
+            ]
+        },
+        "audio": {
+            "path": "audio\/",
+            "array": [
+                {
+                    "id": "sfx_timer",
+                    "name": "sfx_timertick",
+                    "type": [
+                        "mp3",
+                        "ogg"
+                    ]
+                },
+                {
+                    "id": "q2_a1_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q2_a1_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q2_a2_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q2_a2_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q2_a3_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q2_a3_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q3_a1_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q3_a1_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q3_a2_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q3_a2_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q6_a1_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q6_a1_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q6_a2_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q6_a2_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q6_a3_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q6_a3_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q8_a1_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q8_a1_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q8_a2_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q8_a2_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q10_a1_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q10_a1_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q10_a2_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q10_a2_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q10_a3_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q10_a3_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q11_a1_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q11_a1_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q11_a2_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q11_a2_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q11_a3_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q11_a3_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q12_a1_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q12_a1_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q12_a2_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q12_a2_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q5_a1_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q5_a1_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q5_a2_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q5_a2_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q5_a3_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q5_a3_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q4_a3_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q4_a3_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q4_a4_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q4_a4_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q4_a5_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q4_a5_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q7_a1_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q7_a1_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q7_a2_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q7_a2_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q7_a3_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q7_a3_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "r1_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "r2_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q13_a1_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q13_a1_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q13_a2_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q13_a2_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q13_a3_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q13_a3_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q13_a4_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q13_a4_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q14_a1_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q14_a1_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q14_a2_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q14_a2_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q14_a3_audio",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "q14_a3_audio_roll",
+                    "enabled": false,
+                    "name": ""
+                },
+                {
+                    "id": "tpr1_audio",
+                    "enabled": false,
+                    "volume": 1
+                },
+                {
+                    "id": "tpa1_audio",
+                    "enabled": false,
+                    "volume": 1
+                },
+                {
+                    "id": "tpa1_audio_roll",
+                    "enabled": false,
+                    "volume": 1
+                }
+            ]
+        }
+    },
+    "quizzes": [
+        {
+            "name": "Test",
+            "type": {
+                "name": "normal",
+                "value": 0
+            },
+            "questions_last_id": 14,
+            "questions": [
+                {
+                    "id": 13,
+                    "enabled": true,
+                    "question": {
+                        "id": "q13",
+                        "color": "#000000",
+                        "textPosition": "outer",
+                        "align": "bottom",
+                        "bgImage": {
+                            "enabled": false,
+                            "name": "",
+                            "id": "text_q13_bgImage"
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "image": {
+                        "enabled": false,
+                        "id": "q13_image",
+                        "name": "q13_image"
+                    },
+                    "type": "match",
+                    "columns": 2,
+                    "time": 0,
+                    "questionAlign": "top",
+                    "questionLayout": "td",
+                    "matchLayout": "horizontal",
+                    "pickMultiple": false,
+                    "pickMax": 0,
+                    "shadow": {
+                        "enabled": true,
+                        "color": "#000000"
+                    },
+                    "translations": {
+                        "[id=title]": {
+                            "offsetY": null
+                        }
+                    },
+                    "decoupled_fields": [
+                        "title_offsetY",
+                        "textPosition",
+                        "align",
+                        "columns"
+                    ],
+                    "answers": [
+                        {
+                            "id": 1,
+                            "idSound": "q13_a1_audio",
+                            "idSoundRollover": "q13_a1_audio_roll",
+                            "valueResult": 0,
+                            "translations": {
+                                "[id=title]": {
+                                    "fontScale": null
+                                },
+                                "[id=title2]": {
+                                    "fontScale": null
+                                }
+                            },
+                            "decoupled_fields": [
+                                "title_fontScale",
+                                "title2_fontScale",
+                                "title2_textAlign",
+                                "textPosition2",
+                                "align2"
+                            ],
+                            "matches": [
+                                {
+                                    "text": {
+                                        "id": "q13_a1",
+                                        "color": "#000000",
+                                        "textPosition": "outer",
+                                        "align": "bottom",
+                                        "bgImage": {
+                                            "enabled": false,
+                                            "name": "",
+                                            "id": "text_q13_a1_bgImage"
+                                        },
+                                        "textAlign": "center",
+                                        "bgColor": "",
+                                        "bgAlpha": 1,
+                                        "bgPadding": 8,
+                                        "bgResize": "none"
+                                    },
+                                    "image": {
+                                        "enabled": true,
+                                        "id": "q13_a1_image",
+                                        "name": "q13_a1_image",
+                                        "type": "png"
+                                    }
+                                },
+                                {
+                                    "text": {
+                                        "id": "q13_a1_2",
+                                        "color": "#000000",
+                                        "textPosition": "outer",
+                                        "align": "bottom",
+                                        "bgImage": {
+                                            "enabled": false,
+                                            "name": ""
+                                        },
+                                        "textAlign": "center",
+                                        "bgColor": "",
+                                        "bgAlpha": 1,
+                                        "bgPadding": 8,
+                                        "bgResize": "none"
+                                    },
+                                    "image": {
+                                        "id": "q13_a1_2_image",
+                                        "name": "",
+                                        "type": "png",
+                                        "enabled": false
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "idSound": "q13_a2_audio",
+                            "idSoundRollover": "q13_a2_audio_roll",
+                            "valueResult": 0,
+                            "translations": {
+                                "[id=title2]": {
+                                    "fontScale": null
+                                }
+                            },
+                            "decoupled_fields": [
+                                "title2_fontScale",
+                                "title2_textAlign",
+                                "textPosition2",
+                                "align2"
+                            ],
+                            "matches": [
+                                {
+                                    "text": {
+                                        "id": "q13_a2",
+                                        "color": "#000000",
+                                        "textPosition": "outer",
+                                        "align": "bottom",
+                                        "bgImage": {
+                                            "enabled": false,
+                                            "name": "",
+                                            "id": "text_q13_a2_bgImage"
+                                        },
+                                        "textAlign": "center",
+                                        "bgColor": "",
+                                        "bgAlpha": 1,
+                                        "bgPadding": 8,
+                                        "bgResize": "none"
+                                    },
+                                    "image": {
+                                        "enabled": true,
+                                        "id": "q13_a2_image",
+                                        "name": "q13_a2_image",
+                                        "type": "png"
+                                    }
+                                },
+                                {
+                                    "text": {
+                                        "id": "q13_a2_2",
+                                        "color": "#000000",
+                                        "textPosition": "outer",
+                                        "align": "bottom",
+                                        "bgImage": {
+                                            "enabled": false,
+                                            "name": ""
+                                        },
+                                        "textAlign": "center",
+                                        "bgColor": "",
+                                        "bgAlpha": 1,
+                                        "bgPadding": 8,
+                                        "bgResize": "none"
+                                    },
+                                    "image": {
+                                        "id": "q13_a2_2_image",
+                                        "name": "",
+                                        "type": "png",
+                                        "enabled": false
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 3,
+                            "idSound": "q13_a3_audio",
+                            "idSoundRollover": "q13_a3_audio_roll",
+                            "valueResult": 0,
+                            "translations": {
+                                "[id=title2]": {
+                                    "fontScale": null
+                                }
+                            },
+                            "decoupled_fields": [
+                                "title2_fontScale",
+                                "title2_textAlign",
+                                "textPosition2",
+                                "align2"
+                            ],
+                            "matches": [
+                                {
+                                    "text": {
+                                        "id": "q13_a3",
+                                        "color": "#000000",
+                                        "textPosition": "outer",
+                                        "align": "bottom",
+                                        "bgImage": {
+                                            "enabled": false,
+                                            "name": "",
+                                            "id": "text_q13_a3_bgImage"
+                                        },
+                                        "textAlign": "center",
+                                        "bgColor": "",
+                                        "bgAlpha": 1,
+                                        "bgPadding": 8,
+                                        "bgResize": "none"
+                                    },
+                                    "image": {
+                                        "enabled": true,
+                                        "id": "q13_a3_image",
+                                        "name": "q13_a3_image",
+                                        "type": "png"
+                                    }
+                                },
+                                {
+                                    "text": {
+                                        "id": "q13_a3_2",
+                                        "color": "#000000",
+                                        "textPosition": "outer",
+                                        "align": "bottom",
+                                        "bgImage": {
+                                            "enabled": false,
+                                            "name": ""
+                                        },
+                                        "textAlign": "center",
+                                        "bgColor": "",
+                                        "bgAlpha": 1,
+                                        "bgPadding": 8,
+                                        "bgResize": "none"
+                                    },
+                                    "image": {
+                                        "id": "q13_a3_2_image",
+                                        "name": "",
+                                        "type": "png",
+                                        "enabled": false
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 4,
+                            "idSound": "q13_a4_audio",
+                            "idSoundRollover": "q13_a4_audio_roll",
+                            "valueResult": 0,
+                            "translations": {
+                                "[id=title2]": {
+                                    "fontScale": null
+                                }
+                            },
+                            "decoupled_fields": [
+                                "title2_fontScale",
+                                "title2_textAlign",
+                                "textPosition2",
+                                "align2"
+                            ],
+                            "matches": [
+                                {
+                                    "text": {
+                                        "id": "q13_a4",
+                                        "color": "#000000",
+                                        "textPosition": "outer",
+                                        "align": "bottom",
+                                        "bgImage": {
+                                            "enabled": false,
+                                            "name": "",
+                                            "id": "text_q13_a4_bgImage"
+                                        },
+                                        "textAlign": "center",
+                                        "bgColor": "",
+                                        "bgAlpha": 1,
+                                        "bgPadding": 8,
+                                        "bgResize": "none"
+                                    },
+                                    "image": {
+                                        "enabled": true,
+                                        "id": "q13_a4_image",
+                                        "name": "q13_a4_image",
+                                        "type": "png"
+                                    }
+                                },
+                                {
+                                    "text": {
+                                        "id": "q13_a4_2",
+                                        "color": "#000000",
+                                        "textPosition": "outer",
+                                        "align": "bottom",
+                                        "bgImage": {
+                                            "enabled": false,
+                                            "name": ""
+                                        },
+                                        "textAlign": "center",
+                                        "bgColor": "",
+                                        "bgAlpha": 1,
+                                        "bgPadding": 8,
+                                        "bgResize": "none"
+                                    },
+                                    "image": {
+                                        "id": "q13_a4_2_image",
+                                        "name": "",
+                                        "type": "png",
+                                        "enabled": false
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "answers_last_id": 4
+                },
+                {
+                    "id": 2,
+                    "enabled": true,
+                    "question": {
+                        "id": "q2",
+                        "color": "#000000",
+                        "textPosition": "outer",
+                        "align": "bottom",
+                        "bgImage": {
+                            "enabled": false,
+                            "name": ""
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "image": {
+                        "enabled": false
+                    },
+                    "type": "normal",
+                    "columns": 3,
+                    "time": 0,
+                    "questionAlign": "top",
+                    "questionLayout": "td",
+                    "matchLayout": "horizontal",
+                    "pickMultiple": false,
+                    "pickMax": 0,
+                    "shadow": {
+                        "enabled": true,
+                        "color": "#000000"
+                    },
+                    "decoupled_fields": [
+                        "columns"
+                    ],
+                    "answers": [
+                        {
+                            "id": 1,
+                            "text": {
+                                "id": "q2_a1",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "id": "q2_a1_image",
+                                "name": "q2_a1_image",
+                                "type": "png",
+                                "enabled": true
+                            },
+                            "image2": null,
+                            "idSound": "q2_a1_audio",
+                            "idSoundRollover": "q2_a1_audio_roll",
+                            "valueResult": 0,
+                            "decoupled_fields": []
+                        },
+                        {
+                            "id": 2,
+                            "text": {
+                                "id": "q2_a2",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "id": "q2_a2_image",
+                                "name": "q2_a2_image",
+                                "type": "png",
+                                "enabled": true
+                            },
+                            "image2": null,
+                            "idSound": "q2_a2_audio",
+                            "idSoundRollover": "q2_a2_audio_roll",
+                            "valueResult": 1,
+                            "decoupled_fields": []
+                        },
+                        {
+                            "id": 3,
+                            "text": {
+                                "id": "q2_a3",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "id": "q2_a3_image",
+                                "name": "q2_a3_image",
+                                "type": "png",
+                                "enabled": true
+                            },
+                            "image2": null,
+                            "idSound": "q2_a3_audio",
+                            "idSoundRollover": "q2_a3_audio_roll",
+                            "valueResult": 0,
+                            "decoupled_fields": []
+                        }
+                    ],
+                    "answers_last_id": 3
+                },
+                {
+                    "id": 3,
+                    "enabled": true,
+                    "question": {
+                        "id": "q3",
+                        "color": "#000000",
+                        "textPosition": "outer",
+                        "align": "bottom",
+                        "bgImage": {
+                            "enabled": false,
+                            "name": ""
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "image": {
+                        "enabled": false
+                    },
+                    "type": "normal",
+                    "columns": 2,
+                    "time": 0,
+                    "questionAlign": "top",
+                    "questionLayout": "td",
+                    "matchLayout": "horizontal",
+                    "pickMultiple": false,
+                    "pickMax": 0,
+                    "shadow": {
+                        "enabled": true,
+                        "color": "#000000"
+                    },
+                    "decoupled_fields": [],
+                    "answers": [
+                        {
+                            "id": 1,
+                            "text": {
+                                "id": "q3_a1",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "id": "q3_a1_image",
+                                "name": "q3_a1_image",
+                                "type": "png",
+                                "enabled": true
+                            },
+                            "image2": null,
+                            "idSound": "q3_a1_audio",
+                            "idSoundRollover": "q3_a1_audio_roll",
+                            "valueResult": 1,
+                            "decoupled_fields": []
+                        },
+                        {
+                            "id": 2,
+                            "text": {
+                                "id": "q3_a2",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "id": "q3_a2_image",
+                                "name": "q3_a2_image",
+                                "type": "png",
+                                "enabled": true
+                            },
+                            "image2": null,
+                            "idSound": "q3_a2_audio",
+                            "idSoundRollover": "q3_a2_audio_roll",
+                            "valueResult": 0,
+                            "decoupled_fields": []
+                        }
+                    ],
+                    "answers_last_id": 2
+                },
+                {
+                    "id": 4,
+                    "enabled": true,
+                    "question": {
+                        "id": "q4",
+                        "color": "#000000",
+                        "textPosition": "outer",
+                        "align": "bottom",
+                        "bgImage": {
+                            "enabled": false,
+                            "name": ""
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "image": {
+                        "enabled": false
+                    },
+                    "type": "normal",
+                    "columns": 3,
+                    "time": 0,
+                    "questionAlign": "top",
+                    "questionLayout": "td",
+                    "matchLayout": "horizontal",
+                    "pickMultiple": false,
+                    "pickMax": 0,
+                    "shadow": {
+                        "enabled": true,
+                        "color": "#000000"
+                    },
+                    "decoupled_fields": [
+                        "columns"
+                    ],
+                    "answers": [
+                        {
+                            "id": 3,
+                            "text": {
+                                "id": "q4_a3",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "id": "q4_a3_image",
+                                "name": "q4_a3_image",
+                                "type": "png",
+                                "enabled": true
+                            },
+                            "image2": null,
+                            "idSound": "q4_a3_audio",
+                            "idSoundRollover": "q4_a3_audio_roll",
+                            "valueResult": 1,
+                            "decoupled_fields": []
+                        },
+                        {
+                            "id": 4,
+                            "text": {
+                                "id": "q4_a4",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "id": "q4_a4_image",
+                                "name": "q4_a4_image",
+                                "type": "png",
+                                "enabled": true
+                            },
+                            "image2": null,
+                            "idSound": "q4_a4_audio",
+                            "idSoundRollover": "q4_a4_audio_roll",
+                            "valueResult": 0,
+                            "decoupled_fields": []
+                        },
+                        {
+                            "id": 5,
+                            "text": {
+                                "id": "q4_a5",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "id": "q4_a5_image",
+                                "name": "q4_a5_image",
+                                "type": "png",
+                                "enabled": true
+                            },
+                            "image2": null,
+                            "idSound": "q4_a5_audio",
+                            "idSoundRollover": "q4_a5_audio_roll",
+                            "valueResult": 0,
+                            "decoupled_fields": []
+                        }
+                    ],
+                    "answers_last_id": 5
+                },
+                {
+                    "id": 5,
+                    "enabled": true,
+                    "question": {
+                        "id": "q5",
+                        "color": "#000000",
+                        "textPosition": "outer",
+                        "align": "bottom",
+                        "bgImage": {
+                            "enabled": false,
+                            "name": ""
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "image": {
+                        "enabled": false
+                    },
+                    "type": "normal",
+                    "columns": 3,
+                    "time": 0,
+                    "questionAlign": "top",
+                    "questionLayout": "td",
+                    "matchLayout": "horizontal",
+                    "pickMultiple": false,
+                    "pickMax": 0,
+                    "shadow": {
+                        "enabled": true,
+                        "color": "#000000"
+                    },
+                    "decoupled_fields": [
+                        "columns"
+                    ],
+                    "answers": [
+                        {
+                            "id": 1,
+                            "text": {
+                                "id": "q5_a1",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "id": "q5_a1_image",
+                                "name": "q5_a1_image",
+                                "type": "png",
+                                "enabled": true
+                            },
+                            "image2": null,
+                            "idSound": "q5_a1_audio",
+                            "idSoundRollover": "q5_a1_audio_roll",
+                            "valueResult": 0,
+                            "translations": {
+                                "[id=title]": {
+                                    "offsetY": null
+                                }
+                            },
+                            "decoupled_fields": [
+                                "title_offsetY"
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "text": {
+                                "id": "q5_a2",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "id": "q5_a2_image",
+                                "name": "q5_a2_image",
+                                "type": "png",
+                                "enabled": true
+                            },
+                            "image2": null,
+                            "idSound": "q5_a2_audio",
+                            "idSoundRollover": "q5_a2_audio_roll",
+                            "valueResult": 0,
+                            "decoupled_fields": []
+                        },
+                        {
+                            "id": 3,
+                            "text": {
+                                "id": "q5_a3",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "id": "q5_a3_image",
+                                "name": "q5_a3_image",
+                                "type": "png",
+                                "enabled": true
+                            },
+                            "image2": null,
+                            "idSound": "q5_a3_audio",
+                            "idSoundRollover": "q5_a3_audio_roll",
+                            "valueResult": 1,
+                            "decoupled_fields": []
+                        }
+                    ],
+                    "answers_last_id": 3
+                },
+                {
+                    "id": 6,
+                    "enabled": true,
+                    "question": {
+                        "id": "q6",
+                        "color": "#000000",
+                        "textPosition": "outer",
+                        "align": "bottom",
+                        "bgImage": {
+                            "enabled": false,
+                            "name": ""
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "image": {
+                        "enabled": false
+                    },
+                    "type": "normal",
+                    "columns": 3,
+                    "time": 0,
+                    "questionAlign": "top",
+                    "questionLayout": "td",
+                    "matchLayout": "horizontal",
+                    "pickMultiple": false,
+                    "pickMax": 0,
+                    "shadow": {
+                        "enabled": true,
+                        "color": "#000000"
+                    },
+                    "decoupled_fields": [
+                        "columns"
+                    ],
+                    "answers": [
+                        {
+                            "id": 1,
+                            "text": {
+                                "id": "q6_a1",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "id": "q6_a1_image",
+                                "name": "q6_a1_image",
+                                "type": "png",
+                                "enabled": true
+                            },
+                            "image2": null,
+                            "idSound": "q6_a1_audio",
+                            "idSoundRollover": "q6_a1_audio_roll",
+                            "valueResult": 1,
+                            "translations": {
+                                "[id=title]": {
+                                    "offsetY": null
+                                }
+                            },
+                            "decoupled_fields": [
+                                "title_offsetY"
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "text": {
+                                "id": "q6_a2",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "id": "q6_a2_image",
+                                "name": "q6_a2_image",
+                                "type": "png",
+                                "enabled": true
+                            },
+                            "image2": null,
+                            "idSound": "q6_a2_audio",
+                            "idSoundRollover": "q6_a2_audio_roll",
+                            "valueResult": 0,
+                            "decoupled_fields": []
+                        },
+                        {
+                            "id": 3,
+                            "text": {
+                                "id": "q6_a3",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "id": "q6_a3_image",
+                                "name": "q6_a3_image",
+                                "type": "png",
+                                "enabled": true
+                            },
+                            "image2": null,
+                            "idSound": "q6_a3_audio",
+                            "idSoundRollover": "q6_a3_audio_roll",
+                            "valueResult": 0,
+                            "decoupled_fields": []
+                        }
+                    ],
+                    "answers_last_id": 3
+                },
+                {
+                    "id": 7,
+                    "enabled": true,
+                    "question": {
+                        "id": "q7",
+                        "color": "#000000",
+                        "textPosition": "outer",
+                        "align": "bottom",
+                        "bgImage": {
+                            "enabled": false,
+                            "name": ""
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "image": {
+                        "enabled": false
+                    },
+                    "type": "normal",
+                    "columns": 3,
+                    "time": 0,
+                    "questionAlign": "top",
+                    "questionLayout": "td",
+                    "matchLayout": "horizontal",
+                    "pickMultiple": false,
+                    "pickMax": 0,
+                    "shadow": {
+                        "enabled": true,
+                        "color": "#000000"
+                    },
+                    "decoupled_fields": [
+                        "columns"
+                    ],
+                    "answers": [
+                        {
+                            "id": 1,
+                            "text": {
+                                "id": "q7_a1",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "id": "q7_a1_image",
+                                "name": "q7_a1_image",
+                                "type": "png",
+                                "enabled": true
+                            },
+                            "image2": null,
+                            "idSound": "q7_a1_audio",
+                            "idSoundRollover": "q7_a1_audio_roll",
+                            "valueResult": 1,
+                            "decoupled_fields": []
+                        },
+                        {
+                            "id": 2,
+                            "text": {
+                                "id": "q7_a2",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "id": "q7_a2_image",
+                                "name": "q7_a2_image",
+                                "type": "png",
+                                "enabled": true
+                            },
+                            "image2": null,
+                            "idSound": "q7_a2_audio",
+                            "idSoundRollover": "q7_a2_audio_roll",
+                            "valueResult": 0,
+                            "decoupled_fields": []
+                        },
+                        {
+                            "id": 3,
+                            "text": {
+                                "id": "q7_a3",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "id": "q7_a3_image",
+                                "name": "q7_a3_image",
+                                "type": "png",
+                                "enabled": true
+                            },
+                            "image2": null,
+                            "idSound": "q7_a3_audio",
+                            "idSoundRollover": "q7_a3_audio_roll",
+                            "valueResult": 0,
+                            "decoupled_fields": []
+                        }
+                    ],
+                    "answers_last_id": 3
+                },
+                {
+                    "id": 8,
+                    "enabled": true,
+                    "question": {
+                        "id": "q8",
+                        "color": "#000000",
+                        "textPosition": "outer",
+                        "align": "bottom",
+                        "bgImage": {
+                            "enabled": false,
+                            "name": ""
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "image": {
+                        "enabled": false
+                    },
+                    "type": "normal",
+                    "columns": 2,
+                    "time": 0,
+                    "questionAlign": "top",
+                    "questionLayout": "td",
+                    "matchLayout": "horizontal",
+                    "pickMultiple": false,
+                    "pickMax": 0,
+                    "shadow": {
+                        "enabled": true,
+                        "color": "#000000"
+                    },
+                    "decoupled_fields": [],
+                    "answers": [
+                        {
+                            "id": 1,
+                            "text": {
+                                "id": "q8_a1",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "id": "q8_a1_image",
+                                "name": "q8_a1_image",
+                                "type": "png",
+                                "enabled": true
+                            },
+                            "image2": null,
+                            "idSound": "q8_a1_audio",
+                            "idSoundRollover": "q8_a1_audio_roll",
+                            "valueResult": 1,
+                            "decoupled_fields": []
+                        },
+                        {
+                            "id": 2,
+                            "text": {
+                                "id": "q8_a2",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "id": "q8_a2_image",
+                                "name": "q8_a2_image",
+                                "type": "png",
+                                "enabled": true
+                            },
+                            "image2": null,
+                            "idSound": "q8_a2_audio",
+                            "idSoundRollover": "q8_a2_audio_roll",
+                            "valueResult": 0,
+                            "decoupled_fields": []
+                        }
+                    ],
+                    "answers_last_id": 2
+                },
+                {
+                    "id": 14,
+                    "enabled": true,
+                    "question": {
+                        "id": "q14",
+                        "color": "#000000",
+                        "textPosition": "outer",
+                        "align": "bottom",
+                        "bgImage": {
+                            "enabled": false,
+                            "name": "",
+                            "id": "text_q14_bgImage"
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "image": {
+                        "enabled": false,
+                        "id": "q14_image",
+                        "name": "q14_image"
+                    },
+                    "type": "match",
+                    "columns": 3,
+                    "time": 0,
+                    "questionAlign": "top",
+                    "questionLayout": "td",
+                    "matchLayout": "vertical",
+                    "pickMultiple": false,
+                    "pickMax": 0,
+                    "shadow": {
+                        "enabled": true,
+                        "color": "#000000"
+                    },
+                    "decoupled_fields": [
+                        "matchLayout",
+                        "columns"
+                    ],
+                    "answers": [
+                        {
+                            "id": 1,
+                            "idSound": "q14_a1_audio",
+                            "idSoundRollover": "q14_a1_audio_roll",
+                            "valueResult": 0,
+                            "translations": {
+                                "[id=title]": {
+                                    "fontScale": null
+                                },
+                                "[id=title2]": {
+                                    "fontScale": null
+                                }
+                            },
+                            "decoupled_fields": [
+                                "title_fontScale",
+                                "title2_fontScale"
+                            ],
+                            "matches": [
+                                {
+                                    "text": {
+                                        "id": "q14_a1",
+                                        "color": "#000000",
+                                        "textPosition": "outer",
+                                        "align": "bottom",
+                                        "bgImage": {
+                                            "enabled": false,
+                                            "name": "",
+                                            "id": "text_q14_a1_bgImage"
+                                        },
+                                        "textAlign": "center",
+                                        "bgColor": "",
+                                        "bgAlpha": 1,
+                                        "bgPadding": 8,
+                                        "bgResize": "none"
+                                    },
+                                    "image": {
+                                        "enabled": true,
+                                        "id": "q14_a1_image",
+                                        "name": "q14_a1_image",
+                                        "type": "png"
+                                    }
+                                },
+                                {
+                                    "text": {
+                                        "id": "q14_a1_2",
+                                        "color": "#000000",
+                                        "textPosition": "outer",
+                                        "align": "bottom",
+                                        "bgImage": {
+                                            "enabled": false,
+                                            "name": ""
+                                        },
+                                        "textAlign": "center",
+                                        "bgColor": "",
+                                        "bgAlpha": 1,
+                                        "bgPadding": 8,
+                                        "bgResize": "none"
+                                    },
+                                    "image": {
+                                        "id": "q14_a1_2_image",
+                                        "name": "",
+                                        "type": "png",
+                                        "enabled": false
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "idSound": "q14_a2_audio",
+                            "idSoundRollover": "q14_a2_audio_roll",
+                            "valueResult": 0,
+                            "translations": {
+                                "[id=title]": {
+                                    "fontScale": null
+                                },
+                                "[id=title2]": {
+                                    "fontScale": null
+                                }
+                            },
+                            "decoupled_fields": [
+                                "title_fontScale",
+                                "title2_fontScale"
+                            ],
+                            "matches": [
+                                {
+                                    "text": {
+                                        "id": "q14_a2",
+                                        "color": "#000000",
+                                        "textPosition": "outer",
+                                        "align": "bottom",
+                                        "bgImage": {
+                                            "enabled": false,
+                                            "name": "",
+                                            "id": "text_q14_a2_bgImage"
+                                        },
+                                        "textAlign": "center",
+                                        "bgColor": "",
+                                        "bgAlpha": 1,
+                                        "bgPadding": 8,
+                                        "bgResize": "none"
+                                    },
+                                    "image": {
+                                        "enabled": true,
+                                        "id": "q14_a2_image",
+                                        "name": "q14_a2_image",
+                                        "type": "png"
+                                    }
+                                },
+                                {
+                                    "text": {
+                                        "id": "q14_a2_2",
+                                        "color": "#000000",
+                                        "textPosition": "outer",
+                                        "align": "bottom",
+                                        "bgImage": {
+                                            "enabled": false,
+                                            "name": ""
+                                        },
+                                        "textAlign": "center",
+                                        "bgColor": "",
+                                        "bgAlpha": 1,
+                                        "bgPadding": 8,
+                                        "bgResize": "none"
+                                    },
+                                    "image": {
+                                        "id": "q14_a2_2_image",
+                                        "name": "",
+                                        "type": "png",
+                                        "enabled": false
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 3,
+                            "idSound": "q14_a3_audio",
+                            "idSoundRollover": "q14_a3_audio_roll",
+                            "valueResult": 0,
+                            "translations": {
+                                "[id=title]": {
+                                    "fontScale": null
+                                },
+                                "[id=title2]": {
+                                    "fontScale": null
+                                }
+                            },
+                            "decoupled_fields": [
+                                "title_fontScale",
+                                "title2_fontScale"
+                            ],
+                            "matches": [
+                                {
+                                    "text": {
+                                        "id": "q14_a3",
+                                        "color": "#000000",
+                                        "textPosition": "outer",
+                                        "align": "bottom",
+                                        "bgImage": {
+                                            "enabled": false,
+                                            "name": "",
+                                            "id": "text_q14_a3_bgImage"
+                                        },
+                                        "textAlign": "center",
+                                        "bgColor": "",
+                                        "bgAlpha": 1,
+                                        "bgPadding": 8,
+                                        "bgResize": "none"
+                                    },
+                                    "image": {
+                                        "enabled": true,
+                                        "id": "q14_a3_image",
+                                        "name": "q14_a3_image",
+                                        "type": "png"
+                                    }
+                                },
+                                {
+                                    "text": {
+                                        "id": "q14_a3_2",
+                                        "color": "#000000",
+                                        "textPosition": "outer",
+                                        "align": "bottom",
+                                        "bgImage": {
+                                            "enabled": false,
+                                            "name": ""
+                                        },
+                                        "textAlign": "center",
+                                        "bgColor": "",
+                                        "bgAlpha": 1,
+                                        "bgPadding": 8,
+                                        "bgResize": "none"
+                                    },
+                                    "image": {
+                                        "id": "q14_a3_2_image",
+                                        "name": "",
+                                        "type": "png",
+                                        "enabled": false
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "answers_last_id": 3
+                },
+                {
+                    "id": 10,
+                    "enabled": true,
+                    "question": {
+                        "id": "q10",
+                        "color": "#000000",
+                        "textPosition": "outer",
+                        "align": "bottom",
+                        "bgImage": {
+                            "enabled": false,
+                            "name": ""
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "image": {
+                        "enabled": false
+                    },
+                    "type": "normal",
+                    "columns": 3,
+                    "time": 0,
+                    "questionAlign": "top",
+                    "questionLayout": "td",
+                    "matchLayout": "horizontal",
+                    "pickMultiple": false,
+                    "pickMax": 0,
+                    "shadow": {
+                        "enabled": true,
+                        "color": "#000000"
+                    },
+                    "decoupled_fields": [
+                        "columns"
+                    ],
+                    "answers": [
+                        {
+                            "id": 1,
+                            "text": {
+                                "id": "q10_a1",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "id": "q10_a1_image",
+                                "name": "q10_a1_image",
+                                "type": "png",
+                                "enabled": true
+                            },
+                            "image2": null,
+                            "idSound": "q10_a1_audio",
+                            "idSoundRollover": "q10_a1_audio_roll",
+                            "valueResult": 0,
+                            "decoupled_fields": []
+                        },
+                        {
+                            "id": 2,
+                            "text": {
+                                "id": "q10_a2",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "id": "q10_a2_image",
+                                "name": "q10_a2_image",
+                                "type": "png",
+                                "enabled": true
+                            },
+                            "image2": null,
+                            "idSound": "q10_a2_audio",
+                            "idSoundRollover": "q10_a2_audio_roll",
+                            "valueResult": 0,
+                            "decoupled_fields": []
+                        },
+                        {
+                            "id": 3,
+                            "text": {
+                                "id": "q10_a3",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "enabled": true,
+                                "id": "q10_a3_image",
+                                "name": "q10_a3_image",
+                                "type": "png"
+                            },
+                            "image2": null,
+                            "idSound": "q10_a3_audio",
+                            "idSoundRollover": "q10_a3_audio_roll",
+                            "valueResult": 1,
+                            "decoupled_fields": []
+                        }
+                    ],
+                    "answers_last_id": 3
+                },
+                {
+                    "id": 11,
+                    "enabled": true,
+                    "question": {
+                        "id": "q11",
+                        "color": "#000000",
+                        "textPosition": "outer",
+                        "align": "bottom",
+                        "bgImage": {
+                            "enabled": false,
+                            "name": ""
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "image": {
+                        "enabled": false
+                    },
+                    "type": "normal",
+                    "columns": 3,
+                    "time": 0,
+                    "questionAlign": "top",
+                    "questionLayout": "td",
+                    "matchLayout": "horizontal",
+                    "pickMultiple": false,
+                    "pickMax": 0,
+                    "shadow": {
+                        "enabled": true,
+                        "color": "#000000"
+                    },
+                    "decoupled_fields": [
+                        "columns"
+                    ],
+                    "answers": [
+                        {
+                            "id": 1,
+                            "text": {
+                                "id": "q11_a1",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "id": "q11_a1_image",
+                                "name": "q11_a1_image",
+                                "type": "png",
+                                "enabled": true
+                            },
+                            "image2": null,
+                            "idSound": "q11_a1_audio",
+                            "idSoundRollover": "q11_a1_audio_roll",
+                            "valueResult": 0,
+                            "decoupled_fields": []
+                        },
+                        {
+                            "id": 2,
+                            "text": {
+                                "id": "q11_a2",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "id": "q11_a2_image",
+                                "name": "q11_a2_image",
+                                "type": "png",
+                                "enabled": true
+                            },
+                            "image2": null,
+                            "idSound": "q11_a2_audio",
+                            "idSoundRollover": "q11_a2_audio_roll",
+                            "valueResult": 1,
+                            "decoupled_fields": []
+                        },
+                        {
+                            "id": 3,
+                            "text": {
+                                "id": "q11_a3",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "id": "q11_a3_image",
+                                "name": "q11_a3_image",
+                                "type": "png",
+                                "enabled": true
+                            },
+                            "image2": null,
+                            "idSound": "q11_a3_audio",
+                            "idSoundRollover": "q11_a3_audio_roll",
+                            "valueResult": 0,
+                            "decoupled_fields": []
+                        }
+                    ],
+                    "answers_last_id": 3
+                },
+                {
+                    "id": 12,
+                    "enabled": true,
+                    "question": {
+                        "id": "q12",
+                        "color": "#000000",
+                        "textPosition": "outer",
+                        "align": "bottom",
+                        "bgImage": {
+                            "enabled": false,
+                            "name": ""
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "image": {
+                        "enabled": false
+                    },
+                    "type": "normal",
+                    "columns": 2,
+                    "time": 0,
+                    "questionAlign": "top",
+                    "questionLayout": "td",
+                    "matchLayout": "horizontal",
+                    "pickMultiple": false,
+                    "pickMax": 0,
+                    "shadow": {
+                        "enabled": true,
+                        "color": "#000000"
+                    },
+                    "decoupled_fields": [],
+                    "answers": [
+                        {
+                            "id": 1,
+                            "text": {
+                                "id": "q12_a1",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "id": "q12_a1_image",
+                                "name": "q12_a1_image",
+                                "type": "png",
+                                "enabled": true
+                            },
+                            "image2": null,
+                            "idSound": "q12_a1_audio",
+                            "idSoundRollover": "q12_a1_audio_roll",
+                            "valueResult": 1,
+                            "decoupled_fields": []
+                        },
+                        {
+                            "id": 2,
+                            "text": {
+                                "id": "q12_a2",
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false,
+                                    "name": ""
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "text2": {
+                                "id": null,
+                                "color": "#000000",
+                                "textPosition": "outer",
+                                "align": "bottom",
+                                "bgImage": {
+                                    "enabled": false
+                                },
+                                "textAlign": "center",
+                                "bgColor": "",
+                                "bgAlpha": 1,
+                                "bgPadding": 8,
+                                "bgResize": "none"
+                            },
+                            "image": {
+                                "id": "q12_a2_image",
+                                "name": "q12_a2_image",
+                                "type": "png",
+                                "enabled": true
+                            },
+                            "image2": null,
+                            "idSound": "q12_a2_audio",
+                            "idSoundRollover": "q12_a2_audio_roll",
+                            "valueResult": 0,
+                            "decoupled_fields": []
+                        }
+                    ],
+                    "answers_last_id": 2
+                }
+            ],
+            "question_templates": [
+                {
+                    "id": 1,
+                    "enabled": true,
+                    "question": {
+                        "id": "tpq1_text",
+                        "color": "#000000",
+                        "textPosition": "outer",
+                        "align": "bottom",
+                        "bgImage": {
+                            "enabled": false
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "image": null,
+                    "type": "normal",
+                    "columns": 2,
+                    "time": 0,
+                    "questionAlign": "top",
+                    "questionLayout": "td",
+                    "matchLayout": "horizontal",
+                    "pickMultiple": false,
+                    "pickMax": 0,
+                    "shadow": {
+                        "enabled": true,
+                        "color": "#000000"
+                    },
+                    "translations": [
+                        {
+                            "id": "tpq1_text",
+                            "fontScale": "0.5",
+                            "fontName": "font_futura_bold",
+                            "offsetX": "0",
+                            "offsetY": "30"
+                        }
+                    ]
+                }
+            ],
+            "answer_templates": [
+                {
+                    "id": 1,
+                    "text": {
+                        "id": "tpa1_text",
+                        "color": "#000000",
+                        "textPosition": "outer",
+                        "align": "bottom",
+                        "bgImage": {
+                            "enabled": false
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "text2": {
+                        "id": "tpa1_text2",
+                        "color": "#000000",
+                        "textPosition": "outer",
+                        "align": "bottom",
+                        "bgImage": {
+                            "enabled": false
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "image": null,
+                    "image2": null,
+                    "idSound": "tpa1_audio",
+                    "idSoundRollover": "tpa1_audio_roll",
+                    "valueResult": 0,
+                    "translations": [
+                        {
+                            "id": "tpa1_text",
+                            "fontScale": "0.5",
+                            "fontName": "font_futura_medium",
+                            "offsetX": "0",
+                            "offsetY": "0"
+                        },
+                        {
+                            "id": "tpa1_text2",
+                            "fontScale": "0.5",
+                            "fontName": "font_futura_medium"
+                        }
+                    ]
+                }
+            ],
+            "results_last_id": 2,
+            "results": [
+                {
+                    "id": 2,
+                    "header": {
+                        "id": "r2_header",
+                        "color": "#000000",
+                        "bgImage": {
+                            "enabled": false,
+                            "name": ""
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "copy": {
+                        "id": "r2_copy",
+                        "color": "#000000",
+                        "bgImage": {
+                            "enabled": false,
+                            "name": ""
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "image": {
+                        "name": "r2_image",
+                        "enabled": true,
+                        "id": "r2_image",
+                        "type": "png"
+                    },
+                    "idSound": "r2_audio",
+                    "value": 0,
+                    "particles": "",
+                    "translations": {
+                        "[id=result_name]": {
+                            "fontScale": null
+                        },
+                        "[id=result_desc]": {
+                            "fontScale": null
+                        }
+                    },
+                    "decoupled_fields": [
+                        "result_name_fontScale",
+                        "result_desc_fontScale"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "header": {
+                        "id": "r1_header",
+                        "color": "#000000",
+                        "bgImage": {
+                            "enabled": false,
+                            "name": ""
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "copy": {
+                        "id": "r1_copy",
+                        "color": "#000000",
+                        "bgImage": {
+                            "enabled": false,
+                            "name": ""
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "image": {
+                        "name": "r1_image",
+                        "enabled": true,
+                        "id": "r1_image",
+                        "type": "png"
+                    },
+                    "idSound": "r1_audio",
+                    "value": 6,
+                    "particles": "",
+                    "translations": {
+                        "[id=result_name]": {
+                            "fontScale": null
+                        },
+                        "[id=result_desc]": {
+                            "fontScale": null
+                        }
+                    },
+                    "decoupled_fields": [
+                        "result_name_fontScale",
+                        "result_desc_fontScale"
+                    ]
+                }
+            ],
+            "result_templates": [
+                {
+                    "id": 1,
+                    "header": {
+                        "id": "tpr1_header",
+                        "color": "#000000",
+                        "bgImage": {
+                            "enabled": false
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "copy": {
+                        "id": "tpr1_copy",
+                        "color": "#000000",
+                        "bgImage": {
+                            "enabled": false
+                        },
+                        "textAlign": "center",
+                        "bgColor": "",
+                        "bgAlpha": 1,
+                        "bgPadding": 8,
+                        "bgResize": "none"
+                    },
+                    "image": null,
+                    "idSound": "tpr1_audio",
+                    "value": 0,
+                    "particles": "",
+                    "translations": [
+                        {
+                            "id": "tpr1_header",
+                            "fontScale": "1",
+                            "fontName": "font_futura_bold",
+                            "offsetX": "0",
+                            "offsetY": "0"
+                        },
+                        {
+                            "id": "tpr1_copy",
+                            "fontScale": "1",
+                            "fontName": "font_futura_medium",
+                            "offsetX": "0",
+                            "offsetY": "0"
+                        }
+                    ]
+                }
+            ],
+            "results_extras": [],
+            "result_particles_confetti": [],
+            "result_particles_fireworks": []
+        }
+    ],
+    "meta": {
+        "built_at": "13 January 2017, 15:18",
+        "builder_num": "140"
+    }
+}

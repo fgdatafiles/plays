@@ -1,0 +1,1273 @@
+<!-- 
+	Mission data structure:
+	id: String. This is the reference label for the mission used in the code.
+	title: String. The name of the mission seen by players. [TODO] better formatting than adding in actual line breaks
+	description: String. Text that comes up in the mission briefing.
+	difficulty: Int. Rating from 1-5 that states how hard the mission is.
+	levels: Array of asdkfghose: Set of level IDs that will determine what Levels to use for this mission.
+	mainCharacter: Determines focus character that should say an intro line upon choosing the mission.
+	mainLoc: Determines which intro line the character will say (imperial or ghost)
+	showStatus: Determines how the mission appears (or doesn't appear) on the episode select screen:
+		0 = Hidden. Mission is based on a TV episode that hasn't been released yet.
+		1 = Highlighted. Mission's based on a recent TV episode, and should have the word NEW printed on it.
+		2 = Normal. Mission appears normally in the list with no bells or whistles.
+	video: String. This is played upon completing the mission.
+	
+	Level data structure:
+	id: Int. Value that ConstantsApp.INT_LEVEL should be set to to get this leveldata... Or something.
+	title: String. Displays name of this level on the briefing screen.
+	description: String. Description of level shown when loading.
+	location: String. Read in to determine which set of maps/starting location that we should assume for CHOPPER.
+	win: String. What string to print when the level's steps are done.
+	endingSting: String. The piece of music that should play upon reaing the win dialogue.
+	steps: Array of the things below: Set of step datas used to construct different scenarios in the level.
+	specialBG: A step switch that's used to insert special background conditions into each level.
+		-If left blank, this defaults to... Well, default.
+		-"SPACE" - Used for imperial bases, space puts view of beautiful space in the windows and computer screens.
+		-"ASTEROID" - outside the window/screens, the base is on a space rock.
+	
+	Step data structure:
+	Intro: String. Dialog featured at the start of this stage. Parts that look like /THIS/ are character names, used to deduce portraits. They also separate messages.
+	Type: Int. Determines how the step goes:
+		1 = Random. Alerts appear at random.
+		2 = Targeted. The minigame defined below is spawned. It must be completed to move on. While failing can generate other alerts, they are unrelated and do not permit further progress.
+		3 = Event. The minigame will use a special string to activate a custom script upon complete. Same as 2. See below.
+	Minigames: String. A string of letters (ABDEF) that determines which minigame types to spawn. Can also put in a number (13) to define a specific alert index to use.
+	Sidequests: String. Same format as Minigames. Used in type 2/3 games as side problems that need to be done, but do not progress the game.
+	Winsneed: Int. Determines how many minigames you need to win to move on.
+	Lose: String. This is said when the mission is failed.
+	Event: String. When type is 3, this string will be read in by World on minigame completion, and perform its action.
+	effect: Determines combination of visual effects and sound effects to play while in this stage:
+		-"none" - No sound or anything.
+		-"attacked" - Sounds of lasers hitting the ship, coinciding with screen shakes.
+		-"turbulence" - infrequent screen shakes. Either no sounds, or minor rumbles.
+		-"selfdestruct" = constant shaking, and the sound of klaxon.
+		-"poweroutage" - darkness overlay on whole screen. Used for abandoned stuff or when Ghost gets a burned out lightbulb.
+		-"URGENT" - special effect, used on empire bases. No screen effects, but this will play intense music. It also speeds up alert timers (there should be very few active alerts), but this functionality might be offline.
+	npcEzra: string & 2 integers separated by comma (Cargo, 11,9 for example) determining where Ezra should show up. Refer to constantsapp for info on what room names to use. 4th is a custom animation, and 5th is intonation of the line.
+	npcHera
+	npcSabine
+	npcKanan
+	npcZeb
+	NOTE: The characters that have unique 'help' lines are Ezra and Sabine.
+	If you need a mood, but don't need a pose, just leave the 4th string blank, and it'll default to standing.
+	sting: if set, this will play a small musical sting when this step begins. Refer to the assets folder for different names.
+	music: if set, this step will have its own music play, overriding whatever's set in effect.
+	
+	ezraDialog et.al: string. This is what an NPC should say when interacted with at the given moment.
+	
+ -->
+
+<missions>
+	<mission id="1"			title="The Big Freeze"			difficulty="1"		mainCharacter="Ezra"	mainLoc="GHOST"	showStatus="2" video="SWR-001_clip_02"
+				description="Rumour has it that the Empire is testing biological weapons in a lab off of Kessel.  We're going over there to grab one of their research crates and see what exactly they're up to...">
+			<level id = "0" title = "Safely approach Kessel Bunker & extract biological crates"
+				description = "Storing climate-controlled crates on the Ghost is a bit of a challenge: The asteroids of Kessel must be avoided, and the shipment must be lifted off the base without the Empire catching on. The Rebels need CHOPPER's help to get through the mission successfully!"
+				location = "GHOST"
+				win="SABN/MOOD:positive/Phew!  Good work, CHOPPER, I wasn't ready to volunteer for an Imperial science experiment..."
+				endingSting="level_complete_something">
+					<step intro ="KANN/MOOD:help/Okay we're closing in on the facility. There's a ton of debris in this asteroid field, we might take some hits!" 
+						type="1" minigames="3,6,7,13" winsneed = "6" effect = "turbulence"
+						lose="HERA/MOOD:help/CHOPPER, I'm a bit too busy to do it myself, you know!"
+						heraDialog="I'll need you to do damage control, CHOPPER."
+						sting = "mystery"></step>
+					<step intro ="HERA/MOOD:help/CHOPPER take over navigation while I prepare the hold for some frozen cargo. Don't hit any rocks!" 
+						type="2" minigames="0" sidequests="3,6,7,13" winsneed = "1" effect = "none"
+						lose="EZRA/MOOD:negative/Didja want to make a quick pit stop on one of those asteroids, CHOPPER?"
+						npcHera = "the Cargo Bay,10,6" heraDialog="Hey, you're supposed to be busy in the cockpit. Get to it!"></step>
+					<step intro ="ZEBB/MOOD:casual/Okay CHOPPER drop down there and grab that freeze crate." 
+						type="2" minigames="9" winsneed = "1" effect = "none"
+						lose="KANN/MOOD:negative/Do you need to replace your Rockets, CHOPPER?"
+						npcHera = "the Cargo Bay,10,6" heraDialog="Drop down out the back of the ship, CHOPPER!"
+						sting="level_complete_tense"></step>
+					<step intro ="EZRA/MOOD:negative/CHOPPER the freezer was damaged during the pickup!  Seal it up before we get eaten by mutant bacteria!" 
+						type="2" minigames="11" winsneed = "1" effect = "none"
+						lose="SABN/MOOD:negative/Did you try to plug that crack with Brightgum?!"
+						npcHera = "the Cargo Bay,10,6,,negative" heraDialog="Looks like the Imperials skimped on containment procedures..."
+						sting="iamyourfather"></step>
+			</level>
+			<level id = "1" title = "Escape from retaliating Imperial forces"
+				description = "GHOST's been spotted by the Imperial forces, and TIE fighters are quickly closing in! Fight off any ships that reach your location, and escape with the crates intact!"
+				location = "GHOST"
+				win="KANN/MOOD:positive/Good work team, especially you, CHOPPER!  Now let's get this stuff to a contact of mine on Felucia..."
+				endingSting="level_complete_win">
+					<step intro ="EZRA/MOOD:negative/Looks like they'll be experimenting with their LASERS on US!  We have TIEs closing in fast! /HERA/MOOD:help/CHOPPER take the controls, I'm fixing the radar array." 
+						type="2" minigames="0" sidequests="3,6,7,8,13" winsneed = "1" effect = "attacked"
+						lose="HERA/MOOD:help/CHOPPER, did you think running headfirst into wreckage would be good for our ship?"
+						npcHera = "the Engine Room,11,3,,negative" heraDialog="Hey, you're supposed to be busy in the cockpit. Get to it!"
+						sting="horrible">
+						</step>
+					<step intro ="ZEBB/MOOD:help/CHOPPER, there are too many TIEs. Help me shoot some down!" 
+						type="2" minigames="12" sidequests="3,6,7,8,13" winsneed = "1" effect = "attacked"
+						lose="KANN/MOOD:help/CHOPPER, we really needed those Tie Fighters away from us!"
+						npcZeb = ",,,,help"zebDialog = "CHOPPER, stop idling about and get on the turret!"></step>
+					<step intro ="SABN/MOOD:help/Nice shooting! But the cargo hold was damaged in the fight and the freezer is going to float out. Grab it, CHOPPER!" 
+						type="2" minigames="8" sidequests="13,7" winsneed = "1" effect = "none"
+						lose="HERA/MOOD:negative/CHOPPER, that's coming out of your cut!"
+						npcZeb = ",,,,positive_unique" zebDialog = "You're a pretty good shot... For a barrel."
+						npcSabine = "the Cargo Bay,1,7,mirrored,help" sabineDialog = "I'm working on repairing the door, CHOPPER. Use the maglift to stop the crates!"></step>
+				</level>
+	</mission>
+	
+	<mission id="12"			title="Steal the Access Codes"				difficulty="2"		mainCharacter="Ezra"	mainLoc="IMPERIAL"	showStatus="2" video="SWR-003_clip_09"
+				description="We're approaching an Imperial Frigate in the Borkeen asteroid belt. Our sources tell us they're hiding valuable security codes on board. Send in a team to steal those codes, Rebel lives depend on it!">
+			<level id = "0" title = "Approach and sneak on to the frigate"
+			description = "Imperial security is strong... If you don't know where to spot the holes. Thankfully, the crew of the GHOST have extensive experience in espionage, but they will need CHOPPER'S help to prepare for the mission, and get near the frigate!"
+			location = "GHOST"
+			specialBG = "SPACE"
+			win="EZRA/MOOD:positive/Great job, CHOPPER! We're sneaking into the ship now..."
+			endingSting="level_complete_tense">
+				<step intro ="HERA/MOOD:casual/We're two parsecs away from the target. CHOPPER, take over navigation while we change into our disguises!" 
+					type="2" minigames="0" winsneed = "1" effect = "none"
+					lose="ZEBB/MOOD:negative/Were you trying to camoflauge us by hitting every piece of space trash?"
+					zebDialog = "PAH! Disguises are for sissies. Guess that's why they put me on guard duty."
+					npcHera = "the Cargo Bay,9,6" heraDialog = "CHOPPER, I can't pilot the ship while fixing up a disguise!"
+					npcSabine = "the Cargo Bay,8,7" sabineDialog = "You're supposed to be busy at the cockpit, not peeking at us!"
+					npcEzra = "the Cargo Bay,10,7" ezraDialog = "We have to choose our disguises wisely, CHOPPER. No distractions!"
+					npcKanan = "the Cargo Bay,12,6" kananDialog = "Our diguises, combined with some mind tricks, should get us through no problem."
+					sting = "mystery"
+					></step>
+				<step intro ="KANN/MOOD:positive/Alright, CHOPPER. Drop down there and get to a terminal so we can get this under way." 
+					type="3" minigames="61" winsneed = "1" effect = "none"
+					lose="HERA/MOOD:positive/I guess we know which one of us is the better flier..."
+					zebDialog = "PAH! Disguises are for sissies. Guess that's why they put me on guard duty."
+					npcHera = "the Cargo Bay,9,6,,positive_unique" heraDialog = "Drop down out the back of the cargo bay, CHOPPER!"
+					npcSabine = "the Cargo Bay,8,7,,positive" sabineDialog = "We're counting on you!"
+					npcEzra = "the Cargo Bay,10,7" ezraDialog = "After you make an opening for us, we'll follow you down!"
+					npcKanan = "the Cargo Bay,12,6" kananDialog = "The Imperials won't suspect a thing if you do your job correctly."
+					event="2-1-2-LandOnShip"></step>
+				<step intro ="KANN/MOOD:positive/You're doing fine, CHOPPER. Now get us clearance passes to get into the frigate." 
+					type="1" minigames="14,15,16" winsneed = "7" effect = "none" sidequests="17"
+					lose="KANN/MOOD:negative/CHOPPER, we still don't have clearance here!"
+					sting="level_complete_tense"></step>
+			</level>
+			<level id = "1" title = "Obtain codes while avoiding Imperial troops"
+			description = "Imperial ships are just as protected on the inside as the outside. The halls are crawling with Stormtroopers and patrol droids, which will heckle and scare CHOPPER. Keep your wits and help the crew get those codes!"
+			location = "IMPERIAL"
+			specialBG = "SPACE"
+			win="KANN/MOOD:positive/Alright, we're all back on the ship. Now we have to get out of here!"
+			endingSting="level_complete_something">
+				<step intro ="KANN/MOOD:help/CHOPPER, we need you in the hangar bay control room. Don't get caught on the way!"
+					type="3" minigames="17" winsneed = "1" effect = "none"
+					lose="KANN/MOOD:negative/CHOPPER, you were spotted! Are you all right?"
+					event="2-2-1-SneakToHangar"
+					sting="level_complete_tense"></step>
+				<step intro ="SABN/MOOD:help/The guards won't let us pass, even with clearance! Clear us a path, CHOPPER!" 
+					type="2" minigames="18" sidequests="47" winsneed = "1" effect = "none"
+					lose="ZEBB/MOOD:negative/Next time, CHOPPER, give me time to prepare before I have to start busting Imperial heads!"></step>
+				<step intro ="EZRA/MOOD:help/We've got the codes, but they know we're here! Get back to the hangar and shut off the tractor beam!" 
+					type="2" minigames="19" winsneed = "1" effect = "URGENT"
+					lose="EZRA/MOOD:help/CHOPPER, are those systems still operational?"></step>
+				<step intro ="HERA/MOOD:negative/CHOPPER, the Ghost is ready to go. Hurry up!!" 
+					type="3" minigames="63" winsneed = "1" effect = "URGENT"
+					lose="KANN/MOOD:negative/Do you need to replace your Rockets, CHOPPER?"
+					event="2-2-4-FlyToGhost"
+					sting="level_complete_surprise"></step>
+			</level>
+			<level id = "2" title = "Escape with codes and GHOST intact"
+			description = "With these codes, the Rebels will be able to access troves of Empire intel. Now, it's just a matter of getting away from the Empire in one piece!"
+			location = "GHOST"
+			specialBG = "SPACE"
+			win="EZRA/MOOD:positive/We lost 'em! Couldn't have done it without you, CHOPPER!"
+			endingSting="level_complete_win">
+				<step intro ="HERA/MOOD:negative/We've got bogeys on our tail!" 
+					type="2" minigames="12" sidequests="3,7,8,13" winsneed = "1" effect = "attacked"
+					lose="ZEBB/MOOD:help/Leaving them all for me, huh CHOPPER?"
+					npcZeb = ",,,,help" zebDialog = "Stop standing around and get to the guns! Those TIEs are fast! And weak."
+					npcSabine = ",,,sit,help" sabineDialog = "You are aware we're being shot at, right CHOPPER?"
+					heraDialog = "I'm avoiding fire as best as I can here, CHOPPER!"
+					npcKanan = ",,,sit,positive" kananDialog = "On the plus side, you did a great job keeping Imperial systems busy while we got the codes!"
+					npcEzra = ",,,sit,help" ezraDialog = "We're busy handling evasion up here, CHOPPER! Help out Zebb and shoot them down!"
+					sting="horrible">
+					</step>
+				<step intro ="SABN/MOOD:negative/Looks like a fire broke out in the cargo bay. CHOPPER, get it under control!" 
+					type="2" minigames="6" sidequests="3,7,8,13" winsneed = "1" effect = "attacked"
+					lose="HERA/MOOD:negative/CHOPPER, we wanted the fire AWAY from the CARGO!"
+					npcEzra = ",,,sit,negative" ezraDialogue = "Is it hot in here, or is the ship just on fire?"
+					kananDialog = "If you don't stop that fire, our supplies will be destroyed!"
+					npcSabine = ",,,sit,negative" sabineDialog = "It's a good thing I don't keep my paints down there..."></step>
+				<step intro ="KANN/MOOD:help/That was too close... CHOPPER, patch up the ship so we can outrun the reinforcements." 
+					type="1" minigames="3,6,7,8,13" winsneed = "6" effect = "turbulence"
+					lose="HERA/MOOD:casual/CHOPPER, if you needed more time, we could have sent you out while the TIE Fighters were here!"
+					heraDialog = "That was some good shooting, CHOPPER, but I might've botched the evasive manuevers a bit."
+					sabineDialog = "Turns out their security code was '1-1-1-1'. Who'd of thought?"
+					sting="level_complete_something">
+					</step>
+			</level>
+	</mission>
+	
+	<mission id="2"			title="Test Run"				difficulty="1"		mainCharacter="Hera"	mainLoc="GHOST" 	showStatus="2" video="SWR-001_clip_03"
+				description="The Ghost is overdue for some major repairs. Hera wants to pick us up some discount parts from a new dealer, so we're going to have to test the systems to make sure we're in top shape.">
+			<level id = "0" title = "Test the new parts"
+			description = "You always have to make sure that discount ship components aren't faulty or broken - Warranties aren't exactly common among parts dealers, after all! Still, with a bit of maintenance, it's amazing what the Ghost can achieve."
+			location = "GHOST"
+			win="HERA/MOOD:positive/It's okay guys, the ship is flying better than ever!"
+			endingSting="level_complete_something">
+				<step intro ="HERA/MOOD:casual/CHOPPER, hook in my new Ion Drive regulator!  I'm so excited to take a test drive!" 
+					type="2" minigames="4" winsneed = "1" effect = "none"
+					lose="HERA/MOOD:casual/Did you like the old part better or something, CHOPPER?"
+					npcHera = ",,,sit,positive" heraDialog = "I can hardly contain myself! Think how much FASTER the Ghost will go!"
+					npcKanan = "the Hallway,7,4" kananDialog = "I'll keep my eyes peeled in case any parts over here suddenly explode."
+					ezraDialog = "I hope we spend the 6000 credits we saved one those parts on some speeder bikes!"
+					sting="mystery"></step>
+				<step intro ="HERA/MOOD:casual/CHOPPER, patch up the cargo bay control console while you're at it, I noticed a tear in it earlier..." 
+					type="2" minigames="11" winsneed = "1" effect = "none"
+					lose="HERA/MOOD:casual/You know the ship isn't SUPPOSED to have that hole in it, right?"
+					heraDialog = "I can hardly contain myself! Think how much FASTER Ghost will go!"
+					npcKanan = "the Hallway,7,4" kananDialog = "I'll keep my eyes peeled in case any parts over here suddenly explode."
+					ezraDialog = "I hope we spend the 6000 credits we saved one those parts on some speeder bikes!"></step>
+				<step intro ="SABN/MOOD:negative/Hera, are you testing this new engine in an ASTEROID FIELD?!  CHOPPER, you better get up there!" 
+					type="2" minigames="0" winsneed = "1" effect = "turbulence" sidequests="3,6,7,8,13"
+					lose="ZEBB/MOOD:negative/CHOPPER, did you think running headfirst into wreckage would be good for our ship?"
+					heraDialog = "Hahah, this is great! I could use the flight training!"
+					npcKanan = "the Hallway,7,4" kananDialog = "CHOPPER, remind me somehow to yell at Hera after this is over."
+					npcEzra = "the Cockpit,0,6,sit,negative" ezraDialog = "What is Hera thinking!?"
+					npcSabine = "the Engine Room,11,3" sabineDialog = "On the bright side, the engine room is in working order.../I'm more concerned about crashing at the moment."
+					npcZeb = ",,,,negative" zebDialog = "I think I'm going to be sick..."
+					sting="level_complete_surprise"
+					music="music_wheee"></step>
+					
+			</level>
+			<level id = "1" title = "Manage any damage that occurs"
+			description = "For all the crew can tell, this is either some very bad equipment, or Imperial sabotage. Either way, the crew's not going to have a ship unless CHOPPER steps up to manage the damage!"
+			location = "GHOST"
+			win="HERA/MOOD:casual/Ok, I think we'll go turn back and return the regulator. No objections? No objections."
+			endingSting="level_complete_scary">
+				<step intro ="EZRA/MOOD:negative/Um, guys, the lower decks are on fire.  Is that a standard feature with the new engine?" 
+					type="2" minigames="6" winsneed = "1" effect = "turbulence" sidequests="3,7,8,13"
+					lose="EZRA/MOOD:negative/It's okay, we don't have to go in the lower levels ever again, I guess..."
+					heraDialog = "It's alright! Maybe we just hooked up the ventilation wrong."
+					npcKanan = "the Hallway,7,4" kananDialog = "CHOPPER, remind me to yell at Hera after this is over."
+					npcEzra = "the Cockpit,0,6,sit,help" ezraDialog = "Hey, if we didn't need food, water, or, y'know, AIR, I'd say this is going pretty OK."
+					npcSabine = "the Engine Room,11,3,,help" sabineDialog = "Guess that explains why the engine room isn't on fire; the regulator's pushing heat into the cargo bay!"
+					npcZeb = ",,,,negative" zebDialog = "I think I'm going to be sick..."
+					sting="horrible"></step>
+				<step intro ="KANN/MOOD:negative/Hera, there was more than a tear wrong with the cargo console!  The doors are malfunctioning!" 
+					type="2" minigames="8" winsneed = "1" effect = "turbulence" sidequests="3,6,7,13"
+					lose="KANN/MOOD:negative/Great, we're going to have to replace that..."
+					heraDialog = "It's alright! Maybe we just hooked up the ventilation wrong."
+					npcKanan = "the Hallway,7,4" kananDialog = "CHOPPER, remind me to yell at Hera after this is over."
+					npcEzra = "the Cockpit,0,6,sit,help" ezraDialog = "Hey, if we didn't need food, water, or, y'know, AIR, I'd say this is going pretty OK."
+					npcSabine = "the Engine Room,11,3,,help" sabineDialog = "Guess that explains why the engine room isn't on fire; the regulator's pushing heat into the cargo bay!"
+					npcZeb = ",,,,negative" zebDialog = "I think I'm going to be sick..."></step>
+				<step intro ="ZEBB/MOOD:casual/I'll take care of fixin' the door, CHOPPER, unplug the engine regulator!" 
+					type="2" minigames="22" winsneed = "1" effect = "turbulence" sidequests="3,6,7,13"
+					lose="ZEBB/MOOD:negative/CHOPPER, I said CUT POWER, not 'leave it on'!"
+					heraDialog = "The Ghost's still flying great! Maybe we could make some sort of compromise..."
+					npcKanan = "the Hallway,7,4" kananDialog = "CHOPPER, remind me to yell at Hera after this is over."
+					npcEzra = "the Cockpit,0,6,sit,help" ezraDialog = "Hey, if we didn't need food, water, or, y'know, AIR, I'd say this is going pretty OK."
+					npcSabine = "the Engine Room,11,3,,help" sabineDialog = "Did Hera make sure that we got a freighter regulator instead of some podracer part?"
+					npcZeb = "the Cargo Bay,13,6" zebDialog = "I'm FINE. I'll hold off upchucking until after I'm done fixing this blasted door!"></step>
+				<step intro ="SABN/MOOD:negative/CHOPPER, the engine blew a hole in the radiation shield!  Seal it, quick!" 
+					type="2" minigames="3" winsneed = "1" effect = "turbulence" sidequests="6,7,8,13"
+					lose="HERA/MOOD:negative/CHOPPER, if you can see through it, it needs to be welded!"
+					npcHera = ",,,sit,negative" heraDialog = "That regulator must've done a number on the pipelines..."
+					npcKanan = "the Hallway,7,4" kananDialog = "May the force be with us..."
+					npcEzra = "the Cockpit,0,6,sit,negative" ezraDialog = "Get that rad-shield welded up, before we all get fried! Or worse..."
+					npcSabine = "the Hallway,13,4,,help"sabineDialog = "CHOPPER, PLEASE patch up that shield! I don't want to get radiation poisoning!"
+					npcZeb = ",,,,negative" zebDialog = "Oh blast it all, now I'm REALLY sick!"
+					sting="horrible"></step>
+			</level>
+			<level id = "2" title = "Verify stability of components"
+			description = "Now that it's become clear that the Ghost does not run well with the replacement regulator, it's a matter of getting rid of the faulty parts and simply not crashing the ship in the process. With a bit of coercion, it should be possible to get compensation for the damage."
+			location = "GHOST"
+			win="HERA/MOOD:positive/On the bright side, I get to go shopping again for some new ship parts!  Thanks for your help, CHOPPER!"
+			endingSting="level_complete_surprise">
+				<step intro ="HERA/MOOD:casual/CHOPPER, plug back in the old regulator!" 
+					type="2" minigames="4" winsneed = "1" effect = "none"
+					lose="HERA/MOOD:casual/It still looks like we're having trouble with those systems, CHOPPER!"
+					npcKanan = ",,,sit,positive" kananDialog = "You've done us a lot of good, CHOPPER. Thank you."
+					npcSabine = "the Engine Room,11,3" sabineDialog = "I'm looking at the regulator now./Well, what's left of it, that is. I swear it must've been held together with gum or something."
+					npcZeb = ",,,,negative" zebDialog = "I'm... Really not... In the mood... CHOPPER."
+					sting="level_complete_tense"></step>
+				<step intro ="HERA/MOOD:casual/Alright, weld it shut for now, I'll have to replace that whole section later..." 
+					type="2" minigames="3" winsneed = "1" effect = "none"
+					lose="HERA/MOOD:casual/Did you try to plug that crack with Brightgum?!"
+					npcHera = ",,,sit,negative" heraDialog = "We're not going to get thrust with all those broken pipes./We will get all our cargo on fire again that way!"
+					npcSabine = "the Engine Room,11,3" sabineDialog = "From what I can piece back together, this regulator was made for... A cloud car?!"
+					zebDialog = "Ok, now I'm a bit better."></step>
+				<step intro ="ZEBB/MOOD:negative/Now that we're back to normal, how about you GET US OUT OF THIS ASTEROID FIELD!" 
+					type="2" minigames="0" winsneed = "1" effect = "turbulence" sidequests="3,7,8,13"
+					lose="SABN/We weren't planning on landing on any of those rocks, CHOPPER!"
+					heraDialog = "Sorry, CHOPPER. I have to get used to the ship's old speed again!"
+					kananDialog = "This really just hasn't been our day."
+					ezraDialog = "Next time, I'M choosing the merchant we buy from."
+					npcSabine = "the Engine Room,11,3,,help" sabineDialog = "On the bright side, the engine room is in working order... Again./I'm more concerned about crashing at the moment."
+					zebDialog = "No good shooting them down, that just causes them to fracture and make MORE asteroids to dodge!"
+					sting="horrible"></step>
+			</level>
+	</mission>
+
+	<mission id="3"			title="Spacedust to Glory"				difficulty="1"		mainCharacter="Hera"	mainLoc="GHOST"	showStatus="2" video="SWR-001_clip_05"
+				description="The Altyr 5 Light Freighter Race is coming up, and for the past 5 years it's been won by Imperial-endorsed racers; we're looking to put an end to that. Hera thinks we have a good chance of winning, and the prize money won't hurt.">
+			<level id = "0" title = "Participate in race"
+			description = "Starship races can draw the best out of a pilot, and test their ship to its limits.  With races in larger ships, the crew is tested just as hard; if they can't keep the ship together, the pilot will end up racing a pile of scrap metal to the finish line!"
+			location = "GHOST"
+			win="HERA/MOOD:positive/Looks like we're making strong headway! Let's keep it up, team!"
+			endingSting="level_complete_something">
+				<step intro ="HERA/MOOD:casual/Navigating through that asteroid field should save us 3 minutes!  CHOPPER, help me out with it!" 
+					type="2" minigames="0" winsneed = "1" effect = "none"
+					lose="ZEBB/MOOD:negative/Did you suddenly pick up an interest in interstellar geology, CHOPPER?"
+					heraDialog = "Full speed ahead! This is a race, after all!"
+					kananDialog = "I suppose if Hera didn't know what she was doing, she wouldn't be our pilot..."
+					npcEzra = ",,,sit,negative" ezraDialog = "It's ALWAYS asteroid fields..."
+					npcSabine = "the Engine Room,11,3" sabineDialog = "I maintain the engines, YOU help us not use them to ram headlong into rocks."
+					npcZeb = ",,,,negative" zebDialog = "I HATE races. I don't get why we don't just shoot down the competition!"
+					sting="level_complete_something"
+					music="music_wheee"></step>
+				<step intro ="KANN/MOOD:help/Okay, we reached our first checkpoint, CHOPPER, pick up the coordinates to the next stop on the race!" 
+					type="2" minigames="9" winsneed = "1" effect = "none"
+					lose="EZRA/MOOD:negative/Aww, I really wanted to know what that was..."
+					event=""
+					npcHera = ",,,sit,positive_unique" heraDialog = "No time to lose, CHOPPER! Drop down and get those coordinates!"
+					kananDialog = "I suppose if Hera didn't know what she was doing, she wouldn't be our pilot..."
+					ezraDialog = "Without those coordinates, we can't progress in the race."
+					npcSabine = "the Engine Room,11,3" sabineDialog = "It's actually pretty keen of the race organizers to set it up like this. Stops cheating!"
+					zebDialog = "The sooner we complete the race, the better."
+					sting="level_complete_surprise"></step>
+				<step intro ="EZRA/MOOD:help/I'd be willing to lose time if Hera wasn't so rough around asteroids. Can you get up there, CHOPPER?" 
+					type="2" minigames="0" winsneed = "1" effect = "turbulence"
+					lose="KANN/MOOD:casual/We weren't planning on landing on any of those rocks, CHOPPER!"
+					heraDialog = "Full speed ahead! This is a race, after all!"
+					kananDialog = "I suppose if Hera didn't know what she was doing, she wouldn't be our pilot..."
+					npcEzra = ",,,sit,negative" ezraDialog = "It's ALWAYS asteroid fields..."
+					npcSabine = "the Engine Room,11,3" sabineDialog = "I maintain the engines, YOU help us not use them to ram headlong into rocks."
+					zebDialog = "I HATE races. I don't get why we don't just shoot down the competition!"
+					sting="iamyourfather"
+					music="music_wheee"></step>
+				<step intro ="ZEBB/MOOD:casual/It's the next checkpoint!  CHOPPER, grab the coordinates!" 
+					type="2" minigames="9" winsneed = "1" effect = "none"
+					lose="EZRA/MOOD:negative/Aww, I really wanted to know what that was..."
+					heraDialog = "No time to lose, CHOPPER! Drop down and get those coordinates!"
+					kananDialog = "I suppose if Hera didn't know what she was doing, she wouldn't be our pilot..."
+					ezraDialog = "Without those coordinates, we can't progress in the race."
+					npcSabine = "the Engine Room,11,3" sabineDialog = "It's actually pretty keen of the race organizers to set it up like this. Stops cheating!"
+					zebDialog = "...Come to think of it, how do the other racers get the coordinates after we pick 'em up?"
+					sting="level_complete_surprise"></step>
+			</level>
+			<level id = "1" title = "Tweak systems if necessary"
+			description = "Even if a ship might be outdated, it's well within a creative crew's capability to redirect power flow to the most important parts of the ship. Done right, a well-performed power distribution can get you through many pinches! ... Or turn you into a smoldering crater."
+			location = "GHOST"
+			win="HERA/MOOD:casual/We're holding up good, but not really advancing in rank. Let's step it up!"
+			endingSting="level_complete_something">
+				<step intro ="SABN/MOOD:help/Hera, you're flying like a crazy person!  CHOPPER, hook in the secondary afterburner systems!" 
+					type="1" minigames="7,4" winsneed = "2" effect = "turbulence"
+					lose="SABN/MOOD:negative/CHOPPER, I need those systems online!"
+					heraDialog = "I got the hang of this, CHOPPER! Keep those engine systems working!"
+					kananDialog = "I suppose if Hera didn't know what she was doing, she wouldn't be our pilot..."
+					ezraDialog = "Wow, Hera's getting really fancy now."
+					npcSabine = "the Engine Room,11,3" sabineDialog = "I personally think we're going fast enough, but if Hera thinks so..."
+					npcZeb = ",,,,negative" zebDialog = "I thought I hated races before.../Now I REALLY hate them! *urk*"
+					sting="level_complete_tense"
+					music="music_wheee"></step>
+				<step intro ="EZRA/MOOD:negative/That last speed jump blew apart the navigation system!  CHOPPER, plug that break!" 
+					type="2" minigames="13" winsneed = "1" effect = "turbulence" sidequests="6,8"
+					lose="HERA/MOOD:negative/You know the ship isn't SUPPOSED to have that hole in it, right?"
+					heraDialog = "I got the hang of this, CHOPPER! Keep those systems working!"
+					kananDialog = "I've never seen someone cause so much damage to their own belongings./...My lightsaber not counting, of course."
+					ezraDialog = "Sheesh, I nearly fell over from that last jump."
+					npcSabine = "the Engine Room,11,3" sabineDialog = "I tried piloting a ship without a nav system once./I'm glad it had an escape pod."
+					npcZeb = ",,,,negative" zebDialog = "I thought I hated races before.../Now I REALLY hate them! *urk*"
+					sting="iamyourfather"></step>
+				<step intro ="KANN/MOOD:negative/May the Force be with us, another asteroid field?!  CHOPPER get back up to the cockpit! " 
+					type="2" minigames="0" winsneed = "1" effect = "turbulence" sidequests="3,6,7,8,13"
+					lose="HERA/MOOD:positive/Didja want to make a quick pit stop on one of those asteroids, CHOPPER?"
+					npcHera = ",,,sit,negative" heraDialog = "Ookay, this is a bit more serious this time around... Get on that pilot console STAT!"
+					kananDialog = "I've never seen someone cause so much damage to their own belongings./...My lightsaber not counting, of course."
+					ezraDialog = "Hera would pilot us through a GIANT RED SUN if it saved us three seconds!"
+					npcSabine = "the Engine Room,11,3" sabineDialog = "They really should make some kind of point-defense system for small ships that just vaproizes asteroids."
+					npcZeb = ",,,,negative" zebDialog = "ASTEROIDS. WHY."
+					sting="horrible"></step>
+				
+			</level>
+			<level id = "2" title = "Grab the gold!"
+			description = "Races do not exactly entail subtlety. The Imperial Patrol does not appreciate Rebels outdoing their sponsored pilots, and will not play fair! Time to put those racing maneuvers to their full use!"
+			location = "GHOST"
+			win="KANN/MOOD:positive/I'd rather fight a hundred Star Destroyers with a Plasma Disruptor than do that again... Great work, CHOPPER"
+			endingSting="level_complete_win">
+				<step intro ="HERA/MOOD:casual/We'll save even MORE time if we go through this MORE dangerous starship graveyard, HAHA!" 
+					type="2" minigames="60" winsneed = "1" effect = "turbulence" sidequests="3,6,7,8,13"
+					lose="EZRA/MOOD:negative/I guess there's a reason there aren't too many droid pilots!"
+					heraDialog = "We can do it together, CHOPPER! I'll keep our route straight while you do the more fine-tuning!"
+					kananDialog = "I've never seen someone cause so much damage to their own belongings./...My lightsaber not counting, of course."
+					ezraDialog = "Hera would pilot us through a GIANT RED SUN if it saved us three seconds!"
+					npcSabine = "the Engine Room,11,3" sabineDialog = "They really should make some kind of point-defense system for small ships that just vaproizes asteroids."
+					zebDialog = "HERA, There's a reason it's called a GRAVEYARD!"
+					sting="level_complete_surprise"
+					music="music_wheee"></step>
+				<step intro ="SABN/MOOD:help/CHOPPER, it's the last checkpoint!  Get out there so we can finish up this thing!" 
+					type="2" minigames="9" winsneed = "1" effect = "none"
+					lose="KANN/MOOD:casual/Do you need to replace your Rockets, CHOPPER?"
+					heraDialog = "Looks like we're way ahead, considering the state of this checkpoint!"
+					kananDialog = "I've never seen someone cause so much damage to their own belongings./...My lightsaber not counting, of course."
+					ezraDialog = "Please, get down there before we end up getting hit by MORE rocks!"
+					npcSabine = "the Engine Room,11,3" sabineDialog = "They really should make some kind of point-defense system for small ships that just vaproizes asteroids."
+					zebDialog = "I don't even know where we are anymore."
+					sting="level_complete_win"></step>
+				<step intro ="EZRA/MOOD:negative/Uh-oh, looks like the Imperials are trying to make sure we don't win!  CHOPPER, man the turrets!" 
+					type="2" minigames="12" winsneed = "1" effect = "attacked" sidequests="3,6,7,8,13"
+					lose="ZEBB/MOOD:negative/Did you find something more important to do than protect our ship, CHOPPER?"
+					heraDialog = "Those dogs! Races are about speed, not backstabbing!"
+					ezraDialog = "Did they follow us out here? This really is a petty thing to kill us over!"
+					npcSabine = "the Engine Room,11,3" sabineDialog = "Oh, look, the Empire is still a bunch of sore losers. Glad to see things haven't changed."
+					zebDialog = "Now THIS is my kind of race! Hah! Not that It'll stop us from blowing them to smithereens, right CHOPPER?"
+					sting="lose_imperial"></step>
+				<step intro ="HERA/MOOD:negative/CHOPPER!  We have a break on the outer hull!  Go seal it up, it's slowing us down!" 
+					type="2" minigames="3" winsneed = "1" effect = "turbulence" sidequests="6,8"
+					lose="ZEBB/MOOD:negative/CHOPPER, the Imperials shot through the hull with better aim than you repaired it!"
+					heraDialog = "I was a bit caught up in the moment to really dodge their shots..."
+					ezraDialog = "Nevermind speed, we're losing oxygen quickly through that breach!"
+					npcSabine = "the Engine Room,11,3" sabineDialog = "The breach is over here!"
+					zebDialog = "Great, it's back to the boring part again."></step>
+				<step intro ="ZEBB/MOOD:negative/CHOPPER!  She's going through the asteroid field again!  Help her out, or I'll be -urp- sick!" 
+					type="2" minigames="0" winsneed = "1" effect = "turbulence" sidequests="3,6,7,8,13"
+					lose="SABN/MOOD:negative/I guess there's a reason the Imperials didn't follow us through there..."
+					heraDialog = "We can do it together, CHOPPER! I'll keep our route straight while you do the more fine-tuning!"
+					kananDialog = "Home-stretch or not, I've had just about enough spaceflight for one day."
+					ezraDialog = "Hera would pilot us through a GIANT RED SUN if it saved us three seconds!"
+					npcSabine = "the Engine Room,11,3" sabineDialog = "We're almost through. Don't let up just yet CHOPPER."
+					zebDialog = "When this ship lands, the first thing I'm doing is kissing the ground!"
+					music="music_wheee"></step>
+			</level>
+	</mission>
+
+	<mission id="4"			title="The Mon Roe Bomb"				difficulty="2"		mainCharacter="Kanan"	mainLoc="IMPERIAL"	showStatus="2" video="SWR-001_clip_01"
+				description="The Mon Calamarians have asked us to help them spread news of what the Imperials have been doing to their planet.  We'll be dropping leaflets to a few neighboring planets to put some pressure on the Imperials to cease their operations.">
+			<level id = "0" title = "Get The Propaganda"
+			description = "Sometimes, the power of the word accomplishes so much more than the might of an army. With more traders and citizens on their side, the Rebel cause can become a force to be reckoned with!"
+			location = "GHOST"
+			win="ZEBB/MOOD:casual/We're approaching the first drop-off planet!"
+			endingSting="level_complete_tense">
+				<step intro ="KANN/MOOD:help/The Calamarian left the pamphlet bombs in that asteroid field.  CHOPPER, help Hera find them!" 
+					type="2" minigames="0" winsneed = "1" effect = "none" sidequests="3,6,7,8,13"
+					lose="KANN/MOOD:casual/We weren't planning on landing on any of those rocks, CHOPPER!"
+					heraDialog = "Got my eyes peeled. Keep us from crashing and we should find it!"
+					sting="mystery"
+					></step>
+				<step intro ="HERA/MOOD:casual/I'll hover around the asteroid, you grab the cargo and come back up here!" 
+					type="2" minigames="9" winsneed = "1" effect = "none" sidequests="3,6,7,8,13"
+					lose="HERA/MOOD:positive/I guess we know which one of us is the better flier..."
+					event=""
+					heraDialog = "Drop on down, CHOPPER! Get to the Cargo Bay."
+					ezraDialog = "When we drop these bombs on the planets, there won't be a citizen on them that doesn't know about the Mon Calamarians!"
+					></step>
+				
+			</level>
+			<level id = "1" title = "Spread The News"
+			description = "Mon Calamarians are renowned for their artistic and cultural pursuits - not their willingness to stand up to Empire bullies. Thankfully, that's what you brought several tons of propaganda for."
+			location = "GHOST"
+			win="KANN/MOOD:positive/Looks like the Calamarians have gotten wind of our first propaganda bomb! Good work, CHOPPER!"
+			endingSting="level_complete_something">
+				<step intro ="SABN/MOOD:help/CHOPPER, get to the Cargo Bay and drop off the first pamphlet bomb!" 
+					type="2" minigames="23" winsneed = "1" effect = "none"
+					lose="ZEBB/MOOD:negative/Is it really that hard to drop somethin'?"
+					heraDialog = "Let those bombs out, CHOPPER! Get to the Cargo Bay."
+					ezraDialog = "When we drop these bombs on the planets, there won't be a citizen on them that doesn't know about the Mon Calamarians!"
+					sabineDialog = "I can't imagine the Empire being happy about this. All the more reason to do it!"
+					zebDialog = "Oh, sure, I'd be happy to drop 'em. If space had air."
+					sting="iamyourfather"></step>
+				<step intro ="EZRA/MOOD:negative/Uh-oh, it looks like this planet's surrounded by a debris field!  CHOPPER, help Hera out!" 
+					type="2" minigames="60" winsneed = "1" effect = "turbulence" sidequests="3,6,7,8,13"
+					lose="KANN/MOOD:negative/Let's avoid those until you get a navigational upgrade, CHOPPER."
+					heraDialog = "Nice work on that drop, but we've got more debris to avoid here!"
+					ezraDialog = "It's a wonder the Empire was even able to colonize this planet!"
+					sting="level_complete_tense"
+					></step>
+				<step intro ="KANN/MOOD:help/We've reached the next planet!  CHOPPER, drop off the next pamphlet bomb!" 
+					type="2" minigames="23" winsneed = "1" effect = "none"
+					lose="ZEBB/MOOD:negative/Is it really that hard to drop somethin'?"
+					heraDialog = "Let those bombs out, CHOPPER! Get to the Cargo Bay."
+					ezraDialog = "There's just one more planet to visit after this one!"
+					sabineDialog = "I can't imagine the Empire being happy about this. All the more reason to do it!"
+					zebDialog = "Oh, sure, I'd be happy to drop 'em. If space had air."
+					sting="iamyourfather"></step>
+				<step intro ="HERA/MOOD:negative/Guys, I don't think the Imperials enjoyed our literature!  CHOPPER, keep them away from my ship!" 
+					type="2" minigames="12" winsneed = "1" effect = "attacked"
+					lose="EZRA/MOOD:casual/Did you find something more important to do than protect our ship, CHOPPER?"
+					heraDialog = "I'm taking hits here, CHOPPER! Help Zeb shoot them down!"
+					ezraDialog = "At least we didn't -actually- bomb them! These Imperials really have no honor!"
+					sabineDialog = "Those TIEs aren't letting up any time soon, CHOPPER!"
+					kananDialog = "Remember, CHOPPER. Let go of your conscious self, and act on instinct.../Actually, sorry for prying, but do droids have instinct?"
+					zebDialog = "Less talk, more fight!"
+					sting="lose_imperial"></step>
+			</level>
+			<level id = "2" title = "Defend The Cause"
+			description = "Among many other cruel flaws, the Empire doesn't exactly pursue freedom of speech outside its senate. For inciting rebellion among the people of Dac, they are sending everything they got at the Ghost to make sure they never contact another planet again!"
+			location = "GHOST"
+			win="EZRA/MOOD:positive/Great work, CHOPPER!  Let's hope this gets the message out to the galaxy, for the Mon Calamarians' sake..."
+			endingSting="level_complete_win">
+				<step intro ="SABN/MOOD:negative/The TIE Fighters hit us pretty hard!  CHOPPER, there's a fire on the lower decks!" 
+					type="2" minigames="6" winsneed = "1" effect = "selfdestruct" sidequests="7,8,13"
+					lose="EZRA/MOOD:negative/It's okay, we don't have to go in the lower levels ever again, I guess..."
+					heraDialog = "If you don't put out that fire, those pamphlets will go up in smoke!"
+					ezraDialog = "CHOPPER, open that airlock to douse the flames!"
+					sabineDialog = "Don't just stand there, get to the extinguishing console, CHOPPER!"
+					kananDialog = "Keep on top of the problem, CHOPPER."
+					zebDialog = "I can feel the heat from down here, CHOPPER, what are you even doing?!"
+					sting="level_complete_tense"></step>
+				<step intro ="ZEBB/MOOD:help/Looks like Round Two's about to start!  You want in on this action, CHOPPER?" 
+					type="2" minigames="12" winsneed = "1" effect = "attacked" sidequests="4,6,7,8"
+					lose="ZEBB/MOOD:negative/Leaving them all for me, huh CHOPPER?"
+					heraDialog = "I'm taking hits here, CHOPPER! Help Zeb shoot them down!"
+					ezraDialog = "Either those Imperials thought we dropped something else, or they know a thing or two about propoganda!"
+					sabineDialog = "Those TIEs aren't letting up any time soon, CHOPPER!"
+					kananDialog = "Remember, CHOPPER. Let go of your conscious self, and act on instinct.../Actually, sorry for prying, but do droids have instinct?"
+					zebDialog = "Be glad it's just TIE fighters, CHOPPER."></step>
+				<step intro ="EZRA/MOOD:help/They tore through the outer hull near the Cargo Bay!  CHOPPER, fix it before we lose our pamphlets!" 
+					type="2" minigames="11" winsneed = "1" effect = "selfdestruct" sidequests="7,8,13"
+					lose="ZEBB/MOOD:negative/CHOPPER, the Imperials shot through the hull with better aim than you repaired it!"
+					heraDialog = "At this rate, we won't make it to the next planet. Get to the breach, CHOPPER!"
+					ezraDialog = "We'd weld it up ourselves, but the welding tools are also in the cargo bay!"
+					sabineDialog = "We're losing air fast!"
+					kananDialog = "If we don't get to all the planets, the Empire will be able to squash the uprising before it starts."
+					zebDialog = "Consider that your target practice for the day."
+					sting="horrible"></step>
+				<step intro ="HERA/MOOD:help/The cargo doors are offline!  CHOPPER, swap the Cargo controls to the backup system." 
+					type="2" minigames="7" winsneed = "1" effect = "turbulence" sidequests="3,4,6"
+					lose="HERA/MOOD:help/CHOPPER, I'm a bit too busy to do it myself, you know!"
+					heraDialog = "Backup systems should allow us to get the doors open briefly."
+					ezraDialog = "We're almost done here. After this, we'll make sure to get you all polished up!"
+					sabineDialog = "After you reroute power, We'll open the doors up for your drop, but you better hurry!"></step>
+				<step intro ="KANN/MOOD:help/We're at the last drop off point!  CHOPPER, release the rest of the pamphlet bombs!" 
+					type="2" minigames="23" winsneed = "1" effect = "none"
+					lose="ZEBB/MOOD:negative/Is it really that hard to drop somethin'?"
+					heraDialog = "Let those bombs out, CHOPPER! Get to the Cargo Bay."
+					ezraDialog = "Last round, CHOPPER!"
+					sabineDialog = "We're close, CHOPPER! I don't think the Empire has any more reinforcements in the area."
+					kananDialog = "One step closer to galactic freedom."
+					zebDialog = "Oh, sure, I'd be happy to drop 'em. If space had air."
+					sting="iamyourfather"></step>
+			</level>
+	</mission>
+
+	<mission id="5"			title="The Peragus Adventure"				difficulty="2"		mainCharacter="Ezra"	mainLoc="GHOST"	showStatus="2" video="SWR-004_clip_10"
+				description="We just received intel of an Imperial Corvette grossly undermanned with a skeleton crew in the Peragus system.  If we play our cards right, we could take the ship ourselves with no trouble!">
+			<level id = "0" title = "Break In and deal with Crew"
+			description = "The Empire takes great pains to keep their ships well stocked and ready for action. When reports come through of an undermanned Imperial vessel, it's best to take advantage of the situation."
+			location = "GHOST"
+			specialBG = "SPACE"
+			win="EZRA/MOOD:negative/That can't be good..."
+            endingSting="level_complete_scary">
+				<step intro ="KANN/MOOD:help/CHOPPER, drop down to the Imperial Corvette, and await further instructions." 
+					type="3" minigames="61" winsneed = "1" effect = "none"
+					lose="KANN/MOOD:negative/Do you need to replace your Rockets, CHOPPER?"
+					event="4-1-1-LandOnShip"
+					heraDialog = "We'll provide backup once you make an opening for us."
+					ezraDialog = "If we blindside the crew, this will be a piece of cake."
+					npcZeb = ",,,,positive" zebDialog = "I bet this won't even be half a challenge!"
+					sting="mystery"></step>
+				<step intro ="HERA/MOOD:help/Jam their sensors, CHOPPER, we want to dock without them even knowing we're here!" 
+					type="2" minigames="24" winsneed = "1" effect = "none" sidequests="47"
+					lose="SABN/MOOD:negative/I think they still see us, CHOPPER!"
+					event=""
+					sting="level_complete_tense"></step>
+				<step intro ="EZRA/MOOD:positive/Alright!  We'll take care of the crew, and CHOPPER can unplug their essential systems!" 
+					type="1" minigames="25,26,27" winsneed = "5" effect = "none" sidequests="47"
+					lose="HERA/MOOD:help/CHOPPER, are those systems still operational?"></step>
+				<step intro ="ZEBB/MOOD:positive/This job is going smooth!  Keep the Imperials away from us, and we can escape with our armor clean!" 
+					type="3" minigames="18" winsneed = "1" effect = "none" sidequests="47"
+					lose="EZRA/MOOD:help/Don't trap the Imperials with US, CHOPPER!"
+					event="4-1-4-CorvetteHit"></step>
+			</level>
+			<level id = "1" title = "Perform repairs on corvette"
+			description = "Asteroids and debris are a constant threat to starships, but keeping good maneuvers and damage repair in action allows many ships to make flights successfully. Too bad this ship's crew is indisposed!"
+			location = "IMPERIAL_HANGAR"
+			specialBG = "SPACE"
+			win="SABN/MOOD:negative/Yeah, Damage Report on the Corvette: I don't think it's making it out in one piece. CHOPPER, we have to pull back!"
+            endingSting="level_complete_tense">
+				<step intro ="HERA/MOOD:help/The ship is passing through a debris field! We have to keep the Imperial ship together before we can escape! /KANN/MOOD:help/CHOPPER!  Patch up what you can until we can figure out a plan of action!" 
+					type="1" minigames="28,29,31" winsneed = "6" effect = "turbulence"
+					lose="KANN/MOOD:negative/I know it's not normal to seal a crack in the Imperial equipment, but we needed it done, CHOPPER!"
+					sting="level_complete_scary"></step>
+				<step intro ="EZRA/MOOD:help/The corvette is sending out distress signals!  Jam them, or we'll be dealing with Imperial reinforcements!" 
+					type="2" minigames="24" sidequests="28,29,30,31" winsneed = "1" effect = "turbulence"
+					lose="SABN/MOOD:help/I'm still hearing some Imperial chatter, CHOPPER!"></step>
+				<step intro ="KANN/MOOD:help/You're going to have to reconnect those systems you tore apart, CHOPPER!" 
+					type="1" minigames="32,33,34" winsneed = "3" effect = "turbulence"
+					lose="HERA/MOOD:negative/It still looks like we're having trouble with those systems, CHOPPER!"></step>
+				<step intro ="ZEBB/MOOD:help/Oh great, the ship is breaking apart! CHOPPER, get those flames under control!" 
+					type="2" minigames="35" winsneed = "1" effect = "selfdestruct" sidequests="28,29,30,31"
+					lose="EZRA/MOOD:help/CHOPPER, are you waiting for the fire to burn itself out?!"
+					sting="horrible"></step>
+			</level>
+			<level id = "2" title = "Escort Corvette back to base"
+			description = "If a ship sustains damage in a shower of space debris, it might already be too late to save the ship. There's nothing left to gain here; CHOPPER and the crew of the Ghost must escape as soon as possible!"
+			location = "IMPERIAL_HANGAR"
+			specialBG = "SPACE"
+			win="ZEBB/MOOD:positive/Well, it looks like we made it out in one piece, thanks to you, CHOPPER."
+			endingSting = "level_complete_something">
+				<step intro ="SABN/MOOD:negative/CHOPPER, we have to leave NOW!  Disengage all ship locks!" 
+					type="2" minigames="24" winsneed = "1" effect = "selfdestruct"
+					lose="HERA/MOOD:help/The doors aren't budging, CHOPPER!"
+					sting="horrible"></step>
+				<step intro ="ZEBB/MOOD:casual/No time to wait for you in the Hangar Bay, jump out the airlock!" 
+					type="3" minigames="64" winsneed = "1" effect = "selfdestruct"
+					lose="HERA/I guess we know which one of us is the better flier..."
+					event="2-2-4-FlyToGhost"></step>
+				<step intro ="EZRA/MOOD:help/We're not out of the debris field yet, CHOPPER!  Help Hera get us out of here!" 
+					type="2" minigames="60" winsneed = "1" effect = "turbulence" sidequests="3,4,6,7,8,13"
+					lose="KANN/MOOD:negative/Next time, try steering us AWAY from the debris, CHOPPER."
+					heraDialog = "Get to the pilot console and help me avoid these rocks!"
+					ezraDialog = "You got us out of that corvette, CHOPPER, but we're still dead center in a debris storm!"
+					sabineDialog = "At the very least, we can return here after the meteor shower and salvage the remaining parts..."
+					kananDialog = "The corvette might be destroyed, but at least we made it out in time."
+					zebDialog = "Well, that was a huge waste of time!"
+					sting="level_complete_something"></step>
+			</level>
+	</mission>
+
+	<mission id="6"			title="Slam it with Paint!"				difficulty="2"		mainCharacter="Sabine"	mainLoc="IMPERIAL"	showStatus="2" video="SWR-002_clip_08"
+				description="A Carrack-Class Imperial Ship has been abandoned in the Kryton System due to a minor technical mishap.  Sabine wants to tag it with a giant Rebel Logo to trick them into thinking the Rebels caused the accident, and make them a bit more paranoid.">
+			<level id = "0" title = "Approach The Ship"
+			description = "Fear plays a large part in keeping an Empire together - more so than training regiments and marksmanship classes. Planting a Rebel landmark on lost Imperial property will serve to undermine this cause!"
+			location = "GHOST"
+			specialBG = "ASTEROID"
+			win="SABN/MOOD:positive/Nice work getting to the ship, CHOPPER. Ready for some painting?"
+			sting="mystery">
+				<step intro ="HERA/MOOD:help/The ship's somewhere in this asteroid field.  CHOPPER, man the helm while I triangulate its position." 
+					type="2" minigames="0" winsneed = "1" effect = "none" sidequests="3,4,6,7,8,13"
+					lose="KANN/MOOD:negative/We weren't planning on landing on any of those rocks, CHOPPER!"
+					npcHera = "the Engine Room,11,3" heraDialog = "Keep an eye on that cockpit console! I'm very busy calculating distances here..."
+					sabineDialog = "That wreck isn't doing anyone good just floating around untagged!"
+					sting="mystery"></step>
+				<step intro ="SABN/MOOD:help/CHOPPER, let out my paint container from the Cargo Bay, and I'll take care of the rest!" 
+					type="2" minigames="23" winsneed = "1" effect = "none"
+					lose="ZEBB/MOOD:negative/Is it really that hard to drop somethin'?"
+					heraDialog = "The console's down in the cargo bay."
+					npcEzra = "the Observation Deck,3,4"ezraDialog = "I just want to get a good look at what Sabine whips up!"
+					npcSabine = "the Observation Deck,8,5"sabineDialog = "Once the paint's down there, I'll practice a bit of my artwork!"
+					kananDialog = "Me and Hera will keep an eye out for any incoming Empire patrols."
+					zebDialog = "Let's just hope Ezra's willing to chip in in case any TIEs come this way!"></step>
+				<step intro ="EZRA/MOOD:casual/CHOPPER, you should do that inside of the ship too!  That'd be wizard!" 
+					type="3" minigames="61" winsneed = "1" effect = "none"
+					lose="HERA/MOOD:help/I guess we know which one of us is the better flier..."
+					event="2-1-2-LandOnShip"
+					heraDialog = "I'm watching for any incoming threats. Sabine's waiting on you, CHOPPER!"
+					npcEzra = "the Observation Deck,4,4"ezraDialog = "I just want to get a good look at what Sabine whips up!"
+					npcSabine = "the Observation Deck,8,5"sabineDialog = "I'll follow you down after you get inside, CHOPPER!"
+					kananDialog = "Me and Hera will keep an eye out for any incoming Empire patrols."
+					zebDialog = "Let's just hope Ezra's willing to chip in in case any TIEs come this way!"></step>
+			</level>
+			<level id = "1" title = "Tag walls"
+			description = "Sabine's weapon of choice is her graffiti - cans of pressurized pigment that can be used to send messages to both Rebel allies and enemies, or infused with a bit of explosive powder to ambush enemies!"
+			location = "IMPERIAL_HANGAR"
+			specialBG = "ASTEROID"
+			win="SABN/MOOD:positive/That should take home the message. Don't mess with the Rebels!"
+            endingSting="level_complete_something">
+				<step intro ="KANN/MOOD:help/CHOPPER, get to the Detention Area, it'll make them think this was a prisoner break." 
+					type="3" minigames="37" winsneed = "1" effect = "poweroutage"
+					lose="EZRA/MOOD:negative/CHOPPER, maybe try the passcode 1-2-3-4?"
+					event="5-2-1-ToDetention"
+					sting="mystery"></step>
+				<step intro ="SABN/MOOD:help/CHOPPER, we have some time, lay down a burner in that room." 
+					type="2" minigames="38" winsneed = "1" effect = "poweroutage"
+					lose="SABN/MOOD:help/Don't let the Imperials miss our handiwork!"></step>
+				<step intro ="ZEBB/MOOD:positive/Maybe try the trash room next, that'll really make'em scratch their heads!" 
+					type="3" minigames="55" winsneed = "1" effect = "poweroutage"
+					lose="ZEBB/MOOD:negative/The doors aren't budging, CHOPPER!"
+					event="5-2-3-ToTrash"></step>
+				<step intro ="SABN/MOOD:positive/That piece should have a good run in there!  Tag the wall!" 
+					type="2" minigames="39" winsneed = "1" effect = "poweroutage"
+					lose="SABN/MOOD:help/Don't let the Imperials miss our handiwork!"
+					sting="level_complete_scary"></step>
+				<step intro ="EZRA/MOOD:help/Ooh!  Leave a giant Rebel symbol right in the Hangar Bay!" 
+					type="3" minigames="56" winsneed = "1" effect = "poweroutage"
+					lose="EZRA/MOOD:negative/CHOPPER, maybe try the passcode 1-2-3-4?"
+					event="5-2-5-ToHangar"></step>
+				<step intro ="SABN/MOOD:help/Leave the tag right on the floor, CHOPPER!" 
+					type="2" minigames="40" winsneed = "1" effect = "poweroutage"
+					lose="SABN/MOOD:help/Don't let the Imperials miss our handiwork!"></step>
+			</level>
+			<level id = "2" title = "Leave unnoticed"
+			description = "Empire Regiments make regular patrols around the galaxy. Unfortunately for Sabine and the crew of Ghost, this also includes backwater corners of space where lost ships might be found! Time for CHOPPER and the crew to pull back!"
+			location = "IMPERIAL_HANGAR"
+			specialBG = "ASTEROID"
+			win="SABN/MOOD:positive/That was totally worth it, you guys.  Should we hit the Emperor's home on Coruscant next?"
+            endingSting="level_complete_win">
+				<step intro ="HERA/MOOD:negative/Gonna have to cut this art session short, kids - we have an incoming Star Destroyer!" 
+					type="3" minigames="63" winsneed = "1" effect = "poweroutage"
+					lose="KANN/MOOD:negative/Do you need to replace your Rockets, CHOPPER?" 
+					event="2-2-4-FlyToGhost"
+					sting="level_complete_tense"></step>
+				<step intro ="EZRA/MOOD:negative/CHOPPER, I think we have some art critics coming our way - blast them!" 
+					type="2" minigames="12" winsneed = "1" effect = "attacked" sidequests="3,7,13"
+					lose="HERA/MOOD:negative/It's okay, I'll just dodge all the lasers until they get tired, CHOPPER!"
+					npcHera = ",,,sit,negative" heraDialog = "Get down to the turret, STAT! I'm too busy trying to avoid the Star Destroyer to avoid those TIEs!"
+					npcEzra = "the Observation Deck,3,4,,negative"ezraDialog = "I'm doing my best to help! Take care of the smaller targets, CHOPPER!"
+					npcSabine = "the Cargo Bay,7,6,,positive"sabineDialog = "Whew, made it off of there just in time! It was a good run, don't you think?"
+					kananDialog = "There's no way we'll be able to take that Destroyer in a head-on fight."
+					npcZeb = ",,,,negative" zebDialog = "Ezra, not that I don't appreciate the help, but your shooting ISN'T making the situation better!"
+					sting="level_complete_something"></step>
+				<step intro ="KANN/MOOD:help/Some of Sabine's paint caught fire in the below decks - CHOPPER, take care of it!" 
+					type="2" minigames="6" winsneed = "1" effect = "attacked" sidequests="3,7,8,13"
+					lose="SABN/MOOD:negative/CHOPPER, we wanted the fire AWAY from the paint!"
+					npcHera = ",,,sit,negative" heraDialog = "Better put out those flames fast, CHOPPER! I'm reading a build-up of gasses in the cargo bay."
+					npcEzra = "the Observation Deck,4,4"ezraDialog = "I won't lie, that was all you."
+					npcSabine = "the Hallway,4,4,,negative" sabineDialog = "Well, good news is that once the Empire tries to excavate that wreck, they'll be in for a real fireworks show!/The bad news is that my explosive paints on the ship are on fire."
+					kananDialog = "We were lucky to even have escaped that patrol, even considering the damage."
+					npcZeb = ",,,,positive_unique" zebDialog = "Good shots, CHOPPER, but until you put out those fires, me and Ezra are going to fry!"></step>
+			</level>
+	</mission>
+
+	<mission id="7"			title="Infernal Affairs"				difficulty="2"		mainCharacter="Hera"	mainLoc="IMPERIAL"	showStatus="2" video="SWR-001_clip_06"
+				description="There's an Imperial base that uses a similar model astromech droid as CHOPPER for repairs.  CHOPPER, we're going to have you infiltrate the base masquerading as a repair droid, and do a little sabotage.">
+			<level id = "0" title = "Infiltrate base"
+			description = "Astromech droids are frequently used to maintain equipment on many spacefaring vehicles. Simple and interchangable, Astromechs are numerous enough that Imperial Engineers will not mind the mysterious extra 'help'..."
+			location = "GHOST"
+			win="HERA/MOOD:casual/So much for blending in. Still, doesn't mean you can't have a bit of fun, huh CHOPPER?"
+            endingSting="level_complete_scary">
+				<step intro ="EZRA/MOOD:casual/Alright CHOPPER, you can do it!  Just float down to the Imperial base, and you can get started!" 
+					type="3" minigames="21" winsneed = "1" effect = "none"
+					lose="KANN/MOOD:negative/Do you need to replace your Rockets, CHOPPER?"
+					event="4-1-1-LandOnShip"
+					heraDialog = "After you get down there, we'll fill you in on astromech intelligence, CHOPPER."
+					ezraDialog = "Those engineers will be scratching their heads once you sabotage their base!"
+					sting="level_complete_tense"></step>
+				<step intro ="KANN/MOOD:help/CHOPPER, send us the repair schedules from the computers on the base..." 
+					type="2" minigames="24" winsneed = "1" effect = "none" sidequests="47"
+					lose="KANN/MOOD:negative/CHOPPER, Hera isn't getting any signals!"
+					sting="mystery"></step>
+				<step intro ="HERA/MOOD:casual/Bad news, CHOPPER, there weren't supposed to be ANY repairs today.  You're gonna have to sneak around.." 
+					type="3" minigames="47" winsneed = "1" effect = "none"
+					lose="SABN/MOOD:negative/You don't really have a handle on this 'stealth' thing, do you CHOPPER?"
+					event=""></step>
+			</level>
+			<level id = "1" title = "Sabotage base"
+			description = "While astromech droids are unquestionably best suited to repairs, their wide variety of tools make them versatile enough to jam and repurpose systems, travel long distances, and even stun attackers! Though, the end result of such an encounter strongly relies on how brave or clever the droid is..."
+			location = "IMPERIAL_HANGAR"
+			win="EZRA/MOOD:positive/Ruining Imperial systems, one plug at a time!"
+            endingSting="level_complete_surprise">
+				<step intro ="SABN/MOOD:positive/CHOPPER, go scramble their sensor array like a geejaw omelette!" 
+					type="2" minigames="24" winsneed = "1" effect = "none" sidequests="47"
+					lose="EZRA/MOOD:negative/I think they still see us, CHOPPER!"
+					sting="level_complete_tense"></step>
+				<step intro ="ZEBB/MOOD:casual/If I were there, I'd just punch 'em all, but I guess you gotta slink around them to get where you need to be..." 
+					type="3" minigames="47" winsneed = "1" effect = "none"
+					lose="KANN/MOOD:casual/CHOPPER, you were spotted! Are you all right?"
+					event="5-2-3-ToTrash"></step>
+				<step intro ="EZRA/MOOD:casual/Ooh! CHOPPER, break their trash compactor!  The whole place will stink up!" 
+					type="2" minigames="57" winsneed = "1" effect = "none" sidequests="59"
+					lose="KANN/MOOD:casual/CHOPPER, are those systems still operational?"></step>
+				<step intro ="HERA/MOOD:negative/I'm starting to get  chatter on official Empire Channels, you better get to the central computer, CHOPPER." 
+					type="3" minigames="59" winsneed = "1" effect = "none"
+					lose="SABN/MOOD:negative/You don't really have a handle on this 'stealth' thing, do you CHOPPER?"
+					event="2-2-1-SneakToHangar"
+					sting="level_complete_scary"></step>
+				<step intro ="KANN/MOOD:help/Tear out the power cords to the central computer, CHOPPER!" 
+					type="2" minigames="43" winsneed = "1" effect = "none" sidequests="47"
+					lose="KANN/MOOD:negative/CHOPPER, I said CUT POWER, not 'leave them on'!"></step>
+			</level>
+			<level id = "2" title = "Escape!"
+			description = "The one downside to astromech droids is that they're not exactly renowned for their speed. With a bit of careful maneuvering, though, CHOPPER should be able to make his way safely back to the Ghost and avoid detection. Easier said than done!"
+			location = "IMPERIAL"
+			win="EZRA/MOOD:positive/Haha!  CHOPPER, you're a lot better at breaking stuff than fixing it!  Er, I mean that in a good way..."
+            endingSting="level_complete_win">
+				<step intro ="ZEBB/MOOD:casual/You better jam their signals, CHOPPER, the whole system is talking about your handiwork!" 
+					type="1" minigames="14,15,16" winsneed = "4" effect = "I'm just putting this in so that intense music plays." sidequests="17"
+					lose="ZEBB/MOOD:negative/CHOPPER, I can practically hear them breathing over their comms!"
+					sting="level_complete_scary"></step>
+				<step intro ="SABN/MOOD:casual/Be careful not to get caught on your way back to us, CHOPPER!" 
+					type="3" minigames="17" winsneed = "1" effect = "URGENT"
+					lose="KANN/MOOD:casual/CHOPPER, you were spotted! Are you all right?"
+					event="2-2-1-SneakToHangar"></step>
+				<step intro ="KANN/MOOD:negative/CHOPPER, get out of there NOW, we have incoming reinforcements!" 
+					type="3" minigames="20" winsneed = "1" effect = "URGENT"
+					lose="KANN/MOOD:negative/Do you need to replace your Rockets, CHOPPER?"
+					event="2-2-4-FlyToGhost"
+					sting="horrible"></step>
+				<step intro ="ZEBB/MOOD:help/Great job and everything CHOPPER, but we could use you on a turret NOW!" 
+					type="2" minigames="12" winsneed = "1" effect = "turbulence" sidequests="3,7,8,13"
+					lose="ZEBB/MOOD:negative/Leaving them all for me, huh CHOPPER?"
+					heraDialog = "Welcome back, CHOPPER!"
+					ezraDialog = "Shouldn't you be down on the observatory deck helping Zeb out?"
+					sabineDialog = "Typical. It seems like most of our days end with TIE fighters trying to blow us out of space."
+					kananDialog = "It probably could've been more effective if we had kept our distance.../But Hera was insisting on staying close to the base."
+					zebDialog = "Hey, CHOPPER, not a bad job on messing up their base, but how about messing up these TIEs?"
+					sting="level_complete_something"></step>
+			</level>
+	</mission>
+
+	<mission id="8"			title="The Quarren Who
+ Knew Too Much"				difficulty="2"		mainCharacter="Kanan"	mainLoc="IMPERIAL"	showStatus="2" video="SWR-001_clip_07"
+				description="One of our spies from Dac was captured by Imperial forces during an operation.  Word is he stumbled onto something BIG.  We need to break him out of the Imperial detention center, and return him safe with the Rebel Alliance!">
+			<level id = "0" title = "Break into detention center"
+			description = "The Empire relies on subjugation and sheer force to keep planets under their foot.  When someone's willing to stand up to them, it's always important to help them out - and doubly so when they have good resources!"
+			location = "GHOST"
+			win="KANN/MOOD:positive/Well done. We're getting close to the spy's holding cell."
+            endingSting="level_complete_tense">
+				<step intro ="HERA/MOOD:help/Alright, we're going to sneak up to them through this space debris... CHOPPER, help me out here..." 
+					type="2" minigames="60" winsneed = "1" effect = "turbulence" sidequests="3,4,6,7,8,13"
+					lose="KANN/MOOD:negative/Next time, let's not hide quite that well, CHOPPER."
+					heraDialog = "This debris should allow us to get through their scanners undetected."
+					npcEzra = "the Hallway,4,5,mirrored"ezraDialog = "We're busy prepping for the mission, CHOPPER. Go and help Hera with navigations!"
+					npcKanan = "the Hallway,6,4"kananDialog = "If the Empire knows we're in the base.../they will likely accelerate interrogation on the hostage... Or worse."
+					npcSabine = "the Hallway,7,5"sabineDialog = "We're heading deep into enemy territory this time. Better get all my paints ready!"
+					npcZeb = "the Hallway,9,5,mirrored"zebDialog = "Can't wait to get into that base and bash some SKULLS! Uh, stealthily that is."
+					sting="mystery"></step>
+				<step intro ="KANN/MOOD:help/Get down to the base, CHOPPER.  We'll contact you with further instructions." 
+					type="3" minigames="21" winsneed = "1" effect = "none"
+					lose="HERA/MOOD:casual/I guess we know which one of us is the better flier..."
+					event="2-1-2-LandOnShip"
+					heraDialog = "This is the stop. Head out the Cargo Bay; the rest of the crew's waiting on you!"
+					npcEzra = "the Hallway,4,5,mirrored"ezraDialog = "You take point, CHOPPER. After you touch down, we'll get in while you make distractions!"
+					npcKanan = "the Hallway,6,4"kananDialog = "There's lives at stake here, CHOPPER./Thousands of rebels could be threatened by what that ambassador knows."
+					npcSabine = "the Hallway,7,5,,positive"sabineDialog = "With all these munitions, there won't be a door I can't blast through!"
+					npcZeb = "the Hallway,9,5,mirrored,negative"zebDialog = "I get annoyed when I'm left waiting for the battle. Guess how I feel right now, CHOPPER."></step>
+				<step intro ="EZRA/MOOD:negative/Guards are coming your way!  You better find another place with a control console!" 
+					type="3" minigames="17" winsneed = "1" effect = "none"
+					lose="SABN/MOOD:casual/You don't really have a handle on this 'stealth' thing, do you CHOPPER?"
+					event="2-2-1-SneakToHangar"
+					sting="level_complete_scary"></step>
+				<step intro ="ZEBB/MOOD:casual/Kanan's insisting we keep this one quiet - CHOPPER, help us sneak around the guards!"  sidequests="47"
+					type="1" minigames="18" winsneed = "2" effect = "none"
+					lose="ZEBB/MOOD:negative/Next time, CHOPPER, give me time to prepare before I have to start busting Imperial heads!"></step>
+			</level>
+			<level id = "1" title = "Sabotage base for distraction"
+			description = "Because of the immense scale of the Empire, its inner-workings strongly rely on properly working hardware - something the Rebels realized long ago. To that end, CHOPPER's expertise in jamming, cutting, welding, and other general sabotage, will be vital to getting the ambassador out safely!"
+			location = "IMPERIAL"
+			win="KANN/MOOD:positive/Alright, CHOPPER! We've got the ambassador. Let's withdraw back to Ghost."
+            endingSting="level_complete_something">
+				<step intro ="SABN/MOOD:help/Blowing the door up quietly is gonna take a while... CHOPPER, create a distraction in the engine room!" 
+					type="3" minigames="17" winsneed = "1" effect = "none"
+					lose="SABN/MOOD:casual/You don't really have a handle on this 'stealth' thing, do you CHOPPER?"
+					event="5-2-5-ToHangar"
+					sting="level_complete_tense"></step>
+				<step intro ="HERA/MOOD:help/Breaking open the radiation containers should get their attention..." 
+					type="1" minigames="44,45,46" winsneed = "3" effect = "none"
+					lose="HERA/MOOD:negative/My readings show the enemy's engines are still at full power!"></step>
+				<step intro ="EZRA/MOOD:positive/It's working!  The Stormtroopers aren't even looking at us!  Unplug everything you can!" 
+					type="1" minigames="25,26,27" winsneed = "4" effect = "none" sidequests="47"
+					lose="EZRA/MOOD:casual/CHOPPER, are those systems still operational?"
+					sting="level_complete_something"></step>
+				<step intro ="KANN/MOOD:help/CHOPPER, one of them finally noticed us!  Jam their internal comms!" 
+					type="2" minigames="24" winsneed = "1" effect = "none"
+					lose="KANN/MOOD:negative/I'm still hearing some Imperial chatter, CHOPPER!"
+					sting="iamyourfather"></step>
+			</level>
+			<level id = "2" title = "Escort ambassador back to Ghost"
+			description = "Empire detention centers are highly specialized, both for detaining key targets, and using unorthodox methods to extract information from their prisoners.  They're meant for hardened criminals, not for planet ambassadors!"
+			location = "IMPERIAL_HANGAR"
+			win="KANN/MOOD:positive/We saved the diplomat, and caught the ire of the Empire.  Good day, isn't it CHOPPER?"
+            endingSting="level_complete_win">
+				<step intro ="SABN/MOOD:help/CHOPPER, we've got the Quarren ambassador, get us out of here!" 
+					type="2" minigames="18" winsneed = "1" effect = "none" sidequests="47"
+					lose="KANN/MOOD:negative/Don't trap the Imperials with US, CHOPPER!"
+					sting="level_complete_scary"></step>
+				<step intro ="ZEBB/MOOD:casual/I'm not there to protect you, CHOPPER, you better sneak out on your own!" 
+					type="3" minigames="47" winsneed = "1" effect = "none"
+					lose="SABN/MOOD:negative/You don't really have a handle on this 'stealth' thing, do you CHOPPER?"
+					event= "5-2-5-ToHangar"></step>
+				<step intro ="EZRA/MOOD:positive/Alright, this is going smoothly!  CHOPPER, meet us back on the ship!" 
+					type="3" minigames="20" winsneed = "1" effect = "none"
+					lose="KANN/MOOD:negative/Do you need to replace your Rockets, CHOPPER?"
+					event="2-2-4-FlyToGhost"></step>
+				<step intro ="HERA/MOOD:negative/Spoke too soon, Ezra, we just ran into an Imperial patrol!  CHOPPER, get on a turret!" 
+					type="2" minigames="12" winsneed = "1" effect = "turbulence" sidequests="3,4,6,7,8,13"
+					lose="EZRA/MOOD:negative/Did you find something more important to do than protect our ship, CHOPPER?"
+					heraDialog = "We're doing the best we can to avoid incoming fire, CHOPPER!"
+					npcEzra = "the Hallway,4,5,mirrored"ezraDialog = "The Ambassador's safe and sound, CHOPPER. Well, as safe as we are at least."
+					npcKanan = "the Hallway,6,4,,positive"kananDialog = "Your efforts have made a difference today, CHOPPER. Great work."
+					npcSabine = "the Hallway,7,5"sabineDialog = "Well, I think that's enough fighting for me for one day!"
+					zebDialog = "Give me some backup! All this sneaking around's ruined my aim!"
+					sting="level_complete_something"></step>
+			</level>
+	</mission>
+	
+	<mission id="9"			title="Blackburn Gand"				difficulty="2"		mainCharacter="Zeb"	mainLoc="IMPERIAL"	showStatus="2" video="SWR-003_clip_09"
+				description="There's news of a new Imperial Ship design, codenamed 'Blackburn', that's been crafted by a captured Gand engineer.  We're going to rescue her, and alter the blueprints so the prototype 'Blackburn' flies like a Hutt after a big meal!">
+			<level id = "0" title = "Approach base"
+			description = "Due to the scope of Imperial operations, it's key that their ship designs follow a core plan, to ensure that there is no weak link in their ranks. Not much of a concern when all their ships end up being weak links, though! Sabotage that plan, and the Rebel Alliance will have a much easier time!"
+			location = "GHOST"
+			win="KANN/MOOD:positive/Wow, great work CHOPPER! You've made it in!"
+            endingSting="level_complete_something">
+				<step intro ="HERA/MOOD:negative/It looks like they were ready for us?!  CHOPPER, we have TIE Fighters incoming!" 
+					type="2" minigames="12" winsneed = "1" effect = "attacked" sidequests="3,7,8,13"
+					lose="KANN/MOOD:negative/Those TIE Fighters did some real damage!  CHOPPER, you have some cleanup to do!"
+					heraDialog = "I'm doing my best to avoid the fire, CHOPPER!"
+					ezraDialog = "This attack's going to make prepping for this rescue a bit tough!"
+					kananDialog = "Remember, CHOPPER. Let go of your conscious self, and act on instinct.../Actually, sorry for prying, but do droids have instinct?"
+					sabineDialog = "We're heading deep into enemy territory this time. Better get all my paints ready!"
+					zebDialog = "Stop standing around and get to the guns! Those TIEs are fast! And weak."
+					sting="horrible"></step>
+				<step intro ="EZRA/MOOD:negative/They got us with a particle bomb!  The lower decks are on fire!  CHOPPER, help us out!" 
+					type="2" minigames="6" winsneed = "1" effect = "selfdestruct" sidequests="3,7,8,13"
+					lose="ZEBB/MOOD:negative/CHOPPER, are you waiting for the fire to burn itself out?!"
+					heraDialog = "Being on fire and losing fuel is not making approaching this base easy!"
+					ezraDialog = "If we're going to pull this off, we're going to need some kind of distraction."
+					npcKanan = "the Hallway,7,4,,negative" kananDialog = "We can't lose those parts of the ship! The fuel will be burned if you don't put the fire out!"
+					npcSabine = "the Engine Room,11,3" sabineDialog = "Well, it's a good thing I got my weapons out of the Cargo Bay before that fire started..."
+					zebDialog = "The best defense is a good offense! Though I'm sure repairs also help a lot."
+					sting="lose_imperial"></step>
+				<step intro ="KANN/MOOD:help/CHOPPER, you go ahead to the Imperial base while we handle things!" 
+					type="3" minigames="21" winsneed = "1" effect = "turbulence"
+					lose="HERA/MOOD:positive/I guess we know which one of us is the better flier..."
+					event="2-1-2-LandOnShip"
+					heraDialog = "Go on ahead, CHOPPER! The sooner you can start messing their systems up, the better!"
+					ezraDialog = "If we're going to pull this off, we're going to need some kind of distraction."
+					npcKanan = "the Hallway,7,4" kananDialog = "We'll be busy repairing things up here while you scout ahead!"
+					npcSabine = "the Engine Room,11,3" sabineDialog = "Who knows? Maybe we can use the Blackburn's blueprints after we rescue the engineer!"
+					></step>
+			</level>
+			<level id = "1" title = "Get to the Gand"
+			description = "Gand Spies and Engineers are some of the most renowned in the galaxy, and many find themselves forced into the Empire's service.  There's at least one engineer that's looking to retire early!"
+			location = "IMPERIAL"
+			specialBG = "ASTEROID"
+			win="KANN/MOOD:positive/We've made it out safely with the Engineer! Just a few loose ends to tie up now."
+            endingSting="level_complete_surprise">
+				<step intro ="SABN/MOOD:help/CHOPPER, jam their comm systems, I think they spotted where we dropped off!" 
+					type="1" minigames="14,15,16" winsneed = "5" effect = "none" sidequests="17"
+					lose="ZEBB/MOOD:negative/CHOPPER, I can practically hear them breathing over their comms!"
+					sting="level_complete_tense"></step>
+				<step intro ="ZEBB/MOOD:casual/CHOPPER, get into the control room, we're going to need some assistance!" 
+					type="3" minigames="17" winsneed = "1" effect = "none"
+					lose="SABN/MOOD:negative/You don't really have a handle on this 'stealth' thing, do you CHOPPER?"
+					event="2-2-1-SneakToHangar"></step>
+				<step intro ="SABN/MOOD:help/CHOPPER, keep the guards distracted while we get the Gand engineer out of her cell!" 
+					type="2" minigames="18" winsneed = "1" effect = "none" sidequests="47"
+					lose="HERA/MOOD:negative/Don't trap the Imperials with US, CHOPPER!"></step>
+				<step intro ="EZRA/MOOD:help/CHOPPER, we have the designer and we're heading out - get to her workshop at the bottom of the base!" 
+					type="3" minigames="47" winsneed = "1" effect = "none"
+					lose="SABN/MOOD:negative/You don't really have a handle on this 'stealth' thing, do you CHOPPER?"
+					event="8-2-4-ToWorkshop"
+					sting="iamyourfather"></step>
+				<step intro ="ZEBB/MOOD:casual/We want to avoid a firefight this time, CHOPPER!  Get us around these Stormtroopers!" 
+					type="1" minigames="48,49,50" winsneed = "3" effect = "none" sidequests="53"
+					lose="ZEBB/MOOD:help/Next time, CHOPPER, give me time to prepare before I have to start busting Imperial heads!"></step>
+			</level>
+			<level id = "2" title = "Alter blueprint plans, and Escape!"
+			description = "If Imperial systems have one weak point, it's their system security.  Thankfully, astromechs are made just for reading, altering, and decoding such computer data.  A locked door to most is an open book to CHOPPER!"
+			location = "IMPERIAL_HANGAR"
+			specialBG = "ASTEROID"
+			win="ZEBB/MOOD:positive/I wonder how long before they notice the blueprints are now a crudely drawn Bantha, Haha!"
+            endingSting="level_complete_something">
+				<step intro ="KANN/MOOD:help/CHOPPER, before we get going, alter the blueprints for the Blackburn!" 
+					type="2" minigames="24" winsneed = "1" effect = "none" sidequests="47"
+					lose="EZRA/MOOD:casual/CHOPPER, maybe try the passcode 1-2-3-4?"
+					sting="level_complete_tense"></step>
+				<step intro ="EZRA/MOOD:negative/CHOPPER, they locked the Hangar Bay door!  Hera's blasting through - keep the guards away from us!" 
+					type="2" minigames="18" winsneed = "1" effect = "none" sidequests="47"
+					lose="KANN/MOOD:negative/Don't trap the Imperials with US, CHOPPER!"></step>
+				<step intro ="KANN/MOOD:help/CHOPPER, we're finished here!  Meet us outside!" 
+					type="3" minigames="20" winsneed = "1" effect = "URGENT"
+					lose="KANN/MOOD:negative/Do you need to replace your Rockets, CHOPPER?"
+					event="2-2-4-FlyToGhost"
+					sting="iamyourfather"></step>
+				<step intro ="HERA/MOOD:positive/Perfect timing, CHOPPER, you can get to a turret and help us NOT DIE!" 
+					type="2" minigames="12" winsneed = "1" effect = "attacked" sidequests="3,6,7,8,13"
+					lose="ZEBB/MOOD:negative/Did you find something more important to do than protect our ship, CHOPPER?"
+					zebDialog = "Stop standing around and get to the guns! Those TIEs are fast! And weak."
+					sabineDialog = "You are aware we're being shot at, right CHOPPER?"
+					heraDialog = "I'm avoiding fire as best as I can here, CHOPPER!"
+					kananDialog = "On the plus side, you did a great job keeping Imperial systems busy while we got the engineer!"
+					ezraDialog = "We're busy handling evasion up here, CHOPPER! Help out Zebb and shoot them down!"
+					sting="level_complete_something"></step>
+			</level>
+	</mission>
+	<mission id="10"			title="   Imperial Trash 
+is Rebel Treasure"				difficulty="2"		mainCharacter="Sabine"	mainLoc="IMPERIAL"	showStatus="2" video="SWR-001_clip_06"
+				description="A trash shipment with some important Rebel intel has been intercepted by Imperial forces - trash collectors, specifically.  We're going to sneak aboard the Imperial garbage ship, and reclaim the info disc before it gets incinerated!">
+			<level id = "0" title = "Board trash ship"
+			description = "Garbage Compactor ships are used for both disposal and recycling, crushing all sorts of matter into more manageable sizes for raw material, or burning.  Stop that compactor before the disk gets toasted!"
+			location = "GHOST"
+			specialBG = "SPACE"
+			win="EZRA/MOOD:negative/Incoming guards! - Wait, what are guards doing on a garbage collector ship!?"
+            endingSting="level_complete_scary">
+				<step intro ="HERA/MOOD:negative/Looks like the Imperial garbage ship has a leak - there's tons of debris floating out!  CHOPPER, help me with this!" 
+					type="2" minigames="60" winsneed = "1" effect = "turbulence" sidequests="3,6,7,8,13"
+					lose="KANN/MOOD:negative/Next time, try steering us AWAY from the debris, CHOPPER."
+					sabineDialog = "I can safely say that this is the most disgusting mission I've been on to date."
+					heraDialog = "I'm avoiding trash as best as I can here, CHOPPER!"
+					kananDialog = "Let's just hope the disc we're looking for isn't in this debris."
+					ezraDialog = "Just great. The Empire's creating even more hazards for starships to avoid."
+					sting="level_complete_scary"></step>
+				<step intro ="KANN/MOOD:casual/Our sensors show the intel's still in one of the smaller trash rooms, go in and get it, CHOPPER." 
+					type="3" minigames="61" winsneed = "1" effect = "none"
+					lose="HERA/MOOD:casual/I guess we know which one of us is the better flier..."
+					event="5-2-5-ToHangar"
+					zebDialog = "If any patrolships come out to check on us, we'll blast them out of space!"
+					sabineDialog = "I can safely say that this is the most disgusting mission I've been on to date."
+					heraDialog = "This is the stop. Head out the Cargo Bay."
+					kananDialog = "If we see anything suspicious, we'll make sure to come on board and help cover you."
+					ezraDialog = "You've got the handle on this, right? Their ship shouldn't have any Stormtroopers."></step>
+				<step intro ="ZEBB/MOOD:casual/Be careful sneaking around there, CHOPPER, garbage men are all big burly monsters, like ME, haha!" 
+					type="3" minigames="47" winsneed = "1" effect = "none"
+					lose="ZEBB/MOOD:negative/You don't really have a handle on this 'stealth' thing, do you CHOPPER?"
+					event="5-2-3-ToTrash"
+					sting="level_complete_tense"></step>
+				<step intro ="EZRA/MOOD:casual/You better cut power to the trash compactor in case it goes off while you're in there, CHOPPER!" 
+					type="2" minigames="57" winsneed = "1" effect = "none" sidequests="59" 
+					lose="EZRA/MOOD:casual/CHOPPER, I said CUT POWER, not 'leave them on'!"
+					sting="mystery"></step>
+			</level>
+			<level id = "1" title = "Counter any resistance"
+			description = "Unfortunately for the crew of Ghost, trash compactors are also quite common on larger Imperial ships, due to the resources used by the ship's increased crew. The crew's now in over their head, against a lot more troops than expected. CHOPPER will need to step up his game to get the crew, and himself, out alive!"
+			location = "IMPERIAL_TRASH"
+			specialBG = "SPACE"
+			win="HERA/MOOD:positive/Nice work, CHOPPER! The crew's made it back to Ghost safely."
+            endingSting="level_complete_surprise">
+				<step intro ="KANN/MOOD:casual/CHOPPER, I have a feeling this isn't just a trash ship - we came aboard, help us get past these guards!" 
+					type="2" minigames="65" winsneed = "1" effect = "none" sidequests="59"
+					lose="KANN/MOOD:negative/Don't trap the Imperials with US, CHOPPER!"
+					sting="level_complete_scary"></step>
+				<step intro ="SABN/MOOD:help/Don't forget about the Intel!  It should be in the trash somewhere!" 
+					type="2" minigames="51" winsneed = "1" effect = "none" sidequests="59"
+					lose="EZRA/MOOD:negative/Aww, I really wanted to know what that was..."></step>
+				<step intro ="EZRA/MOOD:help/CHOPPER, we found a shipment of credits!  Jam their distress signals, we're taking these back to the ship!" 
+					type="2" minigames="52" winsneed = "1" effect = "none" sidequests="59"
+					lose="KANN/MOOD:negative/I'm still hearing some Imperial chatter, CHOPPER!"></step>
+				<step intro ="ZEBB/MOOD:help/We're being chased by Imperial Elite Troops!  Get us out of here, CHOPPER!" 
+					type="2" minigames="65" winsneed = "1" effect = "URGENT" sidequests="59"
+					lose="KANN/MOOD:negative/Don't trap the Imperials with US, CHOPPER!"
+					sting="horrible"></step>
+			</level>
+			<level id = "2" title = "Escape with data"
+			description = "The Empire's retaliating in full force! Clearly, they were trying to erase something that would be vital to Rebel success in the conflict - all the better victory for Ghost and CHOPPER, but first, he'll have to make it out past the guards!"
+			location = "IMPERIAL_TRASH"
+			specialBG = "SPACE"
+			win="EZRA/MOOD:positive/I think we stumbled into something BIG, you guys... and we got out thanks to CHOPPER!"
+            endingSting="level_complete_win">
+				<step intro ="SABN/MOOD:negative/CHOPPER, you better sneak out of there, this place is on high alert!" 
+					type="3" minigames="59" winsneed = "1" effect = "URGENT"
+					lose="SABN/MOOD:casual/CHOPPER, you were spotted! Are you all right?"
+					event="2-2-1-SneakToHangar"
+					sting="iamyourfather"></step>
+				<step intro ="KANN/MOOD:casual/Get out the way you came, CHOPPER, we got what we came for!" 
+					type="3" minigames="63" winsneed = "1" effect = "URGENT"
+					lose="KANN/MOOD:negative/Do you need to replace your Rockets, CHOPPER?"
+					event="2-2-4-FlyToGhost"></step>
+				<step intro ="HERA/MOOD:help/They had hidden escorts, CHOPPER, we stumbled on something big!  Get them off my tail!" 
+					type="2" minigames="12" winsneed = "1" effect = "turbulence"
+					lose="EZRA/MOOD:help/Did you find something more important to do than protect our ship, CHOPPER?"
+					zebDialog = "Stop standing around and get to the guns! Those TIEs are fast! And weak."
+					sabineDialog = "You are aware we're being shot at, right CHOPPER?"
+					heraDialog = "I'm avoiding fire as best as I can here, CHOPPER!"
+					kananDialog = "We've got our hands on valuable Empire Intel, and a generous helping of credits./But that won't mean anything if we get shot down!"
+					ezraDialog = "We're busy handling evasion up here, CHOPPER! Help out Zebb and shoot them down!"
+					sting="level_complete_scary"></step>
+				<step intro ="KANN/MOOD:help/That trash ship is too big to follow us into this asteroid field!  CHOPPER, navigate us through it!" 
+					type="2" minigames="0" winsneed = "1" effect = "turbulence" sidequests="3,6,7,8,13"
+					lose="HERA/MOOD:negative/I guess there's a reason the Imperials didn't follow us through there..."
+					zebDialog = "Haha! Next time they should send larger escort ships!"
+					npcSabine = "the Engine Room,11,3" sabineDialog = "I can safely say that this is the most disgusting mission I've been on to date."
+					heraDialog = "We can do it together, CHOPPER! I'll keep our route straight while you do the more fine-tuning!"
+					kananDialog = "We've got our hands on valuable Empire Intel, and a generous helping of credits./But that won't mean anything if we get shot down!"
+					npcEzra = "the Cockpit,5,3"ezraDialog = "You go and help Hera out. I'm a bit busy looking over this disc's data.../...And trying to put up with the smell. Blech!"></step>
+			</level>
+	</mission>
+	<mission id="11"			title="Some Like it Hot"				difficulty="2"		mainCharacter="Kanan"	mainLoc="GHOST"	showStatus="2" video="SWR-001_clip_03b"
+				description="We've been asked to check out the volcano planet, Maryx Minor, to try to find a good location to construct a Rebel Base.  It might get a little hot out there!">
+			<level id = "0" title = "Prep for the Weather"
+			description = "Maryx Minor -  Its conditions make it difficult to maintain shelter on its surface for long, which is largely why the Empire has passed over it for now. Prepare for the heat, and get ready to scope out a good settlement spot!"
+			location = "GHOST"
+			win="HERA/MOOD:casual/Okay, we're ready to brave the intense heat of Maryx Minor. Let's do some climate tests!"
+            endingSting="iamyourfather">
+				<step intro ="KANN/MOOD:casual/CHOPPER, Maryx Minor's gonna get pretty hot, you better optimize the internal temps for the trip." 
+					type="2" minigames="10" winsneed = "1" effect = "none"
+					lose="HERA/MOOD:negative/It still looks like we're having trouble with those systems, CHOPPER!"
+					npcSabine = "the Engine Room,11,3" sabineDialog = "I'm watching over temperatures here, CHOPPER. Change that power flow!"
+					kananDialog = "Maryx Minor is a natural hazard. The Empire's not likely to stick their nose here."
+					npcEzra = "Ghost is gonna fry if we don't adjust those temperatures, CHOPPER."
+					npcZeb = "the Cockpit,5,5,mirrored" zebDialog = "I doubt there's going to be anything to shoot on the surface of Maryx./Besides, I want to be as far away from the heat as possible."
+					sting="mystery"></step>
+				<step intro ="HERA/MOOD:help/Hook in that new internal heat shield, CHOPPER, I have a feeling we'll need to use it!" 
+					type="2" minigames="4" winsneed = "1" effect = "none"
+					lose="HERA/MOOD:negative/It still looks like we're having trouble with those systems, CHOPPER!"
+					npcSabine = "the Engine Room,11,3" sabineDialog = "I'm watching over temperatures here, CHOPPER. Set up the heat shield!"
+					kananDialog = "Maryx Minor is a natural hazard. The Empire's not likely to stick their nose here."
+					npcEzra = "I know it's a lot of prep just for landing on one planet, CHOPPER, but it's going to be extremely warm!"
+					npcZeb = "the Cockpit,5,5,mirrored" zebDialog = "I doubt there's going to be anything to shoot on the surface of Maryx./Besides, I want to be as far away from the heat as possible."
+					heraDialog = "This shield will allow us to get right up close to the planet./And unlike last time, I didn't get it from a discount salesman! I learned my lesson."></step>
+				<step intro ="ZEBB/MOOD:casual/Hey CHOPPER, did you ever fix that crack in our outer hull we got from Smuggler's Run?" 
+					type="2" minigames="3" winsneed = "1" effect = "none"
+					lose="HERA/MOOD:casual/You know the ship isn't SUPPOSED to have that hole in it, right?"
+					npcSabine = "the Engine Room,11,3" sabineDialog = "All the heat shields and heatsinks aren't going to save Ghost unless we seal up the hull."
+					kananDialog = "Maryx Minor is a natural hazard. The Empire's not likely to stick their nose here."
+					npcEzra = "I know it's a lot of prep just for landing on one planet, CHOPPER, but it's going to be extremely warm!"
+					npcZeb = "the Cockpit,5,5,mirrored" zebDialog = "I doubt there's going to be anything to shoot on the surface of Maryx./Besides, I want to be as far away from the heat as possible."
+					heraDialog = "Any break in the hull's just going to be a vent that hot air can rush right into!"></step>
+				<step intro ="EZRA/MOOD:negative/Of course it's a dangerous volcano planet surrounded by SPACE ROCKS!  CHOPPER, navigate us through it!" 
+					type="2" minigames="0" winsneed = "1" effect = "turbulence" sidequests="3,6,7,8,13"
+					heraDialog = "We can do it together, CHOPPER! I'll keep our route straight while you do the more fine-tuning!"
+					npcSabine = "the Engine Room,11,3" sabineDialog = "CHOPPER, any damage the ship takes, you're going to have to repair, or else we'll all get fried!/No pressure or anything."
+					kananDialog = "If we can survive this, I'm sure this will make the perfect hideout."
+					npcEzra = "I really shouldn't be surprised, what with all the giant exploding volcanoes throwing rock into space."
+					npcZeb = "the Cockpit,5,5,mirrored" zebDialog = "Oh boy! Hundreds of space rocks to hit, and I have no seatbelt!"
+					lose="ZEBB/MOOD:negative/Let's not do that again..."
+					sting="level_complete_scary"></step>
+			</level>
+			<level id = "1" title = "Examine Maryx Minor's surface for sites"
+			description = "Hopefully, Maryx Minor will also be the site of a key reconnaissance and supply depot for the Rebels!  Maybe somewhere between the volcanoes, geysers, and lava pits, there's someplace that isn't more dangerous than a wampa den!"
+			location = "GHOST"
+			win="HERA/MOOD:negative/I'm beginning to think this might not have been the best plan..."
+            endingSting="level_complete_scary">
+				<step intro ="SABN/MOOD:help/We're in range of the planet CHOPPER, drop our climate readers in the Cargo Bay." 
+					type="2" minigames="23" winsneed = "1" effect = "none" sidequests="3,7,13"
+					lose="ZEBB/MOOD:negative/Is it really that hard to drop somethin'?"
+					npcSabine = "the Engine Room,11,3" sabineDialog = "You're doing good, CHOPPER. The shields and hull are holding up!"
+					kananDialog = "Maryx Minor is a natural hazard. The Empire's not likely to stick their nose here."
+					npcEzra = "These sensors should tell us just how habitable it is down there!"
+					npcZeb = "the Cockpit,5,5,mirrored" zebDialog = "Jeez. I don't see how anyone could survive down there."
+					heraDialog = "We're ready for getting readings, CHOPPER."
+					sting="mystery"></step>
+				<step intro ="HERA/MOOD:help/Do me a favor CHOPPER, and see if you can catch the signals from our readers..." 
+					type="2" minigames="2" winsneed = "1" effect = "none" sidequests="3,7,8,13"
+					lose="KANN/MOOD:negative/CHOPPER, Hera isn't getting any signals!"
+					npcSabine = "the Engine Room,11,3" sabineDialog = "You're doing good, CHOPPER. The shields and hull are holding up!"
+					kananDialog = "Maryx Minor is a natural hazard. The Empire's not likely to stick their nose here."
+					npcEzra = "Uh, not to be a downer, but I suspect that the readers might've just entirely melted./Can't be sure until we calibrate, though."
+					npcZeb = "the Cockpit,5,5,mirrored" zebDialog = "Jeez. I don't see how anyone could survive down there."
+					heraDialog = "Let's scan for readings, CHOPPER! The transmissions might be getting altered by the atmosphere."></step>
+				<step intro ="ZEBB/MOOD:negative/I'm going to hazard a guess this planet's not ideal, because it set our lower decks on fire!" 
+					type="2" minigames="6" winsneed = "1" effect = "selfdestruct" sidequests="3,7,8,13"
+					lose="ZEBB/MOOD:negative/It's okay, we don't have to go in the lower levels ever again, I guess..."
+					npcSabine = "the Engine Room,11,3" sabineDialog = "Our heatsinks are overloading! We must've been hit by some huge heat wave!"
+					kananDialog = "Well, there's good reason that this planet hasn't been colonized yet."
+					npcEzra = "Whoa, that was really sudden! There is no way our heat shield could've been prepared for that."
+					npcZeb = "the Cockpit,5,5,mirrored" zebDialog = "Jeez. I don't see how anyone could survive down there."
+					heraDialog = "No signs of mechanical failure, but we'd better get the damage repaired fast, CHOPPER!"
+					sting="iamyourfather"></step>
+				<step intro ="KANN/MOOD:help/CHOPPER, our heat sensors are overloading!  Shut them off before they melt!" 
+					type="2" minigames="22" winsneed = "1" effect = "turbulence" sidequests="3,6,7,8,13"
+					npcSabine = "the Engine Room,11,3" sabineDialog = "Our heatsinks are overloading! We must've been hit by some huge heat wave!"
+					kananDialog = "Well, there's good reason that this planet hasn't been colonized yet."
+					npcEzra = "Whoa, that was really sudden! There is no way our heat shield could've been prepared for that."
+					npcZeb = "the Cockpit,5,5,mirrored" zebDialog = "Jeez. I don't see how anyone could survive down there."
+					heraDialog = "No signs of mechanical failure, but we'd better get the damage repaired fast, CHOPPER!"
+					lose="KANN/MOOD:negative/CHOPPER, I said CUT POWER, not 'leave them on'!"
+					sting="horrible"></step>
+			</level>
+			<level id = "2" title = "Repair any potential damage"
+			description = "On Maryx Minor, eruptions, explosions and spurts of radiation are commonplace, but the Ghost isn't built for that kind of punishment!  Make sure that the Ghost doesn't burn up!"
+			location = "GHOST"
+			win="KANN/MOOD:positive/It's safe to say the Rebel Alliance doesn't need a planet that hates them as much as the Empire..."
+            endingSting="level_complete_something">
+				<step intro ="EZRA/MOOD:negative/It looks like a hundred volcanoes are erupting in OUR direction!  CHOPPER, get us off this crazy planet!" 
+					type="2" minigames="0" winsneed = "1" effect = "turbulence" sidequests="3,6,7,8,13"
+					lose="ZEBB/MOOD:negative/Did you suddenly pick up an interest in interstellar geology, CHOPPER?"
+					npcSabine = "the Engine Room,11,3" sabineDialog = "Managing the damage as best I can back here, CHOPPER!"
+					kananDialog = "Well, there's good reason that this planet hasn't been colonized yet."
+					npcEzra = "The only things separating us from fiery death are a breached heatshield, a partially liquefied hull, and Hera's piloting."
+					npcZeb = "the Cockpit,5,5,mirrored" zebDialog = "CHOPPER, help Hera already! She certainly hasn't become a better pilot since that race!"
+					heraDialog = "Taking heavy hits, CHOPPER! Help me get through all this rock!"
+					sting="horrible"></step>
+				<step intro ="HERA/MOOD:negative/One of those eruptions smacked us on the underside!  CHOPPER, fix that Hull leak!" 
+					type="2" minigames="13" winsneed = "1" effect = "selfdestruct" sidequests="3,6,7,8"
+					lose="HERA/MOOD:negative/CHOPPER, if you can see through it, it needs to be welded!"
+					npcSabine = "the Engine Room,11,3" sabineDialog = "Managing the damage as best I can back here, CHOPPER!"
+					kananDialog = "Perhaps we should try referring the Empire to this planet?"
+					npcEzra = "The only things separating us from fiery death are a breached heatshield, a partially liquefied hull, and Hera's piloting."
+					npcZeb = "the Cockpit,5,5,mirrored" zebDialog = "CHOPPER, help Hera already! She certainly hasn't become a better pilot since that race!"
+					heraDialog = "We're half-caked in molten rock, CHOPPER, and camouflage isn't our biggest concern at the moment!"></step>
+				<step intro ="ZEBB/MOOD:negative/CHOPPER, set the internal temps back to normal, my fur's soaked with sweat!" 
+					type="2" minigames="10" winsneed = "1" effect = "turbulence" sidequests="3,6,7,8,13"
+					lose="KANN/MOOD:negative/CHOPPER, are those systems operational yet?"
+					npcSabine = "the Engine Room,11,3" sabineDialog = "Managing the damage as best I can back here, CHOPPER!"
+					kananDialog = "Perhaps we should try referring the Empire to this planet?"
+					npcEzra = "It got really cold all of a sudden! That regulator must've been working like crazy."
+					zebDialog = "Thank goodness we got off that planet. I can get back into my battlestation again!"
+					heraDialog = "Don't need to waste power on regulation anymore, CHOPPER. Reset internal temps!"></step>
+				<step intro ="EZRA/MOOD:casual/WOW! That eruption shot our climate reader back up into space!  CHOPPER, bring it back in!" 
+					type="2" minigames="9" winsneed = "1" effect = "turbulence" sidequests="3,6,7,8,13"
+					lose="KANN/MOOD:negative/Do you need to replace your Rockets, CHOPPER?"
+					npcSabine = "the Engine Room,11,3" sabineDialog = "Managing the damage as best I can back here, CHOPPER!"
+					kananDialog = "Perhaps we should try referring the Empire to this planet?"
+					npcEzra = "Well I'll be! Guess that climate reader did survive the volcanoes after all!"
+					zebDialog = "Thank goodness we got off that planet. I can get back into my battlestation again!"
+					heraDialog = "The readings are coming in clearly now:/Maryx Minor is very hot. Well, was worth a reading I guess...?"
+					sting="iamyourfather"></step>
+			</level>
+	</mission>
+	
+	<mission id="0"			title="Training Wheels"			difficulty="0"		mainCharacter="Ezra"	mainLoc="GHOST"	showStatus="2" video="noVideo"
+				description="At the moment, our crew has a bit of downtime while stationed on our base at Lothal, and we have an opportunity to focus a bit on CHOPPER. He's likely going to be under a lot of pressure, so it's essential we give him experience on what he could face on the field!">
+			<level id = "0" title = "Perform maintenance"
+				description = "Starship Ghost is a modified Light Freighter - a ship for cargo and trading. Rebels usually customize such ships, and Ghost is no exception - armed with extra weapons, the Ghost has survived many skirmishes with the Empire. It needs constant upkeep, which is why CHOPPER is an essential member of its crew!"
+				location = "GHOST"
+				win="EZRA/MOOD:positive_unique/Everyone all set? Let's do some field work!"
+                endingSting="level_complete_surprise">
+					<step intro ="HERA/MOOD:help/Alright, CHOPPER. Let's do a few routine repairs!/KANN/MOOD:casual/While on our missions, You'll take care of ALERTS./KANN/Alerts appear on your map as arrows with dials, which count down over time./KANN/They start blue, then turn yellow, then red, as they become more urgent./KANN/MOOD:negative/Keep them from running out, or you'll get a strike! Too many, and we'll have to abort./HERA/MOOD:casual/Kanan will plot out a few spots for you to weld up, CHOPPER. I'll time you to make sure you're keeping up!" 
+						type="1" minigames="3,11,13" winsneed = "3" effect = "tutorial_two"
+						lose="HERA/MOOD:help/Come on, CHOPPER. I know you want to goof off, but this is important protocol here!"
+						npcHera = "the Cockpit,5,5" heraDialog="Remember, go after Yellow or Red alerts ASAP!"
+						npcKanan = "the Hallway,7,4" kananDialog = "The more difficult our mission, the faster we'll have you do these alerts."
+						npcSabine = "the Left Hallway,11,3"
+						npcZeb = "the Left Hallway,12,3"
+						npcEzra = "the Left Hallway,10,3"></step>
+					<step intro ="HERA/MOOD:positive/Good work so far! Sometimes the crew will have specific things you need to do./KANN/MOOD:casual/These alerts show up in GREEN./KANN/They usually have much longer time limits, but will allow us to progress on our mission./KANN/Especially if they're causing damage while untreated, they should be a priority!/HERA/MOOD:help/For now, just reroute power to the Maglev. I heard Ezra needs some help moving supplies." 
+						type="2" minigames="4" winsneed = "1" effect = "tutorial_two"
+						lose="KANN/MOOD:negative/CHOPPER, I don't think you'd want to disappoint Ezra."
+						npcHera = "the Cockpit,5,5" heraDialog="Green alerts are important, but make sure not to forget Red ones!"
+						npcKanan = "the Hallway,7,4" kananDialog = "Careful. Keep an eye out for any other alerts that might be active./Green alerts have longer time limits, after all!"
+						npcSabine = "the Left Hallway,11,3"
+						npcZeb = "the Left Hallway,12,3"
+						npcEzra = "the Left Hallway,10,3"></step>
+					<step intro ="EZRA/MOOD:casual/I'm back! CHOPPER, help me move some crates! We've just scored an awesome deal!/HERA/MOOD:help/Let's use this for alert management practice! While you help Ezra, I'll spot out a few other scrapes./EZRA/MOOD:help/Uh, Hera, it's sort of important we get these crates moving right now? I don't want CHOPPER getting stressed.../EZRA/The more alerts that are active, the faster your stress will increase.../EZRA/And who knows what you could end up doing while stressed?"
+						type="2" minigames="23" sidequests="3,11,13" winsneed = "1" effect = "tutorial_three"
+						lose="EZRA/MOOD:casual/Are you feeling alright, CHOPPER? Those crates won't move themselves!"
+						npcHera = "the Cockpit,5,5" heraDialog="Having a Green alert while managing random ones is usual for most of our missions."
+						npcKanan = "the Hallway,7,4" kananDialog = "Keep side-alerts under control, then go for the green!"
+						npcSabine = "the Left Hallway,11,3"
+						npcZeb = "the Left Hallway,12,3"
+						npcEzra = "the Cargo Bay,1,7,mirrored,help" ezraDialog = "Yup, just holding the Cargo Bay door open here."></step>
+					<step intro ="SABN/MOOD:casual/We're back! And we've brought some new batteries for our turret!/ZEBB/MOOD:positive/These new babies will blast a TIE in one shot! That'll show those Imperials who to mess with!/HERA/MOOD:help/Nice! Let's get those new batteries plugged in, CHOPPER." 
+						type="2" minigames="4" winsneed = "1" effect = "none"
+						lose="SABN/MOOD:casual/Don't leave us waiting, CHOPPER."
+						heraDialog="We're just about ready to take off, CHOPPER."
+						npcKanan = "the Hallway,7,4" kananDialog = "After we get this plugged in, we'll move on to field training."
+						npcSabine = "the Hallway,5,4" sabineDialog = "The new battery should be installed over in the engine room, to the right."
+						zebDialog = "No, CHOPPER, you can't play with the turret. Get out of here!"
+						npcEzra = ",,,sit,positive" ezraDialog = "Glad we were able to unload all those spare parts. We're rolling in credits!"></step>
+			</level>
+			<!--  //Left out for now. 1st alone might be enough.
+			<level id = "1" title = "Test drive Ghost"
+				description = "Ghost frequently travels dangerous side routes and asteroid fields to avoid confrontations with the Empire. To that end, Ghost sees a lot of wear and tear. To keep on top of it, CHOPPER and the crew constantly keep an eye out for any damage the ship sustains!"
+				location = "GHOST"
+				win="SABN/MOOD:positive/Looks like our luck is turning up, 'cause we've just found a derelict Empire frigate!">
+					<step intro ="EZRA/MOOD:negative/There's the patrol now!
+					/HERA/MOOD:help/CHOPPER, you could use a bit of practice. Go down to the Observation deck and help Zeb out!
+					/ZEBB/MOOD:negative/Pah! Like I need CHOPPER's help! I can take these Imperials myself!" 
+						type="2" minigames="12" winsneed = "1" effect = "none"
+						lose="ZEBB/MOOD:negative/CHOPPER, are you TRYING to make me lose my patience?"
+						heraDialog="Hurry down and help ZEB take them by surprise!">
+						</step>
+					<step intro ="ZEBB/MOOD:negative/Even a lame Bantha could've pulled that off!
+					/HERA/MOOD:help/Nice shooting! How about you help us make some evasive manuevers?
+					/HERA/MOOD:help/Just be a bit careful. If the ship takes too much damage while piloting, you'll have to manage the damage caused!" 
+						type="2" minigames="0" winsneed = "1" effect = "none"
+						lose="HERA/MOOD:negative/CHOPPER, you'd better get on top of that damage!"
+						npcHera = ",,,sit,positive" heraDialog="Very nice! Not a single TIE left flying."
+						npcEzra = ",,,sit,positive" ezraDialog="Hah! They didn't even know what hit them!"
+						kananDialog = "It's a bit odd that a squad that size was travelling alone..."
+						npcSabine = ",,,sit,positive" sabineDialog="Couldn't have done it better myself!"
+						zebDialog="There's no way you could've handled that without the new battery."></step>
+					<step intro ="KANN/MOOD:negative/Trouble! Those TIEs were part of a much larger fleet!
+					/HERA/MOOD:help/CHOPPER, perform repairs while I move to escape!" 
+						type="2" minigames="8" sidequests="3,6,7,8,13" winsneed = "1" effect = "attacked"
+						lose="HERA/MOOD:negative/CHOPPER, that's coming out of your cut!"
+						npcZeb = ",,,,positive_unique" zebDialog = "You're a pretty good shot... For a barrel."
+						npcSabine = "the Cargo Bay,1,7,mirrored,help" sabineDialog = "I'm working on repairing the door, CHOPPER. Use the maglift to stop the crates!"></step>
+				</level>
+				
+			<level id = "2" title = "Salvage Derelict Base"
+				description = "Rebel economy, while covert, is quite strong and uses its resources carefully. This stands directly in contrast with the Empire, which relies on strident bureaucracy to keep its ships and traders in order. What losses that the Empire might take, though, the Rebels will gladly pick up for their own gain!"
+				location = "GHOST"
+				win="KANN/MOOD:positive/Good work team, especially you, CHOPPER!  Now let's get this stuff to a contact of mine on Felucia...">
+					<step intro ="EZRA/MOOD:negative/Looks like they'll be experimenting with their LASERS on US!  We have TIEs closing in fast! /HERA/MOOD:help/CHOPPER take the controls, I'm fixing the radar array." 
+						type="2" minigames="0" sidequests="3,6,7,8,13" winsneed = "1" effect = "attacked"
+						lose="HERA/MOOD:help/CHOPPER, did you think running headfirst into wreckage would be good for our ship?"
+						npcHera = "the Engine Room,11,3,,negative" heraDialog="Hey, you're supposed to be busy in the cockpit. Get to it!">
+						</step>
+					<step intro ="ZEBB/MOOD:help/CHOPPER, there are too many TIEs. Help me shoot some down!" 
+						type="2" minigames="12" sidequests="3,6,7,8,13" winsneed = "1" effect = "attacked"
+						lose="KANN/MOOD:help/CHOPPER, we really needed those Tie Fighters away from us!"
+						npcZeb = ",,,,help"zebDialog = "CHOPPER, stop idling about and get on the turret!"></step>
+					<step intro ="SABN/MOOD:help/Nice shooting! But the cargo hold was damaged in the fight and the freezer is going to float out. Grab it, CHOPPER!" 
+						type="2" minigames="8" sidequests="13,7" winsneed = "1" effect = "none"
+						lose="HERA/MOOD:negative/CHOPPER, that's coming out of your cut!"
+						npcZeb = ",,,,positive_unique" zebDialog = "You're a pretty good shot... For a barrel."
+						npcSabine = "the Cargo Bay,1,7,mirrored,help" sabineDialog = "I'm working on repairing the door, CHOPPER. Use the maglift to stop the crates!"></step>
+				</level>
+				
+			-->
+	</mission>
+</missions>

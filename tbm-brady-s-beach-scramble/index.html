@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html>
+<head>
+<title>Teen Beach Movie</title>
+<meta name="robots" content="noindex,nofollow" />
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png" />
+<meta name="apple-mobile-web-app-title" content="Teen Beach">
+<style>
+    body {
+      text-align: center;
+      margin: 0;
+      background: black;
+      color: #404040;
+      font-family: sans-serif;
+      font-size: 10pt;
+    }
+    a {
+      color: #F88113;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    #content {
+      width: 750px;
+      height: 500px;
+      margin: 0px auto 0px auto;
+    }
+
+    /* On small devices, fill the entire screen and hide the rest of the page. */
+    @media (max-device-width: 8in), (max-device-height: 8in) {
+      html {
+        /* Prevent scrollbars from causing a resize feedback loop. */
+        overflow: hidden;
+      }
+      html, body {
+        height: 100%;
+      }
+      #content {
+        height: 100%;
+        width: 100%;
+        margin: inherit;
+        box-shadow: none;
+      }
+      .no-mobile {
+        display: none;
+      }
+    }
+  </style>
+<script type="text/javascript" src="gameConfig/ick.js"></script>
+</head>
+<body>
+<div id="content"></div>
+<script src="flambe.js"></script>
+<script>
+  //var siteLockingOk = ((/:\/\/([a-zA-Z0-9]*[.])*disney[.]go[.]com/.test(window.location.href)||/:\/\/([a-zA-Z0-9]*[.])*dolimg[.]com/.test(window.location.href)||/:\/\/([a-zA-Z0-9]*[.])*disney[.]com/.test(window.location.href)||/:\/\/([a-zA-Z0-9]*[.])*dilcdn[.]com/.test(window.location.href)||/:\/\/([a-zA-Z0-9]*[.])*diznee[.]net/.test(window.location.href))&&(top===window||/:\/\/([a-zA-Z0-9]*[.])*disney[.]go[.]com/.test(document.referrer)||/:\/\/([a-zA-Z0-9]*[.])*dolimg[.]com/.test(document.referrer)||/:\/\/([a-zA-Z0-9]*[.])*disney[.]com/.test(document.referrer)||/:\/\/([a-zA-Z0-9]*[.])*dilcdn[.]com/.test(document.referrer)||/:\/\/([a-zA-Z0-9]*[.])*diznee[.]net/.test(document.referrer)));
+  var siteLockingOk = runIck();
+  if(siteLockingOk)
+  {
+	flambe.embed(["targets/main-html.js"], "content");
+  }
+  else 
+  {
+    var content = document.getElementById("content");
+	var img = document.createElement("img");
+	img.setAttribute('src', 'assets/config/unsupported.jpg');
+  }
+</script>
+</body>
+</html>

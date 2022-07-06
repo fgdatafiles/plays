@@ -1,0 +1,54 @@
+/* Fonts */
+@font-face {
+  font-family: 'Gumball';
+  src: url('assets/fonts/gumball_8bit_thick-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fredburger-Regular';
+  src: url('assets/fonts/FREDFREDBURGER-REGULAR.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fredburger-Regular-Ara';
+  src: url('assets/fonts/FREDFREDBURGERARA-REGULAR.WOFF') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#font_preload1 {
+  font-family: 'Gumball';
+  color: red;
+}
+#font_preload2 {
+  font-family: 'Fredburger-Regular';
+  color: red;
+}
+#font_preload3 {
+  font-family: 'Fredburger-Regular-Ara';
+  color: red;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #000;
+}
+
+canvas {
+  border:0px solid black;
+  /*border:1px solid white;*/
+  background: #000000;
+  display:block;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.preload {
+  display: none;
+}
