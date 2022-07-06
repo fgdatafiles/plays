@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Holds the trigger animation data presented in game for the mobile version of the game.
+		Use triggers-hd for the desktop version, and triggers-ld for lower end devices version.  -->
+
+<triggers>
+	
+	<!-- id field refers to the code presented in the share link and parsed by the game reader. NO LETTERS. 
+		Make sure they are all unique within the scope of this document. -->
+	
+	<!-- idle_animation field is used with flump files; they must have load a named loop before they can be displayed in the game. this named loop is for the idle animation of the trigger -->
+	
+	<!-- press_animation field is used with flump files; they must have load a named loop before they can be displayed in the game. this named loop is for the press animation of the trigger -->
+	
+	<!-- sound_file is the filename of the sound played when the trigger is pressed, found in the app/audio/sfx folder. -->
+	
+	<!-- type is the type of slime/confetti trigger animation used in game currently. 1 = slime splatter, 2 = confetti, 3 = curtain, 4 = cats -->
+	
+	<!-- xOffset and yOffset fields modify the placement of the Animation from its default position in game.-->
+	
+	<!-- inner data is the library path of the flump files. Put the folder name inside <![CDATA[ ]]> . -->
+	
+	
+	<trigger id="0" idle_animation="box_idle" press_animation="box_press" sound_file="jack-in-a-box_01" type="2" xOffset="0" yOffset="10"><![CDATA[box]]></trigger>
+	<trigger id="1" idle_animation="lever_idle" press_animation="lever_press" sound_file="switch" type="4" xOffset="10" yOffset="20"><![CDATA[lever]]></trigger>
+	
+	
+	
+</triggers> 
+

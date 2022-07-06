@@ -1,0 +1,416 @@
+{
+	"prototypeData":[	
+	],
+	"assets":[
+		{"id":"establish","src":"assets/images/environments/livingroom_establish.jpg", "type":"image"},
+		{"id":"livingroom_couch_bg","src":"assets/images/environments/livingroom_couch_2_bg.jpg", "type":"image"},
+		{"id":"livingroom_big_clock_bg","src":"assets/images/environments/livingroom_big_clock_bg.jpg", "type":"image"},
+		{"id":"livingroom_center_bg","src":"assets/images/environments/livingroom_center_bg.jpg", "type":"image"},
+		{"id":"livingroom_center_zoomedout_bg","src":"assets/images/environments/livingroom_center_zoomedout_bg.jpg", "type":"image"},
+		{"id":"livingroom_dining_bg","src":"assets/images/environments/livingroom_dining_bg.jpg", "type":"image"},
+		{"id":"livingroom_fishtank_bg","src":"assets/images/environments/livingroom_fishtank_bg.jpg", "type":"image"},
+		{"id":"livingroom_props","src":"assets/sheets/props_livingroom.json", "type":"spritesheet"}		
+	],
+	"spots":[
+		{
+			"id":"toy_table",
+			"art":{
+				"back":null,
+				"front":"toy_table"
+			},
+			"sheetName":"livingroom_props",
+			"propOrder":"behind",
+			"bg":"livingroom_center_bg",
+			"position":{"x":400, "y":250},
+			"scale":0.7			
+		},
+		{
+			"id":"laundry_basket",
+			"art":{
+				"back":"laundry_basket_back",
+				"front":"laundry_basket_front"
+			},
+			"sheetName":"livingroom_props",
+			"propOrder":"behind",
+			"bg":"livingroom_center_bg",
+			"position":{"x":350, "y":300},
+			"scale":0.75
+		},
+		{
+			"id":"couch",
+			"art":{
+				"back":null,
+				"front":"couch"
+			},
+			"sheetName":"livingroom_props",
+			"propOrder":"behind",
+			"bg":"livingroom_couch_bg",
+			"position":{"x":220, "y":300},
+			"scale":1.0			
+		},
+		{
+			"id":"dining_room_table",
+			"art":{
+				"back":null,
+				"front":"dining_room_table"
+			},
+			"sheetName":"livingroom_props",
+			"propOrder":"behind",
+			"bg":"livingroom_dining_bg",
+			"position":{"x":200, "y":405},
+			"scale":1.0			
+		},
+		{
+			"id":"clock",
+			"art":{
+				"back":null,
+				"front":"clock"
+			},
+			"sheetName":"livingroom_props",
+			"propOrder":"behind",
+			"bg":"livingroom_big_clock_bg",
+			"position":{"x":400, "y":0},
+			"scale":0.95			
+		},
+		{
+			"id":"flowerpot",
+			"art":{
+				"back":null,
+				"front":"flowerpot"
+			},
+			"sheetName":"livingroom_props",
+			"propOrder":"behind",
+			"bg":"livingroom_center_bg",
+			"position":{"x":450, "y":150},
+			"scale":1.0			
+		},
+		{
+			"id":"blanket",
+			"art":{
+				"back":null,
+				"front":null
+			},
+			"sheetName":"livingroom_props",
+			"propOrder":"behind",
+			"bg":"livingroom_center_zoomedout_bg",
+			"position":{"x":200, "y":350},
+			"scale":1.0			
+		},
+		{
+			"id":"fishtank",
+			"art":{
+				"back":null,
+				"front":"fishtank"
+			},
+			"sheetName":"livingroom_props",
+			"propOrder":"behind",
+			"bg":"livingroom_fishtank_bg",
+			"position":{"x":309, "y":255},
+			"scale":1.0			
+		}
+		
+	],
+	"envCharacters":[
+		{
+			"character":["Daniel"],
+			"validSpots":[
+				{
+					"spotName":"couch",
+					"scale":0.7,
+					"positions":[
+						{
+							"id":"Left",
+							"position":{"x":380, "y":700}
+						},
+						{
+							"id":"Right",
+							"position":{"x":950, "y":700}
+						}
+					]
+				},
+				{
+					"spotName":"clock",
+					"scale":0.75,
+					"positions":[
+						{
+							"id":"Left",
+							"position":{"x":540, "y":640}
+						},
+						{
+							"id":"Right",
+							"position":{"x":640, "y":640}
+						}
+					]
+				},
+				{
+					"spotName":"fishtank",
+					"scale":0.9,
+					"positions":[
+						{
+							"id":"Left",
+							"position":{"x":600, "y":650}
+						},
+						{
+							"id":"Right",
+							"position":{"x":640, "y":650}
+						}
+					]
+				},
+				{
+					"spotName":"dining_room_table",
+					"scale":0.85,
+					"positions":[
+						{
+							"id":"Left",
+							"position":{"x":640, "y":670}
+						},
+						{
+							"id":"Right",
+							"position":{"x":640, "y":670}
+						}
+					]
+				},
+				{
+					"spotName":"toy_table",
+					"scale":0.9,
+					"positions":[
+						{
+							"id":"Up",
+							"position":{"x":610, "y":470}
+						}
+					]
+				},
+				{
+					"spotName":"flowerpot",
+					"scale":0.9,
+					"positions":[
+						{
+							"id":"Left",
+							"position":{"x":640, "y":540}
+						},
+						{
+							"id":"Right",
+							"position":{"x":640, "y":540}
+						}
+					]
+				},
+				{
+					"spotName":"blanket",
+					"scale":1.0,
+					"positions":[
+						{
+							"id":"Special1",
+							"position":{"x":640, "y":600}
+						}
+					]
+				},
+				{
+					"spotName":"laundry_basket",
+					"scale":0.8,
+					"positions":[
+						{
+							"id":"Up",
+							"position":{"x":640, "y":500}
+						}
+					]
+				}
+			]
+		},
+		{
+			"character":["Dad"],
+			"validSpots":[
+			{
+					"spotName":"couch",
+					"scale":0.7,
+					"positions":[
+						{
+							"id":"Left",
+							"position":{"x":510, "y":650}
+						},
+						{
+							"id":"Right",
+							"position":{"x":790, "y":650}
+						},
+						{
+							"id":"Up",
+							"position":{"x":710, "y":600}
+						}
+					]
+				},
+				{
+					"spotName":"clock",
+					"scale":0.75,
+					"positions":[
+						{
+							"id":"Left",
+							"position":{"x":660, "y":650}
+						},
+						{
+							"id":"Right",
+							"position":{"x":620, "y":650}
+						}
+					]
+				},
+				{
+					"spotName":"fishtank",
+					"scale":0.85,
+					"positions":[
+						{
+							"id":"Left",
+							"position":{"x":680, "y":630}
+						},
+						{
+							"id":"Right",
+							"position":{"x":620, "y":630}
+						}
+					]
+				},
+				{
+					"spotName":"dining_room_table",
+					"scale":0.85,
+					"positions":[
+						{
+							"id":"Up",
+							"position":{"x":640, "y":650}
+						}
+					]
+				}
+				
+			]
+		},
+		{
+			"character":["Mom"],
+			"validSpots":[
+{
+					"spotName":"couch",
+					"scale":0.8,
+					"positions":[
+						{
+							"id":"Left",
+							"position":{"x":510, "y":700}
+						},
+						{
+							"id":"Right",
+							"position":{"x":790, "y":700}
+						},
+						{
+							"id":"Up",
+							"position":{"x":810, "y":590}
+						}
+					]
+				},
+				{
+					"spotName":"clock",
+					"scale":0.85,
+					"positions":[
+						{
+							"id":"Left",
+							"position":{"x":680, "y":650}
+						},
+						{
+							"id":"Right",
+							"position":{"x":560, "y":650}
+						}
+					]
+				},
+				{
+					"spotName":"fishtank",
+					"scale":0.85,
+					"positions":[
+						{
+							"id":"Left",
+							"position":{"x":560, "y":650}
+						},
+						{
+							"id":"Right",
+							"position":{"x":620, "y":650}
+						}
+					]
+				},
+				{
+					"spotName":"dining_room_table",
+					"scale":0.9,
+					"positions":[
+						{
+							"id":"Up",
+							"position":{"x":640, "y":650}
+						}
+					]
+				}			
+				
+			]
+		},
+		{
+			"character":["Marge"],
+			"validSpots":[
+				{
+					"spotName":"fishtank",
+					"scale":0.9,
+					"positions":[
+						{
+							"id":"Left",
+							"position":{"x":500, "y":640}
+						},
+						{
+							"id":"Right",
+							"position":{"x":700, "y":640}
+						}
+					]
+				},
+				{
+					"spotName":"toy_table",
+					"scale":1.0,
+					"positions":[
+						{
+							"id":"Left",
+							"position":{"x":550, "y":460}
+						},
+						{
+							"id":"Right",
+							"position":{"x":640, "y":460}
+						}
+					]
+				},
+				{
+					"spotName":"flowerpot",
+					"scale":1.0,
+					"positions":[
+						{
+							"id":"Left",
+							"position":{"x":640, "y":450}
+						},
+						{
+							"id":"Right",
+							"position":{"x":640, "y":450}
+						}
+					]
+				},
+				{
+					"spotName":"laundry_basket",
+					"scale":1.0,
+					"positions":[
+						{
+							"id":"Left",
+							"position":{"x":500, "y":470}
+						},
+						{
+							"id":"Right",
+							"position":{"x":650, "y":470}
+						}
+					]
+				},
+				{
+					"spotName":"laundry_basket",
+					"scale":1.0,
+					"attachTo":"back",
+					"positions":[
+						{
+							"id":"Special1",
+							"position":{"x":640, "y":510}
+						}
+					]
+				}
+			]
+		}
+	]		
+}

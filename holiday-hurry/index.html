@@ -1,0 +1,175 @@
+<html>
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Alvin</title>
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body style="padding: 0; margin: 0; background-color: black">
+    <div class="splash">
+        <img src="img/game-logo.png" alt="logo" class="logo" />
+        <img src="img/play.png" alt="play" class="play start-game-button" id="startGame" />
+        <div class="characters">
+            <div class="top">
+                <img src="img/simon.png" alt="character" class="character" />
+                <img src="img/alvin.png" alt="character" class="character" />
+                <img src="img/theadore.png" alt="character" class="character" />
+            </div>
+            <div class="bottom">
+                <h3 class="splash-title">
+                    Help Alvin, Simon and Theodore pack for their holiday!
+                </h3>
+            </div>
+        </div>
+        <button class="sound-button sound-on"></button>
+    </div>
+    <div class="wrapper hidden">
+        <div class="score-bar">
+            <div class="current-level">
+                Level<span class="current-level-label">&nbsp;1</span>
+            </div>
+            <div class="current-score">
+                <span class="score-label">Score</span>
+                <span id="currentScore">0</span>
+            </div>
+            <div class="high-score">
+                <span class="score-label">High Score</span>
+                <span id="highScore">0</span>
+            </div>
+        </div>
+        <div class="dark-background"></div>
+        <div class="game">
+            <div class="suitcase hidden">
+                <div class="splash-animation hidden"></div>
+                <div class="correct-animation hidden"></div>
+                <div class="incorrect-animation hidden"></div>
+            </div>
+            <div class="suitcase-front hidden"></div>
+            <div class="level-ui">
+                <img src="img/alvin.png" alt="character" class="character" />
+                <div class="items-ui">
+                    <div class="triangle"></div>
+                    <h3 class="title">
+                        Collect the objects in the order below
+                    </h3>
+                    <div class="ui-items-list"></div>
+                </div>
+            </div>
+            <div class="new-level-ui">
+                <h3 class="big-title">
+                    Level <span id="newLevel">1</span>
+                </h3>
+                <div class="middle">
+                    <img src="img/alvin.png" alt="character" class="character" />
+                    <div class="items-ui">
+                        <div class="triangle"></div>
+                        <h3 class="title">
+                            Collect the objects in the order below
+                        </h3>
+                        <div class="ui-items-lists"></div>
+                        <div class="ui-wrong-items-list hidden">
+                            <img src="img/ice.png" alt="ice" data-id="7" class="hidden" />
+                            <img src="img/paint.png" alt="ice" data-id="8" class="hidden" />
+                            <h3>But watch out for these!</h3>
+                        </div>
+                    </div>
+                </div>
+                <button class="white-button play-button">Play</button>
+            </div>
+            <div class="end-game-ui" id="badLuckUi">
+                <div class="middle">
+                    <img src="img/alvin.png" alt="character" class="character" />
+                    <div class="items-ui">
+                        <div class="triangle"></div>
+                        <h3 class="black-title">
+                            Bad Luck <br />
+                            Have Another Go
+                        </h3>
+                    </div>
+                </div>
+                <button class="white-button try-again-button">
+                    Try Again
+                </button>
+            </div>
+            <div class="end-game-ui" id="highScoreUi">
+                <h3 class="big-title">Game Over</h3>
+                <div class="middle">
+                    <img src="img/alvin.png" alt="character" class="character" />
+                    <div class="items-ui">
+                        <div class="triangle"></div>
+                        <h3 class="black-title">You Scored</h3>
+                        <h3 class="bigger-title" id="highScoreValue">0</h3>
+                        <h3 class="black-title">New High Score!</h3>
+                    </div>
+                </div>
+                <button class="white-button try-again-button">
+                    Try Again
+                </button>
+            </div>
+            <div class="end-game-ui" id="enterCompetitionUi">
+                <div class="middle">
+                    <img src="img/alvin.png" alt="character" class="character" />
+                    <div class="items-ui">
+                        <div class="triangle"></div>
+                        <h3 class="black-title">Great work</h3>
+                        <h3 class="title">
+                            Click below for your change to win
+                        </h3>
+                    </div>
+                </div>
+                <button class="white-button" id="enterTheCompetitionButton">
+                    Enter Competition
+                </button>
+            </div>
+            <div class="end-game-ui" id="endLevelUi">
+                <h3 class="big-title">
+                    Level <span id="levelNumber">2</span>
+                    <img src="img/checkmark.png" alt="checkmark" class="checkmark" />
+                </h3>
+                <div class="middle">
+                    <img src="img/alvin.png" alt="character" class="character" />
+                    <div class="items-ui">
+                        <div class="triangle"></div>
+                        <h3 class="black-title">Awesome stuff!</h3>
+                        <div class="score-line">
+                            <span>Current Score</span>
+                            <span id="currentScoreValue">120</span>
+                        </div>
+                        <div class="score-line">
+                            <span>New Points</span>
+                            <span id="newPointsValue">40</span>
+                        </div>
+                        <div class="score-line">
+                            <span>Time Bonus</span>
+                            <span id="timeBonusValue">10</span>
+                        </div>
+                        <div class="score-line">
+                            <span>Total</span>
+                            <span id="totalValue">170</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="white-button next-level-button">
+                    Next Level
+                </button>
+            </div>
+        </div>
+        <div class="timer-bar">
+            <div class="bar">
+                <div class="timer blue-timer"></div>
+            </div>
+            <span class="bar-label">Timer</span>
+        </div>
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/soundjs.min.js"></script>
+    <script src="js/build/app.bundle.js"></script>
+    <script>
+    new Alvin.Game('classic');
+    </script>
+
+</body>
+
+</html>

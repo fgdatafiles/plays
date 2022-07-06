@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+		<link rel="manifest" href="manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">             	
+		<meta charset="utf-8">
+		<meta name="apple-mobile-web-app-capable" content="yes">	
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>Gumball | Dash 'n' Dodge | Cartoon Network</title>
+		<script>
+			var referrerBlocked = true;
+			if (window.location.href.indexOf('gumballvipgame.cartoonnetwork') !== -1) {					
+				if (document.referrer.length > 0){
+					if (document.referrer.indexOf('gumballvip.cartoonnetwork') !== -1) {
+						referrerBlocked = false;
+					}
+				}								
+			}	
+			else referrerBlocked = false;
+			if (referrerBlocked) window.location.href = 'https://www.forestrygames.com';	
+		</script>
+		<script type="text/javascript" src="lib/phaser-no-physics.min.js"></script>
+		<script type="text/javascript" src="lib/gyro.min.js"></script>
+		<script type="text/javascript" src="lib/box2d-plugin-full.min.js"></script>
+		<script type="text/javascript" src="bin/game.min.js"></script>
+		<style>
+
+			body {
+				padding: 0; 
+				margin: 0; 
+				background-color:#3c2251;
+			}
+
+			#outer-container {
+				width: 100%;
+				height: 100vh;
+				text-align: center;
+				overflow: hidden;
+				position: relative;
+			}
+
+			#stage-container {
+				margin: auto;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: -500px;
+				left: -500px;
+			}
+
+			.hidden {
+				display: none !important;
+			}
+
+			#rotate-screen {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: #d72f77;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			#rotate-screen-text {
+				font-family: 'Lubalin';
+				font-size: 2.5em;
+				color: #ffffff;
+			}			
+			
+			@font-face {
+				font-family: '04b30';
+				src:url('assets/font/04b_30__-webfont.woff2') format('woff2'),
+					url('assets/font/04b_30__-webfont.woff') format('woff'),
+					url('assets/font/04b_30__-webfont.ttf') format('truetype');
+				font-weight: normal;
+				font-style: normal;
+			}
+
+			@font-face {
+				font-family: 'Lubalin';
+				src:url('assets/font/LubalinGraphITCTurner-Bold.woff') format('woff'),
+					url('assets/font/LubalinGraphITCTurner-Bold.ttf') format('truetype');
+				font-weight: normal;
+				font-style: normal;
+			}
+	
+		</style>  	
+	</head>
+	<div class="fontLoader" style="font-family: '04b30'; position: absolute; top: -100px; visibility: hidden;">abcdefghijklmnopqrstuvwxyz0123456789</div>
+	<div class="fontLoader" style="font-family: 'Lubalin'; position: absolute; top: -100px; visibility: hidden;">abcdefghijklmnopqrstuvwxyz0123456789</div>
+	<body>
+		<div id="outer-container">
+			<div id="stage-container">
+				<canvas id="stage"></canvas>
+			</div>
+		</div>
+	</body>
+	<script>
+
+		if(!referrerBlocked)
+		{
+			var dataLayerModel = {
+				bg:{ 
+					country: "Bulgaria",
+					cmsSiteName: "Bulgaria",
+					siteName: "Bulgaria",
+					siteBrandID: "cn_bg",
+					language: "bulgarian"
+				},
+				cz:{     
+					country: "CzechRepublic",
+					cmsSiteName: "CzechRepublic",
+					siteName: "CzechRepublic",
+					siteBrandID: "cn_cz",
+					language: "czech"				
+				},
+				de:{     
+					country: "Germany",
+					cmsSiteName: "Germany",
+					siteName: "Germany",
+					siteBrandID: "cn_de",
+					language: "german"
+				},
+				en:{     
+					country: "United Kingdom",
+					cmsSiteName: "United Kingdom",
+					siteName: "United Kingdom",
+					siteBrandID: "cn_uk",
+					language: "english"
+				},
+				hu:{     
+					country: "Hungary",
+					cmsSiteName: "Hungary",
+					siteName: "Hungary",
+					siteBrandID: "cn_hu",
+					language: "hungarian"
+				},
+				nl:{     
+					country: "Netherlands",
+					cmsSiteName: "Netherlands",
+					siteName: "Netherlands",
+					siteBrandID: "cn_nl",
+					language: "dutch"
+				},
+				pl:{     
+					country: "Poland",
+					cmsSiteName: "Poland",
+					siteName: "Poland",
+					siteBrandID: "cn_pl",
+					language: "polish"
+				},
+				ro:{     
+					country: "Romania",
+					cmsSiteName: "Romania",
+					siteName: "Romania",
+					siteBrandID: "cn_ro",
+					language: "romanian"
+				},
+				ru:{     
+					country: "Russia",
+					cmsSiteName: "Russia",
+					siteName: "Russia",
+					siteBrandID: "cn_ru",
+					language: "russian"
+				}
+			}
+
+			var dataLayer = {     
+				siteBrand: "cartoon network",
+				region: "",
+				country: "",
+				cmsSiteName: "",
+				siteName: "",
+				siteBrandID: "",
+				language: "",
+				prefix: "Gumbal-vip-2019" 
+			};
+
+			var urlVars = (function getUrlVars() {
+				var vars = {};
+				var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+					vars[key] = value;
+				});
+				return vars;
+			})();
+
+			var localeString = urlVars.hasOwnProperty('localeString') ? urlVars['localeString'] : 'en';
+			console.log('Set locale:',localeString);
+
+			// mixin data layer props for the appropriate locale
+			var localeDataLayer = dataLayerModel[localeString];
+			for( var key in dataLayer ) if( localeDataLayer.hasOwnProperty(key) ) dataLayer[key] = localeDataLayer[key];
+
+			window.game = null;
+			window.onload = function(){
+				Phaser.Device.whenReady( function(){
+					window.game = new GumballRunner.Application(localeString);
+				});
+			};
+		}
+	</script>
+	<script src="Bootstrap.js"></script>
+</html>

@@ -1,0 +1,465 @@
+{
+    "prototypeData": [
+        {
+            "bg": "dan_bedroom_bed_bg",
+            "prop": {
+                "id": "bed",
+                "position": { "x": 134, "y": -8 },
+                "scale": 1
+            },
+            "character": {
+                "character": "Daniel",
+                "propOrder": "front",
+                "anims": {
+                    "idle": ["hideSpecial1_idle"],
+                    "attract": ["hideSpecial1_peek", "hideSpecial1_giggle"],
+                    "reveal": ["hideSpecial1_reveal"]
+                },
+                "position": { "x": 600, "y": 510 },
+                "scale": 0.5
+            },
+            "audio": {
+                "opener": "dan_hideseek_1",
+                "closer": "dan_hideseek_4"
+            }
+        },
+        {
+            "bg": "dan_bedroom_center_bg",
+            "prop": {
+                "id": "trolley_toychest",
+                "position": { "x": 361, "y": 224 },
+                "scale": 1
+            },
+            "character": {
+                "character": "Daniel",
+                "propOrder": "behind",
+                "anims": {
+                    "idle": ["hideUp_idle"],
+                    "attract": ["hideUp_peek", "hideUp_giggle"],
+                    "reveal": ["hideUp_reveal"]
+                },
+                "position": { "x": 580, "y": 500 },
+                "scale": 0.5
+            },
+            "audio": {
+                "opener": "dan_hideseek_1",
+                "closer": "dan_hideseek_4"
+            }
+        },
+        {
+            "bg": "dan_bedroom_left_bg",
+            "prop": {
+                "id": "left_dresser",
+                "position": { "x": 123, "y": 386 },
+                "scale": 1
+            },
+            "character": {
+                "character": "Dad",
+                "propOrder": "behind",
+                "anims": {
+                    "idle": ["hideRight_idle"],
+                    "attract": ["hideRight_peek", "hideRight_giggle"],
+                    "reveal": ["hideRight_reveal"]
+                },
+                "position": { "x": 740, "y": 650 },
+                "scale": 0.4
+            },
+            "audio": {
+                "opener": "dad_hideseek_1",
+                "closer": "dad_hideseek_2"
+            }
+        },
+        {
+            "bg": "dan_bedroom_right_bg",
+            "prop": {
+                "id": "right_table",
+                "position": { "x": 234, "y": 296 },
+                "scale": 1
+            },
+            "character": {
+                "character": "Mom",
+                "propOrder": "behind",
+                "anims": {
+                    "idle": ["hideLeft_idle"],
+                    "attract": ["hideLeft_peek", "hideLeft_giggle"],
+                    "reveal": ["hideLeft_reveal"]
+                },
+                "position": { "x": 520, "y": 680 },
+                "scale": 0.6
+            },
+            "audio": {
+                "opener": "mom_hideseek_1",
+                "closer": "mom_hideseek_2"
+            }
+        },
+        {
+            "bg": "dan_bedroom_center_bg",
+            "prop": {
+                "id": "blocks",
+                "position": { "x": 336, "y": 106 },
+                "scale": 1
+            },
+            "character": {
+                "character": "Marge",
+                "propOrder": "behind",
+                "anims": {
+                    "idle": ["hideRight_idle"],
+                    "attract": ["hideRight_peek", "hideRight_giggle"],
+                    "reveal": ["hideRight_reveal"]
+                },
+                "position": { "x": 700, "y": 600 },
+                "scale": 1
+            },
+            "audio": {
+                "opener": "margaret_hideseek_1",
+                "closer": "margaret_hideseek_2"
+            }
+        }
+    ],
+    "assets": [
+        {
+            "id": "establish",
+            "src": "assets/images/environments/dan_bedroom_establish.jpg",
+            "type": "image"
+        },
+        {
+            "id": "dan_bedroom_center_bg",
+            "src": "assets/images/environments/dan_bedroom_center_bg.jpg",
+            "type": "image"
+        },
+        {
+            "id": "dan_bedroom_left_bg",
+            "src": "assets/images/environments/dan_bedroom_left_bg.jpg",
+            "type": "image"
+        },
+        {
+            "id": "dan_bedroom_right_bg",
+            "src": "assets/images/environments/dan_bedroom_right_bg.jpg",
+            "type": "image"
+        },
+        {
+            "id": "dan_bedroom_bed_bg",
+            "src": "assets/images/environments/dan_bedroom_bed_bg.jpg",
+            "type": "image"
+        },
+        {
+            "id": "dan_bedroom_props",
+            "src": "assets/sheets/props_danbedroom.json",
+            "type": "spritesheet"
+        }
+    ],
+    "spots": [
+        {
+            "id": "bed",
+            "art": {
+                "back": null,
+                "front": "bed"
+            },
+            "bg": "dan_bedroom_bed_bg",
+            "position": { "x": 170, "y": 80 },
+            "scale": 0.9
+        },
+        {
+            "id": "left_dresser",
+            "art": {
+                "back": null,
+                "front": "left_dresser"
+            },
+            "bg": "dan_bedroom_left_bg",
+            "position": { "x": 235, "y": 386 },
+            "scale": 1
+        },
+        {
+            "id": "art_easel",
+            "art": {
+                "back": null,
+                "front": "art_easel"
+            },
+            "bg": "dan_bedroom_center_bg",
+            "position": { "x": 390, "y": 170 },
+            "scale": 0.9
+        },
+        {
+            "id": "trolley_toychest",
+            "art": {
+                "back": "trolley_toychest",
+                "front": "trolley_toychest"
+            },
+            "bg": "dan_bedroom_center_bg",
+            "position": { "x": 400, "y": 370 },
+            "scale": 0.85
+        },
+        {
+            "id": "blocks",
+            "art": {
+                "back": null,
+                "front": "blocks"
+            },
+            "bg": "dan_bedroom_center_bg",
+            "position": { "x": 436, "y": 200 },
+            "scale": 0.85
+        },
+        {
+            "id": "right_table",
+            "art": {
+                "back": null,
+                "front": "right_table"
+            },
+            "bg": "dan_bedroom_right_bg",
+            "position": { "x": 235, "y": 300 },
+            "scale": 1
+        }
+    ],
+    "envCharacters": [
+        {
+            "character": ["Daniel"],
+            "validSpots": [
+                {
+                    "spotName": "bed",
+                    "attachTo": "front",
+                    "scale": 0.65,
+                    "positions": [
+                        {
+                            "id": "Special1",
+                            "position": { "x": 540, "y": 565 }
+                        }
+                    ]
+                },
+                {
+                    "spotName": "bed",
+                    "attachTo": "behind",
+                    "scale": 0.7,
+                    "positions": [
+                        {
+                            "id": "Up",
+                            "position": { "x": 640, "y": 680 }
+                        }
+                    ]
+                },
+                {
+                    "spotName": "left_dresser",
+                    "attachTo": "behind",
+                    "scale": 0.8,
+                    "positions": [
+                        {
+                            "id": "Left",
+                            "position": { "x": 350, "y": 700 }
+                        },
+                        {
+                            "id": "Right",
+                            "position": { "x": 880, "y": 700 }
+                        }
+                    ]
+                },
+                {
+                    "spotName": "art_easel",
+                    "attachTo": "behind",
+                    "scale": 0.85,
+                    "positions": [
+                        {
+                            "id": "Left",
+                            "position": { "x": 640, "y": 560 }
+                        },
+                        {
+                            "id": "Right",
+                            "position": { "x": 620, "y": 560 }
+                        }
+                    ]
+                },
+                {
+                    "spotName": "trolley_toychest",
+                    "attachTo": "behind",
+                    "scale": 0.9,
+                    "positions": [
+                        {
+                            "id": "Up",
+                            "position": { "x": 610, "y": 640 }
+                        }
+                    ]
+                },
+
+                {
+                    "spotName": "blocks",
+                    "attachTo": "behind",
+                    "scale": 0.9,
+                    "positions": [
+                        {
+                            "id": "Left",
+                            "position": { "x": 640, "y": 600 }
+                        },
+                        {
+                            "id": "Right",
+                            "position": { "x": 640, "y": 600 }
+                        }
+                    ]
+                },
+                {
+                    "spotName": "right_table",
+                    "attachTo": "behind",
+                    "scale": 0.75,
+                    "positions": [
+                        {
+                            "id": "Left",
+                            "position": { "x": 520, "y": 685 }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "character": ["Dad"],
+            "validSpots": [
+                {
+                    "spotName": "bed",
+                    "attachTo": "behind",
+                    "scale": 0.7,
+                    "positions": [
+                        {
+                            "id": "Special2",
+                            "position": { "x": 640, "y": 660 }
+                        }
+                    ]
+                },
+                {
+                    "spotName": "left_dresser",
+                    "attachTo": "behind",
+                    "scale": 0.85,
+                    "positions": [
+                        {
+                            "id": "Up",
+                            "position": { "x": 600, "y": 680 }
+                        }
+                    ]
+                },
+                {
+                    "spotName": "art_easel",
+                    "attachTo": "behind",
+                    "scale": 0.85,
+                    "positions": [
+                        {
+                            "id": "Left",
+                            "position": { "x": 700, "y": 600 }
+                        },
+                        {
+                            "id": "Right",
+                            "position": { "x": 640, "y": 600 }
+                        }
+                    ]
+                },
+                {
+                    "spotName": "right_table",
+                    "attachTo": "behind",
+                    "scale": 0.75,
+                    "positions": [
+                        {
+                            "id": "Up",
+                            "position": { "x": 640, "y": 685 }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "character": ["Mom"],
+            "validSpots": [
+                {
+                    "spotName": "bed",
+                    "attachTo": "behind",
+                    "scale": 0.8,
+                    "positions": [
+                        {
+                            "id": "Up",
+                            "position": { "x": 700, "y": 730 }
+                        }
+                    ]
+                },
+                {
+                    "spotName": "bed",
+                    "attachTo": "front",
+                    "scale": 0.7,
+                    "positions": [
+                        {
+                            "id": "Special2",
+                            "position": { "x": 500, "y": 530 }
+                        }
+                    ]
+                },
+                {
+                    "spotName": "left_dresser",
+                    "attachTo": "behind",
+                    "scale": 0.85,
+                    "positions": [
+                        {
+                            "id": "Up",
+                            "position": { "x": 620, "y": 640 }
+                        }
+                    ]
+                },
+                {
+                    "spotName": "art_easel",
+                    "attachTo": "behind",
+                    "scale": 0.85,
+                    "positions": [
+                        {
+                            "id": "Left",
+                            "position": { "x": 700, "y": 590 }
+                        },
+                        {
+                            "id": "Right",
+                            "position": { "x": 640, "y": 590 }
+                        }
+                    ]
+                },
+                {
+                    "spotName": "right_table",
+                    "attachTo": "behind",
+                    "scale": 0.8,
+                    "positions": [
+                        {
+                            "id": "Up",
+                            "position": { "x": 640, "y": 685 }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "character": ["Marge"],
+            "validSpots": [
+                {
+                    "spotName": "trolley_toychest",
+                    "attachTo": "behind",
+                    "scale": 1.0,
+                    "positions": [
+                        {
+                            "id": "Left",
+                            "position": { "x": 600, "y": 610 }
+                        },
+                        {
+                            "id": "Right",
+                            "position": { "x": 640, "y": 610 }
+                        }
+                    ]
+                },
+                {
+                    "spotName": "blocks",
+                    "attachTo": "behind",
+                    "positions": [
+                        {
+                            "id": "Left",
+                            "position": { "x": 580, "y": 630 }
+                        },
+                        {
+                            "id": "Right",
+                            "position": { "x": 640, "y": 630 }
+                        },
+                        {
+                            "id": "Special1",
+                            "position": { "x": 500, "y": 610 }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

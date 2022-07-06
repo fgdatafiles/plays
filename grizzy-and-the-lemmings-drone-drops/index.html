@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=0, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel='stylesheet' href='css/fonts/styles.css' type='text/css' />
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script type='text/javascript' src='js/createjs-2015.11.26.min.js'></script>
+    <script type='text/javascript' src='src/utils/BrowserTest.js'></script>
+    <script type='text/javascript' src='src/Main.js'></script>
+    <script type='text/javascript' src='src/Step1.js'></script>
+    <script type='text/javascript' src='src/HTP.js'></script>
+    <script type='text/javascript' src='src/HTP2.js'></script>
+    <script type='text/javascript' src='src/Engine.js'></script>
+    <script type='text/javascript' src='src/NextLevel.js'></script>
+    <script type='text/javascript' src='src/Level1.js'></script>
+    <script type='text/javascript' src='src/Items.js'></script>
+    <script type='text/javascript' src='src/Item.js'></script>
+    <script type='text/javascript' src='src/Item2.js'></script>
+    <script type='text/javascript' src='src/Items2.js'></script>
+    <script type='text/javascript' src='src/Level3.js'></script>
+    <script type='text/javascript' src='src/Level2.js'></script>
+    <script type='text/javascript' src='src/Piniata.js'></script>
+    <script type='text/javascript' src='src/Ball.js'></script>
+    <script type='text/javascript' src='src/Bat.js?v=1'></script>
+    <script type='text/javascript' src='src/Bag.js'></script>
+    <script type='text/javascript' src='src/GameOver.js'></script>
+    <script type='text/javascript' src='src/utils/Timer.js'></script>
+    <script type='text/javascript' src='src/utils/Timer2.js'></script>
+    <script type='text/javascript' src='js/ndgmr.Collision.js'></script>
+    <script type='text/javascript' src='src/utils/FullScreenBtt.js?v20'></script>
+    <script type='text/javascript' src='src/utils/Preloader.js'></script>
+    <script type='text/javascript' src='src/utils/FrameBtt.js'></script>
+    <script type='text/javascript' src='src/utils/OnOffBtt.js'></script>
+    <script type='text/javascript' src='src/utils/RadioButton.js'></script>
+    <script type='text/javascript' src='src/utils/RadioButtonGroup.js'></script>
+    <style>
+        html,body{
+        width:100%;
+        height:100%;
+        margin:0;
+        padding: 0;
+        background-color: #F8EB46;
+
+        overflow:hidden;
+    }
+    .cont{
+        width:100%;
+        height:100%;
+        display:table;
+    }
+    .inner{
+        margin:0 auto;
+        width:100%;
+        height:100%;
+        display: table;
+    }
+    .iframe-container{
+        width:100%;
+        height:100%;
+        vertical-align: middle;
+        display: table-cell;
+    }
+    canvas{
+        padding: 0;
+        margin:auto;
+        display:block;
+    }
+    #imageOverlay{
+        left:0;
+        top:0;
+        display:none;
+        position:fixed;
+        margin-left: auto;
+        margin-right: auto;
+        width:100%;
+        height:100%;
+        background-image: url('img/rotate_screen.png');
+        background-color: #EC008C;
+        background-size: auto 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+    }
+      @media only screen and (max-width:768px)  and (orientation: portrait){
+            #imageOverlay{
+                display:block;
+            }
+    }
+
+    @media only screen and (max-width:768px) and (-webkit-min-device-pixel-ratio: 2){
+        #imageOverlay{
+            display: block;
+        }
+    }
+
+    @media only screen and (max-width:766px)  and (orientation: landscape) {
+        #imageOverlay {
+            display: none;
+        }
+    }
+</style>
+    <script>
+        var strings;
+    if(  document.addEventListener  ){
+        $(document).ready(function(){
+
+            var music = document.getElementById("music");
+            music.volume = 0.05;
+            setTimeout(scrollTo,1000,0,100);
+            
+            loadLocally();
+        });
+        function loadLocally()
+        {
+            $.getJSON( "strings/strings_game2.json?rand="+Math.random(), function( data ) {
+                strings = data.game2;
+                main.init();
+            });
+        }
+    }
+    $(window).on("resize", resizeCanvas);
+    $(window).on("orientationchange", resizeCanvas);
+
+    function resizeCanvas() {
+
+        main.resize();
+    }
+
+
+</script>
+
+<body>
+    <div class="cont" id="content">
+        <div class="inner">
+            <div class="iframe-container">
+                <canvas id='stageCanvas' width='100%' height='100%'><img src='img/error_bgd.jpg' alt='Twoja przeglądarka nie obsługuje aplikacji' /></canvas>
+                <audio id='music' loop>
+                    <source src="sounds/music.ogg" type="audio/ogg">
+                    <source src="sounds/music.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+        </div>
+        <div id="imageOverlay"></div>
+    </div>
+</body>
+
+</html>

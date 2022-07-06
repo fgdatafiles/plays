@@ -1,0 +1,119 @@
+<config>	
+	<quiz image="background.jpg" bgColor="0x363535" fontDefault="futura_medium" auto="true" localize="true" loadStart="true" swfID="objectFlashPiece" fontDefaultColor="0xFFFFFF" headerHeight="120">
+		<strings>
+			<string id="loading" text="loading" />
+			<string id="share_header" text="share_header" />
+			<string id="share_copy" text="share_copy" />
+			<string id="share_popup" loadStart="true" image="bg_share.png" bgColor="#55d8f6"/>
+			<string id="share_link" text="12px arial" bgColor="#333333" />
+			<string id="result_1" text="result_1_title" textAlign="center"/>
+			<string id="result_2" text="result_2_title" textAlign="center"/>
+			<string id="result_3" text="result_3_title" textAlign="center"/>
+			<string id="result_4" text="result_4_title" textAlign="center"/>
+			<string id="result_5" text="result_5_title" textAlign="center" />
+			<string id="result_6" text="result_6_title" textAlign="center"/>
+			<string id="cocoon_ok" text="cocoon_ok" />
+			<string id="cocoon_cancel" text="cocoon_cancel"  />
+		</strings>
+		<buttons>
+			<button id="start" x="305" y="455" text="start" image="btn_start" textRot="-3" textColor="0xEC5151" />
+			<button id="page" bgColor="0x129900" image="template_circle_empty"/>
+			<button id="page_done" bgColor="0x00B1F0"/>
+			<button id="page_arrow" enabled="false" bgColor="0x1fe402" image="template_btn_arrow" />
+			<button id="page_select" bgColor="0xFFF000" />
+			<button id="more" text="more" image="btn_more" url="http://origin-nick-intl.vimn-q.mtvi.com/shows/hs_penguins/yheb3f" enabled="false" textColor="0xF9EE3F" textRot="-3"/>
+			<button id="submit" text="submit" image="btn_submit" textColor="0xEC5151" textRot="-4">
+				<descriptions text="description_1" x="-10" y="-25" textWidth="800" textColor="0xF9EE3F" textRot="-4" addTop="true"/>
+			</button>
+			<button id="replay" text="try_again" image="btn_replay" textColor="0xF9EE3F" textRot="-3"/>
+			<button id="share" text="share" image="btn_share" enabled="true" textColor="0xF9EE3F" textRot="-3"/>
+			<button id="take" text="take_quiz" image="btn_take" textRot="-3" textColor="0xEC5151"/>
+			<button id="copy" text="copy" image="btn_copy" />
+			<button id="close" text="" image="btn_close"/>
+		</buttons>
+		<prompt>
+			<splash image="splash.jpg"/>
+			<title/>
+			<description_title/> 
+			<submit/>
+			<submit_header />
+			<description_submit />
+			<result/>
+			<result_header />
+			<descriptions text="description_1" x="300" y="250" textWidth="800" textRot="-3" textColor="0xF9EE3F" addTop="true"/>
+			<descriptions text="description_2" x="300" y="350" textWidth="800" textRot="-3" textColor="0xffffff" addTop="true"/>
+		</prompt>
+		<question type="1" prefixImage="question_1" text="question_1" pos="bottom">
+			<answer value="2" text="answer_1_1" />
+			<answer value="3" text="answer_1_2" />
+			<answer value="1" text="answer_1_3" />
+			<answer value="6" text="answer_1_4" >
+				<descriptions text="answer_1_4a" x="0" y="30" textWidth="800" textColor="0x9E1300" addTop="true" textRot="-5"/>
+			</answer>
+			<answer value="5" text="answer_1_5" />
+			<answer value="4" text="answer_1_6" />
+		</question>
+		<question type="1" prefixImage="question_2" text="question_2" pos="middle" >
+			<answer value="2" text="answer_2_1" textColor="0xF7FC67"/>
+			<answer value="3" text="answer_2_2" textColor="0xFB1300" textRot="-2"/>
+			<answer value="5" text="answer_2_3" textColor="0xFF68F6" textRot="-2"/>
+			<answer value="4" text="answer_2_4" textColor="0xEE3523" textRot="-2"/>
+			<answer value="1" text="answer_2_5" textColor="0xF7FC67" textRot="-2"/>
+			<answer value="6" text="answer_2_6" textColor="0xCAFD2D" textRot="-2"/>
+		</question>
+		<question type="1" prefixImage="question_3" text="question_3" pos="bottom">
+			<answer value="2" text="answer_3_1" />
+			<answer value="3" text="answer_3_2" />
+			<answer value="5" text="answer_3_3" />
+			<answer value="4" text="answer_3_4" />
+			<answer value="6" text="answer_3_5" />
+			<answer value="1" text="answer_3_6" />
+		</question>
+		<question type="1" prefixImage="question_4" text="question_4" pos="bottom">
+			<answer value="3" text="answer_4_1" />
+			<answer value="5" text="answer_4_2"/>
+			<answer value="6" text="answer_4_3" />
+			<answer value="2" text="answer_4_4" />
+			<answer value="1" text="answer_4_5" />
+			<answer value="4" text="answer_4_6" />
+		</question>
+		<question type="1" prefixImage="question_5" text="question_5" pos="bottom">
+			<answer value="5" text="answer_5_1" />
+			<answer value="2" text="answer_5_2"/>
+			<answer value="3" text="answer_5_3" />
+			<answer value="1" text="answer_5_4" />
+			<answer value="6" text="answer_5_5" />
+			<answer value="4" text="answer_5_6" />
+		</question>
+		<question type="1" prefixImage="question_6" text="question_6" pos="bottom">
+			<answer value="3" text="answer_6_1" />
+			<answer value="6" text="answer_6_2" />
+			<answer value="2" text="answer_6_3"/>
+			<answer value="5" text="answer_6_4"/>
+			<answer value="1" text="answer_6_5"/>
+			<answer value="4" text="answer_6_6"/>
+		</question>
+		<question type="1" prefixImage="question_7" text="question_7" pos="bottom">
+			<answer value="2" text="answer_7_1" />
+			<answer value="3" text="answer_7_2" />
+			<answer value="1" text="answer_7_3"/>
+			<answer value="6" text="answer_7_4">
+				<descriptions text="answer_7_4a" x="5" y="0" textWidth="800" textColor="0x99AF00" addTop="true"/>
+			</answer>
+			<answer value="5" text="answer_7_5"/>
+			<answer value="4" text="answer_7_6"/>
+		</question>
+		<results type="1" prefixImage="result" >
+			<result id="1" text="result_1_copy" textAlign="left" />
+			<result id="2" text="result_2_copy" textAlign="left" >
+				<descriptions text="result_2a" x="200" y="325" textWidth="800" textColor="0xffffff" addTop="true" textRot="2"/>
+			</result>
+			<result id="3" text="result_3_copy" textAlign="left" />
+			<result id="4" text="result_4_copy" textAlign="left" />
+			<result id="5" text="result_5_copy" textAlign="left" >
+				<descriptions text="result_5a" x="200" y="325" textWidth="800" textColor="0xffffff" addTop="true"/>
+			</result>
+			<result id="6" text="result_6_copy" textAlign="left" />
+		</results>
+	</quiz>
+</config>

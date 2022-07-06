@@ -1,0 +1,2 @@
+var gamenametitle='hen_spl_mat_henrys-hugglematch';document.title="Henry Hugglemonster: Henry's Hugglematch";var gntemp='hen_spl_mat_henrys-hugglematch';var gn=gntemp.split("_");var ctoAssetTypeCode='gam';var ctoGameEvent='load';var ctoGameBuCode='djr';var ctoGameSeriesCode=gn[0];var ctoGameOwnerName='dol';var ctoGameTypeCode=gn[1];var ctoGameGenreCode=gn[2];var ctoGameName=gn[3];var ctoAssetId='4e7b6c405b198fa03e46abca';function gameStart()
+{GameStartup.init();}

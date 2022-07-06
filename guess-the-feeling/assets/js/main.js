@@ -1,0 +1,1 @@
+!function(){var a=include("springroll.Application"),b=include("springroll.easeljs.EaselJSDisplay"),c=new a({fps:60,name:"guess-the-feeling",canvasId:"stage",configPath:"assets/config/config.json",captionsPath:"assets/config/captions.json",display:b}),d=new Bellhop;d.connect(),c.on("init",function(){window.SGGameButler.startGame(c,d)})}();

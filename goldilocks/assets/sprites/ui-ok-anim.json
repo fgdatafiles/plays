@@ -1,0 +1,165 @@
+{
+"skeleton": { "hash": "V0E3UiSgwDQR7UMKdEEItUE7zS0", "spine": "3.8.91", "x": -116.5, "y": -1174.65, "width": 233, "height": 1276.15 },
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "length": 1144.92, "rotation": 90, "y": -1200 }
+],
+"slots": [
+	{ "name": "dialogue/stick", "bone": "bone", "attachment": "dialogue/stick" },
+	{ "name": "misc/ui-ok", "bone": "bone", "attachment": "skin" },
+	{ "name": "misc/ui-text-play", "bone": "bone", "attachment": "skin" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"dialogue/stick": {
+				"dialogue/stick": { "x": 625.35, "scaleX": 2, "scaleY": 2, "rotation": -90, "width": 40, "height": 600 }
+			}
+		}
+	},
+	{
+		"name": "back",
+		"attachments": {
+			"misc/ui-ok": {
+				"skin": { "name": "misc/ui-back", "x": 1200, "rotation": -90, "width": 203, "height": 203 }
+			},
+			"misc/ui-text-play": {
+				"skin": { "name": "misc/ui-text-back", "x": 1000, "rotation": -90, "width": 233, "height": 105 }
+			}
+		}
+	},
+	{
+		"name": "characterselect",
+		"attachments": {
+			"misc/ui-ok": {
+				"skin": { "name": "misc/ui-character-select", "x": 1200, "rotation": -90, "width": 203, "height": 203 }
+			},
+			"misc/ui-text-play": {
+				"skin": { "name": "misc/ui-text-new", "x": 1000, "rotation": -90, "width": 222, "height": 108 }
+			}
+		}
+	},
+	{
+		"name": "no",
+		"attachments": {
+			"misc/ui-ok": {
+				"skin": { "name": "misc/ui-no", "x": 1200, "rotation": -90, "width": 208, "height": 208 }
+			}
+		}
+	},
+	{
+		"name": "ok",
+		"attachments": {
+			"misc/ui-ok": {
+				"skin": { "name": "misc/ui-ok", "x": 1200, "rotation": -90, "width": 208, "height": 208 }
+			}
+		}
+	},
+	{
+		"name": "paused",
+		"attachments": {
+			"misc/ui-ok": {
+				"skin": { "name": "misc/ui-text-paused", "x": 1200, "rotation": -90, "width": 333, "height": 106 }
+			}
+		}
+	},
+	{
+		"name": "play",
+		"attachments": {
+			"misc/ui-ok": {
+				"skin": { "name": "misc/ui-play", "x": 1200, "rotation": -90, "width": 208, "height": 207 }
+			},
+			"misc/ui-text-play": {
+				"skin": { "name": "misc/ui-text-play", "x": 1000, "y": -9.84, "rotation": -90, "width": 233, "height": 117 }
+			}
+		}
+	},
+	{
+		"name": "watch-the-replay",
+		"attachments": {
+			"misc/ui-ok": {
+				"skin": { "name": "misc/ui-watch-the-replay", "x": 1200, "rotation": -90, "width": 869, "height": 122 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {},
+	"hide": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 1 }
+				],
+				"translate": [
+					{ "time": 1 }
+				]
+			},
+			"bone": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.1, "angle": 0.89, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3333, "angle": -89.3 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.1, "x": -9.63, "y": -9.63, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3333, "x": -511.48, "y": 89.52 }
+				]
+			}
+		}
+	},
+	"idle": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 1 }
+				],
+				"translate": [
+					{ "time": 1 }
+				]
+			},
+			"bone": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 1, "angle": -0.17, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 1, "x": -2.18, "y": 4.08, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2 }
+				]
+			}
+		}
+	},
+	"show": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{ "time": 1 }
+				],
+				"translate": [
+					{ "time": 1 }
+				]
+			},
+			"bone": {
+				"rotate": [
+					{ "angle": 64.32, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2333, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3, "angle": -0.73, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.4, "curve": "stepped" },
+					{ "time": 0.9 }
+				],
+				"translate": [
+					{ "x": 401.74, "y": -195.58, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2333, "curve": "stepped" },
+					{ "time": 0.4, "curve": "stepped" },
+					{ "time": 0.9 }
+				]
+			}
+		}
+	}
+}
+}

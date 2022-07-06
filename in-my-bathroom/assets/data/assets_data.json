@@ -1,0 +1,143 @@
+{
+    "manifestData": {
+        "assetManifest": [
+            {
+                "id": "bathroom_enviro_main",
+                "src": "assets/images/bathroom_enviro_main.jpg",
+                "type": "image"
+            },
+            {
+                "id": "bathroom_enviro_sink",
+                "src": "assets/images/bathroom_enviro_sink.png",
+                "type": "image"
+            },
+            {
+                "id": "bathroom_enviro_toilet",
+                "src": "assets/images/bathroom_enviro_toilet.jpg",
+                "type": "image"
+            },
+            {
+                "id": "sprites",
+                "src": "assets/sheets/sprites.json",
+                "type": "spritesheet"
+            },
+            {
+                "id": "ui",
+                "src": "assets/sheets/ui.json",
+                "type": "spritesheet"
+            }
+        ],
+        "audioManifest": [{ "id": "daniel_emotion_02" }]
+    },
+    "bgMain": "bathroom_enviro_main",
+    "posDan": { "x": 0.15, "y": 0.05 },
+    "btnSink": {
+        "art": {
+            "sheet": "sprites",
+            "up": "bathroom_enviro_main_sink_extracted",
+            "down": "bathroom_enviro_main_sink_extracted"
+        },
+        "position": { "x": 0.55, "y": 0.45 },
+        "align": "center"
+    },
+    "btnToilet": {
+        "art": {
+            "sheet": "sprites",
+            "up": "bathroom_enviro_main_toilet_extracted",
+            "down": "bathroom_enviro_main_toilet_extracted"
+        },
+        "position": { "x": 0.72, "y": 0.52 },
+        "align": "center"
+    },
+
+    "bgSinkBehind": "bathroom_enviro_sink_bg",
+    "bgSink": "bathroom_enviro_sink",
+    "posDanSink": { "x": 0.1, "y": 0.05 },
+    "posSink": { "x": 0.213, "y": 0.2 },
+    "posHands": { "x": 0.22, "y": 0.32 },
+    "btnSoap": {
+        "art": {
+            "sheet": "sprites",
+            "up": "bathroom_sink_soap",
+            "down": "bathroom_sink_soap_downposition"
+        },
+        "position": { "x": 0.34, "y": 0.52 },
+        "align": "center"
+    },
+    "btnToothbrush": {
+        "art": {
+            "sheet": "sprites",
+            "up": "toothbrush",
+            "down": "toothbrush_used"
+        },
+        "position": { "x": 0.65, "y": 0.5 },
+        "align": "center"
+    },
+    "btnFaucets": {
+        "art": {
+            "sheet": "sprites",
+            "up": "bathroom_sink_faucets_off",
+            "down": "bathroom_sink_faucets_on"
+        },
+        "position": { "x": 0.49, "y": 0.59 },
+        "align": "center"
+    },
+    "btnMirror": {
+        "art": {
+            "sheet": "sprites",
+            "up": "bathroom_sink_mirror_glassOnly",
+            "down": "bathroom_sink_mirror_glassOnly"
+        },
+        "position": { "x": 0.5, "y": 0.275 },
+        "align": "center"
+    },
+
+    "bgToilet": "bathroom_enviro_toilet",
+    "btnHandle": {
+        "art": {
+            "sheet": "sprites",
+            "up": "bathroom_toilet_handle_up",
+            "down": "bathroom_toilet_handle_down"
+        },
+        "position": { "x": 0.24, "y": 0.21 },
+        "align": "center"
+    },
+    "btnSeat": {
+        "art": {
+            "sheet": "sprites",
+            "up": "bathroom_toilet_toilet_lid",
+            "down": "bathroom_toilet_toilet_cover"
+        },
+        "position": { "x": 0.427, "y": 0.75 },
+        "align": "center"
+    },
+    "btnPotty": {
+        "art": {
+            "sheet": "sprites",
+            "up": "bathroom_toilet_potty",
+            "down": "bathroom_toilet_potty"
+        },
+        "position": { "x": 0.61, "y": 0.68 },
+        "align": "center"
+    },
+    "btnTigey": {
+        "art": {
+            "sheet": "sprites",
+            "up": "bathroom_toilet_tigey",
+            "down": "bathroom_toilet_tigey"
+        },
+        "position": { "x": 0.75, "y": 0.68 },
+        "align": "center"
+    },
+
+    "btnBack": {
+        "art": {
+            "sheet": "ui",
+            "up": "ui_bathroom_back_normal",
+            "down": "ui_bathroom_back_active",
+            "over": "ui_bathroom_back_hover"
+        },
+        "position": { "x": 0.5, "y": 0.9 },
+        "align": "center"
+    }
+}

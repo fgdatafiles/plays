@@ -1,0 +1,7 @@
+function checkOrientationLogic(){var ua=navigator.userAgent.toLowerCase();var isAndroid=ua.indexOf("android")>-1;if(isAndroid){if(window.screen.width<window.screen.height){addRotateImgAndroid();}else{removeRotateImg();}}else{if(window.orientation==0||window.orientation==180){addRotateImg();}else{removeRotateImg();}}
+function addRotateImgAndroid(){var isOpera=!!window.opera||navigator.userAgent.indexOf(' OPR/')>=0;var isChrome=!!window.chrome&&!isOpera;document.body.style.backgroundImage="url('gameContainer/overlay/badOrientation.png')";document.body.style.backgroundRepeat="no-repeat";if(isChrome){document.body.style.backgroundPosition="50% -50%";}else{document.body.style.backgroundPosition="center";}
+hideGame();}
+function addRotateImg(){document.body.style.backgroundImage="url('gameContainer/overlay/badOrientation.png')";document.body.style.backgroundSize="contain";document.body.style.backgroundRepeat="no-repeat";document.body.style.backgroundPosition="center";hideGame();}
+var updateHidden;function hideGame(){var gameDiv=document.getElementById("main");gameDiv.style.visibility="hidden";updateHidden=setTimeout(function(){var gameDiv=document.getElementById("main");gameDiv.style.visibility="hidden";},500);}
+function removeRotateImg(){document.body.style.backgroundImage="url('')";clearTimeout(updateHidden);var gameDiv=document.getElementById("main");gameDiv.style.visibility="visible";}}
+window.addEventListener("orientationchange",function(){checkOrientationLogic();},false);

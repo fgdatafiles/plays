@@ -1,0 +1,77 @@
+<config>
+
+	<!-- CHUNKS -->
+    <!-- Define bundles of folders and other chunks to load -->
+
+    <chunks>
+    	<!-- EX
+    	<chunk id="chunk">
+			<pack>load_part_1</pack> - loads a folder in assets named "load_part_1"
+			<pack>load_part_2</pack> - loads a folder in assets named "load_part_2"
+			<chunk>other_chunk</chunk> - loads another chunk named "other_chunk" which will have its own list of folders in assets
+		</chunk>
+    	-->
+
+    	<chunk id="preload">
+    		<pack>preload</pack>
+    	</chunk>
+
+        <!-- Initial menu chunks -->
+    	<chunk id="initial_sd">
+    		<pack>initial_universal</pack>
+    	</chunk>
+
+    	<chunk id="initial_hd">
+    		<pack>initial_universal</pack>
+    	</chunk>
+
+    	<chunk id="initial_audio_optional">
+    		<chunk>initial_audio_required</chunk>
+    		<pack>initial_audio_optional</pack>
+    	</chunk>
+
+    	<chunk id="initial_audio_required">
+    	</chunk>
+
+
+        <!-- Avatar builder chunks -->
+        <chunk id="avatar_builder_sd">
+            <pack>avatar_builder_universal</pack>
+        </chunk>
+
+        <chunk id="avatar_builder_hd">
+            <pack>avatar_builder_universal</pack>
+        </chunk>
+
+        <chunk id="avatar_builder_audio_optional">
+            <chunk>avatar_builder_audio_required</chunk>
+        </chunk>
+
+        <chunk id="avatar_builder_audio_required">
+        </chunk>
+
+        <chunk id="avatar_spine">
+        	<pack>avatar_spine</pack>
+        </chunk>
+
+
+         <!-- Comic creator chunks -->
+    	<chunk id="comic_creator_sd">
+        <pack>comic_creator_universal</pack>
+    	</chunk>
+
+    	<chunk id="comic_creator_hd">
+        <pack>comic_creator_universal</pack>
+    	</chunk>
+
+    	<chunk id="comic_creator_audio_optional">
+    		<chunk>comic_creator_audio_required</chunk>
+    	</chunk>
+
+    	<chunk id="comic_creator_audio_required">
+    	</chunk>
+
+        <!-- END OF CHUNKS -->
+    </chunks>
+
+</config>

@@ -1,0 +1,659 @@
+{
+"skeleton": {
+	"hash": "bG4Lj8xD+NmGS6d22d7UFeg6Qf4",
+	"spine": "3.8.97",
+	"x": -218,
+	"y": -142.14,
+	"width": 443,
+	"height": 316.96,
+	"images": "./Images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "Body", "parent": "root", "length": 172.4, "rotation": 90.89, "x": 6.2, "y": -124.74 },
+	{ "name": "ArmL", "parent": "Body", "length": 66.6, "rotation": -123.04, "x": 176.65, "y": -140.78 },
+	{ "name": "ArmR", "parent": "Body", "length": 88.18, "rotation": 126.19, "x": 180.93, "y": 134.13 },
+	{ "name": "FootL", "parent": "Body", "length": 61.45, "rotation": -99.94, "x": -3.02, "y": -90.72 },
+	{ "name": "FootR", "parent": "Body", "length": 65.86, "rotation": 98.49, "x": 0.78, "y": 84.31 },
+	{ "name": "Tube Front", "parent": "Body", "length": 368.96, "rotation": -90.06, "x": 103.78, "y": 180.45 },
+	{ "name": "Tube Back", "parent": "Tube Front", "length": 352.27, "rotation": -0.75, "x": 16.12, "y": 37.36 },
+	{ "name": "Ear L", "parent": "Body", "length": 33.63, "rotation": -39.41, "x": 263.74, "y": -66.41 },
+	{ "name": "Ear R", "parent": "Body", "length": 38.09, "rotation": 39.53, "x": 262.92, "y": 53.37 },
+	{ "name": "Brow L", "parent": "Body", "length": 19.21, "rotation": 62.54, "x": 278.36, "y": -58.58 },
+	{ "name": "Brow R", "parent": "Body", "length": 16.54, "rotation": -55.14, "x": 278.5, "y": 53.67 },
+	{ "name": "hamster blue mouth", "parent": "Body", "x": 189.53, "y": -3.49 },
+	{ "name": "Pupil L", "parent": "Body", "x": 235.1, "y": -43.4 },
+	{ "name": "Pupil R", "parent": "Body", "x": 235.78, "y": 35 },
+	{ "name": "Nose", "parent": "Body", "x": 217.98, "y": -4.47 },
+	{ "name": "Glasses", "parent": "Body", "x": 236.81, "y": -5.04 }
+],
+"slots": [
+	{ "name": "Tube Back", "bone": "Tube Back", "attachment": "Tube Back" },
+	{ "name": "Ear L", "bone": "Ear L", "attachment": "Ear L" },
+	{ "name": "Ear R", "bone": "Ear R", "attachment": "Ear R" },
+	{ "name": "FootL", "bone": "FootL", "attachment": "FootL" },
+	{ "name": "FootR", "bone": "FootR", "attachment": "FootR" },
+	{ "name": "Body", "bone": "Body", "attachment": "Body" },
+	{ "name": "Tube Front", "bone": "Tube Front", "attachment": "Tube Front" },
+	{ "name": "ArmL", "bone": "ArmL", "attachment": "ArmL" },
+	{ "name": "ArmR", "bone": "ArmR", "attachment": "ArmR" },
+	{ "name": "Glasses", "bone": "Glasses", "attachment": "Glasses" },
+	{ "name": "Brow L", "bone": "Brow L", "attachment": "Brow L" },
+	{ "name": "Brow R", "bone": "Brow R", "attachment": "Brow R" },
+	{ "name": "Nose", "bone": "Nose", "attachment": "Nose" },
+	{ "name": "Pupil L", "bone": "Pupil L", "attachment": "Pupil L" },
+	{ "name": "Pupil R", "bone": "Pupil R", "attachment": "Pupil R" },
+	{ "name": "hamster blue mouth", "bone": "hamster blue mouth", "attachment": "hamster blue mouth" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"ArmL": {
+				"ArmL": { "x": 43.91, "y": -2.62, "rotation": 32.15, "width": 82, "height": 71 }
+			},
+			"ArmR": {
+				"ArmR": { "x": 45.16, "y": -2.06, "rotation": 142.92, "width": 81, "height": 72 }
+			},
+			"Body": {
+				"Body": { "x": 128.19, "y": -3.79, "rotation": -90.89, "width": 333, "height": 288 }
+			},
+			"Brow L": {
+				"Brow L": { "x": 9.34, "y": 0.2, "rotation": -153.43, "width": 21, "height": 15 }
+			},
+			"Brow R": {
+				"Brow R": { "x": 8.49, "y": -0.16, "rotation": -35.75, "width": 20, "height": 15 }
+			},
+			"Ear L": {
+				"Ear L": { "x": 17.27, "y": -2.73, "rotation": -51.48, "width": 41, "height": 46 }
+			},
+			"Ear R": {
+				"Ear R": { "x": 18.11, "y": 2.21, "rotation": -130.43, "width": 41, "height": 45 }
+			},
+			"FootL": {
+				"FootL": { "x": 30.9, "y": 0.57, "rotation": 9.05, "width": 72, "height": 23 }
+			},
+			"FootR": {
+				"FootR": { "x": 33.64, "y": -0.66, "rotation": 170.61, "width": 72, "height": 23 }
+			},
+			"Glasses": {
+				"Glasses": { "x": -3.25, "y": 0.87, "rotation": -90.89, "width": 205, "height": 72 }
+			},
+			"Nose": {
+				"Nose": { "x": 0.54, "y": -0.01, "rotation": -90.89, "width": 22, "height": 13 }
+			},
+			"Pupil L": {
+				"Pupil L": { "x": 1.07, "y": -0.55, "rotation": -90.89, "width": 18, "height": 19 }
+			},
+			"Pupil R": {
+				"Pupil R": { "x": 1.07, "y": -0.55, "rotation": -90.89, "width": 18, "height": 19 }
+			},
+			"Tube Back": {
+				"Tube Back": { "x": 164.28, "y": 11.44, "rotation": -0.09, "width": 442, "height": 168 }
+			},
+			"Tube Front": {
+				"Tube Front": { "x": 178.46, "y": -27.32, "rotation": -0.83, "width": 442, "height": 168 }
+			},
+			"hamster blue mouth": {
+				"Sadie mouth0001": { "x": -7.75, "y": 0.12, "rotation": -90.89, "width": 54, "height": 37 },
+				"Sadie mouth0002": { "x": -3.41, "y": 0.05, "rotation": -90.89, "width": 54, "height": 37 },
+				"Sadie mouth0003": { "x": -2.54, "y": 0.04, "rotation": -90.89, "width": 54, "height": 37 },
+				"Sadie mouth0004": { "x": -1.24, "y": 0.02, "rotation": -90.89, "width": 54, "height": 37 },
+				"Sadie mouth0005": { "x": 0.07, "rotation": -90.89, "width": 54, "height": 37 },
+				"Sadie mouth0006": { "x": -2.08, "y": 1.77, "rotation": -90.89, "width": 54, "height": 37 },
+				"Sadie mouth0007": { "x": -5.14, "y": 0.08, "rotation": -90.89, "width": 54, "height": 37 },
+				"Sadie mouth0008": { "x": -4.27, "y": 0.07, "rotation": -90.89, "width": 54, "height": 37 },
+				"hamster blue mouth": { "x": 5.91, "y": 0.44, "rotation": -90.89, "width": 38, "height": 14 }
+			}
+		}
+	}
+],
+"events": {
+	"Audio/pool-1": { "audio": "Audio/pool-1.wav" },
+	"Audio/pool-2": { "audio": "Audio/pool-2.wav" },
+	"Audio/pool-4": { "audio": "Audio/pool-4.wav" },
+	"Audio/pool-8": { "audio": "Audio/pool-8.wav" },
+	"Audio/pool-10": { "audio": "Audio/pool-10.wav" }
+},
+"animations": {
+	"animation": {},
+	"float": {},
+	"jump": {
+		"bones": {
+			"Body": {
+				"scale": [
+					{ "x": 0.974, "y": 1.026 },
+					{ "time": 0.1667, "x": 1.061, "y": 0.931 },
+					{ "time": 0.3333 }
+				]
+			},
+			"ArmL": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "angle": -4.83 },
+					{ "time": 0.3333 }
+				]
+			},
+			"ArmR": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "angle": 5.99 },
+					{ "time": 0.3333 }
+				]
+			},
+			"FootL": {
+				"rotate": [
+					{ "angle": 7.69 },
+					{ "time": 0.1667, "angle": -34.86 },
+					{ "time": 0.3333 }
+				]
+			},
+			"FootR": {
+				"rotate": [
+					{ "angle": -3.38 },
+					{ "time": 0.1667, "angle": 26.56 },
+					{ "time": 0.3333 }
+				]
+			},
+			"Ear L": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "angle": -32.55 },
+					{ "time": 0.3333 }
+				]
+			},
+			"Ear R": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "angle": 29.41 },
+					{ "time": 0.3333 }
+				]
+			}
+		}
+	},
+	"pool-1": {
+		"slots": {
+			"hamster blue mouth": {
+				"attachment": [
+					{ "time": 0.1, "name": "Sadie mouth0006" },
+					{ "time": 0.2333, "name": "Sadie mouth0004" },
+					{ "time": 0.3333, "name": "Sadie mouth0008" },
+					{ "time": 0.3667, "name": "Sadie mouth0002" },
+					{ "time": 0.4333, "name": "Sadie mouth0005" },
+					{ "time": 0.5333, "name": "Sadie mouth0001" },
+					{ "time": 0.6333, "name": "Sadie mouth0002" },
+					{ "time": 0.7, "name": "Sadie mouth0005" },
+					{ "time": 0.7667, "name": "Sadie mouth0006" },
+					{ "time": 0.8333, "name": "Sadie mouth0008" },
+					{ "time": 0.9, "name": "Sadie mouth0003" },
+					{ "time": 0.9667, "name": "Sadie mouth0001" },
+					{ "time": 1.0333, "name": "Sadie mouth0006" },
+					{ "time": 1.1333, "name": "Sadie mouth0008" },
+					{ "time": 1.2, "name": "Sadie mouth0001" },
+					{ "time": 1.2667, "name": "Sadie mouth0004" },
+					{ "time": 1.4333, "name": "Sadie mouth0002" },
+					{ "time": 1.5333, "name": "Sadie mouth0003" },
+					{ "time": 1.9, "name": "hamster blue mouth" },
+					{ "time": 2.1667, "name": "Sadie mouth0006" },
+					{ "time": 2.3, "name": "Sadie mouth0003" },
+					{ "time": 2.4, "name": "Sadie mouth0002" },
+					{ "time": 2.5, "name": "Sadie mouth0003" },
+					{ "time": 2.5667, "name": "Sadie mouth0005" },
+					{ "time": 2.6, "name": "Sadie mouth0006" },
+					{ "time": 2.6667, "name": "Sadie mouth0004" },
+					{ "time": 2.7333, "name": "Sadie mouth0002" },
+					{ "time": 2.8, "name": "Sadie mouth0003" },
+					{ "time": 2.8667, "name": "Sadie mouth0001" },
+					{ "time": 2.9667, "name": "Sadie mouth0008" },
+					{ "time": 3.0333, "name": "Sadie mouth0004" },
+					{ "time": 3.1, "name": "Sadie mouth0005" },
+					{ "time": 3.1667, "name": "Sadie mouth0006" },
+					{ "time": 3.2333, "name": "Sadie mouth0003" },
+					{ "time": 3.4, "name": "Sadie mouth0008" },
+					{ "time": 3.5, "name": "hamster blue mouth" }
+				]
+			}
+		},
+		"bones": {
+			"Body": {
+				"scale": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "x": 1.046, "y": 0.966, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5, "x": 1.046, "y": 0.966, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333, "curve": 0.25, "c3": 0.75 },
+					{ "time": 4.1667, "x": 1.046, "y": 0.966, "curve": 0.25, "c3": 0.75 },
+					{ "time": 5 }
+				]
+			},
+			"ArmL": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -6.74, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5, "angle": -6.74, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333, "curve": 0.25, "c3": 0.75 },
+					{ "time": 4.1667, "angle": -6.74, "curve": 0.25, "c3": 0.75 },
+					{ "time": 5 }
+				]
+			},
+			"ArmR": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": 3.82, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5, "angle": 3.82, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333, "curve": 0.25, "c3": 0.75 },
+					{ "time": 4.1667, "angle": 3.82, "curve": 0.25, "c3": 0.75 },
+					{ "time": 5 }
+				]
+			},
+			"FootL": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -24.41, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5, "angle": -24.41, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333, "curve": 0.25, "c3": 0.75 },
+					{ "time": 4.1667, "angle": -24.41, "curve": 0.25, "c3": 0.75 },
+					{ "time": 5 }
+				]
+			},
+			"FootR": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": 30.06, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5, "angle": 30.06, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333, "curve": 0.25, "c3": 0.75 },
+					{ "time": 4.1667, "angle": 30.06, "curve": 0.25, "c3": 0.75 },
+					{ "time": 5 }
+				]
+			},
+			"Ear L": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -14.26, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5, "angle": -14.26, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333, "curve": 0.25, "c3": 0.75 },
+					{ "time": 4.1667, "angle": -14.26, "curve": 0.25, "c3": 0.75 },
+					{ "time": 5 }
+				]
+			},
+			"Ear R": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": 13.81, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5, "angle": 13.81, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333, "curve": 0.25, "c3": 0.75 },
+					{ "time": 4.1667, "angle": 13.81, "curve": 0.25, "c3": 0.75 },
+					{ "time": 5 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.1667, "name": "Audio/pool-1" }
+		]
+	},
+	"pool-2": {
+		"slots": {
+			"hamster blue mouth": {
+				"attachment": [
+					{ "time": 0.1, "name": "Sadie mouth0006" },
+					{ "time": 0.1667, "name": "Sadie mouth0003" },
+					{ "time": 0.2333, "name": "Sadie mouth0002" },
+					{ "time": 0.3, "name": "Sadie mouth0005" },
+					{ "time": 0.3667, "name": "Sadie mouth0006" },
+					{ "time": 0.4333, "name": "Sadie mouth0002" },
+					{ "time": 0.5, "name": "Sadie mouth0003" },
+					{ "time": 0.5667, "name": "Sadie mouth0002" },
+					{ "time": 0.6333, "name": "Sadie mouth0004" },
+					{ "time": 0.8667, "name": "Sadie mouth0008" },
+					{ "time": 1, "name": "Sadie mouth0002" },
+					{ "time": 1.0667, "name": "Sadie mouth0003" },
+					{ "time": 1.1667, "name": "Sadie mouth0002" },
+					{ "time": 1.3333, "name": "Sadie mouth0004" },
+					{ "time": 1.6, "name": "Sadie mouth0002" },
+					{ "time": 1.8333, "name": "Sadie mouth0001" },
+					{ "time": 1.9333, "name": "Sadie mouth0003" },
+					{ "time": 2, "name": "Sadie mouth0005" },
+					{ "time": 2.0667, "name": "Sadie mouth0006" },
+					{ "time": 2.1333, "name": "Sadie mouth0005" },
+					{ "time": 2.1667, "name": "Sadie mouth0008" },
+					{ "time": 2.2333, "name": "Sadie mouth0004" },
+					{ "time": 2.3333, "name": "Sadie mouth0002" },
+					{ "time": 2.5333, "name": "Sadie mouth0005" },
+					{ "time": 2.6, "name": "Sadie mouth0006" },
+					{ "time": 2.8333, "name": "Sadie mouth0002" },
+					{ "time": 2.9333, "name": "Sadie mouth0005" },
+					{ "time": 3.1333, "name": "Sadie mouth0002" },
+					{ "time": 3.3333, "name": "Sadie mouth0003" },
+					{ "time": 3.4, "name": "Sadie mouth0001" },
+					{ "time": 3.5, "name": "Sadie mouth0008" },
+					{ "time": 3.5667, "name": "Sadie mouth0004" },
+					{ "time": 3.6333, "name": "Sadie mouth0005" },
+					{ "time": 3.6667, "name": "Sadie mouth0006" },
+					{ "time": 3.7333, "name": "Sadie mouth0003" },
+					{ "time": 3.8333, "name": "Sadie mouth0002" },
+					{ "time": 3.9, "name": "Sadie mouth0003" },
+					{ "time": 4.0667, "name": "Sadie mouth0002" },
+					{ "time": 4.3, "name": "hamster blue mouth" }
+				]
+			}
+		},
+		"bones": {
+			"Ear L": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -14.26, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5, "angle": -14.26, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333, "curve": 0.25, "c3": 0.75 },
+					{ "time": 4.1667, "angle": -14.26, "curve": 0.25, "c3": 0.75 },
+					{ "time": 5 }
+				]
+			},
+			"FootR": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": 30.06, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5, "angle": 30.06, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333, "curve": 0.25, "c3": 0.75 },
+					{ "time": 4.1667, "angle": 30.06, "curve": 0.25, "c3": 0.75 },
+					{ "time": 5 }
+				]
+			},
+			"ArmL": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -6.74, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5, "angle": -6.74, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333, "curve": 0.25, "c3": 0.75 },
+					{ "time": 4.1667, "angle": -6.74, "curve": 0.25, "c3": 0.75 },
+					{ "time": 5 }
+				]
+			},
+			"Body": {
+				"scale": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "x": 1.046, "y": 0.966, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5, "x": 1.046, "y": 0.966, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333, "curve": 0.25, "c3": 0.75 },
+					{ "time": 4.1667, "x": 1.046, "y": 0.966, "curve": 0.25, "c3": 0.75 },
+					{ "time": 5 }
+				]
+			},
+			"FootL": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -24.41, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5, "angle": -24.41, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333, "curve": 0.25, "c3": 0.75 },
+					{ "time": 4.1667, "angle": -24.41, "curve": 0.25, "c3": 0.75 },
+					{ "time": 5 }
+				]
+			},
+			"ArmR": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": 3.82, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5, "angle": 3.82, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333, "curve": 0.25, "c3": 0.75 },
+					{ "time": 4.1667, "angle": 3.82, "curve": 0.25, "c3": 0.75 },
+					{ "time": 5 }
+				]
+			},
+			"Ear R": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": 13.81, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5, "angle": 13.81, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333, "curve": 0.25, "c3": 0.75 },
+					{ "time": 4.1667, "angle": 13.81, "curve": 0.25, "c3": 0.75 },
+					{ "time": 5 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.1667, "name": "Audio/pool-2" }
+		]
+	},
+	"pool-4": {
+		"slots": {
+			"hamster blue mouth": {
+				"attachment": [
+					{ "time": 0.1333, "name": "Sadie mouth0003" },
+					{ "time": 0.2333, "name": "Sadie mouth0005" },
+					{ "time": 0.2667, "name": "Sadie mouth0006" },
+					{ "time": 0.3333, "name": "Sadie mouth0005" },
+					{ "time": 0.4333, "name": "Sadie mouth0002" },
+					{ "time": 0.5667, "name": "Sadie mouth0005" },
+					{ "time": 0.7, "name": "Sadie mouth0006" },
+					{ "time": 0.8333, "name": "Sadie mouth0004" },
+					{ "time": 1, "name": "Sadie mouth0008" },
+					{ "time": 1.1667, "name": "Sadie mouth0003" },
+					{ "time": 1.2333, "name": "Sadie mouth0002" },
+					{ "time": 1.3, "name": "Sadie mouth0007" },
+					{ "time": 1.4, "name": "Sadie mouth0008" },
+					{ "time": 1.5, "name": "Sadie mouth0004" },
+					{ "time": 1.9333, "name": "Sadie mouth0002" },
+					{ "time": 2.2667, "name": "hamster blue mouth" }
+				]
+			}
+		},
+		"bones": {
+			"Ear L": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -14.26, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5, "angle": -14.26, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333 }
+				]
+			},
+			"FootR": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": 30.06, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5, "angle": 30.06, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333 }
+				]
+			},
+			"ArmL": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -6.74, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5, "angle": -6.74, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333 }
+				]
+			},
+			"Body": {
+				"scale": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "x": 1.046, "y": 0.966, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5, "x": 1.046, "y": 0.966, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333 }
+				]
+			},
+			"FootL": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -24.41, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5, "angle": -24.41, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333 }
+				]
+			},
+			"ArmR": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": 3.82, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5, "angle": 3.82, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333 }
+				]
+			},
+			"Ear R": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": 13.81, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5, "angle": 13.81, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.1667, "name": "Audio/pool-4" }
+		]
+	},
+	"pool-8": {
+		"slots": {
+			"hamster blue mouth": {
+				"attachment": [
+					{ "time": 0.1, "name": "Sadie mouth0002" },
+					{ "time": 0.2333, "name": "Sadie mouth0004" },
+					{ "time": 0.3667, "name": "Sadie mouth0002" },
+					{ "time": 0.5667, "name": "Sadie mouth0001" },
+					{ "time": 0.6667, "name": "Sadie mouth0008" },
+					{ "time": 0.7333, "name": "Sadie mouth0004" },
+					{ "time": 1.1667, "name": "Sadie mouth0002" },
+					{ "time": 1.5333, "name": "hamster blue mouth" }
+				]
+			}
+		},
+		"bones": {
+			"Ear L": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -14.26, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"FootR": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": 30.06, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"ArmL": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -6.74, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"Body": {
+				"scale": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "x": 1.046, "y": 0.966, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"FootL": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -24.41, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"ArmR": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": 3.82, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"Ear R": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": 13.81, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.1667, "name": "Audio/pool-8" }
+		]
+	},
+	"pool-10": {
+		"slots": {
+			"hamster blue mouth": {
+				"attachment": [
+					{ "name": "Sadie mouth0006" },
+					{ "time": 0.2333, "name": "Sadie mouth0004" },
+					{ "time": 1.5667, "name": "Sadie mouth0003" },
+					{ "time": 1.6333, "name": "hamster blue mouth" }
+				]
+			}
+		},
+		"bones": {
+			"Ear L": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -14.26, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"FootR": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": 30.06, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"ArmL": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -6.74, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"Body": {
+				"scale": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "x": 1.046, "y": 0.966, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"FootL": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -24.41, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"ArmR": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": 3.82, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"Ear R": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": 13.81, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.0333, "name": "Audio/pool-10" }
+		]
+	}
+}
+}

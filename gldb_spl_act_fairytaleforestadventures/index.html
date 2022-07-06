@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Goldie And Bear: Fairy Tale Forest Adventures</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Fairy Tale Forest Adventures" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta content="telephone=no" name="format-detection">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="media/images/icons/favicon.jpg">
+<link rel="shortcut icon" href="media/images/icons/favicon.jpg" />
+<link rel="apple-touch-icon" sizes="57x57" href="media/images/icons/apple-icon-57x57.jpg" />
+<link rel="apple-touch-icon" sizes="72x72" href="media/images/icons/apple-icon-72x72.jpg" />
+<link rel="apple-touch-icon" sizes="114x114" href="media/images/icons/apple-icon-114x114.jpg" />
+<link rel="apple-touch-icon" sizes="144x144" href="media/images/icons/apple-icon-144x144.jpg" />
+
+
+<style>
+       		#ios7 { display:none } 
+    	</style>
+
+
+<script type="text/javascript" src="gameContainer/require.min.js"></script>
+
+<script type="text/javascript" src="gameConfig/isl.js"></script>
+<script type="text/javascript" src="gameProps.js"></script>
+
+<script type="text/javascript" src="js/libs/jsembed.js"></script>
+<script type="text/javascript">			     
+			// [What Version IE]
+			function GetIEVersion() {
+  				var sAgent = window.navigator.userAgent;
+  				var Idx = sAgent.indexOf("MSIE");
+
+  				// If IE, return version number.
+  				if (Idx > 0) 
+    				return parseInt(sAgent.substring(Idx+ 5, sAgent.indexOf(".", Idx)));
+
+  				// If IE 11 then look for Updated user agent string.
+  				else if (!!navigator.userAgent.match(/Trident\/7\./)) 
+   				return 11;
+
+  				else
+    			return 0; //It is not IE
+			}
+			
+			// [Adds Game To Screen]
+			function addGame() {
+				// Parameters configure jsembed itself.
+				// Width: 966px
+				// Height: 560px
+				var params = {
+					base: "", // base url of all content. Defaults ""
+			 		api: "flambe", // supported custom apis are defined in jsembed. Defaults none.
+			 		scaletype: "fillto", // update window.canvasScale on window resize? Defaults "fit". Also supports "fill" and "none."
+			 		indexroot: "true", // use the current index url as the path root? If false uses domain root instead. Defaults false (use domain root).
+			 		//allowtouchmove: "false", // allow the page to scroll when user drags or swipes? Defaults to false.
+			 		maxwidth: 1024, //The maximum width to scale the canvas to. Only works with fillto.
+			 		maxheight: 720, //The maximum height to scale the canvas to. Only works with fillto.  	  
+			 		//libs: ["flambe.js"] // array of libs to embed before trying to launch app. Defaults []. Libs will load from base url unless you set libsIgnoreBase: "true" param.
+				}				
+				// Attributes will be set on the embed target for use by the app. "base" will be set as well.
+				var attr = {				
+				
+				};
+   
+				jsembed.embed("js/libs/flambe.js", "main", "966", "560", params, attr);
+			}
+			
+			if(GetIEVersion() == 0){
+				addGame();
+			}else{
+				if(GetIEVersion() < 11){
+				}else{
+					addGame();
+				}
+			}
+		</script>
+</head>
+<body style="padding: 0; margin: 0; background-color:#000000">
+
+<div id="main" oncontextmenu="return false"></div>
+
+</div>
+
+
+
+<script type="text/javascript">
+			function GetIEVersion() {
+  				var sAgent = window.navigator.userAgent;
+  				var Idx = sAgent.indexOf("MSIE");
+
+  				// If IE, return version number.
+  				if (Idx > 0) 
+    				return parseInt(sAgent.substring(Idx+ 5, sAgent.indexOf(".", Idx)));
+
+  				// If IE 11 then look for Updated user agent string.
+  				else if (!!navigator.userAgent.match(/Trident\/7\./)) 
+   				return 11;
+
+  				else
+    			return 0; //It is not IE
+			}
+			
+			function addUnsupported() {
+				var div = document.createElement("div");
+				div.setAttribute("id", "overlay");
+				document.body.appendChild(div);
+				
+				var elem = document.createElement("img");
+				elem.setAttribute("src", "media/overlay/unsupportedBrowser.jpg");
+				elem.setAttribute("alt", "Unsupported");
+				div.appendChild(elem);
+			}
+			
+			if(GetIEVersion() == 0){
+				// addOrientation();
+			}else{
+				if(GetIEVersion() < 11){
+					addUnsupported();
+				}else{
+					// addOrientation();
+				}
+			}
+		</script>
+<script type="text/javascript" src="js/libs/orientation.js"></script>
+
+<div id="ios7">
+<div id="box">
+<div id="message">
+<img src="gameContainer/overlay/ios7fix/ios7-close-button.png" width="20" height="20" alt="Close Button" id="close-button">
+<img src="media/images/icons/apple-icon-114x114.jpg" width="114" height="64" alt="Fairy Tale Forest Adventures Icon" id="icon">
+<img src="gameContainer/overlay/ios7fix/ios7-add-to-home-screen.png" width="60" height="60" alt="Add To Home Screen Button" id="add-button">
+Tap <img src="gameContainer/overlay/ios7fix/ios7-options-button.png" width="19" height="26" alt="iOS 7 Options Button" id="options-button"> and then<br />
+<strong>Add to Home Screen</strong><br />
+for the best play experience.
+</div>
+</div>
+<center><img src="gameContainer/overlay/ios7fix/ios7-arrow.png" width="16" height="18" alt="Arrow"></center>
+</div>
+
+
+<script type="text/javascript">
+        	if (!window.console || !window.console.log) console = {log: function() {}, error: function() {}};
+    	</script>
+
+<script type="text/javascript">
+        	window.onload = function(){
+            	checkOrientationLogic();
+            	runISL();
+            	// cto.track();
+        	}
+		</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+{
+"skeleton": { "hash": "Er+SzkKUdkZNFkIQlgASt8MJq+Y", "spine": "3.8.91", "x": -206.5, "y": -263, "width": 413, "height": 1050.27 },
+"bones": [
+	{ "name": "root" },
+	{ "name": "stick", "parent": "root", "length": 1212.88, "rotation": -90, "y": 1200 }
+],
+"slots": [
+	{ "name": "characters/stick", "bone": "stick", "attachment": "ui/logo/logo-stick" },
+	{ "name": "logo", "bone": "stick", "attachment": "ui/logo/logo" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"characters/stick": {
+				"ui/logo/logo-stick": { "x": 723.73, "rotation": 90, "width": 50, "height": 622 }
+			},
+			"logo": {
+				"ui/logo/logo": { "x": 1200, "rotation": 90, "width": 413, "height": 526 }
+			}
+		}
+	}
+],
+"animations": {
+	"hide": {
+		"bones": {
+			"stick": {
+				"rotate": [
+					{}
+				],
+				"translate": [
+					{ "curve": 0.221, "c2": 0.31, "c3": 0.75 },
+					{ "time": 0.5, "y": 1496.93 }
+				]
+			}
+		}
+	},
+	"idle": {
+		"bones": {
+			"stick": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -0.1, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5, "angle": 0.11, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "y": -4.67, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333 }
+				]
+			}
+		}
+	}
+}
+}

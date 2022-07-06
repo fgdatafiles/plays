@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: black;
+}
+
+@font-face {
+    font-family: 'RefrigeratorDeluxe-Heavy';
+    src: url(fonts/RefrigeratorDeluxe-Heavy.eot);
+    src: url(fonts/RefrigeratorDeluxe-Heavy.eot?#iefix) format('embedded-opentype'),
+         url(fonts/RefrigeratorDeluxe-Heavy.woff2) format('woff2'),
+         url(fonts/RefrigeratorDeluxe-Heavy.woff) format('woff'),
+         url(fonts/RefrigeratorDeluxe-Heavy.ttf) format('truetype'),
+         url(fonts/RefrigeratorDeluxe-Heavy.svg#tambor_regularregular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RefrigeratorDeluxe-Bold';
+    src: url(fonts/RefrigeratorDeluxe-Bold.eot);
+    src: url(fonts/RefrigeratorDeluxe-Bold.eot?#iefix) format('embedded-opentype'),
+         url(fonts/RefrigeratorDeluxe-Bold.woff2) format('woff2'),
+         url(fonts/RefrigeratorDeluxe-Bold.woff) format('woff'),
+         url(fonts/RefrigeratorDeluxe-Bold.ttf) format('truetype'),
+         url(fonts/RefrigeratorDeluxe-Bold.svg#refrigerator_deluxebold) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'RefrigeratorDeluxe';
+    src: url(fonts/RefrigeratorDeluxe.eot);
+    src: url(fonts/RefrigeratorDeluxe.eot?#iefix) format('embedded-opentype'),
+         url(fonts/RefrigeratorDeluxe.woff2) format('woff2'),
+         url(fonts/RefrigeratorDeluxe.woff) format('woff'),
+         url(fonts/RefrigeratorDeluxe.ttf) format('truetype'),
+         url(fonts/RefrigeratorDeluxe.svg#tambor_regularregular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.loadFont {
+	font-family: 'RefrigeratorDeluxe-Heavy';
+	opacity: 0;
+	position:absolute;
+}
+
+.loadFont2 {
+	font-family: 'RefrigeratorDeluxe-Bold';
+	opacity: 0;
+	position:absolute;
+}
+
+.loadFont3 {
+	font-family: 'RefrigeratorDeluxe';
+	opacity: 0;
+	position:absolute;
+}
+
+#frame {
+	position:absolute;
+	width: 100%;
+	height:100%;
+	overflow: hidden;
+}
+
+#content {
+	left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+#captions {
+    font-family: 'RefrigeratorDeluxe-Bold';
+    position:fixed;
+    bottom: 2%;
+    width: 100%;
+    text-align: center;
+    color:white;
+    text-shadow: 0px 0px 3px #000000;
+    font-size: 4vh;
+    font-weight: bold;
+    pointer-events:none;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+                                  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000
+}

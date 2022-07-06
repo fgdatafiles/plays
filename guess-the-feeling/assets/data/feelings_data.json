@@ -1,0 +1,429 @@
+{
+	"scenes":[
+		{
+			"name":"gameScene",
+			"manifestData":{
+				"assetManifest":[
+					{
+						"id":"card_view_bg",
+						"src":"assets/images/environments/table_fullscreen.jpg",
+						"type":"image"},
+					{
+						"id":"classroom_bg",
+						"src":"assets/images/environments/classroom_background.jpg",
+						"type":"image"},
+					{
+						"id":"close_shot_bg",
+						"src":"assets/images/environments/close_shot_bg.jpg",
+						"type":"image"},
+					{
+						"id":"card_back",
+						"src":"assets/images/cards/card_back.png",
+						"type":"image"},
+					{
+						"id":"blank_front",
+						"src":"assets/images/cards/blank_card_front.png",
+						"type":"image"},
+					{
+						"id":"props",
+						"src":"assets/sheets/classroom_props.json",
+						"type":"spritesheet"}
+				],
+				"audioManifest":[
+					{"id":"teacher_emotion_02"},
+					{"id":"teacher_emotion_16"},
+					{"id":"teacher_emotion_17"},
+					{"id":"daniel_emotion_03"},
+					{"id":"daniel_emotion_06"},
+					{"id":"daniel_emotion_14"},
+					{"id":"katerina_emotion_03"},
+					{"id":"katerina_emotion_04"},
+					{"id":"elaina_emotion_04"},
+					{"id":"elaina_emotion_05"},
+					{"id":"wednesday_emotion_04"},
+					{"id":"wednesday_emotion_05"},
+					{"id":"o_emotion_03"},
+					{"id":"o_emotion_04"},
+					{"id":"cardFlip"}
+				]
+			},
+			"data":{	
+				"emotionImages":{
+					"path":"assets/images/cards/",
+					"mad":{
+						"cover":"Mad_scratch_off.jpg",
+						"scenes":["Mad_card_face_01.jpg", "Mad_card_face_02.jpg"]
+					},
+					"sad":{
+						"cover":"Sad_scratch_off.jpg",
+						"scenes":["Sad_card_face_01.jpg", "Sad_card_face_02.jpg"]
+					},
+					"happy":{
+						"cover":"Happy_scratch_off.jpg",
+						"scenes":["Happy_card_face_01.jpg", "Happy_card_face_02.jpg"]
+					},
+					"frustrated":{
+						"cover":"Frustrated_scratch_off.jpg",
+						"scenes":["Frustrated_card_face_01.jpg", "Frustrated_card_face_02.jpg"]
+					},
+					"brave":{
+						"cover":"Brave_scratch_off.jpg",
+						"scenes":["Brave_card_face_01.jpg", "Brave_card_face_02.jpg"]
+					}
+				},
+				"brushSize":60,
+				"shots":[
+					{
+						"name":"wideShot",
+						"display":{
+							"displayList":[
+								{
+									"type":"image",
+									"data":{
+										"id":"classroom_bg"
+									}
+								},
+								{
+									"type":"character",
+									"data":{
+										"id":"Daniel",
+										"position":{"x":0, "y":0}
+									}
+								},
+								{
+									"type":"character",
+									"data":{
+										"id":"Katerina",
+										"position":{"x":0, "y":0}
+									}
+								},
+								{
+									"type":"character",
+									"data":{
+										"id":"Elaina",
+										"position":{"x":0, "y":0}
+									}
+								},
+								{
+									"type":"character",
+									"data":{
+										"id":"Owl",
+										"position":{"x":0, "y":0}
+									}
+								},
+								{
+									"type":"character",
+									"data":{
+										"id":"Wednesday",
+										"position":{"x":0, "y":0}
+									}
+								},
+								{
+									"type":"sprite",
+									"data":{
+										"id":"table",
+										"sheet":"props",
+										"position":{"x":0, "y":0}
+									}
+								},
+								{
+									"type":"sprite",
+									"data":{
+										"id":"card_stacks",
+										"position":{"x":0, "y":0}
+									},
+									"handle":"playerDeck"									
+								},
+								{
+									"type":"custom",
+									"data":{
+										"id":"deck",
+										"position":{"x":150, "y":440},
+										"size":{"w":150, "h":100}
+									},
+									"handle":"wedDeck"
+									
+								},
+								{
+									"type":"custom",
+									"data":{
+										"id":"deck",
+										"position":{"x":350, "y":430},
+										"size":{"w":150, "h":100}
+									},
+									"handle":"katDeck"									
+								},
+								{
+									"type":"custom",
+									"data":{
+										"id":"deck",
+										"position":{"x":560, "y":420},
+										"size":{"w":150, "h":100}
+									},
+									"handle":"danDeck"									
+								},
+								{
+									"type":"custom",
+									"data":{
+										"id":"deck",
+										"position":{"x":780, "y":425},
+										"size":{"w":150, "h":100}
+									},
+									"handle":"elaDeck"									
+								},
+								{
+									"type":"custom",
+									"data":{
+										"id":"deck",
+										"position":{"x":970, "y":440},
+										"size":{"w":150, "h":100}
+									},
+									"handle":"oDeck"									
+								},
+								{
+									"type":"custom",
+									"data":{
+										"id":"deck",
+										"position":{"x":420, "y":550},
+										"size":{"w":380, "h":200}
+									},
+									"handle":"playerDeck"									
+								}
+							]
+						},
+						"data":{
+							"debug":false,
+							"minWait":6000,
+							"maxWait":7000,
+							"introAudio":"teacher_emotion_02",
+							"returnAudio":["teacher_emotion_16", "teacher_emotion_17", "teacher_emotion_18"],
+							"decks":["playerDeck","oDeck","elaDeck","danDeck","katDeck","wedDeck"],
+							"flipSFX":"cardFlip",
+							"turnOfferAudio":[								
+								{"character":"Daniel", "id":["daniel_emotion_06", "daniel_emotion_14"]},
+								{"character":"Owl", "id":["o_emotion_03", "o_emotion_04"]},
+								{"character":"Katerina", "id":["katerina_emotion_03", "katerina_emotion_04"]},
+								{"character":"Wednesday", "id":["wednesday_emotion_04", "wednesday_emotion_05"]},
+								{"character":"Elaina", "id":["elaina_emotion_04", "elaina_emotion_05"]}
+							],
+							"playerTurnAudio":{
+								"mad":{
+									"whisper":["teacher_emotion_03"],								
+									"prompt":["teacher_emotion_05", "teacher_emotion_06", "teacher_emotion_07"],								
+									"request":["teacher_emotion_04"]									
+								},
+								"sad":{
+									"whisper":["teacher_emotion_08"],								
+									"prompt":["teacher_emotion_05", "teacher_emotion_06", "teacher_emotion_07"],								
+									"request":["teacher_emotion_12"]									
+								},
+								"happy":{
+									"whisper":["teacher_emotion_09"],								
+									"prompt":["teacher_emotion_05", "teacher_emotion_06", "teacher_emotion_07"],								
+									"request":["teacher_emotion_14"]									
+								},
+								"frustrated":{
+									"whisper":["teacher_emotion_10"],								
+									"prompt":["teacher_emotion_05", "teacher_emotion_06", "teacher_emotion_07"],								
+									"request":["teacher_emotion_13"]									
+								},
+								"brave":{
+									"whisper":["teacher_emotion_11"],								
+									"prompt":["teacher_emotion_05", "teacher_emotion_06", "teacher_emotion_07"],								
+									"request":["teacher_emotion_15"]									
+								}
+							}
+						}						
+					},
+					{
+						"name":"closeupShot",
+						"display":{
+							"displayList":[
+								{
+									"type":"image",
+									"data":{
+										"id":"close_shot_bg"
+									}									
+								},
+								{
+									"type":"custom",									
+									"data":{
+										"id":"dynamic_character",
+										"position":{"x":0, "y":0}
+									}
+								}
+							]
+						},
+						"data":{
+							"audio":{
+								"emotionPrompts":{
+									"mad":[
+										{"character":"Daniel", "id":["daniel_emotion_05", "daniel_emotion_08", "daniel_emotion_09", "daniel_emotion_11"]},
+										{"character":"Owl", "id":["o_emotion_01", "o_emotion_05", "o_emotion_07"]},
+										{"character":"Katerina", "id":["katerina_emotion_01", "katerina_emotion_06", "katerina_emotion_07", "katerina_emotion_08"]},
+										{"character":"Wednesday", "id":["wednesday_emotion_01", "wednesday_emotion_07", "wednesday_emotion_08", "wednesday_emotion_11"]},
+										{"character":"Elaina", "id":["elaina_emotion_01", "elaina_emotion_07", "elaina_emotion_08", "elaina_emotion_09", "elaina_emotion_10"]},
+										{"character":"Teacher", "id":["teacher_emotion_06"]}
+									],
+									"sad":[
+										{"character":"Daniel", "id":["daniel_emotion_08", "daniel_emotion_09", "daniel_emotion_12"]},
+										{"character":"Owl", "id":["o_emotion_01", "o_emotion_05", "o_emotion_06", "o_emotion_07", "o_emotion_09"]},
+										{"character":"Katerina", "id":["katerina_emotion_01", "katerina_emotion_06", "katerina_emotion_07", "katerina_emotion_08"]},
+										{"character":"Wednesday", "id":["wednesday_emotion_01", "wednesday_emotion_07", "wednesday_emotion_08"]},
+										{"character":"Elaina", "id":["elaina_emotion_01", "elaina_emotion_07", "elaina_emotion_08", "elaina_emotion_09", "elaina_emotion_10"]},
+										{"character":"Teacher", "id":["teacher_emotion_06"]}
+									],
+									"happy":[
+										{"character":"Daniel", "id":["daniel_emotion_08", "daniel_emotion_09", "daniel_emotion_10", "daniel_emotion_11"]},
+										{"character":"Owl", "id":["o_emotion_01", "o_emotion_05", "o_emotion_06", "o_emotion_07", "o_emotion_08"]},
+										{"character":"Katerina", "id":["katerina_emotion_01", "katerina_emotion_05", "katerina_emotion_06", "katerina_emotion_07", "katerina_emotion_08", "katerina_emotion_10"]},
+										{"character":"Wednesday", "id":["wednesday_emotion_01", "wednesday_emotion_06", "wednesday_emotion_07", "wednesday_emotion_08", "wednesday_emotion_09", "wednesday_emotion_10"]},
+										{"character":"Elaina", "id":["elaina_emotion_01", "elaina_emotion_06", "elaina_emotion_07", "elaina_emotion_08", "elaina_emotion_09"]},
+										{"character":"Teacher", "id":["teacher_emotion_06"]}
+									],
+									"frustrated":[
+										{"character":"Daniel", "id":["daniel_emotion_05", "daniel_emotion_08", "daniel_emotion_11"]},
+										{"character":"Owl", "id":["o_emotion_01", "o_emotion_05", "o_emotion_06", "o_emotion_07", "o_emotion_10"]},
+										{"character":"Katerina", "id":["katerina_emotion_01",  "katerina_emotion_06", "katerina_emotion_07", "katerina_emotion_08", "katerina_emotion_09"]},
+										{"character":"Wednesday", "id":["wednesday_emotion_01", "wednesday_emotion_07", "wednesday_emotion_08"]},
+										{"character":"Elaina", "id":["elaina_emotion_01", "elaina_emotion_07", "elaina_emotion_08", "elaina_emotion_09", "elaina_emotion_10"]},
+										{"character":"Teacher", "id":["teacher_emotion_06"]}
+									],
+									"brave":[
+										{"character":"Daniel", "id":[ "daniel_emotion_08", "daniel_emotion_10", "daniel_emotion_13"]},
+										{"character":"Owl", "id":["o_emotion_01", "o_emotion_05", "o_emotion_06", "o_emotion_07", "o_emotion_08"]},
+										{"character":"Katerina", "id":["katerina_emotion_01", "katerina_emotion_05", "katerina_emotion_06", "katerina_emotion_07", "katerina_emotion_08"]},
+										{"character":"Wednesday", "id":["wednesday_emotion_01", "wednesday_emotion_06", "wednesday_emotion_07", "wednesday_emotion_08", "wednesday_emotion_09"]},
+										{"character":"Elaina", "id":["elaina_emotion_01", "elaina_emotion_06", "elaina_emotion_07", "elaina_emotion_08", "elaina_emotion_09", "elaina_emotion_11"]},
+										{"character":"Teacher", "id":["teacher_emotion_06"]}
+									]
+								},
+								"guesses":{
+									"mad":[
+										{"character":"Daniel", "id":["daniel_emotion_23"]},
+										{"character":"Owl", "id":["o_emotion_11"]},
+										{"character":"Katerina", "id":["katerina_emotion_16"]},
+										{"character":"Wednesday", "id":["wednesday_emotion_02"]},
+										{"character":"Elaina", "id":["elaina_emotion_02"]}
+									],
+									"sad":[
+										{"character":"Daniel", "id":["daniel_emotion_26"]},
+										{"character":"Owl", "id":["o_emotion_12"]},
+										{"character":"Katerina", "id":["katerina_emotion_19"]},
+										{"character":"Wednesday", "id":["wednesday_emotion_12"]},
+										{"character":"Elaina", "id":["elaina_emotion_12"]}
+									],
+									"happy":[
+										{"character":"Daniel", "id":["daniel_emotion_25"]},
+										{"character":"Owl", "id":["o_emotion_13"]},
+										{"character":"Katerina", "id":["katerina_emotion_18"]},
+										{"character":"Wednesday", "id":["wednesday_emotion_13"]},
+										{"character":"Elaina", "id":["elaina_emotion_13"]}
+									],
+									"frustrated":[
+										{"character":"Daniel", "id":["daniel_emotion_22"]},
+										{"character":"Owl", "id":["o_emotion_15"]},
+										{"character":"Katerina", "id":["katerina_emotion_15"]},
+										{"character":"Wednesday", "id":["wednesday_emotion_15"]},
+										{"character":"Elaina", "id":["elaina_emotion_15"]}
+									],
+									"brave":[
+										{"character":"Daniel", "id":["daniel_emotion_24"]},
+										{"character":"Owl", "id":["o_emotion_14"]},
+										{"character":"Katerina", "id":["katerina_emotion_17"]},
+										{"character":"Wednesday", "id":["wednesday_emotion_14"]},
+										{"character":"Elaina", "id":["elaina_emotion_14"]}
+									]
+								}
+							},
+							"songs":{
+								"mad":{"id":"daniel_emotion_07"},
+								"sad":{"id":"daniel_emotion_27"},
+								"happy":{"id":"daniel_emotion_29"},
+								"frustrated":{"id":"daniel_emotion_28"},
+								"brave":{"id":"daniel_emotion_30"}
+							},
+							"songLoops":{
+								"mad":{"id":"song_mad_loop"},
+								"sad":{"id":"song_sad_loop"},
+								"happy":{"id":"song_happy_loop"},
+								"frustrated":{"id":"song_frustrated_loop"},
+								"brave":{"id":"song_brave_loop"}
+							}							
+						}
+					},
+					{
+						"name":"cardShot",
+						"display":{
+							"displayList":[
+								{
+									"type":"image",
+									"data":{
+										"id":"card_view_bg"
+									}									
+								},
+								{
+									"type":"custom",
+									"data":{
+										"id":"interactive_card",
+										"flipSound":"cardFlip"
+									}
+								}
+							]
+						},
+						"data":{
+							"cards":{
+								"mad":"card_mad",
+								"sad":"card_sad",
+								"brave":"card_brave",
+								"frustrated":"card_frustrated",
+								"happy":"card_happy"
+							},
+							"scratches":["scratch_01", "scratch_02", "scratch_03", "scratch_04"],
+							"drawData":[
+								{"x":374.89364137248714, "y":230.6040148728815, "t": 0},
+								{"x":370.95976337532437, "y":235.5061344902456, "t": 39},
+								{"x":346.47882821649335, "y":277.3104093194544, "t": 39},
+								{"x":333.9205572516756, "y":305.512824998387, "t": 39},
+								{"x":332.4377390631949, "y":312.3818836143323, "t": 47},
+								{"x":394.72895236790424, "y":258.6100537840317, "t": 39},
+								{"x":426.3057786686417, "y":230.559124065803, "t": 39},
+								{"x":430.4817170708547, "y":227.86600385207066, "t": 95},
+								{"x":403.3076616982914, "y":265.4943402790665, "t": 39},
+								{"x":354.2247611781041, "y":347.99839023566824, "t": 39},
+								{"x":341.42442980823597, "y":373.99180651096924, "t": 96},
+								{"x":349.0348975184217, "y":372.0400953914772, "t": 39},
+								{"x":407.51326302849355, "y":324.27488488035647, "t": 39},
+								{"x":485.4037302402392, "y":259.8516043976516, "t": 39},
+								{"x":515.1194198658311, "y":245.4177617087885, "t": 40},
+								{"x":515.2404500683563, "y":246.52226141060436, "t": 94},
+								{"x":485.7211372105467, "y":293.3496860597024, "t": 39},
+								{"x":414.04889396485265, "y":383.91786877841196, "t": 40},
+								{"x":474.89364137248714, "y":230.6040148728815, "t": 40},
+								{"x":470.95976337532437, "y":235.5061344902456, "t": 39},
+								{"x":446.47882821649335, "y":277.3104093194544, "t": 39},
+								{"x":433.9205572516756, "y":305.512824998387, "t": 39},
+								{"x":432.4377390631949, "y":312.3818836143323, "t": 47},
+								{"x":494.72895236790424, "y":258.6100537840317, "t": 39},
+								{"x":526.3057786686417, "y":230.559124065803, "t": 39},
+								{"x":530.4817170708547, "y":227.86600385207066, "t": 95},
+								{"x":503.3076616982914, "y":265.4943402790665, "t": 39},
+								{"x":454.2247611781041, "y":345.99839023566824, "t": 39},
+								{"x":441.42442980823597, "y":375.99180651096924, "t": 96},
+								{"x":449.0348975184217, "y":374.0400953914772, "t": 39},
+								{"x":507.51326302849355, "y":326.27488488035647, "t": 39},
+								{"x":585.4037302402392, "y":255.8516043976516, "t": 39},
+								{"x":615.1194198658311, "y":242.4177617087885, "t": 40},
+								{"x":585.7211372105467, "y":291.3496860597024, "t": 39},
+								{"x":575.04889396485265, "y":385.91786877841196, "t": 40},
+								{"x":655.04889396485265, "y":245.91786877841196, "t": 40}
+							],
+							"eraseResolution":{"x":0, "y":0, "width":10, "height":8},
+							"threshold":0.8
+						}
+					}
+				]
+			}
+		}
+	]
+}

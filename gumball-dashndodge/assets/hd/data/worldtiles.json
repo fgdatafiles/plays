@@ -1,0 +1,209 @@
+{
+    "tileTemplates":[
+
+        {
+            "id":"cars",
+            "collideables":[
+                { "type": "static", "data":{ "frame":"car", "place":"left", "offsetX":120, "offsetY":0 } },
+                { "type": "static", "data":{ "frame":"copcar", "place":"right", "offsetX":-120, "offsetY":0 } }
+            ],
+            "tags": ["safe"]
+        },
+        {
+            "id":"car-fire",
+            "collideables":[
+                { "type": "static", "data":{ "frame":"car", "place":"left", "offsetX":120, "offsetY":0 } },
+                { "type": "static", "data":{ "frame":"fire_hydrant", "place":"right", "offsetX":-120, "offsetY":0 } }
+            ],
+            "tags": ["safe"]
+        },
+        {
+            "id":"car-tree",
+            "collideables":[
+                { "type": "static", "data":{ "frame":"car", "place":"left", "offsetX":120, "offsetY":0 } },
+                { "type": "static", "data":{ "frame":"tree", "place":"right", "offsetX":-120, "offsetY":0 } }
+            ],
+            "tags": ["safe"]
+        },
+        {
+            "id":"steps-copcar",
+            "collideables":[
+                { "type": "static", "data":{ "frame":"steps", "place":"left", "offsetX":120, "offsetY":0 } },
+                { "type": "static", "data":{ "frame":"copcar", "place":"right", "offsetX":-120, "offsetY":0 } }
+            ],
+            "tags": ["safe"]
+        },
+        {
+            "id":"steps-fire",
+            "collideables":[
+                { "type": "static", "data":{ "frame":"steps", "place":"left", "offsetX":120, "offsetY":0 } },
+                { "type": "static", "data":{ "frame":"fire_hydrant", "place":"right", "offsetX":-120, "offsetY":0 } }
+            ],
+            "tags": ["safe"]
+        },
+        {
+            "id":"steps-tree",
+            "collideables":[
+                { "type": "static", "data":{ "frame":"steps", "place":"left", "offsetX":120, "offsetY":0 } },
+                { "type": "static", "data":{ "frame":"tree", "place":"right", "offsetX":-120, "offsetY":0 } }
+            ],
+            "tags": ["safe"]
+        },
+        {
+            "id":"dinosaur-tree",
+            "collideables":[
+                { "type": "static", "data":{ "frame":"dinosaur", "place":"left", "offsetX":120, "offsetY":0 } },
+                { "type": "static", "data":{ "frame":"tree", "place":"right", "offsetX":-120, "offsetY":0 } }
+            ],
+            "tags": ["safe"]
+        },
+
+      
+        {
+            "id":"car-fire-mirror",
+            "collideables":[
+                { "type": "static", "data":{ "frame":"car", "place":"right", "offsetX":-120, "offsetY":0, "mirror":true } },
+                { "type": "static", "data":{ "frame":"fire_hydrant", "place":"left", "offsetX":120, "offsetY":0, "mirror":true } }
+            ],
+            "tags": ["safe"]
+        },
+        {
+            "id":"car-tree-mirror",
+            "collideables":[
+                { "type": "static", "data":{ "frame":"car", "place":"right", "offsetX":-120, "offsetY":0, "mirror":true } },
+                { "type": "static", "data":{ "frame":"tree", "place":"left", "offsetX":120, "offsetY":0, "mirror":true } }
+            ],
+            "tags": ["safe"]
+        },
+
+        {
+            "id":"steps-fire-mirror",
+            "collideables":[
+                { "type": "static", "data":{ "frame":"steps", "place":"right", "offsetX":-120, "offsetY":0, "mirror":true } },
+                { "type": "static", "data":{ "frame":"fire_hydrant", "place":"left", "offsetX":120, "offsetY":0, "mirror":true } }
+            ],
+            "tags": ["safe"]
+        },
+        {
+            "id":"steps-tree-mirror",
+            "collideables":[
+                { "type": "static", "data":{ "frame":"steps", "place":"right", "offsetX":-120, "offsetY":0, "mirror":true } },
+                { "type": "static", "data":{ "frame":"tree", "place":"left", "offsetX":120, "offsetY":0, "mirror":true } }
+            ],
+            "tags": ["safe"]
+        },
+        {
+            "id":"dinosaur-mirror-ball",
+            "collideables":[
+                { "type": "static", "data":{ "frame":"dinosaur", "place":"right", "offsetX":-120, "offsetY":0, "mirror":true } },
+                { "type": "baddie", "data":{ "key":"ball-baddie", "x":240, "y":150, "bodyRad":72 } }
+            ],
+            "tags": ["baddie"]
+        },
+
+
+        {
+            "id":"car-alan-copcar",
+            "collideables":[
+                { "type": "static", "data":{ "frame":"car", "place":"left", "offsetX":120, "offsetY":0 } },
+                { "type": "tweenbaddie", "data":{ "key":"alan-baddie", "bodyRad":60, "xRange": "300", "speed": 0.5, "x": 368, "y": 640 } },
+                { "type": "static", "data":{ "frame":"copcar", "place":"right", "offsetX":-120, "offsetY":0 } }
+            ],
+            "tags": ["baddie"]
+        },
+        {
+            "id":"car-hole-fire",
+            "collideables":[
+                { "type": "static", "data":{ "frame":"car", "place":"left", "offsetX":120, "offsetY":0 } },
+                { "type": "baddie", "data":{ "key":"hole-baddie", "x":240, "y":150, "bodyRad":72, "animFPS":1 } },
+                { "type": "static", "data":{ "frame":"fire_hydrant", "place":"right", "offsetX":-120, "offsetY":0 } }
+            ],
+            "tags": ["baddie"]
+        },
+        {
+            "id":"car-carman-tree",
+            "collideables":[
+                { "type": "static", "data":{ "frame":"car", "place":"left", "offsetX":120, "offsetY":0 } },
+                { "type": "tweenbaddie", "data":{ "key":"carman-baddie", "bodyRad":45, "xRange": "300", "speed": 0.5, "x": 468, "y": 200 } },
+                { "type": "static", "data":{ "frame":"tree", "place":"right", "offsetX":-120, "offsetY":0 } }
+            ],
+            "tags": ["baddie"]
+        },
+        {
+            "id":"steps-baddie-copcar",
+            "collideables":[
+                { "type": "static", "data":{ "frame":"steps", "place":"left", "offsetX":120, "offsetY":0 } },
+                { "type": "tweenbaddie", "data":{ "key":"bananajoe-baddie", "bodyRad":60, "xRange": "100", "speed": 0.5, "x": 520, "y": 100 } },
+                { "type": "static", "data":{ "frame":"copcar", "place":"right", "offsetX":-120, "offsetY":0 } }
+            ],
+            "tags": ["baddie"]
+        },
+        {
+            "id":"steps-anton-fire",
+            "collideables":[
+                { "type": "static", "data":{ "frame":"steps", "place":"left", "offsetX":120, "offsetY":0 } },
+                { "type": "tweenbaddie", "data":{ "key":"anton-baddie", "bodyRad":65, "xRange": "300", "speed": 0.5, "x": 300, "y": 0 } },
+                { "type": "static", "data":{ "frame":"fire_hydrant", "place":"right", "offsetX":-120, "offsetY":0 } }
+            ],
+            "tags": ["baddie"]
+        },
+        {
+            "id":"steps-hole-tree",
+            "collideables":[
+                { "type": "static", "data":{ "frame":"steps", "place":"left", "offsetX":120, "offsetY":0 } },
+                { "type": "baddie", "data":{ "key":"hole-baddie", "x":310, "y":500, "bodyRad":72, "animFPS":1 } },
+                { "type": "static", "data":{ "frame":"tree", "place":"right", "offsetX":-120, "offsetY":0 } }
+            ],
+            "tags": ["baddie"]
+        },
+
+        {
+            "id":"car-donut-copcar",
+            "collideables":[
+                { "type": "static", "data":{ "frame":"car", "place":"left", "offsetX":120, "offsetY":0 } },
+                { "type": "tweenbaddie", "data":{ "key":"donut-baddie", "bodyRad":65, "xRange": "100", "speed": 0.25, "x": 340, "y": 550 } },
+                { "type": "static", "data":{ "frame":"copcar", "place":"right", "offsetX":-120, "offsetY":0 } }
+            ],
+            "tags": ["baddie"]
+        },
+        {
+            "id":"car-anton-fire-mirror",
+            "collideables":[
+                { "type": "static", "data":{ "frame":"car", "place":"right", "offsetX":-120, "offsetY":0, "mirror":true } },
+                { "type": "tweenbaddie", "data":{ "key":"anton-baddie", "bodyRad":65, "xRange": "300", "speed": 0.25, "x": 468, "y": 0 } },
+                { "type": "static", "data":{ "frame":"fire_hydrant", "place":"left", "offsetX":120, "offsetY":0, "mirror":true } }
+            ],
+            "tags": ["baddie"]
+        },
+        {
+            "id":"car-carman-tree-mirror",
+            "collideables":[
+                { "type": "static", "data":{ "frame":"car", "place":"right", "offsetX":-120, "offsetY":0, "mirror":true } },
+                { "type": "tweenbaddie", "data":{ "key":"carman-baddie", "bodyRad":45, "xRange": "300", "speed": 0.25, "x": 268, "y": 200 } },
+                { "type": "static", "data":{ "frame":"tree", "place":"left", "offsetX":120, "offsetY":0, "mirror":true } }
+            ],
+            "tags": ["baddie"]
+        },
+
+        {
+            "id":"steps-carman-fire-mirror",
+            "collideables":[
+                { "type": "static", "data":{ "frame":"steps", "place":"right", "offsetX":-120, "offsetY":0, "mirror":true } },
+                { "type": "tweenbaddie", "data":{ "key":"carman-baddie", "bodyRad":45, "xRange": "300", "speed": 0.25, "x": 368, "y": 300 } },
+                { "type": "static", "data":{ "frame":"fire_hydrant", "place":"left", "offsetX":120, "offsetY":300, "mirror":true } }
+            ],
+            "tags": ["baddie"]
+        },
+        {
+            "id":"steps-hole-tree-mirror",
+            "collideables":[
+                { "type": "static", "data":{ "frame":"steps", "place":"right", "offsetX":-120, "offsetY":0, "mirror":true } },
+                { "type": "baddie", "data":{ "key":"hole-baddie", "x":468, "y":100, "bodyRad":72, "animFPS":1 } },
+                { "type": "static", "data":{ "frame":"tree", "place":"left", "offsetX":120, "offsetY":0, "mirror":true } }
+            ],
+            "tags": ["baddie"]
+        }
+
+    ]
+    
+}
