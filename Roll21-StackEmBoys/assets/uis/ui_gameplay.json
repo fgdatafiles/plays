@@ -1,0 +1,87 @@
+{
+    "hierarchy": {
+        "name": "Canvas",
+        "children": [
+            {
+                "name": "pause"
+            },
+            {
+                "name": "score_time_container",
+                "children": [
+                    {
+                        "name": "score"
+                    },
+                    {
+                        "name": "time"
+                    }
+                ]
+            }
+        ]
+    },
+    "properties": {
+        "Canvas": {
+            "design": {
+                "width": 960,
+                "height": 640
+            },
+            "type": "canvas"
+        },
+        "pause": {
+            "file": "pause.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "pause.png",
+                "pressed": "pausegray.png",
+                "hover": "pause.png"
+            },
+            "type": "button",
+            "alignment": {
+                "type": "TOP_RIGHT",
+                "offset": {
+                    "x": -65.5,
+                    "y": -2.5
+                }
+            }
+        },
+        "score_time_container": {
+            "file": "scorebar.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "TOP_LEFT",
+                "offset": {
+                    "x": -60.7,
+                    "y": -7.5
+                }
+            }
+        },
+        "score_time_container/score": {
+            "font": {
+                "name": "chunqregular",
+                "fontSize": 35
+            },
+            "text": "200000",
+            "align": "center",
+            "position": {
+                "x": 50.5,
+                "y": 17.9
+            },
+            "type": "text"
+        },
+        "score_time_container/time": {
+            "font": {
+                "name": "digital-7regular",
+                "fontSize": 36
+            },
+            "text": "30",
+            "align": "center",
+            "position": {
+                "x": -78,
+                "y": -38.2
+            },
+            "color": "#fe3500",
+            "type": "text"
+        }
+    }
+}

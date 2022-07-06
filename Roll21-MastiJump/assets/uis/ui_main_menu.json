@@ -1,0 +1,167 @@
+{
+    "hierarchy": {
+        "name": "Canvas",
+        "children": [
+            {
+                "name": "character2"
+            },
+            {
+                "name": "character1"
+            },
+            {
+                "name": "fire"
+            },
+            {
+                "name": "logo"
+            },
+            {
+                "name": "logo2"
+            },
+            {
+                "name": "play"
+            },
+            {
+                "name": "sound"
+            },
+            {
+                "name": "highscore_container",
+                "children": [
+                    {
+                        "name": "highscore"
+                    }
+                ]
+            }
+        ]
+    },
+    "properties": {
+        "Canvas": {
+            "design": {
+                "width": 960,
+                "height": 640
+            },
+            "type": "canvas"
+        },
+        "character2": {
+            "file": "1x1.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "CENTER",
+                "offset": {
+                    "x": -210,
+                    "y": 57
+                }
+            }
+        },
+        "character1": {
+            "file": "1x1.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "CENTER",
+                "offset": {
+                    "x": 215,
+                    "y": 124
+                }
+            }
+        },
+        "fire": {
+            "file": "1x1.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "CENTER",
+                "offset": {
+                    "x": 46.9,
+                    "y": 205.3
+                }
+            }
+        },
+        "logo": {
+            "file": "logo.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "TOP_CENTER",
+                "offset": {
+                    "x": 0,
+                    "y": -5
+                }
+            }
+        },
+        "logo2": {
+            "file": "name.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "TOP_CENTER",
+                "offset": {
+                    "x": 0,
+                    "y": -152.5
+                }
+            }
+        },
+        "play": {
+            "file": "playbuttom.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "playbuttom.png",
+                "pressed": "playbtngray.png",
+                "hover": "playbuttom.png"
+            },
+            "type": "button",
+            "alignment": {
+                "type": "CENTER",
+                "offset": {
+                    "x": 2,
+                    "y": 113
+                }
+            }
+        },
+        "sound": {
+            "file": "soundicon.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "soundicon.png",
+                "pressed": "soundgray.png",
+                "hover": "soundicon.png"
+            },
+            "type": "button",
+            "alignment": {
+                "type": "TOP_RIGHT",
+                "offset": {
+                    "x": -66.5,
+                    "y": -2.5
+                }
+            }
+        },
+        "highscore_container": {
+            "file": "highscore.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "BOTTOM_CENTER",
+                "offset": {
+                    "x": 0,
+                    "y": -45
+                }
+            }
+        },
+        "highscore_container/highscore": {
+            "font": {
+                "name": "Chunq",
+                "fontSize": 33
+            },
+            "text": "1.000.000",
+            "align": "center",
+            "position": {
+                "x": 25.8,
+                "y": -0.5
+            },
+            "color": "#1b1b1b",
+            "type": "text"
+        }
+    }
+}

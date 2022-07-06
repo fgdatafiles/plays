@@ -1,0 +1,221 @@
+{
+    "hierarchy": {
+        "name": "Canvas",
+        "children": [
+            {
+                "name": "title"
+            },
+            {
+                "name": "tutorial1"
+            },
+            {
+                "name": "tutorial2",
+                "children": [
+                    {
+                        "name": "good"
+                    }
+                ]
+            },
+            {
+                "name": "score_time_container",
+                "children": [
+                    {
+                        "name": "fire_image"
+                    },
+                    {
+                        "name": "score"
+                    },
+                    {
+                        "name": "fire"
+                    }
+                ]
+            },
+            {
+                "name": "sound"
+            },
+            {
+                "name": "home"
+            },
+            {
+                "name": "retry"
+            },
+            {
+                "name": "play"
+            }
+        ]
+    },
+    "properties": {
+        "Canvas": {
+            "design": {
+                "width": 960,
+                "height": 640
+            },
+            "type": "canvas"
+        },
+        "title": {
+            "file": "pausetxt.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "CENTER",
+                "offset": {
+                    "x": 0,
+                    "y": -178.6
+                }
+            }
+        },
+        "tutorial1": {
+            "file": "cursor01.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "CENTER",
+                "offset": {
+                    "x": -200,
+                    "y": -42
+                }
+            }
+        },
+        "tutorial2": {
+            "file": "cursor_hand02.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "CENTER",
+                "offset": {
+                    "x": 200,
+                    "y": -42
+                }
+            }
+        },
+        "tutorial2/good": {
+            "file": "good.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 137.9,
+                "y": -91.1
+            },
+            "type": "sprite"
+        },
+        "score_time_container": {
+            "file": "score_counter.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "TOP_LEFT",
+                "offset": {
+                    "x": -45,
+                    "y": -33.8
+                }
+            }
+        },
+        "score_time_container/fire_image": {
+            "file": "shots_counter.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 103.5,
+                "y": -4
+            },
+            "type": "sprite"
+        },
+        "score_time_container/score": {
+            "font": {
+                "name": "chunqregular",
+                "fontSize": 35
+            },
+            "text": "200000",
+            "align": "center",
+            "position": {
+                "x": -15.4,
+                "y": -2.7
+            },
+            "color": "#636363",
+            "type": "text"
+        },
+        "score_time_container/fire": {
+            "font": {
+                "name": "chunqregular",
+                "fontSize": 36
+            },
+            "text": "10",
+            "align": "center",
+            "position": {
+                "x": 122.2,
+                "y": -4.6
+            },
+            "type": "text"
+        },
+        "sound": {
+            "file": "sound.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "sound.png",
+                "pressed": "soundgray.png",
+                "hover": "sound.png"
+            },
+            "type": "button",
+            "alignment": {
+                "type": "TOP_RIGHT",
+                "offset": {
+                    "x": -65.5,
+                    "y": -2.5
+                }
+            }
+        },
+        "home": {
+            "file": "mainmenubtn.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "mainmenubtn.png",
+                "pressed": "mainmenubtngray.png",
+                "hover": "mainmenubtn.png"
+            },
+            "type": "button",
+            "alignment": {
+                "type": "CENTER",
+                "offset": {
+                    "x": -150,
+                    "y": 196
+                }
+            }
+        },
+        "retry": {
+            "file": "restartbtn.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "restartbtn.png",
+                "pressed": "restartbtngray.png",
+                "hover": "restartbtn.png"
+            },
+            "type": "button",
+            "alignment": {
+                "type": "CENTER",
+                "offset": {
+                    "x": 150,
+                    "y": 194
+                }
+            }
+        },
+        "play": {
+            "file": "playbtn.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "playbtn.png",
+                "pressed": "playbtngray.png",
+                "hover": "playbtn.png"
+            },
+            "type": "button",
+            "alignment": {
+                "type": "CENTER",
+                "offset": {
+                    "x": 0,
+                    "y": 153
+                }
+            }
+        }
+    }
+}

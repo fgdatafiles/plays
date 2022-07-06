@@ -1,0 +1,152 @@
+{
+    "hierarchy": {
+        "name": "mm_kriss",
+        "children": [
+            {
+                "name": "arm1_l",
+                "children": [
+                    {
+                        "name": "arm2_l",
+                        "children": [
+                            {
+                                "name": "hand_l",
+                                "children": [
+                                    {
+                                        "name": "fire"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "body",
+                "children": [
+                    {
+                        "name": "neck",
+                        "children": [
+                            {
+                                "name": "head"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "arm1_r",
+                "children": [
+                    {
+                        "name": "arm2_r",
+                        "children": [
+                            {
+                                "name": "hand_r"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "animations": [
+            "kriss_stand"
+        ]
+    },
+    "properties": {
+        "arm1_l": {
+            "file": "arm1_l.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 46.3,
+                "y": -123.1
+            },
+            "type": "sprite"
+        },
+        "arm1_l/arm2_l": {
+            "file": "arm2_l.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 46.3,
+                "y": -25.1
+            },
+            "type": "sprite"
+        },
+        "arm1_l/arm2_l/hand_l": {
+            "file": "hand_l.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 21.7,
+                "y": -62.8
+            },
+            "angle": 12,
+            "type": "sprite"
+        },
+        "arm1_l/arm2_l/hand_l/fire": {
+            "file": "fire1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -14.9,
+                "y": -37.9
+            },
+            "angle": -102,
+            "anchor": {
+                "x": 0.1,
+                "y": 0.5
+            },
+            "type": "sprite"
+        },
+        "body": {
+            "file": "body2.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -7.8,
+                "y": -74.1
+            },
+            "type": "sprite"
+        },
+        "body/neck": {
+            "file": "neck1.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 10.9,
+                "y": -74.7
+            },
+            "type": "sprite"
+        },
+        "body/neck/head": {
+            "file": "head.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -8.7,
+                "y": -97.9
+            },
+            "type": "sprite"
+        },
+        "arm1_r": {
+            "file": "arm1_r.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -49,
+                "y": -104.4
+            },
+            "type": "sprite"
+        },
+        "arm1_r/arm2_r": {
+            "file": "arm2_r.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -7,
+                "y": 57.4
+            },
+            "type": "sprite"
+        },
+        "arm1_r/arm2_r/hand_r": {
+            "file": "hand_r.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 35,
+                "y": 20.9
+            },
+            "type": "sprite"
+        }
+    }
+}

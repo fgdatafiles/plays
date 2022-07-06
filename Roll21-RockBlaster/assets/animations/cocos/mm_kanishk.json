@@ -1,0 +1,196 @@
+{
+    "hierarchy": {
+        "name": "mm_kanishk",
+        "children": [
+            {
+                "name": "base",
+                "children": [
+                    {
+                        "name": "leg2_l"
+                    },
+                    {
+                        "name": "leg1_l"
+                    },
+                    {
+                        "name": "leg2_r"
+                    },
+                    {
+                        "name": "leg1_r"
+                    },
+                    {
+                        "name": "hip"
+                    },
+                    {
+                        "name": "arm1_r",
+                        "children": [
+                            {
+                                "name": "hand_r"
+                            },
+                            {
+                                "name": "arm2_r"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "neck"
+                    },
+                    {
+                        "name": "head"
+                    },
+                    {
+                        "name": "body"
+                    },
+                    {
+                        "name": "arm1_l",
+                        "children": [
+                            {
+                                "name": "hand_l"
+                            },
+                            {
+                                "name": "arm2_l"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "animations": [
+            "kanishk_stand"
+        ]
+    },
+    "properties": {
+        "base": {
+            "position": {
+                "x": -2,
+                "y": 4
+            },
+            "type": "container"
+        },
+        "base/leg2_l": {
+            "file": "kanleg_l.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 39,
+                "y": 14
+            },
+            "type": "sprite"
+        },
+        "base/leg1_l": {
+            "file": "kanthigh_l.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 38,
+                "y": -43
+            },
+            "type": "sprite"
+        },
+        "base/leg2_r": {
+            "file": "kanleg_r.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -37,
+                "y": 15
+            },
+            "type": "sprite"
+        },
+        "base/leg1_r": {
+            "file": "kanthigh_r.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -35,
+                "y": -43
+            },
+            "type": "sprite"
+        },
+        "base/hip": {
+            "file": "kanhip.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 3,
+                "y": -63
+            },
+            "type": "sprite"
+        },
+        "base/arm1_r": {
+            "file": "kanarm_r.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -61,
+                "y": -173
+            },
+            "type": "sprite"
+        },
+        "base/arm1_r/hand_r": {
+            "file": "kanhand_r.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -51,
+                "y": -28
+            },
+            "type": "sprite"
+        },
+        "base/arm1_r/arm2_r": {
+            "file": "kanforearm_r.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -18,
+                "y": 32
+            },
+            "type": "sprite"
+        },
+        "base/neck": {
+            "file": "kanneck.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 19,
+                "y": -249
+            },
+            "type": "sprite"
+        },
+        "base/head": {
+            "file": "kanhead.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 21,
+                "y": -290
+            },
+            "type": "sprite"
+        },
+        "base/body": {
+            "file": "kanbody.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 5,
+                "y": -157
+            },
+            "type": "sprite"
+        },
+        "base/arm1_l": {
+            "file": "kanarm_l.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 80,
+                "y": -151
+            },
+            "type": "sprite"
+        },
+        "base/arm1_l/hand_l": {
+            "file": "kanhand_l.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 47,
+                "y": -35
+            },
+            "type": "sprite"
+        },
+        "base/arm1_l/arm2_l": {
+            "file": "kanforearm_l.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 14,
+                "y": 22
+            },
+            "type": "sprite"
+        }
+    }
+}

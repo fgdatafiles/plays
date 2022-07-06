@@ -1,0 +1,185 @@
+<config>
+
+	<!-- GAMES -->
+	<!-- Enable and disable "NEW" tags on cabinets here -->
+	<cabinets>
+		<newTags enabled="true"/>
+	</cabinets>
+	
+	
+	<!-- Lock and unlock back row of minigames here -->
+	<games>
+		<game name="caveman_olympics" 	id="0" enabled="true"/>
+		<game name="aztec_kicker"		id="1" enabled="true"/>
+		<game name="glitter_parade" 	id="2" enabled="true"/>
+		<game name="ice_cream_famine" 	id="3" enabled="true"/>
+		<game name="tufflips" 			id="4" enabled="true"/>
+		<game name="sushi_pirate"		id="5" enabled="true"/>
+		<game name="punch" 				id="6" enabled="true"/>
+		<game name="culdesac_man" 		id="7" enabled="true"/>
+		<game name="do_your_taxes" 		id="8" enabled="true"/>
+		<game name="road_pugilist" 		id="9" enabled="true"/>
+		<game name="centipeed_man" 		id="10" enabled="true"/>
+		<game name="zombies_in_da_house" id="11" enabled="true"/>
+		<game name="tokyo_slide" 		id="12" enabled="true"/>
+		<game name="couple_of_dragons" 	id="13" enabled="true"/>
+		<game name="mrs_dot_chomper" 	id="14" enabled="true"/>
+	</games>
+	
+    <!-- SERVICES -->
+    <!-- Enable, disable, and configure services here -->
+    
+	<services>
+		<service type="nickanalytics" enabled="false" url="collect2312snjyc.deltadna.net" idDev="61184269709079474548956447314019" idLive="61185589021634240204143496814019" hashDev="3zQxh4pu5fQzc0F2F2bYgednXSnLGknq" hashLive="wP8kOlAXHkXKSI2yazJxcrn9LujUdf2h" enabledQA="false" />
+		<service type="canadaTracking" enabled="true" showGameTitle="Sanjay and Craig: The Frycade"/>
+		<service type="nickavatar" enabled="false" url="http://54.243.42.37:8080/nick/avatar" />
+		<service type="leaderboard" enabled="false" url="http://hs.nick.com/scores/" keyword="sanjay-and-craig-glitter-parade-hsb" />		
+	</services>
+		
+	<!-- LOCALIZATION -->
+	      
+    <localization>
+    	<region>en</region>
+    </localization>
+    	
+	<!-- PACK DEFINITIONS -->
+	<!-- Define packs, flump folders, and tilesheets to be loaded later -->
+	      
+    <packs>
+    	
+    	<pack id="initial_load">
+    	</pack>
+    	
+   		<pack id="gameplay_universal">
+   			<flump id="flump_universal"/>
+   		</pack>
+   		
+   		<pack id="arcade">
+   			<flump id="flump_initial" />
+   		</pack>
+		
+		<pack id="game_punch">
+			<flump id="flump_punch"/>
+		</pack>
+		
+		<pack id="game_glitter" />
+		
+		<pack id="game_tufflips">
+			<flump id="flump_tufflips"/>
+		</pack>
+		
+		<pack id="game_caveman"/>
+		
+		<pack id="game_zombies"/>
+		
+		<pack id="game_culdesac">
+			<flump id="flump_culdesac"/>
+		</pack>
+		
+		<pack id="game_road"/>
+		
+		<pack id="game_centipeed">
+			<flump id = "flump_centipeed"/>
+		</pack>
+		
+		<pack id="game_dragons">
+			<flump id = "flump_dragons"/>
+		</pack>
+		
+		<pack id="game_chomper"/>
+		
+		<pack id="game_taxes"/>
+		
+		<pack id="game_tokyo"/>
+		
+		<pack id="game_launch"/>
+		
+		<pack id="game_icecream"/>
+		
+		<pack id="game_hooks"/>
+		
+   		<!-- END OF PACKS -->
+    </packs>
+    
+    <!-- CHUNKS -->
+    <!-- Define larger bundles of chunks and packs to load -->
+    
+    <chunks>
+    
+    	<chunk id="initial">
+    		<pack>initial_load</pack>    		
+    	</chunk>
+    	
+    	<chunk id="gameplay">
+    		<pack>gameplay_universal</pack>
+    	</chunk>
+    	
+    	<chunk id="arcade">
+    		<pack>arcade</pack>
+    	</chunk>
+    	
+    	<chunk id="game_punch">
+    		<pack>game_punch</pack>
+    	</chunk>
+    	
+    	<chunk id="game_glitter">
+    		<pack>game_glitter</pack>
+    	</chunk>
+    	
+    	<chunk id="game_tufflips">
+    		<pack>game_tufflips</pack>
+    	</chunk>
+    	
+    	<chunk id="game_caveman">
+    		<pack>game_caveman</pack>
+    	</chunk>
+    	
+    	<chunk id="game_zombies">
+    		<pack>game_zombies</pack>
+    	</chunk>
+    	
+    	<chunk id="game_centipeed">
+    		<pack>game_centipeed</pack>
+    	</chunk>
+    	
+    	<chunk id="game_chomper">
+    		<pack>game_chomper</pack>
+    	</chunk>
+    	
+    	<chunk id="game_culdesac">
+    		<pack>game_culdesac</pack>
+    	</chunk>
+    	
+    	<chunk id="game_dragons">
+    		<pack>game_dragons</pack>
+    	</chunk>
+    	
+    	<chunk id="game_road">
+    		<pack>game_road</pack>
+    	</chunk>
+    	
+    	<chunk id="game_taxes">
+    		<pack>game_taxes</pack>
+    	</chunk>
+    	
+    	<chunk id="game_tokyo">
+    		<pack>game_tokyo</pack>
+    	</chunk>
+    	
+    	<chunk id="game_launch">
+    		<pack>game_launch</pack>
+    	</chunk>
+    	
+    	<chunk id="game_icecream">
+    		<pack>game_icecream</pack>
+    	</chunk>
+    	
+    	<chunk id="game_hooks">
+    		<pack>game_hooks</pack>
+    	</chunk>
+    	
+
+        <!-- END OF CHUNKS -->
+    </chunks>
+    
+</config>

@@ -1,0 +1,98 @@
+{
+"skeleton": { "hash": "DDrtYLCTYhX7QgDp2dhBli1rmdo", "spine": "3.8.11-beta", "x": -44, "y": -44, "width": 89, "height": 88 },
+"bones": [
+	{ "name": "root" },
+	{ "name": "RightBone", "parent": "root", "length": 53.61 },
+	{ "name": "LeftBone", "parent": "root", "length": 53.61, "rotation": -180 }
+],
+"slots": [
+	{ "name": "BackDefault", "bone": "root", "attachment": "BackDefault" },
+	{ "name": "BackUnlocked", "bone": "root", "color": "ffffff00", "attachment": "BackUnlocked" },
+	{ "name": "HatchMask", "bone": "root", "attachment": "HatchMask" },
+	{ "name": "RightHatch", "bone": "RightBone", "attachment": "RightHatch" },
+	{ "name": "LeftHatch", "bone": "LeftBone", "attachment": "LeftHatch" },
+	{ "name": "BorderDefault", "bone": "root", "attachment": "BorderDefault" },
+	{ "name": "BorderUnlocked", "bone": "root", "color": "ffffff00", "attachment": "BorderUnlocked" }
+],
+"skins": {
+	"default": {
+		"BackDefault": {
+			"BackDefault": { "width": 70, "height": 70 }
+		},
+		"BackUnlocked": {
+			"BackUnlocked": { "width": 70, "height": 70 }
+		},
+		"BorderDefault": {
+			"BorderDefault": { "x": 0.5, "width": 89, "height": 88 }
+		},
+		"BorderUnlocked": {
+			"BorderUnlocked": { "x": 0.5, "width": 89, "height": 88 }
+		},
+		"HatchMask": {
+			"HatchMask": {
+				"type": "clipping",
+				"end": "LeftHatch",
+				"vertexCount": 4,
+				"vertices": [ -30.23, 31.18, -30.89, -30.68, 30.64, -31.66, 30.97, 30.85 ]
+			}
+		},
+		"LeftHatch": {
+			"LeftHatch": { "x": 11.5, "rotation": 180, "width": 37, "height": 60 }
+		},
+		"RightHatch": {
+			"RightHatch": { "x": 12, "width": 36, "height": 60 }
+		}
+	}
+},
+"animations": {
+	"HatchAnim": {
+		"slots": {
+			"BackDefault": {
+				"attachment": [
+					{ "time": 0.2667, "name": null }
+				]
+			},
+			"BackUnlocked": {
+				"color": [
+					{
+						"time": 0.0667,
+						"color": "ffffff00",
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.2667, "color": "ffffffff" }
+				]
+			},
+			"BorderUnlocked": {
+				"color": [
+					{ "time": 0.1333, "color": "ffffff00" },
+					{ "time": 0.2667, "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"RightBone": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.2, "x": 35, "y": 0 }
+				]
+			},
+			"LeftBone": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.2, "x": -35, "y": 0 }
+				]
+			}
+		}
+	}
+}
+}

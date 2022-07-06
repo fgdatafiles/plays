@@ -1,0 +1,65 @@
+
+@font-face {
+    font-family: 'alhandsi-bold';
+    src: url('../media/fonts/alhandsi_bold.woff2') format('woff2'),
+         url('../media/fonts/alhandsi_bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'noto-kufi-arabic';
+    src: url('../media/fonts/noto-kufi-arabic-regular-webfont.woff2') format('woff2'),
+         url('../media/fonts/noto-kufi-arabic-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html{
+    width:100%;
+    height:100%;
+    background-color:#000000;
+}
+body{
+    width:100%;
+    height:100%;
+    padding:0px;
+    margin:0px;
+}
+
+#og-game-holder{
+   width:100%;
+   height:100%;
+   padding:0px;
+   margin:0px;
+}
+
+#game-holder{
+    overflow:hidden;
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+#rotate-overlay{
+    padding:0;
+    margin:0;
+    display:none;
+}
+
+
+#game-debug-info-area{
+    position:absolute;
+    z-index:2000;
+    top:0;
+    left:0;
+    padding:5px;
+    margin:0;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-size:8pt;
+    display:block;
+    cursor:pointer;
+    text-align: left;
+    color:#FFFFFF;
+}

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="16" height="9" tilewidth="54" tileheight="54" infinite="0" nextobjectid="198">
+ <tileset firstgid="1" name="objects" tilewidth="79" tileheight="91" tilecount="5" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="55" height="55" source="images/player.png"/>
+  </tile>
+  <tile id="2">
+   <image width="55" height="55" source="images/enemy.png"/>
+  </tile>
+  <tile id="3">
+   <image width="48" height="48" source="images/hole.png"/>
+  </tile>
+  <tile id="4">
+   <image width="79" height="91" source="images/sd-sneak-level-collect-snack.png"/>
+  </tile>
+  <tile id="5">
+   <image width="48" height="48" source="images/exit_arrow.png"/>
+  </tile>
+ </tileset>
+ <imagelayer name="Image" offsetx="-80" offsety="-80">
+  <image source="../images/gameplay/sd-hunger-gameplay-bg-level-4.png" width="1024" height="576"/>
+ </imagelayer>
+ <layer name="Tile Layer 1" width="16" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="Objects">
+  <object id="3" type="Player" gid="1" x="432" y="432" width="55" height="55"/>
+  <object id="66" type="Hole" gid="4" x="270" y="324" width="48" height="48"/>
+  <object id="68" type="Hole" gid="4" x="540" y="324" width="48" height="48"/>
+  <object id="70" type="ScoobySnack" gid="5" x="-13" y="70" width="79" height="91"/>
+  <object id="71" type="ScoobySnack" gid="5" x="-11" y="495" width="79" height="91"/>
+  <object id="72" type="ScoobySnack" gid="5" x="800" y="67" width="79" height="91"/>
+  <object id="73" type="ScoobySnack" gid="5" x="800" y="497" width="79" height="91"/>
+  <object id="74" type="Exit" gid="6" x="810" y="270" width="48" height="48"/>
+  <object id="75" type="Barn" gid="3" x="378" y="270" width="55" height="55">
+   <properties>
+    <property name="monsterNumber" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="196" type="Exit" gid="6" x="0" y="270" width="48" height="48"/>
+ </objectgroup>
+ <objectgroup name="Walls">
+  <object id="162" type="Wall" x="0" y="216">
+   <polyline points="0,-216 216,-216"/>
+  </object>
+  <object id="163" type="Wall" x="216" y="0">
+   <polyline points="0,0 0,54"/>
+  </object>
+  <object id="164" type="Wall" x="162" y="54">
+   <polyline points="0,0 -108,0 -108,54"/>
+  </object>
+  <object id="165" type="Wall" x="54" y="162">
+   <polyline points="0,0 0,108"/>
+  </object>
+  <object id="166" type="Wall" x="54" y="324">
+   <polyline points="0,0 162,0"/>
+  </object>
+  <object id="167" type="Wall" x="162" y="324">
+   <polyline points="0,0 0,54"/>
+  </object>
+  <object id="168" type="Wall" x="162" y="432">
+   <polyline points="0,0 0,54"/>
+  </object>
+  <object id="169" type="Wall" x="0" y="270">
+   <polyline points="0,0 0,216 216,216"/>
+  </object>
+  <object id="170" type="Wall" x="270" y="486">
+   <polyline points="0,0 324,0"/>
+  </object>
+  <object id="171" type="Wall" x="648" y="486">
+   <polyline points="0,0 216,0 216,-216"/>
+  </object>
+  <object id="172" type="Wall" x="864" y="216">
+   <polyline points="0,0 0,-216 -216,-216"/>
+  </object>
+  <object id="173" type="Wall" x="648" y="0">
+   <polyline points="0,0 0,54"/>
+  </object>
+  <object id="174" type="Wall" x="594" y="54">
+   <polyline points="0,0 -324,0"/>
+  </object>
+  <object id="175" type="Wall" x="216" y="270">
+   <polyline points="0,0 0,-162 108,-162"/>
+  </object>
+  <object id="176" type="Wall" x="378" y="108">
+   <polyline points="0,0 108,0"/>
+  </object>
+  <object id="177" type="Wall" x="540" y="108">
+   <polyline points="0,0 108,0 108,162"/>
+  </object>
+  <object id="178" type="Wall" x="702" y="54">
+   <polyline points="0,0 108,0 108,54"/>
+  </object>
+  <object id="179" type="Wall" x="810" y="162">
+   <polyline points="0,0 0,108"/>
+  </object>
+  <object id="180" type="Wall" x="810" y="324">
+   <polyline points="0,0 -162,0"/>
+  </object>
+  <object id="181" type="Wall" x="702" y="324">
+   <polyline points="0,0 0,54"/>
+  </object>
+  <object id="182" type="Wall" x="594" y="270">
+   <polyline points="0,0 0,108"/>
+  </object>
+  <object id="183" type="Wall" x="540" y="216">
+   <polyline points="0,0 0,108 -216,108 -216,0"/>
+  </object>
+  <object id="184" type="Wall" x="378" y="162">
+   <polyline points="0,0 108,0"/>
+  </object>
+  <object id="185" type="Wall" x="486" y="378">
+   <polyline points="0,0 -108,0"/>
+  </object>
+  <object id="186" type="Wall" x="270" y="270">
+   <polyline points="0,0 0,108"/>
+  </object>
+  <object id="187" type="Wall" x="702" y="432">
+   <polyline points="0,0 0,54"/>
+  </object>
+  <object id="188" type="Wall" x="270" y="0">
+   <polyline points="0,0 324,0"/>
+  </object>
+  <object id="197" type="Wall" x="0" y="432">
+   <polyline points="0,-432 0,-216"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="FruitSetters" visible="0">
+  <object id="190" type="FruitSetter" x="0" y="0" width="324" height="216">
+   <properties>
+    <property name="fruitType" value="Corn"/>
+   </properties>
+  </object>
+  <object id="191" type="FruitSetter" x="324" y="0" width="216" height="216">
+   <properties>
+    <property name="fruitType" value="Cabbage"/>
+   </properties>
+  </object>
+  <object id="192" type="FruitSetter" x="540" y="0" width="324" height="216">
+   <properties>
+    <property name="fruitType" value="Carrot"/>
+   </properties>
+  </object>
+  <object id="193" type="FruitSetter" x="0" y="216" width="324" height="270">
+   <properties>
+    <property name="fruitType" value="Pumpkin"/>
+   </properties>
+  </object>
+  <object id="194" type="FruitSetter" x="324" y="216" width="216" height="270">
+   <properties>
+    <property name="fruitType" value="Eggplant"/>
+   </properties>
+  </object>
+  <object id="195" type="FruitSetter" x="540" y="216" width="324" height="270">
+   <properties>
+    <property name="fruitType" value="Tomato"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="FruitBlockers"/>
+ <objectgroup name="MovementBlockers">
+  <object id="99" type="MovementBlocker" x="108" y="108" width="54" height="162"/>
+  <object id="101" type="MovementBlocker" x="54" y="378" width="54" height="54"/>
+  <object id="102" type="MovementBlocker" x="756" y="378" width="54" height="54"/>
+  <object id="105" type="MovementBlocker" x="702" y="108" width="54" height="162"/>
+  <object id="110" type="MovementBlocker" x="540" y="378" width="108" height="54"/>
+  <object id="111" type="MovementBlocker" x="216" y="378" width="108" height="54"/>
+  <object id="112" type="MovementBlocker" x="540" y="162" width="54" height="54"/>
+  <object id="140" type="MovementBlocker" x="270" y="162" width="54" height="54"/>
+  <object id="189" type="MovementBlocker" x="378" y="432" width="108" height="54"/>
+ </objectgroup>
+</map>

@@ -1,0 +1,88 @@
+<html>
+<head>
+    <title>Rusty Dives In</title>
+    <script src="flambe.js"></script>
+    <script type="text/javascript" src="jsembed.js"></script>
+
+    <script type="text/javascript" src="isMobile.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="icons/57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/144x144.png">
+
+    <style>
+        body {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        background: black;
+        color: #404040;
+        font-family: sans-serif;
+        font-size: 10pt;
+        }
+        a {
+        color: #F88113;
+        text-decoration: none;
+        }
+        a:hover {
+        text-decoration: underline;
+        }
+
+        html {
+        /* Prevent scrollbars from causing a resize feedback loop. */
+        overflow: hidden;
+        }
+        html, body {
+        height: 100%;
+        width: 100%;
+        }
+        #embedtarget {
+        height: 100%;
+        width: 100%;
+        margin: inherit;
+        }
+
+    </style>
+</head>
+<body>
+<div id="embedtarget"></div>
+
+<script>
+    if(!isMobile.any)
+    {
+        flambe.embed(["targets/main-html.js"], "embedtarget");
+    }
+    else
+    {
+        // Parameters to configure jsembed.
+        var params = {
+            base: "", // Set a base url of all app content. Defaults "".
+            api: "flambe", // supported custom apis are defined in jsembed. Defaults "none".
+            scaletype: "fill", // update window.canvasScale on window resize? Defaults "fit".
+            // Also supports "fill", "fillto" and "none."
+            indexroot: "true", // use the current index url as the path root?
+            //If false uses domain root instead. Defaults false (use domain root).
+            //allowtouchmove: "false", // allow the page to scroll when user drags or swipes? Defaults to false.
+           // maxwidth: 1024, //The maximum width to scale the canvas to. Only works with fillto.
+            //maxheight: 640, //The maximum height to scale the canvas to. Only works with fillto.
+            libs: ["flambe.js"] // array of libs to embed before trying to launch app.
+            //Defaults []. Libs will load from base url unless you set libsIgnoreBase: "true" param.
+        }
+
+        // Attributes will be set on the embed target for use by the app. "base" will be set as well.
+        var attr = {
+
+        };
+
+
+        jsembed.embed("targets/main-html.js", "embedtarget", "960", "560", params, attr);
+    }
+</script>
+
+</body>
+</html>

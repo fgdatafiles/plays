@@ -1,0 +1,458 @@
+{
+"skeleton": { "hash": "wdKUY8MvR6Rf2/hsiMe1mINb89k", "spine": "3.8.11-beta", "x": -715.46, "y": -401.83, "width": 1430.93, "height": 804.65 },
+"bones": [
+	{ "name": "root" },
+	{ "name": "DiamondBone", "parent": "root", "length": 200, "scaleX": 0.35, "scaleY": 0.35 },
+	{ "name": "TextBone", "parent": "DiamondBone", "length": 150, "rotation": 90 },
+	{ "name": "SunspotBone", "parent": "DiamondBone", "length": 150, "rotation": 90 },
+	{ "name": "BackWingRBone", "parent": "DiamondBone", "length": 400, "rotation": 41.16, "x": 122.63, "y": -90.37 },
+	{ "name": "FrontWingRBone", "parent": "BackWingRBone", "length": 254.71, "rotation": 15.29 },
+	{ "name": "BackWingLBone", "parent": "DiamondBone", "length": 400, "rotation": 137.8, "x": -122.63, "y": -90.37 },
+	{ "name": "FrontWingLBone", "parent": "BackWingLBone", "length": 254.71, "rotation": -16.01 }
+],
+"slots": [
+	{ "name": "Background", "bone": "root", "color": "ffffff00", "attachment": "Background" },
+	{ "name": "BackWingGlowL", "bone": "BackWingLBone", "color": "ffffff00", "attachment": "BackWingGlow" },
+	{ "name": "BackWingGlowR", "bone": "BackWingRBone", "color": "ffffff00", "attachment": "BackWingGlow" },
+	{ "name": "DiamondGlow", "bone": "DiamondBone", "color": "ffffff00", "attachment": "DiamondGlow" },
+	{ "name": "FrontWingGlowR", "bone": "FrontWingRBone", "color": "ffffff00", "attachment": "FrontWingGlow" },
+	{ "name": "FrontWingGlowL", "bone": "FrontWingLBone", "color": "ffffff00", "attachment": "FrontWingGlow" },
+	{ "name": "BackWingR", "bone": "BackWingRBone", "color": "ffffff00", "attachment": "BackWing" },
+	{ "name": "BackWingL", "bone": "BackWingLBone", "color": "ffffff00", "attachment": "BackWing" },
+	{ "name": "FrontWingR", "bone": "FrontWingRBone", "color": "ffffff00", "attachment": "FrontWing" },
+	{ "name": "FrontWingL", "bone": "FrontWingLBone", "color": "ffffff00", "attachment": "FrontWing" },
+	{ "name": "Diamond", "bone": "DiamondBone", "color": "ffffff00", "attachment": "Diamond" },
+	{ "name": "Sunspot", "bone": "SunspotBone", "color": "ffffff00", "attachment": "Sunspot" },
+	{ "name": "ChallengeLevel", "bone": "TextBone", "color": "ffffff00", "attachment": "ChallengeLevel" }
+],
+"skins": {
+	"default": {
+		"BackWingGlowL": {
+			"BackWingGlow": {
+				"x": 198.55,
+				"y": 17.53,
+				"scaleX": -2,
+				"scaleY": 2,
+				"rotation": -137.8,
+				"width": 183,
+				"height": 190
+			}
+		},
+		"BackWingGlowR": {
+			"BackWingGlow": {
+				"x": 198.83,
+				"y": -13.94,
+				"scaleX": 2,
+				"scaleY": 2,
+				"rotation": -41.16,
+				"width": 183,
+				"height": 190
+			}
+		},
+		"BackWingL": {
+			"BackWing": { "x": 199.99, "y": 18.17, "scaleX": -1, "rotation": -137.8, "width": 290, "height": 303 }
+		},
+		"BackWingR": {
+			"BackWing": { "x": 200.29, "y": -14.55, "rotation": -41.16, "width": 290, "height": 303 }
+		},
+		"Background": {
+			"Background": { "y": 0.5, "scaleX": 11, "scaleY": 11, "rotation": -0.07, "width": 130, "height": 73 }
+		},
+		"ChallengeLevel": {
+			"ChallengeLevel": { "x": -34.5, "y": 3, "rotation": -90, "width": 612, "height": 181 }
+		},
+		"Diamond": {
+			"Diamond": { "x": -7.5, "y": -5.5, "width": 443, "height": 443 }
+		},
+		"DiamondGlow": {
+			"DiamondGlow": { "x": -7.5, "y": 0.5, "scaleX": 2, "scaleY": 2, "width": 265, "height": 265 }
+		},
+		"FrontWingGlowL": {
+			"FrontWingGlow": {
+				"x": 131.08,
+				"y": 20.95,
+				"scaleX": -2,
+				"scaleY": 2,
+				"rotation": -121.79,
+				"width": 119,
+				"height": 156
+			}
+		},
+		"FrontWingGlowR": {
+			"FrontWingGlow": {
+				"x": 131.66,
+				"y": -16.92,
+				"scaleX": 2,
+				"scaleY": 2,
+				"rotation": -56.56,
+				"width": 119,
+				"height": 156
+			}
+		},
+		"FrontWingL": {
+			"FrontWing": { "x": 133.3, "y": 20.75, "scaleX": -1, "rotation": -121.79, "width": 159, "height": 238 }
+		},
+		"FrontWingR": {
+			"FrontWing": { "x": 133.88, "y": -16.64, "rotation": -56.45, "width": 159, "height": 238 }
+		},
+		"Sunspot": {
+			"Sunspot": { "x": 93, "y": 39.5, "rotation": -90, "width": 311, "height": 344 }
+		}
+	}
+},
+"animations": {
+	"ChallengeIntroAnim": {
+		"slots": {
+			"BackWingGlowL": {
+				"color": [
+					{ "time": 0.4333, "color": "ffffff00" },
+					{ "time": 0.7667, "color": "ffffffff" }
+				]
+			},
+			"BackWingGlowR": {
+				"color": [
+					{ "time": 0.4333, "color": "ffffff00" },
+					{ "time": 0.7667, "color": "ffffffff" }
+				]
+			},
+			"BackWingL": {
+				"color": [
+					{ "time": 0.4333, "color": "ffffff00" },
+					{ "time": 0.7667, "color": "ffffffff" }
+				]
+			},
+			"BackWingR": {
+				"color": [
+					{ "time": 0.4333, "color": "ffffff00" },
+					{ "time": 0.7667, "color": "ffffffff" }
+				]
+			},
+			"Background": {
+				"color": [
+					{ "time": 0, "color": "ffffff00" },
+					{ "time": 0.4, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 2.4, "color": "ffffffff" },
+					{ "time": 2.6, "color": "ffffff00" }
+				]
+			},
+			"ChallengeLevel": {
+				"color": [
+					{ "time": 0.4333, "color": "ffffff00" },
+					{ "time": 0.8333, "color": "ffffffff" }
+				]
+			},
+			"Diamond": {
+				"color": [
+					{ "time": 0.1667, "color": "ffffff00" },
+					{ "time": 0.5, "color": "ffffffff" }
+				]
+			},
+			"DiamondGlow": {
+				"color": [
+					{ "time": 0.2667, "color": "ffffff00" },
+					{ "time": 0.6333, "color": "ffffffff" }
+				]
+			},
+			"FrontWingGlowL": {
+				"color": [
+					{ "time": 0.4333, "color": "ffffff00" },
+					{ "time": 0.7667, "color": "ffffffff" }
+				]
+			},
+			"FrontWingGlowR": {
+				"color": [
+					{ "time": 0.4333, "color": "ffffff00" },
+					{ "time": 0.7667, "color": "ffffffff" }
+				]
+			},
+			"FrontWingL": {
+				"color": [
+					{ "time": 0.4333, "color": "ffffff00" },
+					{ "time": 0.7667, "color": "ffffffff" }
+				]
+			},
+			"FrontWingR": {
+				"color": [
+					{ "time": 0.4333, "color": "ffffff00" },
+					{ "time": 0.7667, "color": "ffffffff" }
+				]
+			},
+			"Sunspot": {
+				"color": [
+					{ "time": 0.4333, "color": "ffffff00" },
+					{ "time": 0.9333, "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"DiamondBone": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.3333,
+						"x": 0,
+						"y": -35,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.8, "x": 0, "y": 15, "curve": "stepped" },
+					{
+						"time": 0.9333,
+						"x": 0,
+						"y": 15,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.1667, "x": 0, "y": 0, "curve": "stepped" },
+					{
+						"time": 2,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.2333, "x": 0, "y": -20, "curve": "stepped" },
+					{
+						"time": 2.3667,
+						"x": 0,
+						"y": -20,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.7, "x": 0, "y": 661.03 }
+				],
+				"scale": [
+					{
+						"time": 0,
+						"x": 1,
+						"y": 1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.5667, "x": 2.914, "y": 2.914 },
+					{ "time": 1, "x": 2.857, "y": 2.857, "curve": "stepped" },
+					{ "time": 1.1667, "x": 2.857, "y": 2.857 }
+				]
+			},
+			"FrontWingRBone": {
+				"rotate": [
+					{ "time": 0, "angle": -14.86, "curve": "stepped" },
+					{
+						"time": 0.4333,
+						"angle": -14.86,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.9,
+						"angle": 10.79,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.2,
+						"angle": -1.79,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.3333, "angle": 0, "curve": "stepped" },
+					{
+						"time": 2,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.3333, "angle": 11.29, "curve": "stepped" },
+					{ "time": 2.3667, "angle": 11.29 },
+					{ "time": 2.6333, "angle": 0.71 }
+				]
+			},
+			"BackWingRBone": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": -41.16,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.4333,
+						"angle": -48.66,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.8333,
+						"angle": 8.82,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.0667,
+						"angle": -3,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.3, "angle": 0, "curve": "stepped" },
+					{
+						"time": 2,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.2667, "angle": 25.37, "curve": "stepped" },
+					{ "time": 2.3667, "angle": 25.37 },
+					{ "time": 2.5333, "angle": -58.16 }
+				],
+				"translate": [
+					{
+						"time": 2.3333,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.6667, "x": 0, "y": 77.28 }
+				]
+			},
+			"FrontWingLBone": {
+				"rotate": [
+					{ "time": 0, "angle": 16.01, "curve": "stepped" },
+					{
+						"time": 0.4333,
+						"angle": 16.01,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.9,
+						"angle": -10.06,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.2,
+						"angle": 2,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.3333, "angle": 0, "curve": "stepped" },
+					{
+						"time": 2,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.3333, "angle": -11.59, "curve": "stepped" },
+					{ "time": 2.3667, "angle": -11.59 },
+					{ "time": 2.6333, "angle": 0.01 }
+				]
+			},
+			"BackWingLBone": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 42.2,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.4333,
+						"angle": 49.7,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.8333,
+						"angle": -7.78,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.0667,
+						"angle": 3,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.3, "angle": 0, "curve": "stepped" },
+					{
+						"time": 2,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.2667, "angle": -25.91, "curve": "stepped" },
+					{ "time": 2.3667, "angle": -25.91 },
+					{ "time": 2.5333, "angle": 59.2 }
+				],
+				"translate": [
+					{ "time": 2.3333, "x": 0, "y": 0 },
+					{ "time": 2.5333, "x": 0, "y": 77.28 }
+				]
+			},
+			"TextBone": {
+				"translate": [
+					{
+						"time": 0.4333,
+						"x": 0,
+						"y": -35,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.9333,
+						"x": 0,
+						"y": 7.5,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.2333, "x": 0, "y": 0, "curve": "stepped" },
+					{
+						"time": 2,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.2, "x": 0, "y": -20, "curve": "stepped" },
+					{
+						"time": 2.2667,
+						"x": 0,
+						"y": -20,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.5, "x": 0, "y": 15 }
+				],
+				"scale": [
+					{
+						"time": 0.4333,
+						"x": 0.7,
+						"y": 0.7,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.8333,
+						"x": 1.1,
+						"y": 1.1,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.2333, "x": 1, "y": 1 }
+				]
+			},
+			"SunspotBone": {
+				"rotate": [
+					{ "time": 0, "angle": -5, "curve": "stepped" },
+					{
+						"time": 0.3333,
+						"angle": -5,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.8333,
+						"angle": 3,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.2333, "angle": 0 }
+				],
+				"translate": [
+					{
+						"time": 0.4333,
+						"x": 0,
+						"y": -50,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{
+						"time": 0.4333,
+						"x": 0.8,
+						"y": 0.8,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.8333, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.2333, "x": 1, "y": 1 }
+				]
+			}
+		}
+	}
+}
+}

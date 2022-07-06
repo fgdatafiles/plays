@@ -1,0 +1,126 @@
+{
+    "hierarchy": {
+        "name": "Canvas",
+        "children": [
+            {
+                "name": "score_container",
+                "children": [
+                    {
+                        "name": "score"
+                    }
+                ]
+            },
+            {
+                "name": "highscore_container",
+                "children": [
+                    {
+                        "name": "highscore"
+                    }
+                ]
+            },
+            {
+                "name": "home"
+            },
+            {
+                "name": "retry"
+            }
+        ]
+    },
+    "properties": {
+        "Canvas": {
+            "design": {
+                "width": 960,
+                "height": 640
+            },
+            "type": "canvas"
+        },
+        "score_container": {
+            "file": "scorebar.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "CENTER",
+                "offset": {
+                    "x": 0,
+                    "y": 84
+                }
+            }
+        },
+        "score_container/score": {
+            "font": {
+                "name": "chunqregular",
+                "fontSize": 40
+            },
+            "text": "20.000.000",
+            "align": "center",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "color": "#1b1b1b",
+            "type": "text"
+        },
+        "highscore_container": {
+            "file": "highscore.png",
+            "image": "SIMPLE",
+            "type": "sprite",
+            "alignment": {
+                "type": "CENTER",
+                "offset": {
+                    "x": -8.5,
+                    "y": 136
+                }
+            }
+        },
+        "highscore_container/highscore": {
+            "font": {
+                "name": "chunqregular",
+                "fontSize": 20
+            },
+            "text": "20.000.000",
+            "align": "center",
+            "position": {
+                "x": 16.9,
+                "y": -1.9
+            },
+            "color": "#1b1b1b",
+            "type": "text"
+        },
+        "home": {
+            "file": "mainmenubtn.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "mainmenubtn.png",
+                "pressed": "mainmenubtngray.png",
+                "hover": "mainmenubtn.png"
+            },
+            "type": "button",
+            "alignment": {
+                "type": "CENTER",
+                "offset": {
+                    "x": -100,
+                    "y": 226
+                }
+            }
+        },
+        "retry": {
+            "file": "restartbtn.png",
+            "image": "SIMPLE",
+            "transitionMode": "image",
+            "transition": {
+                "normal": "restartbtn.png",
+                "pressed": "restartbtngray.png",
+                "hover": "restartbtn.png"
+            },
+            "type": "button",
+            "alignment": {
+                "type": "CENTER",
+                "offset": {
+                    "x": 64,
+                    "y": 245
+                }
+            }
+        }
+    }
+}

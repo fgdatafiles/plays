@@ -1,0 +1,628 @@
+{
+"skeleton": { "hash": "yMCBUi+KFWU45jN1xt9Y2EbAotA", "spine": "3.2.01", "width": 296, "height": 479.49, "images": "./images/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone_hips", "parent": "root", "x": 1.78, "y": 162.21 },
+	{ "name": "bone_torso", "parent": "bone_hips", "length": 82.21, "rotation": 91.57, "x": 1.5, "y": 6.03 },
+	{ "name": "bone_shoulder_l", "parent": "bone_torso", "length": 42.28, "rotation": 119.56, "x": 74.32, "y": 14.54 },
+	{ "name": "bone_arm_l", "parent": "bone_shoulder_l", "length": 43.96, "rotation": 53.15, "x": 42.28 },
+	{ "name": "bone_shoulder_r", "parent": "bone_torso", "length": 45.39, "rotation": -129.34, "x": 75.03, "y": -14.13 },
+	{ "name": "bone_arm_r", "parent": "bone_shoulder_r", "length": 36.47, "rotation": -45.23, "x": 45.29, "y": -3.06 },
+	{ "name": "bone_head", "parent": "bone_torso", "length": 216.39, "rotation": -1.37, "x": 82.21 },
+	{ "name": "bone_eyes", "parent": "bone_head", "x": 70.93, "y": 17.84 },
+	{ "name": "constraint_foot_l", "parent": "root", "x": -20.79, "y": 6.54, "color": "ff3f00ff" },
+	{ "name": "bone_thigh_l", "parent": "bone_hips", "length": 75.85, "rotation": -97.44, "x": -10.55, "y": 3.01 },
+	{ "name": "bone_leg_l", "parent": "bone_thigh_l", "length": 83.91, "rotation": 5.01, "x": 76.03, "y": 0.05 },
+	{ "name": "constraint_toe_l", "parent": "root", "x": -68.43, "y": -0.59, "color": "ff3f00ff" },
+	{ "name": "bone_foot_l", "parent": "bone_leg_l", "length": 37.32, "rotation": -79.43, "x": 83.81, "y": -0.96 },
+	{ "name": "constraint_foot_r", "parent": "root", "x": 29.22, "y": 6.54, "color": "ff3f00ff" },
+	{ "name": "bone_thigh_r", "parent": "bone_hips", "length": 76.45, "rotation": -81.02, "x": 9.8, "y": 2.26 },
+	{ "name": "bone_leg_r", "parent": "bone_thigh_r", "length": 84.93, "rotation": -6.17, "x": 75.61, "y": 0.27 },
+	{ "name": "constraint_toe_r", "parent": "root", "x": 69.72, "y": -0.59, "color": "ff3f00ff" },
+	{ "name": "bone_foot_r", "parent": "bone_leg_r", "length": 34.97, "rotation": 79.77, "x": 83.88, "y": 1.93 },
+	{ "name": "bone_hand_l", "parent": "bone_arm_l", "length": 21.91, "rotation": 1.76, "x": 43.96, "y": -0.14 },
+	{ "name": "bone_hand_r", "parent": "bone_arm_r", "length": 21.87, "rotation": -5.02, "x": 38.71, "y": -0.19 },
+	{ "name": "bone_keys", "parent": "root", "x": 1.02, "y": 121.88 },
+	{ "name": "bone_mouth", "parent": "bone_head", "x": 28.69, "y": 13.47 }
+],
+"ik": [
+	{
+		"name": "constraint_foot_l",
+		"bones": [ "bone_thigh_l", "bone_leg_l" ],
+		"target": "constraint_foot_l"
+	},
+	{
+		"name": "constraint_foot_r",
+		"bones": [ "bone_thigh_r", "bone_leg_r" ],
+		"target": "constraint_foot_r",
+		"bendPositive": false
+	},
+	{
+		"name": "constraint_toe_l",
+		"bones": [ "bone_foot_l" ],
+		"target": "constraint_toe_l"
+	},
+	{
+		"name": "constraint_toe_r",
+		"bones": [ "bone_foot_r" ],
+		"target": "constraint_toe_r"
+	}
+],
+"slots": [
+	{ "name": "leg_l", "bone": "bone_leg_l", "attachment": "leg_l" },
+	{ "name": "thigh_l", "bone": "bone_thigh_l", "attachment": "thigh_l" },
+	{ "name": "leg_r", "bone": "bone_leg_r", "attachment": "leg_r" },
+	{ "name": "thigh_r", "bone": "bone_thigh_r", "attachment": "thigh_r" },
+	{ "name": "foot_l", "bone": "bone_foot_l", "attachment": "foot_l" },
+	{ "name": "foot_r", "bone": "bone_foot_r", "attachment": "foot_r" },
+	{ "name": "hips", "bone": "bone_hips", "attachment": "hips" },
+	{ "name": "shoulder_l", "bone": "bone_shoulder_l", "attachment": "shoulder_l" },
+	{ "name": "shoulder_r", "bone": "bone_shoulder_r", "attachment": "shoulder_r" },
+	{ "name": "torso", "bone": "bone_torso", "attachment": "torso" },
+	{ "name": "keys1", "bone": "bone_keys", "attachment": "keys3" },
+	{ "name": "hand_l", "bone": "bone_hand_l", "attachment": "hand_l" },
+	{ "name": "arm_l", "bone": "bone_arm_l", "attachment": "arm_l" },
+	{ "name": "hand_r", "bone": "bone_hand_r", "attachment": "hand_r" },
+	{ "name": "arm_r", "bone": "bone_arm_r", "attachment": "arm_r" },
+	{ "name": "head", "bone": "bone_head", "attachment": "head" },
+	{ "name": "mouth_closed", "bone": "bone_mouth", "attachment": "mouth_open" },
+	{ "name": "eyes_closed", "bone": "bone_eyes", "attachment": "eyes_open" }
+],
+"skins": {
+	"default": {
+		"arm_l": {
+			"arm_l": { "x": 21.55, "y": 0.62, "rotation": 84.75, "width": 25, "height": 52 }
+		},
+		"arm_r": {
+			"arm_r": { "x": 15.4, "y": -1.37, "rotation": 94.95, "width": 26, "height": 53 }
+		},
+		"eyes_closed": {
+			"eyes_closed": { "x": 4.19, "y": -3.09, "rotation": -90.19, "width": 160, "height": 26 },
+			"eyes_open": { "x": 7.2, "y": -0.6, "rotation": -90.19, "width": 147, "height": 50 }
+		},
+		"foot_l": {
+			"foot_l": { "x": 12.58, "y": -7.89, "rotation": 171.86, "width": 53, "height": 24 }
+		},
+		"foot_r": {
+			"foot_r": { "x": 10.39, "y": 7.82, "rotation": 7.43, "width": 52, "height": 24 }
+		},
+		"hand_l": {
+			"hand_l": { "x": 11.87, "y": 2.78, "rotation": 84.23, "width": 34, "height": 33 }
+		},
+		"hand_r": {
+			"hand_r": { "x": 12.13, "y": -3.9, "rotation": 88.02, "width": 34, "height": 33 }
+		},
+		"head": {
+			"head": { "x": 111.6, "y": 6.13, "rotation": -90.19, "width": 257, "height": 223 }
+		},
+		"hips": {
+			"hips": { "x": -1.77, "y": -3.7, "width": 27, "height": 22 }
+		},
+		"keys1": {
+			"keys1": { "x": -0.8, "y": -40.85, "width": 296, "height": 174 },
+			"keys2": { "x": -0.8, "y": -40.85, "width": 296, "height": 174 },
+			"keys3": { "x": -0.8, "y": -40.85, "width": 296, "height": 174 }
+		},
+		"leg_l": {
+			"leg_l": { "x": 35.58, "y": -5.4, "rotation": 92.43, "width": 37, "height": 96 }
+		},
+		"leg_r": {
+			"leg_r": { "x": 35.45, "y": 2.91, "rotation": 87.2, "width": 35, "height": 92 }
+		},
+		"mouth_closed": {
+			"mouth_closed": { "x": 7.92, "y": -0.58, "rotation": -90.19, "width": 48, "height": 11 },
+			"mouth_open": { "x": 2.22, "y": 1.43, "rotation": -90.19, "width": 60, "height": 26 }
+		},
+		"shoulder_l": {
+			"shoulder_l": { "x": 26.89, "y": -0.33, "rotation": 148.86, "width": 45, "height": 34 }
+		},
+		"shoulder_r": {
+			"shoulder_r": { "x": 23.45, "y": -0.63, "rotation": 42.67, "width": 47, "height": 45 }
+		},
+		"thigh_l": {
+			"thigh_l": { "x": 36.35, "y": -2.52, "rotation": 97.44, "width": 26, "height": 84 }
+		},
+		"thigh_r": {
+			"thigh_r": { "x": 36.03, "y": 0.82, "rotation": 81.02, "width": 29, "height": 87 }
+		},
+		"torso": {
+			"torso": { "x": 32.28, "y": 0.39, "rotation": -91.57, "width": 66, "height": 122 }
+		}
+	}
+},
+"animations": {
+	"idle": {
+		"slots": {
+			"mouth_closed": {
+				"attachment": [
+					{ "time": 0, "name": "mouth_closed" },
+					{ "time": 1.6, "name": "mouth_closed" }
+				]
+			}
+		},
+		"bones": {
+			"bone_shoulder_l": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 28.13,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1,
+						"angle": 24.73,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.6, "angle": 28.13 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 1, "x": 2.38, "y": -0.06 },
+					{ "time": 1.6, "x": 0, "y": 0 }
+				]
+			},
+			"bone_arm_l": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": -13.06,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.8333,
+						"angle": -12.89,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.6, "angle": -13.06 }
+				]
+			},
+			"bone_shoulder_r": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": -13.89,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1,
+						"angle": -13.17,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.6, "angle": -13.89 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0 },
+					{ "time": 1, "x": 2.38, "y": -0.06 },
+					{ "time": 1.6, "x": 0, "y": 0 }
+				]
+			},
+			"bone_hips": {
+				"translate": [
+					{
+						"time": 0,
+						"x": -1.19,
+						"y": -3.57,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.8333,
+						"x": -1.19,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.6, "x": -1.19, "y": -3.57 }
+				]
+			},
+			"bone_arm_r": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.8333,
+						"angle": 5.25,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.6, "angle": 0 }
+				]
+			},
+			"bone_head": {
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.3666,
+						"x": -0.93,
+						"y": 0.19,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1,
+						"x": 1.17,
+						"y": -0.43,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.6, "x": 0, "y": 0 }
+				]
+			}
+		},
+		"drawOrder": [
+			{
+				"time": 0,
+				"offsets": [
+					{ "slot": "keys1", "offset": 4 },
+					{ "slot": "hand_l", "offset": 2 },
+					{ "slot": "arm_l", "offset": 0 },
+					{ "slot": "hand_r", "offset": -2 }
+				]
+			},
+			{
+				"time": 1.6,
+				"offsets": [
+					{ "slot": "keys1", "offset": 4 },
+					{ "slot": "hand_l", "offset": 2 },
+					{ "slot": "arm_l", "offset": 0 },
+					{ "slot": "hand_r", "offset": -2 }
+				]
+			}
+		]
+	},
+	"playing": {
+		"bones": {
+			"bone_keys": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.6666, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.3333, "x": 0, "y": 0 }
+				]
+			},
+			"root": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.6666, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.3333, "x": 0, "y": 0 }
+				]
+			},
+			"bone_hips": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": -3.3,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.3333,
+						"angle": 1.01,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.6666,
+						"angle": -3.3,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1,
+						"angle": -7.87,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.3333, "angle": -3.3 }
+				],
+				"translate": [
+					{
+						"time": 0,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.3333,
+						"x": -2.38,
+						"y": -14.29,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.6666,
+						"x": 0,
+						"y": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1,
+						"x": -2.38,
+						"y": -14.29,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.3333, "x": 0, "y": 0 }
+				]
+			},
+			"bone_torso": {
+				"rotate": [
+					{ "time": 0, "angle": -2.24, "curve": "stepped" },
+					{ "time": 1.3333, "angle": -2.24 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.3333, "x": 0, "y": 0 }
+				]
+			},
+			"bone_head": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.5,
+						"angle": 17.37,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.1666,
+						"angle": -2.47,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.3333, "angle": 0 }
+				],
+				"translate": [
+					{ "time": 0, "x": 2.37, "y": 0.16, "curve": "stepped" },
+					{ "time": 1.3333, "x": 2.37, "y": 0.16 }
+				]
+			},
+			"bone_shoulder_l": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 2.09,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.1666,
+						"angle": -27.35,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.3333,
+						"angle": 2.09,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.4, "angle": -27.35 },
+					{ "time": 0.4666, "angle": 2.09 },
+					{ "time": 0.7666, "angle": -27.35 },
+					{
+						"time": 0.9333,
+						"angle": 2.09,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1,
+						"angle": -27.35,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.0666, "angle": 2.09 },
+					{ "time": 1.2666, "angle": -27.35 },
+					{ "time": 1.3333, "angle": 2.09 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.3333, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.4666, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.9333, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.0666, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.3333, "x": 0, "y": 0 }
+				]
+			},
+			"bone_arm_l": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 7.18,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.1666,
+						"angle": 35.84,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.3333,
+						"angle": 7.18,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.4, "angle": 35.84 },
+					{ "time": 0.4666, "angle": 7.18 },
+					{ "time": 0.7666, "angle": 35.84 },
+					{
+						"time": 0.9333,
+						"angle": 7.18,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1,
+						"angle": 35.84,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.0666, "angle": 7.18 },
+					{ "time": 1.2666, "angle": 35.84 },
+					{ "time": 1.3333, "angle": 7.18 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.3333, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.4666, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.9333, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.0666, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.3333, "x": 0, "y": 0 }
+				]
+			},
+			"bone_shoulder_r": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": -26.9,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.3333,
+						"angle": 37.26,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.4, "angle": 2.37 },
+					{ "time": 0.4666, "angle": 37.26 },
+					{ "time": 0.5333, "angle": 2.37 },
+					{ "time": 1.0333, "angle": -19.9 },
+					{ "time": 1.3333, "angle": -26.9 }
+				],
+				"translate": [
+					{ "time": 0, "x": 6.02, "y": -0.77, "curve": "stepped" },
+					{ "time": 1.3333, "x": 6.02, "y": -0.77 }
+				]
+			},
+			"bone_arm_r": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": -33.57,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.3333,
+						"angle": -55.73,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.4, "angle": -8.05 },
+					{ "time": 0.4666, "angle": -55.73 },
+					{ "time": 0.5333, "angle": -8.05 },
+					{ "time": 0.8333, "angle": -68.2 },
+					{ "time": 0.9666, "angle": -33.57 },
+					{ "time": 1.0333, "angle": -72.18 },
+					{ "time": 1.1, "angle": -33.57, "curve": "stepped" },
+					{ "time": 1.2666, "angle": -33.57, "curve": "stepped" },
+					{ "time": 1.3333, "angle": -33.57 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.3333, "x": 0, "y": 0 }
+				]
+			},
+			"bone_hand_l": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.6666, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.3333, "x": 0, "y": 0 }
+				]
+			},
+			"bone_hand_r": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 51.58,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 0.3333, "angle": 35.79, "curve": "stepped" },
+					{ "time": 0.4666, "angle": 35.79 },
+					{ "time": 0.8333, "angle": 72.31 },
+					{ "time": 0.9666, "angle": 62.06 },
+					{ "time": 1.0333, "angle": 90.48 },
+					{ "time": 1.2666, "angle": 51.58, "curve": "stepped" },
+					{ "time": 1.3333, "angle": 51.58 }
+				],
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.3333, "x": 0, "y": 0 }
+				]
+			},
+			"constraint_foot_l": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.6666, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.3333, "x": 0, "y": 0 }
+				]
+			},
+			"bone_thigh_l": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.6666, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.3333, "x": 0, "y": 0 }
+				]
+			},
+			"bone_leg_l": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.6666, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.3333, "x": 0, "y": 0 }
+				]
+			},
+			"constraint_toe_l": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.6666, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.3333, "x": 0, "y": 0 }
+				]
+			},
+			"bone_foot_l": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.6666, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.3333, "x": 0, "y": 0 }
+				]
+			},
+			"constraint_foot_r": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.6666, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.3333, "x": 0, "y": 0 }
+				]
+			},
+			"bone_thigh_r": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.6666, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.3333, "x": 0, "y": 0 }
+				]
+			},
+			"bone_leg_r": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.6666, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.3333, "x": 0, "y": 0 }
+				]
+			},
+			"constraint_toe_r": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.6666, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.3333, "x": 0, "y": 0 }
+				]
+			},
+			"bone_foot_r": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.6666, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.3333, "x": 0, "y": 0 }
+				]
+			},
+			"bone_eyes": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.6666, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.3333, "x": 0, "y": 0 }
+				]
+			},
+			"bone_mouth": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.6666, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 1.3333, "x": 0, "y": 0 }
+				]
+			}
+		}
+	}
+}
+}

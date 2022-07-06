@@ -1,0 +1,282 @@
+{
+  "game": {
+    "start_at_level": 1,
+    "lives_to_start": 1,
+    "npc_view_distance": 6,
+    "npc_phonefriend_distance": 6,
+    "npc_distraction_duration": 10000,
+    "npc_view_angle": 45
+  },
+  "game_levels": [
+    {
+      "intro_message": "game_intro",
+      "intro_cutscene": "GnasherIntro",
+      "dennis_move_speed": 1000,
+      "spritesheet": "level_assets_1",
+      "time_limit": 30,
+      "target_to_collect": 50,
+      "collect_type": "PAPER",
+      "available_friends": [],
+      "edge_right": {
+        "tiles": ["level_edge_right_01"],
+        "decorations": [],
+        "flip_x": false,
+        "offset": { "x": -10, "y": 0 },
+        "anchor": { "x": 0, "y": 0 }
+      },
+      "edge_left": {
+        "tiles": ["level_edge_01", "level_edge_02", "level_edge_03"],
+        "decorations": [],
+        "flip_x": false,
+        "offset": { "x": -30, "y": 180 },
+        "anchor": { "x": 0, "y": 0 }
+      },
+      "road_tiles": ["level_road_tile"],
+      "hazards": [
+        { "frame": "level_hazard_01", "type": "LIQUID" },
+        { "frame": "level_hazard_02", "type": "LIQUID" },
+        { "frame": "level_hazard_03", "type": "SOLID" },
+        { "frame": "level_hazard_04", "type": "SOLID" }
+      ],
+      "map_config": {
+        "collectable_chain": 6,
+        "collectable_spacing": 0,
+        "hazard_spacing": 10
+      }
+    },
+    {
+      "dennis_move_speed": 1100,
+      "spritesheet": "level_assets_1",
+      "time_limit": 45,
+      "target_to_collect": 75,
+      "collect_type": "PAPER",
+      "unlocked_friends": "RUBI",
+      "available_friends": ["RUBI"],
+      "edge_right": {
+        "tiles": ["level_edge_right_01"],
+        "decorations": [],
+        "flip_x": false,
+        "offset": { "x": -10, "y": 0 },
+        "anchor": { "x": 0, "y": 0 }
+      },
+      "edge_left": {
+        "tiles": ["level_edge_01", "level_edge_02", "level_edge_03"],
+        "decorations": [],
+        "flip_x": false,
+        "offset": { "x": -30, "y": 180 },
+        "anchor": { "x": 0, "y": 0 }
+      },
+      "road_tiles": ["level_road_tile"],
+      "hazards": [
+        { "frame": "level_hazard_01", "type": "LIQUID" },
+        { "frame": "level_hazard_02", "type": "LIQUID" },
+        { "frame": "level_hazard_03", "type": "SOLID" },
+        { "frame": "level_hazard_04", "type": "SOLID" }
+      ],
+      "map_config": {
+        "collectable_chain": 5,
+        "collectable_spacing": 1,
+        "hazard_spacing": 9
+      }
+    },
+    {
+      "dennis_move_speed": 1200,
+      "spritesheet": "level_assets_2",
+      "time_limit": 60,
+      "target_to_collect": 100,
+      "collect_type": "PAPER",
+      "unlocked_friends": "ROBOTDOG",
+      "available_friends": ["RUBI", "ROBOTDOG"],
+      "edge_right": {
+        "tiles": ["level_edge_01", "level_edge_01", "level_edge_01"],
+        "decorations": [],
+        "flip_x": true,
+        "offset": { "x": -20, "y": 0 },
+        "anchor": { "x": 0, "y": 0 }
+      },
+      "edge_left": {
+        "tiles": ["level_edge_01", "level_edge_01", "level_edge_01"],
+        "decorations": [],
+        "flip_x": false,
+        "offset": { "x": -80, "y": 0 },
+        "anchor": { "x": 0, "y": 0 }
+      },
+      "road_tiles": ["level_road_tile"],
+      "hazards": [
+        { "frame": "level_hazard_01", "type": "SOLID" },
+        { "frame": "level_hazard_02", "type": "SOLID" },
+        { "frame": "level_hazard_03", "type": "SOLID" },
+        { "frame": "level_hazard_04", "type": "SOLID" }
+      ],
+      "map_config": {
+        "collectable_chain": 4,
+        "collectable_spacing": 2,
+        "hazard_spacing": 8
+      }
+    },
+    {
+      "dennis_move_speed": 1300,
+      "spritesheet": "level_assets_3",
+      "time_limit": 75,
+      "target_to_collect": 100,
+      "collect_type": "PAPER",
+      "unlocked_friends": "GNIPPER",
+      "available_friends": ["RUBI", "ROBOTDOG", "GNIPPER"],
+      "edge_right": {
+        "tiles": ["level_edge_01"],
+        "decorations": ["level_decoration_01", "level_decoration_02", "level_decoration_03"],
+        "flip_x": true,
+        "offset": { "x": 0, "y": 0 },
+        "anchor": { "x": 0, "y": 0 }
+      },
+      "edge_left": {
+        "tiles": ["level_edge_01"],
+        "decorations": ["level_decoration_01", "level_decoration_02", "level_decoration_03"],
+        "flip_x": false,
+        "offset": { "x": 0, "y": 0 },
+        "anchor": { "x": 0, "y": 0 }
+      },
+      "road_tiles": ["level_road_tile"],
+      "hazards": [
+        { "frame": "level_hazard_01", "type": "SOLID" },
+        { "frame": "level_hazard_02", "type": "LIQUID" },
+        { "frame": "level_hazard_03", "type": "SOLID" },
+        { "frame": "level_hazard_04", "type": "LIQUID" }
+      ],
+      "map_config": {
+        "collectable_chain": 3,
+        "collectable_spacing": 2,
+        "hazard_spacing": 7
+      }
+    },
+    {
+      "dennis_move_speed": 1400,
+      "intro_cutscene": "ButchersVan",
+      "intro_message": "butchers_van",
+      "spritesheet": "level_assets_4",
+      "time_limit": 75,
+      "target_to_collect": 0,
+      "collect_type": "SAUSAGE",
+      "unlocked_friends": "GNASHER",
+      "available_friends": ["RUBI", "ROBOTDOG", "GNIPPER", "GNASHER"],
+      "edge_right": {
+        "tiles": ["level_edge_01"],
+        "decorations": ["level_decoration_01", "level_decoration_02", "level_decoration_03", "level_decoration_04"],
+        "flip_x": true,
+        "offset": { "x": 0, "y": 0 },
+        "anchor": { "x": 0, "y": 0 }
+      },
+      "edge_left": {
+        "tiles": ["level_edge_01"],
+        "decorations": ["level_decoration_01", "level_decoration_02", "level_decoration_03", "level_decoration_04"],
+        "flip_x": false,
+        "offset": { "x": 0, "y": 0 },
+        "anchor": { "x": 0, "y": 0 }
+      },
+      "road_tiles": ["level_road_tile"],
+      "hazards": [
+        { "frame": "level_hazard_01", "type": "SOLID" },
+        { "frame": "level_hazard_02", "type": "SOLID" },
+        { "frame": "level_hazard_03", "type": "LIQUID" },
+        { "frame": "level_hazard_04", "type": "LIQUID" }
+      ],
+      "map_config": {
+        "collectable_chain": 4,
+        "collectable_spacing": 2,
+        "hazard_spacing": 6
+      }
+    }
+  ],
+
+  "audio": ["title_music"],
+  "audioSprites": ["games_sfx_base"],
+  "screenhud": {
+    "help": {
+      "id": "btn_help",
+      "skin": "btn_help",
+      "position": { "grouped": true, "id": "TOP_LEFT" },
+      "ariaLabelID": "ariaLabelHud_instructions"
+    },
+    "sound": {
+      "id": "btn_sound",
+      "position": { "grouped": true, "id": "TOP_RIGHT" },
+      "ariaLabelID": "ariaLabelHud_togglesound",
+      "skins": {
+        "unmuted": "btn_sound_on",
+        "muted": "btn_sound_off"
+      }
+    },
+    "play": {
+      "position": { "grouped": false, "x": 0.7, "y": 0.65 },
+      "id": "btn_play",
+      "skin": "btn_play",
+      "ariaLabelID": "ariaLabelHud_new_game"
+    },
+    "pause": {
+      "id": "btn_pause",
+      "skin": "btn_pause",
+      "position": { "grouped": true, "id": "TOP_LEFT" },
+      "ariaLabelID": "ariaLabelHud_pause"
+    },
+    "paused_continue": {
+      "position": { "grouped": false, "x": 0.51, "y": 0.38 },
+      "id": "btn_paused_continue",
+      "skin": "btn_continue",
+      "ariaLabelID": "ariaLabelHud_continue"
+    },
+    "paused_restart": {
+      "position": { "grouped": false, "x": 0.51, "y": 0.6 },
+      "id": "btn_paused_restart",
+      "skin": "btn_restart",
+      "ariaLabelID": "ariaLabelHud_restart"
+    },
+    "paused_credits": {
+      "position": { "grouped": false, "x": 0.51, "y": 0.8 },
+      "id": "btn_paused_credits",
+      "skin": "btn_credits",
+      "ariaLabelID": "ariaLabelHud_credits"
+    },
+    "home": {
+      "id": "btn_home",
+      "skin": "btn_home",
+      "position": { "grouped": true, "id": "TOP_LEFT" },
+      "ariaLabelID": "ariaLabelHud_home"
+    },
+    "levelend_continue": {
+      "position": { "grouped": false, "x": 0.51, "y": 0.84 },
+      "id": "btn_levelend_continue",
+      "skin": "btn_levelend_continue",
+      "ariaLabelID": "ariaLabelHud_continue"
+    },
+    "gameend_restart": {
+      "position": { "grouped": false, "x": 0.5, "y": 0.84 },
+      "id": "btn_home",
+      "skin": "btn_continue",
+      "ariaLabelID": "ariaLabelHud_restart"
+    }
+  },
+  "buttons": {
+    "instructionsClose": {
+      "id": "btn_levelend_continue",
+      "skin": "btn_levelend_continue",
+      "ariaLabelID": "ariaLabelHud_continue"
+    },
+    "creditsBack": {
+      "id": "btn_credits_back",
+      "skin": "btn_credits_back",
+      "ariaLabelID": "ariaLabelHud_back"
+    }
+  },
+  "intro_messages": {
+    "game_intro": {
+      "title": "FREESAUSAGES",
+      "copy": "game_intro_copy",
+      "image": { "spritesheet": "modal_characters", "frame": "modal_char_intro" }
+    },
+    "butchers_van": {
+      "title": "YOUFOUNDGNASHER",
+      "copy": "butchers_van_intro",
+      "image": { "spritesheet": "modal_characters", "frame": "modal_char_intro" }
+    }
+  }
+}

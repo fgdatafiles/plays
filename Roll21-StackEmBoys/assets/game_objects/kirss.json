@@ -1,0 +1,79 @@
+{
+    "hierarchy": {
+        "name": "kirss",
+        "children": [
+            {
+                "name": "base",
+                "children": [
+                    {
+                        "name": "fire1"
+                    },
+                    {
+                        "name": "fire2"
+                    },
+                    {
+                        "name": "body"
+                    }
+                ]
+            },
+            {
+                "name": "shadow"
+            }
+        ],
+        "animations": [
+            "kriss_stand"
+        ]
+    },
+    "properties": {
+        "base": {
+            "position": {
+                "x": -40,
+                "y": -198
+            },
+            "type": "container"
+        },
+        "base/fire1": {
+            "file": "fire7.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 57.7,
+                "y": 22.7
+            },
+            "angle": -34,
+            "type": "sprite"
+        },
+        "base/fire2": {
+            "file": "fire8.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -8.3,
+                "y": 45.6
+            },
+            "angle": -34,
+            "type": "sprite"
+        },
+        "base/body": {
+            "file": "kriss.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": -5.1,
+                "y": -16.2
+            },
+            "type": "sprite"
+        },
+        "shadow": {
+            "file": "shadow.png",
+            "image": "SIMPLE",
+            "position": {
+                "x": 4.1,
+                "y": 2.2
+            },
+            "angle": -5,
+            "scale": {
+                "x": 1.4,
+                "y": 1.3
+            },
+            "type": "sprite"
+        }
+    }
+}
