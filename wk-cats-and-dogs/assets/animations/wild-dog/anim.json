@@ -1,0 +1,1909 @@
+{
+"skeleton": {
+	"hash": "xjzmsFsLjrwvr2U3kikPOXpuluA",
+	"spine": "3.8.99",
+	"x": -713.14,
+	"y": -25.32,
+	"width": 1339.86,
+	"height": 1636.51,
+	"images": "./images/",
+	"audio": "/Users/alangorringe/Documents/SVN/WLD - 4.1 (Season6Game)/Assets/Animation/Working Files/Wild Dog"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "Dog Back", "parent": "root", "length": 729.14, "rotation": -12.69, "x": -361.45, "y": 1000.93 },
+	{ "name": "Dog Upper Leg BR", "parent": "Dog Back", "length": 317.84, "rotation": -75.35, "x": 4.39, "y": -93.63 },
+	{ "name": "Dog Mid Leg BR", "parent": "Dog Upper Leg BR", "length": 341.55, "rotation": -38.55, "x": 320.65, "y": 2.62 },
+	{ "name": "Dog Lower Leg BR", "parent": "Dog Mid Leg BR", "length": 277.14, "rotation": 38.84, "x": 341.55 },
+	{ "name": "Dog Foot Back R", "parent": "Dog Lower Leg BR", "length": 130.32, "rotation": 87.75, "x": 277.14 },
+	{ "name": "Dog Back2", "parent": "Dog Back", "length": 97.27, "rotation": -115.97, "x": -92.77, "y": -14.19 },
+	{ "name": "Dog Back3", "parent": "Dog Back2", "length": 131.83, "rotation": 15.86, "x": 97.27 },
+	{ "name": "Dog Back4", "parent": "Dog Back3", "length": 145.5, "rotation": 6.26, "x": 131.83 },
+	{ "name": "Dog Back5", "parent": "Dog Back4", "length": 170.96, "rotation": 10.05, "x": 145.11, "y": 1.32 },
+	{ "name": "Dog Back6", "parent": "Dog Back5", "length": 172.71, "rotation": 8.33, "x": 170.96 },
+	{ "name": "Dog Leg Upper BL", "parent": "Dog Back", "length": 355.09, "rotation": -84.68, "x": 246.85, "y": 24.07 },
+	{ "name": "Dog Leg Middle BL", "parent": "Dog Leg Upper BL", "length": 329.4, "rotation": -26.52, "x": 357.65, "y": 1.72 },
+	{ "name": "Dog Leg Lower BL", "parent": "Dog Leg Middle BL", "length": 295.54, "rotation": 33.62, "x": 330.94, "y": -2.29 },
+	{ "name": "Dog Foot BL", "parent": "Dog Leg Lower BL", "length": 132.6, "rotation": 91.46, "x": 295.54 },
+	{ "name": "Dog Neck", "parent": "Dog Back", "length": 503.85, "rotation": 75.86, "x": 561.16, "y": -88.23 },
+	{ "name": "Dog Head", "parent": "Dog Neck", "length": 279.73, "rotation": -113.23, "x": 503.26, "y": 1.15 },
+	{ "name": "Dog Leg Upper FR", "parent": "Dog Back", "length": 357.31, "rotation": -87.73, "x": 567.45, "y": 19.13 },
+	{ "name": "Dog Leg Middle FR", "parent": "Dog Leg Upper FR", "length": 404.83, "rotation": 18.55, "x": 356.1, "y": -0.22 },
+	{ "name": "Dog Leg Lower FR", "parent": "Dog Leg Middle FR", "length": 142.52, "rotation": 10.49, "x": 404.83 },
+	{ "name": "Dog Foot FR", "parent": "Dog Leg Lower FR", "length": 105.71, "rotation": 70.58, "x": 142.52 },
+	{ "name": "Dog Leg Upper FL", "parent": "Dog Back", "length": 322.28, "rotation": -85.44, "x": 733.63, "y": 62.91 },
+	{ "name": "Dog Leg Middle FL", "parent": "Dog Leg Upper FL", "length": 402.37, "rotation": 15.02, "x": 322.28 },
+	{ "name": "Dog Leg Lower FL", "parent": "Dog Leg Middle FL", "length": 135.91, "rotation": 15.12, "x": 402.05, "y": -2.66 },
+	{ "name": "Dog Foot FL", "parent": "Dog Leg Lower FL", "length": 93.87, "rotation": 66.35, "x": 135.91 },
+	{ "name": "FR IK", "parent": "root", "x": 229.86, "y": 8.47, "color": "ff3f00ff" },
+	{ "name": "FL Leg Low IK", "parent": "root", "x": 419.7, "y": 55.93, "color": "ff3f00ff" },
+	{ "name": "FL Foot IK", "parent": "root", "x": 510.55, "y": 49.15, "color": "ff3f00ff" },
+	{ "name": "FR Foot IK", "parent": "root", "x": 334.27, "y": 5.76, "color": "ff3f00ff" },
+	{ "name": "BL LEG LOW IK", "parent": "root", "x": -349.15, "y": 46.44, "color": "ff3f00ff" },
+	{ "name": "BL Foot IK", "parent": "root", "x": -214.91, "y": 45.08, "color": "ff3f00ff" },
+	{ "name": "BR Leg Low IK", "parent": "root", "x": -555.27, "y": 38.3, "color": "ff3f00ff" },
+	{ "name": "BR Foot IK", "parent": "root", "x": -426.45, "y": 38.3, "color": "ff3f00ff" }
+],
+"slots": [
+	{ "name": "BG", "bone": "root" },
+	{ "name": "reference2", "bone": "root" },
+	{ "name": "dog-foot-back-L", "bone": "Dog Foot BL", "attachment": "dog-foot-back-L" },
+	{ "name": "dog-leg-backL", "bone": "Dog Leg Lower BL", "attachment": "dog-leg-backL" },
+	{ "name": "dog-thigh-back-L", "bone": "Dog Leg Middle BL", "attachment": "dog-thigh-back-L" },
+	{ "name": "dog-tail", "bone": "Dog Back2", "attachment": "dog-tail" },
+	{ "name": "dog-hip-back-L", "bone": "Dog Leg Upper BL", "attachment": "dog-hip-back-L" },
+	{ "name": "dog-body", "bone": "Dog Back", "attachment": "dog-body" },
+	{ "name": "dog-ankle-front-L", "bone": "Dog Leg Lower FL", "attachment": "dog-ankle-front-L" },
+	{ "name": "dog-foort-front-L", "bone": "Dog Foot FL", "attachment": "dog-foort-front-L" },
+	{ "name": "dog-leg-front-L", "bone": "Dog Leg Middle FL", "attachment": "dog-leg-front-L" },
+	{ "name": "dog-shoulder-front-L", "bone": "Dog Leg Upper FL", "attachment": "dog-shoulder-front-L" },
+	{ "name": "dog-neck", "bone": "Dog Neck", "attachment": "dog-neck" },
+	{ "name": "dog-head", "bone": "Dog Head", "attachment": "dog-head" },
+	{ "name": "dog-ankle-front-R", "bone": "Dog Leg Lower FR", "attachment": "dog-ankle-front-R" },
+	{ "name": "dog-foot-front-R", "bone": "Dog Foot FR", "attachment": "dog-foot-front-R" },
+	{ "name": "dog-leg-front-R", "bone": "Dog Leg Middle FR", "attachment": "dog-leg-front-R" },
+	{ "name": "dog-shoulder-front-R", "bone": "Dog Leg Upper FR", "attachment": "dog-shoulder-front-R" },
+	{ "name": "dog-ankle-back-R", "bone": "Dog Lower Leg BR", "attachment": "dog-ankle-back-R" },
+	{ "name": "dog-foot-back-R", "bone": "Dog Foot Back R", "attachment": "dog-foot-back-R" },
+	{ "name": "dog-thigh-back-R", "bone": "Dog Mid Leg BR", "attachment": "dog-thigh-back-R" },
+	{ "name": "dog-hip-back-R", "bone": "Dog Upper Leg BR", "attachment": "dog-hip-back-R" }
+],
+"ik": [
+	{
+		"name": "BL Foot IK",
+		"order": 5,
+		"bones": [ "Dog Foot BL" ],
+		"target": "BL Foot IK"
+	},
+	{
+		"name": "BL LEG LOW IK",
+		"order": 4,
+		"bones": [ "Dog Leg Middle BL", "Dog Leg Lower BL" ],
+		"target": "BL LEG LOW IK"
+	},
+	{
+		"name": "BR Foot IK",
+		"order": 7,
+		"bones": [ "Dog Foot Back R" ],
+		"target": "BR Foot IK"
+	},
+	{
+		"name": "BR Leg Low IK",
+		"order": 6,
+		"bones": [ "Dog Mid Leg BR", "Dog Lower Leg BR" ],
+		"target": "BR Leg Low IK"
+	},
+	{
+		"name": "FL Foot IK",
+		"order": 2,
+		"bones": [ "Dog Foot FL" ],
+		"target": "FL Foot IK"
+	},
+	{
+		"name": "FL Leg Low IK",
+		"order": 1,
+		"bones": [ "Dog Leg Middle FL", "Dog Leg Lower FL" ],
+		"target": "FL Leg Low IK"
+	},
+	{
+		"name": "FR Foot IK",
+		"order": 3,
+		"bones": [ "Dog Foot FR" ],
+		"target": "FR Foot IK"
+	},
+	{
+		"name": "FR IK",
+		"bones": [ "Dog Leg Middle FR", "Dog Leg Lower FR" ],
+		"target": "FR IK"
+	}
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"dog-ankle-back-R": {
+				"dog-ankle-back-R": { "x": 133.8, "y": -3.09, "rotation": 87.75, "width": 97, "height": 365 }
+			},
+			"dog-ankle-front-L": {
+				"dog-ankle-front-L": { "x": 72.47, "y": 6.06, "rotation": 67.99, "width": 108, "height": 194 }
+			},
+			"dog-ankle-front-R": {
+				"dog-ankle-front-R": { "x": 69.02, "y": 9.84, "rotation": 71.38, "width": 111, "height": 194 }
+			},
+			"dog-body": {
+				"dog-body": { "x": 339.77, "y": -66.7, "rotation": 12.69, "width": 867, "height": 487 }
+			},
+			"dog-foort-front-L": {
+				"dog-foort-front-L": { "x": 41.06, "y": 10.27, "rotation": 1.64, "width": 171, "height": 98 }
+			},
+			"dog-foot-back-L": {
+				"dog-foot-back-L": { "x": 63.14, "y": 19.78, "rotation": -1.19, "width": 197, "height": 100 }
+			},
+			"dog-foot-back-R": {
+				"dog-foot-back-R": { "x": 61.29, "y": 8.61, "width": 197, "height": 100 }
+			},
+			"dog-foot-front-R": {
+				"dog-foot-front-R": { "x": 45.62, "y": 17.42, "rotation": 0.8, "width": 171, "height": 98 }
+			},
+			"dog-head": {
+				"Aggressive": { "x": 37.72, "y": -55.95, "rotation": 50.06, "width": 544, "height": 532 },
+				"Fear": { "x": -21.8, "y": 18.26, "rotation": 50.06, "width": 466, "height": 680 },
+				"Full Blink": { "x": -52.14, "y": 43.66, "rotation": 50.06, "width": 466, "height": 602 },
+				"Half Blink": { "x": -52.14, "y": 43.66, "rotation": 50.06, "width": 466, "height": 602 },
+				"Relaxed": { "x": -52.14, "y": 43.66, "rotation": 50.06, "width": 466, "height": 602 },
+				"dog-head": { "x": -52.14, "y": 43.66, "rotation": 50.06, "width": 468, "height": 604 },
+				"dog-head-howl": { "x": -0.06, "y": 0.7, "rotation": 68.67, "width": 413, "height": 645 }
+			},
+			"dog-hip-back-L": {
+				"dog-hip-back-L": { "x": 154.61, "y": 1.06, "rotation": 97.37, "width": 296, "height": 460 }
+			},
+			"dog-hip-back-R": {
+				"dog-hip-back-R": { "x": 121.54, "y": 30.97, "rotation": 88.04, "width": 297, "height": 489 }
+			},
+			"dog-leg-backL": {
+				"dog-leg-backL": { "x": 139.99, "y": -9.01, "rotation": 90.27, "width": 97, "height": 365 }
+			},
+			"dog-leg-front-L": {
+				"dog-leg-front-L": { "x": 182.59, "y": -5.08, "rotation": 83.11, "width": 131, "height": 493 }
+			},
+			"dog-leg-front-R": {
+				"dog-leg-front-R": { "x": 186.16, "y": -1.73, "rotation": 81.87, "width": 139, "height": 491 }
+			},
+			"dog-neck": {
+				"dog-neck": { "x": 199.63, "y": 14.41, "rotation": -63.17, "width": 468, "height": 605 }
+			},
+			"dog-shoulder-front-L": {
+				"dog-shoulder-front-L": { "x": 138.9, "y": -4.12, "rotation": 98.13, "width": 247, "height": 443 }
+			},
+			"dog-shoulder-front-R": {
+				"dog-shoulder-front-R": { "x": 176.3, "y": -9.26, "rotation": 100.42, "width": 245, "height": 443 }
+			},
+			"dog-tail": {
+				"dog-tail": {
+					"type": "mesh",
+					"uvs": [ 0.81205, 0.01189, 0.52996, 0.11725, 0.41207, 0.20191, 0.34891, 0.24895, 0.25628, 0.32421, 0.0584, 0.49731, 0, 0.69298, 0, 0.82656, 0.03734, 0.91311, 0.1805, 0.99025, 0.28155, 1, 0.44154, 0.94886, 0.60153, 0.8435, 0.66048, 0.73437, 0.67311, 0.65159, 0.6689, 0.39382, 0.68574, 0.29222, 0.70679, 0.23954, 0.76574, 0.17557, 0.96362, 0.09279, 1, 0.05892, 1, 0.00624, 0.90047, 0 ],
+					"triangles": [ 12, 7, 6, 11, 8, 7, 12, 11, 7, 9, 8, 11, 10, 9, 11, 5, 14, 6, 14, 5, 15, 13, 6, 14, 13, 12, 6, 15, 4, 16, 5, 4, 15, 2, 1, 17, 16, 2, 17, 3, 2, 16, 16, 4, 3, 22, 21, 20, 20, 0, 22, 18, 1, 0, 19, 0, 20, 18, 0, 19, 17, 1, 18 ],
+					"vertices": [ 1, 6, -32.14, -15.1, 1, 2, 6, 86.05, -39.04, 0.74385, 7, -21.45, -34.49, 0.25615, 1, 7, 50.82, -46.05, 1, 2, 7, 90.68, -51.76, 0.95717, 8, -46.56, -46.96, 0.04283, 2, 7, 153.37, -58.36, 0.20455, 8, 15.05, -60.36, 0.79545, 2, 8, 155.32, -86.4, 0.34722, 9, -5.25, -88.16, 0.65278, 3, 8, 298.45, -63.87, 0, 9, 139.61, -90.95, 0.82774, 10, -44.19, -85.45, 0.17226, 2, 9, 237.04, -79.86, 0.04373, 10, 53.82, -88.59, 0.95627, 1, 10, 117.7, -78.38, 1, 1, 10, 175.79, -33.26, 1, 1, 10, 184.01, -0.36, 1, 3, 8, 437.26, 128.44, 0, 9, 309.85, 74.18, 4.0E-5, 10, 148.17, 53.29, 0.99996, 3, 8, 348.18, 156.72, 0, 9, 227.07, 117.58, 0.14904, 10, 72.55, 108.22, 0.85096, 3, 8, 265.89, 152.45, 0, 9, 145.3, 127.73, 0.61417, 10, -6.89, 130.1, 0.38583, 3, 8, 206.47, 139.12, 0, 9, 84.46, 124.98, 0.8863, 10, -67.49, 136.19, 0.1137, 3, 7, 148.02, 86.21, 0.25296, 8, 25.49, 83.93, 0.5693, 9, -103.37, 102.21, 0.17774, 4, 6, 154.42, 81.09, 0.00111, 7, 77.14, 62.39, 0.91278, 8, -47.57, 67.99, 0.07953, 9, -178.09, 99.26, 0.00659, 3, 6, 119.92, 62.33, 0.08175, 7, 38.81, 53.77, 0.91605, 8, -86.6, 63.6, 0.0022, 2, 6, 71.17, 48.1, 0.71876, 7, -11.96, 53.4, 0.28124, 1, 6, -16.82, 60.82, 1, 1, 6, -43.69, 54.61, 1, 1, 6, -73.88, 30.45, 1, 1, 6, -57.06, 2.1, 1 ],
+					"hull": 23,
+					"edges": [ 0, 2, 2, 4, 4, 6, 6, 8, 8, 10, 10, 12, 12, 14, 14, 16, 16, 18, 18, 20, 20, 22, 22, 24, 24, 26, 26, 28, 28, 30, 30, 32, 32, 34, 34, 36, 36, 38, 38, 40, 40, 42, 42, 44, 0, 44 ],
+					"width": 328,
+					"height": 734
+				}
+			},
+			"dog-thigh-back-L": {
+				"dog-thigh-back-L": { "x": 107.85, "y": -1.16, "rotation": 123.89, "width": 359, "height": 472 }
+			},
+			"dog-thigh-back-R": {
+				"dog-thigh-back-R": { "x": 107.29, "y": -4.37, "rotation": 126.6, "width": 359, "height": 472 }
+			}
+		}
+	}
+],
+"events": {
+	"sfx": {}
+},
+"animations": {
+	"Aggression": {
+		"slots": {
+			"dog-head": {
+				"attachment": [
+					{ "time": 0.5, "name": "Aggressive" },
+					{ "time": 2.8333, "name": "dog-head" }
+				]
+			}
+		},
+		"bones": {
+			"Dog Head": {
+				"rotate": [
+					{},
+					{ "time": 0.2333, "angle": -2.48 },
+					{ "time": 0.5, "angle": -3.19 },
+					{ "time": 0.7667, "angle": 30.92, "curve": "stepped" },
+					{ "time": 2.6667, "angle": 30.92, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.7667, "x": 1.94, "y": -17.94, "curve": "stepped" },
+					{ "time": 2.6667, "x": 1.94, "y": -17.94, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667 }
+				]
+			},
+			"Dog Back": {
+				"rotate": [
+					{},
+					{ "time": 0.7667, "angle": 2.22, "curve": "stepped" },
+					{ "time": 2.6667, "angle": 2.22, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.2333, "x": -21.74, "y": -18.01 },
+					{ "time": 0.5, "x": 64.9, "y": -86.96 },
+					{ "time": 0.7667, "x": 109.1, "y": -35.69, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1, "x": 88.93, "y": -50.43, "curve": "stepped" },
+					{ "time": 2.6667, "x": 88.93, "y": -50.43, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667 }
+				]
+			},
+			"Dog Mid Leg BR": {
+				"rotate": [
+					{ "angle": -0.3 },
+					{ "time": 0.7667, "angle": -8.5 },
+					{ "time": 2.6667, "angle": -14.33, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667, "angle": -0.3 }
+				]
+			},
+			"Dog Lower Leg BR": {
+				"rotate": [
+					{ "angle": 0.93 },
+					{ "time": 0.7667, "angle": -13.54 },
+					{ "time": 2.6667, "angle": 1.7, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667, "angle": 0.93 }
+				]
+			},
+			"Dog Foot Back R": {
+				"rotate": [
+					{ "angle": -0.64 },
+					{ "time": 0.7667, "angle": 19.83 },
+					{ "time": 2.6667, "angle": 10.41, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667, "angle": -0.64 }
+				]
+			},
+			"Dog Back2": {
+				"rotate": [
+					{},
+					{ "time": 0.7667, "angle": -43.45, "curve": "stepped" },
+					{ "time": 2.6667, "angle": -43.45, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667 }
+				]
+			},
+			"Dog Back3": {
+				"rotate": [
+					{},
+					{ "time": 0.2333, "angle": 1.78 },
+					{ "time": 0.7667, "angle": -22.35, "curve": "stepped" },
+					{ "time": 2.6667, "angle": -22.35, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667 }
+				]
+			},
+			"Dog Back4": {
+				"rotate": [
+					{},
+					{ "time": 0.2333, "angle": 1.78 },
+					{ "time": 0.7667, "angle": -22.35, "curve": "stepped" },
+					{ "time": 2.6667, "angle": -22.35, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667 }
+				]
+			},
+			"Dog Back5": {
+				"rotate": [
+					{},
+					{ "time": 0.2333, "angle": 1.78 },
+					{ "time": 0.7667, "angle": -22.35, "curve": "stepped" },
+					{ "time": 2.6667, "angle": -22.35, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667 }
+				]
+			},
+			"Dog Back6": {
+				"rotate": [
+					{},
+					{ "time": 0.2333, "angle": 1.78 },
+					{ "time": 0.7667, "angle": -22.35, "curve": "stepped" },
+					{ "time": 2.6667, "angle": -22.35, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667 }
+				]
+			},
+			"Dog Leg Middle BL": {
+				"rotate": [
+					{ "angle": -0.04 },
+					{ "time": 0.7667, "angle": -1.12 },
+					{ "time": 2.6667, "angle": -12, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667, "angle": -0.04 }
+				]
+			},
+			"Dog Leg Lower BL": {
+				"rotate": [
+					{ "angle": -0.27 },
+					{ "time": 0.7667, "angle": -27.42 },
+					{ "time": 2.6667, "angle": -2.27, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667, "angle": -0.27 }
+				]
+			},
+			"Dog Foot BL": {
+				"rotate": [
+					{ "angle": -1.46 },
+					{ "time": 0.7667, "angle": 24.56 },
+					{ "time": 2.6667, "angle": 10.29, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667, "angle": -1.46 }
+				]
+			},
+			"Dog Neck": {
+				"rotate": [
+					{},
+					{ "time": 0.2333, "angle": 2.83 },
+					{ "time": 0.7667, "angle": -29.85, "curve": "stepped" },
+					{ "time": 2.6667, "angle": -29.85, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.7667, "x": 35.78, "y": 11.57, "curve": "stepped" },
+					{ "time": 2.6667, "x": 35.78, "y": 11.57, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667 }
+				]
+			},
+			"Dog Leg Upper FR": {
+				"rotate": [
+					{},
+					{ "time": 0.5, "angle": -14.55, "curve": "stepped" },
+					{ "time": 2.6667, "angle": -14.55, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667 }
+				]
+			},
+			"Dog Leg Middle FR": {
+				"rotate": [
+					{ "angle": -0.79 },
+					{ "time": 0.7667, "angle": 9.71 },
+					{ "time": 2.6667, "angle": 5.58, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667, "angle": -0.79 }
+				]
+			},
+			"Dog Leg Lower FR": {
+				"rotate": [
+					{ "angle": 1.15 },
+					{ "time": 0.7667, "angle": -8.04 },
+					{ "time": 2.6667, "angle": 17.13, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667, "angle": 1.15 },
+					{ "time": 4.1667, "angle": 1.15 }
+				]
+			},
+			"Dog Foot FR": {
+				"rotate": [
+					{ "angle": -1.06 },
+					{ "time": 0.7667, "angle": 9.96 },
+					{ "time": 2.6667, "angle": -11.07, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667, "angle": -1.06 },
+					{ "time": 4.1667, "angle": -1.06 }
+				]
+			},
+			"Dog Leg Upper FL": {
+				"rotate": [
+					{},
+					{ "time": 0.3333, "angle": -31.5 },
+					{ "time": 0.5, "angle": -16.04 },
+					{ "time": 0.7667, "angle": 5.77, "curve": "stepped" },
+					{ "time": 2.6667, "angle": 5.77, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.7667, "x": 2.54, "y": -13.72, "curve": "stepped" },
+					{ "time": 2.6667, "x": 2.54, "y": -13.72, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667 }
+				]
+			},
+			"Dog Leg Middle FL": {
+				"rotate": [
+					{ "angle": 0.5 },
+					{ "time": 0.7667, "angle": -5.04 },
+					{ "time": 2.6667, "angle": -5.84, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667, "angle": 0.5 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.7667, "x": 13.28, "y": 6.81, "curve": "stepped" },
+					{ "time": 2.6667, "x": 13.28, "y": 6.81, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.4667, "x": 0.876, "curve": "stepped" },
+					{ "time": 2.6667, "x": 0.876, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667 }
+				]
+			},
+			"Dog Leg Lower FL": {
+				"rotate": [
+					{ "angle": -1.77 },
+					{ "time": 0.7667, "angle": 3.72 },
+					{ "time": 2.6667, "angle": 17.19, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667, "angle": -1.77 }
+				]
+			},
+			"Dog Foot FL": {
+				"rotate": [
+					{ "angle": -1.36 },
+					{ "time": 0.7667, "angle": -10.06 },
+					{ "time": 2.6667, "angle": -22.62, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667, "angle": -1.36 }
+				]
+			},
+			"FL Leg Low IK": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3333, "angle": 16.86, "curve": "stepped" },
+					{ "time": 2.6667, "angle": 16.86, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3333, "x": 134.3, "y": 269.35, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.7667, "x": 189.47, "y": 37.78, "curve": "stepped" },
+					{ "time": 2.6667, "x": 189.47, "y": 37.78, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667 }
+				]
+			},
+			"FL Foot IK": {
+				"rotate": [
+					{},
+					{ "time": 0.7667, "angle": -0.49, "curve": "stepped" },
+					{ "time": 2.6667, "angle": -0.49, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.3333, "x": 243.25, "y": 178.23 },
+					{ "time": 0.4667, "x": 89.02, "y": 33.79 },
+					{ "time": 0.7667, "x": 200.61, "y": 38.77, "curve": "stepped" },
+					{ "time": 2.6667, "x": 200.61, "y": 38.77, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.4667, "x": 0.745, "y": 0.745, "curve": "stepped" },
+					{ "time": 2.6667, "x": 0.745, "y": 0.745, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.1667 }
+				]
+			}
+		}
+	},
+	"Idle": {
+		"bones": {
+			"Dog Back": {
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "x": 8.41, "y": -13.3, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"Dog Upper Leg BR": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": 1.37, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"Dog Back3": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -2.43, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"Dog Back4": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -2.43, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"Dog Back5": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -2.43, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"Dog Back6": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -2.43, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"Dog Leg Upper BL": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": 2, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"Dog Neck": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.9, "angle": -1.65, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"Dog Head": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.625, "c4": 0.5 },
+					{ "time": 0.9, "angle": 6.1, "curve": 0.375, "c2": 0.5, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"Dog Leg Upper FR": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -3.14, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"Dog Leg Upper FL": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -1.02, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			}
+		}
+	},
+	"Idle Aggressive": {
+		"slots": {
+			"dog-head": {
+				"attachment": [
+					{ "name": "Aggressive" }
+				]
+			}
+		},
+		"bones": {
+			"Dog Back": {
+				"rotate": [
+					{ "angle": -10.69, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "angle": -11.8, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "angle": -10.69 }
+				],
+				"translate": [
+					{ "x": -118.59, "y": -97.66, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "x": -118.59, "y": -108.13, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "x": -118.59, "y": -97.66 }
+				]
+			},
+			"FR IK": {
+				"translate": [
+					{ "x": 387.17 }
+				]
+			},
+			"FL Leg Low IK": {
+				"translate": [
+					{ "x": 265.09 }
+				]
+			},
+			"FL Foot IK": {
+				"translate": [
+					{ "x": 265.09 }
+				]
+			},
+			"FR Foot IK": {
+				"translate": [
+					{ "x": 387.17 }
+				]
+			},
+			"Dog Leg Upper FR": {
+				"rotate": [
+					{ "angle": 51.37 }
+				]
+			},
+			"Dog Leg Upper FL": {
+				"rotate": [
+					{ "angle": 28.06 }
+				],
+				"translate": [
+					{ "x": -58.95, "y": -24 }
+				]
+			},
+			"Dog Neck": {
+				"rotate": [
+					{ "angle": -43.77, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "angle": -44.79, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "angle": -43.77 }
+				],
+				"translate": [
+					{ "x": 41.53, "y": 44.56 }
+				]
+			},
+			"Dog Head": {
+				"rotate": [
+					{ "angle": 60.91, "curve": 0.252, "c3": 0.623, "c4": 0.49 },
+					{ "time": 1.1, "angle": 56.13, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "angle": 60.91 }
+				]
+			},
+			"Dog Back3": {
+				"rotate": [
+					{ "angle": -21.26, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1, "angle": -18.15, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "angle": -21.26 }
+				]
+			},
+			"Dog Back4": {
+				"rotate": [
+					{ "angle": -9.88, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1, "angle": -6.77, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "angle": -9.88 }
+				]
+			},
+			"Dog Back5": {
+				"rotate": [
+					{ "angle": -6.19, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1, "angle": -3.07, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "angle": -6.19 }
+				]
+			},
+			"Dog Back6": {
+				"rotate": [
+					{ "angle": -6.19, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1, "angle": -3.07, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "angle": -6.19 }
+				]
+			},
+			"Dog Mid Leg BR": {
+				"rotate": [
+					{ "angle": 10.94 }
+				]
+			},
+			"Dog Lower Leg BR": {
+				"rotate": [
+					{ "angle": 45.67 }
+				]
+			},
+			"Dog Foot Back R": {
+				"rotate": [
+					{ "angle": -45.91 }
+				]
+			},
+			"Dog Back2": {
+				"rotate": [
+					{ "angle": -14.63, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1, "angle": -11.52, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "angle": -14.63 }
+				]
+			},
+			"Dog Leg Middle BL": {
+				"rotate": [
+					{ "angle": 3.37 }
+				]
+			},
+			"Dog Leg Lower BL": {
+				"rotate": [
+					{ "angle": 56.83 }
+				]
+			},
+			"Dog Foot BL": {
+				"rotate": [
+					{ "angle": -51.28 }
+				]
+			},
+			"Dog Leg Middle FR": {
+				"rotate": [
+					{ "angle": -6.99 }
+				]
+			},
+			"Dog Leg Lower FR": {
+				"rotate": [
+					{ "angle": 4.63, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "angle": 4.63 }
+				]
+			},
+			"Dog Foot FR": {
+				"rotate": [
+					{ "angle": -39.01, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "angle": -39.01 }
+				]
+			},
+			"Dog Leg Middle FL": {
+				"rotate": [
+					{ "angle": 34.28 }
+				]
+			},
+			"Dog Leg Lower FL": {
+				"rotate": [
+					{ "angle": -15.5 }
+				]
+			},
+			"Dog Foot FL": {
+				"rotate": [
+					{ "angle": -44.65 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.0333, "name": "sfx", "string": "sfx-animal-wild-dog-growl" }
+		]
+	},
+	"Idle Aggressive Lame": {
+		"slots": {
+			"dog-head": {
+				"attachment": [
+					{ "name": "Aggressive" }
+				]
+			}
+		},
+		"bones": {
+			"Dog Back": {
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "x": 8.41, "y": -13.3, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"Dog Upper Leg BR": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": 1.37, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"Dog Back3": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -2.43, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"Dog Back4": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -2.43, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"Dog Back5": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -2.43, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"Dog Back6": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -2.43, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"Dog Leg Upper BL": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": 2, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"Dog Neck": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.9, "angle": -1.65, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"Dog Head": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.625, "c4": 0.5 },
+					{ "time": 0.9, "angle": 6.1, "curve": 0.375, "c2": 0.5, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"Dog Leg Upper FR": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -3.14, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			},
+			"Dog Leg Upper FL": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -1.02, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.0333, "name": "sfx", "string": "sfx-animal-wild-dog-growl" }
+		]
+	},
+	"Idle Excited": {
+		"bones": {
+			"Dog Back2": {
+				"rotate": [
+					{ "angle": -9.7, "curve": 0.25, "c3": 0.625, "c4": 0.5 },
+					{ "time": 0.4333, "angle": -3.87, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8, "angle": -9.7, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "angle": -3.87, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6, "angle": -9.7, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.9667, "angle": -3.87, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "angle": -9.7, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5333, "angle": -15.92, "curve": "stepped" },
+					{ "time": 2.9, "angle": -15.92, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.1333, "angle": -82.1, "curve": 0.586, "c2": 0.48, "c3": 0.969, "c4": 0.86 },
+					{ "time": 3.2667, "angle": -15.92, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.5667, "angle": -9.7 }
+				]
+			},
+			"Dog Back3": {
+				"rotate": [
+					{ "angle": -18.97, "curve": 0.25, "c3": 0.625, "c4": 0.5 },
+					{ "time": 0.4333, "angle": -13.14, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8, "angle": -18.97, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "angle": -13.14, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6, "angle": -18.97, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.9667, "angle": -13.14, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "angle": -18.97, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5333, "angle": -25.19 },
+					{ "time": 2.9, "angle": -19.17, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.1333, "angle": -18.5, "curve": 0.586, "c2": 0.48, "c3": 0.969, "c4": 0.86 },
+					{ "time": 3.2667, "angle": -11.05, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.5667, "angle": -18.97 }
+				]
+			},
+			"Dog Back4": {
+				"rotate": [
+					{ "angle": -18.97, "curve": 0.25, "c3": 0.625, "c4": 0.5 },
+					{ "time": 0.4333, "angle": -13.14, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8, "angle": -18.97, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "angle": -13.14, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6, "angle": -18.97, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.9667, "angle": -13.14, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "angle": -18.97, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5333, "angle": -25.19 },
+					{ "time": 2.9, "angle": -4.09, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.1333, "angle": -13.11, "curve": 0.586, "c2": 0.48, "c3": 0.969, "c4": 0.86 },
+					{ "time": 3.2667, "angle": -3.2, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.5667, "angle": -18.97 }
+				]
+			},
+			"Dog Back5": {
+				"rotate": [
+					{ "angle": -18.97, "curve": 0.25, "c3": 0.625, "c4": 0.5 },
+					{ "time": 0.4333, "angle": -13.14, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8, "angle": -18.97, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "angle": -13.14, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6, "angle": -18.97, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.9667, "angle": -13.14, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "angle": -18.97, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5333, "angle": -25.19 },
+					{ "time": 2.9, "angle": -4.09, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.1333, "angle": -13.11, "curve": 0.586, "c2": 0.48, "c3": 0.969, "c4": 0.86 },
+					{ "time": 3.2667, "angle": -3.2, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.5667, "angle": -18.97 }
+				]
+			},
+			"Dog Back6": {
+				"rotate": [
+					{ "angle": -18.97, "curve": 0.25, "c3": 0.625, "c4": 0.5 },
+					{ "time": 0.4333, "angle": -13.14, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8, "angle": -18.97, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "angle": -13.14, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6, "angle": -18.97, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.9667, "angle": -13.14, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "angle": -18.97, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.5333, "angle": -25.19 },
+					{ "time": 2.9, "angle": -4.09, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.1333, "angle": -13.11, "curve": 0.586, "c2": 0.48, "c3": 0.969, "c4": 0.86 },
+					{ "time": 3.2667, "angle": -3.2, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.5667, "angle": -18.97 }
+				]
+			},
+			"Dog Back": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "angle": -0.77, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333 },
+					{ "time": 2.5333, "angle": -4.27 },
+					{ "time": 2.9, "angle": 22.53, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.2667, "angle": -4.27, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.5667 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "y": -10.46, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333 },
+					{ "time": 2.5333, "x": -20.23, "y": -8.09 },
+					{ "time": 2.9, "x": -153.75, "y": -48.55, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.2667, "x": -20.23, "y": -8.09, "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.5667 }
+				]
+			},
+			"Dog Mid Leg BR": {
+				"rotate": [
+					{ "angle": -0.3, "curve": "stepped" },
+					{ "time": 2.3333, "angle": -0.3 },
+					{ "time": 2.9, "angle": -24.09, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.5667, "angle": -0.3 }
+				]
+			},
+			"Dog Lower Leg BR": {
+				"rotate": [
+					{ "angle": 0.93, "curve": "stepped" },
+					{ "time": 2.3333, "angle": 0.93 },
+					{ "time": 2.9, "angle": 17.25, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.5667, "angle": 0.93 }
+				]
+			},
+			"Dog Foot Back R": {
+				"rotate": [
+					{ "angle": -0.64, "curve": "stepped" },
+					{ "time": 2.3333, "angle": -0.64 },
+					{ "time": 2.9, "angle": -11.3, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.5667, "angle": -0.64 }
+				]
+			},
+			"Dog Leg Middle BL": {
+				"rotate": [
+					{ "angle": -0.04, "curve": "stepped" },
+					{ "time": 2.3333, "angle": -0.04 },
+					{ "time": 2.9, "angle": -5.41, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.5667, "angle": -0.04 }
+				]
+			},
+			"Dog Leg Lower BL": {
+				"rotate": [
+					{ "angle": -0.27, "curve": "stepped" },
+					{ "time": 2.3333, "angle": -0.27 },
+					{ "time": 2.9, "angle": -17.2, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.5667, "angle": -0.27 }
+				]
+			},
+			"Dog Foot BL": {
+				"rotate": [
+					{ "angle": -1.46, "curve": "stepped" },
+					{ "time": 2.3333, "angle": -1.46 },
+					{ "time": 2.9, "angle": 2.69, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.5667, "angle": -1.46 }
+				]
+			},
+			"Dog Neck": {
+				"rotate": [
+					{},
+					{ "time": 1.1667, "angle": -1.33, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333 },
+					{ "time": 2.5333, "angle": -5.14 },
+					{ "time": 2.9, "angle": -18.58, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.2667, "angle": -5.14, "curve": 0.265, "c3": 0.618, "c4": 0.43 },
+					{ "time": 3.3667, "angle": -14.26, "curve": 0.351, "c2": 0.4, "c3": 0.757 },
+					{ "time": 3.5667 }
+				]
+			},
+			"Dog Head": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "angle": 5.5, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333 },
+					{ "time": 2.5333, "angle": 6.77 },
+					{ "time": 2.9, "angle": -0.6, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.2667, "angle": 6.77, "curve": 0.265, "c3": 0.618, "c4": 0.43 },
+					{ "time": 3.3667, "angle": 12.1, "curve": 0.351, "c2": 0.4, "c3": 0.757 },
+					{ "time": 3.5667 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "x": -9.16, "y": -5.06, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333 }
+				]
+			},
+			"Dog Leg Upper FR": {
+				"rotate": [
+					{ "time": 2.3333 },
+					{ "time": 2.9, "angle": -22.64, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.5667 }
+				]
+			},
+			"Dog Leg Middle FR": {
+				"rotate": [
+					{ "angle": -0.79, "curve": "stepped" },
+					{ "time": 2.3333, "angle": -0.79 },
+					{ "time": 2.9, "angle": 59.8, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.5667, "angle": -0.79 }
+				]
+			},
+			"Dog Leg Lower FR": {
+				"rotate": [
+					{ "angle": 1.15 },
+					{ "time": 2.3333, "angle": 1.15 },
+					{ "time": 2.9, "angle": 23.28, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.5667, "angle": 1.15 }
+				]
+			},
+			"Dog Foot FR": {
+				"rotate": [
+					{ "angle": -1.06 },
+					{ "time": 2.3333, "angle": -1.06 },
+					{ "time": 2.9, "angle": -85.62, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.5667, "angle": -1.06 }
+				]
+			},
+			"Dog Leg Upper FL": {
+				"translate": [
+					{ "time": 2.3333 },
+					{ "time": 2.9, "x": -86.45, "y": -18.32, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.5667 }
+				]
+			},
+			"Dog Leg Middle FL": {
+				"rotate": [
+					{ "angle": 0.5, "curve": "stepped" },
+					{ "time": 2.3333, "angle": 0.5 },
+					{ "time": 2.9, "angle": 17.03, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.5667, "angle": 0.5 }
+				]
+			},
+			"Dog Leg Lower FL": {
+				"rotate": [
+					{ "angle": -1.77, "curve": "stepped" },
+					{ "time": 2.3333, "angle": -1.77 },
+					{ "time": 2.9, "angle": 9.85, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.5667, "angle": -1.77 }
+				]
+			},
+			"Dog Foot FL": {
+				"rotate": [
+					{ "angle": -1.36, "curve": "stepped" },
+					{ "time": 2.3333, "angle": -1.36 },
+					{ "time": 2.9, "angle": -107.96, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.5667, "angle": -1.36 }
+				]
+			},
+			"FR IK": {
+				"translate": [
+					{ "time": 2.6333, "curve": 0.25, "c3": 0.892, "c4": 0.88 },
+					{ "time": 2.7333, "x": 40.46, "y": 122.19, "curve": 0.066, "c2": 0.09, "c3": 0.75 },
+					{ "time": 2.9, "x": 56.64, "y": 364.14, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.1333 }
+				]
+			},
+			"FL Leg Low IK": {
+				"translate": [
+					{ "time": 2.6333, "curve": 0.25, "c3": 0.892, "c4": 0.88 },
+					{ "time": 2.7333, "x": 21.04, "y": 116.52, "curve": 0.066, "c2": 0.09, "c3": 0.75 },
+					{ "time": 2.9, "x": -48.55, "y": 360.09, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.1333 }
+				]
+			},
+			"FL Foot IK": {
+				"translate": [
+					{ "time": 2.6333, "curve": 0.25, "c3": 0.892, "c4": 0.88 },
+					{ "time": 2.7333, "x": -72.02, "y": 49.36, "curve": 0.066, "c2": 0.09, "c3": 0.75 },
+					{ "time": 2.9, "x": -117.33, "y": 194.21, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.1333 }
+				],
+				"scale": [
+					{ "time": 3.6667 }
+				]
+			},
+			"FR Foot IK": {
+				"translate": [
+					{ "time": 2.6333, "curve": 0.25, "c3": 0.892, "c4": 0.88 },
+					{ "time": 2.7333, "x": -20.23, "y": 73.64, "curve": 0.066, "c2": 0.09, "c3": 0.75 },
+					{ "time": 2.9, "x": 60.69, "y": 218.48, "curve": 0.434, "c4": 0.78 },
+					{ "time": 3.1333 }
+				]
+			}
+		}
+	},
+	"Idle Howl": {
+		"slots": {
+			"dog-head": {
+				"attachment": [
+					{ "time": 0.2333, "name": "dog-head-howl" },
+					{ "time": 1.2, "name": "dog-head" }
+				]
+			}
+		},
+		"bones": {
+			"Dog Back": {
+				"rotate": [
+					{ "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 0.3333, "angle": -1.43, "curve": 0.303, "c2": 0.24, "c3": 0.661, "c4": 0.65 },
+					{ "time": 0.7, "angle": 3.01, "curve": 0.381, "c2": 0.55, "c3": 0.742 },
+					{ "time": 1.0667, "angle": -1.43, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 1.6667 }
+				],
+				"translate": [
+					{ "y": -28.32, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{
+						"time": 0.3333,
+						"x": 28.32,
+						"y": -56.64,
+						"curve": 0.303,
+						"c2": 0.24,
+						"c3": 0.661,
+						"c4": 0.65
+					},
+					{ "time": 0.7, "x": -8.09, "y": -44.51, "curve": 0.381, "c2": 0.55, "c3": 0.742 },
+					{ "time": 1.0667, "x": 28.32, "y": -56.64, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 1.6667, "y": -28.32 }
+				]
+			},
+			"Dog Mid Leg BR": {
+				"rotate": [
+					{ "angle": -0.3, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 0.3333, "angle": -11.63, "curve": "stepped" },
+					{ "time": 1.0667, "angle": -11.63, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 1.6667, "angle": -0.3 }
+				]
+			},
+			"Dog Lower Leg BR": {
+				"rotate": [
+					{ "angle": 0.93, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 0.3333, "angle": 21.45, "curve": "stepped" },
+					{ "time": 1.0667, "angle": 21.45, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 1.6667, "angle": 0.93 }
+				]
+			},
+			"Dog Foot Back R": {
+				"rotate": [
+					{ "angle": -0.64, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 0.3333, "angle": -8.4, "curve": "stepped" },
+					{ "time": 1.0667, "angle": -8.4, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 1.6667, "angle": -0.64 }
+				]
+			},
+			"Dog Back2": {
+				"rotate": [
+					{ "angle": -12.1, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 0.3333, "angle": -20.08, "curve": "stepped" },
+					{ "time": 1.0667, "angle": -20.08, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 1.6667, "angle": -12.1 }
+				]
+			},
+			"Dog Back3": {
+				"rotate": [
+					{ "angle": -7.5, "curve": "stepped" },
+					{ "time": 0.3333, "angle": -7.5, "curve": 0.303, "c2": 0.24, "c3": 0.661, "c4": 0.65 },
+					{ "time": 0.7, "angle": -15.68, "curve": 0.381, "c2": 0.55, "c3": 0.742 },
+					{ "time": 1.0667, "angle": -7.5 }
+				]
+			},
+			"Dog Back4": {
+				"rotate": [
+					{ "angle": -10.18, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 0.3333, "angle": -5.29, "curve": 0.303, "c2": 0.24, "c3": 0.661, "c4": 0.65 },
+					{ "time": 0.7, "angle": -13.48, "curve": 0.381, "c2": 0.55, "c3": 0.742 },
+					{ "time": 1.0667, "angle": -5.29, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 1.6667, "angle": -10.18 }
+				]
+			},
+			"Dog Back5": {
+				"rotate": [
+					{ "angle": -10.18, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 0.3333, "angle": -5.29, "curve": 0.303, "c2": 0.24, "c3": 0.661, "c4": 0.65 },
+					{ "time": 0.7, "angle": -13.48, "curve": 0.381, "c2": 0.55, "c3": 0.742 },
+					{ "time": 1.0667, "angle": -5.29, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 1.6667, "angle": -10.18 }
+				]
+			},
+			"Dog Back6": {
+				"rotate": [
+					{ "angle": -10.18, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 0.3333, "angle": -5.29, "curve": 0.303, "c2": 0.24, "c3": 0.661, "c4": 0.65 },
+					{ "time": 0.7, "angle": -13.48, "curve": 0.381, "c2": 0.55, "c3": 0.742 },
+					{ "time": 1.0667, "angle": -5.29, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 1.6667, "angle": -10.18 }
+				]
+			},
+			"Dog Leg Middle BL": {
+				"rotate": [
+					{ "angle": -0.04, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 0.3333, "angle": -13.78, "curve": "stepped" },
+					{ "time": 1.0667, "angle": -13.78, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 1.6667, "angle": -0.04 }
+				]
+			},
+			"Dog Leg Lower BL": {
+				"rotate": [
+					{ "angle": -0.27, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 0.3333, "angle": 23.93, "curve": "stepped" },
+					{ "time": 1.0667, "angle": 23.93, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 1.6667, "angle": -0.27 }
+				]
+			},
+			"Dog Foot BL": {
+				"rotate": [
+					{ "angle": -1.46, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 0.3333, "angle": -10.49, "curve": "stepped" },
+					{ "time": 1.0667, "angle": -10.49, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 1.6667, "angle": -1.46 }
+				]
+			},
+			"Dog Neck": {
+				"rotate": [
+					{ "angle": -30.86, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 0.3333, "angle": -42.94, "curve": 0.303, "c2": 0.24, "c3": 0.661, "c4": 0.65 },
+					{ "time": 0.7, "angle": -34.94, "curve": 0.381, "c2": 0.55, "c3": 0.742 },
+					{ "time": 1.0667, "angle": -42.94, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 1.6667, "angle": -30.86 }
+				],
+				"translate": [
+					{ "time": 0.3333, "curve": 0.303, "c2": 0.24, "c3": 0.661, "c4": 0.65 },
+					{ "time": 0.7, "x": 8.56, "y": 21.98, "curve": 0.381, "c2": 0.55, "c3": 0.742 },
+					{ "time": 1.0667 }
+				]
+			},
+			"Dog Head": {
+				"rotate": [
+					{ "angle": 32.1, "curve": 0.299, "c2": 0.19, "c3": 0.64, "c4": 0.55 },
+					{ "time": 0.1667, "angle": 41.12, "curve": 0.33, "c2": 0.32, "c3": 0.663, "c4": 0.66 },
+					{ "time": 0.2, "angle": 47.77, "curve": 0.331, "c2": 0.32, "c3": 0.664, "c4": 0.66 },
+					{ "time": 0.2333, "angle": 42.91, "curve": 0.331, "c2": 0.33, "c3": 0.665, "c4": 0.66 },
+					{ "time": 0.2667, "angle": 50.4, "curve": 0.331, "c2": 0.33, "c3": 0.666, "c4": 0.66 },
+					{ "time": 0.3333, "angle": 53.12, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.7, "angle": 43.74, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.0667, "angle": 53.12, "curve": 0.302, "c3": 0.638, "c4": 0.36 },
+					{ "time": 1.1333, "angle": 52.04, "curve": 0.322, "c2": 0.28, "c3": 0.656, "c4": 0.61 },
+					{ "time": 1.1667, "angle": 37.71, "curve": 0.302, "c2": 0.22, "c3": 0.647, "c4": 0.6 },
+					{ "time": 1.3333, "angle": 35.7, "curve": 0.369, "c2": 0.47, "c3": 0.753 },
+					{ "time": 1.6667, "angle": 32.1 }
+				],
+				"translate": [
+					{ "time": 0.1667, "curve": 0.338, "c2": 0.35, "c3": 0.672, "c4": 0.68 },
+					{
+						"time": 0.2,
+						"x": -11.63,
+						"y": -17.04,
+						"curve": 0.352,
+						"c2": 0.4,
+						"c3": 0.689,
+						"c4": 0.75
+					},
+					{ "time": 0.2667, "x": -3.87, "y": -5.67, "curve": 0.37, "c2": 0.63, "c3": 0.708 },
+					{ "time": 0.3333, "curve": "stepped" },
+					{ "time": 1.1333, "curve": 0.322, "c2": 0.28, "c3": 0.656, "c4": 0.61 },
+					{
+						"time": 1.1667,
+						"x": -26.42,
+						"y": 10.21,
+						"curve": 0.324,
+						"c2": 0.3,
+						"c3": 0.658,
+						"c4": 0.63
+					},
+					{
+						"time": 1.2,
+						"x": -32.5,
+						"y": -30.94,
+						"curve": 0.312,
+						"c2": 0.26,
+						"c3": 0.653,
+						"c4": 0.62
+					},
+					{ "time": 1.3333, "x": -16.95, "y": 6.55, "curve": 0.369, "c2": 0.47, "c3": 0.753 },
+					{ "time": 1.6667 }
+				]
+			},
+			"Dog Leg Middle FR": {
+				"rotate": [
+					{ "angle": -0.79, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 0.3333, "angle": -13.14, "curve": "stepped" },
+					{ "time": 1.0667, "angle": -13.14, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 1.6667, "angle": -0.79 }
+				]
+			},
+			"Dog Leg Lower FR": {
+				"rotate": [
+					{ "angle": 1.15, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 0.3333, "angle": 58.73, "curve": "stepped" },
+					{ "time": 1.0667, "angle": 58.73, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 1.6667, "angle": 1.15 }
+				]
+			},
+			"Dog Foot FR": {
+				"rotate": [
+					{ "angle": -1.06, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 0.3333, "angle": -44.86, "curve": "stepped" },
+					{ "time": 1.0667, "angle": -44.86, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 1.6667, "angle": -1.06 }
+				]
+			},
+			"Dog Leg Middle FL": {
+				"rotate": [
+					{ "angle": 0.5, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 0.3333, "angle": -11.59, "curve": "stepped" },
+					{ "time": 1.0667, "angle": -11.59, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 1.6667, "angle": 0.5 }
+				]
+			},
+			"Dog Leg Lower FL": {
+				"rotate": [
+					{ "angle": -1.77, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 0.3333, "angle": 58.01, "curve": "stepped" },
+					{ "time": 1.0667, "angle": 58.01, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 1.6667, "angle": -1.77 }
+				]
+			},
+			"Dog Foot FL": {
+				"rotate": [
+					{ "angle": -1.36, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 0.3333, "angle": -47.62, "curve": "stepped" },
+					{ "time": 1.0667, "angle": -47.62, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 1.6667, "angle": -1.36 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.0333, "name": "sfx", "string": "sfx-animal-wild-dog-hoo-2" }
+		]
+	},
+	"Idle Howl Old": {
+		"slots": {
+			"dog-head": {
+				"attachment": [
+					{ "time": 0.6, "name": "dog-head-howl" },
+					{ "time": 2.4, "name": "dog-head" }
+				]
+			}
+		},
+		"bones": {
+			"Dog Back": {
+				"rotate": [
+					{ "angle": 52.05, "curve": 0.295, "c3": 0.633, "c4": 0.37 },
+					{ "time": 0.3333, "angle": 51.17, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.7333, "angle": 54.41, "curve": "stepped" },
+					{ "time": 2.2, "angle": 54.41, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.6667, "angle": 52.05 }
+				],
+				"translate": [
+					{ "x": -404.61, "y": -641.79 }
+				]
+			},
+			"Dog Upper Leg BR": {
+				"rotate": [
+					{ "angle": 96 }
+				],
+				"translate": [
+					{ "x": -141.3, "y": -107.61 }
+				]
+			},
+			"Dog Mid Leg BR": {
+				"rotate": [
+					{ "angle": -0.3, "curve": "stepped" },
+					{ "time": 2.2, "angle": -0.3, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.6667, "angle": -130.88 }
+				]
+			},
+			"Dog Lower Leg BR": {
+				"rotate": [
+					{ "angle": 0.93, "curve": "stepped" },
+					{ "time": 2.2, "angle": 0.93, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.6667, "angle": 70.55 }
+				],
+				"translate": [
+					{ "x": 77.25, "y": -113.32 }
+				]
+			},
+			"Dog Foot Back R": {
+				"rotate": [
+					{ "angle": -0.64, "curve": "stepped" },
+					{ "time": 2.2, "angle": -0.64, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.6667, "angle": -87.72 }
+				]
+			},
+			"Dog Back2": {
+				"rotate": [
+					{ "angle": -46.73 }
+				]
+			},
+			"Dog Back3": {
+				"rotate": [
+					{ "angle": -18.67 }
+				]
+			},
+			"Dog Back4": {
+				"rotate": [
+					{ "angle": -48.7 }
+				]
+			},
+			"Dog Back5": {
+				"rotate": [
+					{ "angle": -48.7, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.7333, "angle": -33.74, "curve": "stepped" },
+					{ "time": 2.2, "angle": -33.74, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.6667, "angle": -48.7 }
+				]
+			},
+			"Dog Back6": {
+				"rotate": [
+					{ "angle": -48.7, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.7333, "angle": -33.74, "curve": "stepped" },
+					{ "time": 2.2, "angle": -33.74, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.6667, "angle": -48.7 }
+				]
+			},
+			"Dog Leg Upper BL": {
+				"rotate": [
+					{ "angle": 88.22 }
+				],
+				"translate": [
+					{ "x": -295.19, "y": -241.04 }
+				]
+			},
+			"Dog Leg Middle BL": {
+				"rotate": [
+					{ "angle": -0.04, "curve": "stepped" },
+					{ "time": 2.2, "angle": -0.04, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.6667, "angle": -147.26 }
+				]
+			},
+			"Dog Leg Lower BL": {
+				"rotate": [
+					{ "angle": -0.27, "curve": "stepped" },
+					{ "time": 2.2, "angle": -0.27, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.6667, "angle": 75.35 }
+				]
+			},
+			"Dog Foot BL": {
+				"rotate": [
+					{ "angle": -1.46, "curve": "stepped" },
+					{ "time": 2.2, "angle": -1.46, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.6667, "angle": -70.13 }
+				]
+			},
+			"Dog Neck": {
+				"rotate": [
+					{ "angle": -36.26, "curve": 0.295, "c3": 0.633, "c4": 0.37 },
+					{ "time": 0.3333, "angle": -43.95, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.7333, "angle": -36.26, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.0667, "angle": -39.03, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.4333, "angle": -36.26, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.7667, "angle": -39.03, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.2, "angle": -36.26 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.7333, "x": 25.81, "y": 23.72, "curve": "stepped" },
+					{ "time": 2.2, "x": 25.81, "y": 23.72, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.6667 }
+				]
+			},
+			"Dog Head": {
+				"rotate": [
+					{ "angle": 0.92, "curve": 0.295, "c3": 0.633, "c4": 0.37 },
+					{ "time": 0.3333, "angle": -5.34, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.7333, "angle": 54.41, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.0667, "angle": 51.34, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.4333, "angle": 54.41, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.7667, "angle": 51.34, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.2, "angle": 54.41, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.6667, "angle": 0.92 }
+				],
+				"translate": [
+					{ "curve": 0.295, "c3": 0.633, "c4": 0.37 },
+					{ "time": 0.3333, "x": -12.92, "y": -15.71, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.7333, "x": 11.16, "y": 19.35, "curve": "stepped" },
+					{ "time": 2.2, "x": 11.16, "y": 19.35, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.6667 }
+				]
+			},
+			"Dog Leg Upper FR": {
+				"rotate": [
+					{ "angle": -14.87 }
+				],
+				"translate": [
+					{ "x": 19.69, "y": 93.85, "curve": 0.295, "c3": 0.633, "c4": 0.37 },
+					{ "time": 0.3333, "x": 35.52, "y": 85.73, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.7333, "x": -13.65, "y": 72.18, "curve": "stepped" },
+					{ "time": 2.2, "x": -13.65, "y": 72.18, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.6667, "x": 19.69, "y": 93.85 }
+				]
+			},
+			"Dog Leg Middle FR": {
+				"rotate": [
+					{ "angle": -0.79, "curve": "stepped" },
+					{ "time": 2.2, "angle": -0.79, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.6667, "angle": -20.64 }
+				]
+			},
+			"Dog Leg Lower FR": {
+				"rotate": [
+					{ "angle": 1.15, "curve": "stepped" },
+					{ "time": 2.2, "angle": 1.15, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.6667, "angle": -10.49 }
+				]
+			},
+			"Dog Foot FR": {
+				"rotate": [
+					{ "angle": -1.06, "curve": "stepped" },
+					{ "time": 2.2, "angle": -1.06, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.6667, "angle": -4.73 }
+				]
+			},
+			"Dog Leg Upper FL": {
+				"rotate": [
+					{ "angle": -17.27 }
+				],
+				"translate": [
+					{ "x": -49.94, "y": 32.15, "curve": 0.253, "c3": 0.621, "c4": 0.48 },
+					{ "time": 0.3333, "x": -34.68, "y": 14.13, "curve": 0.253, "c3": 0.621, "c4": 0.48 },
+					{ "time": 0.7333, "x": -80.22, "y": 8.67, "curve": "stepped" },
+					{ "time": 2.2, "x": -80.22, "y": 8.67, "curve": 0.253, "c3": 0.621, "c4": 0.48 },
+					{ "time": 2.6667, "x": -49.94, "y": 32.15 }
+				]
+			},
+			"Dog Leg Middle FL": {
+				"rotate": [
+					{ "angle": 0.5, "curve": "stepped" },
+					{ "time": 2.2, "angle": 0.5, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.6667, "angle": -21.38 }
+				]
+			},
+			"Dog Leg Lower FL": {
+				"rotate": [
+					{ "angle": -1.77, "curve": "stepped" },
+					{ "time": 2.2, "angle": -1.77, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.6667, "angle": -15.5 }
+				]
+			},
+			"Dog Foot FL": {
+				"rotate": [
+					{ "angle": -1.36, "curve": "stepped" },
+					{ "time": 2.2, "angle": -1.36, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.6667, "angle": -0.19 }
+				]
+			},
+			"FR IK": {
+				"translate": [
+					{ "x": -212.77, "y": -31.39 }
+				]
+			},
+			"FL Leg Low IK": {
+				"translate": [
+					{ "x": -338.34, "y": -125.57 }
+				]
+			},
+			"FL Foot IK": {
+				"translate": [
+					{ "x": -143.01 }
+				]
+			},
+			"FR Foot IK": {
+				"translate": [
+					{ "x": -83.71 }
+				]
+			}
+		}
+	},
+	"Idle Relaxed": {
+		"slots": {
+			"dog-head": {
+				"attachment": [
+					{ "name": "Relaxed" }
+				]
+			}
+		},
+		"bones": {
+			"Dog Back": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "angle": -0.58, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "x": 13.95, "y": -13.95, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333 }
+				]
+			},
+			"Dog Mid Leg BR": {
+				"rotate": [
+					{ "angle": -0.3 }
+				]
+			},
+			"Dog Lower Leg BR": {
+				"rotate": [
+					{ "angle": 0.93 }
+				]
+			},
+			"Dog Foot Back R": {
+				"rotate": [
+					{ "angle": -0.64 }
+				]
+			},
+			"Dog Back3": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5667, "angle": -6.51, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.7667, "angle": -6.51, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333 }
+				]
+			},
+			"Dog Back4": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5667, "angle": -6.51, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.7667, "angle": -6.51, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333 }
+				]
+			},
+			"Dog Back5": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5667, "angle": -6.51, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.7667, "angle": -6.51, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333 }
+				]
+			},
+			"Dog Back6": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5667, "angle": -6.51, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.7667, "angle": -6.51, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333 }
+				]
+			},
+			"Dog Leg Middle BL": {
+				"rotate": [
+					{ "angle": -0.04 }
+				]
+			},
+			"Dog Leg Lower BL": {
+				"rotate": [
+					{ "angle": -0.27 }
+				]
+			},
+			"Dog Foot BL": {
+				"rotate": [
+					{ "angle": -1.46 }
+				]
+			},
+			"Dog Neck": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "angle": -2.26, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333 }
+				]
+			},
+			"Dog Head": {
+				"rotate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "angle": 2.93, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "x": -9.09, "y": -5.18, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333 }
+				]
+			},
+			"Dog Leg Upper FR": {
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "x": -3.2, "y": 13.58, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333 }
+				]
+			},
+			"Dog Leg Middle FR": {
+				"rotate": [
+					{ "angle": -0.79 }
+				]
+			},
+			"Dog Leg Lower FR": {
+				"rotate": [
+					{ "angle": 1.15, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "angle": 1.15 }
+				]
+			},
+			"Dog Foot FR": {
+				"rotate": [
+					{ "angle": -1.06, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "angle": -1.06 }
+				]
+			},
+			"Dog Leg Upper FL": {
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "x": -3.2, "y": 13.58, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333 }
+				]
+			},
+			"Dog Leg Middle FL": {
+				"rotate": [
+					{ "angle": 0.5 }
+				]
+			},
+			"Dog Leg Lower FL": {
+				"rotate": [
+					{ "angle": -1.77 }
+				]
+			},
+			"Dog Foot FL": {
+				"rotate": [
+					{ "angle": -1.36 }
+				]
+			}
+		}
+	},
+	"Idle Scared": {
+		"slots": {
+			"dog-head": {
+				"attachment": [
+					{ "name": "Aggressive" }
+				]
+			}
+		},
+		"bones": {
+			"Dog Back": {
+				"rotate": [
+					{ "angle": -10.69, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "angle": -11.8, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "angle": -10.69 }
+				],
+				"translate": [
+					{ "x": -118.59, "y": -97.66, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "x": -118.59, "y": -108.13, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "x": -118.59, "y": -97.66 }
+				]
+			},
+			"FR IK": {
+				"translate": [
+					{ "x": 387.17 }
+				]
+			},
+			"FL Leg Low IK": {
+				"translate": [
+					{ "x": 265.09 }
+				]
+			},
+			"FL Foot IK": {
+				"translate": [
+					{ "x": 265.09 }
+				]
+			},
+			"FR Foot IK": {
+				"translate": [
+					{ "x": 387.17 }
+				]
+			},
+			"Dog Leg Upper FR": {
+				"rotate": [
+					{ "angle": 51.37 }
+				]
+			},
+			"Dog Leg Upper FL": {
+				"rotate": [
+					{ "angle": 28.06 }
+				],
+				"translate": [
+					{ "x": -58.95, "y": -24 }
+				]
+			},
+			"Dog Neck": {
+				"rotate": [
+					{ "angle": -43.77, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "angle": -44.79, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "angle": -43.77 }
+				],
+				"translate": [
+					{ "x": 41.53, "y": 44.56 }
+				]
+			},
+			"Dog Head": {
+				"rotate": [
+					{ "angle": 60.91, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.2667, "angle": 62.54, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "angle": 60.91 }
+				],
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.2667, "x": -0.4, "y": -3.46, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333 }
+				]
+			},
+			"Dog Back3": {
+				"rotate": [
+					{ "angle": 11.39, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1, "angle": 8.31, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "angle": 11.39 }
+				]
+			},
+			"Dog Back4": {
+				"rotate": [
+					{ "angle": 11.39, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1, "angle": 8.31, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "angle": 11.39 }
+				]
+			},
+			"Dog Back5": {
+				"rotate": [
+					{ "angle": 11.39, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1, "angle": 8.31, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "angle": 11.39 }
+				]
+			},
+			"Dog Back6": {
+				"rotate": [
+					{ "angle": 11.39, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1, "angle": 8.31, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "angle": 11.39 }
+				]
+			},
+			"Dog Mid Leg BR": {
+				"rotate": [
+					{ "angle": 10.94 }
+				]
+			},
+			"Dog Lower Leg BR": {
+				"rotate": [
+					{ "angle": 45.67 }
+				]
+			},
+			"Dog Foot Back R": {
+				"rotate": [
+					{ "angle": -45.91 }
+				]
+			},
+			"Dog Leg Middle BL": {
+				"rotate": [
+					{ "angle": 3.37 }
+				]
+			},
+			"Dog Leg Lower BL": {
+				"rotate": [
+					{ "angle": 56.83 }
+				]
+			},
+			"Dog Foot BL": {
+				"rotate": [
+					{ "angle": -51.28 }
+				]
+			},
+			"Dog Leg Middle FR": {
+				"rotate": [
+					{ "angle": -6.99 }
+				]
+			},
+			"Dog Leg Lower FR": {
+				"rotate": [
+					{ "angle": 4.63, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "angle": 4.63 }
+				]
+			},
+			"Dog Foot FR": {
+				"rotate": [
+					{ "angle": -39.01, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "angle": -39.01 }
+				]
+			},
+			"Dog Leg Middle FL": {
+				"rotate": [
+					{ "angle": 34.28 }
+				]
+			},
+			"Dog Leg Lower FL": {
+				"rotate": [
+					{ "angle": -15.5 }
+				]
+			},
+			"Dog Foot FL": {
+				"rotate": [
+					{ "angle": -44.65 }
+				]
+			}
+		}
+	},
+	"animation": {}
+}
+}

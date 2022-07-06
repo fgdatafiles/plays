@@ -1,0 +1,1 @@
+pc.Skeleton.prototype.setAnimation=function(a){for(var b=a._nodes,c=0,d=b.length;d>c;c++){var e=b[c],f=e._keys;f.length&&f[0].time>0&&f.splice(0,0,new pc.Key(0,f[0].position,f[0].rotation,f[0].scale))}this._animation=a,this.setCurrentTime(0)};

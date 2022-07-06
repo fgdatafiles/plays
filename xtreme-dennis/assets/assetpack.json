@@ -1,0 +1,499 @@
+{
+    "boot" :
+    [
+        {
+            "type"      : "image",
+            "key"       : "bg_generic",
+            "url"       : "assets/ui/bg_generic.jpg",
+            "overwrite" : false
+        },        
+        {
+            "type"      : "atlasJSONArray",
+            "key"       : "skater_loader",
+            "textureURL": "assets/spritesheets/skater_loader.png",
+            "atlasURL"  : "assets/spritesheets/skater_push.json",
+            "format"    : "TEXTURE_ATLAS_JSON_ARRAY",
+            "overwrite" : true
+        },
+        { "type" : "image", "key" : "vignette", "url" : "assets/ui/vignette.png", "overwrite" : false },
+        { "type" : "json",  "key" : "app_config", "url" : "assets/data/app_config.json"  },
+        { "type" : "image", "key" : "loader_bg", "url" : "assets/ui/loader_bg.png", "overwrite" : false },
+        { "type" : "image", "key" : "loader_prog_1", "url" : "assets/ui/loader_prog_1.png", "overwrite" : false },
+        { "type" : "image", "key" : "loader_prog_2", "url" : "assets/ui/loader_prog_2.png", "overwrite" : false },
+        { "type" : "image", "key" : "loader_prog_3", "url" : "assets/ui/loader_prog_3.png", "overwrite" : false },
+        { "type" : "image", "key" : "loader_prog_4", "url" : "assets/ui/loader_prog_4.png", "overwrite" : false },
+        { "type" : "image", "key" : "loader_prog_5", "url" : "assets/ui/loader_prog_5.png", "overwrite" : false },
+        { "type" : "image", "key" : "loading_text", "url" : "assets/ui/loading_text.png", "overwrite" : false }
+
+    ],
+    "load" :
+    [
+        {
+            "type"  : "json",
+            "key"   : "game_config",
+            "url"   : "assets/data/game_config.json"
+        },
+        {
+            "type"  : "json",
+            "key"   : "level_data",
+            "url"   : "assets/data/level_data.json"
+        },
+        {
+            "type"  : "json",
+            "key"   : "level_sections",
+            "url"   : "assets/data/level_sections.json"
+        },
+        {
+            "type"  : "json",
+            "key"   : "tutorial_config",
+            "url"   : "assets/data/tutorial_config.json"
+        }
+    ],
+    "audio" :
+    [
+        {
+            "type": "audio",
+            "key": "gameplayloop",
+            "urls":["assets/audio/gameplayloop.m4a", "assets/audio/gameplayloop.ogg", "assets/audio/gameplayloop.mp3"],
+            "autoDecode": true
+        },
+        {
+            "type": "audio",
+            "key": "gnasherjump",
+            "urls":["assets/audio/gnasherjump.m4a", "assets/audio/gnasherjump.ogg", "assets/audio/gnasherjump.mp3"],
+            "autoDecode": true
+        },
+        {
+            "type": "audio",
+            "key": "gameend_timeout",
+            "urls":["assets/audio/gameend_timeout.m4a", "assets/audio/gameend_timeout.ogg", "assets/audio/gameend_timeout.mp3"],
+            "autoDecode": true
+        },
+        {
+            "type": "audio",
+            "key": "land",
+            "urls":["assets/audio/land.m4a", "assets/audio/land.ogg", "assets/audio/land.mp3"],
+            "autoDecode": true
+        },
+        {
+            "type": "audio",
+            "key": "scoretally",
+            "urls":["assets/audio/pointtally.m4a", "assets/audio/pointtally.ogg", "assets/audio/pointtally.mp3"],
+            "autoDecode": true
+        },
+        {
+            "type": "audio",
+            "key": "ollie",
+            "urls":["assets/audio/ollie.m4a", "assets/audio/ollie.ogg", "assets/audio/ollie.mp3"],
+            "autoDecode": true
+        },
+        {
+            "type": "audio",
+            "key": "skate",
+            "urls":["assets/audio/skate.m4a", "assets/audio/skate.ogg", "assets/audio/skate.mp3"],
+            "autoDecode": true
+        },
+        {
+            "type": "audio",
+            "key": "grind",
+            "urls":["assets/audio/grind.m4a", "assets/audio/grind.ogg", "assets/audio/grind.mp3"],
+            "autoDecode": true
+        },
+        {
+            "type": "audio",
+            "key": "click",
+            "urls":["assets/audio/click.m4a", "assets/audio/click.ogg", "assets/audio/click.mp3"],
+            "autoDecode": true
+        },
+        {
+            "type": "audio",
+            "key": "collision",
+            "urls":["assets/audio/collision.m4a", "assets/audio/collision.ogg", "assets/audio/collision.mp3"],
+            "autoDecode": true
+        },
+        {
+            "type": "audio",
+            "key": "failwipeout",
+            "urls":["assets/audio/failwipeout.m4a", "assets/audio/failwipeout.ogg", "assets/audio/failwipeout.mp3"],
+            "autoDecode": true
+        },
+        {
+            "type": "audio",
+            "key": "gazelle720",
+            "urls":["assets/audio/gazelle720.m4a", "assets/audio/gazelle720.ogg", "assets/audio/gazelle720.mp3"],
+            "autoDecode": true
+        },
+        {
+            "type": "audio",
+            "key": "newhighscore",
+            "urls":["assets/audio/newhighscore.m4a", "assets/audio/newhighscore.ogg", "assets/audio/newhighscore.mp3"],
+            "autoDecode": true
+        },
+        {
+            "type": "audio",
+            "key": "obstaclewarning",
+            "urls":["assets/audio/obstaclewarning.m4a", "assets/audio/obstaclewarning.ogg", "assets/audio/obstaclewarning.mp3"],
+            "autoDecode": true
+        },
+        {
+            "type": "audio",
+            "key": "pickupcoin",
+            "urls":["assets/audio/pickupcoin.m4a", "assets/audio/pickupcoin.ogg", "assets/audio/pickupcoin.mp3"],
+            "autoDecode": true
+        },
+        {
+            "type": "audio",
+            "key": "pickuptime",
+            "urls":["assets/audio/pickuptime.m4a", "assets/audio/pickuptime.ogg", "assets/audio/pickuptime.mp3"],
+            "autoDecode": true
+        },
+        {
+            "type": "audio",
+            "key": "tutorialstart",
+            "urls":["assets/audio/tutorialstart.m4a", "assets/audio/tutorialstart.ogg", "assets/audio/tutorialstart.mp3"],
+            "autoDecode": true
+        },
+        {
+            "type": "audio",
+            "key": "welcome",
+            "urls":["assets/audio/welcome.m4a", "assets/audio/welcome.ogg", "assets/audio/welcome.mp3"],
+            "autoDecode": true
+        },
+        {
+            "type": "audio",
+            "key": "trick",
+            "urls":["assets/audio/trick.m4a", "assets/audio/trick.ogg", "assets/audio/trick.mp3"],
+            "autoDecode": true
+        }
+    ],
+    "ui" :
+    [
+        {
+
+            "type"      : "atlasJSONArray",
+            "key"       : "ui",
+            "textureURL": "assets/spritesheets/ui.png",
+            "atlasURL"  : "assets/spritesheets/ui.json",
+            "format"    : "TEXTURE_ATLAS_JSON_ARRAY",
+            "overwrite" : true
+        },
+        {
+
+            "type"      : "atlasJSONArray",
+            "key"       : "buttons",
+            "textureURL": "assets/spritesheets/buttons.png",
+            "atlasURL"  : "assets/spritesheets/buttons.json",
+            "format"    : "TEXTURE_ATLAS_JSON_ARRAY",
+            "overwrite" : true
+        },
+        {
+            "type"      : "image",
+            "key"       : "char_dennis",
+            "url"       : "assets/ui/char_dennis.png",
+            "overwrite" : false
+        },
+        {
+            "type"      : "image",
+            "key"       : "char_gnasher_home",
+            "url"       : "assets/ui/char_gnasher_home.png",
+            "overwrite" : false
+        },
+        {
+            "type"      : "image",
+            "key"       : "copyright",
+            "url"       : "assets/ui/copyright.png",
+            "overwrite" : false
+        },
+        {
+            "type"      : "image",
+            "key"       : "logo_dennisgnasher",
+            "url"       : "assets/ui/logo_dennisgnasher.png",
+            "overwrite" : false
+        },
+        {
+            "type"      : "image",
+            "key"       : "logo_gamename",
+            "url"       : "assets/ui/logo_gamename.png",
+            "overwrite" : false
+        },
+        {
+            "type"      : "image",
+            "key"       : "game_intro_panel",
+            "url"       : "assets/ui/game_intro_panel.png",
+            "overwrite" : false
+        },
+        {
+            "type"      : "image",
+            "key"       : "trans_black_1",
+            "url"       : "assets/ui/trans_black_1.png",
+            "overwrite" : false
+        },
+        {
+            "type"      : "image",
+            "key"       : "trans_black_2",
+            "url"       : "assets/ui/trans_black_2.png",
+            "overwrite" : false
+        },
+        {
+            "type"      : "image",
+            "key"       : "trans_black_3",
+            "url"       : "assets/ui/trans_black_3.png",
+            "overwrite" : false
+        },
+        {
+            "type"      : "image",
+            "key"       : "trans_black_4",
+            "url"       : "assets/ui/trans_black_4.png",
+            "overwrite" : false
+        },
+        {
+            "type"      : "image",
+            "key"       : "trans_red",
+            "url"       : "assets/ui/trans_red.png",
+            "overwrite" : false
+        },
+        { "type" : "image", "key" : "tutorial_icon_grind", "url" : "assets/ui/tutorial_icon_grind.png", "overwrite" : false },
+        { "type" : "image", "key" : "tutorial_icon_jump", "url" : "assets/ui/tutorial_icon_jump.png", "overwrite" : false },
+        { "type" : "image", "key" : "tutorial_icon_obstacle", "url" : "assets/ui/tutorial_icon_obstacle.png", "overwrite" : false },
+        { "type" : "image", "key" : "tutorial_icon_trick", "url" : "assets/ui/tutorial_icon_trick.png", "overwrite" : false },
+        { "type" : "image", "key" : "tutorial_copy_complete", "url" : "assets/ui/tutorial_copy_complete.png", "overwrite" : false },
+        { "type" : "image", "key" : "tutorial_copy_grind", "url" : "assets/ui/tutorial_copy_grind.png", "overwrite" : false },
+        { "type" : "image", "key" : "tutorial_copy_grind_mob", "url" : "assets/ui/tutorial_copy_grind_mob.png", "overwrite" : false },
+        { "type" : "image", "key" : "tutorial_copy_jump", "url" : "assets/ui/tutorial_copy_jump.png", "overwrite" : false },
+        { "type" : "image", "key" : "tutorial_copy_jump_mob", "url" : "assets/ui/tutorial_copy_jump_mob.png", "overwrite" : false },
+        { "type" : "image", "key" : "tutorial_copy_obstacle", "url" : "assets/ui/tutorial_copy_obstacle.png", "overwrite" : false },
+        { "type" : "image", "key" : "tutorial_copy_obstacle_mob", "url" : "assets/ui/tutorial_copy_obstacle.png", "overwrite" : false },
+        { "type" : "image", "key" : "tutorial_copy_trick", "url" : "assets/ui/tutorial_copy_trick.png", "overwrite" : false },
+        { "type" : "image", "key" : "tutorial_copy_trick_mob", "url" : "assets/ui/tutorial_copy_trick.png", "overwrite" : false },
+        { "type" : "image", "key" : "hud_scorepanel", "url" : "assets/ui/hud_scorepanel.png", "overwrite" : false },
+        { "type" : "image", "key" : "hud_timepanel", "url" : "assets/ui/hud_timepanel.png", "overwrite" : false },
+        { "type" : "image", "key" : "hud_multiplierpanel", "url" : "assets/ui/hud_multiplierpanel.png", "overwrite" : false },
+        { "type" : "image", "key" : "hud_timeuppanel", "url" : "assets/ui/hud_timeuppanel.png", "overwrite" : false },
+        { "type" : "image", "key" : "hero_scorepanel", "url" : "assets/ui/hero_scorepanel.png", "overwrite" : false },
+        { "type" : "image", "key" : "hero_multiplierPanel", "url" : "assets/ui/hero_multiplierPanel.png", "overwrite" : false },
+        { "type" : "image", "key" : "gameend_panel_center", "url" : "assets/ui/gameend_panel_center.png", "overwrite" : false },
+        { "type" : "image", "key" : "gameend_panel_highscore", "url" : "assets/ui/gameend_panel_highscore.png", "overwrite" : false },
+        { "type" : "image", "key" : "gameend_panel_score", "url" : "assets/ui/gameend_panel_score.png", "overwrite" : false },
+        { "type" : "image", "key" : "gameend_title_timeout", "url" : "assets/ui/gameend_title_timeout.png", "overwrite" : false },
+        { "type" : "image", "key" : "gamend_dennis_wipeout", "url" : "assets/ui/gamend_dennis_wipeout.png", "overwrite" : false },
+        { "type" : "image", "key" : "gamend_gnasher_wipeout", "url" : "assets/ui/gamend_gnasher_wipeout.png", "overwrite" : false },
+        { "type" : "image", "key" : "gameend_chars_timeout", "url" : "assets/ui/gameend_chars_timeout.png", "overwrite" : false },
+        { "type" : "image", "key" : "gameend_title_wipeout", "url" : "assets/ui/gameend_title_wipeout.png", "overwrite" : false },
+        { "type" : "image", "key" : "credits", "url" : "assets/ui/credits.png", "overwrite" : false },
+        { "type" : "image", "key" : "pause_panel", "url" : "assets/ui/pause_panel.png", "overwrite" : false }
+
+        
+    ],
+    "game" :
+    [
+        {
+
+            "type"      : "atlasJSONArray",
+            "key"       : "landscape",
+            "textureURL": "assets/spritesheets/landscape.png",
+            "atlasURL"  : "assets/spritesheets/landscape.json",
+            "format"    : "TEXTURE_ATLAS_JSON_ARRAY",
+            "overwrite" : true
+        },
+        {
+
+            "type"      : "atlasJSONArray",
+            "key"       : "walls",
+            "textureURL": "assets/spritesheets/walls.png",
+            "atlasURL"  : "assets/spritesheets/walls.json",
+            "format"    : "TEXTURE_ATLAS_JSON_ARRAY",
+            "overwrite" : true
+        },
+        {
+
+            "type"      : "atlasJSONArray",
+            "key"       : "furniture",
+            "textureURL": "assets/spritesheets/furniture.png",
+            "atlasURL"  : "assets/spritesheets/furniture.json",
+            "format"    : "TEXTURE_ATLAS_JSON_ARRAY",
+            "overwrite" : true
+        },
+        {
+
+            "type"      : "atlasJSONArray",
+            "key"       : "pickups",
+            "textureURL": "assets/spritesheets/pickups.png",
+            "atlasURL"  : "assets/spritesheets/pickups.json",
+            "format"    : "TEXTURE_ATLAS_JSON_ARRAY",
+            "overwrite" : true
+        }      ,
+        {
+
+            "type"      : "atlasJSONArray",
+            "key"       : "obstacles",
+            "textureURL": "assets/spritesheets/obstacles.png",
+            "atlasURL"  : "assets/spritesheets/obstacles.json",
+            "format"    : "TEXTURE_ATLAS_JSON_ARRAY",
+            "overwrite" : true
+        } 
+    ],
+    "skater" :
+    [
+        {
+            "type"      : "atlasJSONArray",
+            "key"       : "skater_grind_5050",
+            "textureURL": "assets/spritesheets/skater_5050.png",
+            "atlasURL"  : "assets/spritesheets/skater_5050.json",
+            "format"    : "TEXTURE_ATLAS_JSON_ARRAY",
+            "overwrite" : true
+        },
+        {
+            "type"      : "atlasJSONArray",
+            "key"       : "skater_grind_boardslide",
+            "textureURL": "assets/spritesheets/skater_boardslide.png",
+            "atlasURL"  : "assets/spritesheets/skater_boardslide.json",
+            "format"    : "TEXTURE_ATLAS_JSON_ARRAY",
+            "overwrite" : true
+        },
+        {
+            "type"      : "atlasJSONArray",
+            "key"       : "skater_grind_crookedgrind",
+            "textureURL": "assets/spritesheets/skater_crookedgrind.png",
+            "atlasURL"  : "assets/spritesheets/skater_crookedgrind.json",
+            "format"    : "TEXTURE_ATLAS_JSON_ARRAY",
+            "overwrite" : true
+        },
+        {
+            "type"      : "atlasJSONArray",
+            "key"       : "skater_fall",
+            "textureURL": "assets/spritesheets/skater_fall.png",
+            "atlasURL"  : "assets/spritesheets/skater_fall.json",
+            "format"    : "TEXTURE_ATLAS_JSON_ARRAY",
+            "overwrite" : true
+        },
+        {
+            "type"      : "atlasJSONArray",
+            "key"       : "skater_trick_gazelleflip",
+            "textureURL": "assets/spritesheets/skater_gazelleflip.png",
+            "atlasURL"  : "assets/spritesheets/skater_gazelleflip.json",
+            "format"    : "TEXTURE_ATLAS_JSON_ARRAY",
+            "overwrite" : true
+        },
+        {
+            "type"      : "atlasJSONArray",
+            "key"       : "skater_trick_indygrab",
+            "textureURL": "assets/spritesheets/skater_indygrab.png",
+            "atlasURL"  : "assets/spritesheets/skater_indygrab.json",
+            "format"    : "TEXTURE_ATLAS_JSON_ARRAY",
+            "overwrite" : true
+        },
+        {
+            "type"      : "atlasJSONArray",
+            "key"       : "skater_jump",
+            "textureURL": "assets/spritesheets/skater_jump.png",
+            "atlasURL"  : "assets/spritesheets/skater_jump.json",
+            "format"    : "TEXTURE_ATLAS_JSON_ARRAY",
+            "overwrite" : true
+        },
+        {
+            "type"      : "atlasJSONArray",
+            "key"       : "skater_trick_kickflip",
+            "textureURL": "assets/spritesheets/skater_kickflip.png",
+            "atlasURL"  : "assets/spritesheets/skater_kickflip.json",
+            "format"    : "TEXTURE_ATLAS_JSON_ARRAY",
+            "overwrite" : true
+        },
+        {
+            "type"      : "atlasJSONArray",
+            "key"       : "skater_land",
+            "textureURL": "assets/spritesheets/skater_land.png",
+            "atlasURL"  : "assets/spritesheets/skater_land.json",
+            "format"    : "TEXTURE_ATLAS_JSON_ARRAY",
+            "overwrite" : true
+        },
+        {
+            "type"      : "atlasJSONArray",
+            "key"       : "skater_trick_nosegrab",
+            "textureURL": "assets/spritesheets/skater_nosegrab.png",
+            "atlasURL"  : "assets/spritesheets/skater_nosegrab.json",
+            "format"    : "TEXTURE_ATLAS_JSON_ARRAY",
+            "overwrite" : true
+        },
+        {
+            "type"      : "atlasJSONArray",
+            "key"       : "skater_trick_popshovit",
+            "textureURL": "assets/spritesheets/skater_popshovit.png",
+            "atlasURL"  : "assets/spritesheets/skater_popshovit.json",
+            "format"    : "TEXTURE_ATLAS_JSON_ARRAY",
+            "overwrite" : true
+        },
+        {
+            "type"      : "atlasJSONArray",
+            "key"       : "skater_push",
+            "textureURL": "assets/spritesheets/skater_push.png",
+            "atlasURL"  : "assets/spritesheets/skater_push.json",
+            "format"    : "TEXTURE_ATLAS_JSON_ARRAY",
+            "overwrite" : true
+        },
+        {
+            "type"      : "atlasJSONArray",
+            "key"       : "skater_roll",
+            "textureURL": "assets/spritesheets/skater_roll.png",
+            "atlasURL"  : "assets/spritesheets/skater_roll.json",
+            "format"    : "TEXTURE_ATLAS_JSON_ARRAY",
+            "overwrite" : true
+        },
+        {
+            "type"      : "atlasJSONArray",
+            "key"       : "skater_roll_solo",
+            "textureURL": "assets/spritesheets/skater_roll_solo.png",
+            "atlasURL"  : "assets/spritesheets/skater_roll_solo.json",
+            "format"    : "TEXTURE_ATLAS_JSON_ARRAY",
+            "overwrite" : true
+        },
+        {
+            "type"      : "atlasJSONArray",
+            "key"       : "skater_climb",
+            "textureURL": "assets/spritesheets/skater_climb.png",
+            "atlasURL"  : "assets/spritesheets/skater_climb.json",
+            "format"    : "TEXTURE_ATLAS_JSON_ARRAY",
+            "overwrite" : true
+        },
+        {
+            "type"      : "atlasJSONArray",
+            "key"       : "skater_trick_stalefish",
+            "textureURL": "assets/spritesheets/skater_stalefish.png",
+            "atlasURL"  : "assets/spritesheets/skater_stalefish.json",
+            "format"    : "TEXTURE_ATLAS_JSON_ARRAY",
+            "overwrite" : true
+        },
+        {
+            "type"      : "atlasJSONArray",
+            "key"       : "skater_wipeout",
+            "textureURL": "assets/spritesheets/skater_wipeout.png",
+            "atlasURL"  : "assets/spritesheets/skater_wipeout.json",
+            "format"    : "TEXTURE_ATLAS_JSON_ARRAY",
+            "overwrite" : true
+        },
+        {
+            "type"      : "atlasJSONArray",
+            "key"       : "gnasher_run",
+            "textureURL": "assets/spritesheets/gnasher_run.png",
+            "atlasURL"  : "assets/spritesheets/gnasher_run.json",
+            "format"    : "TEXTURE_ATLAS_JSON_ARRAY",
+            "overwrite" : true
+        },
+        { "type" : "image", "key" : "backgroundlayer_1", "url" : "assets/spritesheets/backgroundlayer_1.png", "overwrite" : false },
+        { "type" : "image", "key" : "backgroundlayer_2", "url" : "assets/spritesheets/backgroundlayer_2.png", "overwrite" : false },
+        { "type" : "image", "key" : "fg_urban_start", "url" : "assets/spritesheets/fg_urban_start.png", "overwrite" : false },
+        { "type" : "image", "key" : "fg_urban_01", "url" : "assets/spritesheets/fg_urban_01.png", "overwrite" : false },
+        { "type" : "image", "key" : "mg_urban_01", "url" : "assets/spritesheets/mg_urban_01.png", "overwrite" : false },
+        { "type" : "image", "key" : "mg_urban_02", "url" : "assets/spritesheets/mg_urban_02.png", "overwrite" : false },
+        { "type" : "image", "key" : "mg_urban_03", "url" : "assets/spritesheets/mg_urban_03.png", "overwrite" : false },
+        { "type" : "image", "key" : "mg_urban_04", "url" : "assets/spritesheets/mg_urban_04.png", "overwrite" : false },
+        { "type" : "image", "key" : "mg_urban_05", "url" : "assets/spritesheets/mg_urban_05.png", "overwrite" : false },
+        { "type" : "image", "key" : "fg_park_start", "url" : "assets/spritesheets/fg_park_start.png", "overwrite" : false },
+        { "type" : "image", "key" : "fg_park_01", "url" : "assets/spritesheets/fg_park_01.png", "overwrite" : false },
+        { "type" : "image", "key" : "fg_park_02", "url" : "assets/spritesheets/fg_park_02.png", "overwrite" : false },
+        { "type" : "image", "key" : "mg_park_01", "url" : "assets/spritesheets/mg_park_01.png", "overwrite" : false },
+        { "type" : "image", "key" : "mg_park_02", "url" : "assets/spritesheets/mg_park_02.png", "overwrite" : false },
+        { "type" : "image", "key" : "mg_park_03", "url" : "assets/spritesheets/mg_park_03.png", "overwrite" : false },
+        { "type" : "image", "key" : "mg_park_04", "url" : "assets/spritesheets/mg_park_04.png", "overwrite" : false }
+    ]
+
+}

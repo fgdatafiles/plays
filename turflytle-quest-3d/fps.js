@@ -1,0 +1,1 @@
+pc.script.create("fps",function(a){var b=0,c=0,d=function(a){this.entity=a};return d.prototype={initialize:function(){this.fontScript=this.entity.script.font_renderer},update:function(a){if(++b,c+=a,c>1){var d=b/c;this.fontScript.text="FPS: "+d.toFixed(2),c=b=0}}},d});

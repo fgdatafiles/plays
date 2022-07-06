@@ -1,0 +1,1 @@
+window.textDic=null,pc.script.attribute("localizationJson","asset",[],{type:"json",max:1}),pc.script.create("Localization",function(a){var b=function(a){this.entity=a};return b.prototype={initialize:function(){if(null==window.textDic){var b=function(){window.textDic=c.resource},c=a.assets.get("5348394");c.ready(function(a){b()}),a.assets.load(c)}},update:function(a){}},b});

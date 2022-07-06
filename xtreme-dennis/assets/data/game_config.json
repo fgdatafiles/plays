@@ -1,0 +1,76 @@
+{    
+    "width"                      : 1368,
+    "height"                     : 720,
+    "speed"                      : 10,
+    "start_time"                 : 45,
+    "save_data_id"               : "extremedennis_1.0.2",
+    "points_per_coin"            : 25,
+    "trick_points_per_second"    : 50,
+    "trick_multiplier_delay"     : 500,
+    "grind_points_per_second"    : 10,
+    "time_bonus"                 : 5000,
+    "ground_height"              : 87,
+    "time_bonus_delay"           : 10000,
+    "game_environments"          : ["urban", "park"],
+    "enviroment_switch"          : 10000,
+    "game_layers"       :
+    {
+        "background_1" :
+        {
+            "urban" : {"start" : false, "pool" : ["backgroundlayer_2"] },
+            "park"  : {"start" : false, "pool" : ["backgroundlayer_2"] }
+        },
+        "background_2" :
+        {
+            "urban" : {"start" : false, "pool" : ["backgroundlayer_1"] },
+            "park"  : {"start" : false, "pool" : ["backgroundlayer_1"] }
+        },
+        "background_3" :
+        {
+            "urban" : {"start" : false, "pool" : ["mg_urban_01", "mg_urban_02", "mg_urban_03", "mg_urban_04", "mg_urban_05"] },
+            "park"  : {"start" : false, "pool" : ["mg_park_01", "mg_park_02", "mg_park_03", "mg_park_04"] }
+        },
+        "forground" :
+        {
+            "urban" : {"start" : "fg_urban_start", "pool" : ["fg_urban_01"] },
+            "park"  : {"start" : "fg_park_start", "pool" :  ["fg_park_01","fg_park_02"] }
+        }
+    },
+
+    "game_areas"                 :
+    {
+        "urban" :
+        {
+            "background_1"      : ["backgroundlayer_2"],
+            "background_2"      : ["backgroundlayer_1"],
+            "background_3"      : ["mg_urban_01", "mg_urban_02", "mg_urban_03", "mg_urban_04", "mg_urban_05"],
+            "forground"         : ["fg_urban_01"]
+        },
+        "park" :
+        {
+
+        }
+    },
+    "audio":
+    {
+        "gameplayloop"      : "gameplayloop",
+        "skate"             : "skate",
+        "ollie"             : "ollie",
+        "land"              : "land",
+        "scoretally"        : "scoretally",
+        "grind"             : "grind",
+        "click"             : "click",
+        "pickupcoin"        : "pickupcoin",
+        "collision"         : "collision",
+        "failwipeout"       : "failwipeout",
+        "gazelle720"        : "gazelle720",
+        "newhighscore"      : "newhighscore",
+        "obstaclewarning"   : "obstaclewarning",
+        "pickuptime"        : "pickuptime",
+        "tutorialstart"     : "tutorialstart",
+        "welcome"           : "welcome",
+        "trick"             : "trick",
+        "gameend_timeout"   : "gameend_timeout",
+        "gnasherjump"       : "gnasherjump"
+    }
+}

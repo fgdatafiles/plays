@@ -1,0 +1,70 @@
+{
+"skeleton": {
+	"hash": "Jql5qE33xHrJXTod/WwhmQQRItQ",
+	"spine": "3.8.99",
+	"x": -267.01,
+	"y": -179.39,
+	"width": 442,
+	"height": 461,
+	"images": "./images/",
+	"audio": "/Users/alangorringe/Documents/SVN/WLD - 4.1 (Season6Game)/Assets/Animation/Working Files/Bee Swarm"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "Bee1 Body", "parent": "root", "length": 254.74, "rotation": -21.92, "x": -77.1, "y": 34.8 },
+	{ "name": "Bee1 Wing Near", "parent": "Bee1 Body", "length": 209.42, "rotation": 96.36, "x": 50.47, "y": 48.27 },
+	{ "name": "Bee1 Wing Far", "parent": "Bee1 Body", "length": 211.56, "rotation": 120.93, "x": 33.91, "y": 35.39 }
+],
+"slots": [
+	{ "name": "Bee1 Wing Far", "bone": "Bee1 Wing Far", "attachment": "Bee1 Wing Far" },
+	{ "name": "Bee1 Body", "bone": "Bee1 Body", "attachment": "Bee1 Body" },
+	{ "name": "Bee1 Wing Near", "bone": "Bee1 Wing Near", "attachment": "Bee1 Wing Near" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Bee1 Body": {
+				"Bee1 Body": { "x": 47.02, "y": -33.57, "rotation": 21.92, "width": 442, "height": 331 }
+			},
+			"Bee1 Wing Far": {
+				"Bee1 Wing Far": { "x": 105.9, "y": -16.21, "rotation": -99.01, "width": 122, "height": 235 }
+			},
+			"Bee1 Wing Near": {
+				"Bee1 Wing Near": { "x": 113.67, "y": -11.67, "rotation": -74.43, "width": 111, "height": 229 }
+			}
+		}
+	}
+],
+"animations": {
+	"Idle": {
+		"bones": {
+			"Bee1 Wing Near": {
+				"scale": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.0333, "x": 0.431, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.0667 }
+				],
+				"shear": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.0333, "x": -54.86, "y": 8.65, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.0667 }
+				]
+			},
+			"Bee1 Wing Far": {
+				"scale": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.0333, "x": 0.286, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.0667 }
+				],
+				"shear": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.0333, "x": 46.68, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.0667 }
+				]
+			}
+		}
+	},
+	"animation": {}
+}
+}

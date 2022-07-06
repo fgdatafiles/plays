@@ -1,0 +1,870 @@
+{
+	"game_objects" : 
+	{
+		"clock" :{"collider" : {"x":3, "y":11, "width":84, "height":84} },
+		"coin" :{"collider" : {"x":0, "y":0, "width":40, "height":50} },
+		"object_bench_01" :{"collider" : {"x":0, "y":52, "width":277, "height":19} },
+		"object_dustbin_01" :{"collider" : {"x":4, "y":11, "width":204, "height":28} },
+		"object_dustbin_02" :{"collider" : {"x":4, "y":11, "width":144, "height":28} },
+		"object_flowerbed_01" :{"collider" : {"x":3, "y":78, "width":298, "height":28} },
+		"object_flowerbed_02" :{"collider" : {"x":3, "y":66, "width":298, "height":28} },
+		"object_flowerbed_03" :{"collider" : {"x":3, "y":66, "width":298, "height":28} },
+		"object_roadbarrier" :{"collider" : {"x":0, "y":0, "width":352, "height":28} },
+		"object_roadworks" :{"collider" : {"x":1, "y":121, "width":151, "height":1} },
+		"object_rock_01" :{"collider" : {"x":11, "y":7, "width":458, "height":19} },
+		"object_rock_02" :{"collider" : {"x":21, "y":7, "width":390, "height":19} },
+		"object_rock_03" :{"collider" : {"x":33, "y":104, "width":440, "height":19} },
+		"object_rock_04" :{"collider" : {"x":15, "y":100, "width":345, "height":19} },
+		"object_rock_05" :{"collider" : {"x":14, "y":3, "width":301, "height":19} },
+		"object_rock_06" :{"collider" : {"x":19, "y":3, "width":301, "height":19} },
+		"object_rock_07" :{"collider" : {"x":14, "y":5, "width":143, "height":19} },
+		"object_rock_08" :{"collider" : {"x":14, "y":5, "width":143, "height":19} },
+		"object_van_left" :{"collider" : {"x":137, "y":0, "width":437, "height":29} },
+		"object_van_right" :{"collider" : {"x":0, "y":0, "width":435, "height":19} },
+		"obstacle_01" :{"collider" : {"x":5, "y":24, "width":60, "height":164} },
+		"obstacle_02" :{"collider" : {"x":1, "y":30, "width":42, "height":144} },
+		"obstacle_03" :{"collider" : {"x":7, "y":33, "width":48, "height":147} },
+		"obstacle_04" :{"collider" : {"x":6, "y":23, "width":92, "height":133} },
+		"obstacle_05" :{"collider" : {"x":0, "y":16, "width":54, "height":146} },
+		"obstacle_06" :{"collider" : {"x":17, "y":42, "width":54, "height":146} },
+		"obstacle_random" :{"collider" : {"x":-40, "y":-167, "width":79, "height":168} },
+		"wall_01_edge_left" :{"collider" : {"x":39, "y":81, "width":16, "height":28} },
+		"wall_01_edge_right" :{"collider" : {"x":0, "y":81, "width":16, "height":28} },
+		"wall_01_middle" :{"collider" : {"x":0, "y":0, "width":170, "height":28} },
+		"wall_02_edge_left" :{"collider" : {"x":80, "y":111, "width":20, "height":57} },
+		"wall_02_edge_right" :{"collider" : {"x":0, "y":111, "width":20, "height":57} },
+		"wall_02_middle" :{"collider" : {"x":0, "y":6, "width":381, "height":57} },
+		"wall_03_edge_left" :{"collider" : {"x":0, "y":0, "width":51, "height":19} },
+		"wall_03_edge_right" :{"collider" : {"x":0, "y":0, "width":51, "height":19} },
+		"wall_03_middle" :{"collider" : {"x":0, "y":0, "width":183, "height":19} },
+		"wall_fence_01_edge_left" :{"collider" : {"x":16, "y":47, "width":16, "height":28} },
+		"wall_fence_01_edge_right" :{"collider" : {"x":1, "y":47, "width":16, "height":28} },
+		"wall_fence_01_middle" :{"collider" : {"x":0, "y":0, "width":150, "height":28} },
+		"wall_hedge_edge_left" :{"collider" : {"x":21, "y":94, "width":170, "height":19} },
+		"wall_hedge_edge_right" :{"collider" : {"x":0, "y":94, "width":170, "height":19} },
+		"wall_hedge_middle" :{"collider" : {"x":0, "y":93, "width":191, "height":19} }
+	},
+	"obstacles" : [ "obstacle_01" , "obstacle_02" , "obstacle_03" , "obstacle_04" , "obstacle_05" , "obstacle_06" ],
+	"urban":
+	[
+		{
+			"length" : 6843,
+			"walls" :
+			[
+				{ "x":5130, "y":457, "type": "wall_fence_01_middle" },
+				{ "x":5430, "y":457, "type": "wall_fence_01_middle" },
+				{ "x":5280, "y":457, "type": "wall_fence_01_middle" },
+				{ "x":1605, "y":454, "type": "wall_hedge_edge_left" },
+				{ "x":1794, "y":454, "type": "wall_hedge_middle" },
+				{ "x":1985, "y":454, "type": "wall_hedge_middle" },
+				{ "x":159, "y":572, "type": "object_roadbarrier" },
+				{ "x":924, "y":572, "type": "object_roadbarrier" },
+				{ "x":627, "y":515, "type": "object_roadworks" },
+				{ "x":2940, "y":454, "type": "wall_hedge_middle" },
+				{ "x":3131, "y":454, "type": "wall_hedge_middle" },
+				{ "x":3320, "y":454, "type": "wall_hedge_edge_right" },
+				{ "x":3868, "y":398, "type": "wall_01_edge_left" },
+				{ "x":3922, "y":479, "type": "wall_01_middle" },
+				{ "x":4092, "y":479, "type": "wall_01_middle" },
+				{ "x":4262, "y":479, "type": "wall_01_middle" },
+				{ "x":4431, "y":479, "type": "wall_01_middle" },
+				{ "x":4562, "y":186, "type": "wall_02_edge_left" },
+				{ "x":5043, "y":186, "type": "wall_02_edge_right" },
+				{ "x":4662, "y":291, "type": "wall_02_middle" },
+				{ "x":5581, "y":457, "type": "wall_fence_01_middle" },
+				{ "x":5881, "y":457, "type": "wall_fence_01_middle" },
+				{ "x":5731, "y":457, "type": "wall_fence_01_middle" },
+				{ "x":6011, "y":186, "type": "wall_02_edge_left" },
+				{ "x":6492, "y":186, "type": "wall_02_edge_right" },
+				{ "x":6111, "y":291, "type": "wall_02_middle" },
+				{ "x":2750, "y":454, "type": "wall_hedge_edge_left" },
+				{ "x":2170, "y":454, "type": "wall_hedge_edge_right" },
+				{ "x":4670, "y":571, "type": "object_roadbarrier" },
+				{ "x":6133, "y":572, "type": "object_roadbarrier" }
+			],
+			"objects" :
+			[
+			],
+			"obstacles" :
+			[
+				{ "x":1454, "y":636, "type": "obstacle_random" },
+				{ "x":3668, "y":636, "type": "obstacle_random" }
+			],
+			"coins" :
+			[
+				{ "x":696, "y":275, "type": "coin" },
+				{ "x":606, "y":296, "type": "coin" },
+				{ "x":786, "y":296, "type": "coin" },
+				{ "x":536, "y":367, "type": "coin" },
+				{ "x":856, "y":367, "type": "coin" },
+				{ "x":2534, "y":202, "type": "coin" },
+				{ "x":2443, "y":223, "type": "coin" },
+				{ "x":2624, "y":223, "type": "coin" },
+				{ "x":2373, "y":295, "type": "coin" },
+				{ "x":2694, "y":295, "type": "coin" },
+				{ "x":5271, "y":-39, "type": "coin" },
+				{ "x":5180, "y":-18, "type": "coin" },
+				{ "x":5110, "y":53, "type": "coin" },
+				{ "x":6773, "y":-39, "type": "coin" },
+				{ "x":6682, "y":-18, "type": "coin" },
+				{ "x":6612, "y":53, "type": "coin" },
+				{ "x":3633, "y":202, "type": "coin" },
+				{ "x":3543, "y":223, "type": "coin" },
+				{ "x":3723, "y":223, "type": "coin" },
+				{ "x":3473, "y":295, "type": "coin" },
+				{ "x":3793, "y":295, "type": "coin" },
+				{ "x":4079, "y":381, "type": "coin" },
+				{ "x":4161, "y":381, "type": "coin" },
+				{ "x":4241, "y":381, "type": "coin" },
+				{ "x":4323, "y":381, "type": "coin" },
+				{ "x":4713, "y":483, "type": "coin" },
+				{ "x":4795, "y":483, "type": "coin" },
+				{ "x":4875, "y":483, "type": "coin" },
+				{ "x":4957, "y":483, "type": "coin" },
+				{ "x":6172, "y":485, "type": "coin" },
+				{ "x":6254, "y":485, "type": "coin" },
+				{ "x":6334, "y":485, "type": "coin" },
+				{ "x":6416, "y":485, "type": "coin" },
+				{ "x":1842, "y":439, "type": "coin" },
+				{ "x":1924, "y":439, "type": "coin" },
+				{ "x":2004, "y":439, "type": "coin" },
+				{ "x":2086, "y":439, "type": "coin" },
+				{ "x":2992, "y":439, "type": "coin" },
+				{ "x":3075, "y":439, "type": "coin" },
+				{ "x":3154, "y":439, "type": "coin" },
+				{ "x":3237, "y":439, "type": "coin" }
+			],
+			"clocks" :
+			[
+				{ "x":5542, "y":309, "type": "clock" }
+			]
+		},
+		{
+			"length" : 5298,
+			"walls" :
+			[
+				{ "x":803, "y":340, "type": "wall_fence_01_edge_left" },
+				{ "x":834, "y":387, "type": "wall_fence_01_middle" },
+				{ "x":984, "y":387, "type": "wall_fence_01_middle" },
+				{ "x":1284, "y":387, "type": "wall_fence_01_middle" },
+				{ "x":1433, "y":341, "type": "wall_fence_01_edge_right" },
+				{ "x":1134, "y":387, "type": "wall_fence_01_middle" },
+				{ "x":2647, "y":184, "type": "wall_02_edge_left" },
+				{ "x":3509, "y":184, "type": "wall_02_edge_right" },
+				{ "x":2747, "y":288, "type": "wall_02_middle" },
+				{ "x":3128, "y":288, "type": "wall_02_middle" },
+				{ "x":747, "y":514, "type": "object_flowerbed_01" },
+				{ "x":1220, "y":514, "type": "object_flowerbed_01" },
+				{ "x":1050, "y":527, "type": "object_flowerbed_02" },
+				{ "x":908, "y":527, "type": "object_flowerbed_03" },
+				{ "x":1796, "y":340, "type": "wall_fence_01_edge_left" },
+				{ "x":1827, "y":387, "type": "wall_fence_01_middle" },
+				{ "x":1976, "y":387, "type": "wall_fence_01_middle" },
+				{ "x":2277, "y":387, "type": "wall_fence_01_middle" },
+				{ "x":2426, "y":341, "type": "wall_fence_01_edge_right" },
+				{ "x":2127, "y":387, "type": "wall_fence_01_middle" },
+				{ "x":1740, "y":514, "type": "object_flowerbed_01" },
+				{ "x":2213, "y":514, "type": "object_flowerbed_01" },
+				{ "x":2042, "y":527, "type": "object_flowerbed_02" },
+				{ "x":1901, "y":527, "type": "object_flowerbed_03" },
+				{ "x":2813, "y":479, "type": "object_dustbin_01" },
+				{ "x":3173, "y":564, "type": "object_roadbarrier" },
+				{ "x":3962, "y":574, "type": "object_roadbarrier" },
+				{ "x":4739, "y":574, "type": "object_roadbarrier" },
+				{ "x":3671, "y":515, "type": "object_roadworks" },
+				{ "x":4455, "y":516, "type": "object_roadworks" },
+				{ "x":161, "y":569, "type": "object_roadbarrier" }
+			],
+			"objects" :
+			[
+			],
+			"obstacles" :
+			[
+				{ "x":1631, "y":636, "type": "obstacle_random" }
+			],
+			"coins" :
+			[
+				{ "x":1610, "y":83, "type": "coin" },
+				{ "x":1520, "y":103, "type": "coin" },
+				{ "x":1700, "y":103, "type": "coin" },
+				{ "x":1450, "y":175, "type": "coin" },
+				{ "x":1770, "y":175, "type": "coin" },
+				{ "x":3721, "y":-39, "type": "coin" },
+				{ "x":3631, "y":-18, "type": "coin" },
+				{ "x":3811, "y":-18, "type": "coin" },
+				{ "x":3561, "y":53, "type": "coin" },
+				{ "x":3881, "y":53, "type": "coin" },
+				{ "x":4767, "y":473, "type": "coin" },
+				{ "x":4849, "y":473, "type": "coin" },
+				{ "x":4929, "y":473, "type": "coin" },
+				{ "x":5011, "y":473, "type": "coin" },
+				{ "x":3999, "y":473, "type": "coin" },
+				{ "x":4081, "y":473, "type": "coin" },
+				{ "x":4161, "y":473, "type": "coin" },
+				{ "x":4243, "y":473, "type": "coin" },
+				{ "x":3144, "y":184, "type": "coin" },
+				{ "x":3226, "y":184, "type": "coin" },
+				{ "x":3306, "y":184, "type": "coin" },
+				{ "x":3388, "y":184, "type": "coin" },
+				{ "x":2815, "y":184, "type": "coin" },
+				{ "x":2897, "y":184, "type": "coin" },
+				{ "x":2976, "y":184, "type": "coin" },
+				{ "x":3059, "y":184, "type": "coin" },
+				{ "x":198, "y":467, "type": "coin" },
+				{ "x":280, "y":467, "type": "coin" },
+				{ "x":360, "y":467, "type": "coin" },
+				{ "x":442, "y":467, "type": "coin" },
+				{ "x":4499, "y":251, "type": "coin" },
+				{ "x":4409, "y":271, "type": "coin" },
+				{ "x":4589, "y":271, "type": "coin" },
+				{ "x":4339, "y":343, "type": "coin" },
+				{ "x":4659, "y":343, "type": "coin" }
+			],
+			"clocks" :
+			[
+				{ "x":3291, "y":363, "type": "clock" }
+			]
+		},
+		{
+			"length" : 5792,
+			"walls" :
+			[
+				{ "x":4009, "y":346, "type": "wall_fence_01_middle" },
+				{ "x":3978, "y":299, "type": "wall_fence_01_edge_left" },
+				{ "x":4159, "y":346, "type": "wall_fence_01_middle" },
+				{ "x":4309, "y":346, "type": "wall_fence_01_middle" },
+				{ "x":4459, "y":346, "type": "wall_fence_01_middle" },
+				{ "x":4609, "y":299, "type": "wall_fence_01_edge_right" },
+				{ "x":1896, "y":458, "type": "wall_fence_01_middle" },
+				{ "x":1865, "y":411, "type": "wall_fence_01_edge_left" },
+				{ "x":134, "y":400, "type": "wall_01_edge_left" },
+				{ "x":188, "y":481, "type": "wall_01_middle" },
+				{ "x":342, "y":481, "type": "wall_01_middle" },
+				{ "x":511, "y":481, "type": "wall_01_middle" },
+				{ "x":850, "y":400, "type": "wall_01_edge_right" },
+				{ "x":1290, "y":494, "type": "object_dustbin_01" },
+				{ "x":3050, "y":494, "type": "object_dustbin_01" },
+				{ "x":681, "y":481, "type": "wall_01_middle" },
+				{ "x":3637, "y":459, "type": "wall_hedge_edge_left" },
+				{ "x":3826, "y":459, "type": "wall_hedge_middle" },
+				{ "x":4016, "y":459, "type": "wall_hedge_middle" },
+				{ "x":4855, "y":246, "type": "object_van_right" },
+				{ "x":4780, "y":459, "type": "wall_hedge_edge_right" },
+				{ "x":4207, "y":459, "type": "wall_hedge_middle" },
+				{ "x":4398, "y":459, "type": "wall_hedge_middle" },
+				{ "x":4589, "y":459, "type": "wall_hedge_middle" },
+				{ "x":5251, "y":572, "type": "object_roadbarrier" },
+				{ "x":2196, "y":458, "type": "wall_fence_01_middle" },
+				{ "x":2647, "y":411, "type": "wall_fence_01_edge_right" },
+				{ "x":2046, "y":458, "type": "wall_fence_01_middle" },
+				{ "x":2346, "y":458, "type": "wall_fence_01_middle" },
+				{ "x":2497, "y":458, "type": "wall_fence_01_middle" }
+			],
+			"objects" :
+			[
+			],
+			"obstacles" :
+			[
+				{ "x":1073, "y":644, "type": "obstacle_random" },
+				{ "x":3437, "y":644, "type": "obstacle_random" }
+			],
+			"coins" :
+			[
+				{ "x":453, "y":382, "type": "coin" },
+				{ "x":375, "y":382, "type": "coin" },
+				{ "x":608, "y":382, "type": "coin" },
+				{ "x":528, "y":382, "type": "coin" },
+				{ "x":1654, "y":166, "type": "coin" },
+				{ "x":1564, "y":187, "type": "coin" },
+				{ "x":1744, "y":187, "type": "coin" },
+				{ "x":1494, "y":258, "type": "coin" },
+				{ "x":1814, "y":258, "type": "coin" },
+				{ "x":2839, "y":166, "type": "coin" },
+				{ "x":2749, "y":187, "type": "coin" },
+				{ "x":2929, "y":187, "type": "coin" },
+				{ "x":2679, "y":258, "type": "coin" },
+				{ "x":2999, "y":258, "type": "coin" },
+				{ "x":4237, "y":225, "type": "coin" },
+				{ "x":4159, "y":225, "type": "coin" },
+				{ "x":4391, "y":225, "type": "coin" },
+				{ "x":4311, "y":225, "type": "coin" },
+				{ "x":5454, "y":-41, "type": "coin" },
+				{ "x":5363, "y":-20, "type": "coin" },
+				{ "x":5293, "y":51, "type": "coin" },
+				{ "x":5371, "y":471, "type": "coin" },
+				{ "x":5293, "y":471, "type": "coin" },
+				{ "x":5526, "y":471, "type": "coin" },
+				{ "x":5446, "y":471, "type": "coin" },
+				{ "x":4932, "y":149, "type": "coin" },
+				{ "x":5014, "y":149, "type": "coin" },
+				{ "x":5093, "y":149, "type": "coin" },
+				{ "x":5176, "y":149, "type": "coin" }
+			],
+			"clocks" :
+			[
+				{ "x":2196, "y":278, "type": "clock" }
+			]
+		},
+		{
+			"length" : 4863,
+			"walls" :
+			[
+				{ "x":944, "y":523, "type": "object_roadworks" },
+				{ "x":4013, "y":252, "type": "object_van_right" },
+				{ "x":3220, "y":491, "type": "wall_01_middle" },
+				{ "x":3167, "y":410, "type": "wall_01_edge_left" },
+				{ "x":3390, "y":491, "type": "wall_01_middle" },
+				{ "x":518, "y":576, "type": "object_roadbarrier" },
+				{ "x":1222, "y":576, "type": "object_roadbarrier" },
+				{ "x":4066, "y":410, "type": "wall_01_edge_right" },
+				{ "x":3899, "y":491, "type": "wall_01_middle" },
+				{ "x":3559, "y":491, "type": "wall_01_middle" },
+				{ "x":1000, "y":519, "type": "object_roadworks" },
+				{ "x":4073, "y":576, "type": "object_roadbarrier" },
+				{ "x":4447, "y":576, "type": "object_roadbarrier" },
+				{ "x":1595, "y":576, "type": "object_roadbarrier" },
+				{ "x":146, "y":576, "type": "object_roadbarrier" },
+				{ "x":2170, "y":493, "type": "object_dustbin_02" },
+				{ "x":2646, "y":491, "type": "object_dustbin_01" },
+				{ "x":3729, "y":491, "type": "wall_01_middle" }
+			],
+			"objects" :
+			[
+			],
+			"obstacles" :
+			[
+			],
+			"coins" :
+			[
+				{ "x":3595, "y":410, "type": "coin" },
+				{ "x":3515, "y":410, "type": "coin" },
+				{ "x":3754, "y":410, "type": "coin" },
+				{ "x":3674, "y":410, "type": "coin" },
+				{ "x":1425, "y":478, "type": "coin" },
+				{ "x":1507, "y":478, "type": "coin" },
+				{ "x":1587, "y":478, "type": "coin" },
+				{ "x":1669, "y":478, "type": "coin" },
+				{ "x":367, "y":478, "type": "coin" },
+				{ "x":449, "y":478, "type": "coin" },
+				{ "x":529, "y":478, "type": "coin" },
+				{ "x":611, "y":478, "type": "coin" },
+				{ "x":4087, "y":137, "type": "coin" },
+				{ "x":4169, "y":137, "type": "coin" },
+				{ "x":4249, "y":137, "type": "coin" },
+				{ "x":4331, "y":137, "type": "coin" },
+				{ "x":4300, "y":484, "type": "coin" },
+				{ "x":4382, "y":484, "type": "coin" },
+				{ "x":4462, "y":484, "type": "coin" },
+				{ "x":4544, "y":484, "type": "coin" },
+				{ "x":1020, "y":265, "type": "coin" },
+				{ "x":930, "y":286, "type": "coin" },
+				{ "x":1110, "y":286, "type": "coin" },
+				{ "x":860, "y":357, "type": "coin" },
+				{ "x":1180, "y":357, "type": "coin" },
+				{ "x":2441, "y":250, "type": "coin" },
+				{ "x":2351, "y":271, "type": "coin" },
+				{ "x":2531, "y":271, "type": "coin" },
+				{ "x":2281, "y":343, "type": "coin" },
+				{ "x":2601, "y":343, "type": "coin" },
+				{ "x":3015, "y":249, "type": "coin" },
+				{ "x":2925, "y":270, "type": "coin" },
+				{ "x":3105, "y":270, "type": "coin" },
+				{ "x":2855, "y":341, "type": "coin" },
+				{ "x":3175, "y":341, "type": "coin" }
+			],
+			"clocks" :
+			[
+				{ "x":4637, "y":-26, "type": "clock" }
+			]
+		},
+		{
+			"length" : 6180,
+			"walls" :
+			[
+				{ "x":1768, "y":450, "type": "wall_hedge_edge_left" },
+				{ "x":2033, "y":346, "type": "wall_fence_01_edge_left" },
+				{ "x":2064, "y":393, "type": "wall_fence_01_middle" },
+				{ "x":2214, "y":393, "type": "wall_fence_01_middle" },
+				{ "x":2363, "y":393, "type": "wall_fence_01_middle" },
+				{ "x":2514, "y":393, "type": "wall_fence_01_middle" },
+				{ "x":2664, "y":393, "type": "wall_fence_01_middle" },
+				{ "x":2813, "y":346, "type": "wall_fence_01_edge_right" },
+				{ "x":1956, "y":450, "type": "wall_hedge_middle" },
+				{ "x":2717, "y":450, "type": "wall_hedge_edge_right" },
+				{ "x":2147, "y":450, "type": "wall_hedge_middle" },
+				{ "x":2336, "y":450, "type": "wall_hedge_middle" },
+				{ "x":2527, "y":450, "type": "wall_hedge_middle" },
+				{ "x":3238, "y":346, "type": "wall_fence_01_edge_left" },
+				{ "x":3269, "y":393, "type": "wall_fence_01_middle" },
+				{ "x":3419, "y":393, "type": "wall_fence_01_middle" },
+				{ "x":3570, "y":393, "type": "wall_fence_01_middle" },
+				{ "x":3720, "y":393, "type": "wall_fence_01_middle" },
+				{ "x":3870, "y":393, "type": "wall_fence_01_middle" },
+				{ "x":4019, "y":346, "type": "wall_fence_01_edge_right" },
+				{ "x":4109, "y":182, "type": "wall_02_edge_left" },
+				{ "x":4208, "y":287, "type": "wall_02_middle" },
+				{ "x":4968, "y":182, "type": "wall_02_edge_right" },
+				{ "x":126, "y":525, "type": "object_flowerbed_03" },
+				{ "x":1285, "y":485, "type": "object_dustbin_01" },
+				{ "x":5446, "y":244, "type": "object_van_right" },
+				{ "x":4589, "y":287, "type": "wall_02_middle" },
+				{ "x":3926, "y":450, "type": "wall_hedge_middle" },
+				{ "x":4308, "y":450, "type": "wall_hedge_edge_right" },
+				{ "x":4117, "y":450, "type": "wall_hedge_middle" },
+				{ "x":3355, "y":450, "type": "wall_hedge_middle" },
+				{ "x":3546, "y":450, "type": "wall_hedge_middle" },
+				{ "x":3735, "y":450, "type": "wall_hedge_middle" },
+				{ "x":3165, "y":450, "type": "wall_hedge_edge_left" },
+				{ "x":751, "y":485, "type": "object_dustbin_01" },
+				{ "x":5386, "y":570, "type": "object_roadbarrier" },
+				{ "x":4821, "y":570, "type": "object_roadbarrier" }
+			],
+			"objects" :
+			[
+			],
+			"obstacles" :
+			[
+				{ "x":3044, "y":636, "type": "obstacle_random" }
+			],
+			"coins" :
+			[
+				{ "x":3010, "y":113, "type": "coin" },
+				{ "x":2920, "y":134, "type": "coin" },
+				{ "x":3100, "y":134, "type": "coin" },
+				{ "x":2850, "y":205, "type": "coin" },
+				{ "x":3170, "y":205, "type": "coin" },
+				{ "x":1104, "y":224, "type": "coin" },
+				{ "x":1014, "y":244, "type": "coin" },
+				{ "x":1194, "y":244, "type": "coin" },
+				{ "x":944, "y":316, "type": "coin" },
+				{ "x":1264, "y":316, "type": "coin" },
+				{ "x":5206, "y":-29, "type": "coin" },
+				{ "x":5116, "y":-9, "type": "coin" },
+				{ "x":5296, "y":-9, "type": "coin" },
+				{ "x":5046, "y":63, "type": "coin" },
+				{ "x":5366, "y":63, "type": "coin" },
+				{ "x":4415, "y":171, "type": "coin" },
+				{ "x":4497, "y":171, "type": "coin" },
+				{ "x":4577, "y":171, "type": "coin" },
+				{ "x":4659, "y":171, "type": "coin" },
+				{ "x":5517, "y":132, "type": "coin" },
+				{ "x":5599, "y":132, "type": "coin" },
+				{ "x":5679, "y":132, "type": "coin" },
+				{ "x":5761, "y":132, "type": "coin" },
+				{ "x":2260, "y":294, "type": "coin" },
+				{ "x":2342, "y":294, "type": "coin" },
+				{ "x":2422, "y":294, "type": "coin" },
+				{ "x":2504, "y":294, "type": "coin" },
+				{ "x":3496, "y":287, "type": "coin" },
+				{ "x":3578, "y":287, "type": "coin" },
+				{ "x":3658, "y":287, "type": "coin" },
+				{ "x":3740, "y":287, "type": "coin" },
+				{ "x":589, "y":302, "type": "coin" },
+				{ "x":498, "y":322, "type": "coin" },
+				{ "x":428, "y":394, "type": "coin" }
+			],
+			"clocks" :
+			[
+				{ "x":5217, "y":335, "type": "clock" }
+			]
+		},
+		{
+			"length" : 4710,
+			"walls" :
+			[
+				{ "x":3081, "y":291, "type": "wall_02_middle" },
+				{ "x":1765, "y":291, "type": "wall_02_middle" },
+				{ "x":696, "y":410, "type": "wall_01_edge_left" },
+				{ "x":1087, "y":491, "type": "wall_01_middle" },
+				{ "x":1256, "y":410, "type": "wall_01_edge_right" },
+				{ "x":3888, "y":244, "type": "object_van_right" },
+				{ "x":2600, "y":186, "type": "wall_02_edge_left" },
+				{ "x":2700, "y":291, "type": "wall_02_middle" },
+				{ "x":3462, "y":186, "type": "wall_02_edge_right" },
+				{ "x":1288, "y":186, "type": "wall_02_edge_left" },
+				{ "x":1384, "y":291, "type": "wall_02_middle" },
+				{ "x":2146, "y":186, "type": "wall_02_edge_right" },
+				{ "x":1340, "y":529, "type": "object_flowerbed_03" },
+				{ "x":918, "y":491, "type": "wall_01_middle" },
+				{ "x":750, "y":491, "type": "wall_01_middle" },
+				{ "x":97, "y":574, "type": "object_roadbarrier" },
+				{ "x":498, "y":514, "type": "object_roadworks" },
+				{ "x":1964, "y":529, "type": "object_flowerbed_03" },
+				{ "x":2588, "y":529, "type": "object_flowerbed_03" },
+				{ "x":3226, "y":529, "type": "object_flowerbed_03" },
+				{ "x":3887, "y":570, "type": "object_roadbarrier" },
+				{ "x":4292, "y":570, "type": "object_roadbarrier" }
+			],
+			"objects" :
+			[
+			],
+			"obstacles" :
+			[
+				{ "x":3711, "y":635, "type": "obstacle_random" },
+				{ "x":2419, "y":636, "type": "obstacle_random" }
+			],
+			"coins" :
+			[
+				{ "x":2415, "y":-36, "type": "coin" },
+				{ "x":2325, "y":-16, "type": "coin" },
+				{ "x":2505, "y":-16, "type": "coin" },
+				{ "x":2255, "y":56, "type": "coin" },
+				{ "x":2575, "y":56, "type": "coin" },
+				{ "x":854, "y":385, "type": "coin" },
+				{ "x":936, "y":385, "type": "coin" },
+				{ "x":1015, "y":385, "type": "coin" },
+				{ "x":1098, "y":385, "type": "coin" },
+				{ "x":3214, "y":464, "type": "coin" },
+				{ "x":3687, "y":-36, "type": "coin" },
+				{ "x":3597, "y":-16, "type": "coin" },
+				{ "x":3777, "y":-16, "type": "coin" },
+				{ "x":3527, "y":56, "type": "coin" },
+				{ "x":3847, "y":56, "type": "coin" },
+				{ "x":1770, "y":358, "type": "coin" },
+				{ "x":1679, "y":379, "type": "coin" },
+				{ "x":1860, "y":379, "type": "coin" },
+				{ "x":1609, "y":451, "type": "coin" },
+				{ "x":1930, "y":451, "type": "coin" },
+				{ "x":3040, "y":358, "type": "coin" },
+				{ "x":2949, "y":379, "type": "coin" },
+				{ "x":3130, "y":379, "type": "coin" },
+				{ "x":2879, "y":451, "type": "coin" }
+			],
+			"clocks" :
+			[
+				{ "x":4447, "y":9, "type": "clock" }
+			]
+		}
+	],
+	"park":
+	[
+		{
+			"length" : 4701,
+			"walls" :
+			[
+				{ "x":179, "y":536, "type": "object_bench_01" },
+				{ "x":844, "y":517, "type": "object_flowerbed_01" },
+				{ "x":1532, "y":536, "type": "object_bench_01" },
+				{ "x":2213, "y":526, "type": "object_flowerbed_03" },
+				{ "x":2891, "y":536, "type": "object_bench_01" },
+				{ "x":3549, "y":526, "type": "object_flowerbed_02" },
+				{ "x":4226, "y":536, "type": "object_bench_01" }
+			],
+			"objects" :
+			[
+			],
+			"obstacles" :
+			[
+				{ "x":1335, "y":636, "type": "obstacle_random" },
+				{ "x":3345, "y":636, "type": "obstacle_random" }
+			],
+			"coins" :
+			[
+				{ "x":636, "y":332, "type": "coin" },
+				{ "x":545, "y":353, "type": "coin" },
+				{ "x":725, "y":353, "type": "coin" },
+				{ "x":475, "y":424, "type": "coin" },
+				{ "x":795, "y":424, "type": "coin" },
+				{ "x":1313, "y":332, "type": "coin" },
+				{ "x":1223, "y":353, "type": "coin" },
+				{ "x":1403, "y":353, "type": "coin" },
+				{ "x":1153, "y":424, "type": "coin" },
+				{ "x":1473, "y":424, "type": "coin" },
+				{ "x":1989, "y":332, "type": "coin" },
+				{ "x":1899, "y":353, "type": "coin" },
+				{ "x":2079, "y":353, "type": "coin" },
+				{ "x":1829, "y":424, "type": "coin" },
+				{ "x":2149, "y":424, "type": "coin" },
+				{ "x":2672, "y":332, "type": "coin" },
+				{ "x":2582, "y":353, "type": "coin" },
+				{ "x":2762, "y":353, "type": "coin" },
+				{ "x":2512, "y":424, "type": "coin" },
+				{ "x":2832, "y":424, "type": "coin" },
+				{ "x":3325, "y":332, "type": "coin" },
+				{ "x":3235, "y":353, "type": "coin" },
+				{ "x":3415, "y":353, "type": "coin" },
+				{ "x":3165, "y":424, "type": "coin" },
+				{ "x":3485, "y":424, "type": "coin" },
+				{ "x":4008, "y":332, "type": "coin" },
+				{ "x":3918, "y":353, "type": "coin" },
+				{ "x":4098, "y":353, "type": "coin" },
+				{ "x":3848, "y":424, "type": "coin" },
+				{ "x":4168, "y":424, "type": "coin" }
+			],
+			"clocks" :
+			[
+				{ "x":2312, "y":424, "type": "clock" }
+			]
+		},
+		{
+			"length" : 5029,
+			"walls" :
+			[
+				{ "x":2914, "y":451, "type": "object_rock_05" },
+				{ "x":2584, "y":453, "type": "object_rock_06" },
+				{ "x":2545, "y":563, "type": "object_rock_02" },
+				{ "x":3239, "y":452, "type": "object_rock_07" },
+				{ "x":2932, "y":564, "type": "object_rock_01" },
+				{ "x":1613, "y":357, "type": "object_rock_03" },
+				{ "x":102, "y":591, "type": "wall_03_edge_left" },
+				{ "x":153, "y":591, "type": "wall_03_middle" },
+				{ "x":1251, "y":591, "type": "wall_03_edge_right" },
+				{ "x":336, "y":591, "type": "wall_03_middle" },
+				{ "x":519, "y":591, "type": "wall_03_middle" },
+				{ "x":702, "y":591, "type": "wall_03_middle" },
+				{ "x":885, "y":591, "type": "wall_03_middle" },
+				{ "x":1068, "y":591, "type": "wall_03_middle" },
+				{ "x":3362, "y":185, "type": "wall_03_edge_left" },
+				{ "x":3413, "y":185, "type": "wall_03_middle" },
+				{ "x":4682, "y":185, "type": "wall_03_edge_right" },
+				{ "x":3596, "y":185, "type": "wall_03_middle" },
+				{ "x":3779, "y":185, "type": "wall_03_middle" },
+				{ "x":3961, "y":185, "type": "wall_03_middle" },
+				{ "x":4144, "y":185, "type": "wall_03_middle" },
+				{ "x":4327, "y":185, "type": "wall_03_middle" },
+				{ "x":3270, "y":227, "type": "object_rock_08" },
+				{ "x":4509, "y":338, "type": "object_rock_05" },
+				{ "x":4664, "y":224, "type": "object_rock_07" },
+				{ "x":3073, "y":339, "type": "object_rock_06" },
+				{ "x":4453, "y":563, "type": "object_rock_02" },
+				{ "x":4478, "y":452, "type": "object_rock_07" },
+				{ "x":4636, "y":451, "type": "object_rock_08" },
+				{ "x":3806, "y":535, "type": "object_bench_01" },
+				{ "x":4509, "y":185, "type": "wall_03_middle" },
+				{ "x":1613, "y":564, "type": "object_rock_01" }
+			],
+			"objects" :
+			[
+			],
+			"obstacles" :
+			[
+				{ "x":2321, "y":637, "type": "obstacle_random" }
+			],
+			"coins" :
+			[
+				{ "x":385, "y":513, "type": "coin" },
+				{ "x":467, "y":513, "type": "coin" },
+				{ "x":547, "y":513, "type": "coin" },
+				{ "x":629, "y":513, "type": "coin" },
+				{ "x":712, "y":513, "type": "coin" },
+				{ "x":794, "y":513, "type": "coin" },
+				{ "x":873, "y":513, "type": "coin" },
+				{ "x":956, "y":513, "type": "coin" },
+				{ "x":3891, "y":87, "type": "coin" },
+				{ "x":3973, "y":87, "type": "coin" },
+				{ "x":4053, "y":87, "type": "coin" },
+				{ "x":4135, "y":87, "type": "coin" },
+				{ "x":2300, "y":261, "type": "coin" },
+				{ "x":2210, "y":281, "type": "coin" },
+				{ "x":2390, "y":281, "type": "coin" },
+				{ "x":2140, "y":353, "type": "coin" },
+				{ "x":2460, "y":353, "type": "coin" },
+				{ "x":2704, "y":361, "type": "coin" },
+				{ "x":2787, "y":361, "type": "coin" },
+				{ "x":2866, "y":361, "type": "coin" },
+				{ "x":2948, "y":361, "type": "coin" },
+				{ "x":4532, "y":485, "type": "coin" },
+				{ "x":4614, "y":485, "type": "coin" },
+				{ "x":4694, "y":485, "type": "coin" },
+				{ "x":4776, "y":485, "type": "coin" }
+			],
+			"clocks" :
+			[
+				{ "x":3893, "y":403, "type": "clock" }
+			]
+		},
+		{
+			"length" : 5727,
+			"walls" :
+			[
+				{ "x":1533, "y":408, "type": "wall_03_edge_right" },
+				{ "x":1584, "y":408, "type": "wall_03_middle" },
+				{ "x":2313, "y":408, "type": "wall_03_middle" },
+				{ "x":2493, "y":408, "type": "wall_03_middle" },
+				{ "x":3233, "y":190, "type": "wall_03_edge_right" },
+				{ "x":3209, "y":226, "type": "object_rock_08" },
+				{ "x":3180, "y":452, "type": "object_rock_07" },
+				{ "x":3047, "y":453, "type": "object_rock_07" },
+				{ "x":3047, "y":337, "type": "object_rock_06" },
+				{ "x":5114, "y":190, "type": "wall_03_edge_left" },
+				{ "x":3284, "y":190, "type": "wall_03_middle" },
+				{ "x":3467, "y":190, "type": "wall_03_middle" },
+				{ "x":3650, "y":190, "type": "wall_03_middle" },
+				{ "x":3833, "y":190, "type": "wall_03_middle" },
+				{ "x":4016, "y":190, "type": "wall_03_middle" },
+				{ "x":4199, "y":190, "type": "wall_03_middle" },
+				{ "x":4382, "y":190, "type": "wall_03_middle" },
+				{ "x":4565, "y":190, "type": "wall_03_middle" },
+				{ "x":2432, "y":563, "type": "object_rock_01" },
+				{ "x":2676, "y":408, "type": "wall_03_edge_left" },
+				{ "x":2503, "y":451, "type": "object_rock_06" },
+				{ "x":143, "y":524, "type": "object_flowerbed_03" },
+				{ "x":841, "y":537, "type": "object_bench_01" },
+				{ "x":3802, "y":537, "type": "object_bench_01" },
+				{ "x":4418, "y":537, "type": "object_bench_01" },
+				{ "x":2954, "y":563, "type": "object_rock_01" },
+				{ "x":1350, "y":563, "type": "object_rock_01" },
+				{ "x":1477, "y":450, "type": "object_rock_05" },
+				{ "x":1767, "y":408, "type": "wall_03_middle" },
+				{ "x":1947, "y":408, "type": "wall_03_middle" },
+				{ "x":2130, "y":408, "type": "wall_03_middle" },
+				{ "x":4748, "y":190, "type": "wall_03_middle" },
+				{ "x":4931, "y":190, "type": "wall_03_middle" },
+				{ "x":5104, "y":141, "type": "object_rock_04" },
+				{ "x":5033, "y":573, "type": "object_rock_02" },
+				{ "x":5132, "y":347, "type": "object_rock_08" },
+				{ "x":5284, "y":351, "type": "object_rock_07" },
+				{ "x":5140, "y":460, "type": "object_rock_05" }
+			],
+			"objects" :
+			[
+			],
+			"obstacles" :
+			[
+			],
+			"coins" :
+			[
+				{ "x":618, "y":321, "type": "coin" },
+				{ "x":527, "y":342, "type": "coin" },
+				{ "x":708, "y":342, "type": "coin" },
+				{ "x":457, "y":413, "type": "coin" },
+				{ "x":777, "y":413, "type": "coin" },
+				{ "x":1281, "y":321, "type": "coin" },
+				{ "x":1190, "y":342, "type": "coin" },
+				{ "x":1371, "y":342, "type": "coin" },
+				{ "x":1120, "y":413, "type": "coin" },
+				{ "x":4219, "y":321, "type": "coin" },
+				{ "x":4128, "y":342, "type": "coin" },
+				{ "x":4309, "y":342, "type": "coin" },
+				{ "x":4058, "y":413, "type": "coin" },
+				{ "x":4378, "y":413, "type": "coin" },
+				{ "x":1950, "y":300, "type": "coin" },
+				{ "x":2033, "y":300, "type": "coin" },
+				{ "x":2112, "y":300, "type": "coin" },
+				{ "x":2195, "y":300, "type": "coin" },
+				{ "x":3678, "y":86, "type": "coin" },
+				{ "x":3760, "y":86, "type": "coin" },
+				{ "x":3840, "y":86, "type": "coin" },
+				{ "x":3922, "y":86, "type": "coin" },
+				{ "x":4515, "y":86, "type": "coin" },
+				{ "x":4598, "y":86, "type": "coin" },
+				{ "x":4677, "y":86, "type": "coin" },
+				{ "x":4759, "y":86, "type": "coin" },
+				{ "x":2887, "y":179, "type": "coin" },
+				{ "x":2797, "y":199, "type": "coin" },
+				{ "x":2727, "y":271, "type": "coin" },
+				{ "x":3055, "y":494, "type": "coin" },
+				{ "x":3137, "y":494, "type": "coin" },
+				{ "x":3217, "y":494, "type": "coin" },
+				{ "x":3299, "y":494, "type": "coin" },
+				{ "x":5651, "y":-15, "type": "coin" },
+				{ "x":5560, "y":6, "type": "coin" },
+				{ "x":5490, "y":78, "type": "coin" }
+			],
+			"clocks" :
+			[
+				{ "x":4184, "y":-62, "type": "clock" }
+			]
+		},
+		{
+			"length" : 4232,
+			"walls" :
+			[
+				{ "x":991, "y":566, "type": "object_rock_01" },
+				{ "x":1821, "y":567, "type": "object_rock_02" },
+				{ "x":104, "y":428, "type": "object_rock_03" },
+				{ "x":1891, "y":245, "type": "object_rock_04" },
+				{ "x":1138, "y":341, "type": "object_rock_05" },
+				{ "x":991, "y":454, "type": "object_rock_06" },
+				{ "x":1385, "y":453, "type": "object_rock_07" },
+				{ "x":2539, "y":526, "type": "object_rock_08" },
+				{ "x":1928, "y":454, "type": "object_rock_05" },
+				{ "x":3798, "y":536, "type": "object_bench_01" },
+				{ "x":3131, "y":533, "type": "object_bench_01" }
+			],
+			"objects" :
+			[
+			],
+			"obstacles" :
+			[
+			],
+			"coins" :
+			[
+				{ "x":2896, "y":332, "type": "coin" },
+				{ "x":2806, "y":353, "type": "coin" },
+				{ "x":2986, "y":353, "type": "coin" },
+				{ "x":2736, "y":424, "type": "coin" },
+				{ "x":3056, "y":424, "type": "coin" },
+				{ "x":3579, "y":332, "type": "coin" },
+				{ "x":3489, "y":353, "type": "coin" },
+				{ "x":3669, "y":353, "type": "coin" },
+				{ "x":3419, "y":424, "type": "coin" },
+				{ "x":3739, "y":424, "type": "coin" },
+				{ "x":762, "y":261, "type": "coin" },
+				{ "x":671, "y":281, "type": "coin" },
+				{ "x":852, "y":281, "type": "coin" },
+				{ "x":601, "y":353, "type": "coin" },
+				{ "x":921, "y":353, "type": "coin" }
+			],
+			"clocks" :
+			[
+				{ "x":1657, "y":379, "type": "clock" }
+			]
+		},
+		{
+			"length" : 4701,
+			"walls" :
+			[
+				{ "x":110, "y":512, "type": "object_flowerbed_01" },
+				{ "x":672, "y":525, "type": "object_flowerbed_02" },
+				{ "x":2586, "y":587, "type": "wall_03_edge_left" },
+				{ "x":2637, "y":587, "type": "wall_03_middle" },
+				{ "x":3367, "y":587, "type": "wall_03_edge_right" },
+				{ "x":1242, "y":539, "type": "object_bench_01" },
+				{ "x":1870, "y":567, "type": "object_rock_02" },
+				{ "x":1201, "y":351, "type": "object_rock_03" },
+				{ "x":1895, "y":133, "type": "object_rock_04" },
+				{ "x":1913, "y":455, "type": "object_rock_05" },
+				{ "x":1863, "y":342, "type": "object_rock_06" },
+				{ "x":4222, "y":508, "type": "object_flowerbed_01" },
+				{ "x":1227, "y":561, "type": "object_rock_01" },
+				{ "x":2820, "y":587, "type": "wall_03_middle" },
+				{ "x":3001, "y":587, "type": "wall_03_middle" },
+				{ "x":3184, "y":587, "type": "wall_03_middle" },
+				{ "x":3531, "y":431, "type": "object_rock_03" }
+			],
+			"objects" :
+			[
+			],
+			"obstacles" :
+			[
+				{ "x":2427, "y":636, "type": "obstacle_random" }
+			],
+			"coins" :
+			[
+				{ "x":327, "y":472, "type": "coin" },
+				{ "x":240, "y":471, "type": "coin" },
+				{ "x":156, "y":470, "type": "coin" },
+				{ "x":2437, "y":22, "type": "coin" },
+				{ "x":2347, "y":42, "type": "coin" },
+				{ "x":2277, "y":114, "type": "coin" },
+				{ "x":875, "y":472, "type": "coin" },
+				{ "x":789, "y":471, "type": "coin" },
+				{ "x":705, "y":470, "type": "coin" },
+				{ "x":2808, "y":485, "type": "coin" },
+				{ "x":2721, "y":483, "type": "coin" },
+				{ "x":2637, "y":483, "type": "coin" },
+				{ "x":3061, "y":485, "type": "coin" },
+				{ "x":2974, "y":483, "type": "coin" },
+				{ "x":2890, "y":483, "type": "coin" },
+				{ "x":3321, "y":485, "type": "coin" },
+				{ "x":3234, "y":483, "type": "coin" },
+				{ "x":3150, "y":483, "type": "coin" }
+			],
+			"clocks" :
+			[
+				{ "x":2527, "y":3, "type": "clock" }
+			]
+		}
+	]
+}

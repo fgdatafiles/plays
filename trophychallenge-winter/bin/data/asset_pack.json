@@ -1,0 +1,3292 @@
+{
+    "MainMenu": {
+        "shared":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "fredburger_black_font",
+                        "type": "rexWebFont",
+                        "custom": {
+                            "families": ["FredBurger Black", "FredBurger Black Arabic"],
+                            "urls": ["bin/fonts/fredburger.css", "bin/fonts/fredburger_arabic.css"]
+                        }
+                    },
+                    {
+                        "key": "characters_data",
+                        "type": "json",
+                        "url": "bin/data/characters.json"
+                    },
+                    {
+                        "key": "physics_shapes",
+                        "type": "json",
+                        "url": "bin/data/game_physics.json"
+                    },
+                    {
+                        "key": "minigames_data",
+                        "type": "json",
+                        "url": "bin/data/minigames.json"
+                    },
+                    {
+                        "key": "ui_button_medium",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/ui_button_medium.ogg", "bin/audio/sfx/ui_button_medium.mp3"]
+                    },
+                    {
+                        "key": "ui_button_play",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/ui_button_play.ogg", "bin/audio/sfx/ui_button_play.mp3"]
+                    },
+                    {
+                        "key": "ui_button_small",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/ui_button_small.ogg", "bin/audio/sfx/ui_button_small.mp3"]
+                    },
+                    {
+                        "key": "ui_confirm",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/ui_confirm.ogg", "bin/audio/sfx/ui_confirm.mp3"]
+                    },
+                    {
+                        "key": "ui_slide_right",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/ui_slide_right.ogg", "bin/audio/sfx/ui_slide_right.mp3"]
+                    },
+                    {
+                        "key": "ui_slide_left",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/ui_slide_left.ogg", "bin/audio/sfx/ui_slide_left.mp3"]
+                    },
+                    {
+                        "key": "screen_in_no_players",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/screen_in_no_players.ogg", "bin/audio/sfx/screen_in_no_players.mp3"]
+                    },
+                    {
+                        "key": "screen_out_no_players",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/screen_out_no_players.ogg", "bin/audio/sfx/screen_out_no_players.mp3"]
+                    },
+                    {
+                        "key": "screen_in_difficulty",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/screen_in_difficulty.ogg", "bin/audio/sfx/screen_in_difficulty.mp3"]
+                    },
+                    {
+                        "key": "screen_out_difficulty",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/screen_out_difficulty.ogg", "bin/audio/sfx/screen_out_difficulty.mp3"]
+                    },
+                    {
+                        "key": "screen_in_character_select",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/screen_in_character_select.ogg", "bin/audio/sfx/screen_in_character_select.mp3"]
+                    },
+                    {
+                        "key": "screen_out_character_select",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/screen_out_character_select.ogg", "bin/audio/sfx/screen_out_character_select.mp3"]
+                    },
+                    {
+                        "key": "screen_in_confirm_button",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/screen_in_confirm_button.ogg", "bin/audio/sfx/screen_in_confirm_button.mp3"]
+                    },
+                    {
+                        "key": "screen_wipe",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/screen_wipe.ogg", "bin/audio/sfx/screen_wipe.mp3"]
+                    },
+                    {
+                        "key": "music_menu",
+                        "type": "audio",
+                        "url": ["bin/audio/music/music_menu.ogg", "bin/audio/music/music_menu.mp3"]
+                    },
+                    {
+                        "key": "music_titles",
+                        "type": "audio",
+                        "url": ["bin/audio/music/music_titles.ogg", "bin/audio/music/music_titles.mp3"]
+                    },
+                    {
+                        "key": "vo_anais_confirm",
+                        "type": "audio",
+                        "url": ["bin/audio/vo/en/vo_anais_confirm.ogg", "bin/audio/vo/en/vo_anais_confirm.mp3"]
+                    },
+                    {
+                        "key": "vo_tobias_confirm",
+                        "type": "audio",
+                        "url": ["bin/audio/vo/en/vo_tobias_confirm.ogg", "bin/audio/vo/en/vo_tobias_confirm.mp3"]
+                    },
+                    {
+                        "key": "vo_penny_confirm",
+                        "type": "audio",
+                        "url": ["bin/audio/vo/en/vo_penny_confirm.ogg", "bin/audio/vo/en/vo_penny_confirm.mp3"]
+                    },
+                    {
+                        "key": "vo_gumball_confirm",
+                        "type": "audio",
+                        "url": ["bin/audio/vo/en/vo_gumball_confirm.ogg", "bin/audio/vo/en/vo_gumball_confirm.mp3"]
+                    },
+                    {
+                        "key": "vo_darwin_confirm",
+                        "type": "audio",
+                        "url": ["bin/audio/vo/en/vo_darwin_confirm.ogg", "bin/audio/vo/en/vo_darwin_confirm.mp3"]
+                    },
+                    {
+                        "key": "vo_carrie_confirm",
+                        "type": "audio",
+                        "url": ["bin/audio/vo/en/vo_carrie_confirm.ogg", "bin/audio/vo/en/vo_carrie_confirm.mp3"]
+                    },
+                    {
+                        "key": "screen_in_game_length",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/screen_in_game_length.ogg", "bin/audio/sfx/screen_in_game_length.mp3"]
+                    },
+                    {
+                        "key": "screen_out_game_length",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/screen_out_game_length.ogg", "bin/audio/sfx/screen_out_game_length.mp3"]
+                    },
+                    {
+                        "key": "intro_tutorial_panel_in",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/intro_tutorial_panel_in.ogg", "bin/audio/sfx/intro_tutorial_panel_in.mp3"]
+                    },
+                    {
+                        "key": "intro_tutorial_panel_out",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/intro_tutorial_panel_out.ogg", "bin/audio/sfx/intro_tutorial_panel_out.mp3"]
+                    },
+                    {
+                        "key": "intro_box_opening",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/intro_box_opening.ogg", "bin/audio/sfx/intro_box_opening.mp3"]
+                    },
+                    {
+                        "key": "intro_box_absorb",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/intro_box_absorb.ogg", "bin/audio/sfx/intro_box_absorb.mp3"]
+                    },
+                    {
+                        "key": "screen_in_intro",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/screen_in_intro.ogg", "bin/audio/sfx/screen_in_intro.mp3"]
+                    },
+                    {
+                        "key": "intro_tutorial_panel_in",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/intro_tutorial_panel_in.ogg", "bin/audio/sfx/intro_tutorial_panel_in.mp3"]
+                    },
+                    {
+                        "key": "intro_tutorial_panel_out",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/intro_tutorial_panel_out.ogg", "bin/audio/sfx/intro_tutorial_panel_out.mp3"]
+                    },
+                    {
+                        "key": "music_intro",
+                        "type": "audio",
+                        "url": ["bin/audio/music/music_volleyball.ogg", "bin/audio/music/music_volleyball.mp3"]
+                    }
+                ]
+            }
+        },
+        "gamescale_1":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "ui_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/ui_atlas.png",
+                        "atlasURL": "bin/atlases/ui_atlas.json"
+                    },
+                    {
+                        "key": "title_screen",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/title_screen.json",
+                        "atlasURL": "bin/spine/title_screen.atlas"
+                    },
+                    {
+                        "key": "transition_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/transition_atlas.png",
+                        "atlasURL": "bin/atlases/transition_atlas.json"
+                    },
+                    {
+                        "key": "main_menu_player_select_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/main_menu_player_select_atlas.png",
+                        "atlasURL": "bin/atlases/main_menu_player_select_atlas.json"
+                    },
+                    {
+                        "key": "main_menu_difficulty_select_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/main_menu_difficulty_select_atlas.png",
+                        "atlasURL": "bin/atlases/main_menu_difficulty_select_atlas.json"
+                    },
+                    {
+                        "key": "main_menu_character_select_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/main_menu_character_select_atlas.png",
+                        "atlasURL": "bin/atlases/main_menu_character_select_atlas.json"
+                    },
+                    {
+                        "key": "title_screen_background",
+                        "type": "image",
+                        "url": "bin/images/menu/main_menu/title_screen_background.png"
+                    },
+                    {
+                        "key": "pause_screen_background",
+                        "type": "image",
+                        "url": "bin/images/menu/pause/pause_screen_background.png"
+                    },
+                    {
+                        "key": "pause_screen_clouds",
+                        "type": "image",
+                        "url": "bin/images/menu/pause/pause_screen_clouds.png"
+                    },
+                    {
+                        "key": "main_menu_screens_background",
+                        "type": "image",
+                        "url": "bin/images/menu/main_menu/main_menu_screens_background.png"
+                    },
+                    {
+                        "key": "characterselect_gumball",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/characterselect_gumball.json",
+                        "atlasURL": "bin/spine/characterselect_gumball.atlas"
+                    },
+                    {
+                        "key": "characterselect_anais",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/characterselect_anais.json",
+                        "atlasURL": "bin/spine/characterselect_anais.atlas"
+                    },
+                    {
+                        "key": "characterselect_darwin",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/characterselect_darwin.json",
+                        "atlasURL": "bin/spine/characterselect_darwin.atlas"
+                    },
+                    {
+                        "key": "characterselect_tobias",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/characterselect_tobias.json",
+                        "atlasURL": "bin/spine/characterselect_tobias.atlas"
+                    },
+                    {
+                        "key": "characterselect_penny",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/characterselect_penny.json",
+                        "atlasURL": "bin/spine/characterselect_penny.atlas"
+                    },
+                    {
+                        "key": "characterselect_carrie",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/characterselect_carrie.json",
+                        "atlasURL": "bin/spine/characterselect_carrie.atlas"
+                    },
+                    {
+                        "key": "intro_sequence_1",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/intro_sequence_1.json",
+                        "atlasURL": "bin/spine/intro_sequence_1.atlas"
+                    },
+                    {
+                        "key": "intro_sequence_2",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/intro_sequence_2.json",
+                        "atlasURL": "bin/spine/intro_sequence_2.atlas"
+                    },
+                    {
+                        "key": "intro_sequence_3",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/intro_sequence_3.json",
+                        "atlasURL": "bin/spine/intro_sequence_3.atlas"
+                    },
+                    {
+                        "key": "intro_sequence_4",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/intro_sequence_4.json",
+                        "atlasURL": "bin/spine/intro_sequence_4.atlas"
+                    },
+                    {
+                        "key": "intro_sequence_5",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/intro_sequence_5.json",
+                        "atlasURL": "bin/spine/intro_sequence_5.atlas"
+                    },
+                    {
+                        "key": "main_menu_title_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/main_menu_title_atlas.png",
+                        "atlasURL": "bin/atlases/main_menu_title_atlas.json"
+                    }
+                ]
+            }
+        },  
+        "gamescale_0_75":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "ui_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/ui_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/ui_atlas_0_75.json"
+                    },
+                    {
+                        "key": "title_screen",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/title_screen.json",
+                        "atlasURL": "bin/spine/title_screen_0_75.atlas"
+                    },
+                    {
+                        "key": "transition_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/transition_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/transition_atlas_0_75.json"
+                    },
+                    {
+                        "key": "main_menu_character_select_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/main_menu_character_select_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/main_menu_character_select_atlas_0_75.json"
+                    },
+                    {
+                        "key": "main_menu_player_select_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/main_menu_player_select_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/main_menu_player_select_atlas_0_75.json"
+                    },
+                    {
+                        "key": "main_menu_difficulty_select_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/main_menu_difficulty_select_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/main_menu_difficulty_select_atlas_0_75.json"
+                    },
+                    {
+                        "key": "title_screen_background",
+                        "type": "image",
+                        "url": "bin/images/menu/main_menu/title_screen_background_0_75.png"
+                    },
+                    {
+                        "key": "main_menu_screens_background",
+                        "type": "image",
+                        "url": "bin/images/menu/main_menu/main_menu_screens_background_0_75.png"
+                    },
+                    {
+                        "key": "characterselect_gumball",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/characterselect_gumball.json",
+                        "atlasURL": "bin/spine/characterselect_gumball_0_75.atlas"
+                    },
+                    {
+                        "key": "characterselect_anais",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/characterselect_anais.json",
+                        "atlasURL": "bin/spine/characterselect_anais_0_75.atlas"
+                    },
+                    {
+                        "key": "characterselect_darwin",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/characterselect_darwin.json",
+                        "atlasURL": "bin/spine/characterselect_darwin_0_75.atlas"
+                    },
+                    {
+                        "key": "characterselect_tobias",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/characterselect_tobias.json",
+                        "atlasURL": "bin/spine/characterselect_tobias_0_75.atlas"
+                    },
+                    {
+                        "key": "characterselect_penny",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/characterselect_penny.json",
+                        "atlasURL": "bin/spine/characterselect_penny_0_75.atlas"
+                    },
+                    {
+                        "key": "characterselect_carrie",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/characterselect_carrie.json",
+                        "atlasURL": "bin/spine/characterselect_carrie_0_75.atlas"
+                    },
+                    {
+                        "key": "pause_screen_background",
+                        "type": "image",
+                        "url": "bin/images/menu/pause/pause_screen_background_0_75.png"
+                    },
+                    {
+                        "key": "pause_screen_clouds",
+                        "type": "image",
+                        "url": "bin/images/menu/pause/pause_screen_clouds_0_75.png"
+                    },
+                    {
+                        "key": "intro_sequence_1",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/intro_sequence_1.json",
+                        "atlasURL": "bin/spine/intro_sequence_1_0_75.atlas"
+                    },
+                    {
+                        "key": "intro_sequence_2",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/intro_sequence_2.json",
+                        "atlasURL": "bin/spine/intro_sequence_2_0_75.atlas"
+                    },
+                    {
+                        "key": "intro_sequence_3",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/intro_sequence_3.json",
+                        "atlasURL": "bin/spine/intro_sequence_3_0_75.atlas"
+                    },
+                    {
+                        "key": "intro_sequence_4",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/intro_sequence_4.json",
+                        "atlasURL": "bin/spine/intro_sequence_4_0_75.atlas"
+                    },
+                    {
+                        "key": "intro_sequence_5",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/intro_sequence_5.json",
+                        "atlasURL": "bin/spine/intro_sequence_5_0_75.atlas"
+                    },
+                    {
+                        "key": "main_menu_title_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/main_menu_title_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/main_menu_title_atlas_0_75.json"
+                    }
+                ]
+            }
+        },
+        "localised":{
+            "gamescale_1_en":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_en.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_en.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_0_75_en":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_en_0_75.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_en_0_75.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_1_fr":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_fr.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_fr.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_0_75_fr":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_fr_0_75.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_fr_0_75.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_1_es":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_es.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_es.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_0_75_es":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_es_0_75.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_es_0_75.json"
+                        }
+                    ]
+                }
+            },
+            
+            "gamescale_1_de":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_de.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_de.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_0_75_de":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_de_0_75.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_de_0_75.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_1_pt":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_pt.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_pt.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_0_75_pt":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_pt_0_75.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_pt_0_75.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_1_hu":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_hu.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_hu.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_0_75_hu":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_hu_0_75.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_hu_0_75.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_1_ro":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_ro.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_ro.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_0_75_ro":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_ro_0_75.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_ro_0_75.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_1_pl":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_pl.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_pl.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_0_75_pl":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_pl_0_75.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_pl_0_75.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_1_bg":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_bg.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_bg.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_0_75_bg":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_bg_0_75.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_bg_0_75.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_1_ru":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_ru.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_ru.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_0_75_ru":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_ru_0_75.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_ru_0_75.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_1_nl":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_nl.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_nl.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_0_75_nl":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_nl_0_75.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_nl_0_75.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_1_cs":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_cs.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_cs.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_0_75_cs":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_cs_0_75.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_cs_0_75.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_1_no":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_no.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_no.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_0_75_no":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_no_0_75.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_no_0_75.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_1_sv":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_sv.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_sv.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_0_75_sv":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_sv_0_75.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_sv_0_75.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_1_da":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_da.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_da.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_0_75_da":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_da_0_75.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_da_0_75.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_1_ar":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_ar.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_ar.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_0_75_ar":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_ar_0_75.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_ar_0_75.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_1_tr":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_tr.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_tr.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_0_75_tr":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_tr_0_75.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_tr_0_75.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_1_it":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_it.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_it.json"
+                        }
+                    ]
+                }
+            },
+            "gamescale_0_75_it":{
+                "assets":{
+                    "files":[
+                        {
+                            "key": "main_menu_logo_atlas",
+                            "type": "atlas",
+                            "textureURL": "bin/atlases/main_menu_logo_atlas_it_0_75.png",
+                            "atlasURL": "bin/atlases/main_menu_logo_atlas_it_0_75.json"
+                        }
+                    ]
+                }
+            }
+        }
+        
+    },
+
+    "IdentScene": {
+        "shared":{
+            
+        },
+        "gamescale_1":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "cn_logo",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/cn_logo.json",
+                        "atlasURL": "bin/spine/cn_logo.atlas"
+                    }
+                ]
+            }
+        },
+        "gamescale_0_75":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "cn_logo",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/cn_logo.json",
+                        "atlasURL": "bin/spine/cn_logo_0_75.atlas"
+                    }
+                ]
+            }
+        }
+    },
+
+    "GameScene": {
+        "shared":{
+            
+        },
+        "gamescale_1":{
+
+        },  
+        "gamescale_0_75":{
+
+        }
+    },
+
+    "Minigame": {
+        "shared":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "minigame_321_beep",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/minigame_321_beep.ogg", "bin/audio/sfx/minigame_321_beep.mp3"]
+                    },
+                    {
+                        "key": "player_one_score_point",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/player_one_score_point.ogg", "bin/audio/sfx/player_one_score_point.mp3"]
+                    },
+                    {
+                        "key": "player_two_score_point",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/player_two_score_point.ogg", "bin/audio/sfx/player_two_score_point.mp3"]
+                    },
+                    {
+                        "key": "player_one_score_short",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/player_one_score_short.ogg", "bin/audio/sfx/player_one_score_short.mp3"]
+                    },
+                    {
+                        "key": "player_two_score_short",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/player_two_score_short.ogg", "bin/audio/sfx/player_two_score_short.mp3"]
+                    },
+                    {
+                        "key": "minigame_winner_points_count_up",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/minigame_winner_points_count_up.ogg", "bin/audio/sfx/minigame_winner_points_count_up.mp3"]
+                    },
+                    {
+                        "key": "minigame_winner_points_count_up_end",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/minigame_winner_points_count_up_end.ogg", "bin/audio/sfx/minigame_winner_points_count_up_end.mp3"]
+                    },
+                    {
+                        "key": "winner_confetti_shot",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/winner_confetti_shot.ogg", "bin/audio/sfx/winner_confetti_shot.mp3"]
+                    },
+                    {
+                        "key": "screen_in_controls_panel",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/screen_in_controls_panel.ogg", "bin/audio/sfx/screen_in_controls_panel.mp3"]
+                    },
+                    {
+                        "key": "screen_out_controls_panel",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/screen_out_controls_panel.ogg", "bin/audio/sfx/screen_out_controls_panel.mp3"]
+                    },
+                    {
+                        "key": "minigame_end",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/minigame_end.ogg", "bin/audio/sfx/minigame_end.mp3"]
+                    },
+                    {
+                        "key": "vo_anais_win",
+                        "type": "audio",
+                        "url": ["bin/audio/vo/en/vo_anais_win.ogg", "bin/audio/vo/en/vo_anais_win.mp3"]
+                    },
+                    {
+                        "key": "vo_tobias_win",
+                        "type": "audio",
+                        "url": ["bin/audio/vo/en/vo_tobias_win.ogg", "bin/audio/vo/en/vo_tobias_win.mp3"]
+                    },
+                    {
+                        "key": "vo_penny_win",
+                        "type": "audio",
+                        "url": ["bin/audio/vo/en/vo_penny_win.ogg", "bin/audio/vo/en/vo_penny_win.mp3"]
+                    },
+                    {
+                        "key": "vo_gumball_win",
+                        "type": "audio",
+                        "url": ["bin/audio/vo/en/vo_gumball_win.ogg", "bin/audio/vo/en/vo_gumball_win.mp3"]
+                    },
+                    {
+                        "key": "vo_darwin_win",
+                        "type": "audio",
+                        "url": ["bin/audio/vo/en/vo_darwin_win.ogg", "bin/audio/vo/en/vo_darwin_win.mp3"]
+                    },
+                    {
+                        "key": "vo_carrie_win",
+                        "type": "audio",
+                        "url": ["bin/audio/vo/en/vo_carrie_win.ogg", "bin/audio/vo/en/vo_carrie_win.mp3"]
+                    },
+                    {
+                        "key": "vo_anais_lose",
+                        "type": "audio",
+                        "url": ["bin/audio/vo/en/vo_anais_lose.ogg", "bin/audio/vo/en/vo_anais_lose.mp3"]
+                    },
+                    {
+                        "key": "vo_tobias_lose",
+                        "type": "audio",
+                        "url": ["bin/audio/vo/en/vo_tobias_lose.ogg", "bin/audio/vo/en/vo_tobias_lose.mp3"]
+                    },
+                    {
+                        "key": "vo_penny_lose",
+                        "type": "audio",
+                        "url": ["bin/audio/vo/en/vo_penny_lose.ogg", "bin/audio/vo/en/vo_penny_lose.mp3"]
+                    },
+                    {
+                        "key": "vo_gumball_lose",
+                        "type": "audio",
+                        "url": ["bin/audio/vo/en/vo_gumball_lose.ogg", "bin/audio/vo/en/vo_gumball_lose.mp3"]
+                    },
+                    {
+                        "key": "vo_darwin_lose",
+                        "type": "audio",
+                        "url": ["bin/audio/vo/en/vo_darwin_lose.ogg", "bin/audio/vo/en/vo_darwin_lose.mp3"]
+                    },
+                    {
+                        "key": "vo_carrie_lose",
+                        "type": "audio",
+                        "url": ["bin/audio/vo/en/vo_carrie_lose.ogg", "bin/audio/vo/en/vo_carrie_lose.mp3"]
+                    }
+                ]
+            }
+        },
+        "gamescale_1":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "shared_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/shared_minigame_atlas.png",
+                        "atlasURL": "bin/atlases/shared_minigame_atlas.json"
+                    },
+                    {
+                        "key": "pause_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/pause_atlas.png",
+                        "atlasURL": "bin/atlases/pause_atlas.json"
+                    },
+                    {
+                        "key": "how_to_desktop",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/how_to_desktop.json",
+                        "atlasURL": "bin/spine/how_to_desktop.atlas"
+                    },
+                    {
+                        "key": "how_to_mobile",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/how_to_mobile.json",
+                        "atlasURL": "bin/spine/how_to_mobile.atlas"
+                    },
+                    {
+                        "key": "minigame_gumball",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_gumball.json",
+                        "atlasURL": "bin/spine/minigame_gumball.atlas"
+                    },
+                    {
+                        "key": "minigame_penny",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_penny.json",
+                        "atlasURL": "bin/spine/minigame_penny.atlas"
+                    },
+                    {
+                        "key": "minigame_carrie",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_carrie.json",
+                        "atlasURL": "bin/spine/minigame_carrie.atlas"
+                    },
+                    {
+                        "key": "minigame_anais",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_anais.json",
+                        "atlasURL": "bin/spine/minigame_anais.atlas"
+                    },
+                    {
+                        "key": "minigame_darwin",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_darwin.json",
+                        "atlasURL": "bin/spine/minigame_darwin.atlas"
+                    },
+                    {
+                        "key": "minigame_tobias",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_tobias.json",
+                        "atlasURL": "bin/spine/minigame_tobias.atlas"
+                    },
+                    {
+                        "key": "minigame_carrie_topdown",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_carrie_topdown.json",
+                        "atlasURL": "bin/spine/minigame_carrie_topdown.atlas"
+                    },
+                    {
+                        "key": "minigame_penny_topdown",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_penny_topdown.json",
+                        "atlasURL": "bin/spine/minigame_penny_topdown.atlas"
+                    },
+                    {
+                        "key": "minigame_gumball_topdown",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_gumball_topdown.json",
+                        "atlasURL": "bin/spine/minigame_gumball_topdown.atlas"
+                    },
+                    {
+                        "key": "minigame_darwin_topdown",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_darwin_topdown.json",
+                        "atlasURL": "bin/spine/minigame_darwin_topdown.atlas"
+                    },
+                    {
+                        "key": "minigame_tobias_topdown",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_tobias_topdown.json",
+                        "atlasURL": "bin/spine/minigame_tobias_topdown.atlas"
+                    },
+                    {
+                        "key": "minigame_anais_topdown",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_anais_topdown.json",
+                        "atlasURL": "bin/spine/minigame_anais_topdown.atlas"
+                    },
+                    {
+                        "key": "flash",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/flash.json",
+                        "atlasURL": "bin/spine/flash.atlas"
+                    }
+                ]
+            }
+            
+        },  
+        "gamescale_0_75":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "shared_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/shared_minigame_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/shared_minigame_atlas_0_75.json"
+                    },
+                    {
+                        "key": "pause_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/pause_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/pause_atlas_0_75.json"
+                    },
+                    {
+                        "key": "how_to_desktop",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/how_to_desktop.json",
+                        "atlasURL": "bin/spine/how_to_desktop_0_75.atlas"
+                    },
+                    {
+                        "key": "how_to_mobile",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/how_to_mobile.json",
+                        "atlasURL": "bin/spine/how_to_mobile_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_gumball",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_gumball.json",
+                        "atlasURL": "bin/spine/minigame_gumball_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_penny",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_penny.json",
+                        "atlasURL": "bin/spine/minigame_penny_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_carrie",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_carrie.json",
+                        "atlasURL": "bin/spine/minigame_carrie_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_anais",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_anais.json",
+                        "atlasURL": "bin/spine/minigame_anais_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_darwin",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_darwin.json",
+                        "atlasURL": "bin/spine/minigame_darwin_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_tobias",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_tobias.json",
+                        "atlasURL": "bin/spine/minigame_tobias_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_penny_topdown",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_penny_topdown.json",
+                        "atlasURL": "bin/spine/minigame_penny_topdown_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_carrie_topdown",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_carrie_topdown.json",
+                        "atlasURL": "bin/spine/minigame_carrie_topdown_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_gumball_topdown",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_gumball_topdown.json",
+                        "atlasURL": "bin/spine/minigame_gumball_topdown_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_darwin_topdown",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_darwin_topdown.json",
+                        "atlasURL": "bin/spine/minigame_darwin_topdown_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_tobias_topdown",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_tobias_topdown.json",
+                        "atlasURL": "bin/spine/minigame_tobias_topdown_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_anais_topdown",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_anais_topdown.json",
+                        "atlasURL": "bin/spine/minigame_anais_topdown_0_75.atlas"
+                    },
+                    {
+                        "key": "flash",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/flash.json",
+                        "atlasURL": "bin/spine/flash_0_75.atlas"
+                    }
+                ]
+            }
+        }
+    },
+
+    "SumoMinigame": {
+        "shared":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "sumo_start",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/sumo_start.ogg", "bin/audio/sfx/sumo_start.mp3"]
+                    },
+                    {
+                        "key": "sumo_attack_gumball",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/sumo_attack_gumball.ogg", "bin/audio/sfx/sumo_attack_gumball.mp3"]
+                    },
+                    {
+                        "key": "sumo_attack_darwin",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/sumo_attack_darwin.ogg", "bin/audio/sfx/sumo_attack_darwin.mp3"]
+                    },
+                    {
+                        "key": "sumo_attack_anais",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/sumo_attack_anais.ogg", "bin/audio/sfx/sumo_attack_anais.mp3"]
+                    },
+                    {
+                        "key": "sumo_attack_tobias",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/sumo_attack_tobias.ogg", "bin/audio/sfx/sumo_attack_tobias.mp3"]
+                    },
+                    {
+                        "key": "sumo_attack_penny",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/sumo_attack_penny.ogg", "bin/audio/sfx/sumo_attack_penny.mp3"]
+                    },
+                    {
+                        "key": "sumo_attack_carrie",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/sumo_attack_carrie.ogg", "bin/audio/sfx/sumo_attack_carrie.mp3"]
+                    },
+                    {
+                        "key": "sumo_player_out",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/sumo_player_out.ogg", "bin/audio/sfx/sumo_player_out.mp3"]
+                    },
+                    {
+                        "key": "sumo_attack_hit",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/sumo_attack_hit.ogg", "bin/audio/sfx/sumo_attack_hit.mp3"]
+                    },
+                    {
+                        "key": "music_sumo",
+                        "type": "audio",
+                        "url": ["bin/audio/music/music_sumo.ogg", "bin/audio/music/music_sumo.mp3"]
+                    }
+                ]
+            }
+        },
+        "gamescale_1":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "sumo_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/sumo_minigame_atlas.png",
+                        "atlasURL": "bin/atlases/sumo_minigame_atlas.json"
+                    },
+                    {
+                        "key": "sumo_background",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/sumo/sumo_minigame_background.png"
+                    },
+                    {
+                        "key": "sumo_rotator_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/sumo_rotator_atlas.png",
+                        "atlasURL": "bin/atlases/sumo_rotator_atlas.json"
+                    }
+                ]
+            }
+        },  
+        "gamescale_0_75":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "sumo_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/sumo_minigame_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/sumo_minigame_atlas_0_75.json"
+                    },
+                    {
+                        "key": "sumo_background",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/sumo/sumo_minigame_background_0_75.png"
+                    },
+                    {
+                        "key": "sumo_rotator_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/sumo_rotator_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/sumo_rotator_atlas_0_75.json"
+                    }
+                ]
+            }
+        }
+    },
+
+    "VolleyballMinigame": {
+        "shared":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "volleyball_start",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/volleyball_start.ogg", "bin/audio/sfx/volleyball_start.mp3"]
+                    },
+                    {
+                        "key": "volleyball_net_bounce",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/volleyball_net_bounce.ogg", "bin/audio/sfx/volleyball_net_bounce.mp3"]
+                    },
+                    {
+                        "key": "volleyball_player_one_hit",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/volleyball_player_one_hit.ogg", "bin/audio/sfx/volleyball_player_one_hit.mp3"]
+                    },
+                    {
+                        "key": "volleyball_player_two_hit",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/volleyball_player_two_hit.ogg", "bin/audio/sfx/volleyball_player_two_hit.mp3"]
+                    },
+                    {
+                        "key": "volleyball_bounce_ground",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/volleyball_bounce_ground.ogg", "bin/audio/sfx/volleyball_bounce_ground.mp3"]
+                    },
+                    {
+                        "key": "music_volleyball",
+                        "type": "audio",
+                        "url": ["bin/audio/music/music_volleyball.ogg", "bin/audio/music/music_volleyball.mp3"]
+                    }
+                ]
+            }
+        },
+        "gamescale_1":{
+            "assets":{
+                "files": [
+                    {
+                        "key": "volleyball_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/volleyball_minigame_atlas.png",
+                        "atlasURL": "bin/atlases/volleyball_minigame_atlas.json"
+                    },
+                    {
+                        "key": "volley_background",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/volleyball/volley_background.png"
+                    },
+                    {
+                        "key": "volley_lines",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/volleyball/volley_lines.png"
+                    },
+                    {
+                        "key": "volley_ball",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/volley_ball.json",
+                        "atlasURL": "bin/spine/volley_ball.atlas"
+                    }
+                ]
+            }
+        },
+        "gamescale_0_75": {
+            "assets":{
+                "files": [
+                    {
+                        "key": "volleyball_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/volleyball_minigame_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/volleyball_minigame_atlas_0_75.json"
+                    },
+                    {
+                        "key": "volley_background",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/volleyball/volley_background_0_75.png"
+                    },
+                    {
+                        "key": "volley_lines",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/volleyball/volley_lines_0_75.png"
+                    },
+                    {
+                        "key": "volley_ball",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/volley_ball.json",
+                        "atlasURL": "bin/spine/volley_ball_0_75.atlas"
+                    }
+                ]
+            }
+        }
+    },
+
+    "FlappyMinigame": {
+        "shared":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "flappy_crash_pipe",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/flappy_crash_pipe.ogg", "bin/audio/sfx/flappy_crash_pipe.mp3"]
+                    },
+                    {
+                        "key": "flappy_crash_spout",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/flappy_crash_spout.ogg", "bin/audio/sfx/flappy_crash_spout.mp3"]
+                    },
+                    {
+                        "key": "flappy_player_one_jump",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/flappy_player_one_jump.ogg", "bin/audio/sfx/flappy_player_one_jump.mp3"]
+                    },
+                    {
+                        "key": "flappy_player_two_jump",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/flappy_player_two_jump.ogg", "bin/audio/sfx/flappy_player_two_jump.mp3"]
+                    },
+                    {
+                        "key": "music_factory",
+                        "type": "audio",
+                        "url": ["bin/audio/music/music_factory.ogg", "bin/audio/music/music_factory.mp3"]
+                    }
+                ]
+            }
+        },
+
+        "gamescale_1":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "flappy_background",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/flappy/sewer_background.png"
+                    },
+                    {
+                        "key": "flappy_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/flappy_minigame_atlas.png",
+                        "atlasURL": "bin/atlases/flappy_minigame_atlas.json"
+                    },
+                    {
+                        "key": "pipe_fountain",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/pipe_fountain.json",
+                        "atlasURL": "bin/spine/pipe_fountain.atlas"
+                    }
+                ]
+            }
+        },  
+        "gamescale_0_75":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "flappy_background",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/flappy/sewer_background_0_75.png"
+                    },
+                    {
+                        "key": "flappy_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/flappy_minigame_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/flappy_minigame_atlas_0_75.json"
+                    },
+                    {
+                        "key": "pipe_fountain",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/pipe_fountain.json",
+                        "atlasURL": "bin/spine/pipe_fountain_0_75.atlas"
+                    }
+                ]
+            }
+        }
+    },
+
+    "TurtlesMinigame": {
+        "shared":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "turtles_player_one_fire",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/turtles_player_one_fire.ogg", "bin/audio/sfx/turtles_player_one_fire.mp3"]
+                    },
+                    {
+                        "key": "turtles_player_one_sucker",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/turtles_player_one_sucker.ogg", "bin/audio/sfx/turtles_player_one_sucker.mp3"]
+                    },
+                    {
+                        "key": "turtles_player_two_fire",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/turtles_player_two_fire.ogg", "bin/audio/sfx/turtles_player_two_fire.mp3"]
+                    },
+                    {
+                        "key": "turtles_player_two_sucker",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/turtles_player_two_sucker.ogg", "bin/audio/sfx/turtles_player_two_sucker.mp3"]
+                    },
+                    {
+                        "key": "music_painting",
+                        "type": "audio",
+                        "url": ["bin/audio/music/music_painting.ogg", "bin/audio/music/music_painting.mp3"]
+                    }
+                ]
+            }
+        },
+
+        "gamescale_1":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "turtles_background",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/turtles/turtles_background.png"
+                    },
+                    {
+                        "key": "turtles_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/turtles_minigame_atlas.png",
+                        "atlasURL": "bin/atlases/turtles_minigame_atlas.json"
+                    },
+                    {
+                        "key": "turtle",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/turtle.json",
+                        "atlasURL": "bin/spine/turtle.atlas"
+                    },
+                    {
+                        "key": "turtles_in_pool",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/turtles_in_pool.json",
+                        "atlasURL": "bin/spine/turtles_in_pool.atlas"
+                    }
+                    
+                ]
+            }
+        },  
+        "gamescale_0_75":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "turtles_background",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/turtles/turtles_background_0_75.png"
+                    },
+                    {
+                        "key": "turtles_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/turtles_minigame_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/turtles_minigame_atlas_0_75.json"
+                    },
+                    {
+                        "key": "turtle",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/turtle.json",
+                        "atlasURL": "bin/spine/turtle_0_75.atlas"
+                    },
+                    {
+                        "key": "turtles_in_pool",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/turtles_in_pool.json",
+                        "atlasURL": "bin/spine/turtles_in_pool_0_75.atlas"
+                    }
+                ]
+            }
+        }
+    },
+
+    "SnowballMinigame": {
+        "shared":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "turtles_player_one_fire",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/turtles_player_one_fire.ogg", "bin/audio/sfx/turtles_player_one_fire.mp3"]
+                    },
+                    {
+                        "key": "turtles_player_one_sucker",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/turtles_player_one_sucker.ogg", "bin/audio/sfx/turtles_player_one_sucker.mp3"]
+                    },
+                    {
+                        "key": "turtles_player_two_fire",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/turtles_player_two_fire.ogg", "bin/audio/sfx/turtles_player_two_fire.mp3"]
+                    },
+                    {
+                        "key": "turtles_player_two_sucker",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/turtles_player_two_sucker.ogg", "bin/audio/sfx/turtles_player_two_sucker.mp3"]
+                    },
+                    {
+                        "key": "music_painting",
+                        "type": "audio",
+                        "url": ["bin/audio/music/music_painting.ogg", "bin/audio/music/music_painting.mp3"]
+                    }
+                ]
+            }
+        },
+
+        "gamescale_1":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "snowball_background",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/snowball/snowball_background.png"
+                    },
+                    {
+                        "key": "snowball_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/snowball_minigame_atlas.png",
+                        "atlasURL": "bin/atlases/snowball_minigame_atlas.json"
+                    },
+                    {
+                        "key": "turtle",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/turtle.json",
+                        "atlasURL": "bin/spine/turtle.atlas"
+                    },
+                    {
+                        "key": "turtles_in_pool",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/turtles_in_pool.json",
+                        "atlasURL": "bin/spine/turtles_in_pool.atlas"
+                    },
+                    {
+                        "key": "sumo_rotator_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/sumo_rotator_atlas.png",
+                        "atlasURL": "bin/atlases/sumo_rotator_atlas.json"
+                    },
+                    {
+                        "key": "minigame_alan",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_alan.json",
+                        "atlasURL": "bin/spine/minigame_alan.atlas"
+                    },
+                    {
+                        "key": "minigame_brown",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_brown.json",
+                        "atlasURL": "bin/spine/minigame_brown.atlas"
+                    },
+                    
+                    {
+                        "key": "minigame_teri",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_teri.json",
+                        "atlasURL": "bin/spine/minigame_teri.atlas"
+                    },
+                    {
+                        "key": "minigame_carmen",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_carmen.json",
+                        "atlasURL": "bin/spine/minigame_carmen.atlas"
+                    }
+                    
+                ]
+            }
+        },  
+        "gamescale_0_75":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "snowball_background",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/snowball/snowball_background_0_75.png"
+                    },
+                    {
+                        "key": "snowball_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/snowball_minigame_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/snowball_minigame_atlas_0_75.json"
+                    },
+                    {
+                        "key": "turtle",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/turtle.json",
+                        "atlasURL": "bin/spine/turtle_0_75.atlas"
+                    },
+                    {
+                        "key": "turtles_in_pool",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/turtles_in_pool.json",
+                        "atlasURL": "bin/spine/turtles_in_pool_0_75.atlas"
+                    },
+                    {
+                        "key": "sumo_rotator_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/sumo_rotator_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/sumo_rotator_atlas_0_75.json"
+                    },
+                    {
+                        "key": "minigame_alan",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_alan.json",
+                        "atlasURL": "bin/spine/minigame_alan_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_brown",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_brown.json",
+                        "atlasURL": "bin/spine/minigame_brown_0_75.atlas"
+                    },
+                    
+                    {
+                        "key": "minigame_teri",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_teri.json",
+                        "atlasURL": "bin/spine/minigame_teri_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_carmen",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_carmen.json",
+                        "atlasURL": "bin/spine/minigame_carmen_0_75.atlas"
+                    }
+                ]
+            }
+        }
+    },
+
+    "HerdingMinigame": {
+        "shared":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "herding_goose_01",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/herding_goose_01.ogg", "bin/audio/sfx/herding_goose_01.mp3"]
+                    },
+                    {
+                        "key": "herding_goose_02",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/herding_goose_02.ogg", "bin/audio/sfx/herding_goose_02.mp3"]
+                    },
+                    {
+                        "key": "herding_goose_03",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/herding_goose_03.ogg", "bin/audio/sfx/herding_goose_03.mp3"]
+                    },
+                    {
+                        "key": "herding_goose_04",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/herding_goose_04.ogg", "bin/audio/sfx/herding_goose_04.mp3"]
+                    },
+                    {
+                        "key": "herding_goose_05",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/herding_goose_05.ogg", "bin/audio/sfx/herding_goose_05.mp3"]
+                    },
+                    {
+                        "key": "herding_goose_06",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/herding_goose_06.ogg", "bin/audio/sfx/herding_goose_06.mp3"]
+                    },
+                    {
+                        "key": "herding_goose_07",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/herding_goose_07.ogg", "bin/audio/sfx/herding_goose_07.mp3"]
+                    },
+                    {
+                        "key": "music_catch",
+                        "type": "audio",
+                        "url": ["bin/audio/music/music_catch.ogg", "bin/audio/music/music_catch.mp3"]
+                    }
+                ]
+            }
+        },
+
+        "gamescale_1":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "herding_background",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/herding/herding_background.png"
+                    },
+                    {
+                        "key": "herding_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/herding_minigame_atlas.png",
+                        "atlasURL": "bin/atlases/herding_minigame_atlas.json"
+                    },
+                    {
+                        "key": "duck_herding",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/duck_herding.json",
+                        "atlasURL": "bin/spine/duck_herding.atlas"
+                    },
+                    {
+                        "key": "ducks_in_bath",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/ducks_in_bath.json",
+                        "atlasURL": "bin/spine/ducks_in_bath.atlas"
+                    }
+                ]
+            }
+        },  
+        "gamescale_0_75":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "herding_background",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/herding/herding_background_0_75.png"
+                    },
+                    {
+                        "key": "herding_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/herding_minigame_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/herding_minigame_atlas_0_75.json"
+                    },
+                    {
+                        "key": "duck_herding",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/duck_herding.json",
+                        "atlasURL": "bin/spine/duck_herding_0_75.atlas"
+                    },
+                    {
+                        "key": "ducks_in_bath",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/ducks_in_bath.json",
+                        "atlasURL": "bin/spine/ducks_in_bath_0_75.atlas"
+                    }
+                ]
+            }
+        }
+    },
+
+    "ArcheryMinigame": {
+        "shared":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "archery_new_balloons",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/archery_new_balloons.ogg", "bin/audio/sfx/archery_new_balloons.mp3"]
+                    },
+                    {
+                        "key": "archery_player_one_fire",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/archery_player_one_fire.ogg", "bin/audio/sfx/archery_player_one_fire.mp3"]
+                    },
+                    {
+                        "key": "archery_player_two_fire",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/archery_player_two_fire.ogg", "bin/audio/sfx/archery_player_two_fire.mp3"]
+                    },
+                    {
+                        "key": "music_volleyball",
+                        "type": "audio",
+                        "url": ["bin/audio/music/music_volleyball.ogg", "bin/audio/music/music_volleyball.mp3"]
+                    }
+                ]
+            }
+        },
+
+        "gamescale_1":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "archery_background",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/archery/archery_background.png"
+                    },
+                    {
+                        "key": "archery_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/archery_minigame_atlas.png",
+                        "atlasURL": "bin/atlases/archery_minigame_atlas.json"
+                    },
+                    {
+                        "key": "cannon",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/cannon.json",
+                        "atlasURL": "bin/spine/cannon.atlas"
+                    }
+                ]
+            }
+        },  
+        "gamescale_0_75":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "archery_background",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/archery/archery_background_0_75.png"
+                    },
+                    {
+                        "key": "archery_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/archery_minigame_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/archery_minigame_atlas_0_75.json"
+                    },
+                    {
+                        "key": "cannon",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/cannon.json",
+                        "atlasURL": "bin/spine/cannon_0_75.atlas"
+                    }
+                ]
+            }
+        }
+    },
+
+    "CatchMinigame": {
+        "shared":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "music_catch",
+                        "type": "audio",
+                        "url": ["bin/audio/music/music_catch.ogg", "bin/audio/music/music_catch.mp3"]
+                    },
+                    {
+                        "key": "catch_drop",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/catch_drop.ogg", "bin/audio/sfx/catch_drop.mp3"]
+                    }
+                ]
+            }
+        },
+
+        "gamescale_1":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "catch_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/catch_minigame_atlas.png",
+                        "atlasURL": "bin/atlases/catch_minigame_atlas.json"
+                    },
+                    {
+                        "key": "catch_background",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/catch/catch_minigame_background.png"
+                    }
+                ]
+            }
+        },  
+        "gamescale_0_75":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "catch_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/catch_minigame_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/catch_minigame_atlas_0_75.json"
+                    },
+                    {
+                        "key": "catch_background",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/catch/catch_minigame_background_0_75.png"
+                    }
+                ]
+            }
+        }
+    },
+
+    "DodgeMinigame": {
+        "shared":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "dodge_item_spawn",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/dodge_item_spawn.ogg", "bin/audio/sfx/dodge_item_spawn.mp3"]
+                    },
+                    {
+                        "key": "dodge_trolley_impact",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/dodge_trolley_impact.ogg", "bin/audio/sfx/dodge_trolley_impact.mp3"]
+                    },
+                    {
+                        "key": "music_dodge",
+                        "type": "audio",
+                        "url": ["bin/audio/music/music_dodge.ogg", "bin/audio/music/music_dodge.mp3"]
+                    }
+                ]
+            }
+        },
+        "gamescale_1":{
+            "assets":{
+                "files": [
+                    {
+                        "key": "dodge_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/dodge_minigame_atlas.png",
+                        "atlasURL": "bin/atlases/dodge_minigame_atlas.json"
+                    },
+                    {
+                        "key": "dodge_background",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/dodge/dodge_background.png"
+                    }
+                ]
+            }
+        },
+        "gamescale_0_75": {
+            "assets":{
+                "files": [
+                    {
+                        "key": "dodge_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/dodge_minigame_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/dodge_minigame_atlas_0_75.json"
+                    },
+                    {
+                        "key": "dodge_background",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/dodge/dodge_background_0_75.png"
+                    }
+                ]
+            }
+        }
+    },
+
+    "HurdlesMinigame": {
+        "shared":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "hurdles_start",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/hurdles_start.ogg", "bin/audio/sfx/hurdles_start.mp3"]
+                    },
+                    {
+                        "key": "hurdles_player_one_jump",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/hurdles_player_one_jump.ogg", "bin/audio/sfx/hurdles_player_one_jump.mp3"]
+                    },
+                    {
+                        "key": "hurdles_player_one_land",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/hurdles_player_one_land.ogg", "bin/audio/sfx/hurdles_player_one_land.mp3"]
+                    },
+                    {
+                        "key": "hurdles_player_two_jump",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/hurdles_player_two_jump.ogg", "bin/audio/sfx/hurdles_player_two_jump.mp3"]
+                    },
+                    {
+                        "key": "hurdles_player_two_land",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/hurdles_player_two_land.ogg", "bin/audio/sfx/hurdles_player_two_land.mp3"]
+                    },
+                    {
+                        "key": "hurdles_impact",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/hurdles_impact.ogg", "bin/audio/sfx/hurdles_impact.mp3"]
+                    },
+                    {
+                        "key": "hurdles_player_one_footstep_01",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/hurdles_player_one_footstep_01.ogg", "bin/audio/sfx/hurdles_player_one_footstep_01.mp3"]
+                    },
+                    {
+                        "key": "hurdles_player_one_footstep_02",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/hurdles_player_one_footstep_02.ogg", "bin/audio/sfx/hurdles_player_one_footstep_02.mp3"]
+                    },
+                    {
+                        "key": "hurdles_player_one_footstep_03",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/hurdles_player_one_footstep_03.ogg", "bin/audio/sfx/hurdles_player_one_footstep_03.mp3"]
+                    },
+                    {
+                        "key": "hurdles_player_one_footstep_04",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/hurdles_player_one_footstep_04.ogg", "bin/audio/sfx/hurdles_player_one_footstep_04.mp3"]
+                    },
+                    {
+                        "key": "hurdles_player_one_footstep_05",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/hurdles_player_one_footstep_05.ogg", "bin/audio/sfx/hurdles_player_one_footstep_05.mp3"]
+                    },
+                    {
+                        "key": "hurdles_player_two_footstep_01",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/hurdles_player_two_footstep_01.ogg", "bin/audio/sfx/hurdles_player_two_footstep_01.mp3"]
+                    },
+                    {
+                        "key": "hurdles_player_two_footstep_02",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/hurdles_player_two_footstep_02.ogg", "bin/audio/sfx/hurdles_player_two_footstep_02.mp3"]
+                    },
+                    {
+                        "key": "hurdles_player_two_footstep_03",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/hurdles_player_two_footstep_03.ogg", "bin/audio/sfx/hurdles_player_two_footstep_03.mp3"]
+                    },
+                    {
+                        "key": "hurdles_player_two_footstep_04",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/hurdles_player_two_footstep_04.ogg", "bin/audio/sfx/hurdles_player_two_footstep_04.mp3"]
+                    },
+                    {
+                        "key": "hurdles_player_two_footstep_05",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/hurdles_player_two_footstep_05.ogg", "bin/audio/sfx/hurdles_player_two_footstep_05.mp3"]
+                    },
+                    {
+                        "key": "hurdles_finish_race",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/hurdles_finish_race.ogg", "bin/audio/sfx/hurdles_finish_race.mp3"]
+                    },
+                    {
+                        "key": "music_hurdles",
+                        "type": "audio",
+                        "url": ["bin/audio/music/music_hurdles.ogg", "bin/audio/music/music_hurdles.mp3"]
+                    }
+                ]
+            }
+        },
+        "gamescale_1":{
+            "assets":{
+                "files": [
+                    {
+                        "key": "hurdles_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/hurdles_minigame_atlas.png",
+                        "atlasURL": "bin/atlases/hurdles_minigame_atlas.json"
+                    },
+                    {
+                        "key": "hurdles_background",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/hurdles/hurdles_background.png"
+                    },
+                    {
+                        "key": "hurdle",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/hurdle.json",
+                        "atlasURL": "bin/spine/hurdle.atlas"
+                    },
+                    {
+                        "key": "ribbon",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/ribbon.json",
+                        "atlasURL": "bin/spine/ribbon.atlas"
+                    },
+                    {
+                        "key": "minigame_alan",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_alan.json",
+                        "atlasURL": "bin/spine/minigame_alan.atlas"
+                    },
+                    {
+                        "key": "minigame_brown",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_brown.json",
+                        "atlasURL": "bin/spine/minigame_brown.atlas"
+                    },
+                    
+                    {
+                        "key": "minigame_teri",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_teri.json",
+                        "atlasURL": "bin/spine/minigame_teri.atlas"
+                    },
+                    {
+                        "key": "minigame_carmen",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_carmen.json",
+                        "atlasURL": "bin/spine/minigame_carmen.atlas"
+                    },
+                    {
+                        "key": "minigame_larry",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_larry.json",
+                        "atlasURL": "bin/spine/minigame_larry.atlas"
+                    },
+                    {
+                        "key": "minigame_richard",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_richard.json",
+                        "atlasURL": "bin/spine/minigame_richard.atlas"
+                    },
+                    {
+                        "key": "minigame_bananajoe",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_bananajoe.json",
+                        "atlasURL": "bin/spine/minigame_bananajoe.atlas"
+                    },
+                    {
+                        "key": "minigame_leslie",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_leslie.json",
+                        "atlasURL": "bin/spine/minigame_leslie.atlas"
+                    }
+                ]
+            }
+        },
+        "gamescale_0_75": {
+            "assets":{
+                "files": [
+                    {
+                        "key": "hurdles_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/hurdles_minigame_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/hurdles_minigame_atlas_0_75.json"
+                    },
+                    {
+                        "key": "hurdles_background",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/hurdles/hurdles_background_0_75.png"
+                    },
+                    {
+                        "key": "hurdle",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/hurdle.json",
+                        "atlasURL": "bin/spine/hurdle_0_75.atlas"
+                    },
+                    {
+                        "key": "ribbon",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/ribbon.json",
+                        "atlasURL": "bin/spine/ribbon_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_alan",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_alan.json",
+                        "atlasURL": "bin/spine/minigame_alan_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_brown",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_brown.json",
+                        "atlasURL": "bin/spine/minigame_brown_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_larry",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_larry.json",
+                        "atlasURL": "bin/spine/minigame_larry_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_richard",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_richard.json",
+                        "atlasURL": "bin/spine/minigame_richard_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_bananajoe",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_bananajoe.json",
+                        "atlasURL": "bin/spine/minigame_bananajoe_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_leslie",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_leslie.json",
+                        "atlasURL": "bin/spine/minigame_leslie_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_teri",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_teri.json",
+                        "atlasURL": "bin/spine/minigame_teri_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_carmen",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_carmen.json",
+                        "atlasURL": "bin/spine/minigame_carmen_0_75.atlas"
+                    }
+                ]
+            }
+        }
+    },
+
+    "TrapdoorMinigame": {
+        "shared":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "trapdoor_start",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/trapdoor_start.ogg", "bin/audio/sfx/trapdoor_start.mp3"]
+                    },
+                    {
+                        "key": "trapdoor_change_targets",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/trapdoor_change_targets.ogg", "bin/audio/sfx/trapdoor_change_targets.mp3"]
+                    },
+                    {
+                        "key": "trapdoor_open",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/trapdoor_open.ogg", "bin/audio/sfx/trapdoor_open.mp3"]
+                    },
+                    {
+                        "key": "trapdoor_player_fall",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/trapdoor_player_fall.ogg", "bin/audio/sfx/trapdoor_player_fall.mp3"]
+                    },
+                    {
+                        "key": "music_factory",
+                        "type": "audio",
+                        "url": ["bin/audio/music/music_factory.ogg", "bin/audio/music/music_factory.mp3"]
+                    },
+                    {
+                        "key": "trapdoor_new_round",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/trapdoor_new_round.ogg", "bin/audio/sfx/trapdoor_new_round.mp3"]
+                    }
+                ]
+            }
+        },
+        "gamescale_1":{
+            "assets":{
+                "files": [
+                    {
+                        "key": "trapdoor_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/trapdoor_minigame_atlas.png",
+                        "atlasURL": "bin/atlases/trapdoor_minigame_atlas.json"
+                    },
+                    {
+                        "key": "trapdoor_background",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/trapdoor/trapdoor_background.png"
+                    },
+                    {
+                        "key": "trapdoor",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/trapdoor.json",
+                        "atlasURL": "bin/spine/trapdoor.atlas"
+                    }
+                ]
+            }
+        },
+        "gamescale_0_75": {
+            "assets":{
+                "files": [
+                    {
+                        "key": "trapdoor_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/trapdoor_minigame_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/trapdoor_minigame_atlas_0_75.json"
+                    },
+                    {
+                        "key": "trapdoor_background",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/trapdoor/trapdoor_background_0_75.png"
+                    },
+                    {
+                        "key": "trapdoor",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/trapdoor.json",
+                        "atlasURL": "bin/spine/trapdoor_0_75.atlas"
+                    }
+                ]
+            }
+        }
+    },
+
+    "BurgerMinigame": {
+        "shared":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "burger_orders",
+                        "type": "json",
+                        "url": "bin/data/minigames/burger/burger_orders.json"
+                    },
+                    {
+                        "key": "burgers_start",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/burgers_start.ogg", "bin/audio/sfx/burgers_start.mp3"]
+                    },
+                    {
+                        "key": "burgers_player_one_grab",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/burgers_player_one_grab.ogg", "bin/audio/sfx/burgers_player_one_grab.mp3"]
+                    },
+                    {
+                        "key": "burgers_player_one_bin",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/burgers_player_one_bin.ogg", "bin/audio/sfx/burgers_player_one_bin.mp3"]
+                    },
+                    {
+                        "key": "burgers_player_two_grab",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/burgers_player_two_grab.ogg", "bin/audio/sfx/burgers_player_two_grab.mp3"]
+                    },
+                    {
+                        "key": "burgers_player_two_bin",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/burgers_player_two_bin.ogg", "bin/audio/sfx/burgers_player_two_bin.mp3"]
+                    },
+                    {
+                        "key": "burgers_player_one_correct",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/burgers_player_one_correct.ogg", "bin/audio/sfx/burgers_player_one_correct.mp3"]
+                    },
+                    {
+                        "key": "burgers_player_two_correct",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/burgers_player_two_correct.ogg", "bin/audio/sfx/burgers_player_two_correct.mp3"]
+                    },
+                    {
+                        "key": "burgers_target_move",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/burgers_target_move.ogg", "bin/audio/sfx/burgers_target_move.mp3"]
+                    },
+                    {
+                        "key": "music_burger",
+                        "type": "audio",
+                        "url": ["bin/audio/music/music_burger.ogg", "bin/audio/music/music_burger.mp3"]
+                    }
+                ]
+            }
+        },
+        "gamescale_1":{
+            "assets":{
+                "files": [
+                    {
+                        "key": "burger_background",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/burger/burger_background.png"
+                    },
+                    {
+                        "key": "burger_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/burger_minigame_atlas.png",
+                        "atlasURL": "bin/atlases/burger_minigame_atlas.json"
+                    }
+                ]
+            }
+        },
+        "gamescale_0_75": {
+            "assets":{
+                "files": [
+                    {
+                        "key": "burger_background",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/burger/burger_background_0_75.png"
+                    },
+                    {
+                        "key": "burger_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/burger_minigame_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/burger_minigame_atlas_0_75.json"
+                    }
+                ]
+            }
+        }
+    },
+
+    "PaintingMinigame": {
+        "shared":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "painting_start",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/painting_start.ogg", "bin/audio/sfx/painting_start.mp3"]
+                    },
+                    {
+                        "key": "painting_player_one_footstep_01",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/painting_player_one_footstep_01.ogg", "bin/audio/sfx/painting_player_one_footstep_01.mp3"]
+                    },
+                    {
+                        "key": "painting_player_one_footstep_02",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/painting_player_one_footstep_02.ogg", "bin/audio/sfx/painting_player_one_footstep_02.mp3"]
+                    },
+                    {
+                        "key": "painting_player_one_footstep_03",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/painting_player_one_footstep_03.ogg", "bin/audio/sfx/painting_player_one_footstep_03.mp3"]
+                    },
+                    {
+                        "key": "painting_player_one_footstep_04",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/painting_player_one_footstep_04.ogg", "bin/audio/sfx/painting_player_one_footstep_04.mp3"]
+                    },
+                    {
+                        "key": "painting_player_one_footstep_05",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/painting_player_one_footstep_05.ogg", "bin/audio/sfx/painting_player_one_footstep_05.mp3"]
+                    },
+                    {
+                        "key": "painting_player_one_footstep_06",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/painting_player_one_footstep_06.ogg", "bin/audio/sfx/painting_player_one_footstep_06.mp3"]
+                    },
+                    {
+                        "key": "painting_player_two_footstep_01",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/painting_player_two_footstep_01.ogg", "bin/audio/sfx/painting_player_two_footstep_01.mp3"]
+                    },
+                    {
+                        "key": "painting_player_two_footstep_02",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/painting_player_two_footstep_02.ogg", "bin/audio/sfx/painting_player_two_footstep_02.mp3"]
+                    },
+                    {
+                        "key": "painting_player_two_footstep_03",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/painting_player_two_footstep_03.ogg", "bin/audio/sfx/painting_player_two_footstep_03.mp3"]
+                    },
+                    {
+                        "key": "painting_player_two_footstep_04",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/painting_player_two_footstep_04.ogg", "bin/audio/sfx/painting_player_two_footstep_04.mp3"]
+                    },
+                    {
+                        "key": "painting_player_two_footstep_05",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/painting_player_two_footstep_05.ogg", "bin/audio/sfx/painting_player_two_footstep_05.mp3"]
+                    },
+                    {
+                        "key": "painting_player_two_footstep_06",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/painting_player_two_footstep_06.ogg", "bin/audio/sfx/painting_player_two_footstep_06.mp3"]
+                    },
+                    {
+                        "key": "music_painting",
+                        "type": "audio",
+                        "url": ["bin/audio/music/music_painting.ogg", "bin/audio/music/music_painting.mp3"]
+                    }
+                ]
+            }
+        },
+        "gamescale_1":{
+            "assets":{
+                "files": [
+                    {
+                        "key": "painting_paintbrush_1_1",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/painting/painting_paintbrush_1_1.png"
+                    },
+                    {
+                        "key": "painting_paintbrush_1_2",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/painting/painting_paintbrush_1_2.png"
+                    },
+                    {
+                        "key": "painting_paintbrush_1_3",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/painting/painting_paintbrush_1_3.png"
+                    },
+                    {
+                        "key": "painting_paintbrush_2_1",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/painting/painting_paintbrush_2_1.png"
+                    },
+                    {
+                        "key": "painting_paintbrush_2_2",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/painting/painting_paintbrush_2_2.png"
+                    },
+                    {
+                        "key": "painting_paintbrush_2_3",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/painting/painting_paintbrush_2_3.png"
+                    },
+                    {
+                        "key": "painting_background",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/painting/painting_minigame_background.png"
+                    },
+                    {
+                        "key": "painting_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/painting_minigame_atlas.png",
+                        "atlasURL": "bin/atlases/painting_minigame_atlas.json"
+                    }
+                ]
+            }
+        },
+        "gamescale_0_75": {
+            "assets":{
+                "files": [
+                    {
+                        "key": "painting_background",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/painting/painting_minigame_background_0_75.png"
+                    },
+                    {
+                        "key": "painting_paintbrush_1_1",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/painting/painting_paintbrush_1_1_0_75.png"
+                    },
+                    {
+                        "key": "painting_paintbrush_1_2",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/painting/painting_paintbrush_1_2_0_75.png"
+                    },
+                    {
+                        "key": "painting_paintbrush_1_3",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/painting/painting_paintbrush_1_3_0_75.png"
+                    },
+                    {
+                        "key": "painting_paintbrush_2_1",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/painting/painting_paintbrush_2_1_0_75.png"
+                    },
+                    {
+                        "key": "painting_paintbrush_2_2",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/painting/painting_paintbrush_2_2_0_75.png"
+                    },
+                    {
+                        "key": "painting_paintbrush_2_3",
+                        "type": "image",
+                        "url": "bin/images/game/minigames/painting/painting_paintbrush_2_3_0_75.png"
+                    },
+                    {
+                        "key": "painting_minigame_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/painting_minigame_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/painting_minigame_atlas_0_75.json"
+                    }
+                ]
+            }
+        }
+    },
+
+    "BoardScene": {
+        "shared":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "board",
+                        "type": "json",
+                        "url": "bin/data/min_board.json"
+                    },
+                    {
+                        "key": "screen_in_board_player",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/screen_in_board_player.ogg", "bin/audio/sfx/screen_in_board_player.mp3"]
+                    },
+                    {
+                        "key": "screen_out_board_player",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/screen_out_board_player.ogg", "bin/audio/sfx/screen_out_board_player.mp3"]
+                    },
+                    {
+                        "key": "screen_in_board_turns_left",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/screen_in_board_turns_left.ogg", "bin/audio/sfx/screen_in_board_turns_left.mp3"]
+                    },
+                    {
+                        "key": "screen_out_board_turns_left",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/screen_out_board_turns_left.ogg", "bin/audio/sfx/screen_out_board_turns_left.mp3"]
+                    },
+                    {
+                        "key": "board_which_direction",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/board_which_direction.ogg", "bin/audio/sfx/board_which_direction.mp3"]
+                    },
+                    {
+                        "key": "board_pick_direction",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/board_pick_direction.ogg", "bin/audio/sfx/board_pick_direction.mp3"]
+                    },
+                    {
+                        "key": "board_freeze",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/board_freeze.ogg", "bin/audio/sfx/board_freeze.mp3"]
+                    },
+                    {
+                        "key": "board_freeze_over",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/board_freeze_over.ogg", "bin/audio/sfx/board_freeze_over.mp3"]
+                    },
+                    {
+                        "key": "board_roll_six",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/board_roll_six.ogg", "bin/audio/sfx/board_roll_six.mp3"]
+                    },
+                    {
+                        "key": "board_roll_die",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/board_roll_die.ogg", "bin/audio/sfx/board_roll_die.mp3"]
+                    },
+                    {
+                        "key": "board_player_footstep_01",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/board_player_footstep_01.ogg", "bin/audio/sfx/board_player_footstep_01.mp3"]
+                    },
+                    {
+                        "key": "board_player_footstep_02",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/board_player_footstep_02.ogg", "bin/audio/sfx/board_player_footstep_02.mp3"]
+                    },
+                    {
+                        "key": "board_player_footstep_03",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/board_player_footstep_03.ogg", "bin/audio/sfx/board_player_footstep_03.mp3"]
+                    },
+                    {
+                        "key": "board_player_footstep_04",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/board_player_footstep_04.ogg", "bin/audio/sfx/board_player_footstep_04.mp3"]
+                    },
+                    {
+                        "key": "board_player_footstep_05",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/board_player_footstep_05.ogg", "bin/audio/sfx/board_player_footstep_05.mp3"]
+                    },
+                    {
+                        "key": "board_player_footstep_06",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/board_player_footstep_06.ogg", "bin/audio/sfx/board_player_footstep_06.mp3"]
+                    },
+                    {
+                        "key": "board_teleport_start",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/board_teleport_start.ogg", "bin/audio/sfx/board_teleport_start.mp3"]
+                    },
+                    {
+                        "key": "board_teleport_end",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/board_teleport_end.ogg", "bin/audio/sfx/board_teleport_end.mp3"]
+                    },
+                    {
+                        "key": "board_tile",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/board_tile.ogg", "bin/audio/sfx/board_tile.mp3"]
+                    },
+                    {
+                        "key": "board_tile_special",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/board_tile_special.ogg", "bin/audio/sfx/board_tile_special.mp3"]
+                    },
+                    {
+                        "key": "music_boardgame",
+                        "type": "audio",
+                        "url": ["bin/audio/music/music_boardgame.ogg", "bin/audio/music/music_boardgame.mp3"]
+                    },
+                    {
+                        "key": "trophy_collect",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/trophy_collect.ogg", "bin/audio/sfx/trophy_collect.mp3"]
+                    },
+                    {
+                        "key": "trophy_spawn",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/trophy_spawn.ogg", "bin/audio/sfx/trophy_spawn.mp3"]
+                    },
+                    {
+                        "key": "wheel_spin_click_01",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/wheel_spin_click_01.ogg", "bin/audio/sfx/wheel_spin_click_01.mp3"]
+                    },
+                    {
+                        "key": "wheel_spin_click_02",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/wheel_spin_click_02.ogg", "bin/audio/sfx/wheel_spin_click_02.mp3"]
+                    },
+                    {
+                        "key": "wheel_spin_click_03",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/wheel_spin_click_03.ogg", "bin/audio/sfx/wheel_spin_click_03.mp3"]
+                    },
+                    {
+                        "key": "wheel_spin_click_04",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/wheel_spin_click_04.ogg", "bin/audio/sfx/wheel_spin_click_04.mp3"]
+                    },
+                    {
+                        "key": "wheel_spin_click_05",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/wheel_spin_click_05.ogg", "bin/audio/sfx/wheel_spin_click_05.mp3"]
+                    },
+                    {
+                        "key": "wheel_spin_click_06",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/wheel_spin_click_06.ogg", "bin/audio/sfx/wheel_spin_click_06.mp3"]
+                    },
+                    {
+                        "key": "wheel_spin_click_07",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/wheel_spin_click_07.ogg", "bin/audio/sfx/wheel_spin_click_07.mp3"]
+                    },
+                    {
+                        "key": "wheel_spin",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/wheel_spin.ogg", "bin/audio/sfx/wheel_spin.mp3"]
+                    },
+                    {
+                        "key": "wheel_spin_result",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/wheel_spin_result.ogg", "bin/audio/sfx/wheel_spin_result.mp3"]
+                    },
+                    {
+                        "key": "board_ambience",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/board_ambience.ogg", "bin/audio/sfx/board_ambience.mp3"]
+                    }
+                ]
+            }
+        },
+        "gamescale_1":{
+            "assets":{
+                "files": [
+                    {
+                        "key": "board_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/board_atlas.png",
+                        "atlasURL": "bin/atlases/board_atlas.json"
+                    },
+                    {
+                        "key": "pause_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/pause_atlas.png",
+                        "atlasURL": "bin/atlases/pause_atlas.json"
+                    },
+                    {
+                        "key": "board_ui_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/board_ui_atlas.png",
+                        "atlasURL": "bin/atlases/board_ui_atlas.json"
+                    },
+                    {
+                        "key": "board_trophy",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/board_trophy.json",
+                        "atlasURL": "bin/spine/board_trophy.atlas"
+                    },
+                    {
+                        "key": "minigame_gumball",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_gumball.json",
+                        "atlasURL": "bin/spine/minigame_gumball.atlas"
+                    },
+                    {
+                        "key": "minigame_penny",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_penny.json",
+                        "atlasURL": "bin/spine/minigame_penny.atlas"
+                    },
+                    {
+                        "key": "minigame_carrie",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_carrie.json",
+                        "atlasURL": "bin/spine/minigame_carrie.atlas"
+                    },
+                    {
+                        "key": "minigame_anais",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_anais.json",
+                        "atlasURL": "bin/spine/minigame_anais.atlas"
+                    },
+                    {
+                        "key": "minigame_darwin",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_darwin.json",
+                        "atlasURL": "bin/spine/minigame_darwin.atlas"
+                    },
+                    {
+                        "key": "minigame_tobias",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_tobias.json",
+                        "atlasURL": "bin/spine/minigame_tobias.atlas"
+                    },
+                    {
+                        "key": "dice_roller",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/dice_roller.json",
+                        "atlasURL": "bin/spine/dice_roller.atlas"
+                    },
+                    {
+                        "key": "minigame_alan",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_alan.json",
+                        "atlasURL": "bin/spine/minigame_alan.atlas"
+                    },
+                    {
+                        "key": "minigame_brown",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_brown.json",
+                        "atlasURL": "bin/spine/minigame_brown.atlas"
+                    },
+                    {
+                        "key": "minigame_larry",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_larry.json",
+                        "atlasURL": "bin/spine/minigame_larry.atlas"
+                    },
+                    {
+                        "key": "minigame_richard",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_richard.json",
+                        "atlasURL": "bin/spine/minigame_richard.atlas"
+                    },
+                    {
+                        "key": "minigame_bananajoe",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_bananajoe.json",
+                        "atlasURL": "bin/spine/minigame_bananajoe.atlas"
+                    },
+                    {
+                        "key": "minigame_leslie",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_leslie.json",
+                        "atlasURL": "bin/spine/minigame_leslie.atlas"
+                    },
+                    {
+                        "key": "minigame_teri",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_teri.json",
+                        "atlasURL": "bin/spine/minigame_teri.atlas"
+                    },
+                    {
+                        "key": "minigame_carmen",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_carmen.json",
+                        "atlasURL": "bin/spine/minigame_carmen.atlas"
+                    }
+                ]
+            }
+        },
+        "gamescale_0_75": {
+            "assets":{
+                "files": [
+                    {
+                        "key": "board_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/board_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/board_atlas_0_75.json"
+                    },
+                    {
+                        "key": "pause_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/pause_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/pause_atlas_0_75.json"
+                    },
+                    {
+                        "key": "board_ui_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/board_ui_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/board_ui_atlas_0_75.json"
+                    },
+                    {
+                        "key": "board_trophy",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/board_trophy.json",
+                        "atlasURL": "bin/spine/board_trophy_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_gumball",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_gumball.json",
+                        "atlasURL": "bin/spine/minigame_gumball_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_penny",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_penny.json",
+                        "atlasURL": "bin/spine/minigame_penny_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_carrie",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_carrie.json",
+                        "atlasURL": "bin/spine/minigame_carrie_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_anais",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_anais.json",
+                        "atlasURL": "bin/spine/minigame_anais_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_darwin",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_darwin.json",
+                        "atlasURL": "bin/spine/minigame_darwin_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_tobias",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_tobias.json",
+                        "atlasURL": "bin/spine/minigame_tobias_0_75.atlas"
+                    },
+                    {
+                        "key": "dice_roller",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/dice_roller.json",
+                        "atlasURL": "bin/spine/dice_roller_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_alan",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_alan.json",
+                        "atlasURL": "bin/spine/minigame_alan_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_brown",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_brown.json",
+                        "atlasURL": "bin/spine/minigame_brown_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_larry",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_larry.json",
+                        "atlasURL": "bin/spine/minigame_larry_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_richard",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_richard.json",
+                        "atlasURL": "bin/spine/minigame_richard_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_bananajoe",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_bananajoe.json",
+                        "atlasURL": "bin/spine/minigame_bananajoe_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_leslie",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_leslie.json",
+                        "atlasURL": "bin/spine/minigame_leslie_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_teri",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_teri.json",
+                        "atlasURL": "bin/spine/minigame_teri_0_75.atlas"
+                    },
+                    {
+                        "key": "minigame_carmen",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/minigame_carmen.json",
+                        "atlasURL": "bin/spine/minigame_carmen_0_75.atlas"
+                    }
+                ]
+            }
+        }
+    },
+    "ResultsScene": {
+        "shared":{
+            "assets":{
+                "files":[
+                    {
+                        "key": "results_curtain_raise",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/results_curtain_raise.ogg", "bin/audio/sfx/results_curtain_raise.mp3"]
+                    },
+                    {
+                        "key": "winner_confetti_shot",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/winner_confetti_shot.ogg", "bin/audio/sfx/winner_confetti_shot.mp3"]
+                    },
+                    {
+                        "key": "screen_in_results_panel",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/screen_in_results_panel.ogg", "bin/audio/sfx/screen_in_results_panel.mp3"]
+                    },
+                    {
+                        "key": "screen_out_results_panel",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/screen_out_results_panel.ogg", "bin/audio/sfx/screen_out_results_panel.mp3"]
+                    },
+                    {
+                        "key": "results_trophy_count_up",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/results_trophy_count_up.ogg", "bin/audio/sfx/results_trophy_count_up.mp3"]
+                    },
+                    {
+                        "key": "results_overall_winner",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/results_overall_winner.ogg", "bin/audio/sfx/results_overall_winner.mp3"]
+                    },
+                    {
+                        "key": "results_trophy_winner",
+                        "type": "audio",
+                        "url": ["bin/audio/sfx/results_trophy_winner.ogg", "bin/audio/sfx/results_trophy_winner.mp3"]
+                    },
+                    {
+                        "key": "music_results_in",
+                        "type": "audio",
+                        "url": ["bin/audio/music/music_results_in.ogg", "bin/audio/music/music_results_in.mp3"]
+                    },
+                    {
+                        "key": "music_results_out",
+                        "type": "audio",
+                        "url": ["bin/audio/music/music_results_out.ogg", "bin/audio/music/music_results_out.mp3"]
+                    }
+                ]
+            }
+        },
+        "gamescale_1":{
+            "assets":{
+                "files": [
+                    {
+                        "key": "results_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/results_atlas.png",
+                        "atlasURL": "bin/atlases/results_atlas.json"
+                    },
+                    {
+                        "key": "results_2_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/results_2_atlas.png",
+                        "atlasURL": "bin/atlases/results_2_atlas.json"
+                    },
+                    {
+                        "key": "characterselect_gumball",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/characterselect_gumball.json",
+                        "atlasURL": "bin/spine/characterselect_gumball.atlas"
+                    },
+                    {
+                        "key": "characterselect_anais",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/characterselect_anais.json",
+                        "atlasURL": "bin/spine/characterselect_anais.atlas"
+                    },
+                    {
+                        "key": "characterselect_darwin",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/characterselect_darwin.json",
+                        "atlasURL": "bin/spine/characterselect_darwin.atlas"
+                    },
+                    {
+                        "key": "characterselect_tobias",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/characterselect_tobias.json",
+                        "atlasURL": "bin/spine/characterselect_tobias.atlas"
+                    },
+                    {
+                        "key": "characterselect_carrie",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/characterselect_carrie.json",
+                        "atlasURL": "bin/spine/characterselect_carrie.atlas"
+                    },
+                    {
+                        "key": "characterselect_penny",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/characterselect_penny.json",
+                        "atlasURL": "bin/spine/characterselect_penny.atlas"
+                    }
+                ]
+            }
+        },
+        "gamescale_0_75": {
+            "assets":{
+                "files": [
+                    {
+                        "key": "results_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/results_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/results_atlas_0_75.json"
+                    },
+                    {
+                        "key": "results_2_atlas",
+                        "type": "atlas",
+                        "textureURL": "bin/atlases/results_2_atlas_0_75.png",
+                        "atlasURL": "bin/atlases/results_2_atlas_0_75.json"
+                    },
+                    {
+                        "key": "characterselect_gumball",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/characterselect_gumball.json",
+                        "atlasURL": "bin/spine/characterselect_gumball_0_75.atlas"
+                    },
+                    {
+                        "key": "characterselect_anais",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/characterselect_anais.json",
+                        "atlasURL": "bin/spine/characterselect_anais_0_75.atlas"
+                    },
+                    {
+                        "key": "characterselect_darwin",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/characterselect_darwin.json",
+                        "atlasURL": "bin/spine/characterselect_darwin_0_75.atlas"
+                    },
+                    {
+                        "key": "characterselect_tobias",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/characterselect_tobias.json",
+                        "atlasURL": "bin/spine/characterselect_tobias_0_75.atlas"
+                    },
+                    {
+                        "key": "characterselect_carrie",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/characterselect_carrie.json",
+                        "atlasURL": "bin/spine/characterselect_carrie_0_75.atlas"
+                    },
+                    {
+                        "key": "characterselect_penny",
+                        "type": "spine",
+                        "jsonURL": "bin/spine/characterselect_penny.json",
+                        "atlasURL": "bin/spine/characterselect_penny_0_75.atlas"
+                    }
+                ]
+            }
+        }
+    }
+}

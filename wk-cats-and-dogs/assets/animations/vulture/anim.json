@@ -1,0 +1,702 @@
+{
+"skeleton": {
+	"hash": "3RuOgOS3TQWLyEnd80TGhf+g1KM",
+	"spine": "3.8.99",
+	"x": -258.79,
+	"y": -245.64,
+	"width": 613,
+	"height": 1273,
+	"images": "./images/",
+	"audio": "/Users/alangorringe/Documents/SVN/WLD - 4.1 (Season6Game)/Assets/Animation/Working Files/Vulture"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "Torso", "parent": "root", "length": 522.13, "rotation": 94.32, "x": 47.13, "y": 101.65 },
+	{ "name": "Chest", "parent": "Torso", "length": 239.5, "rotation": -20.47, "x": 476.75, "y": 82.36 },
+	{ "name": "Neck Feathers Front", "parent": "Chest", "length": 173.39, "rotation": -57.64, "x": 225.8, "y": -7.12 },
+	{ "name": "Neck Feathers Back", "parent": "Chest", "length": 104.38, "rotation": 76.61, "x": 177.06, "y": 19.74 },
+	{ "name": "Neck Straight", "parent": "Chest", "length": 203.37, "rotation": 20.41, "x": 145.08, "y": 10.48 },
+	{ "name": "Head Left", "parent": "Neck Straight", "length": 181.14, "rotation": 76.11, "x": 191.07, "y": -2.12 },
+	{ "name": "Wing L1", "parent": "Chest", "length": 678.59, "rotation": -148.33, "x": 229.01, "y": -94.42 },
+	{ "name": "Wing R1", "parent": "Chest", "length": 843.08, "rotation": -160.36, "x": 164.51, "y": 41.32 },
+	{ "name": "Leg Far", "parent": "Torso", "length": 133.22, "rotation": 176.98, "x": 25.92, "y": 61.79 },
+	{ "name": "Tail", "parent": "Torso", "length": 430.27, "rotation": 168.4, "x": 154.27, "y": -87.55 },
+	{ "name": "Leg Near", "parent": "Torso", "length": 175.67, "rotation": 173.7, "x": -11.28, "y": -68.97 }
+],
+"slots": [
+	{ "name": "Tail", "bone": "Tail", "attachment": "Tail" },
+	{ "name": "Wing R1", "bone": "Wing R1", "attachment": "Wing R1" },
+	{ "name": "Leg Far", "bone": "Leg Far", "attachment": "Leg Far" },
+	{ "name": "Leg Near", "bone": "Leg Near", "attachment": "Leg Near" },
+	{ "name": "Torso", "bone": "Torso", "attachment": "Torso" },
+	{ "name": "Chest", "bone": "Chest", "attachment": "Chest" },
+	{ "name": "Neck Feathers Back", "bone": "Neck Feathers Back", "attachment": "Neck Feathers Back" },
+	{ "name": "Neck Straight", "bone": "Neck Straight", "attachment": "Neck Left" },
+	{ "name": "Neck Feathers Front", "bone": "Neck Feathers Front", "attachment": "Neck Feathers Front" },
+	{ "name": "Head Left", "bone": "Head Left", "attachment": "Head Left" },
+	{ "name": "Wing L1", "bone": "Wing L1", "attachment": "Wing L1" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Chest": {
+				"Chest": { "x": 102.4, "y": -60.55, "rotation": -73.86, "width": 395, "height": 388 }
+			},
+			"Head Left": {
+				"Head Left": { "x": 60.71, "y": -34.9, "rotation": -170.38, "width": 304, "height": 158 },
+				"Head Left Screech": { "x": 59.46, "y": -27.51, "rotation": -170.38, "width": 304, "height": 173 },
+				"Head Straight": { "x": 22.65, "y": -34.76, "rotation": -170.38, "width": 181, "height": 187 }
+			},
+			"Leg Far": {
+				"Leg Far": { "x": 94.15, "y": -15.49, "rotation": 88.7, "width": 156, "height": 226 }
+			},
+			"Leg Near": {
+				"Leg Near": { "x": 87.49, "y": -20.54, "rotation": 91.97, "width": 156, "height": 225 }
+			},
+			"Neck Feathers Back": {
+				"Neck Feathers Back": { "x": 11.86, "y": -23.7, "rotation": -150.46, "width": 243, "height": 285 }
+			},
+			"Neck Feathers Front": {
+				"Neck Feathers Front": { "x": 40.09, "y": -69.87, "rotation": -16.22, "width": 293, "height": 341 }
+			},
+			"Neck Straight": {
+				"Neck Left": { "x": 95.56, "y": 0.52, "rotation": -94.27, "width": 169, "height": 282 },
+				"Neck Straight": { "x": 95.67, "y": 2.02, "rotation": -94.27, "width": 160, "height": 282 }
+			},
+			"Tail": {
+				"Tail": { "x": 182.25, "y": -0.52, "rotation": 97.28, "width": 284, "height": 510 },
+				"Tail Flight": { "x": 291.3, "y": 156.05, "rotation": 97.28, "width": 625, "height": 348 }
+			},
+			"Torso": {
+				"Torso": { "x": 277.26, "y": -23.04, "rotation": -94.32, "width": 370, "height": 635 }
+			},
+			"Wing L1": {
+				"Wing L1": { "x": 468.48, "y": -47.87, "rotation": 74.48, "width": 383, "height": 1076 },
+				"Wing L2": { "x": 687.9, "y": 25.25, "rotation": -13.08, "width": 1428, "height": 757 },
+				"Wing L3": { "x": 114.73, "y": 442.18, "rotation": 74.48, "width": 988, "height": 758 },
+				"Wing L4": { "x": 571.9, "y": 57.28, "rotation": 74.48, "width": 487, "height": 1187 }
+			},
+			"Wing R1": {
+				"Wing R1": { "x": 458.12, "y": -19.92, "rotation": 86.5, "width": 334, "height": 1055 },
+				"Wing R2": { "x": -194.44, "y": -582.64, "rotation": 86.5, "width": 1141, "height": 773 },
+				"Wing R3": { "x": -85.39, "y": -503.15, "rotation": 86.5, "width": 1041, "height": 495 },
+				"Wing R4": { "x": 464.94, "y": -219.71, "rotation": 86.5, "width": 712, "height": 1075 }
+			}
+		}
+	}
+],
+"animations": {
+	"Flight Loop": {
+		"slots": {
+			"Tail": {
+				"attachment": [
+					{ "name": "Tail Flight" }
+				]
+			},
+			"Wing L1": {
+				"attachment": [
+					{ "name": "Wing L2" },
+					{ "time": 0.1, "name": "Wing L4" },
+					{ "time": 0.3667, "name": "Wing L3" },
+					{ "time": 0.5333, "name": "Wing L2" }
+				]
+			},
+			"Wing R1": {
+				"attachment": [
+					{ "name": "Wing R2" },
+					{ "time": 0.1, "name": "Wing R4" },
+					{ "time": 0.3667, "name": "Wing R3" },
+					{ "time": 0.5333, "name": "Wing R2" }
+				]
+			}
+		},
+		"bones": {
+			"Torso": {
+				"rotate": [
+					{ "angle": 53.62 }
+				],
+				"translate": [
+					{ "x": 181.62, "y": -220.97 }
+				]
+			},
+			"Head Left": {
+				"rotate": [
+					{ "angle": -64.18 }
+				],
+				"translate": [
+					{ "x": -0.35, "y": 52.7 }
+				]
+			},
+			"Neck Straight": {
+				"rotate": [
+					{ "angle": 21.93 }
+				],
+				"translate": [
+					{ "x": 19.14, "y": 34.91 }
+				]
+			},
+			"Neck Feathers Front": {
+				"rotate": [
+					{ "angle": 25.24 }
+				],
+				"translate": [
+					{ "x": -26.67, "y": 54.77 }
+				]
+			},
+			"Wing L1": {
+				"rotate": [
+					{ "angle": 38.5 },
+					{ "time": 0.0667, "angle": 2.32 },
+					{ "time": 0.1, "angle": -31.84 },
+					{ "time": 0.1667, "angle": -52.38 },
+					{ "time": 0.3333, "angle": -35.8 },
+					{ "time": 0.3667, "angle": -57.86 },
+					{ "time": 0.5, "angle": -40.54 },
+					{ "time": 0.5333, "angle": 38.5 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.0667, "y": 0.41 },
+					{ "time": 0.1, "y": 0.669 },
+					{ "time": 0.1667, "y": 0.88 },
+					{ "time": 0.3333, "x": 0.537, "y": 0.88 },
+					{ "time": 0.3667, "x": 0.537, "y": 0.649 },
+					{ "time": 0.5, "x": 0.649, "y": 1.373 },
+					{ "time": 0.5333 }
+				]
+			},
+			"Wing R1": {
+				"rotate": [
+					{ "angle": -55.16 },
+					{ "time": 0.0667, "angle": 30.77 },
+					{ "time": 0.1, "angle": -78.75 },
+					{ "time": 0.1667, "angle": -53.29 },
+					{ "time": 0.3667, "angle": -39.44 },
+					{ "time": 0.5, "angle": -65.5 },
+					{ "time": 0.5333, "angle": -55.16 }
+				],
+				"translate": [
+					{ "x": 99.46, "y": -141.21 },
+					{ "time": 0.1, "x": 78.19, "y": -109.78 },
+					{ "time": 0.5333, "x": 99.46, "y": -141.21 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.0667, "x": 1.408, "y": 0.373 },
+					{ "time": 0.1, "y": 0.571 },
+					{ "time": 0.1667, "y": 0.8 },
+					{ "time": 0.3333, "x": 0.447, "y": 0.8 },
+					{ "time": 0.3667, "x": 0.447, "y": 0.561 },
+					{ "time": 0.5, "x": 0.847, "y": 0.973 },
+					{ "time": 0.5333 }
+				]
+			},
+			"Tail": {
+				"rotate": [
+					{ "angle": -13.75 }
+				],
+				"translate": [
+					{ "x": 61.4, "y": -115.13 }
+				]
+			},
+			"Leg Near": {
+				"rotate": [
+					{ "angle": -23.23 }
+				],
+				"translate": [
+					{ "x": -10.32, "y": 50.69 }
+				]
+			},
+			"Leg Far": {
+				"rotate": [
+					{ "angle": -16.05 }
+				],
+				"translate": [
+					{ "x": 27.6, "y": -4.14 }
+				]
+			},
+			"Chest": {
+				"translate": [
+					{ "x": -110.05, "y": -1.07 }
+				]
+			}
+		}
+	},
+	"Flight Loop2": {
+		"slots": {
+			"Tail": {
+				"attachment": [
+					{ "name": "Tail Flight" }
+				]
+			},
+			"Wing L1": {
+				"attachment": [
+					{ "name": "Wing L2" },
+					{ "time": 0.1, "name": "Wing L4" },
+					{ "time": 0.3667, "name": "Wing L3" },
+					{ "time": 0.5333, "name": "Wing L2" }
+				]
+			},
+			"Wing R1": {
+				"attachment": [
+					{ "name": "Wing R2" },
+					{ "time": 0.1, "name": "Wing R4" },
+					{ "time": 0.3667, "name": "Wing R3" },
+					{ "time": 0.5333, "name": "Wing R2" }
+				]
+			}
+		},
+		"bones": {
+			"Torso": {
+				"rotate": [
+					{ "angle": 53.62 }
+				],
+				"translate": [
+					{ "x": 181.62, "y": -220.97 },
+					{ "time": 0.0333, "x": 181.62, "y": -205.37 },
+					{ "time": 0.0667, "x": 181.62, "y": -189.77 },
+					{ "time": 0.1667, "x": 181.62, "y": -142.97 },
+					{ "time": 0.5333, "x": 181.62, "y": -220.97 }
+				]
+			},
+			"Head Left": {
+				"rotate": [
+					{ "angle": -64.18, "curve": 0.284, "c3": 0.625, "c4": 0.38 },
+					{ "time": 0.0333, "angle": -65.24, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 0.1667, "angle": -72.33, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5333, "angle": -64.18 }
+				],
+				"translate": [
+					{ "x": -0.35, "y": 52.7, "curve": 0.284, "c3": 0.625, "c4": 0.38 },
+					{
+						"time": 0.0333,
+						"x": -0.35,
+						"y": 54.26,
+						"curve": 0.311,
+						"c2": 0.26,
+						"c3": 0.651,
+						"c4": 0.61
+					},
+					{ "time": 0.0667, "x": -0.35, "y": 57.06, "curve": 0.363, "c2": 0.44, "c3": 0.755 },
+					{ "time": 0.1667, "x": -0.35, "y": 64.68, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5333, "x": -0.35, "y": 52.7 }
+				]
+			},
+			"Neck Straight": {
+				"rotate": [
+					{ "angle": 21.93, "curve": 0.284, "c3": 0.625, "c4": 0.38 },
+					{ "time": 0.0333, "angle": 22.88, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 0.1667, "angle": 29.2, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5333, "angle": 21.93 }
+				],
+				"translate": [
+					{ "x": 19.14, "y": 34.91 }
+				]
+			},
+			"Neck Feathers Front": {
+				"rotate": [
+					{ "angle": 25.24 }
+				],
+				"translate": [
+					{ "x": -26.67, "y": 54.77 }
+				]
+			},
+			"Wing L1": {
+				"rotate": [
+					{ "angle": 38.5 },
+					{ "time": 0.0333, "angle": 20.41 },
+					{ "time": 0.0667, "angle": 2.32 },
+					{ "time": 0.1, "angle": -31.84 },
+					{ "time": 0.1667, "angle": -52.38 },
+					{ "time": 0.3333, "angle": -35.8 },
+					{ "time": 0.3667, "angle": -57.86 },
+					{ "time": 0.5, "angle": -40.54 },
+					{ "time": 0.5333, "angle": 38.5 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.0333, "y": 0.705 },
+					{ "time": 0.0667, "y": 0.41 },
+					{ "time": 0.1, "y": 0.669 },
+					{ "time": 0.1667, "y": 0.88 },
+					{ "time": 0.3333, "x": 0.537, "y": 0.88 },
+					{ "time": 0.3667, "x": 0.537, "y": 0.649 },
+					{ "time": 0.5, "x": 0.649, "y": 1.373 },
+					{ "time": 0.5333 }
+				]
+			},
+			"Wing R1": {
+				"rotate": [
+					{ "angle": -55.16 },
+					{ "time": 0.0333, "angle": -12.19 },
+					{ "time": 0.0667, "angle": 30.77 },
+					{ "time": 0.1, "angle": -78.75 },
+					{ "time": 0.1667, "angle": -53.29 },
+					{ "time": 0.3667, "angle": -39.44 },
+					{ "time": 0.5, "angle": -65.5 },
+					{ "time": 0.5333, "angle": -55.16 }
+				],
+				"translate": [
+					{ "x": 99.46, "y": -141.21 },
+					{ "time": 0.0333, "x": 92.37, "y": -130.73 },
+					{ "time": 0.0667, "x": 85.28, "y": -120.26 },
+					{ "time": 0.1, "x": 78.19, "y": -109.78 },
+					{ "time": 0.5333, "x": 99.46, "y": -141.21 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.0333, "x": 1.204, "y": 0.687 },
+					{ "time": 0.0667, "x": 1.408, "y": 0.373 },
+					{ "time": 0.1, "y": 0.571 },
+					{ "time": 0.1667, "y": 0.8 },
+					{ "time": 0.3333, "x": 0.447, "y": 0.8 },
+					{ "time": 0.3667, "x": 0.447, "y": 0.561 },
+					{ "time": 0.5, "x": 0.847, "y": 0.973 },
+					{ "time": 0.5333 }
+				]
+			},
+			"Tail": {
+				"rotate": [
+					{ "angle": -13.75, "curve": 0.295, "c3": 0.633, "c4": 0.37 },
+					{ "time": 0.0333, "angle": -13.94, "curve": 0.303, "c2": 0.22, "c3": 0.756 },
+					{ "time": 0.2333, "angle": -16.23, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5333, "angle": -13.75 }
+				],
+				"translate": [
+					{ "x": 61.4, "y": -115.13, "curve": 0.295, "c3": 0.633, "c4": 0.37 },
+					{
+						"time": 0.0333,
+						"x": 61.09,
+						"y": -114.64,
+						"curve": 0.311,
+						"c2": 0.24,
+						"c3": 0.648,
+						"c4": 0.59
+					},
+					{ "time": 0.0667, "x": 60.51, "y": -113.71, "curve": 0.342, "c2": 0.36, "c3": 0.757 },
+					{ "time": 0.2333, "x": 57.4, "y": -108.74, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5333, "x": 61.4, "y": -115.13 }
+				],
+				"shear": [
+					{ "curve": 0.295, "c3": 0.633, "c4": 0.37 },
+					{ "time": 0.0333, "y": -1.13, "curve": 0.311, "c2": 0.24, "c3": 0.648, "c4": 0.59 },
+					{ "time": 0.0667, "y": -3.24, "curve": 0.342, "c2": 0.36, "c3": 0.757 },
+					{ "time": 0.2333, "y": -14.57, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5333 }
+				]
+			},
+			"Leg Near": {
+				"rotate": [
+					{ "angle": -23.23 },
+					{ "time": 0.0333, "angle": -25.04 },
+					{ "time": 0.1667, "angle": -32.24 },
+					{ "time": 0.5333, "angle": -23.23 }
+				],
+				"translate": [
+					{ "x": -10.32, "y": 50.69 },
+					{ "time": 0.0333, "x": -7.44, "y": 48.93 },
+					{ "time": 0.0667, "x": -4.56, "y": 47.18 },
+					{ "time": 0.1667, "x": 4.07, "y": 41.91 },
+					{ "time": 0.5333, "x": -10.32, "y": 50.69 }
+				]
+			},
+			"Leg Far": {
+				"rotate": [
+					{ "angle": -16.05 },
+					{ "time": 0.0333, "angle": -16.9 },
+					{ "time": 0.1667, "angle": -20.3 },
+					{ "time": 0.5333, "angle": -16.05 }
+				],
+				"translate": [
+					{ "x": 27.6, "y": -4.14 },
+					{ "time": 0.0333, "x": 30.48, "y": -5.9 },
+					{ "time": 0.0667, "x": 33.35, "y": -7.65 },
+					{ "time": 0.1667, "x": 41.99, "y": -12.92 },
+					{ "time": 0.5333, "x": 27.6, "y": -4.14 }
+				]
+			},
+			"Chest": {
+				"translate": [
+					{ "x": -110.05, "y": -1.07 }
+				]
+			}
+		}
+	},
+	"Glide": {
+		"slots": {
+			"Tail": {
+				"attachment": [
+					{ "name": "Tail Flight" }
+				]
+			},
+			"Wing L1": {
+				"attachment": [
+					{ "name": "Wing L2" }
+				]
+			},
+			"Wing R1": {
+				"attachment": [
+					{ "name": "Wing R2" }
+				]
+			}
+		},
+		"bones": {
+			"Wing R1": {
+				"rotate": [
+					{ "angle": 30.77, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": 27.12 },
+					{ "time": 1.6667, "angle": 30.77 }
+				],
+				"translate": [
+					{ "x": 85.28, "y": -120.26 }
+				],
+				"scale": [
+					{ "x": 1.408, "y": 0.373 }
+				]
+			},
+			"Leg Far": {
+				"rotate": [
+					{ "angle": -16.9, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -14.67 },
+					{ "time": 1.6667, "angle": -16.9 }
+				],
+				"translate": [
+					{ "x": 33.35, "y": -7.65 }
+				]
+			},
+			"Tail": {
+				"rotate": [
+					{ "angle": -13.94, "curve": 0.29, "c2": 0.19, "c3": 0.652, "c4": 0.62 },
+					{ "time": 0.8333, "angle": -10.76, "curve": 0.38, "c2": 0.53, "c3": 0.745 },
+					{ "time": 1.6667, "angle": -13.94 }
+				],
+				"translate": [
+					{ "x": 60.51, "y": -113.71 }
+				],
+				"shear": [
+					{ "y": -33.59 }
+				]
+			},
+			"Torso": {
+				"rotate": [
+					{ "angle": 53.62, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": 56.24 },
+					{ "time": 1.6667, "angle": 53.62 }
+				],
+				"translate": [
+					{ "x": 181.62, "y": -189.77, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "x": 181.62, "y": -178.47 },
+					{ "time": 1.6667, "x": 181.62, "y": -189.77 }
+				]
+			},
+			"Chest": {
+				"translate": [
+					{ "x": -110.05, "y": -1.07 }
+				]
+			},
+			"Neck Feathers Front": {
+				"rotate": [
+					{ "angle": 25.24 }
+				],
+				"translate": [
+					{ "x": -26.67, "y": 54.77 }
+				]
+			},
+			"Neck Straight": {
+				"rotate": [
+					{ "angle": 22.88 }
+				],
+				"translate": [
+					{ "x": 19.14, "y": 34.91 }
+				]
+			},
+			"Head Left": {
+				"rotate": [
+					{ "angle": -65.24, "curve": 0.32, "c2": 0.29, "c3": 0.757 },
+					{ "time": 0.7667, "angle": -69.69, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "angle": -65.24 }
+				],
+				"translate": [
+					{ "x": -0.35, "y": 57.06, "curve": 0.363, "c2": 0.44, "c3": 0.755 },
+					{ "time": 0.7667, "x": 4.69, "y": 46.26, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "x": -0.35, "y": 57.06 }
+				]
+			},
+			"Wing L1": {
+				"rotate": [
+					{ "angle": 2.32, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.9333, "angle": 4.75, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.6667, "angle": 2.32 }
+				],
+				"scale": [
+					{ "y": 0.41 }
+				]
+			},
+			"Leg Near": {
+				"rotate": [
+					{ "angle": -25.04, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "angle": -30.46 },
+					{ "time": 1.6667, "angle": -25.04 }
+				],
+				"translate": [
+					{ "x": -4.56, "y": 47.18 }
+				]
+			}
+		}
+	},
+	"Idle": {
+		"bones": {
+			"Neck Straight": {
+				"rotate": [
+					{},
+					{ "time": 1, "angle": 1.83, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2 }
+				]
+			},
+			"Wing L1": {
+				"scale": [
+					{},
+					{ "time": 1.0667, "x": 1.026, "y": 1.046, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2 }
+				]
+			},
+			"Wing R1": {
+				"scale": [
+					{},
+					{ "time": 1.0667, "x": 1.026, "y": 1.046, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2 }
+				]
+			}
+		}
+	},
+	"Takeoff": {
+		"slots": {
+			"Tail": {
+				"attachment": [
+					{ "time": 0.1667, "name": "Tail Flight" }
+				]
+			},
+			"Wing L1": {
+				"attachment": [
+					{ "time": 0.1, "name": "Wing L4" },
+					{ "time": 0.1667, "name": "Wing L2" }
+				]
+			},
+			"Wing R1": {
+				"attachment": [
+					{ "time": 0.1, "name": "Wing R4" },
+					{ "time": 0.1667, "name": "Wing R2" }
+				]
+			}
+		},
+		"bones": {
+			"Leg Near": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "angle": -25.04 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.1667, "x": -4.56, "y": 47.18 }
+				]
+			},
+			"Tail": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "angle": -13.94 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.1667, "x": 60.51, "y": -113.71 }
+				],
+				"shear": [
+					{},
+					{ "time": 0.1667, "y": -33.59 }
+				]
+			},
+			"Leg Far": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "angle": -16.9 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.1667, "x": 33.35, "y": -7.65 }
+				]
+			},
+			"Wing R1": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "angle": 30.77 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.1667, "x": 85.28, "y": -120.26 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.1667, "x": 1.408, "y": 0.373 }
+				]
+			},
+			"Wing L1": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "angle": 2.32 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.1667, "y": 0.41 }
+				]
+			},
+			"Head Left": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "angle": -65.24 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.1667, "x": -0.35, "y": 57.06 }
+				]
+			},
+			"Neck Straight": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "angle": 22.88 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.1667, "x": 19.14, "y": 34.91 }
+				]
+			},
+			"Neck Feathers Front": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "angle": 25.24 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.1667, "x": -26.67, "y": 54.77 }
+				]
+			},
+			"Chest": {
+				"translate": [
+					{},
+					{ "time": 0.1667, "x": -110.05, "y": -1.07 }
+				]
+			},
+			"Torso": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "angle": 53.62 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.1667, "x": 181.62, "y": -189.77 }
+				]
+			}
+		}
+	},
+	"animation": {}
+}
+}
